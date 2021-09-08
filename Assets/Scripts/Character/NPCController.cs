@@ -7,6 +7,9 @@ public class NPCController : MonoBehaviour, Interactable
     [SerializeField] Dialog dialog;
     [SerializeField] List<Vector2> movementPattern;
     [SerializeField] float timeBetweenPattern;
+    #region Manu Code
+    [SerializeField] Sprite sprite;
+    #endregion
 
     NPCState state;
     float idleTimer = 0f;
@@ -25,10 +28,12 @@ public class NPCController : MonoBehaviour, Interactable
             state = NPCState.Dialog;
             character.LookTowards(initiator.position);
 
-            StartCoroutine(DialogManager.Instance.ShowDialog(dialog, () => {
+            #region Manu Code
+            StartCoroutine(DialogManager.Instance.ShowDialog(dialog, sprite, () => {
                 idleTimer = 0f;
                 state = NPCState.Idle;
             }));
+            #endregion
         }
     }
 
@@ -60,6 +65,11 @@ public class NPCController : MonoBehaviour, Interactable
             currentPattern = (currentPattern + 1) % movementPattern.Count;
 
         state = NPCState.Idle;
+    }
+
+    public Sprite Sprite
+    {
+        get => sprite;
     }
 }
 

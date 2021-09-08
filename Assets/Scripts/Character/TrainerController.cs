@@ -36,16 +36,20 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
 
         if (!battleLost)
         {
-            StartCoroutine(DialogManager.Instance.ShowDialog(dialog, () =>
+            #region Manu Code
+            StartCoroutine(DialogManager.Instance.ShowDialog(dialog,sprite,  () =>
             {
                 GameController.Instance.StartTrainerBattle(this);
             }));
+            #endregion
         }
         else
         {
-            StartCoroutine(DialogManager.Instance.ShowDialog(dialogAfterBattle));
+            #region Manu Code
+            StartCoroutine(DialogManager.Instance.ShowDialog(dialogAfterBattle, sprite));
+            #endregion
         }
-        
+
     }
 
     public IEnumerator TriggerTrainerBattle(PlayerController player)
@@ -63,7 +67,7 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
         yield return character.Move(moveVec);
 
         // Show dialog
-        StartCoroutine(DialogManager.Instance.ShowDialog(dialog, () =>
+        StartCoroutine(DialogManager.Instance.ShowDialog(dialog, sprite, () =>
         {
             GameController.Instance.StartTrainerBattle(this);
         }));
