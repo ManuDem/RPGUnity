@@ -738,7 +738,7 @@ public class BattleSystem : MonoBehaviour
         yield return pokeball.transform.DOJump(enemyUnit.transform.position, 2f, 1, 1f).WaitForCompletion();
         yield return enemyUnit.PlayCaptureAnimation();
         yield return pokeball.transform.DOMoveY(enemyUnit.transform.position.y - 1.3f, 0.5f).WaitForCompletion();
-        # endregion
+        #endregion
 
         int shakeCount = TryToCatchPokemon(enemyUnit.Pokemon, pokeballItem);
 

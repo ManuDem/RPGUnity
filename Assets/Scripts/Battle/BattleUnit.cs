@@ -36,7 +36,6 @@ public class BattleUnit : MonoBehaviour
         #region Manu Code
         originalScale = transform.localScale;
         #endregion
-
     }
 
     public void Setup(Pokemon pokemon)
@@ -115,5 +114,5 @@ public class BattleUnit : MonoBehaviour
         sequence.Join(transform.DOScale(originalScale, 0.5f));
         yield return sequence.WaitForCompletion();
     }
-    #endregion
+#endregion
 }
