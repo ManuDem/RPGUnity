@@ -63,6 +63,7 @@ public class DialogManager : MonoBehaviour
         }
         #endregion
 
+        dialog.setLines();
         foreach (var line in dialog.Lines)
         {
             yield return TypeDialog(line);
@@ -83,6 +84,7 @@ public class DialogManager : MonoBehaviour
         IsShowing = true;
         dialogBox.SetActive(true);
 
+        dialog.setLines();
         foreach (var line in dialog.Lines)
         {
             yield return TypeDialog(line);
