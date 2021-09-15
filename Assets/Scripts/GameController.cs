@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     [SerializeField] InventoryUI inventoryUI;
 
     GameState state;
-    GameState stateBeforePause;
+    GameState prevState;
 
     public SceneDetails CurrentScene { get; private set; }
     public SceneDetails PrevScene { get; private set; }
@@ -41,13 +41,14 @@ public class GameController : MonoBehaviour
 
         DialogManager.Instance.OnShowDialog += () =>
         {
+            prevState = state;
             state = GameState.Dialog;
         };
 
         DialogManager.Instance.OnCloseDialog += () =>
         {
             if (state == GameState.Dialog)
-                state = GameState.FreeRoam;
+                state = prevState;
         };
 
         menuController.onBack += () =>
@@ -62,12 +63,12 @@ public class GameController : MonoBehaviour
     {
         if (pause)
         {
-            stateBeforePause = state;
+            prevState = state;
             state = GameState.Paused;
         }
         else
         {
-            state = stateBeforePause;
+            state = prevState;
         }
     }
 

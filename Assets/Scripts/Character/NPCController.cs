@@ -7,18 +7,17 @@ public class NPCController : MonoBehaviour, Interactable
     [SerializeField] Dialog dialog;
     [SerializeField] List<Vector2> movementPattern;
     [SerializeField] float timeBetweenPattern;
-    #region Manu Code
-    [SerializeField] Sprite sprite;
-    #endregion
 
     NPCState state;
     float idleTimer = 0f;
     int currentPattern = 0;
 
     Character character;
+    ItemGiver itemGiver;
     private void Awake()
     {
         character = GetComponent<Character>();
+        itemGiver = GetComponent<ItemGiver>();
     }
 
     public IEnumerator Interact(Transform initiator)
@@ -28,7 +27,14 @@ public class NPCController : MonoBehaviour, Interactable
             state = NPCState.Dialog;
             character.LookTowards(initiator.position);
 
-            yield return DialogManager.Instance.ShowDialog(dialog, sprite);
+            if (itemGiver != null && itemGiver.CanBeGiven())
+            {
+                yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>());
+            }
+            else
+            {
+                yield return DialogManager.Instance.ShowDialog(dialog);
+            }
 
             idleTimer = 0f;
             state = NPCState.Idle;
