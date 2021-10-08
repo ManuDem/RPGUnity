@@ -7,6 +7,9 @@ public class NPCController : MonoBehaviour, Interactable
     [SerializeField] Dialog dialog;
     [SerializeField] List<Vector2> movementPattern;
     [SerializeField] float timeBetweenPattern;
+    #region Manu Code
+    [SerializeField] Sprite sprite;
+    #endregion
 
     NPCState state;
     float idleTimer = 0f;
@@ -33,7 +36,7 @@ public class NPCController : MonoBehaviour, Interactable
             }
             else
             {
-                yield return DialogManager.Instance.ShowDialog(dialog);
+                yield return DialogManager.Instance.ShowDialog(dialog, sprite);
             }
 
             idleTimer = 0f;

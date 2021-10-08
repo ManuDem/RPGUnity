@@ -22,11 +22,19 @@ public class BattleUnit : MonoBehaviour
     Image image;
     Vector3 orginalPos;
     Color originalColor;
+    #region Manu Code
+    Vector3 originalScale;
+    #endregion
+
     private void Awake()
     {
         image = GetComponent<Image>();
         orginalPos = image.transform.localPosition;
         originalColor = image.color;
+
+        #region Manu Code
+        originalScale = transform.localScale;
+        #endregion
     }
 
     public void Setup(Pokemon pokemon)
@@ -40,7 +48,9 @@ public class BattleUnit : MonoBehaviour
         hud.gameObject.SetActive(true);
         hud.SetData(pokemon);
 
-        transform.localScale = new Vector3(1, 1, 1);
+        #region Manu Code
+        transform.localScale = originalScale;
+        #endregion
         image.color = originalColor;
         PlayEnterAnimation();
     }
@@ -89,8 +99,10 @@ public class BattleUnit : MonoBehaviour
     {
         var sequence = DOTween.Sequence();
         sequence.Append(image.DOFade(0, 0.5f));
-        sequence.Join(transform.DOLocalMoveY(orginalPos.y + 50f, 0.5f));
-        sequence.Join(transform.DOScale(new Vector3(0.3f, 0.3f, 1f), 0.5f));
+        #region Manu Code
+        sequence.Join(transform.DOLocalMoveY(orginalPos.y - 50f, 0.5f));
+        sequence.Join(transform.DOScale(originalScale, 0.5f));
+        #endregion
         yield return sequence.WaitForCompletion();
     }
 
@@ -99,7 +111,9 @@ public class BattleUnit : MonoBehaviour
         var sequence = DOTween.Sequence();
         sequence.Append(image.DOFade(1, 0.5f));
         sequence.Join(transform.DOLocalMoveY(orginalPos.y, 0.5f));
-        sequence.Join(transform.DOScale(new Vector3(1f, 1f, 1f), 0.5f));
+        #region Manu Code
+        sequence.Join(transform.DOScale(originalScale, 0.5f));
+        #endregion
         yield return sequence.WaitForCompletion();
     }
 }
