@@ -6,7 +6,7 @@ using UnityEngine;
 // Teleports the player to a different position without swithcing scenes
 public class LocationPortal : MonoBehaviour, IPlayerTriggerable
 {
-    [SerializeField] DestinationIdentifier destinationPortal;
+    [SerializeField] string destinationPortal;
     [SerializeField] Transform spawnPoint;
 
     PlayerController player;
@@ -29,8 +29,13 @@ public class LocationPortal : MonoBehaviour, IPlayerTriggerable
         GameController.Instance.PauseGame(true);
         yield return fader.FadeIn(0.5f);
 
-        var destPortal = FindObjectsOfType<LocationPortal>().First(x => x != this && x.destinationPortal == this.destinationPortal);
-        player.Character.SetPositionAndSnapToTile(destPortal.SpawnPoint.position);
+        var destPortals = GameObject.FindObjectsOfType<LocationPortal>();
+        foreach(LocationPortal destPortal in destPortals)
+        {
+            if (destPortal.name == destinationPortal)
+                player.Character.SetPositionAndSnapToTile(destPortal.SpawnPoint.position);
+        }
+        
 
         yield return fader.FadeOut(0.5f);
         GameController.Instance.PauseGame(false);
