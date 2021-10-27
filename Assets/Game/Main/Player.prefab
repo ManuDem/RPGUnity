@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2998410126476293102}
   - component: {fileID: 2998410126476292881}
   - component: {fileID: 2998410126476292883}
+  - component: {fileID: 8383209989131149943}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2998410126476292882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 0.16666667, y: 0.16666667, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2998410126923841694}
   m_RootOrder: 0
@@ -83,6 +84,26 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2998410126476292882}
   m_Enabled: 1
+--- !u!114 &8383209989131149943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2998410126476292882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 48
+  m_RefResolutionX: 1600
+  m_RefResolutionY: 1200
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &2998410126923841667
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2eb66a52665c0b4788bfa7f5c6b60fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 25
+  moveSpeed: 5
 --- !u!50 &2998410126923841691
 Rigidbody2D:
   serializedVersion: 4
