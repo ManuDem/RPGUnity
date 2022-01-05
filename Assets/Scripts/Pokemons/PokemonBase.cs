@@ -140,10 +140,7 @@ public enum PokemonType
     Bug,
     Rock,
     Ghost,
-    Dragon,
-    Dark,
-    Steel,
-    Fairy
+    Dragon
 }
 
 public enum GrowthRate
