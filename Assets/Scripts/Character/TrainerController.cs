@@ -36,12 +36,12 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
 
         if (!battleLost)
         {
-            yield return DialogManager.Instance.ShowDialog(dialog);
+            yield return DialogManager.Instance.ShowDialog(dialog, sprite);
             GameController.Instance.StartTrainerBattle(this);
         }
         else
         {
-            yield return DialogManager.Instance.ShowDialog(dialogAfterBattle);
+            yield return DialogManager.Instance.ShowDialog(dialogAfterBattle, sprite);
         }
         
     }
@@ -61,7 +61,7 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
         yield return character.Move(moveVec);
 
         // Show dialog
-        yield return DialogManager.Instance.ShowDialog(dialog);
+        yield return DialogManager.Instance.ShowDialog(dialog, sprite);
         GameController.Instance.StartTrainerBattle(this);
     }
 
