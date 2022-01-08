@@ -33,9 +33,18 @@ public class PokemonParty : MonoBehaviour
         
     }
 
-    public Pokemon GetHealthyPokemon()
+    public Pokemon GetHealthyPokemon(List<Pokemon> dontInclude=null)
     {
-        return pokemons.Where(x => x.HP > 0).FirstOrDefault();
+        var healthyPokemons = pokemons.Where(x => x.HP > 0);
+        if (dontInclude != null)
+            healthyPokemons = healthyPokemons.Where(p => !dontInclude.Contains(p));
+
+        return healthyPokemons.FirstOrDefault();
+    }
+
+    public List<Pokemon> GetHealthyPokemons(int unitCount)
+    {
+        return pokemons.Where(x => x.HP > 0).Take(unitCount).ToList();
     }
 
     public void AddPokemon(Pokemon newPokemon)
@@ -61,6 +70,8 @@ public class PokemonParty : MonoBehaviour
                 yield return EvolutionManager.i.Evolve(pokemon, evoution);
             }
         }
+
+        OnUpdated?.Invoke();
     }
 
     public static PokemonParty GetPlayerParty()
