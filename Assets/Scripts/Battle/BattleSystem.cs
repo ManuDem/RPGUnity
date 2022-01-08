@@ -734,7 +734,7 @@ public class BattleSystem : MonoBehaviour
         pokeball.sprite = pokeballItem.Icon;
 
         // Animations
-        yield return pokeball.transform.DOJump(enemyUnit.transform.position, 2f, 5, 1f).WaitForCompletion();
+        yield return pokeball.transform.DOJump(enemyUnit.transform.position, 2f, 6, 1f).WaitForCompletion();
         yield return enemyUnit.PlayCaptureAnimation();
         yield return pokeball.transform.DOMoveY(enemyUnit.transform.position.y - 1.3f, 0.5f).WaitForCompletion();
 
