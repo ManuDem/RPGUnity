@@ -14,10 +14,6 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
     [SerializeField] List<Vector2> movementPattern;
     [SerializeField] float timeBetweenPattern;
 
-    #region Manu Code
-    [SerializeField] Sprite sprite;
-    #endregion
-
     NPCState state;
     float idleTimer = 0f;
     int currentPattern = 0;
@@ -78,12 +74,12 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                 }
                 else
                 {
-                    yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue, sprite);
+                    yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue);
                 }
             }
             else
             {
-                yield return DialogManager.Instance.ShowDialog(dialog, sprite);
+                yield return DialogManager.Instance.ShowDialog(dialog);
             }
 
             idleTimer = 0f;
