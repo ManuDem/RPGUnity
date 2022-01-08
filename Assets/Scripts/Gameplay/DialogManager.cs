@@ -9,6 +9,9 @@ public class DialogManager : MonoBehaviour
     [SerializeField] GameObject dialogBox;
     [SerializeField] Text dialogText;
     [SerializeField] int lettersPerSecond;
+    #region Manu Code
+    [SerializeField] Image sprite;
+    #endregion
 
     public event Action OnShowDialog;
     public event Action OnDialogFinished;
@@ -45,6 +48,36 @@ public class DialogManager : MonoBehaviour
         dialogBox.SetActive(false);
         IsShowing = false;
     }
+
+    public IEnumerator ShowDialog(Dialog dialog, Sprite sprite)
+    {
+        yield return new WaitForEndOfFrame();
+
+        OnShowDialog?.Invoke();
+        IsShowing = true;
+        dialogBox.SetActive(true);
+        #region Manu Code
+        if (sprite != null)
+        {
+            this.sprite.sprite = sprite;
+            this.sprite.gameObject.SetActive(true);
+        }
+        #endregion
+
+        foreach (var line in dialog.Lines)
+        {
+            yield return TypeDialog(line);
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+        }
+
+        #region Manu Code
+        dialogBox.SetActive(false);
+        this.sprite.gameObject.SetActive(false);
+        #endregion
+        IsShowing = false;
+        OnDialogFinished?.Invoke();
+    }
+
 
     public IEnumerator ShowDialog(Dialog dialog)
     {
