@@ -6,14 +6,31 @@ public class Healer : MonoBehaviour
 {
     public IEnumerator Heal(Transform player, Dialog dialog)
     {
-        yield return DialogManager.Instance.ShowDialog(dialog);
+        int selectedChoice = 0;
 
-        yield return Fader.i.FadeIn(0.5f);
+        yield return DialogManager.Instance.ShowDialog(dialog, 
+            new List<string>() { "Yes please", "No thanks" }, 
+            (choiceIndex) => selectedChoice = choiceIndex );
 
-        var playerParty = player.GetComponent<PokemonParty>();
-        playerParty.Pokemons.ForEach(p => p.Heal());
-        playerParty.PartyUpdated();
+        if (selectedChoice == 0)
+        {
+            // Yes
+            yield return Fader.i.FadeIn(0.5f);
 
-        yield return Fader.i.FadeOut(0.5f);
+            var playerParty = player.GetComponent<PokemonParty>();
+            playerParty.Pokemons.ForEach(p => p.Heal());
+            playerParty.PartyUpdated();
+
+            yield return Fader.i.FadeOut(0.5f);
+
+            yield return DialogManager.Instance.ShowDialogText($"Your pokemon should be fully healed now");
+        }
+        else if (selectedChoice == 1)
+        {
+            // No
+            yield return DialogManager.Instance.ShowDialogText($"Okay! Come back if you change your mind");
+        }
+
+        
     }
 }
