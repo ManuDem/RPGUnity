@@ -1,9 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NPCController : MonoBehaviour, Interactable, ISavable
 {
+    #region Manu Code
+    [Header("Image and name")]
+    [SerializeField] Sprite sprite;
+    [SerializeField] string nameText;
+    #endregion
+
+    [Header("Dialog")]
     [SerializeField] Dialog dialog;
 
     [Header("Quests")]
@@ -53,7 +61,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             }
             else if (pokemonGiver != null && pokemonGiver.CanBeGiven())
             {
-                yield return pokemonGiver.GivePokemon(initiator.GetComponent<PlayerController>());
+                yield return pokemonGiver.GivePokemon(initiator.GetComponent<PlayerController>(), sprite, nameText);
             }
             else if (questToStart != null)
             {
@@ -76,7 +84,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                 }
                 else
                 {
-                    yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue);
+                    yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue, sprite, nameText);
                 }
             }
             else if (healer != null)
@@ -85,7 +93,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             }
             else
             {
-                yield return DialogManager.Instance.ShowDialog(dialog);
+                yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
             }
 
             idleTimer = 0f;

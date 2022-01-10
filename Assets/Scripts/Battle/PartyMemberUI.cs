@@ -12,6 +12,10 @@ public class PartyMemberUI : MonoBehaviour
 
     Pokemon _pokemon;
 
+    #region Manu Code
+    Image image;
+    #endregion
+
     public void Init(Pokemon pokemon)
     {
         _pokemon = pokemon;
@@ -19,6 +23,10 @@ public class PartyMemberUI : MonoBehaviour
         SetMessage("");
 
         _pokemon.OnHPChanged += UpdateData;
+        #region Manu Code
+        image = transform.GetChild(0).gameObject.GetComponent<Image>();
+        image.sprite = _pokemon.Base.FrontSprite;
+        #endregion
     }
 
     void UpdateData()

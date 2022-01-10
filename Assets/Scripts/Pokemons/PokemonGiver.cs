@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PokemonGiver : MonoBehaviour, ISavable
 {
@@ -9,9 +10,9 @@ public class PokemonGiver : MonoBehaviour, ISavable
 
     bool used = false;
 
-    public IEnumerator GivePokemon(PlayerController player)
+    public IEnumerator GivePokemon(PlayerController player, Sprite sprite, string nameText)
     {
-        yield return DialogManager.Instance.ShowDialog(dialog);
+        yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
 
         pokemonToGive.Init();
         player.GetComponent<PokemonParty>().AddPokemon(pokemonToGive);
