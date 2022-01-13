@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 8564437776418553086}
   - component: {fileID: 8564437776418553087}
   - component: {fileID: 8564437776418553084}
-  - component: {fileID: 2571378601985670340}
   - component: {fileID: -7638095945050874678}
   m_Layer: 10
   m_Name: NPC
@@ -73,7 +72,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008354425, y: 0.16285944}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -84,7 +83,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4803076, y: 1.1719947}
+  m_Size: {x: 1.7, y: 1.5}
   m_EdgeRadius: 0
 --- !u!212 &8564437776418553075
 SpriteRenderer:
@@ -197,6 +196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb324c25f2f63441bfeea1603df1bda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  nameText: 
   dialog:
     lines:
     - "Qui al Villaggio Papini ci si guadagna il rispetto con le sfide Pok\xE9mon."
@@ -209,22 +210,6 @@ MonoBehaviour:
   - {x: -1, y: 0}
   - {x: 0, y: 1}
   timeBetweenPattern: 2
---- !u!114 &2571378601985670340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8564437776418553081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04520315020da09459741e38bc40be43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  count: 0
-  dialog:
-    lines: []
 --- !u!114 &-7638095945050874678
 MonoBehaviour:
   m_ObjectHideFlags: 0

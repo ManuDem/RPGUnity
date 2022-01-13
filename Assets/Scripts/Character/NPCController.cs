@@ -48,7 +48,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
 
             if (questToComplete != null)
             {
-                var quest = new Quest(questToComplete);
+                var quest = new Quest(questToComplete, sprite, nameText);
                 yield return quest.CompleteQuest(initiator);
                 questToComplete = null;
 
@@ -65,7 +65,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             }
             else if (questToStart != null)
             {
-                activeQuest = new Quest(questToStart);
+                activeQuest = new Quest(questToStart, sprite, nameText);
                 yield return activeQuest.StartQuest();
                 questToStart = null;
 
@@ -137,10 +137,10 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
         saveData.activeQuest = activeQuest?.GetSaveData();
 
         if (questToStart != null)
-            saveData.questToStart = (new Quest(questToStart)).GetSaveData();
+            saveData.questToStart = (new Quest(questToStart, sprite, nameText)).GetSaveData();
 
         if (questToComplete != null)
-            saveData.questToComplete = (new Quest(questToComplete)).GetSaveData();
+            saveData.questToComplete = (new Quest(questToComplete, sprite, nameText)).GetSaveData();
 
         return saveData;
     }

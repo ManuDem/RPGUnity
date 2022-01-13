@@ -8,9 +8,14 @@ public class Quest
     public QuestBase Base { get; private set; }
     public QuestStatus Status { get; private set; }
 
-    public Quest(QuestBase _base)
+    Sprite sprite;
+    string nameText;
+
+    public Quest(QuestBase _base, Sprite _sprite, string _nameText)
     {
         Base = _base;
+        sprite = _sprite;
+        nameText = _nameText;
     }
 
     public Quest(QuestSaveData saveData)
@@ -33,7 +38,7 @@ public class Quest
     {
         Status = QuestStatus.Started;
 
-        yield return DialogManager.Instance.ShowDialog(Base.StartDialogue);
+        yield return DialogManager.Instance.ShowDialog(Base.StartDialogue, sprite, nameText);
 
         var questList = QuestList.GetQuestList();
         questList.AddQuest(this);
@@ -43,7 +48,7 @@ public class Quest
     {
         Status = QuestStatus.Completed;
 
-        yield return DialogManager.Instance.ShowDialog(Base.CompletedDialogue);
+        yield return DialogManager.Instance.ShowDialog(Base.CompletedDialogue, sprite, nameText);
 
         var inventory = Inventory.GetInventory();
         if (Base.RequiredItem != null)
