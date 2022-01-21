@@ -1246,6 +1246,43 @@ MonoBehaviour:
     type: 3}
   moveSelectionUI: {fileID: 7075410999979646797}
   inventoryUI: {fileID: 6584159537931309597}
+  wildPokemonAppared: Appare un
+  trainerIntroduction: ha voglia di perdere.
+  trainerSendPokemon: manda in campo
+  playerSendPokemon: Vai
+  whatDoYouDo: Che cosa vuoi fare?
+  trainerWillUse: "mander\xE0 in campo"
+  doYouWantToChange: Vuoi cambiare Pokemon?
+  forgetAMove: Vuoi fare dimenticare una mossa?
+  used: usa
+  moveFail: fallisce.
+  fainted: "\xE8 stato sconfitto."
+  gained: guadagna
+  exp: punti esperienza.
+  grewToLevel: aumenta al livello
+  learned: ha imparato
+  tryingToLearn: vorrebbe imparare
+  cannotLearnMore: "Non pu\xF2 imparare la mossa perch\xE8 conosce gi\xE0"
+  moves: mosse.
+  didNotLearn: non ha imparato
+  criticalHit: Brutto colpo!
+  superEffective: Superefficace!
+  notVeryEffective: "Non \xE8 molto efficace."
+  forgot: dimentica
+  andLearned: e impara
+  choosePokemonToContinue: Scegli un Pokemon per continuare.
+  comeBack: 'Ritorna '
+  wasCaught: "\xE8 stato catturato!"
+  cantSendOutAFaintedPokemon: Non puoi mandare in campo un Pokemon esausto.
+  cantSwitchSamePokemon: Non puoi cambiare lo stesso Pokemon.
+  cantStealTrainerPokemon: "Eh, volevi! Non si pu\xF2 rubare il Pokemon di un altro
+    allenatore."
+  hasBeenAddedToYourParty: "\xE8 stato aggiunto alla squadra."
+  brokeFree: "Oh no, \xE8 uscito!"
+  almostCaughtIt: Era quasi preso!
+  cantRunFromTrainerBattles: Non puoi scappare dalla lotta con un allenatore.
+  ranAwaySafely: Sei scappato.
+  cantEscape: Non puoi scappare.
 --- !u!1 &7075410999499144781
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,6 +2738,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evolutionUI: {fileID: 4814327092556697250}
   pokemonImage: {fileID: 2953591465624966706}
+  isEvolving: si sta evolvendo.
+  evolvedInto: si evolve in
 --- !u!1 &7075411000293933248
 GameObject:
   m_ObjectHideFlags: 0
@@ -6823,6 +6862,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ff865a372f1f64d92040bf37543d04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1639868419812690002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6637635446519602132, guid: 5b195870ed3761444af46f388b1c228f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5394298496142971782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2945735461060841026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2240042368976044535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6181858220682957425, guid: 5b195870ed3761444af46f388b1c228f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5394298496142971782}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4616013196364285679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2240042368976044535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:f97ec185220000d409294ec6b29948f4
+    m_TableEntryReference:
+      m_KeyId: 8631039942656
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5399017578048536806}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &2448754111556458788 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7721383100141210274, guid: 5b195870ed3761444af46f388b1c228f,
@@ -6835,6 +6932,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7c65284cf29e764b89a0e03b46cd17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2491313487316867286 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7516096063064755024, guid: 5b195870ed3761444af46f388b1c228f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5394298496142971782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3298385752509390636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &2945735461060841026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7078883654047047108, guid: 5b195870ed3761444af46f388b1c228f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5394298496142971782}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3063012308692399483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2945735461060841026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:f97ec185220000d409294ec6b29948f4
+    m_TableEntryReference:
+      m_KeyId: 365529752788992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1639868419812690002}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &2953591465624966706 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7070974864180708788, guid: 5b195870ed3761444af46f388b1c228f,
@@ -6847,6 +7002,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3298385752509390636 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7429353593805638826, guid: 5b195870ed3761444af46f388b1c228f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5394298496142971782}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7104929117698945469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3298385752509390636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:f97ec185220000d409294ec6b29948f4
+    m_TableEntryReference:
+      m_KeyId: 364935394746368
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2491313487316867286}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &3975048782523566441 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9076530233823992559, guid: 5b195870ed3761444af46f388b1c228f,
@@ -6865,6 +7066,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 5394298496142971782}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5399017578048536806 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 13875867355370336, guid: 5b195870ed3761444af46f388b1c228f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5394298496142971782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2240042368976044535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5479791234578663554 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 490968220708821764, guid: 5b195870ed3761444af46f388b1c228f,
@@ -6918,6 +7131,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2998410126923841693, guid: ac04e58a61f028840a555165fdf51ebe,
+        type: 3}
+      propertyPath: moveSpeed
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 2998410126923841694, guid: ac04e58a61f028840a555165fdf51ebe,
         type: 3}

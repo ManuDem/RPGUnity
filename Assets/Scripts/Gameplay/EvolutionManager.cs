@@ -9,10 +9,15 @@ public class EvolutionManager : MonoBehaviour
     [SerializeField] GameObject evolutionUI;
     [SerializeField] Image pokemonImage;
 
+    [Header("Dialog")]
+    [TextArea] [SerializeField] string isEvolving;
+    [TextArea] [SerializeField] string evolvedInto;
+
     public event Action OnStartEvolution;
     public event Action OnCompleteEvolution;
 
     public static EvolutionManager i { get; private set; }
+
     private void Awake()
     {
         i = this;
@@ -24,13 +29,13 @@ public class EvolutionManager : MonoBehaviour
         evolutionUI.SetActive(true);
 
         pokemonImage.sprite = pokemon.Base.FrontSprite;
-        yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} is evolving");
+        yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} {isEvolving}");
 
         var oldPokemon = pokemon.Base;
         pokemon.Evolve(evolution);
 
         pokemonImage.sprite = pokemon.Base.FrontSprite;
-        yield return DialogManager.Instance.ShowDialogText($"{oldPokemon.Name} evolved into {pokemon.Base.Name}");
+        yield return DialogManager.Instance.ShowDialogText($"{oldPokemon.Name} {evolvedInto} {pokemon.Base.Name}");
 
         evolutionUI.SetActive(false);
         OnCompleteEvolution?.Invoke();

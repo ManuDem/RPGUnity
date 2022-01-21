@@ -12,6 +12,12 @@ public class PartyScreen : MonoBehaviour
     List<Pokemon> pokemons;
     PokemonParty party;
 
+
+    [Header("Dialog")]
+    [TextArea] [SerializeField] string choosePokemon;
+    [TextArea] [SerializeField] string able;
+    [TextArea] [SerializeField] string notAble;
+
     int selection = 0;
 
     public Pokemon SelectedMember => pokemons[selection];
@@ -48,7 +54,7 @@ public class PartyScreen : MonoBehaviour
 
         UpdateMemberSelection(selection);
 
-        messageText.text = "Choose a Pokemon";
+        messageText.text = $"{choosePokemon}";
     }
 
     public void HandleUpdate(Action onSelected, Action onBack)
@@ -94,7 +100,7 @@ public class PartyScreen : MonoBehaviour
     {
         for (int i = 0; i < pokemons.Count; i++)
         {
-            string message = tmItem.CanBeTaught(pokemons[i]) ? "ABLE!" : "NOT ABLE!";
+            string message = tmItem.CanBeTaught(pokemons[i]) ? $"{able}" : $"{notAble}";
             memberSlots[i].SetMessage(message);
         }
     }

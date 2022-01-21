@@ -31,6 +31,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
     ItemGiver itemGiver;
     PokemonGiver pokemonGiver;
     Healer healer;
+    
     private void Awake()
     {
         character = GetComponent<Character>();
@@ -55,15 +56,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                 Debug.Log($"{quest.Base.Name} completed");
             }
 
-            if (itemGiver != null && itemGiver.CanBeGiven())
-            {
-                yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>());
-            }
-            else if (pokemonGiver != null && pokemonGiver.CanBeGiven())
-            {
-                yield return pokemonGiver.GivePokemon(initiator.GetComponent<PlayerController>(), sprite, nameText);
-            }
-            else if (questToStart != null)
+            if (questToStart != null)
             {
                 activeQuest = new Quest(questToStart, sprite, nameText);
                 yield return activeQuest.StartQuest();
@@ -87,13 +80,24 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                     yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue, sprite, nameText);
                 }
             }
-            else if (healer != null)
-            {
-                yield return healer.Heal(initiator, dialog);
-            }
-            else
-            {
-                yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
+            else {
+                if (itemGiver != null && itemGiver.CanBeGiven())
+                {
+                    yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>());
+                }
+                else if (pokemonGiver != null && pokemonGiver.CanBeGiven())
+                {
+                    yield return pokemonGiver.GivePokemon(initiator.GetComponent<PlayerController>(), sprite, nameText);
+                }
+
+                else if (healer != null)
+                {
+                    yield return healer.Heal(initiator, dialog);
+                }
+                else
+                {
+                    yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
+                }
             }
 
             idleTimer = 0f;
