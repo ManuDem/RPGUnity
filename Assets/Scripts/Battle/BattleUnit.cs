@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,12 +13,14 @@ public class BattleUnit : MonoBehaviour
     Vector3 originalScale;
     #endregion
 
-    public bool IsPlayerUnit {
+    public bool IsPlayerUnit
+    {
         get { return isPlayerUnit; }
     }
 
-    public BattleHud Hud {
-        get { return hud;  }
+    public BattleHud Hud
+    {
+        get { return hud; }
     }
 
     public Pokemon Pokemon { get; set; }
@@ -110,8 +112,8 @@ public class BattleUnit : MonoBehaviour
     {
         var sequence = DOTween.Sequence();
         sequence.Append(image.DOFade(1, 0.5f));
-        sequence.Join(transform.DOLocalMoveY(orginalPos.y, 0.5f));
         #region Manu Code
+        sequence.Join(transform.DOLocalMoveY(orginalPos.y, 0.5f));
         sequence.Join(transform.DOScale(originalScale, 0.5f));
         #endregion
         yield return sequence.WaitForCompletion();

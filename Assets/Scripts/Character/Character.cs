@@ -40,13 +40,11 @@ public class Character : MonoBehaviour
 
         IsMoving = true;
 
-        while (Decimal.Round((Decimal)targetPos.x, 2) != Decimal.Round((Decimal)transform.position.x, 2)
-    || Decimal.Round((Decimal)targetPos.y, 2) != Decimal.Round((Decimal)transform.position.y, 2))
+        while (Math.Round((targetPos - transform.position).sqrMagnitude) > Mathf.Epsilon)
         {
             transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
             yield return null;
         }
-
         transform.position = targetPos;
 
         IsMoving = false;

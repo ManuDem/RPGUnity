@@ -8,15 +8,14 @@ public class PartyScreen : MonoBehaviour
 {
     [SerializeField] Text messageText;
 
+    [Header("Dialog")]
+    [TextArea] [SerializeField] string chooseAPokemon;
+    [TextArea] [SerializeField] string able;
+    [TextArea] [SerializeField] string notAble;
+
     PartyMemberUI[] memberSlots;
     List<Pokemon> pokemons;
     PokemonParty party;
-
-
-    [Header("Dialog")]
-    [TextArea] [SerializeField] string choosePokemon;
-    [TextArea] [SerializeField] string able;
-    [TextArea] [SerializeField] string notAble;
 
     int selection = 0;
 
@@ -54,7 +53,7 @@ public class PartyScreen : MonoBehaviour
 
         UpdateMemberSelection(selection);
 
-        messageText.text = $"{choosePokemon}";
+        messageText.text = $"{chooseAPokemon}";
     }
 
     public void HandleUpdate(Action onSelected, Action onBack)

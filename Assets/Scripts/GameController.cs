@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Battle, Dialog, Menu, PartyScreen, Bag, Cutscene, Paused, Evolution }
+public enum GameState { FreeRoam, Battle, Dialog, Menu, PartyScreen, Bag, Cutscene, Paused, Evolution, Shop }
 
 public class GameController : MonoBehaviour
 {
@@ -71,6 +71,9 @@ public class GameController : MonoBehaviour
             partyScreen.SetPartyData();
             state = stateBeforeEvolution;
         };
+
+        ShopController.i.OnStart += () => state = GameState.Shop;
+        ShopController.i.OnFinish += () => state = GameState.FreeRoam;
     }
 
     public void PauseGame(bool pause)
@@ -117,7 +120,7 @@ public class GameController : MonoBehaviour
     public void OnEnterTrainersView(TrainerController trainer)
     {
         state = GameState.Cutscene;
-                StartCoroutine(trainer.TriggerTrainerBattle(playerController));
+        StartCoroutine(trainer.TriggerTrainerBattle(playerController));
     }
 
     void EndBattle(bool won)
@@ -186,6 +189,10 @@ public class GameController : MonoBehaviour
             };
 
             inventoryUI.HandleUpdate(onBack);
+        }
+        else if (state == GameState.Shop)
+        {
+            ShopController.i.HandleUpdate();
         }
     }
 

@@ -16,6 +16,7 @@ public class PartyMemberUI : MonoBehaviour
     Image image;
     #endregion
 
+
     public void Init(Pokemon pokemon)
     {
         _pokemon = pokemon;

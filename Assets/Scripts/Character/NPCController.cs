@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class NPCController : MonoBehaviour, Interactable, ISavable
 {
@@ -9,10 +8,10 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
     [Header("Image and name")]
     [SerializeField] Sprite sprite;
     [SerializeField] string nameText;
-    #endregion
 
     [Header("Dialog")]
     [SerializeField] Dialog dialog;
+    #endregion
 
     [Header("Quests")]
     [SerializeField] QuestBase questToStart;
@@ -31,13 +30,14 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
     ItemGiver itemGiver;
     PokemonGiver pokemonGiver;
     Healer healer;
-    
+    Merchant merchant;
     private void Awake()
     {
         character = GetComponent<Character>();
         itemGiver = GetComponent<ItemGiver>();
         pokemonGiver = GetComponent<PokemonGiver>();
         healer = GetComponent<Healer>();
+        merchant = GetComponent<Merchant>();
     }
 
     public IEnumerator Interact(Transform initiator)
@@ -56,7 +56,15 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                 Debug.Log($"{quest.Base.Name} completed");
             }
 
-            if (questToStart != null)
+            if (itemGiver != null && itemGiver.CanBeGiven())
+            {
+                yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>());
+            }
+            else if (pokemonGiver != null && pokemonGiver.CanBeGiven())
+            {
+                yield return pokemonGiver.GivePokemon(initiator.GetComponent<PlayerController>(), sprite, nameText);
+            }
+            else if (questToStart != null)
             {
                 activeQuest = new Quest(questToStart, sprite, nameText);
                 yield return activeQuest.StartQuest();
@@ -80,24 +88,17 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                     yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue, sprite, nameText);
                 }
             }
-            else {
-                if (itemGiver != null && itemGiver.CanBeGiven())
-                {
-                    yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>());
-                }
-                else if (pokemonGiver != null && pokemonGiver.CanBeGiven())
-                {
-                    yield return pokemonGiver.GivePokemon(initiator.GetComponent<PlayerController>(), sprite, nameText);
-                }
-
-                else if (healer != null)
-                {
-                    yield return healer.Heal(initiator, dialog);
-                }
-                else
-                {
-                    yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
-                }
+            else if (healer != null)
+            {
+                yield return healer.Heal(initiator, dialog);
+            }
+            else if (merchant != null)
+            {
+                yield return merchant.Trade();
+            }
+            else
+            {
+                yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
             }
 
             idleTimer = 0f;

@@ -17,7 +17,6 @@ public class EvolutionManager : MonoBehaviour
     public event Action OnCompleteEvolution;
 
     public static EvolutionManager i { get; private set; }
-
     private void Awake()
     {
         i = this;

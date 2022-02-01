@@ -10,8 +10,9 @@ public class Dialog
 
     [SerializeField] List<string> lines;
 
-    public List<string> Lines {
-        get 
+    public List<string> Lines
+    {
+        get
         {
             lines.Clear();
             if (dialog.Contains('\n'))
@@ -46,7 +47,8 @@ public class Dialog
                     }
                 }
             }
-            else {
+            else
+            {
                 string[] splittedStringSpace = dialog.Split(new char[] { ' ' });
                 string tempString = "";
 
@@ -66,17 +68,20 @@ public class Dialog
                         lines.Add(tempString);
                         tempString = "";
                     }
-                    else if (count == (splittedStringSpace.Length - 1) && tempString!= "")
+                    else if (count == (splittedStringSpace.Length - 1) && tempString != "")
                     {
                         lines.Add(tempString);
                         tempString = "";
                     }
                 }
             }
-            return lines;
+            if (lines != null)
+                return lines;
+            else
+                return new List<string>();
         }
     }
-    }
+}
 
 
 

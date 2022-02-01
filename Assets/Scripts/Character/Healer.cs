@@ -5,10 +5,11 @@ using UnityEngine;
 public class Healer : MonoBehaviour
 {
     [Header("Dialog")]
-    [TextArea] [SerializeField] string healedPokemon;
-    [TextArea] [SerializeField] string notHealedPokemon;
+    [TextArea] [SerializeField] string healed;
+    [TextArea] [SerializeField] string notHealed;
     [TextArea] [SerializeField] string yes;
     [TextArea] [SerializeField] string no;
+
     public IEnumerator Heal(Transform player, Dialog dialog)
     {
         int selectedChoice = 0;
@@ -28,12 +29,12 @@ public class Healer : MonoBehaviour
 
             yield return Fader.i.FadeOut(0.5f);
 
-            yield return DialogManager.Instance.ShowDialogText(healedPokemon);
+            yield return DialogManager.Instance.ShowDialogText(healed);
         }
         else if (selectedChoice == 1)
         {
             // No
-            yield return DialogManager.Instance.ShowDialogText(notHealedPokemon);
+            yield return DialogManager.Instance.ShowDialogText(notHealed);
         }
 
         
