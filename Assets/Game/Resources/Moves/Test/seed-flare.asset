@@ -1,0 +1,652 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: seed-flare
+  m_EditorClassIdentifier: 
+  name: Seed Flare
+  description: "The user generates\na shock wave from\nwithin its body.\nIt may also
+    lower the\ntarget\u2019s Sp. Def."
+  type: 5
+  power: 120
+  accuracy: 85
+  alwaysHits: 0
+  pp: 5
+  priority: 0
+  category: 1
+  effects:
+    boosts:
+    - stat: 3
+      boost: -2
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 465
+  pokeApiMove:
+    accuracy: 85
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: cool
+      url: https://pokeapi.co/api/v2/contest-type/1/
+    damage_class:
+      name: special
+      url: https://pokeapi.co/api/v2/move-damage-class/3/
+    effect_chance: 40
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage.  Has a $effect_chance% chance to lower the
+        target's Special Defense by two stages.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Has a $effect_chance% chance to lower the target's Special Defense
+        by two stages.
+    flavor_text_entries:
+    - flavor_text: "The user generates\na shock wave from\nwithin its body.\nIt may
+        also lower the\ntarget\u2019s Sp. Def."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "The user generates\na shock wave from\nwithin its body.\nIt may
+        also lower the\ntarget\u2019s Sp. Def."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "The user generates\na shock wave from\nwithin its body.\nIt may
+        also lower the\ntarget\u2019s Sp. Def."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Le corps du lanceur \xE9met une onde de\nchoc. Peut aussi baisser
+        grandement\nla D\xE9fense Sp\xE9ciale de la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user emits a shock wave from\nits body to attack its target.
+        It may\nharshly lower the target\u2019s Sp. Def."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user emits a shock wave from\nits body to attack its target.
+        It may\nharshly lower the target\u2019s Sp. Def."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u304B\u3089\u3060\u306E\u3000\u306A\u304B\u304B\u3089\u3000\u3057\u3087\u3046\u3052\u304D\u306F\u3092\n\u306F\u3063\u305B\u3044\u3000\u3055\u305B\u308B\u3002\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uBAB8\uC18D\uC5D0\uC11C \uCDA9\uACA9\uD30C\uB97C\n\uBC1C\uC0DD\uC2DC\uD0A8\uB2E4.
+        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B4
+        \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Le corps du lanceur \xE9met une onde de choc.\nPeut aussi baisser
+        grandement la D\xE9fense Sp\xE9ciale\nde la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Anwender erzeugt eine Schockwelle.
+
+        Spezial-Verteidigung
+        des Zieles wird stark gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Una onda de choque se libera del cuerpo. Puede
+
+        bajar
+        mucho la Defensa Especial del objetivo.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa genera un\u2019onda d\u2019urto dal suo corpo.\nPu\xF2
+        anche ridurre di molto la Difesa Speciale\ndel bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user emits a shock wave from\nits body to attack its target.
+        This may\nalso harshly lower the target\u2019s Sp. Def."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u4F53\u306E\u3000\u4E2D\u304B\u3089\u3000\u885D\u6483\u6CE2\u3092\n\u767A\u751F\u3055\u305B\u308B\u3002\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u304B\u3089\u3060\u306E\u3000\u306A\u304B\u304B\u3089\u3000\u3057\u3087\u3046\u3052\u304D\u306F\u3092\n\u306F\u3063\u305B\u3044\u3000\u3055\u305B\u308B\u3002\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uBAB8\uC18D\uC5D0\uC11C \uCDA9\uACA9\uD30C\uB97C\n\uBC1C\uC0DD\uC2DC\uD0A8\uB2E4.
+        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B4
+        \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Le corps du lanceur \xE9met une onde de choc.\nPeut aussi baisser
+        fortement la D\xE9fense Sp\xE9ciale\nde la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Anwender erzeugt eine Schockwelle.
+
+        Spezial-Verteidigung
+        des Zieles wird stark gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Una onda de choque se libera del cuerpo. Puede \nbajar mucho
+        la Defensa Especial del objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa genera un\u2019onda d\u2019urto dal suo corpo.\nPu\xF2
+        anche ridurre di molto la Difesa Speciale\ndel bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user emits a shock wave from\nits body to attack its target.
+        This may\nalso harshly lower the target\u2019s Sp. Def."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u4F53\u306E\u3000\u4E2D\u304B\u3089\u3000\u885D\u6483\u6CE2\u3092\n\u767A\u751F\u3055\u305B\u308B\u3002\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u304B\u3089\u3060\u306E\u3000\u306A\u304B\u304B\u3089\u3000\u3057\u3087\u3046\u3052\u304D\u306F\u3092\n\u306F\u3063\u305B\u3044\u3000\u3055\u305B\u308B\u3002\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uBAB8\uC18D\uC5D0\uC11C \uCDA9\uACA9\uD30C\uB97C\n\uBC1C\uC0DD\uC2DC\uD0A8\uB2E4.
+        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B4
+        \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5F9E\u8EAB\u9AD4\u88E1\u767C\u51FA\u885D\u64CA\u6CE2\u653B\u64CA\u5C0D\u624B\u3002\n\u6709\u6642\u6703\u5927\u5E45\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u9632\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le corps du lanceur \xE9met une onde de choc.\nPeut aussi beaucoup
+        baisser la D\xE9fense Sp\xE9ciale\nde la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Anwender erzeugt eine Schockwelle.
+
+        Spezial-Verteidigung
+        des Zieles wird
+
+        eventuell stark gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Una onda de choque se libera del cuerpo. Puede \nbajar mucho
+        la Defensa Especial del objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa genera un\u2019onda d\u2019urto dal suo corpo.\nPu\xF2
+        anche ridurre di molto la Difesa Speciale\ndel bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user emits a shock wave from its body to attack\nits target.
+        This may also harshly lower the target\u2019s\nSp. Def stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u4F53\u306E\u3000\u4E2D\u304B\u3089\u3000\u885D\u6483\u6CE2\u3092\n\u767A\u751F\u3055\u305B\u308B\u3002\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u4ECE\u8EAB\u4F53\u91CC\u4EA7\u751F\u51B2\u51FB\u6CE2\u3002\n\u6709\u65F6\u4F1A\u5927\u5E45\u964D\u4F4E\u5BF9\u624B\u7684\u7279\u9632\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u304B\u3089\u3060\u306E\u3000\u306A\u304B\u304B\u3089\u3000\u3057\u3087\u3046\u3052\u304D\u306F\u3092\n\u306F\u3063\u305B\u3044\u3000\u3055\u305B\u308B\u3002\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uBAB8\uC18D\uC5D0\uC11C \uCDA9\uACA9\uD30C\uB97C\n\uBC1C\uC0DD\uC2DC\uD0A8\uB2E4.
+        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B4
+        \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5F9E\u8EAB\u9AD4\u88E1\u767C\u51FA\u885D\u64CA\u6CE2\u653B\u64CA\u5C0D\u624B\u3002\n\u6709\u6642\u6703\u5927\u5E45\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u9632\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le corps du lanceur \xE9met une onde de choc.\nPeut aussi beaucoup
+        baisser la D\xE9fense Sp\xE9ciale\nde la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Anwender erzeugt eine Schockwelle.
+
+        Spezial-Verteidigung
+        des Zieles wird
+
+        eventuell stark gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Una onda de choque se libera del cuerpo. Puede \nbajar mucho
+        la Defensa Especial del objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa genera un\u2019onda d\u2019urto dal suo corpo.\nPu\xF2
+        anche ridurre di molto la Difesa Speciale\ndel bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user emits a shock wave from its body to attack\nits target.
+        This may also harshly lower the target\u2019s\nSp. Def stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u4F53\u306E\u3000\u4E2D\u304B\u3089\u3000\u885D\u6483\u6CE2\u3092\n\u767A\u751F\u3055\u305B\u308B\u3002\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u4ECE\u8EAB\u4F53\u91CC\u4EA7\u751F\u51B2\u51FB\u6CE2\u3002\n\u6709\u65F6\u4F1A\u5927\u5E45\u964D\u4F4E\u5BF9\u624B\u7684\u7279\u9632\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u304B\u3089\u3060\u306E\u3000\u306A\u304B\u304B\u3089\u3000\u3057\u3087\u3046\u3052\u304D\u306F\u3092\n\u306F\u3063\u305B\u3044\u3000\u3055\u305B\u308B\u3002\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uBAB8\uC18D\uC5D0\uC11C \uCDA9\uACA9\uD30C\uB97C\n\uBC1C\uC0DD\uC2DC\uD0A8\uB2E4.
+        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B4
+        \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5F9E\u8EAB\u9AD4\u88E1\u767C\u51FA\u885D\u64CA\u6CE2\u653B\u64CA\u5C0D\u624B\u3002\n\u6709\u6642\u6703\u5927\u5E45\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u9632\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le corps du lanceur \xE9met une onde de choc.\nPeut aussi beaucoup
+        baisser la D\xE9fense Sp\xE9ciale\nde la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Anwender erzeugt eine Schockwelle.
+
+        Spezial-Verteidigung
+        des Zieles wird
+
+        eventuell stark gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Una onda de choque se libera del cuerpo. Puede \nbajar mucho
+        la Defensa Especial del objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa genera un\u2019onda d\u2019urto dal suo corpo.\nPu\xF2
+        anche ridurre di molto la Difesa Speciale\ndel bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user emits a shock wave from its body to attack\nits target.
+        This may also harshly lower the target\u2019s\nSp. Def stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u4F53\u306E\u3000\u4E2D\u304B\u3089\u3000\u885D\u6483\u6CE2\u3092\n\u767A\u751F\u3055\u305B\u308B\u3002\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u4ECE\u8EAB\u4F53\u91CC\u4EA7\u751F\u51B2\u51FB\u6CE2\u3002\n\u6709\u65F6\u4F1A\u5927\u5E45\u964D\u4F4E\u5BF9\u624B\u7684\u7279\u9632\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u304B\u3089\u3060\u306E\u3000\u306A\u304B\u304B\u3089\u3000\u3057\u3087\u3046\u3052\u304D\u306F\u3092\n\u306F\u3063\u305B\u3044\u3000\u3055\u305B\u308B\u3002\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uBAB8\uC18D\uC5D0\uC11C \uCDA9\uACA9\uD30C\uB97C\n\uBC1C\uC0DD\uC2DC\uD0A8\uB2E4.
+        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B4
+        \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5F9E\u8EAB\u9AD4\u88E1\u767C\u51FA\u885D\u64CA\u6CE2\u653B\u64CA\u5C0D\u624B\u3002\n\u6709\u6642\u6703\u5927\u5E45\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u9632\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le corps du lanceur \xE9met une onde de choc.\nPeut aussi beaucoup
+        baisser la D\xE9fense Sp\xE9ciale\nde la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Anwender erzeugt eine Schockwelle.
+
+        Spezial-Verteidigung
+        des Zieles wird
+
+        eventuell stark gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Una onda de choque se libera del cuerpo. Puede bajar
+
+        mucho
+        la Defensa Especial del objetivo.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa genera un\u2019onda d\u2019urto dal suo corpo.\nPu\xF2
+        anche ridurre di molto la Difesa Speciale\ndel bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user emits a shock wave from its body to attack\nits target.
+        This may also harshly lower the target\u2019s\nSp. Def stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u4F53\u306E\u3000\u4E2D\u304B\u3089\u3000\u885D\u6483\u6CE2\u3092\n\u767A\u751F\u3055\u305B\u308B\u3002\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u4ECE\u8EAB\u4F53\u91CC\u4EA7\u751F\u51B2\u51FB\u6CE2\u3002\n\u6709\u65F6\u4F1A\u5927\u5E45\u964D\u4F4E\u5BF9\u624B\u7684\u7279\u9632\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-iv
+      url: https://pokeapi.co/api/v2/generation/4/
+    id: 465
+    learned_by_pokemon:
+    - name: shaymin-land
+      url: https://pokeapi.co/api/v2/pokemon/492/
+    - name: shaymin-sky
+      url: https://pokeapi.co/api/v2/pokemon/10006/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage+lower
+        url: https://pokeapi.co/api/v2/move-category/6/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 40
+    name: seed-flare
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30B7\u30FC\u30C9\u30D5\u30EC\u30A2"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC2DC\uB4DC\uD50C\uB808\uC5B4"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u7A2E\u5B50\u9583\u5149"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Fulmigraine
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Schocksamen
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Fogonazo
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Infuriaseme
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Seed Flare
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30B7\u30FC\u30C9\u30D5\u30EC\u30A2"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u79CD\u5B50\u95EA\u5149"
+    past_values: []
+    power: 120
+    pp: 5
+    priority: 0
+    stat_changes:
+    - change: -2
+      stat:
+        name: special-defense
+        url: https://pokeapi.co/api/v2/stat/5/
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/22/
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: grass
+      url: https://pokeapi.co/api/v2/type/12/

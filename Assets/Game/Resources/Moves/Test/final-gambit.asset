@@ -1,0 +1,664 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: final-gambit
+  m_EditorClassIdentifier: 
+  name: Final Gambit
+  description: "The user risks everything to attack its\ntarget. The user faints
+    but does damage\nequal to the user\u2019s HP."
+  type: 7
+  power: 0
+  accuracy: 100
+  alwaysHits: 0
+  pp: 5
+  priority: 0
+  category: 1
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 515
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: special
+      url: https://pokeapi.co/api/v2/move-damage-class/3/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts damage equal to the user's remaining HP.  User faints.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Inflicts damage equal to the user's remaining HP.  User faints.
+    flavor_text_entries:
+    - flavor_text: "Une attaque tr\xE8s risqu\xE9e. Le lanceur perd\ntous ses PV
+        restants et inflige autant de\nd\xE9g\xE2ts \xE0 l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user risks everything to attack its\ntarget. The user faints
+        but does damage\nequal to the user\u2019s HP."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user risks everything to attack its\ntarget. The user faints
+        but does damage\nequal to the user\u2019s HP."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3044\u306E\u3061\u304C\u3051\u3067\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3042\u3044\u3066\u306B\n\uFF28\uFF30\u3076\u3093\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uBAA9\uC228\uC744 \uAC78\uACE0 \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC740
+        \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC \uC0C1\uB300\uC5D0\uAC8C\nHP\uB9CC\uD07C\uC758
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Une attaque tr\xE8s risqu\xE9e.\nLe lanceur perd tous ses PV
+        restants et inflige\nautant de d\xE9g\xE2ts \xE0 l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Ein Angriff, der dem Ziel Schaden in H\xF6he\nder aktuellen KP
+        des Anwenders zuf\xFCgt.\nLetzterer wird dadurch selbst besiegt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "El usuario se sacrifica caus\xE1ndole un da\xF1o al\nobjetivo
+        equivalente a sus propios PS perdidos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Chi la usa attacca con tutta la potenza di cui
+
+        dispone
+        e va KO, ma infligge al bersaglio un danno
+
+        pari ai PS che ha perso.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'The user risks everything to attack its
+
+        target. The
+        user faints but does damage
+
+        equal to its HP.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u547D\u61F8\u3051\u3067\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u76F8\u624B\u306B\n\uFF28\uFF30\u5206\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3044\u306E\u3061\u304C\u3051\u3067\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3042\u3044\u3066\u306B\n\uFF28\uFF30\u3076\u3093\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uBAA9\uC228\uC744 \uAC78\uACE0 \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC740
+        \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC \uC0C1\uB300\uC5D0\uAC8C\nHP\uB9CC\uD07C\uC758
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Une attaque tr\xE8s risqu\xE9e.\nLe lanceur perd tous ses PV
+        restants et inflige\nautant de d\xE9g\xE2ts \xE0 l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Ein Angriff, der dem Ziel Schaden in H\xF6he\nder aktuellen KP
+        des Anwenders zuf\xFCgt.\nLetzterer wird dadurch selbst besiegt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "El usuario se sacrifica caus\xE1ndole un da\xF1o al \nobjetivo
+        equivalente a sus propios PS perdidos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa attacca con tutta la potenza di cui dispone \ne va
+        KO, ma infligge al bersaglio un danno pari\nai PS che ha perso."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'The user risks everything to attack its
+
+        target. The
+        user faints but does damage
+
+        equal to its HP.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u547D\u61F8\u3051\u3067\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u76F8\u624B\u306B\n\uFF28\uFF30\u5206\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3044\u306E\u3061\u304C\u3051\u3067\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3042\u3044\u3066\u306B\n\uFF28\uFF30\u3076\u3093\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uBAA9\uC228\uC744 \uAC78\uACE0 \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC740
+        \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC \uC0C1\uB300\uC5D0\uAC8C\nHP\uB9CC\uD07C\uC758
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u6368\u8EAB\u653B\u64CA\u5C0D\u624B\u3002\n\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\u4F46\u80FD\u5920\u7D66\u4E88\u5C0D\u624B\n\u548C\u81EA\u5DF1\u73FE\u6709\uFF28\uFF30\u76F8\u540C\u7684\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Une attaque tr\xE8s risqu\xE9e.\nLe lanceur perd tous ses PV
+        restants et inflige\nautant de d\xE9g\xE2ts \xE0 l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Ein Angriff, der dem Ziel Schaden in H\xF6he der\naktuellen KP
+        des Anwenders zuf\xFCgt. Letzterer wird\ndadurch selbst besiegt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "El usuario se sacrifica caus\xE1ndole un da\xF1o al \nobjetivo
+        equivalente a sus propios PS perdidos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Chi la usa attacca con tutta la potenza di cui
+
+        dispone
+        e va KO, ma infligge al bersaglio un danno
+
+        pari ai PS che ha perso.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'The user risks everything to attack its target. The
+
+        user
+        faints but does damage equal to its HP.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u547D\u61F8\u3051\u3067\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u76F8\u624B\u306B\n\uFF28\uFF30\u5206\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u62FC\u547D\u653B\u51FB\u5BF9\u624B\u3002\n\u867D\u7136\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\u4F46\u4F1A\u7ED9\u4E88\u5BF9\u624B\n\u548C\u81EA\u5DF1\u76EE\u524D\uFF28\uFF30\u7B49\u91CF\u7684\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3044\u306E\u3061\u304C\u3051\u3067\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3042\u3044\u3066\u306B\n\uFF28\uFF30\u3076\u3093\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uBAA9\uC228\uC744 \uAC78\uACE0 \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC740
+        \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC \uC0C1\uB300\uC5D0\uAC8C\nHP\uB9CC\uD07C\uC758
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u6368\u8EAB\u653B\u64CA\u5C0D\u624B\u3002\n\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\u4F46\u80FD\u5920\u7D66\u4E88\u5C0D\u624B\n\u548C\u81EA\u5DF1\u73FE\u6709\uFF28\uFF30\u76F8\u540C\u7684\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Une attaque tr\xE8s risqu\xE9e.\nLe lanceur perd tous ses PV
+        restants et inflige\nautant de d\xE9g\xE2ts \xE0 l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Ein Angriff, der dem Ziel Schaden in H\xF6he der\naktuellen KP
+        des Anwenders zuf\xFCgt. Letzterer wird\ndadurch selbst besiegt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "El usuario se sacrifica caus\xE1ndole un da\xF1o al \nobjetivo
+        equivalente a sus propios PS perdidos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Chi la usa attacca con tutta la potenza di cui
+
+        dispone
+        e va KO, ma infligge al bersaglio un danno
+
+        pari ai PS che ha perso.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'The user risks everything to attack its target. The
+
+        user
+        faints but does damage equal to its HP.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u547D\u61F8\u3051\u3067\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u76F8\u624B\u306B\n\uFF28\uFF30\u5206\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u62FC\u547D\u653B\u51FB\u5BF9\u624B\u3002\n\u867D\u7136\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\u4F46\u4F1A\u7ED9\u4E88\u5BF9\u624B\n\u548C\u81EA\u5DF1\u76EE\u524D\uFF28\uFF30\u7B49\u91CF\u7684\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3044\u306E\u3061\u304C\u3051\u3067\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3042\u3044\u3066\u306B\n\uFF28\uFF30\u3076\u3093\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uBAA9\uC228\uC744 \uAC78\uACE0 \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC740
+        \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC \uC0C1\uB300\uC5D0\uAC8C\nHP\uB9CC\uD07C\uC758
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u6368\u8EAB\u653B\u64CA\u5C0D\u624B\u3002\n\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\u4F46\u80FD\u5920\u7D66\u4E88\u5C0D\u624B\n\u548C\u81EA\u5DF1\u73FE\u6709HP\u76F8\u540C\u7684\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Une attaque tr\xE8s risqu\xE9e.\nLe lanceur perd tous ses PV
+        restants et inflige\nautant de d\xE9g\xE2ts \xE0 l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Ein Angriff, der dem Ziel Schaden in H\xF6he der\naktuellen KP
+        des Anwenders zuf\xFCgt. Letzterer wird\ndadurch selbst besiegt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "El usuario se sacrifica caus\xE1ndole un da\xF1o al \nobjetivo
+        equivalente a sus propios PS perdidos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Chi la usa attacca con tutta la potenza di cui
+
+        dispone
+        e va KO, ma infligge al bersaglio un danno
+
+        pari ai PS che ha perso.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'The user risks everything to attack its target. The
+
+        user
+        faints but does damage equal to its HP.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u547D\u61F8\u3051\u3067\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u76F8\u624B\u306B\n\uFF28\uFF30\u5206\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u62FC\u547D\u653B\u51FB\u5BF9\u624B\u3002\n\u867D\u7136\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\u4F46\u4F1A\u7ED9\u4E88\u5BF9\u624B\n\u548C\u81EA\u5DF1\u76EE\u524DHP\u7B49\u91CF\u7684\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3044\u306E\u3061\u304C\u3051\u3067\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3042\u3044\u3066\u306B\n\uFF28\uFF30\u3076\u3093\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uBAA9\uC228\uC744 \uAC78\uACE0 \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC740
+        \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC \uC0C1\uB300\uC5D0\uAC8C\nHP\uB9CC\uD07C\uC758
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u6368\u8EAB\u653B\u64CA\u5C0D\u624B\u3002\n\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\u4F46\u80FD\u5920\u7D66\u4E88\u5C0D\u624B\n\u548C\u81EA\u5DF1\u73FE\u6709\uFF28\uFF30\u76F8\u540C\u7684\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Une attaque tr\xE8s risqu\xE9e.\nLe lanceur perd tous ses PV
+        restants et inflige autant\nde d\xE9g\xE2ts \xE0 l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Ein Angriff, der dem Ziel Schaden in H\xF6he der aktuellen\nKP
+        des Anwenders zuf\xFCgt. Letzterer wird dadurch selbst\nbesiegt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "El usuario se sacrifica caus\xE1ndole un da\xF1o al objetivo\nequivalente
+        a sus propios PS perdidos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Chi la usa attacca con tutta la potenza di cui
+
+        dispone
+        e va KO, ma infligge al bersaglio un danno
+
+        pari ai PS che ha perso.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'The user risks everything to attack its target. The
+
+        user
+        faints but does damage equal to its HP.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u547D\u61F8\u3051\u3067\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u76F8\u624B\u306B\n\uFF28\uFF30\u5206\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u62FC\u547D\u653B\u51FB\u5BF9\u624B\u3002\n\u867D\u7136\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\u4F46\u4F1A\u7ED9\u4E88\u5BF9\u624B\n\u548C\u81EA\u5DF1\u76EE\u524D\uFF28\uFF30\u7B49\u91CF\u7684\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-v
+      url: https://pokeapi.co/api/v2/generation/5/
+    id: 515
+    learned_by_pokemon:
+    - name: rattata
+      url: https://pokeapi.co/api/v2/pokemon/19/
+    - name: diglett
+      url: https://pokeapi.co/api/v2/pokemon/50/
+    - name: mankey
+      url: https://pokeapi.co/api/v2/pokemon/56/
+    - name: primeape
+      url: https://pokeapi.co/api/v2/pokemon/57/
+    - name: farfetchd
+      url: https://pokeapi.co/api/v2/pokemon/83/
+    - name: shuckle
+      url: https://pokeapi.co/api/v2/pokemon/213/
+    - name: nincada
+      url: https://pokeapi.co/api/v2/pokemon/290/
+    - name: zangoose
+      url: https://pokeapi.co/api/v2/pokemon/335/
+    - name: seviper
+      url: https://pokeapi.co/api/v2/pokemon/336/
+    - name: starly
+      url: https://pokeapi.co/api/v2/pokemon/396/
+    - name: staravia
+      url: https://pokeapi.co/api/v2/pokemon/397/
+    - name: staraptor
+      url: https://pokeapi.co/api/v2/pokemon/398/
+    - name: riolu
+      url: https://pokeapi.co/api/v2/pokemon/447/
+    - name: victini
+      url: https://pokeapi.co/api/v2/pokemon/494/
+    - name: basculin-red-striped
+      url: https://pokeapi.co/api/v2/pokemon/550/
+    - name: shelmet
+      url: https://pokeapi.co/api/v2/pokemon/616/
+    - name: accelgor
+      url: https://pokeapi.co/api/v2/pokemon/617/
+    - name: basculin-blue-striped
+      url: https://pokeapi.co/api/v2/pokemon/10016/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: final-gambit
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3044\u306E\u3061\u304C\u3051"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uBAA9\uC228\uAC78\uAE30"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u640F\u547D"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Tout ou Rien
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Wagemut
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Sacrificio
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Azzardo
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Final Gambit
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3044\u306E\u3061\u304C\u3051"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u640F\u547D"
+    past_values: []
+    power: 0
+    pp: 5
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: fighting
+      url: https://pokeapi.co/api/v2/type/2/

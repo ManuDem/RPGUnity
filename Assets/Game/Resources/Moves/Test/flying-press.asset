@@ -1,0 +1,615 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: flying-press
+  m_EditorClassIdentifier: 
+  name: Flying Press
+  description: 'The user dives down onto the target
+
+    from the sky. This move
+    is Fighting
+
+    and Flying type simultaneously.'
+  type: 7
+  power: 100
+  accuracy: 95
+  alwaysHits: 0
+  pp: 10
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 560
+  pokeApiMove:
+    accuracy: 95
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: 'Inflicts regular damage.  For the purposes of type effectiveness,
+        this move is both fighting- and flying-type: its final effectiveness is determined
+        by multiplying the effectiveness of each type against each of the target''s
+        types.
+
+
+        For all other purposes, this move is pure Fighting-type. 
+        If this move''s type is changed, its Fighting typing is overwritten, and
+        its secondary type remains Flying.
+
+
+        If the target has used minimize
+        since entering battle, this move has double power and will never miss.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Deals both fighting and flying-type damage.
+    flavor_text_entries:
+    - flavor_text: "\u304F\u3046\u3061\u3085\u3046\u304B\u3089\u3000\u3042\u3044\u3066\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u308F\u3056\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u3069\u3046\u3058\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uACF5\uC911\uC5D0\uC11C \uC0C1\uB300\uC5D0\uAC8C \uB2E4\uC774\uBE0C\uD55C\uB2E4.\n\uC774
+        \uAE30\uC220\uC740 \uACA9\uD22C\uD0C0\uC785\uC784\uACFC \uB3D9\uC2DC\uC5D0\n\uBE44\uD589\uD0C0\uC785\uC774\uAE30\uB3C4
+        \uD558\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Une attaque en piqu\xE9 depuis le ciel, \xE0 la fois de\ntype
+        Combat et de type Vol."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Der Anwender st\xFCrzt sich aus der Luft auf\ndas Ziel. Die Attacke
+        geh\xF6rt sowohl dem Typ\nKampf als auch dem Typ Flug an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "El Pok\xE9mon que lo usa se lanza sobre su\noponente. Este movimiento
+        es de tipo Lucha y\ntipo Volador al mismo tiempo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa si tuffa sul bersaglio dall\u2019alto. \xC8 una\nmossa
+        di tipo Lotta e Volante allo stesso tempo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'The user dives down onto the target
+
+        from the sky. This
+        move is Fighting
+
+        and Flying type simultaneously.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u7A7A\u4E2D\u304B\u3089\u3000\u76F8\u624B\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u6280\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u540C\u6642\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u304F\u3046\u3061\u3085\u3046\u304B\u3089\u3000\u3042\u3044\u3066\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u308F\u3056\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u3069\u3046\u3058\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uACF5\uC911\uC5D0\uC11C \uC0C1\uB300\uC5D0\uAC8C \uB2E4\uC774\uBE0C\uD55C\uB2E4.\n\uC774
+        \uAE30\uC220\uC740 \uACA9\uD22C\uD0C0\uC785\uC784\uACFC \uB3D9\uC2DC\uC5D0\n\uBE44\uD589\uD0C0\uC785\uC774\uAE30\uB3C4
+        \uD558\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Une attaque en piqu\xE9 depuis le ciel, \xE0 la fois de\ntype
+        Combat et de type Vol."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Der Anwender st\xFCrzt sich aus der Luft auf\ndas Ziel. Die Attacke
+        geh\xF6rt sowohl dem Typ\nKampf als auch dem Typ Flug an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "El Pok\xE9mon que lo usa se lanza sobre su oponente. \nEste movimiento
+        es de tipo Lucha y tipo Volador al \nmismo tiempo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa si tuffa sul bersaglio dall\u2019alto. \xC8 una\nmossa
+        di tipo Lotta e Volante allo stesso tempo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'The user dives down onto the target
+
+        from the sky. This
+        move is Fighting
+
+        and Flying type simultaneously.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u7A7A\u4E2D\u304B\u3089\u3000\u76F8\u624B\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u6280\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u540C\u6642\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u304F\u3046\u3061\u3085\u3046\u304B\u3089\u3000\u3042\u3044\u3066\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u308F\u3056\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u3069\u3046\u3058\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uACF5\uC911\uC5D0\uC11C \uC0C1\uB300\uC5D0\uAC8C \uB2E4\uC774\uBE0C\uD55C\uB2E4.\n\uC774
+        \uAE30\uC220\uC740 \uACA9\uD22C\uD0C0\uC785\uC784\uACFC \uB3D9\uC2DC\uC5D0\n\uBE44\uD589\uD0C0\uC785\uC774\uAE30\uB3C4
+        \uD558\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5F9E\u7A7A\u4E2D\u4FEF\u885D\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u6B64\u62DB\u5F0F\u540C\u6642\u5177\u6709\n\u683C\u9B25\u5C6C\u6027\u548C\u98DB\u884C\u5C6C\u6027\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Une attaque en piqu\xE9 depuis le ciel, \xE0 la fois de\ntype
+        Combat et de type Vol."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Der Anwender st\xFCrzt sich aus der Luft auf das Ziel.\nDie Attacke
+        geh\xF6rt sowohl dem Typ Kampf als auch\ndem Typ Flug an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "El Pok\xE9mon que lo usa se lanza sobre su oponente. \nEste movimiento
+        es de tipo Lucha y tipo Volador al \nmismo tiempo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa si tuffa sul bersaglio dall\u2019alto. \xC8 una\nmossa
+        di tipo Lotta e Volante allo stesso tempo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'The user dives down onto the target from the sky.
+
+        This
+        move is Fighting and Flying type simultaneously.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7A7A\u4E2D\u304B\u3089\u3000\u76F8\u624B\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u6280\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u540C\u6642\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u4ECE\u7A7A\u4E2D\u4FEF\u51B2\u5411\u5BF9\u624B\u3002\n\u6B64\u62DB\u5F0F\u540C\u65F6\u5E26\u6709\n\u683C\u6597\u5C5E\u6027\u548C\u98DE\u884C\u5C5E\u6027\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u304F\u3046\u3061\u3085\u3046\u304B\u3089\u3000\u3042\u3044\u3066\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u308F\u3056\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u3069\u3046\u3058\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uACF5\uC911\uC5D0\uC11C \uC0C1\uB300\uC5D0\uAC8C \uB2E4\uC774\uBE0C\uD55C\uB2E4.\n\uC774
+        \uAE30\uC220\uC740 \uACA9\uD22C\uD0C0\uC785\uC784\uACFC \uB3D9\uC2DC\uC5D0\n\uBE44\uD589\uD0C0\uC785\uC774\uAE30\uB3C4
+        \uD558\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5F9E\u7A7A\u4E2D\u4FEF\u885D\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u6B64\u62DB\u5F0F\u540C\u6642\u5177\u6709\n\u683C\u9B25\u5C6C\u6027\u548C\u98DB\u884C\u5C6C\u6027\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Une attaque en piqu\xE9 depuis le ciel, \xE0 la fois de\ntype
+        Combat et de type Vol."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Der Anwender st\xFCrzt sich aus der Luft auf das Ziel.\nDie Attacke
+        geh\xF6rt sowohl dem Typ Kampf als auch\ndem Typ Flug an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "El Pok\xE9mon que lo usa se lanza sobre su oponente. \nEste movimiento
+        es de tipo Lucha y tipo Volador al \nmismo tiempo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa si tuffa sul bersaglio dall\u2019alto. \xC8 una\nmossa
+        di tipo Lotta e Volante allo stesso tempo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'The user dives down onto the target from the sky.
+
+        This
+        move is Fighting and Flying type simultaneously.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7A7A\u4E2D\u304B\u3089\u3000\u76F8\u624B\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u6280\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u540C\u6642\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u4ECE\u7A7A\u4E2D\u4FEF\u51B2\u5411\u5BF9\u624B\u3002\n\u6B64\u62DB\u5F0F\u540C\u65F6\u5E26\u6709\n\u683C\u6597\u5C5E\u6027\u548C\u98DE\u884C\u5C5E\u6027\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u304F\u3046\u3061\u3085\u3046\u304B\u3089\u3000\u3042\u3044\u3066\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u308F\u3056\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u3069\u3046\u3058\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uACF5\uC911\uC5D0\uC11C \uC0C1\uB300\uC5D0\uAC8C \uB2E4\uC774\uBE0C\uD55C\uB2E4.\n\uC774
+        \uAE30\uC220\uC740 \uACA9\uD22C\uD0C0\uC785\uC784\uACFC \uB3D9\uC2DC\uC5D0\n\uBE44\uD589\uD0C0\uC785\uC774\uAE30\uB3C4
+        \uD558\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5F9E\u7A7A\u4E2D\u4FEF\u885D\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u6B64\u62DB\u5F0F\u540C\u6642\u5177\u6709\n\u683C\u9B25\u5C6C\u6027\u548C\u98DB\u884C\u5C6C\u6027\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Une attaque en piqu\xE9 depuis le ciel, \xE0 la fois de type\nCombat
+        et de type Vol."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Der Anwender st\xFCrzt sich aus der Luft auf das Ziel.\nDie Attacke
+        geh\xF6rt sowohl dem Typ Kampf als auch\ndem Typ Flug an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "El Pok\xE9mon que lo usa se lanza sobre su oponente. \nEste movimiento
+        es de tipo Lucha y tipo Volador al \nmismo tiempo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa si tuffa sul bersaglio dall\u2019alto. \xC8 una\nmossa
+        di tipo Lotta e Volante allo stesso tempo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'The user dives down onto the target from the sky.
+
+        This
+        move is Fighting and Flying type simultaneously.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7A7A\u4E2D\u304B\u3089\u3000\u76F8\u624B\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u6280\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u540C\u6642\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u4ECE\u7A7A\u4E2D\u4FEF\u51B2\u5411\u5BF9\u624B\u3002\n\u6B64\u62DB\u5F0F\u540C\u65F6\u5E26\u6709\n\u683C\u6597\u5C5E\u6027\u548C\u98DE\u884C\u5C5E\u6027\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u304F\u3046\u3061\u3085\u3046\u304B\u3089\u3000\u3042\u3044\u3066\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u308F\u3056\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u3069\u3046\u3058\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uACF5\uC911\uC5D0\uC11C \uC0C1\uB300\uC5D0\uAC8C \uB2E4\uC774\uBE0C\uD55C\uB2E4.\n\uC774
+        \uAE30\uC220\uC740 \uACA9\uD22C\uD0C0\uC785\uC784\uACFC \uB3D9\uC2DC\uC5D0\n\uBE44\uD589\uD0C0\uC785\uC774\uAE30\uB3C4
+        \uD558\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5F9E\u7A7A\u4E2D\u4FEF\u885D\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u6B64\u62DB\u5F0F\u540C\u6642\u5177\u6709\n\u683C\u9B25\u5C6C\u6027\u548C\u98DB\u884C\u5C6C\u6027\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Une attaque en piqu\xE9 depuis le ciel, \xE0 la fois\nde type
+        Combat et de type Vol."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender st\xFCrzt sich aus der Luft auf das Ziel.\nDie Attacke
+        geh\xF6rt sowohl dem Typ Kampf als auch\ndem Typ Flug an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "El Pok\xE9mon que lo usa se lanza sobre su oponente. \nEste movimiento
+        es de tipo Lucha y tipo Volador al \nmismo tiempo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa si tuffa sul bersaglio dall\u2019alto. \xC8 una\nmossa
+        di tipo Lotta e Volante allo stesso tempo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'The user dives down onto the target from the sky.
+
+        This
+        move is Fighting and Flying type simultaneously.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u7A7A\u4E2D\u304B\u3089\u3000\u76F8\u624B\u306B\u3000\u30C0\u30A4\u30D6\u3059\u308B\u3002\n\u3053\u306E\u6280\u306F\u3000\u304B\u304F\u3068\u3046\u30BF\u30A4\u30D7\u3068\u3000\u540C\u6642\u306B\n\u3072\u3053\u3046\u30BF\u30A4\u30D7\u3067\u3082\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u4ECE\u7A7A\u4E2D\u4FEF\u51B2\u5411\u5BF9\u624B\u3002\n\u6B64\u62DB\u5F0F\u540C\u65F6\u5E26\u6709\n\u683C\u6597\u5C5E\u6027\u548C\u98DE\u884C\u5C5E\u6027\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vi
+      url: https://pokeapi.co/api/v2/generation/6/
+    id: 560
+    learned_by_pokemon:
+    - name: hawlucha
+      url: https://pokeapi.co/api/v2/pokemon/701/
+    - name: pikachu-libre
+      url: https://pokeapi.co/api/v2/pokemon/10084/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: flying-press
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30D5\u30E9\u30A4\u30F3\u30B0\u30D7\u30EC\u30B9"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uD50C\uB77C\uC789\uD504\uB808\uC2A4"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u98DB\u8EAB\u91CD\u58D3"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Flying Press
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Flying Press
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Plancha Voladora
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Schiacciatuffo
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Flying Press
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30D5\u30E9\u30A4\u30F3\u30B0\u30D7\u30EC\u30B9"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u98DE\u8EAB\u91CD\u538B"
+    past_values:
+    - accuracy: 0
+      effect_chance: 0
+      effect_entries: []
+      power: 80
+      pp: 0
+      type:
+        name: 
+        url: 
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    power: 100
+    pp: 10
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: fighting
+      url: https://pokeapi.co/api/v2/type/2/

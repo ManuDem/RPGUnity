@@ -1,0 +1,726 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: leaf-storm
+  m_EditorClassIdentifier: 
+  name: Leaf Storm
+  description: "A storm of sharp\nleaves is whipped up.\nThe attack\u2019s recoil\nsharply
+    reduces the\nuser\u2019s Sp. Atk stat."
+  type: 5
+  power: 130
+  accuracy: 90
+  alwaysHits: 0
+  pp: 5
+  priority: 0
+  category: 1
+  effects:
+    boosts:
+    - stat: 2
+      boost: -2
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 437
+  pokeApiMove:
+    accuracy: 90
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: cute
+      url: https://pokeapi.co/api/v2/contest-type/3/
+    damage_class:
+      name: special
+      url: https://pokeapi.co/api/v2/move-damage-class/3/
+    effect_chance: 100
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage, then lowers the user's Special Attack by two
+        stages.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Lowers the user's Special Attack by two stages after inflicting
+        damage.
+    flavor_text_entries:
+    - flavor_text: 'Cae una lluvia de hojas afiladas. Baja mucho el
+
+        Ataque
+        Especial de quien lo usa.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "A storm of sharp\nleaves is whipped up.\nThe attack\u2019s recoil\nsharply
+        reduces the\nuser\u2019s Sp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "A storm of sharp\nleaves is whipped up.\nThe attack\u2019s recoil\nsharply
+        reduces the\nuser\u2019s Sp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "A storm of sharp\nleaves is whipped up.\nThe attack\u2019s recoil\nsharply
+        reduces the\nuser\u2019s Sp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Invoque une temp\xEAte de feuilles ac\xE9r\xE9es.\nLe contrecoup
+        r\xE9duit fortement l\u2019Attaque\nSp\xE9ciale du lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user whips up a storm of leaves around\nthe target. The attack\u2019s
+        recoil harshly\nreduces the user\u2019s Sp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user whips up a storm of leaves around\nthe target. The attack\u2019s
+        recoil harshly\nreduces the user\u2019s Sp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u3064\u304B\u3046\u3068\u3000\u306F\u3093\u3069\u3046\u3067\n\u3058\u3076\u3093\u306E\u3000\u3068\u304F\u3053\u3046\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uBFB0\uC871\uD55C \uC78E\uC0AC\uADC0\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBC14\uB78C\uC744\n\uC77C\uC73C\uD0A8\uB2E4. \uC0AC\uC6A9\uD558\uBA74 \uBC18\uB3D9\uC73C\uB85C\n\uC790\uC2E0\uC758
+        \uD2B9\uC218\uACF5\uACA9\uC774 \uD06C\uAC8C \uB5A8\uC5B4\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Invoque une temp\xEAte de feuilles ac\xE9r\xE9es.\nLe contrecoup
+        r\xE9duit fortement l\u2019Attaque Sp\xE9ciale\ndu lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Anwender erzeugt einen Sturm aus scharfen\nBl\xE4ttern. R\xFCcksto\xDF
+        senkt Spezial-Angriff des\nAnwenders stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Cae una lluvia de hojas afiladas. Baja mucho el
+
+        Ataque
+        Especial de quien lo usa.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Si forma una tempesta di foglie affilate.\nIl contraccolpo riduce
+        di molto l\u2019Attacco Speciale\ndi chi la usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user whips up a storm of leaves around\nthe target. The attack\u2019s
+        recoil harshly\nlowers the user\u2019s Sp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u76F8\u624B\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u4F7F\u3046\u3068\u3000\u53CD\u52D5\u3067\n\u81EA\u5206\u306E\u3000\u7279\u653B\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u3064\u304B\u3046\u3068\u3000\u306F\u3093\u3069\u3046\u3067\n\u3058\u3076\u3093\u306E\u3000\u3068\u304F\u3053\u3046\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uBFB0\uC871\uD55C \uC78E\uC0AC\uADC0\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBC14\uB78C\uC744\n\uC77C\uC73C\uD0A8\uB2E4. \uC0AC\uC6A9\uD558\uBA74 \uBC18\uB3D9\uC73C\uB85C\n\uC790\uC2E0\uC758
+        \uD2B9\uC218\uACF5\uACA9\uC774 \uD06C\uAC8C \uB5A8\uC5B4\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Invoque une temp\xEAte de feuilles ac\xE9r\xE9es.\nLe contrecoup
+        r\xE9duit fortement l\u2019Attaque Sp\xE9ciale\ndu lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Anwender erzeugt einen Sturm aus scharfen\nBl\xE4ttern. R\xFCcksto\xDF
+        senkt Spezial-Angriff des\nAnwenders stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Si forma una tempesta di foglie affilate.\nIl contraccolpo riduce
+        di molto l\u2019Attacco Speciale\ndi chi la usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user whips up a storm of leaves around\nthe target. The attack\u2019s
+        recoil harshly\nlowers the user\u2019s Sp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u76F8\u624B\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u4F7F\u3046\u3068\u3000\u53CD\u52D5\u3067\n\u81EA\u5206\u306E\u3000\u7279\u653B\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u3064\u304B\u3046\u3068\u3000\u306F\u3093\u3069\u3046\u3067\n\u3058\u3076\u3093\u306E\u3000\u3068\u304F\u3053\u3046\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uBFB0\uC871\uD55C \uC78E\uC0AC\uADC0\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBC14\uB78C\uC744\n\uC77C\uC73C\uD0A8\uB2E4. \uC0AC\uC6A9\uD558\uBA74 \uBC18\uB3D9\uC73C\uB85C\n\uC790\uC2E0\uC758
+        \uD2B9\uC218\uACF5\uACA9\uC774 \uD06C\uAC8C \uB5A8\uC5B4\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7528\u5C16\u92B3\u7684\u8449\u5B50\u6372\u8D77\u98A8\u66B4\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u4F7F\u7528\u5F8C\u56E0\u70BA\u53CD\u4F5C\u7528\u529B\uFF0C\n\u81EA\u5DF1\u7684\u7279\u653B\u6703\u5927\u5E45\u964D\u4F4E\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Invoque une temp\xEAte de feuilles ac\xE9r\xE9es.\nLe contrecoup
+        r\xE9duit beaucoup l\u2019Attaque Sp\xE9ciale\ndu lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Anwender erzeugt einen Sturm aus scharfen\nBl\xE4ttern. R\xFCcksto\xDF
+        senkt Spezial-Angriff des\nAnwenders stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Una lluvia de hojas afiladas envuelve al objetivo.
+
+        El
+        retroceso baja mucho el Ataque Especial de quien
+
+        lo usa.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Si forma una tempesta di foglie affilate.\nIl contraccolpo riduce
+        di molto l\u2019Attacco Speciale\ndi chi la usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user whips up a storm of leaves around the\ntarget. The attack\u2019s
+        recoil harshly lowers the user\u2019s\nSp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u76F8\u624B\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u4F7F\u3046\u3068\u3000\u53CD\u52D5\u3067\n\u81EA\u5206\u306E\u3000\u7279\u653B\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7528\u5C16\u5C16\u7684\u53F6\u7247\u5411\u5BF9\u624B\u5377\u8D77\u98CE\u66B4\u3002\n\u4F7F\u7528\u4E4B\u540E\u56E0\u4E3A\u53CD\u4F5C\u7528\u529B\n\u81EA\u5DF1\u7684\u7279\u653B\u4F1A\u5927\u5E45\u964D\u4F4E\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u3064\u304B\u3046\u3068\u3000\u306F\u3093\u3069\u3046\u3067\n\u3058\u3076\u3093\u306E\u3000\u3068\u304F\u3053\u3046\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uBFB0\uC871\uD55C \uC78E\uC0AC\uADC0\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBC14\uB78C\uC744\n\uC77C\uC73C\uD0A8\uB2E4. \uC0AC\uC6A9\uD558\uBA74 \uBC18\uB3D9\uC73C\uB85C\n\uC790\uC2E0\uC758
+        \uD2B9\uC218\uACF5\uACA9\uC774 \uD06C\uAC8C \uB5A8\uC5B4\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7528\u5C16\u92B3\u7684\u8449\u5B50\u6372\u8D77\u98A8\u66B4\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u4F7F\u7528\u5F8C\u56E0\u70BA\u53CD\u4F5C\u7528\u529B\uFF0C\n\u81EA\u5DF1\u7684\u7279\u653B\u6703\u5927\u5E45\u964D\u4F4E\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Invoque une temp\xEAte de feuilles ac\xE9r\xE9es.\nLe contrecoup
+        r\xE9duit beaucoup l\u2019Attaque Sp\xE9ciale\ndu lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Anwender erzeugt einen Sturm aus scharfen\nBl\xE4ttern. R\xFCcksto\xDF
+        senkt Spezial-Angriff des\nAnwenders stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Una lluvia de hojas afiladas envuelve al objetivo.
+
+        El
+        retroceso baja mucho el Ataque Especial de quien
+
+        lo usa.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Si forma una tempesta di foglie affilate.\nIl contraccolpo riduce
+        di molto l\u2019Attacco Speciale\ndi chi la usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user whips up a storm of leaves around the\ntarget. The attack\u2019s
+        recoil harshly lowers the user\u2019s\nSp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u76F8\u624B\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u4F7F\u3046\u3068\u3000\u53CD\u52D5\u3067\n\u81EA\u5206\u306E\u3000\u7279\u653B\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7528\u5C16\u5C16\u7684\u53F6\u7247\u5411\u5BF9\u624B\u5377\u8D77\u98CE\u66B4\u3002\n\u4F7F\u7528\u4E4B\u540E\u56E0\u4E3A\u53CD\u4F5C\u7528\u529B\n\u81EA\u5DF1\u7684\u7279\u653B\u4F1A\u5927\u5E45\u964D\u4F4E\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u3064\u304B\u3046\u3068\u3000\u306F\u3093\u3069\u3046\u3067\n\u3058\u3076\u3093\u306E\u3000\u3068\u304F\u3053\u3046\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uBFB0\uC871\uD55C \uC78E\uC0AC\uADC0\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBC14\uB78C\uC744\n\uC77C\uC73C\uD0A8\uB2E4. \uC0AC\uC6A9\uD558\uBA74 \uBC18\uB3D9\uC73C\uB85C\n\uC790\uC2E0\uC758
+        \uD2B9\uC218\uACF5\uACA9\uC774 \uD06C\uAC8C \uB5A8\uC5B4\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7528\u5C16\u92B3\u7684\u8449\u5B50\u6372\u8D77\u98A8\u66B4\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u4F7F\u7528\u5F8C\u56E0\u70BA\u53CD\u4F5C\u7528\u529B\uFF0C\n\u81EA\u5DF1\u7684\u7279\u653B\u6703\u5927\u5E45\u964D\u4F4E\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Invoque une temp\xEAte de feuilles ac\xE9r\xE9es.\nLe contrecoup
+        r\xE9duit beaucoup l\u2019Attaque Sp\xE9ciale\ndu lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Anwender erzeugt einen Sturm aus scharfen\nBl\xE4ttern. R\xFCcksto\xDF
+        senkt Spezial-Angriff des\nAnwenders stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Una lluvia de hojas afiladas envuelve al objetivo.
+
+        El
+        retroceso baja mucho el Ataque Especial de quien
+
+        lo usa.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Si forma una tempesta di foglie affilate.\nIl contraccolpo riduce
+        di molto l\u2019Attacco Speciale\ndi chi la usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user whips up a storm of leaves around the\ntarget. The attack\u2019s
+        recoil harshly lowers the user\u2019s\nSp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u76F8\u624B\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u4F7F\u3046\u3068\u3000\u53CD\u52D5\u3067\n\u81EA\u5206\u306E\u3000\u7279\u653B\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7528\u5C16\u5C16\u7684\u53F6\u7247\u5411\u5BF9\u624B\u5377\u8D77\u98CE\u66B4\u3002\n\u4F7F\u7528\u4E4B\u540E\u56E0\u4E3A\u53CD\u4F5C\u7528\u529B\n\u81EA\u5DF1\u7684\u7279\u653B\u4F1A\u5927\u5E45\u964D\u4F4E\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u3064\u304B\u3046\u3068\u3000\u306F\u3093\u3069\u3046\u3067\n\u3058\u3076\u3093\u306E\u3000\u3068\u304F\u3053\u3046\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uBFB0\uC871\uD55C \uC78E\uC0AC\uADC0\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uB3CC\uD48D\uC744\n\uC77C\uC73C\uD0A8\uB2E4. \uC0AC\uC6A9\uD558\uBA74 \uBC18\uB3D9\uC73C\uB85C\n\uC790\uC2E0\uC758
+        \uD2B9\uC218\uACF5\uACA9\uC774 \uD06C\uAC8C \uB5A8\uC5B4\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u7528\u5C16\u92B3\u7684\u8449\u5B50\u6372\u8D77\u98A8\u66B4\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u4F7F\u7528\u5F8C\u56E0\u70BA\u53CD\u4F5C\u7528\u529B\uFF0C\n\u81EA\u5DF1\u7684\u7279\u653B\u6703\u5927\u5E45\u964D\u4F4E\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Invoque une temp\xEAte de feuilles ac\xE9r\xE9es.\nLe contrecoup
+        r\xE9duit beaucoup l\u2019Attaque Sp\xE9ciale\ndu lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Anwender erzeugt einen Sturm aus scharfen Bl\xE4ttern.\nR\xFCcksto\xDF
+        senkt Spezial-Angriff des Anwenders stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Envuelve al objetivo con una lluvia de hojas afiladas,
+
+        pero
+        reduce mucho su Ataque Especial.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Si forma una tempesta di foglie affilate. Il contraccolpo\nriduce
+        di molto l\u2019Attacco Speciale di chi la usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user whips up a storm of leaves around the\ntarget. The attack\u2019s
+        recoil harshly lowers the user\u2019s\nSp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u3068\u304C\u3063\u305F\u3000\u306F\u3063\u3071\u3067\u3000\u76F8\u624B\u306B\u3000\u3042\u3089\u3057\u3092\n\u304A\u3053\u3059\u3002\u4F7F\u3046\u3068\u3000\u53CD\u52D5\u3067\n\u81EA\u5206\u306E\u3000\u7279\u653B\u304C\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u7528\u5C16\u5C16\u7684\u53F6\u7247\u5411\u5BF9\u624B\u5377\u8D77\u98CE\u66B4\u3002\n\u4F7F\u7528\u4E4B\u540E\u56E0\u4E3A\u53CD\u4F5C\u7528\u529B\n\u81EA\u5DF1\u7684\u7279\u653B\u4F1A\u5927\u5E45\u964D\u4F4E\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-iv
+      url: https://pokeapi.co/api/v2/generation/4/
+    id: 437
+    learned_by_pokemon:
+    - name: bulbasaur
+      url: https://pokeapi.co/api/v2/pokemon/1/
+    - name: victreebel
+      url: https://pokeapi.co/api/v2/pokemon/71/
+    - name: exeggcute
+      url: https://pokeapi.co/api/v2/pokemon/102/
+    - name: exeggutor
+      url: https://pokeapi.co/api/v2/pokemon/103/
+    - name: tangela
+      url: https://pokeapi.co/api/v2/pokemon/114/
+    - name: chikorita
+      url: https://pokeapi.co/api/v2/pokemon/152/
+    - name: bellossom
+      url: https://pokeapi.co/api/v2/pokemon/182/
+    - name: sunflora
+      url: https://pokeapi.co/api/v2/pokemon/192/
+    - name: celebi
+      url: https://pokeapi.co/api/v2/pokemon/251/
+    - name: treecko
+      url: https://pokeapi.co/api/v2/pokemon/252/
+    - name: grovyle
+      url: https://pokeapi.co/api/v2/pokemon/253/
+    - name: sceptile
+      url: https://pokeapi.co/api/v2/pokemon/254/
+    - name: shiftry
+      url: https://pokeapi.co/api/v2/pokemon/275/
+    - name: roselia
+      url: https://pokeapi.co/api/v2/pokemon/315/
+    - name: tropius
+      url: https://pokeapi.co/api/v2/pokemon/357/
+    - name: turtwig
+      url: https://pokeapi.co/api/v2/pokemon/387/
+    - name: grotle
+      url: https://pokeapi.co/api/v2/pokemon/388/
+    - name: torterra
+      url: https://pokeapi.co/api/v2/pokemon/389/
+    - name: budew
+      url: https://pokeapi.co/api/v2/pokemon/406/
+    - name: wormadam-plant
+      url: https://pokeapi.co/api/v2/pokemon/413/
+    - name: snivy
+      url: https://pokeapi.co/api/v2/pokemon/495/
+    - name: servine
+      url: https://pokeapi.co/api/v2/pokemon/496/
+    - name: serperior
+      url: https://pokeapi.co/api/v2/pokemon/497/
+    - name: pansage
+      url: https://pokeapi.co/api/v2/pokemon/511/
+    - name: leavanny
+      url: https://pokeapi.co/api/v2/pokemon/542/
+    - name: petilil
+      url: https://pokeapi.co/api/v2/pokemon/548/
+    - name: decidueye
+      url: https://pokeapi.co/api/v2/pokemon/724/
+    - name: fomantis
+      url: https://pokeapi.co/api/v2/pokemon/753/
+    - name: steenee
+      url: https://pokeapi.co/api/v2/pokemon/762/
+    - name: tsareena
+      url: https://pokeapi.co/api/v2/pokemon/763/
+    - name: shaymin-sky
+      url: https://pokeapi.co/api/v2/pokemon/10006/
+    - name: rotom-mow
+      url: https://pokeapi.co/api/v2/pokemon/10012/
+    - name: sceptile-mega
+      url: https://pokeapi.co/api/v2/pokemon/10065/
+    - name: exeggutor-alola
+      url: https://pokeapi.co/api/v2/pokemon/10114/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1660/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage+raise
+        url: https://pokeapi.co/api/v2/move-category/7/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 100
+    name: leaf-storm
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30EA\u30FC\u30D5\u30B9\u30C8\u30FC\u30E0"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uB9AC\uD504\uC2A4\uD1B0"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u98DB\u8449\u98A8\u66B4"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "Temp\xEAte Verte"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: "Bl\xE4ttersturm"
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Lluevehojas
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Verdebufera
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Leaf Storm
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30EA\u30FC\u30D5\u30B9\u30C8\u30FC\u30E0"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u98DE\u53F6\u98CE\u66B4"
+    past_values:
+    - accuracy: 0
+      effect_chance: 0
+      effect_entries: []
+      power: 140
+      pp: 0
+      type:
+        name: 
+        url: 
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    power: 130
+    pp: 5
+    priority: 0
+    stat_changes:
+    - change: -2
+      stat:
+        name: special-attack
+        url: https://pokeapi.co/api/v2/stat/4/
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/22/
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: grass
+      url: https://pokeapi.co/api/v2/type/12/

@@ -8,6 +8,9 @@ public class ItemGiver : MonoBehaviour, ISavable
     [SerializeField] int count = 1;
     [SerializeField] Dialog dialog;
 
+    [Header("Strings")]
+    [TextArea] [SerializeField] string received;
+
     bool used = false;
 
     public IEnumerator GiveItem(PlayerController player)
@@ -18,9 +21,9 @@ public class ItemGiver : MonoBehaviour, ISavable
 
         used = true;
 
-        string dialogText = $"{player.Name} received {item.Name}";
+        string dialogText = $"{player.Name} {received} {item.Name}.";
         if (count > 1)
-            dialogText = $"{player.Name} received {count} {item.Name}s";
+            dialogText = $"{player.Name} {received} {count} {item.Name}.";
 
         yield return DialogManager.Instance.ShowDialogText(dialogText);
     }

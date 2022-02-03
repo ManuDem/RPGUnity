@@ -1,0 +1,674 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: powder
+  m_EditorClassIdentifier: 
+  name: Powder
+  description: 'The user covers the target in a powder
+
+    that explodes and damages
+    the target
+
+    if it uses a Fire-type move.'
+  type: 12
+  power: 0
+  accuracy: 100
+  alwaysHits: 0
+  pp: 20
+  priority: 1
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 600
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Explodes if the target uses a fire move this turn, damaging it for
+        1/4 its max HP and preventing the move.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Explodes if the target uses a fire move this turn, damaging it
+        for 1/4 its max HP and preventing the move.
+    flavor_text_entries:
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u3042\u3073\u305B\u305F\u3000\u3042\u3044\u3066\u304C\n\u307B\u306E\u304A\u308F\u3056\u3092\u3000\u3064\u304B\u3046\u3068\n\u3070\u304F\u306F\u3064\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uBD84\uC9C4\uC744 \uB4A4\uC9D1\uC5B4\uC4F4 \uC0C1\uB300\uAC00\n\uBD88\uAF43
+        \uAE30\uC220\uC744 \uC4F0\uBA74\n\uD3ED\uBC1C\uD558\uC5EC \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "L\u2019ennemi est pris dans un nuage de poudre.\nS\u2019il utilise
+        une capacit\xE9 de type Feu lors du m\xEAme\ntour, le nuage explose et lui
+        inflige des d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Setzt das Ziel nach Einsatz von Pulverschleuder
+
+        in derselben
+        Runde eine Feuer-Attacke ein,
+
+        kommt es zu einer Explosion, die ihm
+        schadet.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Esparce un polvo sobre el Pok\xE9mon objetivo.\nSi este usa un
+        movimiento de tipo Fuego en el\nmismo turno, el polvo explota y le inflige
+        da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Il bersaglio viene coperto da un pulviscolo che
+
+        esplode
+        danneggiandolo se questi utilizza
+
+        una mossa di tipo Fuoco nello
+        stesso turno.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'The user covers the target in a powder
+
+        that explodes
+        and damages the target
+
+        if it uses a Fire-type move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u6D74\u3073\u305B\u305F\u3000\u76F8\u624B\u304C\n\u307B\u306E\u304A\u6280\u3092\u3000\u4F7F\u3046\u3068\n\u7206\u767A\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u3042\u3073\u305B\u305F\u3000\u3042\u3044\u3066\u304C\n\u307B\u306E\u304A\u308F\u3056\u3092\u3000\u3064\u304B\u3046\u3068\n\u3070\u304F\u306F\u3064\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uBD84\uC9C4\uC744 \uB4A4\uC9D1\uC5B4\uC4F4 \uC0C1\uB300\uAC00\n\uBD88\uAF43
+        \uAE30\uC220\uC744 \uC4F0\uBA74\n\uD3ED\uBC1C\uD558\uC5EC \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "L\u2019ennemi est pris dans un nuage de poudre.\nS\u2019il utilise
+        une capacit\xE9 de type Feu lors du m\xEAme\ntour, le nuage explose et lui
+        inflige des d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Setzt das Ziel nach Einsatz von Pulverschleuder
+
+        in derselben
+        Runde eine Feuer-Attacke ein,
+
+        kommt es zu einer Explosion, die ihm
+        schadet.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Esparce un polvo sobre el Pok\xE9mon objetivo.\nSi este usa un
+        movimiento de tipo Fuego en el\nmismo turno, el polvo explota y le inflige
+        da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Il bersaglio viene coperto da un pulviscolo che
+
+        esplode
+        danneggiandolo se questi utilizza
+
+        una mossa di tipo Fuoco nello
+        stesso turno.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'The user covers the target in a powder
+
+        that explodes
+        and damages the target
+
+        if it uses a Fire-type move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u6D74\u3073\u305B\u305F\u3000\u76F8\u624B\u304C\n\u307B\u306E\u304A\u6280\u3092\u3000\u4F7F\u3046\u3068\n\u7206\u767A\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u3042\u3073\u305B\u305F\u3000\u3042\u3044\u3066\u304C\n\u307B\u306E\u304A\u308F\u3056\u3092\u3000\u3064\u304B\u3046\u3068\n\u3070\u304F\u306F\u3064\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uBD84\uC9C4\uC744 \uB4A4\uC9D1\uC5B4\uC4F4 \uC0C1\uB300\uAC00\n\uBD88\uAF43
+        \uAE30\uC220\uC744 \uC4F0\uBA74\n\uD3ED\uBC1C\uD558\uC5EC \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u88AB\u6492\u5230\u7C89\u5875\u7684\u5C0D\u624B\n\u4F7F\u7528\u706B\u5C6C\u6027\u62DB\u5F0F\u6642\uFF0C\n\u6703\u767C\u751F\u7206\u70B8\u4E26\u53D7\u5230\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "L\u2019ennemi est pris dans un nuage de poudre.\nS\u2019il utilise
+        une capacit\xE9 de type Feu lors du m\xEAme\ntour, le nuage explose et lui
+        inflige des d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Setzt das Ziel nach Einsatz von Pulverschleuder in
+
+        derselben
+        Runde eine Feuer-Attacke ein, kommt es
+
+        zu einer Explosion, die ihm
+        schadet.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Esparce un polvo sobre el objetivo. Si este usa un\nmovimiento
+        de tipo Fuego en el mismo turno, el polvo\nexplota y le inflige da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Il bersaglio viene coperto da un pulviscolo che
+
+        esplode
+        danneggiandolo se questi utilizza
+
+        una mossa di tipo Fuoco nello
+        stesso turno.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'The user covers the target in a combustible powder.
+
+        If
+        the target uses a Fire-type move, the powder
+
+        explodes and damages
+        the target.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u6D74\u3073\u305B\u305F\u3000\u76F8\u624B\u304C\n\u307B\u306E\u304A\u6280\u3092\u3000\u4F7F\u3046\u3068\n\u7206\u767A\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5982\u679C\u88AB\u6492\u5230\u7C89\u5C18\u7684\u5BF9\u624B\n\u4F7F\u7528\u706B\u62DB\u5F0F\uFF0C\n\u5219\u4F1A\u7206\u70B8\u5E76\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u3042\u3073\u305B\u305F\u3000\u3042\u3044\u3066\u304C\n\u307B\u306E\u304A\u308F\u3056\u3092\u3000\u3064\u304B\u3046\u3068\n\u3070\u304F\u306F\u3064\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uBD84\uC9C4\uC744 \uB4A4\uC9D1\uC5B4\uC4F4 \uC0C1\uB300\uAC00\n\uBD88\uAF43
+        \uAE30\uC220\uC744 \uC4F0\uBA74\n\uD3ED\uBC1C\uD558\uC5EC \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u88AB\u6492\u5230\u7C89\u5875\u7684\u5C0D\u624B\n\u4F7F\u7528\u706B\u5C6C\u6027\u62DB\u5F0F\u6642\uFF0C\n\u6703\u767C\u751F\u7206\u70B8\u4E26\u53D7\u5230\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "L\u2019ennemi est pris dans un nuage de poudre.\nS\u2019il utilise
+        une capacit\xE9 de type Feu lors du m\xEAme\ntour, le nuage explose et lui
+        inflige des d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Setzt das Ziel nach Einsatz von Pulverschleuder in
+
+        derselben
+        Runde eine Feuer-Attacke ein, kommt es
+
+        zu einer Explosion, die ihm
+        schadet.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Esparce un polvo sobre el objetivo. Si este usa un\nmovimiento
+        de tipo Fuego en el mismo turno, el polvo\nexplota y le inflige da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Il bersaglio viene coperto da un pulviscolo che
+
+        esplode
+        danneggiandolo se questi utilizza
+
+        una mossa di tipo Fuoco nello
+        stesso turno.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'The user covers the target in a combustible powder.
+
+        If
+        the target uses a Fire-type move, the powder
+
+        explodes and damages
+        the target.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u6D74\u3073\u305B\u305F\u3000\u76F8\u624B\u304C\n\u307B\u306E\u304A\u6280\u3092\u3000\u4F7F\u3046\u3068\n\u7206\u767A\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5982\u679C\u88AB\u6492\u5230\u7C89\u5C18\u7684\u5BF9\u624B\n\u4F7F\u7528\u706B\u62DB\u5F0F\uFF0C\n\u5219\u4F1A\u7206\u70B8\u5E76\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u3042\u3073\u305B\u305F\u3000\u3042\u3044\u3066\u304C\n\u307B\u306E\u304A\u308F\u3056\u3092\u3000\u3064\u304B\u3046\u3068\n\u3070\u304F\u306F\u3064\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uBD84\uC9C4\uC744 \uB4A4\uC9D1\uC5B4\uC4F4 \uC0C1\uB300\uAC00\n\uBD88\uAF43
+        \uAE30\uC220\uC744 \uC4F0\uBA74\n\uD3ED\uBC1C\uD558\uC5EC \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u88AB\u6492\u5230\u7C89\u5875\u7684\u5C0D\u624B\n\u4F7F\u7528\u706B\u5C6C\u6027\u62DB\u5F0F\u6642\uFF0C\n\u6703\u767C\u751F\u7206\u70B8\u4E26\u53D7\u5230\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "L\u2019ennemi est pris dans un nuage de poudre.\nS\u2019il utilise
+        une capacit\xE9 de type Feu lors du m\xEAme tour,\nle nuage explose et lui
+        inflige des d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Setzt das Ziel nach Einsatz von Pulverschleuder in
+
+        derselben
+        Runde eine Feuer-Attacke ein, kommt es
+
+        zu einer Explosion, die ihm
+        schadet.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Esparce un polvo sobre el objetivo. Si este usa un\nmovimiento
+        de tipo Fuego en el mismo turno, el polvo\nexplota y le inflige da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Il bersaglio viene coperto da un pulviscolo che
+
+        esplode
+        danneggiandolo se questi utilizza
+
+        una mossa di tipo Fuoco nello
+        stesso turno.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'The user covers the target in a combustible powder.
+
+        If
+        the target uses a Fire-type move, the powder
+
+        explodes and damages
+        the target.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u6D74\u3073\u305B\u305F\u3000\u76F8\u624B\u304C\n\u307B\u306E\u304A\u6280\u3092\u3000\u4F7F\u3046\u3068\n\u7206\u767A\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5982\u679C\u88AB\u6492\u5230\u7C89\u5C18\u7684\u5BF9\u624B\n\u4F7F\u7528\u706B\u62DB\u5F0F\uFF0C\n\u5219\u4F1A\u7206\u70B8\u5E76\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u3042\u3073\u305B\u305F\u3000\u3042\u3044\u3066\u304C\n\u307B\u306E\u304A\u308F\u3056\u3092\u3000\u3064\u304B\u3046\u3068\n\u3070\u304F\u306F\u3064\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uBD84\uC9C4\uC744 \uB4A4\uC9D1\uC5B4\uC4F4 \uC0C1\uB300\uAC00\n\uBD88\uAF43
+        \uAE30\uC220\uC744 \uC4F0\uBA74\n\uD3ED\uBC1C\uD558\uC5EC \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u88AB\u6492\u5230\u7C89\u5875\u7684\u5C0D\u624B\n\u4F7F\u7528\u706B\u5C6C\u6027\u62DB\u5F0F\u6642\uFF0C\n\u6703\u767C\u751F\u7206\u70B8\u4E26\u53D7\u5230\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "L\u2019ennemi est pris dans un nuage de poudre.\nS\u2019il utilise
+        une capacit\xE9 de type Feu lors du m\xEAme tour,\nle nuage explose et lui
+        inflige des d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Setzt das Ziel nach Einsatz von Pulverschleuder in
+
+        derselben
+        Runde eine Feuer-Attacke ein, kommt es
+
+        zu einer Explosion, die ihm
+        schadet.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Esparce un polvo sobre el objetivo. Si este usa un\nmovimiento
+        de tipo Fuego en el mismo turno, el polvo\nexplota y le inflige da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Il bersaglio viene coperto da un pulviscolo che
+
+        esplode
+        danneggiandolo se questi utilizza
+
+        una mossa di tipo Fuoco nello
+        stesso turno.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'The user covers the target in a combustible powder.
+
+        If
+        the target uses a Fire-type move, the powder
+
+        explodes and damages
+        the target.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u3075\u3093\u3058\u3093\u3092\u3000\u6D74\u3073\u305B\u305F\u3000\u76F8\u624B\u304C\n\u307B\u306E\u304A\u6280\u3092\u3000\u4F7F\u3046\u3068\n\u7206\u767A\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5982\u679C\u88AB\u6492\u5230\u7C89\u5C18\u7684\u5BF9\u624B\n\u4F7F\u7528\u706B\u62DB\u5F0F\uFF0C\n\u5219\u4F1A\u7206\u70B8\u5E76\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vi
+      url: https://pokeapi.co/api/v2/generation/6/
+    id: 600
+    learned_by_pokemon:
+    - name: vivillon
+      url: https://pokeapi.co/api/v2/pokemon/666/
+    - name: cutiefly
+      url: https://pokeapi.co/api/v2/pokemon/742/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: unique
+        url: https://pokeapi.co/api/v2/move-category/13/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: powder
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3075\u3093\u3058\u3093"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uBD84\uC9C4"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u7C89\u5875"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "Nu\xE9e de Poudre"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Pulverschleuder
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Polvo Explosivo
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Pulviscoppio
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Powder
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3075\u3093\u3058\u3093"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u7C89\u5C18"
+    past_values: []
+    power: 0
+    pp: 20
+    priority: 1
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: bug
+      url: https://pokeapi.co/api/v2/type/7/

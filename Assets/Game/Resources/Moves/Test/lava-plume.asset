@@ -1,0 +1,700 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: lava-plume
+  m_EditorClassIdentifier: 
+  name: Lava Plume
+  description: "An inferno of scarlet\nflames washes over\nall Pok\xE9mon in battle.\nIt
+    may also inflict\nburns."
+  type: 2
+  power: 80
+  accuracy: 100
+  alwaysHits: 0
+  pp: 15
+  priority: 0
+  category: 1
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries:
+  - boosts: []
+    status: 2
+    volatileStatus: 0
+    chance: 30
+    target: 0
+  target: 0
+  id: 436
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: tough
+      url: https://pokeapi.co/api/v2/contest-type/5/
+    damage_class:
+      name: special
+      url: https://pokeapi.co/api/v2/move-damage-class/3/
+    effect_chance: 30
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage.  Has a $effect_chance% chance to burn the
+        target.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Has a $effect_chance% chance to burn the target.
+    flavor_text_entries:
+    - flavor_text: "An inferno of scarlet\nflames washes over\nall Pok\xE9mon in
+        battle.\nIt may also inflict\nburns."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "An inferno of scarlet\nflames washes over\nall Pok\xE9mon in
+        battle.\nIt may also inflict\nburns."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "An inferno of scarlet\nflames washes over\nall Pok\xE9mon in
+        battle.\nIt may also inflict\nburns."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Des boules de feu s\u2019abattent sur tous\nles Pok\xE9mon autour
+        du lanceur.\nPeut aussi br\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'An inferno of scarlet flames torches
+
+        everything around
+        the user. It may
+
+        leave targets with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'An inferno of scarlet flames torches
+
+        everything around
+        the user. It may
+
+        leave targets with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u307E\u3063\u304B\u306A\u3000\u307B\u306E\u304A\u3067\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC0C8\uBE68\uAC04 \uBD88\uAF43\uC73C\uB85C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Des boules de feu s\u2019abattent sur tous les Pok\xE9mon\nautour
+        du lanceur. Peut aussi les br\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Greift alles in seiner Umgebung mit tiefroten
+
+        Flammen
+        an. Ziel kann Verbrennungen erleiden.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Un infierno de llamas da\xF1a a los Pok\xE9mon\nadyacentes en
+        combate. Puede quemar."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa lancia fiamme scarlatte su tutti i\nPok\xE9mon nelle
+        vicinanze, danneggiandoli.\nPu\xF2 anche scottarli."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'The user torches everything around it
+
+        with an inferno
+        of scarlet flames.
+
+        This may also leave those hit with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u771F\u3063\u8D64\u306A\u3000\u708E\u3067\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u307E\u3063\u304B\u306A\u3000\u307B\u306E\u304A\u3067\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC0C8\uBE68\uAC04 \uBD88\uAF43\uC73C\uB85C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Des boules de feu s\u2019abattent sur tous les Pok\xE9mon \nautour
+        du lanceur. Peut aussi les br\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Greift alles in seiner Umgebung mit tiefroten
+
+        Flammen
+        an. Ziel kann Verbrennungen erleiden.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Un infierno de llamas da\xF1a a los Pok\xE9mon adyacentes \nen
+        combate. Puede quemar."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa lancia fiamme scarlatte su tutti i\nPok\xE9mon nelle
+        vicinanze, danneggiandoli.\nPu\xF2 anche scottarli."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'The user torches everything around it
+
+        with an inferno
+        of scarlet flames.
+
+        This may also leave those hit with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u771F\u3063\u8D64\u306A\u3000\u708E\u3067\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u307E\u3063\u304B\u306A\u3000\u307B\u306E\u304A\u3067\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC0C8\uBE68\uAC04 \uBD88\uAF43\uC73C\uB85C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7528\u718A\u718A\u70C8\u706B\n\u653B\u64CA\u81EA\u5DF1\u5468\u570D\u6240\u6709\u7684\u5BF6\u53EF\u5922\u3002\n\u6709\u6642\u6703\u8B93\u5C0D\u624B\u9677\u5165\u707C\u50B7\u72C0\u614B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Des boules de feu s\u2019abattent sur tous les Pok\xE9mon\nautour
+        du lanceur. Peut aussi les br\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Greift alles in seiner Umgebung mit tiefroten Flammen
+
+        an.
+        Ziel kann Verbrennungen erleiden.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Un infierno de llamas da\xF1a a los Pok\xE9mon\nadyacentes en
+        combate. Puede quemar."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa lancia fiamme scarlatte su tutti i\nPok\xE9mon nelle
+        vicinanze, danneggiandoli.\nPu\xF2 anche scottarli."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'The user torches everything around it in an inferno
+
+        of
+        scarlet flames. This may also leave those it hits
+
+        with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u771F\u3063\u8D64\u306A\u3000\u708E\u3067\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7528\u718A\u718A\u70C8\u706B\n\u653B\u51FB\u81EA\u5DF1\u5468\u56F4\u6240\u6709\u7684\u5B9D\u53EF\u68A6\u3002\n\u6709\u65F6\u4F1A\u9677\u5165\u707C\u4F24\u72B6\u6001\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u307E\u3063\u304B\u306A\u3000\u307B\u306E\u304A\u3067\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC0C8\uBE68\uAC04 \uBD88\uAF43\uC73C\uB85C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7528\u718A\u718A\u70C8\u706B\n\u653B\u64CA\u81EA\u5DF1\u5468\u570D\u6240\u6709\u7684\u5BF6\u53EF\u5922\u3002\n\u6709\u6642\u6703\u8B93\u5C0D\u624B\u9677\u5165\u707C\u50B7\u72C0\u614B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Des boules de feu s\u2019abattent sur tous les Pok\xE9mon\nautour
+        du lanceur. Peut aussi les br\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Greift alles in seiner Umgebung mit tiefroten Flammen
+
+        an.
+        Ziel kann Verbrennungen erleiden.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Un infierno de llamas da\xF1a a los Pok\xE9mon\nadyacentes en
+        combate. Puede quemar."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa lancia fiamme scarlatte su tutti i\nPok\xE9mon nelle
+        vicinanze, danneggiandoli.\nPu\xF2 anche scottarli."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'The user torches everything around it in an inferno
+
+        of
+        scarlet flames. This may also leave those it hits
+
+        with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u771F\u3063\u8D64\u306A\u3000\u708E\u3067\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7528\u718A\u718A\u70C8\u706B\n\u653B\u51FB\u81EA\u5DF1\u5468\u56F4\u6240\u6709\u7684\u5B9D\u53EF\u68A6\u3002\n\u6709\u65F6\u4F1A\u9677\u5165\u707C\u4F24\u72B6\u6001\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u307E\u3063\u304B\u306A\u3000\u307B\u306E\u304A\u3067\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC0C8\uBE68\uAC04 \uBD88\uAF43\uC73C\uB85C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7528\u718A\u718A\u70C8\u706B\n\u653B\u64CA\u81EA\u5DF1\u5468\u570D\u6240\u6709\u7684\u5BF6\u53EF\u5922\u3002\n\u6709\u6642\u6703\u8B93\u5C0D\u624B\u9677\u5165\u707C\u50B7\u72C0\u614B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Des boules de feu s\u2019abattent sur tous les Pok\xE9mon\nautour
+        du lanceur. Peut aussi les br\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Anwender greift alles in seiner Umgebung mit
+
+        tiefroten
+        Flammen an. Ziele erleiden eventuell
+
+        Verbrennungen.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Un infierno de llamas da\xF1a a los Pok\xE9mon\nadyacentes en
+        combate. Puede quemar."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa lancia fiamme scarlatte su tutti i\nPok\xE9mon nelle
+        vicinanze, danneggiandoli.\nPu\xF2 anche scottarli."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'The user torches everything around it in an inferno
+
+        of
+        scarlet flames. This may also leave those it hits
+
+        with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u771F\u3063\u8D64\u306A\u3000\u708E\u3067\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7528\u718A\u718A\u70C8\u706B\n\u653B\u51FB\u81EA\u5DF1\u5468\u56F4\u6240\u6709\u7684\u5B9D\u53EF\u68A6\u3002\n\u6709\u65F6\u4F1A\u9677\u5165\u707C\u4F24\u72B6\u6001\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u307E\u3063\u304B\u306A\u3000\u307B\u306E\u304A\u3067\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC0C8\uBE68\uAC04 \uBD88\uAF43\uC73C\uB85C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u7528\u718A\u718A\u70C8\u706B\n\u653B\u64CA\u81EA\u5DF1\u5468\u570D\u6240\u6709\u7684\u5BF6\u53EF\u5922\u3002\n\u6709\u6642\u6703\u8B93\u5C0D\u624B\u9677\u5165\u707C\u50B7\u72C0\u614B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Des boules de feu s\u2019abattent sur tous les Pok\xE9mon\nautour
+        du lanceur. Peut aussi les br\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Anwender greift alle Pok\xE9mon im Umkreis mit tiefroten\nFlammen
+        an. Ziele erleiden eventuell Verbrennungen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Un infierno de llamas da\xF1a a los Pok\xE9mon adyacentes\nen
+        combate. Puede quemar."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa lancia fiamme scarlatte su tutti i\nPok\xE9mon nelle
+        vicinanze, danneggiandoli.\nPu\xF2 anche scottarli."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'The user torches everything around it in an inferno
+
+        of
+        scarlet flames. This may also leave those it hits
+
+        with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u771F\u3063\u8D64\u306A\u3000\u708E\u3067\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u7528\u718A\u718A\u70C8\u706B\n\u653B\u51FB\u81EA\u5DF1\u5468\u56F4\u6240\u6709\u7684\u5B9D\u53EF\u68A6\u3002\n\u6709\u65F6\u4F1A\u9677\u5165\u707C\u4F24\u72B6\u6001\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-iv
+      url: https://pokeapi.co/api/v2/generation/4/
+    id: 436
+    learned_by_pokemon:
+    - name: magmar
+      url: https://pokeapi.co/api/v2/pokemon/126/
+    - name: flareon
+      url: https://pokeapi.co/api/v2/pokemon/136/
+    - name: cyndaquil
+      url: https://pokeapi.co/api/v2/pokemon/155/
+    - name: quilava
+      url: https://pokeapi.co/api/v2/pokemon/156/
+    - name: typhlosion
+      url: https://pokeapi.co/api/v2/pokemon/157/
+    - name: slugma
+      url: https://pokeapi.co/api/v2/pokemon/218/
+    - name: magcargo
+      url: https://pokeapi.co/api/v2/pokemon/219/
+    - name: magby
+      url: https://pokeapi.co/api/v2/pokemon/240/
+    - name: entei
+      url: https://pokeapi.co/api/v2/pokemon/244/
+    - name: numel
+      url: https://pokeapi.co/api/v2/pokemon/322/
+    - name: camerupt
+      url: https://pokeapi.co/api/v2/pokemon/323/
+    - name: torkoal
+      url: https://pokeapi.co/api/v2/pokemon/324/
+    - name: groudon
+      url: https://pokeapi.co/api/v2/pokemon/383/
+    - name: magmortar
+      url: https://pokeapi.co/api/v2/pokemon/467/
+    - name: heatran
+      url: https://pokeapi.co/api/v2/pokemon/485/
+    - name: groudon-primal
+      url: https://pokeapi.co/api/v2/pokemon/10078/
+    - name: camerupt-mega
+      url: https://pokeapi.co/api/v2/pokemon/10087/
+    machines: []
+    meta:
+      ailment:
+        name: burn
+        url: https://pokeapi.co/api/v2/move-ailment/4/
+      ailment_chance: 30
+      category:
+        name: damage+ailment
+        url: https://pokeapi.co/api/v2/move-category/4/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: lava-plume
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3075\u3093\u3048\u3093"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uBD84\uC5F0"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u5674\u7159"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "\xC9bullilave"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Flammensturm
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Humareda
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Lavasbuffo
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Lava Plume
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3075\u3093\u3048\u3093"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u55B7\u70DF"
+    past_values: []
+    power: 80
+    pp: 15
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/17/
+    target:
+      name: all-other-pokemon
+      url: https://pokeapi.co/api/v2/move-target/9/
+    type:
+      name: fire
+      url: https://pokeapi.co/api/v2/type/10/

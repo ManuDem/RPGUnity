@@ -108,8 +108,8 @@ public class Pokemon
         Stats = new Dictionary<Stat, int>();
         Stats.Add(Stat.Attack, Mathf.FloorToInt((Base.Attack * Level) / 100f) + 5);
         Stats.Add(Stat.Defense, Mathf.FloorToInt((Base.Defense * Level) / 100f) + 5);
-        Stats.Add(Stat.SpAttack, Mathf.FloorToInt((Base.SpAttack * Level) / 100f) + 5);
-        Stats.Add(Stat.SpDefense, Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5);
+        Stats.Add(Stat.Special_attack, Mathf.FloorToInt((Base.SpAttack * Level) / 100f) + 5);
+        Stats.Add(Stat.Special_defense, Mathf.FloorToInt((Base.SpDefense * Level) / 100f) + 5);
         Stats.Add(Stat.Speed, Mathf.FloorToInt((Base.Speed * Level) / 100f) + 5);
 
         int oldMaxHP = MaxHp;
@@ -125,8 +125,8 @@ public class Pokemon
         {
             {Stat.Attack, 0},
             {Stat.Defense, 0},
-            {Stat.SpAttack, 0},
-            {Stat.SpDefense, 0},
+            {Stat.Special_attack, 0},
+            {Stat.Special_defense, 0},
             {Stat.Speed, 0},
             {Stat.Accuracy, 0},
             {Stat.Evasion, 0},
@@ -230,11 +230,11 @@ public class Pokemon
     }
 
     public int SpAttack {
-        get { return GetStat(Stat.SpAttack); }
+        get { return GetStat(Stat.Special_attack); }
     }
 
     public int SpDefense {
-        get { return GetStat(Stat.SpDefense); }
+        get { return GetStat(Stat.Special_defense); }
     }
 
     public int Speed {

@@ -1,0 +1,651 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: synchronoise
+  m_EditorClassIdentifier: 
+  name: Synchronoise
+  description: "Using an odd shock wave, the user\ninflicts damage on any Pok\xE9mon
+    of the same\ntype in the area around it."
+  type: 11
+  power: 120
+  accuracy: 100
+  alwaysHits: 0
+  pp: 10
+  priority: 0
+  category: 1
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 485
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: special
+      url: https://pokeapi.co/api/v2/move-damage-class/3/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: "Inflicts regular damage.  Only Pok\xE9mon that share a type with the
+        user will take damage from this move."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: "Hits any Pok\xE9mon that shares a type with the user."
+    flavor_text_entries:
+    - flavor_text: "Des ondes myst\xE9rieuses blessent tous\nles Pok\xE9mon alentour
+        qui sont du m\xEAme\ntype que le lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "Using an odd shock wave, the user\ninflicts damage on any Pok\xE9mon
+        of the same\ntype in the area around it."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "Using an odd shock wave, the user\ninflicts damage on any Pok\xE9mon
+        of the same\ntype in the area around it."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3075\u3057\u304E\u306A\u3000\u3067\u3093\u3071\u3067\u3000\u307E\u308F\u308A\u306B\u3000\u3044\u308B\n\u3058\u3076\u3093\u3068\u3000\u304A\u306A\u3058\u3000\u30BF\u30A4\u30D7\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC774\uC0C1\uD55C \uC804\uD30C\uB85C \uC8FC\uC704\uC5D0 \uC788\uB294\n\uC790\uC2E0\uACFC
+        \uAC19\uC740 \uD0C0\uC785\uC758\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Des ondes myst\xE9rieuses blessent tous les\nPok\xE9mon alentour
+        qui sont du m\xEAme type que\nle lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "F\xFCgt Pok\xE9mon vom selben Typ, die sich in der\nN\xE4he des
+        Anwenders aufhalten, mit seltsamen\nDruckwellen Schaden zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Una extra\xF1a onda que da\xF1a a todos los Pok\xE9mon\nadyacentes
+        del mismo tipo que el que la ejecuta."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa infligge danni a tutti i Pok\xE9mon\ndello stesso
+        tipo che si trovano nelle vicinanze\nusando misteriose onde elettromagnetiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Using an odd shock wave, the user\ninflicts damage on any Pok\xE9mon
+        of the same\ntype in the area around it."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u4E0D\u601D\u8B70\u306A\u3000\u96FB\u6CE2\u3067\u3000\u5468\u308A\u306B\u3000\u3044\u308B\n\u81EA\u5206\u3068\u3000\u540C\u3058\u3000\u30BF\u30A4\u30D7\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3075\u3057\u304E\u306A\u3000\u3067\u3093\u3071\u3067\u3000\u307E\u308F\u308A\u306B\u3000\u3044\u308B\n\u3058\u3076\u3093\u3068\u3000\u304A\u306A\u3058\u3000\u30BF\u30A4\u30D7\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC774\uC0C1\uD55C \uC804\uD30C\uB85C \uC8FC\uC704\uC5D0 \uC788\uB294\n\uC790\uC2E0\uACFC
+        \uAC19\uC740 \uD0C0\uC785\uC758\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Des ondes myst\xE9rieuses blessent tous les\nPok\xE9mon alentour
+        qui sont du m\xEAme type que\nle lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "F\xFCgt Pok\xE9mon vom selben Typ, die sich in der\nN\xE4he des
+        Anwenders aufhalten, mit seltsamen\nDruckwellen Schaden zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Una extra\xF1a onda que da\xF1a a todos los Pok\xE9mon \nadyacentes
+        del mismo tipo que el que la ejecuta."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa infligge danni a tutti i Pok\xE9mon\ndello stesso
+        tipo che si trovano nelle vicinanze\nusando misteriose onde elettromagnetiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Using an odd shock wave, the user\ninflicts damage on any Pok\xE9mon
+        of the same\ntype in the area around it."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u4E0D\u601D\u8B70\u306A\u3000\u96FB\u6CE2\u3067\u3000\u5468\u308A\u306B\u3000\u3044\u308B\n\u81EA\u5206\u3068\u3000\u540C\u3058\u3000\u30BF\u30A4\u30D7\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3075\u3057\u304E\u306A\u3000\u3067\u3093\u3071\u3067\u3000\u307E\u308F\u308A\u306B\u3000\u3044\u308B\n\u3058\u3076\u3093\u3068\u3000\u304A\u306A\u3058\u3000\u30BF\u30A4\u30D7\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC774\uC0C1\uD55C \uC804\uD30C\uB85C \uC8FC\uC704\uC5D0 \uC788\uB294\n\uC790\uC2E0\uACFC
+        \uAC19\uC740 \uD0C0\uC785\uC758\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7528\u795E\u5947\u7684\u96FB\u6CE2\uFF0C\n\u653B\u64CA\u5468\u570D\u6240\u6709\n\u548C\u81EA\u5DF1\u76F8\u540C\u5C6C\u6027\u7684\u5BF6\u53EF\u5922\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Des ondes myst\xE9rieuses blessent tous les\nPok\xE9mon alentour
+        qui sont du m\xEAme type que\nle lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "F\xFCgt Pok\xE9mon vom selben Typ, die sich in der N\xE4he\ndes
+        Anwenders aufhalten, mit seltsamen Druckwellen\nSchaden zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Una extra\xF1a onda que da\xF1a a todos los Pok\xE9mon \nadyacentes
+        del mismo tipo que el que la ejecuta."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa infligge danni a tutti i Pok\xE9mon\ndello stesso
+        tipo che si trovano nelle vicinanze\nusando misteriose onde elettromagnetiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Using an odd shock wave, the user inflicts damage\non any Pok\xE9mon
+        of the same type in the area\naround it."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u4E0D\u601D\u8B70\u306A\u3000\u96FB\u6CE2\u3067\u3000\u5468\u308A\u306B\u3000\u3044\u308B\n\u81EA\u5206\u3068\u3000\u540C\u3058\u3000\u30BF\u30A4\u30D7\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7528\u795E\u5947\u7535\u6CE2\u5BF9\n\u5468\u56F4\u6240\u6709\u548C\u81EA\u5DF1\u5C5E\u6027\u76F8\u540C\u7684\n\u5B9D\u53EF\u68A6\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3075\u3057\u304E\u306A\u3000\u3067\u3093\u3071\u3067\u3000\u307E\u308F\u308A\u306B\u3000\u3044\u308B\n\u3058\u3076\u3093\u3068\u3000\u304A\u306A\u3058\u3000\u30BF\u30A4\u30D7\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC774\uC0C1\uD55C \uC804\uD30C\uB85C \uC8FC\uC704\uC5D0 \uC788\uB294\n\uC790\uC2E0\uACFC
+        \uAC19\uC740 \uD0C0\uC785\uC758\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7528\u795E\u5947\u7684\u96FB\u6CE2\uFF0C\n\u653B\u64CA\u5468\u570D\u6240\u6709\n\u548C\u81EA\u5DF1\u76F8\u540C\u5C6C\u6027\u7684\u5BF6\u53EF\u5922\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Des ondes myst\xE9rieuses blessent tous les\nPok\xE9mon alentour
+        qui sont du m\xEAme type que\nle lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "F\xFCgt Pok\xE9mon vom selben Typ, die sich in der N\xE4he\ndes
+        Anwenders aufhalten, mit seltsamen Druckwellen\nSchaden zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Una extra\xF1a onda que da\xF1a a todos los Pok\xE9mon \nadyacentes
+        del mismo tipo que el que la ejecuta."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa infligge danni a tutti i Pok\xE9mon\ndello stesso
+        tipo che si trovano nelle vicinanze\nusando misteriose onde elettromagnetiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Using an odd shock wave, the user inflicts damage\non any Pok\xE9mon
+        of the same type in the area\naround it."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u4E0D\u601D\u8B70\u306A\u3000\u96FB\u6CE2\u3067\u3000\u5468\u308A\u306B\u3000\u3044\u308B\n\u81EA\u5206\u3068\u3000\u540C\u3058\u3000\u30BF\u30A4\u30D7\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7528\u795E\u5947\u7535\u6CE2\u5BF9\n\u5468\u56F4\u6240\u6709\u548C\u81EA\u5DF1\u5C5E\u6027\u76F8\u540C\u7684\n\u5B9D\u53EF\u68A6\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3075\u3057\u304E\u306A\u3000\u3067\u3093\u3071\u3067\u3000\u307E\u308F\u308A\u306B\u3000\u3044\u308B\n\u3058\u3076\u3093\u3068\u3000\u304A\u306A\u3058\u3000\u30BF\u30A4\u30D7\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC774\uC0C1\uD55C \uC804\uD30C\uB85C \uC8FC\uC704\uC5D0 \uC788\uB294\n\uC790\uC2E0\uACFC
+        \uAC19\uC740 \uD0C0\uC785\uC758\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7528\u795E\u5947\u7684\u96FB\u6CE2\uFF0C\n\u653B\u64CA\u5468\u570D\u6240\u6709\n\u548C\u81EA\u5DF1\u76F8\u540C\u5C6C\u6027\u7684\u5BF6\u53EF\u5922\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Des ondes myst\xE9rieuses blessent tous les\nPok\xE9mon alentour
+        qui sont du m\xEAme type que\nle lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "F\xFCgt Pok\xE9mon vom selben Typ, die sich in der N\xE4he\ndes
+        Anwenders aufhalten, mit seltsamen Druckwellen\nSchaden zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Una extra\xF1a onda que da\xF1a a todos los Pok\xE9mon \nadyacentes
+        del mismo tipo que el que la ejecuta."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa infligge danni a tutti i Pok\xE9mon\ndello stesso
+        tipo che si trovano nelle vicinanze\nusando misteriose onde elettromagnetiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Using an odd shock wave, the user inflicts damage\non any Pok\xE9mon
+        of the same type in the area\naround it."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u4E0D\u601D\u8B70\u306A\u3000\u96FB\u6CE2\u3067\u3000\u5468\u308A\u306B\u3000\u3044\u308B\n\u81EA\u5206\u3068\u3000\u540C\u3058\u3000\u30BF\u30A4\u30D7\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7528\u795E\u5947\u7535\u6CE2\u5BF9\n\u5468\u56F4\u6240\u6709\u548C\u81EA\u5DF1\u5C5E\u6027\u76F8\u540C\u7684\n\u5B9D\u53EF\u68A6\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3053\u306E\u308F\u3056\u306F\u3000\u3064\u304B\u3048\u307E\u305B\u3093\n\u304A\u3082\u3044\u3060\u3059\u3053\u3068\u304C\u3000\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u304C\n\u308F\u3056\u3092\u3000\u308F\u3059\u308C\u308B\u3053\u3068\u3092\u3000\u304A\u3059\u3059\u3081\u3057\u307E\u3059"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC0AC\uC6A9\uD560 \uC218 \uC5C6\uB294 \uAE30\uC220\uC785\uB2C8\uB2E4.\n\uB2E4\uC2DC
+        \uBC30\uC6B0\uAC8C \uD560 \uC218 \uC5C6\uC9C0\uB9CC\n\uAE30\uC220\uC744 \uC78A\uAC8C
+        \uD558\uB294 \uAC83\uC744 \uAD8C\uC7A5\uD569\uB2C8\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u7121\u6CD5\u4F7F\u7528\u6B64\u62DB\u5F0F\u3002\n\u96D6\u7136\u5FD8\u8A18\u5F8C\u5C07\u7121\u6CD5\u518D\u60F3\u8D77\u4F86\uFF0C\n\u4F46\u9084\u662F\u5EFA\u8B70\u5FD8\u8A18\u6B64\u62DB\u5F0F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Cette capacit\xE9 ne peut pas \xEAtre utilis\xE9e.\nIl est recommand\xE9
+        de l\u2019oublier, m\xEAme s\u2019il sera\nimpossible de se la rem\xE9morer
+        une fois oubli\xE9e."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Diese Attacke kann nicht eingesetzt werden. Du solltest\ndein
+        Pok\xE9mon sie vergessen lassen. Beachte aber,\ndass es sich danach nicht
+        wieder an sie erinnern kann."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Este movimiento no se puede usar, por lo que ser\xEDa\nmejor
+        olvidarlo, aunque eso implique que no se pueda\nrecordar posteriormente."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Questa mossa non pu\xF2 essere usata.\n\xC8 consigliabile farla
+        dimenticare al Pok\xE9mon. Tuttavia,\nuna volta dimenticata, non potr\xE0
+        pi\xF9 essere ricordata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "This move can\u2019t be used.\nIt\u2019s recommended that this
+        move is forgotten.\nOnce forgotten, this move can\u2019t be remembered."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u3053\u306E\u6280\u306F\u3000\u4F7F\u3048\u307E\u305B\u3093\n\u601D\u3044\u51FA\u3059\u3053\u3068\u304C\u3000\u3067\u304D\u306A\u304F\u306A\u308A\u307E\u3059\u304C\n\u6280\u3092\u3000\u5FD8\u308C\u308B\u3053\u3068\u3092\u3000\u304A\u3059\u3059\u3081\u3057\u307E\u3059"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u65E0\u6CD5\u4F7F\u7528\u8FD9\u4E2A\u62DB\u5F0F\u3002\n\u867D\u7136\u5FD8\u8BB0\u4E4B\u540E\u5C31\u518D\u4E5F\u60F3\u4E0D\u8D77\u6765\u4E86\uFF0C\n\u4F46\u8FD8\u662F\u5EFA\u8BAE\u5FD8\u8BB0\u8FD9\u4E2A\u62DB\u5F0F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-v
+      url: https://pokeapi.co/api/v2/generation/5/
+    id: 485
+    learned_by_pokemon:
+    - name: psyduck
+      url: https://pokeapi.co/api/v2/pokemon/54/
+    - name: drowzee
+      url: https://pokeapi.co/api/v2/pokemon/96/
+    - name: hypno
+      url: https://pokeapi.co/api/v2/pokemon/97/
+    - name: eevee
+      url: https://pokeapi.co/api/v2/pokemon/133/
+    - name: hoothoot
+      url: https://pokeapi.co/api/v2/pokemon/163/
+    - name: noctowl
+      url: https://pokeapi.co/api/v2/pokemon/164/
+    - name: natu
+      url: https://pokeapi.co/api/v2/pokemon/177/
+    - name: ralts
+      url: https://pokeapi.co/api/v2/pokemon/280/
+    - name: whismur
+      url: https://pokeapi.co/api/v2/pokemon/293/
+    - name: loudred
+      url: https://pokeapi.co/api/v2/pokemon/294/
+    - name: exploud
+      url: https://pokeapi.co/api/v2/pokemon/295/
+    - name: kecleon
+      url: https://pokeapi.co/api/v2/pokemon/352/
+    - name: chimecho
+      url: https://pokeapi.co/api/v2/pokemon/358/
+    - name: chatot
+      url: https://pokeapi.co/api/v2/pokemon/441/
+    - name: munna
+      url: https://pokeapi.co/api/v2/pokemon/517/
+    - name: woobat
+      url: https://pokeapi.co/api/v2/pokemon/527/
+    - name: sigilyph
+      url: https://pokeapi.co/api/v2/pokemon/561/
+    - name: elgyem
+      url: https://pokeapi.co/api/v2/pokemon/605/
+    - name: beheeyem
+      url: https://pokeapi.co/api/v2/pokemon/606/
+    - name: bruxish
+      url: https://pokeapi.co/api/v2/pokemon/779/
+    - name: magearna
+      url: https://pokeapi.co/api/v2/pokemon/801/
+    - name: magearna-original
+      url: https://pokeapi.co/api/v2/pokemon/10147/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: synchronoise
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30B7\u30F3\u30AF\u30ED\u30CE\u30A4\u30BA"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC2F1\uD06C\uB85C\uB178\uC774\uC988"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u540C\u6B65\u5E72\u64FE"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Synchropeine
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: "Synchrol\xE4rm"
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Sincrorruido
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Sincrumore
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Synchronoise
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30B7\u30F3\u30AF\u30ED\u30CE\u30A4\u30BA"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u540C\u6B65\u5E72\u6270"
+    past_values:
+    - accuracy: 0
+      effect_chance: 0
+      effect_entries: []
+      power: 70
+      pp: 15
+      type:
+        name: 
+        url: 
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    power: 120
+    pp: 10
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: all-other-pokemon
+      url: https://pokeapi.co/api/v2/move-target/9/
+    type:
+      name: psychic
+      url: https://pokeapi.co/api/v2/type/14/

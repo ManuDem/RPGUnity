@@ -1,0 +1,933 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: water-gun
+  m_EditorClassIdentifier: 
+  name: Water Gun
+  description: 'Squirts water to
+
+    attack.'
+  type: 3
+  power: 40
+  accuracy: 100
+  alwaysHits: 0
+  pp: 25
+  priority: 0
+  category: 1
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 55
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after:
+        - name: rain-dance
+          url: https://pokeapi.co/api/v2/move/240/
+        - name: mud-sport
+          url: https://pokeapi.co/api/v2/move/300/
+        - name: water-sport
+          url: https://pokeapi.co/api/v2/move/346/
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/1/
+    contest_type:
+      name: cute
+      url: https://pokeapi.co/api/v2/contest-type/3/
+    damage_class:
+      name: special
+      url: https://pokeapi.co/api/v2/move-damage-class/3/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Inflicts regular damage with no additional effect.
+    flavor_text_entries:
+    - flavor_text: 'Squirts water to
+
+        attack.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    - flavor_text: 'Squirts water to
+
+        attack.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: crystal
+        url: https://pokeapi.co/api/v2/version-group/4/
+    - flavor_text: 'Squirts water to attack
+
+        the foe.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: 'Squirts water to attack
+
+        the foe.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: 'The foe is struck
+
+        with a lot of water
+
+        expelled
+        forcibly
+
+        from the mouth.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: 'The foe is blasted
+
+        with a forceful shot
+
+        of
+        water.
+
+
+'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: 'The foe is blasted
+
+        with a forceful shot
+
+        of
+        water.
+
+
+'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: 'The foe is blasted
+
+        with a forceful shot
+
+        of
+        water.
+
+
+'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "De l\u2019eau est projet\xE9e sur l\u2019ennemi\nen arc de cercle."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The target is blasted with a
+
+        forceful shot of water.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The target is blasted with a
+
+        forceful shot of water.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u307F\u305A\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uBB3C\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "De l\u2019eau est projet\xE9e en arc de cercle sur\nl\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: Das Ziel wird mit Wasser bespritzt.
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: Ataca disparando agua con gran potencia.
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Il bersaglio \xE8 colpito da un potente getto d\u2019acqua."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'The target is blasted with a
+
+        forceful shot of water.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u6C34\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u202F\u305A\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uBB3C\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "De l\u2019eau est projet\xE9e avec force sur l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: Das Ziel wird mit Wasser bespritzt.
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: Ataca disparando agua con gran potencia.
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Il bersaglio \xE8 colpito da un potente getto d\u2019acqua."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'The target is blasted with a
+
+        forceful shot of water.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u6C34\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u307F\u305A\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uBB3C\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5411\u5C0D\u624B\u5674\u5C04\n\u5F37\u70C8\u6C34\u6D41\u9032\u884C\u653B\u64CA\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "De l\u2019eau est projet\xE9e avec force sur l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: Das Ziel wird mit Wasser bespritzt.
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: Ataca disparando agua con gran potencia.
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Il bersaglio \xE8 colpito da un potente getto d\u2019acqua."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: The target is blasted with a forceful shot of water.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u6C34\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5411\u5BF9\u624B\u731B\u70C8\u5730\u55B7\u5C04\n\u6C34\u6D41\u8FDB\u884C\u653B\u51FB\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u307F\u305A\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uBB3C\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5411\u5C0D\u624B\u5674\u5C04\n\u5F37\u70C8\u6C34\u6D41\u9032\u884C\u653B\u64CA\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "De l\u2019eau est projet\xE9e avec force sur l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: Das Ziel wird mit Wasser bespritzt.
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: Ataca disparando agua con gran potencia.
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Il bersaglio \xE8 colpito da un potente getto d\u2019acqua."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: The target is blasted with a forceful shot of water.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u6C34\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5411\u5BF9\u624B\u731B\u70C8\u5730\u55B7\u5C04\n\u6C34\u6D41\u8FDB\u884C\u653B\u51FB\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u307F\u305A\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uBB3C\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5411\u5C0D\u624B\u5674\u5C04\n\u5F37\u70C8\u6C34\u6D41\u9032\u884C\u653B\u64CA\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "De l\u2019eau est projet\xE9e avec force sur l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: Das Ziel wird mit Wasser bespritzt.
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: Ataca disparando agua con gran potencia.
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Il bersaglio \xE8 colpito da un potente getto d\u2019acqua."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: The target is blasted with a forceful shot of water.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u6C34\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5411\u5BF9\u624B\u731B\u70C8\u5730\u55B7\u5C04\n\u6C34\u6D41\u8FDB\u884C\u653B\u51FB\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u307F\u305A\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uBB3C\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5411\u5C0D\u624B\u5674\u5C04\n\u5F37\u70C8\u6C34\u6D41\u9032\u884C\u653B\u64CA\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "De l\u2019eau est projet\xE9e avec force sur l\u2019ennemi."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: Das Ziel wird mit Wasser bespritzt.
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: Ataca disparando agua con gran potencia.
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Il bersaglio \xE8 colpito da un potente getto d\u2019acqua."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: The target is blasted with a forceful shot of water.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u6C34\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5411\u5BF9\u624B\u731B\u70C8\u5730\u55B7\u5C04\n\u6C34\u6D41\u8FDB\u884C\u653B\u51FB\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-i
+      url: https://pokeapi.co/api/v2/generation/1/
+    id: 55
+    learned_by_pokemon:
+    - name: squirtle
+      url: https://pokeapi.co/api/v2/pokemon/7/
+    - name: wartortle
+      url: https://pokeapi.co/api/v2/pokemon/8/
+    - name: blastoise
+      url: https://pokeapi.co/api/v2/pokemon/9/
+    - name: rattata
+      url: https://pokeapi.co/api/v2/pokemon/19/
+    - name: raticate
+      url: https://pokeapi.co/api/v2/pokemon/20/
+    - name: nidorina
+      url: https://pokeapi.co/api/v2/pokemon/30/
+    - name: nidoqueen
+      url: https://pokeapi.co/api/v2/pokemon/31/
+    - name: nidorino
+      url: https://pokeapi.co/api/v2/pokemon/33/
+    - name: nidoking
+      url: https://pokeapi.co/api/v2/pokemon/34/
+    - name: clefairy
+      url: https://pokeapi.co/api/v2/pokemon/35/
+    - name: clefable
+      url: https://pokeapi.co/api/v2/pokemon/36/
+    - name: jigglypuff
+      url: https://pokeapi.co/api/v2/pokemon/39/
+    - name: wigglytuff
+      url: https://pokeapi.co/api/v2/pokemon/40/
+    - name: meowth
+      url: https://pokeapi.co/api/v2/pokemon/52/
+    - name: persian
+      url: https://pokeapi.co/api/v2/pokemon/53/
+    - name: psyduck
+      url: https://pokeapi.co/api/v2/pokemon/54/
+    - name: golduck
+      url: https://pokeapi.co/api/v2/pokemon/55/
+    - name: poliwag
+      url: https://pokeapi.co/api/v2/pokemon/60/
+    - name: poliwhirl
+      url: https://pokeapi.co/api/v2/pokemon/61/
+    - name: poliwrath
+      url: https://pokeapi.co/api/v2/pokemon/62/
+    - name: tentacool
+      url: https://pokeapi.co/api/v2/pokemon/72/
+    - name: tentacruel
+      url: https://pokeapi.co/api/v2/pokemon/73/
+    - name: slowpoke
+      url: https://pokeapi.co/api/v2/pokemon/79/
+    - name: slowbro
+      url: https://pokeapi.co/api/v2/pokemon/80/
+    - name: seel
+      url: https://pokeapi.co/api/v2/pokemon/86/
+    - name: dewgong
+      url: https://pokeapi.co/api/v2/pokemon/87/
+    - name: shellder
+      url: https://pokeapi.co/api/v2/pokemon/90/
+    - name: cloyster
+      url: https://pokeapi.co/api/v2/pokemon/91/
+    - name: krabby
+      url: https://pokeapi.co/api/v2/pokemon/98/
+    - name: kingler
+      url: https://pokeapi.co/api/v2/pokemon/99/
+    - name: cubone
+      url: https://pokeapi.co/api/v2/pokemon/104/
+    - name: marowak
+      url: https://pokeapi.co/api/v2/pokemon/105/
+    - name: lickitung
+      url: https://pokeapi.co/api/v2/pokemon/108/
+    - name: rhydon
+      url: https://pokeapi.co/api/v2/pokemon/112/
+    - name: chansey
+      url: https://pokeapi.co/api/v2/pokemon/113/
+    - name: kangaskhan
+      url: https://pokeapi.co/api/v2/pokemon/115/
+    - name: horsea
+      url: https://pokeapi.co/api/v2/pokemon/116/
+    - name: seadra
+      url: https://pokeapi.co/api/v2/pokemon/117/
+    - name: goldeen
+      url: https://pokeapi.co/api/v2/pokemon/118/
+    - name: seaking
+      url: https://pokeapi.co/api/v2/pokemon/119/
+    - name: staryu
+      url: https://pokeapi.co/api/v2/pokemon/120/
+    - name: starmie
+      url: https://pokeapi.co/api/v2/pokemon/121/
+    - name: jynx
+      url: https://pokeapi.co/api/v2/pokemon/124/
+    - name: gyarados
+      url: https://pokeapi.co/api/v2/pokemon/130/
+    - name: lapras
+      url: https://pokeapi.co/api/v2/pokemon/131/
+    - name: vaporeon
+      url: https://pokeapi.co/api/v2/pokemon/134/
+    - name: omanyte
+      url: https://pokeapi.co/api/v2/pokemon/138/
+    - name: omastar
+      url: https://pokeapi.co/api/v2/pokemon/139/
+    - name: kabuto
+      url: https://pokeapi.co/api/v2/pokemon/140/
+    - name: kabutops
+      url: https://pokeapi.co/api/v2/pokemon/141/
+    - name: snorlax
+      url: https://pokeapi.co/api/v2/pokemon/143/
+    - name: articuno
+      url: https://pokeapi.co/api/v2/pokemon/144/
+    - name: dratini
+      url: https://pokeapi.co/api/v2/pokemon/147/
+    - name: dragonair
+      url: https://pokeapi.co/api/v2/pokemon/148/
+    - name: dragonite
+      url: https://pokeapi.co/api/v2/pokemon/149/
+    - name: mewtwo
+      url: https://pokeapi.co/api/v2/pokemon/150/
+    - name: mew
+      url: https://pokeapi.co/api/v2/pokemon/151/
+    - name: totodile
+      url: https://pokeapi.co/api/v2/pokemon/158/
+    - name: croconaw
+      url: https://pokeapi.co/api/v2/pokemon/159/
+    - name: feraligatr
+      url: https://pokeapi.co/api/v2/pokemon/160/
+    - name: chinchou
+      url: https://pokeapi.co/api/v2/pokemon/170/
+    - name: lanturn
+      url: https://pokeapi.co/api/v2/pokemon/171/
+    - name: marill
+      url: https://pokeapi.co/api/v2/pokemon/183/
+    - name: azumarill
+      url: https://pokeapi.co/api/v2/pokemon/184/
+    - name: politoed
+      url: https://pokeapi.co/api/v2/pokemon/186/
+    - name: wooper
+      url: https://pokeapi.co/api/v2/pokemon/194/
+    - name: quagsire
+      url: https://pokeapi.co/api/v2/pokemon/195/
+    - name: slowking
+      url: https://pokeapi.co/api/v2/pokemon/199/
+    - name: qwilfish
+      url: https://pokeapi.co/api/v2/pokemon/211/
+    - name: remoraid
+      url: https://pokeapi.co/api/v2/pokemon/223/
+    - name: octillery
+      url: https://pokeapi.co/api/v2/pokemon/224/
+    - name: kingdra
+      url: https://pokeapi.co/api/v2/pokemon/230/
+    - name: phanpy
+      url: https://pokeapi.co/api/v2/pokemon/231/
+    - name: suicune
+      url: https://pokeapi.co/api/v2/pokemon/245/
+    - name: mudkip
+      url: https://pokeapi.co/api/v2/pokemon/258/
+    - name: marshtomp
+      url: https://pokeapi.co/api/v2/pokemon/259/
+    - name: swampert
+      url: https://pokeapi.co/api/v2/pokemon/260/
+    - name: lotad
+      url: https://pokeapi.co/api/v2/pokemon/270/
+    - name: wingull
+      url: https://pokeapi.co/api/v2/pokemon/278/
+    - name: pelipper
+      url: https://pokeapi.co/api/v2/pokemon/279/
+    - name: azurill
+      url: https://pokeapi.co/api/v2/pokemon/298/
+    - name: wailmer
+      url: https://pokeapi.co/api/v2/pokemon/320/
+    - name: wailord
+      url: https://pokeapi.co/api/v2/pokemon/321/
+    - name: barboach
+      url: https://pokeapi.co/api/v2/pokemon/339/
+    - name: whiscash
+      url: https://pokeapi.co/api/v2/pokemon/340/
+    - name: anorith
+      url: https://pokeapi.co/api/v2/pokemon/347/
+    - name: armaldo
+      url: https://pokeapi.co/api/v2/pokemon/348/
+    - name: milotic
+      url: https://pokeapi.co/api/v2/pokemon/350/
+    - name: castform
+      url: https://pokeapi.co/api/v2/pokemon/351/
+    - name: spheal
+      url: https://pokeapi.co/api/v2/pokemon/363/
+    - name: sealeo
+      url: https://pokeapi.co/api/v2/pokemon/364/
+    - name: walrein
+      url: https://pokeapi.co/api/v2/pokemon/365/
+    - name: clamperl
+      url: https://pokeapi.co/api/v2/pokemon/366/
+    - name: relicanth
+      url: https://pokeapi.co/api/v2/pokemon/369/
+    - name: luvdisc
+      url: https://pokeapi.co/api/v2/pokemon/370/
+    - name: bibarel
+      url: https://pokeapi.co/api/v2/pokemon/400/
+    - name: buizel
+      url: https://pokeapi.co/api/v2/pokemon/418/
+    - name: floatzel
+      url: https://pokeapi.co/api/v2/pokemon/419/
+    - name: finneon
+      url: https://pokeapi.co/api/v2/pokemon/456/
+    - name: lumineon
+      url: https://pokeapi.co/api/v2/pokemon/457/
+    - name: oshawott
+      url: https://pokeapi.co/api/v2/pokemon/501/
+    - name: dewott
+      url: https://pokeapi.co/api/v2/pokemon/502/
+    - name: samurott
+      url: https://pokeapi.co/api/v2/pokemon/503/
+    - name: panpour
+      url: https://pokeapi.co/api/v2/pokemon/515/
+    - name: basculin-red-striped
+      url: https://pokeapi.co/api/v2/pokemon/550/
+    - name: tirtouga
+      url: https://pokeapi.co/api/v2/pokemon/564/
+    - name: carracosta
+      url: https://pokeapi.co/api/v2/pokemon/565/
+    - name: ducklett
+      url: https://pokeapi.co/api/v2/pokemon/580/
+    - name: swanna
+      url: https://pokeapi.co/api/v2/pokemon/581/
+    - name: stunfisk
+      url: https://pokeapi.co/api/v2/pokemon/618/
+    - name: binacle
+      url: https://pokeapi.co/api/v2/pokemon/688/
+    - name: barbaracle
+      url: https://pokeapi.co/api/v2/pokemon/689/
+    - name: skrelp
+      url: https://pokeapi.co/api/v2/pokemon/690/
+    - name: dragalge
+      url: https://pokeapi.co/api/v2/pokemon/691/
+    - name: clauncher
+      url: https://pokeapi.co/api/v2/pokemon/692/
+    - name: clawitzer
+      url: https://pokeapi.co/api/v2/pokemon/693/
+    - name: popplio
+      url: https://pokeapi.co/api/v2/pokemon/728/
+    - name: brionne
+      url: https://pokeapi.co/api/v2/pokemon/729/
+    - name: primarina
+      url: https://pokeapi.co/api/v2/pokemon/730/
+    - name: wishiwashi-solo
+      url: https://pokeapi.co/api/v2/pokemon/746/
+    - name: bruxish
+      url: https://pokeapi.co/api/v2/pokemon/779/
+    - name: tapu-fini
+      url: https://pokeapi.co/api/v2/pokemon/788/
+    - name: castform-sunny
+      url: https://pokeapi.co/api/v2/pokemon/10013/
+    - name: castform-rainy
+      url: https://pokeapi.co/api/v2/pokemon/10014/
+    - name: castform-snowy
+      url: https://pokeapi.co/api/v2/pokemon/10015/
+    - name: basculin-blue-striped
+      url: https://pokeapi.co/api/v2/pokemon/10016/
+    - name: blastoise-mega
+      url: https://pokeapi.co/api/v2/pokemon/10036/
+    - name: swampert-mega
+      url: https://pokeapi.co/api/v2/pokemon/10064/
+    - name: slowbro-mega
+      url: https://pokeapi.co/api/v2/pokemon/10071/
+    - name: wishiwashi-school
+      url: https://pokeapi.co/api/v2/pokemon/10127/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/222/
+      version_group:
+        name: red-blue
+        url: https://pokeapi.co/api/v2/version-group/1/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/223/
+      version_group:
+        name: yellow
+        url: https://pokeapi.co/api/v2/version-group/2/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: water-gun
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u307F\u305A\u3067\u3063\u307D\u3046"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uBB3C\uB300\uD3EC"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u6C34\u69CD"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "Pistolet \xE0 O"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Aquaknarre
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Pistola Agua
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Pistolacqua
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Water Gun
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u307F\u305A\u3067\u3063\u307D\u3046"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u6C34\u67AA"
+    past_values: []
+    power: 40
+    pp: 25
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/5/
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: water
+      url: https://pokeapi.co/api/v2/type/11/

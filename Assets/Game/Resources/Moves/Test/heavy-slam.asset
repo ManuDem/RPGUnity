@@ -1,0 +1,675 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: heavy-slam
+  m_EditorClassIdentifier: 
+  name: Heavy Slam
+  description: 'The user slams into the target with its
+
+    heavy body. The more
+    the user outweighs
+
+    the target, the greater its damage.'
+  type: 16
+  power: 0
+  accuracy: 100
+  alwaysHits: 0
+  pp: 10
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 484
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: "Inflicts regular damage.  The greater the user's weight compared to
+        the target's, the higher power this move has, to a maximum of 120.\n\nUser's
+        weight                    | Power\n-------------------------------- | ----:\nUp
+        to 2\xD7 the target's weight     |    40\nUp to 3\xD7 the target's weight    
+        |    60\nUp to 4\xD7 the target's weight     |    80\nUp to 5\xD7 the target's
+        weight     |   100\nMore than 5\xD7 the target's weight |   120\n"
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Power is higher when the user weighs more than the target, up
+        to a maximum of 120.
+    flavor_text_entries:
+    - flavor_text: "Le lanceur se jette sur l\u2019ennemi de tout\nson poids. S\u2019il
+        est plus lourd que l\u2019ennemi,\nl\u2019effet augmente en cons\xE9quence."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The user slams into the target with its
+
+        heavy body.
+        The more the user outweighs
+
+        the target, the greater its damage.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The user slams into the target with its
+
+        heavy body.
+        The more the user outweighs
+
+        the target, the greater its damage.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u304A\u3082\u305F\u3044\u3000\u304B\u3089\u3060\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3058\u3076\u3093\u304C\u3000\u3042\u3044\u3066\u3088\u308A\n\u304A\u3082\u3044\u307B\u3069\u3000\u3044\u308A\u3087\u304F\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uBB34\uAC70\uC6B4 \uBAB8\uC73C\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBD80\uB52A\uCCD0\n\uACF5\uACA9\uD55C\uB2E4. \uC790\uC2E0\uC774 \uC0C1\uB300\uBCF4\uB2E4\n\uBB34\uAC70\uC6B8\uC218\uB85D
+        \uC704\uB825\uC774 \uC62C\uB77C\uAC04\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Le lanceur se jette sur l\u2019ennemi de tout son poids.\nS\u2019il
+        est plus lourd que l\u2019ennemi, l\u2019effet augmente\nen cons\xE9quence."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Anwender rammt das Ziel mit massivem K\xF6rper.\nJe schwerer
+        er im Vergleich zum Ziel ist,\ndesto st\xE4rker die Attacke."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "El usuario golpea con todo su cuerpo. Cuanto\nmayor sea su peso
+        comparado con el del objetivo,\nm\xE1s da\xF1o causar\xE1."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa si lancia contro il bersaglio con tutto\nil proprio
+        peso. Pi\xF9 \xE8 pesante rispetto ad esso,\npi\xF9 danni causa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user slams into the target with its\nheavy body. The more
+        the user outweighs\nthe target, the greater the move\u2019s power."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u91CD\u305F\u3044\u3000\u4F53\u3067\u3000\u76F8\u624B\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u653B\u6483\u3059\u308B\u3002\u81EA\u5206\u304C\u3000\u76F8\u624B\u3088\u308A\n\u91CD\u3044\u307B\u3069\u3000\u5A01\u529B\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u304A\u3082\u305F\u3044\u3000\u304B\u3089\u3060\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3058\u3076\u3093\u304C\u3000\u3042\u3044\u3066\u3088\u308A\n\u304A\u3082\u3044\u307B\u3069\u3000\u3044\u308A\u3087\u304F\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uBB34\uAC70\uC6B4 \uBAB8\uC73C\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBD80\uB52A\uCCD0\n\uACF5\uACA9\uD55C\uB2E4. \uC790\uC2E0\uC774 \uC0C1\uB300\uBCF4\uB2E4\n\uBB34\uAC70\uC6B8\uC218\uB85D
+        \uC704\uB825\uC774 \uC62C\uB77C\uAC04\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Le lanceur se jette sur l\u2019ennemi de tout son poids.\nS\u2019il
+        est plus lourd que l\u2019ennemi, l\u2019effet augmente\nen cons\xE9quence."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Anwender rammt das Ziel mit massivem K\xF6rper.\nJe schwerer
+        er im Vergleich zum Ziel ist,\ndesto st\xE4rker die Attacke."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "El usuario golpea con todo su cuerpo. Cuanto mayor \nsea su peso
+        comparado con el del objetivo, m\xE1s da\xF1o \ncausar\xE1."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa si lancia contro il bersaglio con tutto\nil proprio
+        peso. Pi\xF9 \xE8 pesante rispetto ad esso,\npi\xF9 danni causa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user slams into the target with its\nheavy body. The more
+        the user outweighs\nthe target, the greater the move\u2019s power."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u91CD\u305F\u3044\u3000\u4F53\u3067\u3000\u76F8\u624B\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u653B\u6483\u3059\u308B\u3002\u81EA\u5206\u304C\u3000\u76F8\u624B\u3088\u308A\n\u91CD\u3044\u307B\u3069\u3000\u5A01\u529B\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u304A\u3082\u305F\u3044\u3000\u304B\u3089\u3060\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3058\u3076\u3093\u304C\u3000\u3042\u3044\u3066\u3088\u308A\n\u304A\u3082\u3044\u307B\u3069\u3000\u3044\u308A\u3087\u304F\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uBB34\uAC70\uC6B4 \uBAB8\uC73C\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBD80\uB52A\uCCD0\n\uACF5\uACA9\uD55C\uB2E4. \uC790\uC2E0\uC774 \uC0C1\uB300\uBCF4\uB2E4\n\uBB34\uAC70\uC6B8\uC218\uB85D
+        \uC704\uB825\uC774 \uC62C\uB77C\uAC04\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7528\u6C89\u91CD\u7684\u8EAB\u9AD4\u885D\u649E\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u9AD4\u91CD\u6BD4\u5C0D\u624B\u91CD\u8D8A\u591A\uFF0C\u5A01\u529B\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le lanceur se jette sur l\u2019ennemi de tout son poids.\nS\u2019il
+        est plus lourd que l\u2019ennemi, l\u2019effet augmente\nen cons\xE9quence."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Anwender rammt das Ziel mit massivem K\xF6rper.\nJe schwerer
+        er im Vergleich zum Ziel ist, desto\nst\xE4rker die Attacke."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "El usuario golpea con todo su cuerpo. Cuanto mayor \nsea su peso
+        comparado con el del objetivo, m\xE1s\nda\xF1o causar\xE1."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa si lancia contro il bersaglio con tutto\nil proprio
+        peso. Pi\xF9 \xE8 pesante rispetto ad esso,\npi\xF9 danni causa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user slams into the target with its heavy body.\nThe more
+        the user outweighs the target, the greater\nthe move\u2019s power."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u91CD\u305F\u3044\u3000\u4F53\u3067\u3000\u76F8\u624B\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u81EA\u5206\u304C\u3000\u76F8\u624B\u3088\u308A\n\u91CD\u3044\u307B\u3069\u3000\u5A01\u529B\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7528\u6C89\u91CD\u7684\u8EAB\u4F53\u649E\u5411\u5BF9\u624B\u8FDB\u884C\u653B\u51FB\u3002\n\u81EA\u5DF1\u6BD4\u5BF9\u624B\u8D8A\u91CD\uFF0C\u5A01\u529B\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u304A\u3082\u305F\u3044\u3000\u304B\u3089\u3060\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3058\u3076\u3093\u304C\u3000\u3042\u3044\u3066\u3088\u308A\n\u304A\u3082\u3044\u307B\u3069\u3000\u3044\u308A\u3087\u304F\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uBB34\uAC70\uC6B4 \uBAB8\uC73C\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBD80\uB52A\uCCD0\n\uACF5\uACA9\uD55C\uB2E4. \uC790\uC2E0\uC774 \uC0C1\uB300\uBCF4\uB2E4\n\uBB34\uAC70\uC6B8\uC218\uB85D
+        \uC704\uB825\uC774 \uC62C\uB77C\uAC04\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7528\u6C89\u91CD\u7684\u8EAB\u9AD4\u885D\u649E\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u9AD4\u91CD\u6BD4\u5C0D\u624B\u91CD\u8D8A\u591A\uFF0C\u5A01\u529B\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le lanceur se jette sur l\u2019ennemi de tout son poids.\nS\u2019il
+        est plus lourd que l\u2019ennemi, l\u2019effet augmente\nen cons\xE9quence."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Anwender rammt das Ziel mit massivem K\xF6rper.\nJe schwerer
+        er im Vergleich zum Ziel ist, desto\nst\xE4rker die Attacke."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "El usuario golpea con todo su cuerpo. Cuanto mayor \nsea su peso
+        comparado con el del objetivo, m\xE1s\nda\xF1o causar\xE1."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa si lancia contro il bersaglio con tutto\nil proprio
+        peso. Pi\xF9 \xE8 pesante rispetto ad esso,\npi\xF9 danni causa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user slams into the target with its heavy body.\nThe more
+        the user outweighs the target, the greater\nthe move\u2019s power."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u91CD\u305F\u3044\u3000\u4F53\u3067\u3000\u76F8\u624B\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u81EA\u5206\u304C\u3000\u76F8\u624B\u3088\u308A\n\u91CD\u3044\u307B\u3069\u3000\u5A01\u529B\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7528\u6C89\u91CD\u7684\u8EAB\u4F53\u649E\u5411\u5BF9\u624B\u8FDB\u884C\u653B\u51FB\u3002\n\u81EA\u5DF1\u6BD4\u5BF9\u624B\u8D8A\u91CD\uFF0C\u5A01\u529B\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u304A\u3082\u305F\u3044\u3000\u304B\u3089\u3060\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3058\u3076\u3093\u304C\u3000\u3042\u3044\u3066\u3088\u308A\n\u304A\u3082\u3044\u307B\u3069\u3000\u3044\u308A\u3087\u304F\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uBB34\uAC70\uC6B4 \uBAB8\uC73C\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBD80\uB52A\uCCD0\n\uACF5\uACA9\uD55C\uB2E4. \uC790\uC2E0\uC774 \uC0C1\uB300\uBCF4\uB2E4\n\uBB34\uAC70\uC6B8\uC218\uB85D
+        \uC704\uB825\uC774 \uC62C\uB77C\uAC04\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7528\u6C89\u91CD\u7684\u8EAB\u9AD4\u885D\u649E\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u9AD4\u91CD\u6BD4\u5C0D\u624B\u91CD\u8D8A\u591A\uFF0C\u5A01\u529B\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le lanceur se jette sur l\u2019ennemi de tout son poids.\nS\u2019il
+        est plus lourd que l\u2019ennemi, l\u2019effet augmente\nen cons\xE9quence."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Anwender rammt das Ziel mit massivem K\xF6rper.\nJe schwerer
+        er im Vergleich zum Ziel ist, desto\nst\xE4rker die Attacke."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "El usuario golpea con todo su cuerpo. Cuanto mayor \nsea su peso
+        comparado con el del objetivo, m\xE1s\nda\xF1o causar\xE1."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa si lancia contro il bersaglio con tutto\nil proprio
+        peso. Pi\xF9 \xE8 pesante rispetto ad esso,\npi\xF9 danni causa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user slams into the target with its heavy body.\nThe more
+        the user outweighs the target, the greater\nthe move\u2019s power."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u91CD\u305F\u3044\u3000\u4F53\u3067\u3000\u76F8\u624B\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u81EA\u5206\u304C\u3000\u76F8\u624B\u3088\u308A\n\u91CD\u3044\u307B\u3069\u3000\u5A01\u529B\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7528\u6C89\u91CD\u7684\u8EAB\u4F53\u649E\u5411\u5BF9\u624B\u8FDB\u884C\u653B\u51FB\u3002\n\u81EA\u5DF1\u6BD4\u5BF9\u624B\u8D8A\u91CD\uFF0C\u5A01\u529B\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u304A\u3082\u305F\u3044\u3000\u304B\u3089\u3060\u3067\u3000\u3042\u3044\u3066\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3058\u3076\u3093\u304C\u3000\u3042\u3044\u3066\u3088\u308A\n\u304A\u3082\u3044\u307B\u3069\u3000\u3044\u308A\u3087\u304F\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uBB34\uAC70\uC6B4 \uBAB8\uC73C\uB85C \uC0C1\uB300\uC5D0\uAC8C
+        \uBD80\uB52A\uCCD0\n\uACF5\uACA9\uD55C\uB2E4. \uC790\uC2E0\uC774 \uC0C1\uB300\uBCF4\uB2E4\n\uBB34\uAC70\uC6B8\uC218\uB85D
+        \uC704\uB825\uC774 \uC62C\uB77C\uAC04\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u7528\u6C89\u91CD\u7684\u8EAB\u9AD4\u885D\u649E\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u9AD4\u91CD\u6BD4\u5C0D\u624B\u91CD\u8D8A\u591A\uFF0C\u5A01\u529B\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le lanceur se jette sur l\u2019ennemi de tout son poids.\nS\u2019il
+        est plus lourd que l\u2019ennemi, l\u2019effet augmente\nen cons\xE9quence."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Anwender rammt das Ziel mit massivem K\xF6rper.\nJe schwerer
+        er im Vergleich zum Ziel ist, desto\nst\xE4rker die Attacke."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "El usuario golpea con todo su cuerpo. Cuanto mayor\nsea su peso
+        comparado con el del objetivo, m\xE1s da\xF1o\ncausar\xE1."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa si lancia contro il bersaglio con tutto\nil proprio
+        peso. Pi\xF9 \xE8 pesante rispetto ad esso,\npi\xF9 danni causa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user slams into the target with its heavy body.\nThe more
+        the user outweighs the target, the greater\nthe move\u2019s power."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u91CD\u305F\u3044\u3000\u4F53\u3067\u3000\u76F8\u624B\u306B\u3000\u3076\u3064\u304B\u3063\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u81EA\u5206\u304C\u3000\u76F8\u624B\u3088\u308A\n\u91CD\u3044\u307B\u3069\u3000\u5A01\u529B\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u7528\u6C89\u91CD\u7684\u8EAB\u4F53\u649E\u5411\u5BF9\u624B\u8FDB\u884C\u653B\u51FB\u3002\n\u81EA\u5DF1\u6BD4\u5BF9\u624B\u8D8A\u91CD\uFF0C\u5A01\u529B\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-v
+      url: https://pokeapi.co/api/v2/generation/5/
+    id: 484
+    learned_by_pokemon:
+    - name: machop
+      url: https://pokeapi.co/api/v2/pokemon/66/
+    - name: golem
+      url: https://pokeapi.co/api/v2/pokemon/76/
+    - name: onix
+      url: https://pokeapi.co/api/v2/pokemon/95/
+    - name: snorlax
+      url: https://pokeapi.co/api/v2/pokemon/143/
+    - name: forretress
+      url: https://pokeapi.co/api/v2/pokemon/205/
+    - name: phanpy
+      url: https://pokeapi.co/api/v2/pokemon/231/
+    - name: makuhita
+      url: https://pokeapi.co/api/v2/pokemon/296/
+    - name: hariyama
+      url: https://pokeapi.co/api/v2/pokemon/297/
+    - name: aron
+      url: https://pokeapi.co/api/v2/pokemon/304/
+    - name: lairon
+      url: https://pokeapi.co/api/v2/pokemon/305/
+    - name: aggron
+      url: https://pokeapi.co/api/v2/pokemon/306/
+    - name: wailmer
+      url: https://pokeapi.co/api/v2/pokemon/320/
+    - name: wailord
+      url: https://pokeapi.co/api/v2/pokemon/321/
+    - name: numel
+      url: https://pokeapi.co/api/v2/pokemon/322/
+    - name: turtwig
+      url: https://pokeapi.co/api/v2/pokemon/387/
+    - name: shieldon
+      url: https://pokeapi.co/api/v2/pokemon/410/
+    - name: bastiodon
+      url: https://pokeapi.co/api/v2/pokemon/411/
+    - name: bronzor
+      url: https://pokeapi.co/api/v2/pokemon/436/
+    - name: bronzong
+      url: https://pokeapi.co/api/v2/pokemon/437/
+    - name: regigigas
+      url: https://pokeapi.co/api/v2/pokemon/486/
+    - name: tepig
+      url: https://pokeapi.co/api/v2/pokemon/498/
+    - name: roggenrola
+      url: https://pokeapi.co/api/v2/pokemon/524/
+    - name: golurk
+      url: https://pokeapi.co/api/v2/pokemon/623/
+    - name: mudbray
+      url: https://pokeapi.co/api/v2/pokemon/749/
+    - name: mudsdale
+      url: https://pokeapi.co/api/v2/pokemon/750/
+    - name: dhelmise
+      url: https://pokeapi.co/api/v2/pokemon/781/
+    - name: celesteela
+      url: https://pokeapi.co/api/v2/pokemon/797/
+    - name: guzzlord
+      url: https://pokeapi.co/api/v2/pokemon/799/
+    - name: aggron-mega
+      url: https://pokeapi.co/api/v2/pokemon/10053/
+    - name: golem-alola
+      url: https://pokeapi.co/api/v2/pokemon/10111/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1668/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: heavy-slam
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30D8\u30D3\u30FC\u30DC\u30F3\u30D0\u30FC"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uD5E4\uBE44\uBD04\uBC84"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u91CD\u78C5\u885D\u649E"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Tacle Lourd
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Rammboss
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Cuerpo Pesado
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Pesobomba
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Heavy Slam
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30D8\u30D3\u30FC\u30DC\u30F3\u30D0\u30FC"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u91CD\u78C5\u51B2\u649E"
+    past_values: []
+    power: 0
+    pp: 10
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: steel
+      url: https://pokeapi.co/api/v2/type/9/

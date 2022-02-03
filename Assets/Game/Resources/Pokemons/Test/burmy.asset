@@ -1,0 +1,1079 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5aa4a7f37a22714c9924381e9ade610, type: 3}
+  m_Name: burmy
+  m_EditorClassIdentifier: 
+  name: Burmy
+  description: 'If its cloak is broken in battle, it quickly remakes
+
+    the cloak
+    with materials nearby.'
+  frontSprite: {fileID: 21300000, guid: f5e31c9b4751c9b439f18777d687930b, type: 3}
+  backSprite: {fileID: 21300000, guid: 1e9bf87d38ebe22418d5e080ac994c73, type: 3}
+  type1: 12
+  type2: 0
+  maxHp: 40
+  attack: 29
+  defense: 45
+  spAttack: 29
+  spDefense: 45
+  speed: 36
+  expYield: 45
+  growthRate: 0
+  catchRate: 120
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 35de46c92a895864e8b8c56e2ea850ec, type: 2}
+    level: 10
+  - moveBase: {fileID: 11400000, guid: 84dcb330ef4f1964f8ec7ba0a69dfdb1, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 896d1c6ca6955fb449d963b7f6d32eaa, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: 864c983f31569034bb4677e1ee91fdab, type: 2}
+    level: 15
+  learnableByItems:
+  - {fileID: 11400000, guid: 84dcb330ef4f1964f8ec7ba0a69dfdb1, type: 2}
+  - {fileID: 11400000, guid: 896d1c6ca6955fb449d963b7f6d32eaa, type: 2}
+  evolutions:
+  - evolvesInto: {fileID: 11400000, guid: 47ae409951a9d2849982fa55bc47569d, type: 2}
+    requiredLevel: 20
+    requiredItem: {fileID: 0}
+  - evolvesInto: {fileID: 11400000, guid: 686792a4370d977448ea32d3f55284b8, type: 2}
+    requiredLevel: 20
+    requiredItem: {fileID: 0}
+  id: 412
+  pokeApiPokemon:
+    abilities:
+    - ability:
+        name: shed-skin
+        url: https://pokeapi.co/api/v2/ability/61/
+      is_hidden: 0
+      slot: 1
+    - ability:
+        name: overcoat
+        url: https://pokeapi.co/api/v2/ability/142/
+      is_hidden: 1
+      slot: 3
+    base_experience: 45
+    forms:
+    - name: burmy-plant
+      url: https://pokeapi.co/api/v2/pokemon-form/412/
+    - name: burmy-sandy
+      url: https://pokeapi.co/api/v2/pokemon-form/10034/
+    - name: burmy-trash
+      url: https://pokeapi.co/api/v2/pokemon-form/10035/
+    game_indices:
+    - game_index: 412
+      generation:
+        name: 
+        url: 
+    - game_index: 412
+      generation:
+        name: 
+        url: 
+    - game_index: 412
+      generation:
+        name: 
+        url: 
+    - game_index: 412
+      generation:
+        name: 
+        url: 
+    - game_index: 412
+      generation:
+        name: 
+        url: 
+    - game_index: 412
+      generation:
+        name: 
+        url: 
+    - game_index: 412
+      generation:
+        name: 
+        url: 
+    - game_index: 412
+      generation:
+        name: 
+        url: 
+    - game_index: 412
+      generation:
+        name: 
+        url: 
+    height: 2
+    held_items: []
+    id: 412
+    is_default: 1
+    location_area_encounters: https://pokeapi.co/api/v2/pokemon/412/encounters
+    moves:
+    - move:
+        name: tackle
+        url: https://pokeapi.co/api/v2/move/33/
+      version_group_details:
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: string-shot
+        url: https://pokeapi.co/api/v2/move/81/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+    - move:
+        name: snore
+        url: https://pokeapi.co/api/v2/move/173/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    - move:
+        name: protect
+        url: https://pokeapi.co/api/v2/move/182/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: hidden-power
+        url: https://pokeapi.co/api/v2/move/237/
+      version_group_details:
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: bug-bite
+        url: https://pokeapi.co/api/v2/move/450/
+      version_group_details:
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: electroweb
+        url: https://pokeapi.co/api/v2/move/527/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    name: burmy
+    order: 523
+    past_types: []
+    species:
+      name: burmy
+      url: https://pokeapi.co/api/v2/pokemon-species/412/
+    species_data:
+      base_happiness: 70
+      capture_rate: 120
+      flavor_text_entries:
+      - flavor_text: 'To shelter itself from cold, wintry
+
+          winds, it covers
+          itself with a cloak
+
+          made of twigs and leaves.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: diamond
+          url: https://pokeapi.co/api/v2/version/12/
+      - flavor_text: 'If its cloak is broken in battle,
+
+          it quickly remakes
+          the cloak with
+
+          materials nearby.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: pearl
+          url: https://pokeapi.co/api/v2/version/13/
+      - flavor_text: 'Even if it is born where there are
+
+          no cocooning
+          materials, it somehow
+
+          always ends up with a cloak.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version/14/
+      - flavor_text: "It covers itself with a cloak to\nshelter from the cold. When
+          it\u2019s\nhot, its cloak is thinner."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: heartgold
+          url: https://pokeapi.co/api/v2/version/15/
+      - flavor_text: "It covers itself with a cloak to\nshelter from the cold. When
+          it\u2019s\nhot, its cloak is thinner."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: soulsilver
+          url: https://pokeapi.co/api/v2/version/16/
+      - flavor_text: "Nul ne sait comment il y parvient,\nmais il arrive toujours
+          \xE0 se former\nune cape, o\xF9 qu\u2019il soit."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: black
+          url: https://pokeapi.co/api/v2/version/17/
+      - flavor_text: 'Even if it is born where there are
+
+          no cocooning
+          materials, it somehow
+
+          always ends up with a cloak.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: black
+          url: https://pokeapi.co/api/v2/version/17/
+      - flavor_text: "Nul ne sait comment il y parvient,\nmais il arrive toujours
+          \xE0 se former\nune cape, o\xF9 qu\u2019il soit."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: white
+          url: https://pokeapi.co/api/v2/version/18/
+      - flavor_text: 'Even if it is born where there are
+
+          no cocooning
+          materials, it somehow
+
+          always ends up with a cloak.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: white
+          url: https://pokeapi.co/api/v2/version/18/
+      - flavor_text: 'Even if it is born where there are
+
+          no cocooning
+          materials, it somehow
+
+          always ends up with a cloak.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: black-2
+          url: https://pokeapi.co/api/v2/version/21/
+      - flavor_text: 'Even if it is born where there are
+
+          no cocooning
+          materials, it somehow
+
+          always ends up with a cloak.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: white-2
+          url: https://pokeapi.co/api/v2/version/22/
+      - flavor_text: "\u3064\u3081\u305F\u3044\u3000\u3053\u304C\u3089\u3057\u3092\u3000\u3075\u305B\u3050\u305F\u3081\n\u3053\u3048\u3060\u3084\u3000\u304A\u3061\u3070\u3092\u3000\u3056\u3044\u308A\u3087\u3046\u306B\n\u30DF\u30CE\u3092\u3000\u3064\u304F\u308A\u3000\u304B\u3089\u3060\u3092\u3000\u304A\u304A\u3046\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "\uCC28\uAC00\uC6B4 \uCD08\uACA8\uC6B8 \uBC14\uB78C\uC744 \uB9C9\uC73C\uB824\uACE0\n\uC791\uC740
+          \uAC00\uC9C0\uB098 \uB099\uC5FD\uC744 \uC7AC\uB8CC\uB85C\n\uB3C4\uB871\uC774\uB97C
+          \uB9CC\uB4E4\uC5B4 \uBAB8\uC744 \uAC10\uC2FC\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "Pour se prot\xE9ger des vents glac\xE9s de l\u2019hiver, il
+          s\u2019est\ntiss\xE9 une cape de feuilles et de brindilles."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "Um sich vor dem eisigen Winterwind zu sch\xFCtzen,\nlegt es
+          sich unter einen Umhang aus \xC4sten und Laub."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "Para protegerse de los vientos fr\xEDos invernales, se\ncubre
+          con un caparaz\xF3n de ramas y hojas."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: 'Per ripararsi dal freddo e dai venti invernali si copre
+
+          con
+          un manto fatto di rami e foglie.'
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: 'To shelter itself from cold, wintry winds, it covers
+
+          itself
+          with a cloak made of twigs and leaves.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "\u51B7\u305F\u3044\u3000\u6728\u67AF\u3089\u3057\u3092\u3000\u9632\u3050\u305F\u3081\n\u5C0F\u679D\u3084\u3000\u843D\u3061\u8449\u3092\u3000\u6750\u6599\u306B\n\u30DF\u30CE\u3092\u3000\u4F5C\u308A\u3000\u4F53\u3092\u3000\u8986\u3046\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "\u305F\u305F\u304B\u3044\u3067\u3000\u30DF\u30CE\u304C\u3000\u3053\u308F\u308C\u3066\u3057\u307E\u3046\u3068\n\u3061\u304B\u304F\u306B\u3042\u308B\u3000\u3056\u3044\u308A\u3087\u3046\u3067\n\u30DF\u30CE\u3092\u3000\u3059\u3050\u306B\u3000\u3064\u304F\u308A\u306A\u304A\u3059\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "\uC2F8\uC6C0\uC73C\uB85C \uB3C4\uB871\uC774\uAC00 \uBD80\uC11C\uC838
+          \uBC84\uB9AC\uBA74\n\uAC00\uAE4C\uC774 \uC788\uB294 \uC7AC\uB8CC\uB85C\n\uB3C4\uB871\uC774\uB97C
+          \uBC14\uB85C \uB9CC\uB4E4\uC5B4 \uACE0\uCE5C\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "S\u2019il perd sa cape au combat, il en tisse rapidement\nune
+          nouvelle avec ce qui lui tombe sous la main."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "Wird sein Umhang im Kampf zerst\xF6rt, macht es sich\nschnell
+          aus dem, was es findet, einen neuen."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "Si su caparaz\xF3n se rompe en combate, lo rehace\nr\xE1pidamente
+          con lo que tenga a mano."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "Se il suo manto si rompe mentre lotta, lo rif\xE0\nvelocemente
+          con ci\xF2 che trova attorno a s\xE9."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: 'If its cloak is broken in battle, it quickly remakes
+
+          the
+          cloak with materials nearby.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "\u6226\u3044\u3067\u3000\u30DF\u30CE\u304C\u3000\u58CA\u308C\u3066\u3057\u307E\u3046\u3068\n\u8FD1\u304F\u306B\u3042\u308B\u3000\u6750\u6599\u3067\n\u30DF\u30CE\u3092\u3000\u3059\u3050\u306B\u3000\u4F5C\u308A\u76F4\u3059\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "\u3064\u3081\u305F\u3044\u3000\u3053\u304C\u3089\u3057\u3092\u3000\u3075\u305B\u3050\u305F\u3081\n\u3053\u3048\u3060\u3084\u3000\u304A\u3061\u3070\u3092\u3000\u3056\u3044\u308A\u3087\u3046\u306B\n\u30DF\u30CE\u3092\u3000\u3064\u304F\u308A\u3000\u304B\u3089\u3060\u3092\u3000\u304A\u304A\u3046\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "\uCC28\uAC00\uC6B4 \uCD08\uACA8\uC6B8 \uBC14\uB78C\uC744 \uB9C9\uC73C\uB824\uACE0\n\uC791\uC740
+          \uAC00\uC9C0\uB098 \uB099\uC5FD\uC744 \uC7AC\uB8CC\uB85C\n\uB3C4\uB871\uC774\uB97C
+          \uB9CC\uB4E4\uC5B4 \uBAB8\uC744 \uAC10\uC2FC\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "Pour se prot\xE9ger des vents glac\xE9s de l\u2019hiver, il
+          s\u2019est tiss\xE9\nune cape de feuilles et de brindilles."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "Um sich vor dem eisigen Winterwind zu sch\xFCtzen, legt es
+          sich\nunter einen Umhang aus \xC4sten und Laub."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "Para protegerse de los vientos fr\xEDos invernales, se cubre
+          con\nun caparaz\xF3n de ramas y hojas."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: 'Per ripararsi dal freddo e dai venti invernali si copre con
+          un
+
+          manto fatto di rami e foglie.'
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: 'To shelter itself from cold, wintry winds, it covers
+
+          itself
+          with a cloak made of twigs and leaves.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "\u51B7\u305F\u3044\u3000\u6728\u67AF\u3089\u3057\u3092\u3000\u9632\u3050\u305F\u3081\n\u5C0F\u679D\u3084\u3000\u843D\u3061\u8449\u3092\u3000\u6750\u6599\u306B\n\u30DF\u30CE\u3092\u3000\u4F5C\u308A\u3000\u4F53\u3092\u3000\u8986\u3046\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "\u305F\u305F\u304B\u3044\u3067\u3000\u30DF\u30CE\u304C\u3000\u3053\u308F\u308C\u3066\u3057\u307E\u3046\u3068\n\u3061\u304B\u304F\u306B\u3042\u308B\u3000\u3056\u3044\u308A\u3087\u3046\u3067\n\u30DF\u30CE\u3092\u3000\u3059\u3050\u306B\u3000\u3064\u304F\u308A\u306A\u304A\u3059\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "\uC2F8\uC6C0\uC73C\uB85C \uB3C4\uB871\uC774\uAC00 \uBD80\uC11C\uC838
+          \uBC84\uB9AC\uBA74\n\uAC00\uAE4C\uC774 \uC788\uB294 \uC7AC\uB8CC\uB85C\n\uB3C4\uB871\uC774\uB97C
+          \uBC14\uB85C \uB9CC\uB4E4\uC5B4 \uACE0\uCE5C\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "S\u2019il perd sa cape au combat, il en tisse rapidement\nune
+          nouvelle avec ce qui lui tombe sous la main."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "Wird sein Umhang im Kampf zerst\xF6rt, macht es sich schnell\naus
+          dem, was es findet, einen neuen."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "Si su caparaz\xF3n se rompe en combate, lo rehace r\xE1pidamente\ncon
+          lo que tenga a mano."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "Se il suo manto si rompe mentre lotta, lo rif\xE0 velocemente
+          con\nci\xF2 che trova attorno a s\xE9."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: 'If its cloak is broken in battle, it quickly remakes
+
+          the
+          cloak with materials nearby.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "\u6226\u3044\u3067\u3000\u30DF\u30CE\u304C\u3000\u58CA\u308C\u3066\u3057\u307E\u3046\u3068\n\u8FD1\u304F\u306B\u3042\u308B\u3000\u6750\u6599\u3067\n\u30DF\u30CE\u3092\u3000\u3059\u3050\u306B\u3000\u4F5C\u308A\u76F4\u3059\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      gender_rate: 4
+      growth_rate:
+        name: medium
+        url: https://pokeapi.co/api/v2/growth-rate/2/
+      genera:
+      - genus: "\u307F\u306E\u3080\u3057\u30DD\u30B1\u30E2\u30F3"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+      - genus: "\uB3C4\uB871\uC774\uBC8C\uB808\uD3EC\uCF13\uBAAC"
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+      - genus: "\u84D1\u8863\u87F2\u5BF6\u53EF\u5922"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+      - genus: "Pok\xE9mon Ver Cach\xE9"
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+      - genus: Beutelwurm
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+      - genus: "Pok\xE9mon Larva"
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+      - genus: "Pok\xE9mon Larva"
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+      - genus: "Bagworm Pok\xE9mon"
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+      - genus: "\u307F\u306E\u3080\u3057\u30DD\u30B1\u30E2\u30F3"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+      - genus: "\u84D1\u8863\u866B\u5B9D\u53EF\u68A6"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/213/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 20
+            evolves_to: []
+            is_baby: false
+            species:
+              name: wormadam
+              url: https://pokeapi.co/api/v2/pokemon-species/413/
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 20
+            evolves_to: []
+            is_baby: false
+            species:
+              name: mothim
+              url: https://pokeapi.co/api/v2/pokemon-species/414/
+          is_baby: false
+          species:
+            name: burmy
+            url: https://pokeapi.co/api/v2/pokemon-species/412/
+        id: 213
+      name: burmy
+      names:
+      - language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        name: "\u30DF\u30CE\u30E0\u30C3\u30C1"
+      - language:
+          name: roomaji
+          url: https://pokeapi.co/api/v2/language/2/
+        name: Minomucchi
+      - language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        name: "\uB3C4\uB871\uCDA9\uC774"
+      - language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        name: "\u7D50\u8349\u5152"
+      - language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        name: Cheniti
+      - language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        name: Burmy
+      - language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        name: Burmy
+      - language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        name: Burmy
+      - language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        name: Burmy
+      - language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        name: "\u30DF\u30CE\u30E0\u30C3\u30C1"
+      - language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        name: "\u7ED3\u8349\u513F"
+    sprites:
+      back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/412.png
+      back_female: 
+      back_shiny: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/412.png
+      back_shiny_female: 
+      front_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png
+      front_female: 
+      front_shiny: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/412.png
+      front_shiny_female: 
+    stats:
+    - base_stat: 40
+      effort: 0
+      stat:
+        name: hp
+        url: https://pokeapi.co/api/v2/stat/1/
+    - base_stat: 29
+      effort: 0
+      stat:
+        name: attack
+        url: https://pokeapi.co/api/v2/stat/2/
+    - base_stat: 45
+      effort: 0
+      stat:
+        name: defense
+        url: https://pokeapi.co/api/v2/stat/3/
+    - base_stat: 29
+      effort: 0
+      stat:
+        name: special-attack
+        url: https://pokeapi.co/api/v2/stat/4/
+    - base_stat: 45
+      effort: 1
+      stat:
+        name: special-defense
+        url: https://pokeapi.co/api/v2/stat/5/
+    - base_stat: 36
+      effort: 0
+      stat:
+        name: speed
+        url: https://pokeapi.co/api/v2/stat/6/
+    types:
+    - slot: 1
+      type:
+        name: bug
+        url: https://pokeapi.co/api/v2/type/7/
+    weight: 34

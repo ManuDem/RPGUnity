@@ -1,0 +1,809 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: whirlwind
+  m_EditorClassIdentifier: 
+  name: Whirlwind
+  description: 'Blows away the foe
+
+    & ends battle.'
+  type: 1
+  power: 0
+  accuracy: 0
+  alwaysHits: 0
+  pp: 20
+  priority: -6
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 18
+  pokeApiMove:
+    accuracy: 0
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/21/
+    contest_type:
+      name: smart
+      url: https://pokeapi.co/api/v2/contest-type/4/
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes:
+    - effect_entries:
+      - effect: Does nothing in trainer battles.
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        short_effect: 
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    effect_entries:
+    - effect: "Switches the target out for another of its trainer's Pok\xE9mon selected
+        at random.  Wild battles end immediately.\n\nDoesn't affect Pok\xE9mon with
+        suction cups or under the effect of ingrain."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: "Immediately ends wild battles.  Forces trainers to switch Pok\xE9mon."
+    flavor_text_entries:
+    - flavor_text: 'Blows away the foe
+
+        & ends battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    - flavor_text: 'Blows away the foe
+
+        & ends battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: crystal
+        url: https://pokeapi.co/api/v2/version-group/4/
+    - flavor_text: 'Blows away the foe with
+
+        wind and ends the battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: 'Blows away the foe with
+
+        wind and ends the battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: 'The foe is made to
+
+        switch out with an
+
+        ally.
+        In the wild,
+
+        the battle ends.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: "The foe is blown away,\nto be replaced by\nanother Pok\xE9mon\nin
+        its party. In the\nwild, the battle ends."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "The foe is blown away,\nto be replaced by\nanother Pok\xE9mon\nin
+        its party. In the\nwild, the battle ends."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "The foe is blown away,\nto be replaced by\nanother Pok\xE9mon\nin
+        its party. In the\nwild, the battle ends."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "\xC9jecte le Pok\xE9mon ennemi\net le remplace par un autre.\nDans
+        la nature, met fin au combat."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The target is blown away, to be replaced\nby another Pok\xE9mon
+        in its party. In the\nwild, the battle ends."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The target is blown away and switched.\nIn the wild, a battle
+        against a single\nPok\xE9mon ends."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u3075\u304D\u3068\u3070\u3057\u3066\n\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002\n\u3084\u305B\u3044\u306E\u3000\u3070\u3042\u3044\u306F\u3000\u305B\u3093\u3068\u3046\u304C\u3000\u304A\u308F\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC0C1\uB300\uB97C \uB0A0\uB824\uBC84\uB824\uC11C\n\uAD50\uB300\uD560
+        \uD3EC\uCF13\uBAAC\uC744 \uB04C\uC5B4\uB0B8\uB2E4.\n\uC57C\uC0DD\uC758 \uACBD\uC6B0\uC5D0\uB294
+        \uBC30\uD2C0\uC774 \uB05D\uB09C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\xC9jecte le Pok\xE9mon ennemi et le remplace par\nun autre.
+        Dans la nature, met fin au combat."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Weht das Ziel weg und ersetzt es durch ein\nanderes Pok\xE9mon.
+        In der Wildnis endet der Kampf."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Se lleva al objetivo, que es cambiado por otro\nPok\xE9mon. Si
+        es un Pok\xE9mon salvaje, acaba el\ncombate."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Il bersaglio lascia il campo e viene sostituito.\nMette fine
+        alle lotte contro singoli Pok\xE9mon\nselvatici."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The target is blown away, and a different\nPok\xE9mon is dragged
+        out. In the wild,\nthis ends a battle against a single Pok\xE9mon."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u5439\u304D\u3068\u3070\u3057\u3066\n\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002\n\u91CE\u751F\u306E\u3000\u5834\u5408\u306F\u3000\u6226\u95D8\u304C\u3000\u7D42\u308F\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u3075\u304D\u3068\u3070\u3057\u3066\n\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002\n\u3084\u305B\u3044\u306E\u3000\u3070\u3042\u3044\u306F\u3000\u305B\u3093\u3068\u3046\u304C\u3000\u304A\u308F\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC0C1\uB300\uB97C \uB0A0\uB824\uBC84\uB824\uC11C\n\uAD50\uB300\uD560
+        \uD3EC\uCF13\uBAAC\uC744 \uB04C\uC5B4\uB0B8\uB2E4.\n\uC57C\uC0DD\uC758 \uACBD\uC6B0\uC5D0\uB294
+        \uBC30\uD2C0\uC774 \uB05D\uB09C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\xC9jecte le Pok\xE9mon ennemi et le remplace par\nun autre.
+        Dans la nature, met fin au combat."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Weht das Ziel weg und ersetzt es durch ein\nanderes Pok\xE9mon.
+        In der Wildnis endet der Kampf."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Se lleva al objetivo, que es cambiado por otro \nPok\xE9mon.
+        Si es un Pok\xE9mon salvaje, acaba el \ncombate."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Il bersaglio lascia il campo e viene sostituito.\nMette fine
+        alle lotte contro singoli Pok\xE9mon\nselvatici."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The target is blown away, and a different\nPok\xE9mon is dragged
+        out. In the wild,\nthis ends a battle against a single Pok\xE9mon."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u5439\u304D\u3068\u3070\u3057\u3066\n\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002\n\u91CE\u751F\u306E\u3000\u5834\u5408\u306F\u3000\u6226\u95D8\u304C\u3000\u7D42\u308F\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u3075\u304D\u3068\u3070\u3057\u3066\n\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002\n\u3084\u305B\u3044\u306E\u3000\u3070\u3042\u3044\u306F\u3000\u305B\u3093\u3068\u3046\u304C\u3000\u304A\u308F\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC0C1\uB300\uB97C \uB0A0\uB824\uBC84\uB824\uC11C\n\uAD50\uB300\uD560
+        \uD3EC\uCF13\uBAAC\uC744 \uB04C\uC5B4\uB0B8\uB2E4.\n\uC57C\uC0DD\uC758 \uACBD\uC6B0\uC5D0\uB294
+        \uBC30\uD2C0\uC774 \uB05D\uB09C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5439\u98DB\u5C0D\u624B\uFF0C\n\u5F37\u5236\u8B93\u5F8C\u5099\u5BF6\u53EF\u5922\u4E0A\u5834\u3002\n\u5C0D\u624B\u70BA\u91CE\u751F\u5BF6\u53EF\u5922\u6642\uFF0C\u6230\u9B25\u5C07\u76F4\u63A5\u7D50\u675F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\xC9jecte le Pok\xE9mon ennemi et le remplace par\nun autre.
+        Lors d\u2019un combat contre un Pok\xE9mon\nsauvage seul, met fin au combat."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Weht das Ziel weg und ersetzt es durch ein anderes\nPok\xE9mon.
+        In der Wildnis endet der Kampf."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Se lleva al objetivo, que es cambiado por otro \nPok\xE9mon.
+        Si es un Pok\xE9mon salvaje, acaba el \ncombate."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Il bersaglio lascia il campo e viene sostituito.\nMette fine
+        alle lotte contro singoli Pok\xE9mon\nselvatici."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The target is blown away, and a different Pok\xE9mon is\ndragged
+        out. In the wild, this ends a battle against a\nsingle Pok\xE9mon."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u5439\u304D\u3068\u3070\u3057\u3066\n\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002\n\u91CE\u751F\u306E\u3000\u5834\u5408\u306F\u3000\u6226\u95D8\u304C\u3000\u7D42\u308F\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5439\u98DE\u5BF9\u624B\uFF0C\u5F3A\u5236\u62C9\u540E\u5907\u5B9D\u53EF\u68A6\u4E0A\u573A\u3002\n\u5982\u679C\u5BF9\u624B\u4E3A\u91CE\u751F\u5B9D\u53EF\u68A6\uFF0C\n\u6218\u6597\u5C06\u76F4\u63A5\u7ED3\u675F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u3075\u304D\u3068\u3070\u3057\u3066\n\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002\n\u3084\u305B\u3044\u306E\u3000\u3070\u3042\u3044\u306F\u3000\u305B\u3093\u3068\u3046\u304C\u3000\u304A\u308F\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC0C1\uB300\uB97C \uB0A0\uB824\uBC84\uB824\uC11C\n\uAD50\uB300\uD560
+        \uD3EC\uCF13\uBAAC\uC744 \uB04C\uC5B4\uB0B8\uB2E4.\n\uC57C\uC0DD\uC758 \uACBD\uC6B0\uC5D0\uB294
+        \uBC30\uD2C0\uC774 \uB05D\uB09C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5439\u98DB\u5C0D\u624B\uFF0C\n\u5F37\u5236\u8B93\u5F8C\u5099\u5BF6\u53EF\u5922\u4E0A\u5834\u3002\n\u5C0D\u624B\u70BA\u91CE\u751F\u5BF6\u53EF\u5922\u6642\uFF0C\u6230\u9B25\u5C07\u76F4\u63A5\u7D50\u675F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\xC9jecte le Pok\xE9mon ennemi et le remplace par\nun autre.
+        Lors d\u2019un combat contre un Pok\xE9mon\nsauvage seul, met fin au combat."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Weht das Ziel weg und ersetzt es durch ein anderes\nPok\xE9mon.
+        In der Wildnis endet der Kampf."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Se lleva al objetivo, que es cambiado por otro \nPok\xE9mon.
+        Si es un Pok\xE9mon salvaje, acaba el \ncombate."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Il bersaglio lascia il campo e viene sostituito.\nMette fine
+        alle lotte contro singoli Pok\xE9mon\nselvatici."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The target is blown away, and a different Pok\xE9mon is\ndragged
+        out. In the wild, this ends a battle against a\nsingle Pok\xE9mon."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u5439\u304D\u3068\u3070\u3057\u3066\n\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002\n\u91CE\u751F\u306E\u3000\u5834\u5408\u306F\u3000\u6226\u95D8\u304C\u3000\u7D42\u308F\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5439\u98DE\u5BF9\u624B\uFF0C\u5F3A\u5236\u62C9\u540E\u5907\u5B9D\u53EF\u68A6\u4E0A\u573A\u3002\n\u5982\u679C\u5BF9\u624B\u4E3A\u91CE\u751F\u5B9D\u53EF\u68A6\uFF0C\n\u6218\u6597\u5C06\u76F4\u63A5\u7ED3\u675F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u3075\u304D\u3068\u3070\u3057\u3066\n\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC0C1\uB300\uB97C \uB0A0\uB824\uBC84\uB824\uC11C\n\uAD50\uB300\uD560
+        \uD3EC\uCF13\uBAAC\uC744 \uB04C\uC5B4\uB0B8\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5439\u98DB\u5C0D\u624B\uFF0C\n\u5F37\u5236\u8B93\u5F8C\u5099\u5BF6\u53EF\u5922\u4E0A\u5834\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\xC9jecte le Pok\xE9mon ennemi et le remplace par un autre."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Weht das Ziel weg und ersetzt es durch ein anderes\nPok\xE9mon."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Se lleva al objetivo, que es sustituido por otro\nPok\xE9mon."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: Il bersaglio lascia il campo e viene sostituito.
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The target is blown away, and a different Pok\xE9mon is\ndragged
+        out."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u5439\u304D\u3068\u3070\u3057\u3066\n\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5439\u98DE\u5BF9\u624B\uFF0C\n\u5F3A\u5236\u62C9\u540E\u5907\u5B9D\u53EF\u68A6\u4E0A\u573A\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u3075\u304D\u3068\u3070\u3057\u3066\n\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002\n\u3084\u305B\u3044\u306E\u3000\u3070\u3042\u3044\u306F\u3000\u305B\u3093\u3068\u3046\u304C\u3000\u304A\u308F\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC0C1\uB300\uB97C \uB0A0\uB824\uBC84\uB824\uC11C\n\uAD50\uB300\uD560
+        \uD3EC\uCF13\uBAAC\uC744 \uB04C\uC5B4\uB0B8\uB2E4.\n\uC57C\uC0DD\uC758 \uACBD\uC6B0\uC5D0\uB294
+        \uBC30\uD2C0\uC774 \uB05D\uB09C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5439\u98DB\u5C0D\u624B\uFF0C\n\u5F37\u5236\u8B93\u5F8C\u5099\u5BF6\u53EF\u5922\u4E0A\u5834\u3002\n\u5C0D\u624B\u70BA\u91CE\u751F\u5BF6\u53EF\u5922\u6642\uFF0C\u6230\u9B25\u5C07\u76F4\u63A5\u7D50\u675F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\xC9jecte le Pok\xE9mon ennemi et le remplace par un autre.\nLors
+        d\u2019un combat contre un Pok\xE9mon sauvage seul,\nmet fin au combat."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Weht das Ziel weg und ersetzt es durch ein anderes\nPok\xE9mon.
+        In der Wildnis endet der Kampf."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Se lleva al objetivo, que es cambiado por otro\nPok\xE9mon. Si
+        es un Pok\xE9mon salvaje, acaba el\ncombate."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Il bersaglio lascia il campo e viene sostituito.\nMette fine
+        alle lotte contro singoli Pok\xE9mon\nselvatici."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The target is blown away, and a different Pok\xE9mon is\ndragged
+        out. In the wild, this ends a battle against a\nsingle Pok\xE9mon."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u5439\u304D\u3068\u3070\u3057\u3066\n\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\u3000\u3072\u304D\u305A\u308A\u3060\u3059\u3002\n\u91CE\u751F\u306E\u3000\u5834\u5408\u306F\u3000\u6226\u95D8\u304C\u3000\u7D42\u308F\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5439\u98DE\u5BF9\u624B\uFF0C\u5F3A\u5236\u62C9\u540E\u5907\u5B9D\u53EF\u68A6\u4E0A\u573A\u3002\n\u5982\u679C\u5BF9\u624B\u4E3A\u91CE\u751F\u5B9D\u53EF\u68A6\uFF0C\n\u6218\u6597\u5C06\u76F4\u63A5\u7ED3\u675F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-i
+      url: https://pokeapi.co/api/v2/generation/1/
+    id: 18
+    learned_by_pokemon:
+    - name: butterfree
+      url: https://pokeapi.co/api/v2/pokemon/12/
+    - name: pidgey
+      url: https://pokeapi.co/api/v2/pokemon/16/
+    - name: pidgeotto
+      url: https://pokeapi.co/api/v2/pokemon/17/
+    - name: pidgeot
+      url: https://pokeapi.co/api/v2/pokemon/18/
+    - name: spearow
+      url: https://pokeapi.co/api/v2/pokemon/21/
+    - name: fearow
+      url: https://pokeapi.co/api/v2/pokemon/22/
+    - name: zubat
+      url: https://pokeapi.co/api/v2/pokemon/41/
+    - name: golbat
+      url: https://pokeapi.co/api/v2/pokemon/42/
+    - name: venomoth
+      url: https://pokeapi.co/api/v2/pokemon/49/
+    - name: farfetchd
+      url: https://pokeapi.co/api/v2/pokemon/83/
+    - name: doduo
+      url: https://pokeapi.co/api/v2/pokemon/84/
+    - name: dodrio
+      url: https://pokeapi.co/api/v2/pokemon/85/
+    - name: aerodactyl
+      url: https://pokeapi.co/api/v2/pokemon/142/
+    - name: snorlax
+      url: https://pokeapi.co/api/v2/pokemon/143/
+    - name: articuno
+      url: https://pokeapi.co/api/v2/pokemon/144/
+    - name: zapdos
+      url: https://pokeapi.co/api/v2/pokemon/145/
+    - name: moltres
+      url: https://pokeapi.co/api/v2/pokemon/146/
+    - name: mew
+      url: https://pokeapi.co/api/v2/pokemon/151/
+    - name: hoothoot
+      url: https://pokeapi.co/api/v2/pokemon/163/
+    - name: yanma
+      url: https://pokeapi.co/api/v2/pokemon/193/
+    - name: murkrow
+      url: https://pokeapi.co/api/v2/pokemon/198/
+    - name: skarmory
+      url: https://pokeapi.co/api/v2/pokemon/227/
+    - name: lugia
+      url: https://pokeapi.co/api/v2/pokemon/249/
+    - name: ho-oh
+      url: https://pokeapi.co/api/v2/pokemon/250/
+    - name: beautifly
+      url: https://pokeapi.co/api/v2/pokemon/267/
+    - name: dustox
+      url: https://pokeapi.co/api/v2/pokemon/269/
+    - name: shiftry
+      url: https://pokeapi.co/api/v2/pokemon/275/
+    - name: taillow
+      url: https://pokeapi.co/api/v2/pokemon/276/
+    - name: masquerain
+      url: https://pokeapi.co/api/v2/pokemon/284/
+    - name: whismur
+      url: https://pokeapi.co/api/v2/pokemon/293/
+    - name: makuhita
+      url: https://pokeapi.co/api/v2/pokemon/296/
+    - name: hariyama
+      url: https://pokeapi.co/api/v2/pokemon/297/
+    - name: spoink
+      url: https://pokeapi.co/api/v2/pokemon/325/
+    - name: tropius
+      url: https://pokeapi.co/api/v2/pokemon/357/
+    - name: starly
+      url: https://pokeapi.co/api/v2/pokemon/396/
+    - name: staravia
+      url: https://pokeapi.co/api/v2/pokemon/397/
+    - name: staraptor
+      url: https://pokeapi.co/api/v2/pokemon/398/
+    - name: cranidos
+      url: https://pokeapi.co/api/v2/pokemon/408/
+    - name: munchlax
+      url: https://pokeapi.co/api/v2/pokemon/446/
+    - name: hippopotas
+      url: https://pokeapi.co/api/v2/pokemon/449/
+    - name: skorupi
+      url: https://pokeapi.co/api/v2/pokemon/451/
+    - name: sigilyph
+      url: https://pokeapi.co/api/v2/pokemon/561/
+    - name: rufflet
+      url: https://pokeapi.co/api/v2/pokemon/627/
+    - name: braviary
+      url: https://pokeapi.co/api/v2/pokemon/628/
+    - name: vullaby
+      url: https://pokeapi.co/api/v2/pokemon/629/
+    - name: mandibuzz
+      url: https://pokeapi.co/api/v2/pokemon/630/
+    - name: volcarona
+      url: https://pokeapi.co/api/v2/pokemon/637/
+    - name: noibat
+      url: https://pokeapi.co/api/v2/pokemon/714/
+    - name: noivern
+      url: https://pokeapi.co/api/v2/pokemon/715/
+    - name: tapu-bulu
+      url: https://pokeapi.co/api/v2/pokemon/787/
+    - name: aerodactyl-mega
+      url: https://pokeapi.co/api/v2/pokemon/10042/
+    - name: pidgeot-mega
+      url: https://pokeapi.co/api/v2/pokemon/10073/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/62/
+      version_group:
+        name: red-blue
+        url: https://pokeapi.co/api/v2/version-group/1/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/63/
+      version_group:
+        name: yellow
+        url: https://pokeapi.co/api/v2/version-group/2/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: force-switch
+        url: https://pokeapi.co/api/v2/move-category/12/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: whirlwind
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3075\u304D\u3068\u3070\u3057"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uB0A0\uB824\uBC84\uB9AC\uAE30"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u5439\u98DB"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Cyclone
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Wirbelwind
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Remolino
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Turbine
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Whirlwind
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3075\u304D\u3068\u3070\u3057"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u5439\u98DE"
+    past_values:
+    - accuracy: 85
+      effect_chance: 0
+      effect_entries: []
+      power: 0
+      pp: 0
+      type:
+        name: 
+        url: 
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    - accuracy: 100
+      effect_chance: 0
+      effect_entries: []
+      power: 0
+      pp: 0
+      type:
+        name: 
+        url: 
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    power: 0
+    pp: 20
+    priority: -6
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/9/
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: normal
+      url: https://pokeapi.co/api/v2/type/1/

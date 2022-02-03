@@ -1,0 +1,485 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b45244fea143c488759de6367d9e38, type: 3}
+  m_Name: ability-capsule
+  m_EditorClassIdentifier: 
+  name: Ability Capsule
+  description: "A capsule that allows a Pok\xE9mon with\ntwo Abilities to switch
+    between these\nAbilities when it is used."
+  icon: {fileID: 21300000, guid: 375084a81ce1c244fac817c99feeefcf, type: 3}
+  price: 0
+  isSellable: 0
+  id: 685
+  pokeApiItem:
+    attributes: []
+    baby_trigger_for:
+      name: 
+      url: 
+    category:
+      name: vitamins
+      url: https://pokeapi.co/api/v2/item-category/26/
+    cost: 10000
+    effect_entries:
+    - effect: "Switches a Pok\xE9mon between its two possible (non-Hidden) Abilities."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: "Switches a Pok\xE9mon between its two possible (non-Hidden)
+        Abilities."
+    flavor_text_entries:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\uFF12\u3057\u3085\u308B\u3044\u306E\u3000\u3068\u304F\u305B\u3044\u3092\u3000\u3082\u3064\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3064\u304B\u3046\u3068\u3000\u3044\u307E\u3068\u306F\u3061\u304C\u3046\n\u3068\u304F\u305B\u3044\u306B\u3000\u304B\u3048\u3089\u308C\u308B\u3000\u30AB\u30D7\u30BB\u30EB\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "2\uC885\uB958\uC758 \uD2B9\uC131\uC744 \uAC00\uC9C4\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C
+        \uC0AC\uC6A9\uD558\uBA74 \uC9C0\uAE08\uACFC\uB294 \uB2E4\uB978\n\uD2B9\uC131\uC73C\uB85C
+        \uBC14\uAFC0 \uC218 \uC788\uB294 \uCEA1\uC290."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une capsule permettant \xE0 un Pok\xE9mon pouvant\navoir deux talents
+        de changer de l\u2019un \xE0 l\u2019autre."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Bei Anwendung auf ein Pok\xE9mon, das zwei\nverschiedene F\xE4higkeiten
+        haben kann, wird seine\naktuelle F\xE4higkeit mit der anderen ausgewechselt."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: 'Una de las misteriosas Megapiedras. Permite
+
+        megaevolucionar
+        a Blaziken en combate.'
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Se usata su un Pok\xE9mon che ha due abilit\xE0,\nquesta capsula permette
+        di cambiare quella\nattiva."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A capsule that allows a Pok\xE9mon with\ntwo Abilities to switch between
+        these\nAbilities when it is used."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\uFF12\u7A2E\u985E\u306E\u3000\u7279\u6027\u3092\u3000\u6301\u3064\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u4F7F\u3046\u3068\u3000\u4ECA\u3068\u306F\u9055\u3046\n\u7279\u6027\u306B\u3000\u5909\u3048\u3089\u308C\u308B\u3000\u30AB\u30D7\u30BB\u30EB\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\uFF12\u3057\u3085\u308B\u3044\u306E\u3000\u3068\u304F\u305B\u3044\u3092\u3000\u3082\u3064\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3064\u304B\u3046\u3068\u3000\u3044\u307E\u3068\u306F\u3061\u304C\u3046\n\u3068\u304F\u305B\u3044\u306B\u3000\u304B\u3048\u3089\u308C\u308B\u3000\u30AB\u30D7\u30BB\u30EB\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "2\uC885\uB958\uC758 \uD2B9\uC131\uC744 \uAC00\uC9C4\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C
+        \uC0AC\uC6A9\uD558\uBA74 \uC9C0\uAE08\uACFC\uB294 \uB2E4\uB978\n\uD2B9\uC131\uC73C\uB85C
+        \uBC14\uAFC0 \uC218 \uC788\uB294 \uCEA1\uC290."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u5982\u679C\u7528\u65BC\u6709\u8457\uFF12\u7A2E\u7279\u6027\u7684\n\u5BF6\u53EF\u5922\uFF0C\u5C31\u80FD\u4F7F\u5176\u7279\u6027\n\u8B8A\u70BA\u53E6\u5916\u4E00\u7A2E\u7684\u81A0\u56CA\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une capsule permettant \xE0 un Pok\xE9mon pouvant\navoir deux talents
+        de passer de l\u2019un \xE0 l\u2019autre."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Bei Anwendung auf ein Pok\xE9mon, das zwei\nverschiedene F\xE4higkeiten
+        haben kann, wird seine\naktuelle F\xE4higkeit mit der anderen ausgewechselt."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "C\xE1psula que les permite cambiar de habilidad a\nlos Pok\xE9mon que
+        poseen dos."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Se usata su un Pok\xE9mon che pu\xF2 avere due abilit\xE0,\nquesta capsula
+        permette di cambiare quella attiva."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A capsule that allows a Pok\xE9mon with two Abilities\nto switch between
+        these Abilities when it is used."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\uFF12\u7A2E\u985E\u306E\u3000\u7279\u6027\u3092\u3000\u6301\u3064\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u4F7F\u3046\u3068\u3000\u4ECA\u3068\u306F\u9055\u3046\n\u7279\u6027\u306B\u3000\u5909\u3048\u3089\u308C\u308B\u3000\u30AB\u30D7\u30BB\u30EB\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u5982\u679C\u7528\u4E8E\u6709\u7740\uFF12\u79CD\u7279\u6027\u7684\u5B9D\u53EF\u68A6\uFF0C\n\u5C31\u80FD\u4EE4\u5176\u73B0\u6709\u7279\u6027\u53D8\u4E3A\u53E6\u4E00\u79CD\u7684\u80F6\u56CA\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\uFF12\u3057\u3085\u308B\u3044\u306E\u3000\u3068\u304F\u305B\u3044\u3092\u3000\u3082\u3064\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3064\u304B\u3046\u3068\u3000\u3044\u307E\u3068\u306F\u3061\u304C\u3046\n\u3068\u304F\u305B\u3044\u306B\u3000\u304B\u3048\u3089\u308C\u308B\u3000\u30AB\u30D7\u30BB\u30EB\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "2\uC885\uB958\uC758 \uD2B9\uC131\uC744 \uAC00\uC9C4\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C
+        \uC0AC\uC6A9\uD558\uBA74 \uC9C0\uAE08\uACFC\uB294 \uB2E4\uB978\n\uD2B9\uC131\uC73C\uB85C
+        \uBC14\uAFC0 \uC218 \uC788\uB294 \uCEA1\uC290."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u5982\u679C\u7528\u65BC\u6709\u8457\uFF12\u7A2E\u7279\u6027\u7684\n\u5BF6\u53EF\u5922\uFF0C\u5C31\u80FD\u4F7F\u5176\u7279\u6027\n\u8B8A\u70BA\u53E6\u5916\u4E00\u7A2E\u7684\u81A0\u56CA\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une capsule permettant \xE0 un Pok\xE9mon pouvant\navoir deux talents
+        de passer de l\u2019un \xE0 l\u2019autre."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Bei Anwendung auf ein Pok\xE9mon, das zwei\nverschiedene F\xE4higkeiten
+        haben kann, wird seine\naktuelle F\xE4higkeit mit der anderen ausgewechselt."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "C\xE1psula que les permite cambiar de habilidad a\nlos Pok\xE9mon que
+        poseen dos."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Se usata su un Pok\xE9mon che pu\xF2 avere due abilit\xE0,\nquesta capsula
+        permette di cambiare quella attiva."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A capsule that allows a Pok\xE9mon with two Abilities\nto switch between
+        these Abilities when it is used."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\uFF12\u7A2E\u985E\u306E\u3000\u7279\u6027\u3092\u3000\u6301\u3064\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u4F7F\u3046\u3068\u3000\u4ECA\u3068\u306F\u9055\u3046\n\u7279\u6027\u306B\u3000\u5909\u3048\u3089\u308C\u308B\u3000\u30AB\u30D7\u30BB\u30EB\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u5982\u679C\u7528\u4E8E\u6709\u7740\uFF12\u79CD\u7279\u6027\u7684\u5B9D\u53EF\u68A6\uFF0C\n\u5C31\u80FD\u4EE4\u5176\u73B0\u6709\u7279\u6027\u53D8\u4E3A\u53E6\u4E00\u79CD\u7684\u80F6\u56CA\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\uFF12\u3057\u3085\u308B\u3044\u306E\u3000\u3068\u304F\u305B\u3044\u3092\u3000\u3082\u3064\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3064\u304B\u3046\u3068\u3000\u3044\u307E\u3068\u306F\u3061\u304C\u3046\n\u3068\u304F\u305B\u3044\u306B\u3000\u304B\u3048\u3089\u308C\u308B\u3000\u30AB\u30D7\u30BB\u30EB\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "2\uC885\uB958\uC758 \uD2B9\uC131\uC744 \uAC00\uC9C4\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C
+        \uC0AC\uC6A9\uD558\uBA74 \uC9C0\uAE08\uACFC\uB294 \uB2E4\uB978\n\uD2B9\uC131\uC73C\uB85C
+        \uBC14\uAFC0 \uC218 \uC788\uB294 \uCEA1\uC290."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u5982\u679C\u7528\u65BC\u6709\u8457\uFF12\u7A2E\u7279\u6027\u7684\n\u5BF6\u53EF\u5922\uFF0C\u5C31\u80FD\u4F7F\u5176\u7279\u6027\n\u8B8A\u70BA\u53E6\u5916\u4E00\u7A2E\u7684\u81A0\u56CA\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une capsule permettant \xE0 un Pok\xE9mon pouvant avoir\ndeux talents
+        de passer de l\u2019un \xE0 l\u2019autre."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Bei Anwendung auf ein Pok\xE9mon, das zwei\nverschiedene F\xE4higkeiten
+        haben kann, wird seine\naktuelle F\xE4higkeit mit der anderen ausgewechselt."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "C\xE1psula que les permite cambiar de habilidad a\nlos Pok\xE9mon que
+        poseen dos."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Se usata su un Pok\xE9mon che pu\xF2 avere due abilit\xE0,\nquesta capsula
+        permette di cambiare quella attiva."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A capsule that allows a Pok\xE9mon with two Abilities\nto switch between
+        these Abilities when it is used."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\uFF12\u7A2E\u985E\u306E\u3000\u7279\u6027\u3092\u3000\u6301\u3064\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u4F7F\u3046\u3068\u3000\u4ECA\u3068\u306F\u9055\u3046\n\u7279\u6027\u306B\u3000\u5909\u3048\u3089\u308C\u308B\u3000\u30AB\u30D7\u30BB\u30EB\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u5982\u679C\u7528\u4E8E\u6709\u7740\uFF12\u79CD\u7279\u6027\u7684\u5B9D\u53EF\u68A6\uFF0C\n\u5C31\u80FD\u4EE4\u5176\u73B0\u6709\u7279\u6027\u53D8\u4E3A\u53E6\u4E00\u79CD\u7684\u80F6\u56CA\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\uFF12\u3057\u3085\u308B\u3044\u306E\u3000\u3068\u304F\u305B\u3044\u3092\u3000\u3082\u3064\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3064\u304B\u3046\u3068\u3000\u3044\u307E\u3068\u306F\u3061\u304C\u3046\n\u3068\u304F\u305B\u3044\u306B\u3000\u304B\u3048\u3089\u308C\u308B\u3000\u30AB\u30D7\u30BB\u30EB\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "2\uC885\uB958\uC758 \uD2B9\uC131\uC744 \uAC00\uC9C4\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C
+        \uC0AC\uC6A9\uD558\uBA74 \uC9C0\uAE08\uACFC\uB294 \uB2E4\uB978\n\uD2B9\uC131\uC73C\uB85C
+        \uBC14\uAFC0 \uC218 \uC788\uB294 \uCEA1\uC290."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u5982\u679C\u7528\u65BC\u6709\u8457\uFF12\u7A2E\u7279\u6027\u7684\n\u5BF6\u53EF\u5922\uFF0C\u5C31\u80FD\u4F7F\u5176\u7279\u6027\n\u8B8A\u70BA\u53E6\u5916\u4E00\u7A2E\u7684\u81A0\u56CA\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une capsule permettant \xE0 un Pok\xE9mon pouvant\navoir deux talents
+        de passer de l\u2019un \xE0 l\u2019autre."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Bei Anwendung auf ein Pok\xE9mon, das zwei\nverschiedene F\xE4higkeiten
+        haben kann, wird seine\naktuelle F\xE4higkeit mit der anderen ausgewechselt."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "C\xE1psula que les permite cambiar de habilidad a los\nPok\xE9mon que
+        poseen dos."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Se usata su un Pok\xE9mon che pu\xF2 avere due abilit\xE0,\nquesta capsula
+        permette di cambiare quella attiva."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A capsule that allows a Pok\xE9mon with two Abilities\nto switch between
+        these Abilities when it is used."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\uFF12\u7A2E\u985E\u306E\u3000\u7279\u6027\u3092\u3000\u6301\u3064\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u4F7F\u3046\u3068\u3000\u4ECA\u3068\u306F\u9055\u3046\n\u7279\u6027\u306B\u3000\u5909\u3048\u3089\u308C\u308B\u3000\u30AB\u30D7\u30BB\u30EB\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u5982\u679C\u7528\u4E8E\u6709\u7740\uFF12\u79CD\u7279\u6027\u7684\u5B9D\u53EF\u68A6\uFF0C\n\u5C31\u80FD\u4EE4\u5176\u73B0\u6709\u7279\u6027\u53D8\u4E3A\u53E6\u4E00\u79CD\u7684\u80F6\u56CA\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    fling_effect:
+      name: 
+      url: 
+    fling_power: 0
+    game_indices:
+    - game_index: 645
+      generation:
+        name: generation-vi
+        url: https://pokeapi.co/api/v2/generation/6/
+    - game_index: 645
+      generation:
+        name: generation-vii
+        url: https://pokeapi.co/api/v2/generation/7/
+    - game_index: 645
+      generation:
+        name: generation-viii
+        url: https://pokeapi.co/api/v2/generation/8/
+    held_by_pokemon: 
+    id: 685
+    machines: []
+    name: ability-capsule
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3068\u304F\u305B\u3044\u30AB\u30D7\u30BB\u30EB"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uD2B9\uC131\uCEA1\uC290"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u7279\u6027\u81A0\u56CA"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Pilule Talent
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: "F\xE4higk.-Kapsel"
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "C\xE1ps. Habilidad"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: "Capsula abilit\xE0"
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Ability Capsule
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3068\u304F\u305B\u3044\u30AB\u30D7\u30BB\u30EB"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u7279\u6027\u80F6\u56CA"
+    sprites:
+      defaul: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ability-capsule.png
+  canUseInBattle: 0
+  canUseOutsideBattle: 0
+  hpAmount: 0
+  restoreMaxHP: 0
+  ppAmount: 0
+  restoreMaxPP: 0
+  status: 0
+  recoverAllStatus: 0
+  revive: 0
+  maxRevive: 0

@@ -1,0 +1,1428 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5aa4a7f37a22714c9924381e9ade610, type: 3}
+  m_Name: trumbeak
+  m_EditorClassIdentifier: 
+  name: Trumbeak
+  description: 'From its mouth, it fires the seeds of berries
+
+    it has eaten.
+    The scattered seeds give rise
+
+    to new plants.'
+  frontSprite: {fileID: 21300000, guid: d84de423585b6ed4e970fe47a65a4c8f, type: 3}
+  backSprite: {fileID: 21300000, guid: 405b66e8889e4244ab607fe7e638f165, type: 3}
+  type1: 1
+  type2: 10
+  maxHp: 55
+  attack: 85
+  defense: 50
+  spAttack: 40
+  spDefense: 50
+  speed: 75
+  expYield: 124
+  growthRate: 0
+  catchRate: 120
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: a674e097c27e3d14084500cce6d70529, type: 2}
+    level: 24
+  - moveBase: {fileID: 11400000, guid: 16e35173d025b7640960d82766b8d1ec, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: d6c1f25a812988f48bc74dcc6a81ac55, type: 2}
+    level: 13
+  - moveBase: {fileID: 11400000, guid: 75aac8e84090b4d418cc85462482f006, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 7e255562d7ad73b49a90623622ea0b4f, type: 2}
+    level: 32
+  - moveBase: {fileID: 11400000, guid: 8037ac94f0a859b49abc2d9d0eac49d8, type: 2}
+    level: 29
+  - moveBase: {fileID: 11400000, guid: 15d2f76cf35b95b428497309fecd3dbd, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: f4de722df6602d844a284a22a09355b2, type: 2}
+    level: 40
+  - moveBase: {fileID: 11400000, guid: 15decd4300c934b45bb935b9594eda7f, type: 2}
+    level: 45
+  - moveBase: {fileID: 11400000, guid: 5a14d915b1f3bf34b94508bc2b3a0f90, type: 2}
+    level: 37
+  - moveBase: {fileID: 11400000, guid: 236f32e00bb084c45abf7753c86dabf4, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 6b59012d1faba964984a7e17cf5e2fde, type: 2}
+    level: 21
+  - moveBase: {fileID: 11400000, guid: 71e906dc59ba9b44580c887540ec0778, type: 2}
+    level: 16
+  - moveBase: {fileID: 11400000, guid: 098afe41ab5503045a99ff36a4b3cd61, type: 2}
+    level: 1
+  learnableByItems:
+  - {fileID: 11400000, guid: 7522c1bd0d53d204bba95a9a838b07fc, type: 2}
+  - {fileID: 11400000, guid: 5db74e358ddac2644a4a2d93c23e28e7, type: 2}
+  - {fileID: 11400000, guid: 75b54896403fff9458e46b207f96c5fa, type: 2}
+  - {fileID: 11400000, guid: 4bc4b840a3be2e643b1787a5525e5b3f, type: 2}
+  - {fileID: 11400000, guid: 32a301d293fb5e24784024363d379ade, type: 2}
+  - {fileID: 11400000, guid: 4f499f94fe348804a9163d98c5775881, type: 2}
+  - {fileID: 11400000, guid: 6497dd1b5ea3d0e4b90d553d185329d0, type: 2}
+  - {fileID: 11400000, guid: 84dcb330ef4f1964f8ec7ba0a69dfdb1, type: 2}
+  - {fileID: 11400000, guid: 317c48ab46092154aba7ee690ed2ff42, type: 2}
+  - {fileID: 11400000, guid: 42be3d8a4177f6a42b76b6bc4ce58278, type: 2}
+  - {fileID: 11400000, guid: ff45f18ac6c95e14fabbb6f73ed0a655, type: 2}
+  - {fileID: 11400000, guid: 1aea646b44c567548a7f32cb47493092, type: 2}
+  - {fileID: 11400000, guid: cd6e4facc51a8b941aa7405e2d921597, type: 2}
+  - {fileID: 11400000, guid: 583e06480bdcb9f4fb81ebbcef63f504, type: 2}
+  - {fileID: 11400000, guid: 896d1c6ca6955fb449d963b7f6d32eaa, type: 2}
+  - {fileID: 11400000, guid: 34c4917c1e37f5b4d8b8ba9b7e2fc834, type: 2}
+  - {fileID: 11400000, guid: 9c5a624054766124caf621f65ffce29b, type: 2}
+  - {fileID: 11400000, guid: 28485f3bae0c1b04693cfb3d84c21d51, type: 2}
+  - {fileID: 11400000, guid: 6b59012d1faba964984a7e17cf5e2fde, type: 2}
+  - {fileID: 11400000, guid: 06e30eb4c1b552f4bb131678c6ba1be4, type: 2}
+  - {fileID: 11400000, guid: 09ecf9c2c519d994cad8eafd47dce94e, type: 2}
+  - {fileID: 11400000, guid: 4e7ddca62af155041a6de909c49d7616, type: 2}
+  - {fileID: 11400000, guid: 9d22ff55080bbcb4f8d310fdc4bd406f, type: 2}
+  - {fileID: 11400000, guid: 098afe41ab5503045a99ff36a4b3cd61, type: 2}
+  - {fileID: 11400000, guid: e4a78dbd5e082cc42a7dfaea1074fa0a, type: 2}
+  - {fileID: 11400000, guid: ac7d9d065724dae4cb4cd79878c26894, type: 2}
+  evolutions:
+  - evolvesInto: {fileID: 11400000, guid: f64f7cadc90ea1f4aa2a42155ac9739a, type: 2}
+    requiredLevel: 28
+    requiredItem: {fileID: 0}
+  id: 732
+  pokeApiPokemon:
+    abilities:
+    - ability:
+        name: keen-eye
+        url: https://pokeapi.co/api/v2/ability/51/
+      is_hidden: 0
+      slot: 1
+    - ability:
+        name: skill-link
+        url: https://pokeapi.co/api/v2/ability/92/
+      is_hidden: 0
+      slot: 2
+    - ability:
+        name: pickup
+        url: https://pokeapi.co/api/v2/ability/53/
+      is_hidden: 1
+      slot: 3
+    base_experience: 124
+    forms:
+    - name: trumbeak
+      url: https://pokeapi.co/api/v2/pokemon-form/732/
+    game_indices: []
+    height: 6
+    held_items:
+    - item:
+        name: sitrus-berry
+        url: https://pokeapi.co/api/v2/item/135/
+      version_details:
+      - rarity: 5
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - rarity: 5
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - rarity: 5
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - rarity: 5
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+    id: 732
+    is_default: 1
+    location_area_encounters: https://pokeapi.co/api/v2/pokemon/732/encounters
+    moves:
+    - move:
+        name: swords-dance
+        url: https://pokeapi.co/api/v2/move/14/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: fly
+        url: https://pokeapi.co/api/v2/move/19/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: fury-attack
+        url: https://pokeapi.co/api/v2/move/31/
+      version_group_details:
+      - level_learned_at: 24
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 24
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: growl
+        url: https://pokeapi.co/api/v2/move/45/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 3
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 3
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: supersonic
+        url: https://pokeapi.co/api/v2/move/48/
+      version_group_details:
+      - level_learned_at: 13
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 13
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: peck
+        url: https://pokeapi.co/api/v2/move/64/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: drill-peck
+        url: https://pokeapi.co/api/v2/move/65/
+      version_group_details:
+      - level_learned_at: 32
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 32
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: toxic
+        url: https://pokeapi.co/api/v2/move/92/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: screech
+        url: https://pokeapi.co/api/v2/move/103/
+      version_group_details:
+      - level_learned_at: 29
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 29
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: double-team
+        url: https://pokeapi.co/api/v2/move/104/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: rest
+        url: https://pokeapi.co/api/v2/move/156/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: substitute
+        url: https://pokeapi.co/api/v2/move/164/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: thief
+        url: https://pokeapi.co/api/v2/move/168/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: protect
+        url: https://pokeapi.co/api/v2/move/182/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: swagger
+        url: https://pokeapi.co/api/v2/move/207/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: steel-wing
+        url: https://pokeapi.co/api/v2/move/211/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: attract
+        url: https://pokeapi.co/api/v2/move/213/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: sleep-talk
+        url: https://pokeapi.co/api/v2/move/214/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: return
+        url: https://pokeapi.co/api/v2/move/216/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: frustration
+        url: https://pokeapi.co/api/v2/move/218/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: hidden-power
+        url: https://pokeapi.co/api/v2/move/237/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: sunny-day
+        url: https://pokeapi.co/api/v2/move/241/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: rock-smash
+        url: https://pokeapi.co/api/v2/move/249/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 9
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 9
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: brick-break
+        url: https://pokeapi.co/api/v2/move/280/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: feather-dance
+        url: https://pokeapi.co/api/v2/move/297/
+      version_group_details:
+      - level_learned_at: 40
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 40
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: hyper-voice
+        url: https://pokeapi.co/api/v2/move/304/
+      version_group_details:
+      - level_learned_at: 45
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 45
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: bullet-seed
+        url: https://pokeapi.co/api/v2/move/331/
+      version_group_details:
+      - level_learned_at: 37
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 37
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: aerial-ace
+        url: https://pokeapi.co/api/v2/move/332/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: rock-blast
+        url: https://pokeapi.co/api/v2/move/350/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: roost
+        url: https://pokeapi.co/api/v2/move/355/
+      version_group_details:
+      - level_learned_at: 21
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 21
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: pluck
+        url: https://pokeapi.co/api/v2/move/365/
+      version_group_details:
+      - level_learned_at: 16
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 16
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: u-turn
+        url: https://pokeapi.co/api/v2/move/369/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: smack-down
+        url: https://pokeapi.co/api/v2/move/479/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: flame-charge
+        url: https://pokeapi.co/api/v2/move/488/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: round
+        url: https://pokeapi.co/api/v2/move/496/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: echoed-voice
+        url: https://pokeapi.co/api/v2/move/497/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: work-up
+        url: https://pokeapi.co/api/v2/move/526/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: confide
+        url: https://pokeapi.co/api/v2/move/590/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    name: trumbeak
+    order: 854
+    past_types: []
+    species:
+      name: trumbeak
+      url: https://pokeapi.co/api/v2/pokemon-species/732/
+    species_data:
+      base_happiness: 70
+      capture_rate: 120
+      flavor_text_entries:
+      - flavor_text: "\u30AF\u30C1\u30D0\u30B7\u306B\u3000\u304F\u3063\u305F\u3000\u304D\u306E\u307F\u306E\u3000\u30BF\u30CD\u3092\n\u305F\u3081\u3053\u3080\u3002\u3000\u3066\u304D\u3084\u3000\u3048\u3082\u306E\u306B\n\u3067\u3042\u3046\u3068\u3000\u3044\u3063\u304D\u306B\u3000\u306F\u3063\u3057\u3083\u3059\u308B\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - flavor_text: "\uBA39\uC740 \uB098\uBB34\uC5F4\uB9E4 \uC528\uC557\uC744 \uBD80\uB9AC\uC5D0\n\uC800\uC7A5\uD55C\uB2E4.
+          \uC801\uC774\uB098 \uBA39\uC774\uC640\n\uB9C8\uC8FC\uCE58\uBA74 \uD55C
+          \uBC88\uC5D0 \uBC1C\uC0AC\uD55C\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - flavor_text: "\u628A\u5403\u6389\u7684\u6A39\u679C\u7684\u7A2E\u5B50\u5132\u85CF\u5728\u9CE5\u5634\u88E1\u3002\n\u9047\u5230\u6575\u4EBA\u6216\u7375\u7269\u6642\uFF0C\n\u5C31\u4E00\u53E3\u6C23\u767C\u5C04\u51FA\u53BB\u3002"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - flavor_text: "Il garde toujours dans son bec les p\xE9pins des\nfruits qu\u2019il
+          mange, ce qui lui permet de faire feu\nd\xE8s qu\u2019un ennemi se pr\xE9sente."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - flavor_text: "Sammelt Beerensamen in seinem Schnabel.\nBegegnet es Feinden
+          oder Beute, kann es alle\nauf einmal verschie\xDFen."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - flavor_text: 'Almacena en su pico las semillas de las bayas
+
+          de
+          las que se alimenta para usarlas como arma
+
+          contra enemigos y
+          posibles presas.'
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - flavor_text: 'Conserva nel becco i semi delle bacche
+
+          che mangia,
+          per poi spararli contro nemici
+
+          e prede non appena ne incontra.'
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - flavor_text: 'It eats berries and stores their seeds in its
+
+          beak.
+          When it encounters enemies or prey,
+
+          it fires off all the seeds
+          in a burst.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - flavor_text: "\u30AF\u30C1\u30D0\u30B7\u306B\u3000\u55B0\u3063\u305F\u3000\u304D\u306E\u307F\u306E\u3000\u30BF\u30CD\u3092\n\u6E9C\u3081\u8FBC\u3080\u3002\u3000\u6575\u3084\u3000\u7372\u7269\u306B\n\u51FA\u4F1A\u3046\u3068\u3000\u4E00\u6C17\u306B\u3000\u767A\u5C04\u3059\u308B\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - flavor_text: "\u628A\u5403\u6389\u7684\u6811\u679C\u7684\u79CD\u5B50\u50A8\u85CF\u5728\u9E1F\u5634\u91CC\u3002\n\u9047\u5230\u654C\u4EBA\u6216\u730E\u7269\u65F6\uFF0C\n\u5C31\u4E00\u53E3\u6C14\u53D1\u5C04\u51FA\u53BB\u3002"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        version:
+          name: sun
+          url: https://pokeapi.co/api/v2/version/27/
+      - flavor_text: "\u30AF\u30C1\u30D0\u30B7\u3092\u3000\u305D\u308A\u304B\u3048\u3089\u305B\u3000\u3044\u308D\u3093\u306A\n\u304A\u3068\u3067\u3000\u306A\u304F\u3002\u3000\u304B\u306A\u308A\u3000\u3046\u308B\u3055\u3044\u306E\u3067\n\u307E\u308F\u308A\u306E\u3000\u304A\u305F\u304F\u306B\u306F\u3000\u304D\u3089\u308F\u308C\u308B\u305E\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - flavor_text: "\uBD80\uB9AC\uB97C \uC816\uD600\uC11C \uC5EC\uB7EC \uAC00\uC9C0\n\uC18C\uB9AC\uB85C
+          \uC6B4\uB2E4. \uAF64 \uC2DC\uB044\uB7EC\uC6CC\uC11C\n\uC778\uADFC\uC5D0
+          \uBBF8\uC6C0\uC744 \uC0B0\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - flavor_text: "\u63DA\u8D77\u9CE5\u5634\uFF0C\u4EE5\u5404\u7A2E\u8072\u97F3\u9CF4\u53EB\u3002\n\u56E0\u70BA\u76F8\u7576\u5435\u9B27\uFF0C\n\u6240\u4EE5\u88AB\u5468\u570D\u7684\u5C45\u6C11\u5011\u5ACC\u68C4\u3002"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - flavor_text: "En d\xE9formant son bec, il peut produire une\nribambelle de
+          sons diff\xE9rents, plus bruyants les\nuns que les autres. Le cauchemar
+          des voisins."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - flavor_text: "Indem es seinen Schnabel verformt, kann es\neine gro\xDFe Bandbreite
+          an Lauten aussto\xDFen.\nDer Alptraum eines jeden Nachbarn."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - flavor_text: "Puede deformar su pico para producir los\nsonidos m\xE1s diversos.
+          Debido al estruendo que\ncrea, se granjea la enemistad de sus vecinos."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - flavor_text: "Mutando la forma del becco \xE8 in grado di\nprodurre i suoni
+          pi\xF9 svariati. La sua rumorosit\xE0\ngli ha conquistato la fama di incubo
+          del vicinato."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - flavor_text: 'By bending its beak, it can produce a variety of
+
+          calls
+          and brand itself a noisy nuisance for
+
+          its neighbors.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - flavor_text: "\u30AF\u30C1\u30D0\u30B7\u3092\u3000\u53CD\u308A\u8FD4\u3089\u305B\u3000\u8272\u3093\u306A\n\u97F3\u3067\u3000\u9CF4\u304F\u3002\u3000\u304B\u306A\u308A\u3000\u3046\u308B\u3055\u3044\u306E\u3067\n\u5468\u308A\u306E\u3000\u5FA1\u5B85\u306B\u306F\u3000\u5ACC\u308F\u308C\u308B\u305E\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - flavor_text: "\u626C\u8D77\u9E1F\u5634\uFF0C\u53D1\u51FA\u5404\u79CD\u53EB\u58F0\u3002\n\u56E0\u4E3A\u76F8\u5F53\u5435\u95F9\uFF0C\n\u6240\u4EE5\u5468\u56F4\u7684\u5C45\u6C11\u4EEC\u5F88\u8BA8\u538C\u5B83\u3002"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        version:
+          name: moon
+          url: https://pokeapi.co/api/v2/version/28/
+      - flavor_text: "\u30AF\u30C1\u30D0\u30B7\u306E\u3000\u305B\u3093\u305F\u3093\u3092\u3000\u305D\u308A\u304B\u3048\u3089\u305B\n\uFF11\uFF10\uFF10\u3000\u3044\u3058\u3087\u3046\u306E\u3000\u306A\u304D\u3054\u3048\u3092\n\u3058\u3086\u3046\u306B\u3000\u306A\u304D\u308F\u3051\u308B\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - flavor_text: "\uBD80\uB9AC\uC758 \uB05D\uC744 \uB4A4\uB85C \uC816\uD600\n100\uAC00\uC9C0
+          \uC774\uC0C1\uC758 \uC6B8\uC74C\uC18C\uB9AC\uB97C\n\uC790\uC720\uB86D\uAC8C
+          \uB0BC \uC218 \uC788\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - flavor_text: "\u53EA\u8981\u5658\u8D77\u9CE5\u5634\u7684\u524D\u7AEF\uFF0C\n\u5C31\u80FD\u81EA\u5728\u5730\u767C\u51FA\n\uFF11\uFF10\uFF10\u7A2E\u4EE5\u4E0A\u7684\u53EB\u8072\u3002"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - flavor_text: "Ce Pok\xE9mon est capable de produire plus\nde cent sons diff\xE9rents
+          en recourbant le bout\nde son bec."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - flavor_text: "Indem es seine Schnabelspitze verformt, kann\nes mehr als 100
+          verschiedene Rufe aussto\xDFen."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - flavor_text: "Al torcer la punta del pico es capaz de emitir a\nsu antojo
+          m\xE1s de 100 graznidos diferentes."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - flavor_text: "Mutando l\u2019estremit\xE0 del becco \xE8 in grado\ndi emettere
+          pi\xF9 di 100 cinguettii differenti."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - flavor_text: 'It can bend the tip of its beak to produce over
+
+          a
+          hundred different cries at will.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - flavor_text: "\u30AF\u30C1\u30D0\u30B7\u306E\u3000\u5148\u7AEF\u3092\u3000\u53CD\u308A\u8FD4\u3089\u305B\n\uFF11\uFF10\uFF10\u3000\u4EE5\u4E0A\u306E\u3000\u9CF4\u304D\u58F0\u3092\n\u81EA\u7531\u306B\u3000\u9CF4\u304D\u308F\u3051\u308B\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - flavor_text: "\u561F\u8D77\u9E1F\u5634\u7684\u5634\u5C16\uFF0C\n\u53EF\u4EE5\u81EA\u7531\u5730\u53EB\u51FA\uFF11\uFF10\uFF10\u79CD\u4EE5\u4E0A\u7684\u58F0\u97F3\u3002"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        version:
+          name: ultra-sun
+          url: https://pokeapi.co/api/v2/version/29/
+      - flavor_text: "\u305F\u3079\u305F\u3000\u304D\u306E\u307F\u306E\u30BF\u30CD\u3092\u3000\u304F\u3061\u304B\u3089\n\u306F\u3063\u3057\u3083\u3002\u3000\u30BF\u30CD\u306F\u3060\u3044\u3061\u306B\u3000\u3061\u3089\u3070\u308A\n\u3042\u3089\u305F\u306A\u3000\u304F\u3055\u304D\u304C\u3000\u3046\u307E\u308C\u308B\u306E\u3060\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+      - flavor_text: "\uBA39\uC740 \uB098\uBB34\uC5F4\uB9E4\uC758 \uC528\uB97C \uBD80\uB9AC\uC5D0\uC11C\n\uBC1C\uC0AC\uD55C\uB2E4.
+          \uC528\uB294 \uB300\uC9C0\uC5D0 \uD769\uC5B4\uC838\uC11C\n\uC0C8\uB85C\uC6B4
+          \uD480\uACFC \uB098\uBB34\uAC00 \uC790\uB77C\uB09C\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+      - flavor_text: "\u6703\u5C07\u5403\u6389\u7684\u6A39\u679C\u7A2E\u5B50\u5F9E\u53E3\u4E2D\n\u767C\u5C04\u51FA\u53BB\u3002\u6563\u843D\u5728\u5927\u5730\u4E0A\u7684\u7A2E\u5B50\n\u5C07\u5B55\u80B2\u51FA\u65B0\u7684\u8349\u6728\u3002"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+      - flavor_text: "Il crache violemment les noyaux des Baies\nqu\u2019il a mang\xE9es.
+          Ils s\u2019\xE9parpillent au sol\net donnent naissance \xE0 de nouvelles
+          plantes."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+      - flavor_text: 'Es feuert mit seinem Schnabel Samen von
+
+          gefressenen
+          Beeren ab. Aus den Samen, die am
+
+          Boden liegenbleiben, entstehen
+          neue Pflanzen.'
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+      - flavor_text: 'Dispara por el pico las semillas de las bayas
+
+          ingeridas.
+          Al dispersarse por el suelo, de ellas
+
+          acaban germinando nuevas
+          plantas.'
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+      - flavor_text: 'Spara dal becco i semi delle bacche di cui
+
+          si nutre,
+          da cui poi spuntano nuove piante.'
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+      - flavor_text: 'From its mouth, it fires the seeds of berries
+
+          it
+          has eaten. The scattered seeds give rise
+
+          to new plants.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+      - flavor_text: "\u98DF\u3079\u305F\u3000\u304D\u306E\u307F\u306E\u30BF\u30CD\u3092\u3000\u53E3\u304B\u3089\n\u767A\u5C04\u3002\u3000\u30BF\u30CD\u306F\u5927\u5730\u306B\u3000\u6563\u3089\u3070\u308A\n\u65B0\u305F\u306A\u3000\u8349\u6728\u304C\u3000\u751F\u307E\u308C\u308B\u306E\u3060\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+      - flavor_text: "\u4F1A\u5C06\u5403\u6389\u7684\u6811\u679C\u79CD\u5B50\u4ECE\n\u53E3\u4E2D\u5C04\u51FA\u3002\u79CD\u5B50\u6563\u843D\u5728\u5927\u5730\u4E0A\uFF0C\n\u65B0\u7684\u8349\u6728\u4FBF\u4F1A\u751F\u957F\u51FA\u6765\u3002"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        version:
+          name: ultra-moon
+          url: https://pokeapi.co/api/v2/version/30/
+      gender_rate: 4
+      growth_rate:
+        name: medium
+        url: https://pokeapi.co/api/v2/growth-rate/2/
+      genera:
+      - genus: "\u30E9\u30C3\u30D1\u3050\u3061\u30DD\u30B1\u30E2\u30F3"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+      - genus: "\uB098\uD314\uC785\uD3EC\uCF13\uBAAC"
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+      - genus: "\u5587\u53ED\u5599\u5BF6\u53EF\u5922"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+      - genus: "Pok\xE9mon Bec Clairon"
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+      - genus: Trompete
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+      - genus: "Pok\xE9mon Trompeta"
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+      - genus: "Pok\xE9mon Trombecco"
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+      - genus: "Bugle Beak Pok\xE9mon"
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+      - genus: "\u30E9\u30C3\u30D1\u3050\u3061\u30DD\u30B1\u30E2\u30F3"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+      - genus: "\u5587\u53ED\u5599\u5B9D\u53EF\u68A6"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/377/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 14
+            evolves_to:
+            - evolution_details:
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 28
+              is_baby: false
+              species:
+                name: toucannon
+                url: https://pokeapi.co/api/v2/pokemon-species/733/
+            is_baby: false
+            species:
+              name: trumbeak
+              url: https://pokeapi.co/api/v2/pokemon-species/732/
+          is_baby: false
+          species:
+            name: pikipek
+            url: https://pokeapi.co/api/v2/pokemon-species/731/
+        id: 377
+      name: trumbeak
+      names:
+      - language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        name: "\u30B1\u30E9\u30E9\u30C3\u30D1"
+      - language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        name: "\uD06C\uB77C\uD30C"
+      - language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        name: "\u5587\u53ED\u5544\u9CE5"
+      - language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        name: Piclairon
+      - language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        name: Trompeck
+      - language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        name: Trumbeak
+      - language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        name: Trumbeak
+      - language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        name: Trumbeak
+      - language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        name: "\u30B1\u30E9\u30E9\u30C3\u30D1"
+      - language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        name: "\u5587\u53ED\u5544\u9E1F"
+    sprites:
+      back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/732.png
+      back_female: 
+      back_shiny: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/732.png
+      back_shiny_female: 
+      front_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png
+      front_female: 
+      front_shiny: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/732.png
+      front_shiny_female: 
+    stats:
+    - base_stat: 55
+      effort: 0
+      stat:
+        name: hp
+        url: https://pokeapi.co/api/v2/stat/1/
+    - base_stat: 85
+      effort: 2
+      stat:
+        name: attack
+        url: https://pokeapi.co/api/v2/stat/2/
+    - base_stat: 50
+      effort: 0
+      stat:
+        name: defense
+        url: https://pokeapi.co/api/v2/stat/3/
+    - base_stat: 40
+      effort: 0
+      stat:
+        name: special-attack
+        url: https://pokeapi.co/api/v2/stat/4/
+    - base_stat: 50
+      effort: 0
+      stat:
+        name: special-defense
+        url: https://pokeapi.co/api/v2/stat/5/
+    - base_stat: 75
+      effort: 0
+      stat:
+        name: speed
+        url: https://pokeapi.co/api/v2/stat/6/
+    types:
+    - slot: 1
+      type:
+        name: normal
+        url: https://pokeapi.co/api/v2/type/1/
+    - slot: 2
+      type:
+        name: flying
+        url: https://pokeapi.co/api/v2/type/3/
+    weight: 148

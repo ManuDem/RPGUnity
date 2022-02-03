@@ -1,0 +1,5053 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5aa4a7f37a22714c9924381e9ade610, type: 3}
+  m_Name: stunky
+  m_EditorClassIdentifier: 
+  name: Stunky
+  description: "If it lifts its tail and points its rear at you, beware.\nIt\u2019s
+    about to spray you with a fluid stinky enough\nto make you faint."
+  frontSprite: {fileID: 21300000, guid: 4e59153977fba6c42bbf78bbdd32b487, type: 3}
+  backSprite: {fileID: 21300000, guid: eecf3248361645f4780388e477a8308a, type: 3}
+  type1: 8
+  type2: 17
+  maxHp: 63
+  attack: 63
+  defense: 47
+  spAttack: 41
+  spDefense: 41
+  speed: 74
+  expYield: 66
+  growthRate: 0
+  catchRate: 225
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: b9b4bea94e6854d4ea8c736f6b137403, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: c246c7448127a64428d287f6a0521b1d, type: 2}
+    level: 21
+  - moveBase: {fileID: 11400000, guid: 75b54896403fff9458e46b207f96c5fa, type: 2}
+    level: 20
+  - moveBase: {fileID: 11400000, guid: 8037ac94f0a859b49abc2d9d0eac49d8, type: 2}
+    level: 7
+  - moveBase: {fileID: 11400000, guid: 6d929b4e8a6f8b248b702231e190a1ce, type: 2}
+    level: 15
+  - moveBase: {fileID: 11400000, guid: 319bd9094c658ba43bfe70f6a7abab2a, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: ee64bdb3d5d164e42985b44feb92289d, type: 2}
+    level: 4
+  - moveBase: {fileID: 11400000, guid: 7408eab556ef8da4a84e68088cfaffae, type: 2}
+    level: 44
+  - moveBase: {fileID: 11400000, guid: c2d51b768ef9e2c49818737b35afaebb, type: 2}
+    level: 11
+  - moveBase: {fileID: 11400000, guid: d71f1256c77708749b6f5d4189dd2301, type: 2}
+    level: 25
+  - moveBase: {fileID: 11400000, guid: 89afc8cd65607934a8bd9d970ab26499, type: 2}
+    level: 37
+  - moveBase: {fileID: 11400000, guid: 98e5fff48bb89334b9332a615bd167ff, type: 2}
+    level: 18
+  - moveBase: {fileID: 11400000, guid: c5be35db6876f3142a8e2c6e12dac184, type: 2}
+    level: 39
+  - moveBase: {fileID: 11400000, guid: 870747d3276ad9847ad8632e50c6897c, type: 2}
+    level: 31
+  - moveBase: {fileID: 11400000, guid: 73d927f60cce4734cad2dabbd087716d, type: 2}
+    level: 32
+  - moveBase: {fileID: 11400000, guid: e4876b8ced8c8ac4c90f2f5c6c47d377, type: 2}
+    level: 46
+  - moveBase: {fileID: 11400000, guid: 8bd66360b61b16f42a2ca76ec0af47b4, type: 2}
+    level: 37
+  learnableByItems:
+  - {fileID: 11400000, guid: e9f53a23b5ea4f7488a3d036b83476e7, type: 2}
+  - {fileID: 11400000, guid: 0d4c7f29567d8b34485e93949228b883, type: 2}
+  - {fileID: 11400000, guid: 4b7e8a89d8d53ae48a7de9fbda925fce, type: 2}
+  - {fileID: 11400000, guid: 5bbc1f106152f4f418b7693b74b21cfc, type: 2}
+  - {fileID: 11400000, guid: 75b54896403fff9458e46b207f96c5fa, type: 2}
+  - {fileID: 11400000, guid: 4bc4b840a3be2e643b1787a5525e5b3f, type: 2}
+  - {fileID: 11400000, guid: ed52dc1c5cf416d4a945c2637f098b25, type: 2}
+  - {fileID: 11400000, guid: 7408eab556ef8da4a84e68088cfaffae, type: 2}
+  - {fileID: 11400000, guid: 32a301d293fb5e24784024363d379ade, type: 2}
+  - {fileID: 11400000, guid: 4f499f94fe348804a9163d98c5775881, type: 2}
+  - {fileID: 11400000, guid: 6497dd1b5ea3d0e4b90d553d185329d0, type: 2}
+  - {fileID: 11400000, guid: 84dcb330ef4f1964f8ec7ba0a69dfdb1, type: 2}
+  - {fileID: 11400000, guid: 3bb7eb7dcedcb0241b73124998dbb4fe, type: 2}
+  - {fileID: 11400000, guid: d18d8a7d8b9b8084988c8d1f389c6ff9, type: 2}
+  - {fileID: 11400000, guid: 317c48ab46092154aba7ee690ed2ff42, type: 2}
+  - {fileID: 11400000, guid: ff45f18ac6c95e14fabbb6f73ed0a655, type: 2}
+  - {fileID: 11400000, guid: 1aea646b44c567548a7f32cb47493092, type: 2}
+  - {fileID: 11400000, guid: cd6e4facc51a8b941aa7405e2d921597, type: 2}
+  - {fileID: 11400000, guid: 583e06480bdcb9f4fb81ebbcef63f504, type: 2}
+  - {fileID: 11400000, guid: 7c7fbe8584fe2144abb4628aca4744f2, type: 2}
+  - {fileID: 11400000, guid: 896d1c6ca6955fb449d963b7f6d32eaa, type: 2}
+  - {fileID: 11400000, guid: e8a0f75669254a44c90535c57b36116e, type: 2}
+  - {fileID: 11400000, guid: 34c4917c1e37f5b4d8b8ba9b7e2fc834, type: 2}
+  - {fileID: 11400000, guid: b2a1a89d039cf6445b0a07e1da8824f5, type: 2}
+  - {fileID: 11400000, guid: 15d2f76cf35b95b428497309fecd3dbd, type: 2}
+  - {fileID: 11400000, guid: eae3457afb724be4aafbbd9bc0b1ef34, type: 2}
+  - {fileID: 11400000, guid: 24abe08b890f12b4aacfd27d59193d96, type: 2}
+  - {fileID: 11400000, guid: e1400e685f947bb4881087b14fcd65f2, type: 2}
+  - {fileID: 11400000, guid: fb17f4e2660df9d45a7ec05378adb412, type: 2}
+  - {fileID: 11400000, guid: 01996dd886e68aa49b857f9295abb616, type: 2}
+  - {fileID: 11400000, guid: bd80a2aa9501e1b46927d51dd4fa99d2, type: 2}
+  - {fileID: 11400000, guid: 399ceda83ed230040b9e770baa920cc1, type: 2}
+  - {fileID: 11400000, guid: cfecd4731e1ce7f4fb5c6a41f332b82f, type: 2}
+  - {fileID: 11400000, guid: b13d4d6499656204286043b271900ce9, type: 2}
+  - {fileID: 11400000, guid: c7ba3d3452985a34ea19469e7a33b5d0, type: 2}
+  - {fileID: 11400000, guid: c833e8a753dd95545a2bfecb18f8a893, type: 2}
+  - {fileID: 11400000, guid: 0b9ba53988b365e419c2d020cb1872bb, type: 2}
+  - {fileID: 11400000, guid: b4e17ba8a4c6a8e48909d8e550647abc, type: 2}
+  - {fileID: 11400000, guid: 9d22ff55080bbcb4f8d310fdc4bd406f, type: 2}
+  - {fileID: 11400000, guid: ee801d0f299ec6146866e6e65a1206d5, type: 2}
+  - {fileID: 11400000, guid: 7ab1b865d2be1464ba8d2dce50506564, type: 2}
+  - {fileID: 11400000, guid: ac7d9d065724dae4cb4cd79878c26894, type: 2}
+  evolutions:
+  - evolvesInto: {fileID: 11400000, guid: 8018c2de4f28ff84dbf36121b0097596, type: 2}
+    requiredLevel: 34
+    requiredItem: {fileID: 0}
+  id: 434
+  pokeApiPokemon:
+    abilities:
+    - ability:
+        name: stench
+        url: https://pokeapi.co/api/v2/ability/1/
+      is_hidden: 0
+      slot: 1
+    - ability:
+        name: aftermath
+        url: https://pokeapi.co/api/v2/ability/106/
+      is_hidden: 0
+      slot: 2
+    - ability:
+        name: keen-eye
+        url: https://pokeapi.co/api/v2/ability/51/
+      is_hidden: 1
+      slot: 3
+    base_experience: 66
+    forms:
+    - name: stunky
+      url: https://pokeapi.co/api/v2/pokemon-form/434/
+    game_indices:
+    - game_index: 434
+      generation:
+        name: 
+        url: 
+    - game_index: 434
+      generation:
+        name: 
+        url: 
+    - game_index: 434
+      generation:
+        name: 
+        url: 
+    - game_index: 434
+      generation:
+        name: 
+        url: 
+    - game_index: 434
+      generation:
+        name: 
+        url: 
+    - game_index: 434
+      generation:
+        name: 
+        url: 
+    - game_index: 434
+      generation:
+        name: 
+        url: 
+    - game_index: 434
+      generation:
+        name: 
+        url: 
+    - game_index: 434
+      generation:
+        name: 
+        url: 
+    height: 4
+    held_items:
+    - item:
+        name: pecha-berry
+        url: https://pokeapi.co/api/v2/item/128/
+      version_details:
+      - rarity: 5
+        version:
+          name: diamond
+          url: https://pokeapi.co/api/v2/version/12/
+      - rarity: 5
+        version:
+          name: pearl
+          url: https://pokeapi.co/api/v2/version/13/
+      - rarity: 5
+        version:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version/14/
+      - rarity: 5
+        version:
+          name: heartgold
+          url: https://pokeapi.co/api/v2/version/15/
+      - rarity: 5
+        version:
+          name: soulsilver
+          url: https://pokeapi.co/api/v2/version/16/
+      - rarity: 5
+        version:
+          name: black
+          url: https://pokeapi.co/api/v2/version/17/
+      - rarity: 5
+        version:
+          name: white
+          url: https://pokeapi.co/api/v2/version/18/
+      - rarity: 5
+        version:
+          name: black-2
+          url: https://pokeapi.co/api/v2/version/21/
+      - rarity: 5
+        version:
+          name: white-2
+          url: https://pokeapi.co/api/v2/version/22/
+    id: 434
+    is_default: 1
+    location_area_encounters: https://pokeapi.co/api/v2/pokemon/434/encounters
+    moves:
+    - move:
+        name: scratch
+        url: https://pokeapi.co/api/v2/move/10/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: cut
+        url: https://pokeapi.co/api/v2/move/15/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    - move:
+        name: headbutt
+        url: https://pokeapi.co/api/v2/move/29/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+    - move:
+        name: double-edge
+        url: https://pokeapi.co/api/v2/move/38/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: leer
+        url: https://pokeapi.co/api/v2/move/43/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: bite
+        url: https://pokeapi.co/api/v2/move/44/
+      version_group_details:
+      - level_learned_at: 21
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 21
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: roar
+        url: https://pokeapi.co/api/v2/move/46/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: flamethrower
+        url: https://pokeapi.co/api/v2/move/53/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: dig
+        url: https://pokeapi.co/api/v2/move/91/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    - move:
+        name: toxic
+        url: https://pokeapi.co/api/v2/move/92/
+      version_group_details:
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 27
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 27
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 27
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 27
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 27
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 27
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 27
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 27
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: screech
+        url: https://pokeapi.co/api/v2/move/103/
+      version_group_details:
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 7
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: double-team
+        url: https://pokeapi.co/api/v2/move/104/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: smokescreen
+        url: https://pokeapi.co/api/v2/move/108/
+      version_group_details:
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 14
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 14
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 14
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 14
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 14
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 14
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 13
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 13
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: haze
+        url: https://pokeapi.co/api/v2/move/114/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: focus-energy
+        url: https://pokeapi.co/api/v2/move/116/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: smog
+        url: https://pokeapi.co/api/v2/move/123/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: fire-blast
+        url: https://pokeapi.co/api/v2/move/126/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: swift
+        url: https://pokeapi.co/api/v2/move/129/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+    - move:
+        name: poison-gas
+        url: https://pokeapi.co/api/v2/move/139/
+      version_group_details:
+      - level_learned_at: 4
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 4
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 4
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 4
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 4
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 4
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 4
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 3
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 3
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: explosion
+        url: https://pokeapi.co/api/v2/move/153/
+      version_group_details:
+      - level_learned_at: 44
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 44
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 44
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 49
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 49
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 49
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 49
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 45
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 45
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: fury-swipes
+        url: https://pokeapi.co/api/v2/move/154/
+      version_group_details:
+      - level_learned_at: 11
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 9
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 9
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: rest
+        url: https://pokeapi.co/api/v2/move/156/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: slash
+        url: https://pokeapi.co/api/v2/move/163/
+      version_group_details:
+      - level_learned_at: 25
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 22
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 22
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 22
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 22
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 22
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 22
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 25
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 25
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: substitute
+        url: https://pokeapi.co/api/v2/move/164/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: thief
+        url: https://pokeapi.co/api/v2/move/168/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: snore
+        url: https://pokeapi.co/api/v2/move/173/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    - move:
+        name: protect
+        url: https://pokeapi.co/api/v2/move/182/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: scary-face
+        url: https://pokeapi.co/api/v2/move/184/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: sludge-bomb
+        url: https://pokeapi.co/api/v2/move/188/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: mud-slap
+        url: https://pokeapi.co/api/v2/move/189/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+    - move:
+        name: endure
+        url: https://pokeapi.co/api/v2/move/203/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+    - move:
+        name: swagger
+        url: https://pokeapi.co/api/v2/move/207/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: fury-cutter
+        url: https://pokeapi.co/api/v2/move/210/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+    - move:
+        name: attract
+        url: https://pokeapi.co/api/v2/move/213/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: sleep-talk
+        url: https://pokeapi.co/api/v2/move/214/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: return
+        url: https://pokeapi.co/api/v2/move/216/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: frustration
+        url: https://pokeapi.co/api/v2/move/218/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: pursuit
+        url: https://pokeapi.co/api/v2/move/228/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: iron-tail
+        url: https://pokeapi.co/api/v2/move/231/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: hidden-power
+        url: https://pokeapi.co/api/v2/move/237/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: rain-dance
+        url: https://pokeapi.co/api/v2/move/240/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: sunny-day
+        url: https://pokeapi.co/api/v2/move/241/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: crunch
+        url: https://pokeapi.co/api/v2/move/242/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: shadow-ball
+        url: https://pokeapi.co/api/v2/move/247/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: rock-smash
+        url: https://pokeapi.co/api/v2/move/249/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    - move:
+        name: torment
+        url: https://pokeapi.co/api/v2/move/259/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: memento
+        url: https://pokeapi.co/api/v2/move/262/
+      version_group_details:
+      - level_learned_at: 37
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 38
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 38
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 43
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 43
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 43
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 43
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 33
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 33
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: facade
+        url: https://pokeapi.co/api/v2/move/263/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: taunt
+        url: https://pokeapi.co/api/v2/move/269/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: snatch
+        url: https://pokeapi.co/api/v2/move/289/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    - move:
+        name: secret-power
+        url: https://pokeapi.co/api/v2/move/290/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    - move:
+        name: astonish
+        url: https://pokeapi.co/api/v2/move/310/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: natural-gift
+        url: https://pokeapi.co/api/v2/move/363/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+    - move:
+        name: feint
+        url: https://pokeapi.co/api/v2/move/364/
+      version_group_details:
+      - level_learned_at: 18
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 18
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 18
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 18
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 18
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 18
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: payback
+        url: https://pokeapi.co/api/v2/move/371/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: punishment
+        url: https://pokeapi.co/api/v2/move/386/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: sucker-punch
+        url: https://pokeapi.co/api/v2/move/389/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 39
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 39
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: dark-pulse
+        url: https://pokeapi.co/api/v2/move/399/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: night-slash
+        url: https://pokeapi.co/api/v2/move/400/
+      version_group_details:
+      - level_learned_at: 31
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 32
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 32
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 37
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 37
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 37
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 37
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 31
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 31
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: shadow-claw
+        url: https://pokeapi.co/api/v2/move/421/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: defog
+        url: https://pokeapi.co/api/v2/move/432/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+    - move:
+        name: captivate
+        url: https://pokeapi.co/api/v2/move/445/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+    - move:
+        name: hone-claws
+        url: https://pokeapi.co/api/v2/move/468/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    - move:
+        name: venoshock
+        url: https://pokeapi.co/api/v2/move/474/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: flame-burst
+        url: https://pokeapi.co/api/v2/move/481/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: acid-spray
+        url: https://pokeapi.co/api/v2/move/491/
+      version_group_details:
+      - level_learned_at: 32
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 32
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 32
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 32
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 19
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 19
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: foul-play
+        url: https://pokeapi.co/api/v2/move/492/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: round
+        url: https://pokeapi.co/api/v2/move/496/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: incinerate
+        url: https://pokeapi.co/api/v2/move/510/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    - move:
+        name: snarl
+        url: https://pokeapi.co/api/v2/move/555/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: belch
+        url: https://pokeapi.co/api/v2/move/562/
+      version_group_details:
+      - level_learned_at: 46
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 46
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 43
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 43
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: play-rough
+        url: https://pokeapi.co/api/v2/move/583/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: confide
+        url: https://pokeapi.co/api/v2/move/590/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: venom-drench
+        url: https://pokeapi.co/api/v2/move/599/
+      version_group_details:
+      - level_learned_at: 37
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 37
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    name: stunky
+    order: 544
+    past_types: []
+    species:
+      name: stunky
+      url: https://pokeapi.co/api/v2/pokemon-species/434/
+    species_data:
+      base_happiness: 70
+      capture_rate: 225
+      flavor_text_entries:
+      - flavor_text: 'It protects itself by spraying a
+
+          noxious fluid from
+          its rear. The
+
+          stench lingers for 24 hours.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: diamond
+          url: https://pokeapi.co/api/v2/version/12/
+      - flavor_text: 'It sprays a nose-curling,
+
+          stinky fluid from its
+          rear to
+
+          repel attackers.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: pearl
+          url: https://pokeapi.co/api/v2/version/13/
+      - flavor_text: "It sprays a foul fluid from its\nrear. Its stench spreads over
+          a\nmile radius, driving Pok\xE9mon away."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version/14/
+      - flavor_text: 'The foul fluid from its rear is so
+
+          revolting that
+          it can make people feel
+
+          queasy up to a mile and a quarter away.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: heartgold
+          url: https://pokeapi.co/api/v2/version/15/
+      - flavor_text: 'The foul fluid from its rear is so
+
+          revolting that
+          it can make people feel
+
+          queasy up to a mile and a quarter away.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: soulsilver
+          url: https://pokeapi.co/api/v2/version/16/
+      - flavor_text: "Son derri\xE8re propulse un fluide\nnaus\xE9abond qui peut
+          faire fuir les\nPok\xE9mon dans un rayon de 2 km."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: black
+          url: https://pokeapi.co/api/v2/version/17/
+      - flavor_text: "It sprays a foul fluid from its\nrear. Its stench spreads over
+          a\nmile radius, driving Pok\xE9mon away."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: black
+          url: https://pokeapi.co/api/v2/version/17/
+      - flavor_text: "Son derri\xE8re propulse un fluide\nnaus\xE9abond qui peut
+          faire fuir les\nPok\xE9mon dans un rayon de 2 km."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: white
+          url: https://pokeapi.co/api/v2/version/18/
+      - flavor_text: "It sprays a foul fluid from its\nrear. Its stench spreads over
+          a\nmile radius, driving Pok\xE9mon away."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: white
+          url: https://pokeapi.co/api/v2/version/18/
+      - flavor_text: "It sprays a foul fluid from its\nrear. Its stench spreads over
+          a\nmile radius, driving Pok\xE9mon away."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: black-2
+          url: https://pokeapi.co/api/v2/version/21/
+      - flavor_text: "It sprays a foul fluid from its\nrear. Its stench spreads over
+          a\nmile radius, driving Pok\xE9mon away."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: white-2
+          url: https://pokeapi.co/api/v2/version/22/
+      - flavor_text: "\u304A\u3057\u308A\u304B\u3089\u3068\u3070\u3059\u3000\u304F\u3055\u3044\u3000\u3057\u308B\u306E\n\u306B\u304A\u3044\u306F\u3000\u306F\u3093\u3051\u3044\uFF12\u30AD\u30ED\u306B\u3000\u3072\u308D\u304C\u308A\n\u307E\u308F\u308A\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\u3044\u306A\u304F\u306A\u308B\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "\uC5C9\uB369\uC774\uC5D0\uC11C \uBFDC\uC5B4\uC9C0\uB294 \uC5ED\uD55C
+          \uBD84\uBE44\uC561\uC758\n\uB0C4\uC0C8\uB294 \uBC94\uC704 2km\uAE4C\uC9C0
+          \uBA40\uB9AC \uD37C\uC838\n\uC8FC\uBCC0\uC758 \uD3EC\uCF13\uBAAC\uC774
+          \uC790\uB9AC\uB97C \uB728\uAC8C \uD55C\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "Son derri\xE8re propulse un fluide naus\xE9abond qui peut\nfaire
+          fuir les Pok\xE9mon dans un rayon de 2 km."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "Verspr\xFCht eine Substanz aus seinem Hinterleib,\ndie in einem
+          gro\xDFen Radius andere Pok\xE9mon fernh\xE4lt."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "Expulsa un fluido maloliente por sus cuartos traseros.\nEl
+          hedor repele Pok\xE9mon en un radio de 2 km."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "Emette un fluido puzzolente dal posteriore. Il tanfo\nsi sparge
+          per 2 km e tiene lontani i Pok\xE9mon."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "It sprays a foul fluid from its rear. Its stench\nspreads over
+          a mile radius, driving Pok\xE9mon away."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "\u304A\u5C3B\u304B\u3089\u98DB\u3070\u3059\u3000\u304F\u3055\u3044\u3000\u6C41\u306E\n\u306B\u304A\u3044\u306F\u3000\u534A\u5F84\uFF12\u30AD\u30ED\u306B\u3000\u5E83\u304C\u308A\n\u307E\u308F\u308A\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\u3044\u306A\u304F\u306A\u308B\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "\u304A\u3057\u308A\u304B\u3089\u3000\u304D\u3087\u3046\u308C\u3064\u306B\u3000\u304F\u3055\u3044\n\u3048\u304D\u305F\u3044\u3092\u3000\u3068\u3070\u3057\u3066\u3000\u307F\u3092\u3000\u307E\u3082\u308B\u3002\n\u306B\u304A\u3044\u306F\u3000\uFF12\uFF14\u3058\u304B\u3093\u3000\u304D\u3048\u306A\u3044\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "\uC5C9\uB369\uC774\uC5D0\uC11C \uAC15\uB82C\uD55C \uAD6C\uB9B0\uB0B4\uC758\n\uC561\uCCB4\uB97C
+          \uB0A0\uB824\uC11C \uBAB8\uC744 \uC9C0\uD0A8\uB2E4.\n\uB0C4\uC0C8\uAC00
+          24\uC2DC\uAC04 \uC0AC\uB77C\uC9C0\uC9C0 \uC54A\uB294\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "Il se prot\xE8ge en expulsant un fluide nocif par son\nderri\xE8re.
+          La puanteur dure 24 heures."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "Um sich zu sch\xFCtzen, verspr\xFCht es eine Substanz\naus
+          seinem Hinterleib, die 24 Stunden stinkt."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: 'Se protege expulsando un fluido nocivo por su parte
+
+          trasera.
+          El hedor dura 24 horas.'
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: 'Si protegge spruzzando un fluido puzzolente dal
+
+          posteriore.
+          Il tanfo permane per 24 ore.'
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: 'It protects itself by spraying a noxious fluid from its
+
+          rear.
+          The stench lingers for 24 hours.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "\u304A\u5C3B\u304B\u3089\u3000\u5F37\u70C8\u306B\u3000\u304F\u3055\u3044\u3000\u6DB2\u4F53\u3092\n\u98DB\u3070\u3057\u3066\u3000\u8EAB\u3092\u3000\u5B88\u308B\u3002\n\u306B\u304A\u3044\u306F\u3000\uFF12\uFF14\u6642\u9593\u3000\u6D88\u3048\u306A\u3044\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "\u304A\u3057\u308A\u304B\u3089\u3068\u3070\u3059\u3000\u304F\u3055\u3044\u3000\u3057\u308B\u306E\n\u306B\u304A\u3044\u306F\u3000\u306F\u3093\u3051\u3044\uFF12\u30AD\u30ED\u306B\u3000\u3072\u308D\u304C\u308A\n\u307E\u308F\u308A\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\u3044\u306A\u304F\u306A\u308B\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "\uC5C9\uB369\uC774\uC5D0\uC11C \uBFDC\uC5B4\uC9C0\uB294 \uC5ED\uD55C
+          \uBD84\uBE44\uC561\uC758\n\uB0C4\uC0C8\uB294 \uBC18\uACBD 2km\uAE4C\uC9C0
+          \uBA40\uB9AC \uD37C\uC838\n\uC8FC\uBCC0\uC758 \uD3EC\uCF13\uBAAC\uC774
+          \uC790\uB9AC\uB97C \uB728\uAC8C \uD55C\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "Son derri\xE8re propulse un fluide naus\xE9abond qui peut faire
+          fuir\nles Pok\xE9mon dans un rayon de 2 km."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "Verspr\xFCht eine Substanz aus seinem Hinterleib, die in einem\ngro\xDFen
+          Radius andere Pok\xE9mon fernh\xE4lt."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "Expulsa un fluido maloliente por sus cuartos traseros. El hedor\nrepele
+          Pok\xE9mon en un radio de 2 km."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "Emette un fluido puzzolente dal posteriore. Il tanfo si sparge\nper
+          2 km e tiene lontani i Pok\xE9mon."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "It sprays a foul fluid from its rear. Its stench\nspreads over
+          a mile radius, driving Pok\xE9mon away."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "\u304A\u5C3B\u304B\u3089\u98DB\u3070\u3059\u3000\u304F\u3055\u3044\u3000\u6C41\u306E\n\u306B\u304A\u3044\u306F\u3000\u534A\u5F84\uFF12\u30AD\u30ED\u306B\u3000\u5E83\u304C\u308A\n\u307E\u308F\u308A\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\u3044\u306A\u304F\u306A\u308B\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "\u304A\u3057\u308A\u304B\u3089\u3000\u304D\u3087\u3046\u308C\u3064\u306B\u3000\u304F\u3055\u3044\n\u3048\u304D\u305F\u3044\u3092\u3000\u3068\u3070\u3057\u3066\u3000\u307F\u3092\u3000\u307E\u3082\u308B\u3002\n\u306B\u304A\u3044\u306F\u3000\uFF12\uFF14\u3058\u304B\u3093\u3000\u304D\u3048\u306A\u3044\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "\uC5C9\uB369\uC774\uC5D0\uC11C \uAC15\uB82C\uD55C \uAD6C\uB9B0\uB0B4\uC758\n\uC561\uCCB4\uB97C
+          \uB0A0\uB824\uC11C \uBAB8\uC744 \uC9C0\uD0A8\uB2E4.\n\uB0C4\uC0C8\uAC00
+          24\uC2DC\uAC04 \uC0AC\uB77C\uC9C0\uC9C0 \uC54A\uB294\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "Il se prot\xE8ge en expulsant un fluide nocif par son derri\xE8re.\nLa
+          puanteur dure 24 heures."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "Um sich zu sch\xFCtzen, verspr\xFCht es eine Substanz aus seinem\nHinterleib,
+          die 24 Stunden stinkt."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: 'Se protege expulsando un fluido nocivo por su parte trasera.
+
+          El
+          hedor dura 24 horas.'
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: 'Si protegge spruzzando un fluido puzzolente dal posteriore.
+
+          Il
+          tanfo permane per 24 ore.'
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: 'It protects itself by spraying a noxious fluid from its
+
+          rear.
+          The stench lingers for 24 hours.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "\u304A\u5C3B\u304B\u3089\u3000\u5F37\u70C8\u306B\u3000\u304F\u3055\u3044\u3000\u6DB2\u4F53\u3092\n\u98DB\u3070\u3057\u3066\u3000\u8EAB\u3092\u3000\u5B88\u308B\u3002\n\u306B\u304A\u3044\u306F\u3000\uFF12\uFF14\u6642\u9593\u3000\u6D88\u3048\u306A\u3044\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "\u304A\u3057\u308A\u304B\u3089\u3000\u3042\u3044\u3066\u306E\u3000\u304B\u304A\u3000\u3081\u304C\u3051\u3066\n\u3082\u306E\u3059\u3054\u304F\u3000\u304F\u3055\u3044\u3000\u3057\u308B\u3092\u3000\u3068\u3070\u3059\u3002\n\u3057\u308B\u306F\u3000\uFF15\u30E1\u30FC\u30C8\u30EB\u3055\u304D\u307E\u3067\u3000\u3068\u3069\u304F\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: sword
+          url: https://pokeapi.co/api/v2/version/33/
+      - flavor_text: "\uC5C9\uB369\uC774\uB97C \uC0C1\uB300\uC758 \uC5BC\uAD74\uC5D0
+          \uACA8\uB0E5\uD574\uC11C\n\uC5C4\uCCAD\uB098\uAC8C \uC5ED\uD55C \uBD84\uBE44\uC561\uC744
+          \uBFDC\uB294\uB2E4.\n\uBD84\uBE44\uC561\uC740 5m \uB5A8\uC5B4\uC9C4 \uACF3\uAE4C\uC9C0
+          \uB2FF\uB294\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: sword
+          url: https://pokeapi.co/api/v2/version/33/
+      - flavor_text: "\u7784\u6E96\u5C0D\u624B\u7684\u81C9\uFF0C\u5F9E\u5C41\u80A1\n\u5674\u51FA\u5947\u81ED\u7121\u6BD4\u7684\u6DB2\u9AD4\u3002\n\u6DB2\u9AD4\u80FD\u5674\u5230\uFF15\u516C\u5C3A\u5916\u3002"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        version:
+          name: sword
+          url: https://pokeapi.co/api/v2/version/33/
+      - flavor_text: "Il propulse un liquide extr\xEAmement naus\xE9abond\nau visage
+          de son adversaire depuis son derri\xE8re.\nIl peut atteindre une cible
+          \xE0 cinq m\xE8tres."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: sword
+          url: https://pokeapi.co/api/v2/version/33/
+      - flavor_text: "Aus seinem Hinterleib spr\xFCht es Gegnern eine\nf\xFCrchterlich
+          stinkende Fl\xFCssigkeit ins Gesicht.\nDabei hat es eine Reichweite von
+          bis zu 5 m."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: sword
+          url: https://pokeapi.co/api/v2/version/33/
+      - flavor_text: "Expulsa un l\xEDquido de olor nauseabundo por sus\ncuartos
+          traseros con el que puede acertar a su\nenemigo en el rostro a 5 m de distancia."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: sword
+          url: https://pokeapi.co/api/v2/version/33/
+      - flavor_text: "Spruzza un fluido puzzolente dal posteriore\nmirando al muso
+          dell\u2019avversario. Lo spruzzo\npu\xF2 arrivare fino 5 m di distanza."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: sword
+          url: https://pokeapi.co/api/v2/version/33/
+      - flavor_text: 'From its rear, it sprays a foul-smelling liquid at
+
+          opponents.
+          It aims for their faces, and it can hit
+
+          them from over 16 feet
+          away.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: sword
+          url: https://pokeapi.co/api/v2/version/33/
+      - flavor_text: "\u304A\u3057\u308A\u304B\u3089\u3000\u76F8\u624B\u306E\u3000\u9854\u3092\u3000\u3081\u304C\u3051\u3066\n\u3082\u306E\u3059\u3054\u304F\u3000\u81ED\u3044\u3000\u6C41\u3092\u3000\u98DB\u3070\u3059\u3002\n\u6C41\u306F\u3000\uFF15\u30E1\u30FC\u30C8\u30EB\u5148\u307E\u3067\u3000\u3068\u3069\u304F\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: sword
+          url: https://pokeapi.co/api/v2/version/33/
+      - flavor_text: "\u7784\u51C6\u5BF9\u624B\u7684\u8138\uFF0C\u4ECE\u5C41\u80A1\n\u55B7\u51FA\u5947\u81ED\u65E0\u6BD4\u7684\u6DB2\u4F53\u3002\n\u6DB2\u4F53\u80FD\u55B7\u5230\uFF15\u7C73\u5F00\u5916\u3002"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        version:
+          name: sword
+          url: https://pokeapi.co/api/v2/version/33/
+      - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u3042\u3052\u3066\u3000\u304A\u3057\u308A\u3092\u3000\u3080\u3051\u305F\u3089\n\u3088\u3046\u3061\u3085\u3046\u3044\u3002\u3000\u304D\u305C\u3064\u3000\u3059\u308B\u307B\u3069\n\u304F\u3055\u3044\u3000\u3057\u308B\u3092\u3000\u3068\u3070\u3059\u3000\u307E\u3048\u3076\u308C\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: shield
+          url: https://pokeapi.co/api/v2/version/34/
+      - flavor_text: "\uAF2C\uB9AC\uB97C \uB4E4\uACE0 \uC5C9\uB369\uC774\uB97C \uB3CC\uB9AC\uBA74\n\uC8FC\uC758\uD574\uC57C
+          \uD55C\uB2E4. \uAE30\uC808\uD560 \uC815\uB3C4\uB85C\n\uC545\uCDE8 \uB098\uB294
+          \uBD84\uBE44\uC561\uC744 \uB0A0\uB9B4 \uC804\uC870\uC778 \uAC83\uC774\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: shield
+          url: https://pokeapi.co/api/v2/version/34/
+      - flavor_text: "\u8981\u662F\u7260\u7FF9\u8D77\u5C3E\u5DF4\u628A\u5C41\u80A1\u5C0D\u6E96\u4E86\u4F60\uFF0C\n\u8ACB\u4E00\u5B9A\u8981\u5C0F\u5FC3\u3002\u56E0\u70BA\u9019\u8868\u793A\u7260\u5C07\u8981\n\u5674\u51FA\u8DB3\u4EE5\u8B93\u4EBA\u7A92\u606F\u7684\u81ED\u6DB2\u3002"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        version:
+          name: shield
+          url: https://pokeapi.co/api/v2/version/34/
+      - flavor_text: "S\u2019il l\xE8ve la queue, c\u2019est qu\u2019il s\u2019appr\xEAte
+          \xE0 projeter\nun liquide tellement naus\xE9abond qu\u2019il peut faire\nperdre
+          connaissance."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: shield
+          url: https://pokeapi.co/api/v2/version/34/
+      - flavor_text: "Dreht es einem den Hinterleib zu und hebt seinen\nSchweif,
+          verspr\xFCht es kurz darauf eine Fl\xFCssigkeit,\ndie so sehr stinkt, dass
+          sie einem die Sinne raubt."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: shield
+          url: https://pokeapi.co/api/v2/version/34/
+      - flavor_text: "Si levanta la cola y apunta los cuartos traseros,\nes se\xF1al
+          de que se dispone a expulsar un l\xEDquido\ncuyo hedor llega a provocar
+          desmayos."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: shield
+          url: https://pokeapi.co/api/v2/version/34/
+      - flavor_text: "Se mostra il posteriore alzando la coda, bisogna\nfare attenzione:
+          sta per spruzzare un fluido cos\xEC\nmaleodorante da far perdere i sensi."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: shield
+          url: https://pokeapi.co/api/v2/version/34/
+      - flavor_text: "If it lifts its tail and points its rear at you, beware.\nIt\u2019s
+          about to spray you with a fluid stinky enough\nto make you faint."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: shield
+          url: https://pokeapi.co/api/v2/version/34/
+      - flavor_text: "\u5C3B\u5C3E\u3092\u3000\u3042\u3052\u3066\u3000\u304A\u5C3B\u3092\u3000\u5411\u3051\u305F\u3089\n\u8981\u6CE8\u610F\u3002\u3000\u6C17\u7D76\u3000\u3059\u308B\u307B\u3069\n\u81ED\u3044\u3000\u6C41\u3092\u3000\u98DB\u3070\u3059\u3000\u524D\u89E6\u308C\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: shield
+          url: https://pokeapi.co/api/v2/version/34/
+      - flavor_text: "\u8981\u662F\u5B83\u7FD8\u8D77\u5C3E\u5DF4\u628A\u5C41\u80A1\u5BF9\u51C6\u4E86\u4F60\uFF0C\n\u8BF7\u4E00\u5B9A\u8981\u5C0F\u5FC3\u3002\u56E0\u4E3A\u8FD9\u8868\u793A\u5B83\u5C06\u8981\n\u55B7\u51FA\u8DB3\u4EE5\u8BA9\u4EBA\u7A92\u606F\u7684\u81ED\u6DB2\u3002"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        version:
+          name: shield
+          url: https://pokeapi.co/api/v2/version/34/
+      gender_rate: 4
+      growth_rate:
+        name: medium
+        url: https://pokeapi.co/api/v2/growth-rate/2/
+      genera:
+      - genus: "\u30B9\u30AB\u30F3\u30AF\u30DD\u30B1\u30E2\u30F3"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+      - genus: "\uC2A4\uCEF9\uD06C\uD3EC\uCF13\uBAAC"
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+      - genus: "\u81ED\u9F2C\u5BF6\u53EF\u5922"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+      - genus: "Pok\xE9mon Moufette"
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+      - genus: Stinktier
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+      - genus: "Pok\xE9mon Mofeta"
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+      - genus: "Pok\xE9mon Moffetta"
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+      - genus: "Skunk Pok\xE9mon"
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+      - genus: "\u30B9\u30AB\u30F3\u30AF\u30DD\u30B1\u30E2\u30F3"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+      - genus: "\u81ED\u9F2C\u5B9D\u53EF\u68A6"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/223/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 34
+            evolves_to: []
+            is_baby: false
+            species:
+              name: skuntank
+              url: https://pokeapi.co/api/v2/pokemon-species/435/
+          is_baby: false
+          species:
+            name: stunky
+            url: https://pokeapi.co/api/v2/pokemon-species/434/
+        id: 223
+      name: stunky
+      names:
+      - language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        name: "\u30B9\u30AB\u30F3\u30D7\u30FC"
+      - language:
+          name: roomaji
+          url: https://pokeapi.co/api/v2/language/2/
+        name: Skunpoo
+      - language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        name: "\uC2A4\uCEF9\uBFE1"
+      - language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        name: "\u81ED\u9F2C\u5657"
+      - language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        name: Moufouette
+      - language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        name: Skunkapuh
+      - language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        name: Stunky
+      - language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        name: Stunky
+      - language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        name: Stunky
+      - language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        name: "\u30B9\u30AB\u30F3\u30D7\u30FC"
+      - language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        name: "\u81ED\u9F2C\u5657"
+    sprites:
+      back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/434.png
+      back_female: 
+      back_shiny: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/434.png
+      back_shiny_female: 
+      front_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png
+      front_female: 
+      front_shiny: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/434.png
+      front_shiny_female: 
+    stats:
+    - base_stat: 63
+      effort: 0
+      stat:
+        name: hp
+        url: https://pokeapi.co/api/v2/stat/1/
+    - base_stat: 63
+      effort: 0
+      stat:
+        name: attack
+        url: https://pokeapi.co/api/v2/stat/2/
+    - base_stat: 47
+      effort: 0
+      stat:
+        name: defense
+        url: https://pokeapi.co/api/v2/stat/3/
+    - base_stat: 41
+      effort: 0
+      stat:
+        name: special-attack
+        url: https://pokeapi.co/api/v2/stat/4/
+    - base_stat: 41
+      effort: 0
+      stat:
+        name: special-defense
+        url: https://pokeapi.co/api/v2/stat/5/
+    - base_stat: 74
+      effort: 1
+      stat:
+        name: speed
+        url: https://pokeapi.co/api/v2/stat/6/
+    types:
+    - slot: 1
+      type:
+        name: poison
+        url: https://pokeapi.co/api/v2/type/4/
+    - slot: 2
+      type:
+        name: dark
+        url: https://pokeapi.co/api/v2/type/17/
+    weight: 192

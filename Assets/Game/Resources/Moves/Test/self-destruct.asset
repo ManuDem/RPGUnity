@@ -1,0 +1,882 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: self-destruct
+  m_EditorClassIdentifier: 
+  name: Self-Destruct
+  description: 'Powerful but makes
+
+    the user faint.'
+  type: 1
+  power: 200
+  accuracy: 100
+  alwaysHits: 0
+  pp: 5
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 120
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/7/
+    contest_type:
+      name: beauty
+      url: https://pokeapi.co/api/v2/contest-type/2/
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 0
+    effect_changes:
+    - effect_entries:
+      - effect: Halves the target's Defense for damage calculation, which is similar
+          to doubling the attack's power.
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        short_effect: 
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    effect_entries:
+    - effect: User faints, even if the attack fails or misses.  Inflicts regular
+        damage.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: User faints.
+    flavor_text_entries:
+    - flavor_text: 'Powerful but makes
+
+        the user faint.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    - flavor_text: 'Powerful but makes
+
+        the user faint.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: crystal
+        url: https://pokeapi.co/api/v2/version-group/4/
+    - flavor_text: 'Inflicts severe damage but
+
+        makes the user faint.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: 'Inflicts severe damage but
+
+        makes the user faint.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: 'The user blows up
+
+        to inflict severe
+
+        damage,
+        even
+
+        making itself faint.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: "The user blows up to\ninflict damage on all\nPok\xE9mon in battle.\nThe
+        user faints upon\nusing this move."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "The user blows up to\ninflict damage on all\nPok\xE9mon in battle.\nThe
+        user faints upon\nusing this move."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "The user blows up to\ninflict damage on all\nPok\xE9mon in battle.\nThe
+        user faints upon\nusing this move."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Le lanceur explose en blessant\ntous les Pok\xE9mon autour de
+        lui.\nLe lanceur tombe K.O."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The user attacks everything around it
+
+        by causing an
+        explosion.
+
+        The user faints upon using this move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The user attacks everything around it
+
+        by causing an
+        explosion.
+
+        The user faints upon using this move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3070\u304F\u306F\u3064\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3064\u304B\u3063\u305F\u3000\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uD3ED\uBC1C\uC744 \uC77C\uC73C\uCF1C\uC11C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uC4F0\uACE0
+        \uB098\uC11C \uAE30\uC808\uD558\uAC8C \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Le lanceur explose en blessant tous les Pok\xE9mon\nautour de
+        lui. Le lanceur tombe K.O."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Anwender sprengt sich, richtet rundum
+
+        Riesenschaden
+        an und wird dabei besiegt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'El atacante explota y hiere a todos a su alrededor.
+
+        El
+        usuario se debilita de inmediato.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa esplode e infligge danni ai Pok\xE9mon\nche ha intorno,
+        ma poi va KO."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'The user attacks everything around it
+
+        by causing an
+        explosion.
+
+        The user faints upon using this move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u7206\u767A\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u4F7F\u3063\u305F\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3070\u304F\u306F\u3064\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3064\u304B\u3063\u305F\u3000\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uD3ED\uBC1C\uC744 \uC77C\uC73C\uCF1C\uC11C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uC4F0\uACE0
+        \uB098\uC11C \uAE30\uC808\uD558\uAC8C \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Le lanceur explose en blessant tous les Pok\xE9mon\nautour de
+        lui. Le lanceur tombe K.O."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Anwender sprengt sich, richtet rundum
+
+        Riesenschaden
+        an und wird dabei besiegt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "El atacante explota y hiere a todos a su alrededor. \nEl usuario
+        se debilita de inmediato."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa esplode e infligge danni ai Pok\xE9mon\nche ha intorno,
+        ma poi va KO."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'The user attacks everything around it
+
+        by causing an
+        explosion.
+
+        The user faints upon using this move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u7206\u767A\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u4F7F\u3063\u305F\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3070\u304F\u306F\u3064\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3064\u304B\u3063\u305F\u3000\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uD3ED\uBC1C\uC744 \uC77C\uC73C\uCF1C\uC11C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uC4F0\uACE0
+        \uB098\uC11C \uAE30\uC808\uD558\uAC8C \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5F15\u8D77\u7206\u70B8\uFF0C\n\u653B\u64CA\u81EA\u5DF1\u5468\u570D\u6240\u6709\u7684\u5BF6\u53EF\u5922\u3002\n\u4F7F\u7528\u5F8C\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le lanceur explose en blessant tous les Pok\xE9mon\nautour de
+        lui. Le lanceur tombe K.O."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Anwender verursacht eine Explosion, mit der er\nrundum Riesenschaden
+        anrichtet und selbst\nkampfunf\xE4hig wird."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "El atacante explota y hiere a todos a su alrededor. \nEl usuario
+        se debilita de inmediato."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa esplode e infligge danni ai Pok\xE9mon\nche ha intorno,
+        ma poi va KO."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'The user attacks everything around it by causing an
+
+        explosion.
+        The user faints upon using this move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7206\u767A\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u4F7F\u3063\u305F\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5F15\u53D1\u7206\u70B8\uFF0C\n\u653B\u51FB\u81EA\u5DF1\u5468\u56F4\u6240\u6709\u7684\u5B9D\u53EF\u68A6\u3002\n\u4F7F\u7528\u540E\u9677\u5165\u6FD2\u6B7B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3070\u304F\u306F\u3064\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3064\u304B\u3063\u305F\u3000\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uD3ED\uBC1C\uC744 \uC77C\uC73C\uCF1C\uC11C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uC4F0\uACE0
+        \uB098\uC11C \uAE30\uC808\uD558\uAC8C \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5F15\u8D77\u7206\u70B8\uFF0C\n\u653B\u64CA\u81EA\u5DF1\u5468\u570D\u6240\u6709\u7684\u5BF6\u53EF\u5922\u3002\n\u4F7F\u7528\u5F8C\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le lanceur explose en blessant tous les Pok\xE9mon\nautour de
+        lui. Le lanceur tombe K.O."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Anwender verursacht eine Explosion, mit der er\nrundum Riesenschaden
+        anrichtet und selbst\nkampfunf\xE4hig wird."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "El atacante explota y hiere a todos a su alrededor. \nEl usuario
+        se debilita de inmediato."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa esplode e infligge danni ai Pok\xE9mon\nche ha intorno,
+        ma poi va KO."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'The user attacks everything around it by causing an
+
+        explosion.
+        The user faints upon using this move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7206\u767A\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u4F7F\u3063\u305F\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5F15\u53D1\u7206\u70B8\uFF0C\n\u653B\u51FB\u81EA\u5DF1\u5468\u56F4\u6240\u6709\u7684\u5B9D\u53EF\u68A6\u3002\n\u4F7F\u7528\u540E\u9677\u5165\u6FD2\u6B7B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3070\u304F\u306F\u3064\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3064\u304B\u3063\u305F\u3000\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uD3ED\uBC1C\uC744 \uC77C\uC73C\uCF1C\uC11C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uC4F0\uACE0
+        \uB098\uC11C \uAE30\uC808\uD558\uAC8C \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5F15\u8D77\u7206\u70B8\uFF0C\n\u653B\u64CA\u81EA\u5DF1\u5468\u570D\u6240\u6709\u7684\u5BF6\u53EF\u5922\u3002\n\u4F7F\u7528\u5F8C\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le lanceur explose en blessant tous les Pok\xE9mon\nautour de
+        lui. Le lanceur tombe K.O."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Anwender verursacht eine Explosion, mit der er\nrundum Riesenschaden
+        anrichtet und selbst\nkampfunf\xE4hig wird."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "El atacante explota y hiere a todos a su alrededor. \nEl usuario
+        se debilita de inmediato."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa esplode e infligge danni ai Pok\xE9mon\nche ha intorno,
+        ma poi va KO."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'The user attacks everything around it by causing an
+
+        explosion.
+        The user faints upon using this move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7206\u767A\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u4F7F\u3063\u305F\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5F15\u53D1\u7206\u70B8\uFF0C\n\u653B\u51FB\u81EA\u5DF1\u5468\u56F4\u6240\u6709\u7684\u5B9D\u53EF\u68A6\u3002\n\u4F7F\u7528\u540E\u9677\u5165\u6FD2\u6B7B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3070\u304F\u306F\u3064\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u3058\u3076\u3093\u306E\n\u307E\u308F\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3064\u304B\u3063\u305F\u3000\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uD3ED\uBC1C\uC744 \uC77C\uC73C\uCF1C\uC11C \uC790\uC2E0\uC758\n\uC8FC\uC704\uC5D0
+        \uC788\uB294 \uD3EC\uCF13\uBAAC\uC744 \uACF5\uACA9\uD55C\uB2E4.\n\uC4F0\uACE0
+        \uB098\uC11C \uAE30\uC808\uD558\uAC8C \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5F15\u8D77\u7206\u70B8\uFF0C\n\u653B\u64CA\u81EA\u5DF1\u5468\u570D\u6240\u6709\u7684\u5BF6\u53EF\u5922\u3002\n\u4F7F\u7528\u5F8C\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le lanceur explose en blessant tous les Pok\xE9mon\nautour de
+        lui. Le lanceur tombe K.O."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender verursacht eine Explosion, mit der er bei\nallen
+        Pok\xE9mon im Umkreis Riesenschaden anrichtet und\nselbst kampfunf\xE4hig
+        wird."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "El atacante explota y hiere a todos a su alrededor. \nEl usuario
+        se debilita de inmediato."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa esplode e infligge danni ai Pok\xE9mon\nche ha intorno,
+        ma poi va KO."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'The user attacks everything around it by causing an
+
+        explosion.
+        The user faints upon using this move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u7206\u767A\u3092\u3000\u304A\u3053\u3057\u3066\u3000\u81EA\u5206\u306E\n\u5468\u308A\u306B\u3000\u3044\u308B\u3082\u306E\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u4F7F\u3063\u305F\u3042\u3068\u306B\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5F15\u53D1\u7206\u70B8\uFF0C\n\u653B\u51FB\u81EA\u5DF1\u5468\u56F4\u6240\u6709\u7684\u5B9D\u53EF\u68A6\u3002\n\u4F7F\u7528\u540E\u9677\u5165\u6FD2\u6B7B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-i
+      url: https://pokeapi.co/api/v2/generation/1/
+    id: 120
+    learned_by_pokemon:
+    - name: geodude
+      url: https://pokeapi.co/api/v2/pokemon/74/
+    - name: graveler
+      url: https://pokeapi.co/api/v2/pokemon/75/
+    - name: golem
+      url: https://pokeapi.co/api/v2/pokemon/76/
+    - name: grimer
+      url: https://pokeapi.co/api/v2/pokemon/88/
+    - name: muk
+      url: https://pokeapi.co/api/v2/pokemon/89/
+    - name: shellder
+      url: https://pokeapi.co/api/v2/pokemon/90/
+    - name: cloyster
+      url: https://pokeapi.co/api/v2/pokemon/91/
+    - name: gastly
+      url: https://pokeapi.co/api/v2/pokemon/92/
+    - name: haunter
+      url: https://pokeapi.co/api/v2/pokemon/93/
+    - name: gengar
+      url: https://pokeapi.co/api/v2/pokemon/94/
+    - name: onix
+      url: https://pokeapi.co/api/v2/pokemon/95/
+    - name: voltorb
+      url: https://pokeapi.co/api/v2/pokemon/100/
+    - name: electrode
+      url: https://pokeapi.co/api/v2/pokemon/101/
+    - name: exeggcute
+      url: https://pokeapi.co/api/v2/pokemon/102/
+    - name: exeggutor
+      url: https://pokeapi.co/api/v2/pokemon/103/
+    - name: koffing
+      url: https://pokeapi.co/api/v2/pokemon/109/
+    - name: weezing
+      url: https://pokeapi.co/api/v2/pokemon/110/
+    - name: snorlax
+      url: https://pokeapi.co/api/v2/pokemon/143/
+    - name: mewtwo
+      url: https://pokeapi.co/api/v2/pokemon/150/
+    - name: mew
+      url: https://pokeapi.co/api/v2/pokemon/151/
+    - name: sudowoodo
+      url: https://pokeapi.co/api/v2/pokemon/185/
+    - name: pineco
+      url: https://pokeapi.co/api/v2/pokemon/204/
+    - name: forretress
+      url: https://pokeapi.co/api/v2/pokemon/205/
+    - name: steelix
+      url: https://pokeapi.co/api/v2/pokemon/208/
+    - name: qwilfish
+      url: https://pokeapi.co/api/v2/pokemon/211/
+    - name: slugma
+      url: https://pokeapi.co/api/v2/pokemon/218/
+    - name: magcargo
+      url: https://pokeapi.co/api/v2/pokemon/219/
+    - name: corsola
+      url: https://pokeapi.co/api/v2/pokemon/222/
+    - name: seedot
+      url: https://pokeapi.co/api/v2/pokemon/273/
+    - name: nuzleaf
+      url: https://pokeapi.co/api/v2/pokemon/274/
+    - name: shiftry
+      url: https://pokeapi.co/api/v2/pokemon/275/
+    - name: nosepass
+      url: https://pokeapi.co/api/v2/pokemon/299/
+    - name: gulpin
+      url: https://pokeapi.co/api/v2/pokemon/316/
+    - name: swalot
+      url: https://pokeapi.co/api/v2/pokemon/317/
+    - name: wailmer
+      url: https://pokeapi.co/api/v2/pokemon/320/
+    - name: wailord
+      url: https://pokeapi.co/api/v2/pokemon/321/
+    - name: camerupt
+      url: https://pokeapi.co/api/v2/pokemon/323/
+    - name: torkoal
+      url: https://pokeapi.co/api/v2/pokemon/324/
+    - name: lunatone
+      url: https://pokeapi.co/api/v2/pokemon/337/
+    - name: solrock
+      url: https://pokeapi.co/api/v2/pokemon/338/
+    - name: baltoy
+      url: https://pokeapi.co/api/v2/pokemon/343/
+    - name: claydol
+      url: https://pokeapi.co/api/v2/pokemon/344/
+    - name: glalie
+      url: https://pokeapi.co/api/v2/pokemon/362/
+    - name: metang
+      url: https://pokeapi.co/api/v2/pokemon/375/
+    - name: metagross
+      url: https://pokeapi.co/api/v2/pokemon/376/
+    - name: regirock
+      url: https://pokeapi.co/api/v2/pokemon/377/
+    - name: regice
+      url: https://pokeapi.co/api/v2/pokemon/378/
+    - name: registeel
+      url: https://pokeapi.co/api/v2/pokemon/379/
+    - name: bonsly
+      url: https://pokeapi.co/api/v2/pokemon/438/
+    - name: munchlax
+      url: https://pokeapi.co/api/v2/pokemon/446/
+    - name: trubbish
+      url: https://pokeapi.co/api/v2/pokemon/568/
+    - name: ferroseed
+      url: https://pokeapi.co/api/v2/pokemon/597/
+    - name: ferrothorn
+      url: https://pokeapi.co/api/v2/pokemon/598/
+    - name: genesect
+      url: https://pokeapi.co/api/v2/pokemon/649/
+    - name: minior-red-meteor
+      url: https://pokeapi.co/api/v2/pokemon/774/
+    - name: geodude-alola
+      url: https://pokeapi.co/api/v2/pokemon/10109/
+    - name: graveler-alola
+      url: https://pokeapi.co/api/v2/pokemon/10110/
+    - name: golem-alola
+      url: https://pokeapi.co/api/v2/pokemon/10111/
+    - name: minior-orange-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10130/
+    - name: minior-yellow-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10131/
+    - name: minior-green-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10132/
+    - name: minior-blue-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10133/
+    - name: minior-indigo-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10134/
+    - name: minior-violet-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10135/
+    - name: minior-red
+      url: https://pokeapi.co/api/v2/pokemon/10136/
+    - name: minior-orange
+      url: https://pokeapi.co/api/v2/pokemon/10137/
+    - name: minior-yellow
+      url: https://pokeapi.co/api/v2/pokemon/10138/
+    - name: minior-green
+      url: https://pokeapi.co/api/v2/pokemon/10139/
+    - name: minior-blue
+      url: https://pokeapi.co/api/v2/pokemon/10140/
+    - name: minior-indigo
+      url: https://pokeapi.co/api/v2/pokemon/10141/
+    - name: minior-violet
+      url: https://pokeapi.co/api/v2/pokemon/10142/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/401/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/702/
+      version_group:
+        name: red-blue
+        url: https://pokeapi.co/api/v2/version-group/1/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/703/
+      version_group:
+        name: yellow
+        url: https://pokeapi.co/api/v2/version-group/2/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/840/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: self-destruct
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3058\u3070\u304F"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC790\uD3ED"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u81EA\u7206"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Destruction
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Finale
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Autodestrucci\xF3n"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Autodistruzione
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Self-Destruct
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3058\u3070\u304F"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u81EA\u7206"
+    past_values:
+    - accuracy: 0
+      effect_chance: 0
+      effect_entries: []
+      power: 130
+      pp: 0
+      type:
+        name: 
+        url: 
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    power: 200
+    pp: 5
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/9/
+    target:
+      name: all-other-pokemon
+      url: https://pokeapi.co/api/v2/move-target/9/
+    type:
+      name: normal
+      url: https://pokeapi.co/api/v2/type/1/

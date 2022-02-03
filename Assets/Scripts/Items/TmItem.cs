@@ -23,8 +23,6 @@ public class TmItem : ItemBase
 
     public override bool IsReusable => isHM;
 
-    public override bool CanUseInBattle => false;
-
     public MoveBase Move => move;
     public bool IsHM => isHM;
 }

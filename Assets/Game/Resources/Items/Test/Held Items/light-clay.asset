@@ -1,0 +1,540 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5810bf315e146de4e9f1544787543258, type: 3}
+  m_Name: light-clay
+  m_EditorClassIdentifier: 
+  name: Light Clay
+  description: "A Pok\xE9mon hold item that extends the\nduration of barrier moves
+    like Light\nScreen and Reflect used by the holder."
+  icon: {fileID: 21300000, guid: 0c6d7b17bef955e41bd0253f4f9cc16f, type: 3}
+  price: 0
+  isSellable: 0
+  id: 246
+  pokeApiItem:
+    attributes:
+    - name: holdable
+      url: https://pokeapi.co/api/v2/item-attribute/5/
+    - name: holdable-active
+      url: https://pokeapi.co/api/v2/item-attribute/7/
+    - name: underground
+      url: https://pokeapi.co/api/v2/item-attribute/8/
+    baby_trigger_for:
+      name: 
+      url: 
+    category:
+      name: held-items
+      url: https://pokeapi.co/api/v2/item-category/12/
+    cost: 4000
+    effect_entries:
+    - effect: 'Held: The holder''s Reflect and Light Screen will create effects lasting
+        for eight turns rather than five.  As this item affects the move rather than
+        the barrier itself, the effect is not lost if the holder leaves battle or
+        drops this item.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: 'Held: Light Screen and Reflect used by the holder last 8 rounds
+        instead of 5.'
+    flavor_text_entries:
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9mon hold item that extends the\nduration of barrier moves like
+        Light\nScreen and Reflect used by the holder."
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9mon hold item that extends the\nduration of barrier moves like
+        Light\nScreen and Reflect used by the holder."
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9mon held item that extends the\nduration of barrier moves like
+        Light\nScreen and Reflect used by the holder."
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir augmentant la dur\xE9e\nde capacit\xE9s barri\xE8res
+        telles que\nMur Lumi\xE8re et Protection."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9mon held item that extends the\nduration of barrier moves like
+        Light\nScreen and Reflect used by the holder."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9mon held item that extends the\nduration of barrier moves like
+        Light\nScreen and Reflect used by the holder."
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3082\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3072\u304B\u308A\u306E\u304B\u3079\u3084\n\u30EA\u30D5\u30EC\u30AF\u30BF\u30FC\u3092\u3000\u3064\u304B\u3063\u305F\u3068\u304D\n\u3044\u3064\u3082\u3088\u308A\u3082\u3000\u306A\u304C\u304F\u3000\u306E\u3053\u308B\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC774 \uBE5B\uC758\uC7A5\uB9C9\uC774\uB098\n\uB9AC\uD50C\uB809\uD130\uB97C
+        \uC0AC\uC6A9\uD588\uC744 \uB54C\n\uC5EC\uB290 \uB54C\uBCF4\uB2E4 \uAE34 \uC2DC\uAC04
+        \uB3D9\uC548 \uC9C0\uC18D\uB41C\uB2E4."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir. Augmente la dur\xE9e des capacit\xE9s\nbarri\xE8res
+        telles que Mur Lumi\xE8re et Protection."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum Tragen. Verl\xE4ngert die Dauer von\nLichtschild, Reflektor
+        etc."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Prolonga la duraci\xF3n de ataques multiturno como\nAtadura y Constricci\xF3n
+        si la lleva un Pok\xE9mon."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento da dare a un Pok\xE9mon.\nAllunga la durata delle mosse barriera
+        come\nSchermoluce e Riflesso."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon.\nProtective moves like Light Screen\nand
+        Reflect will be effective longer."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u6301\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3072\u304B\u308A\u306E\u304B\u3079\u3084\n\u30EA\u30D5\u30EC\u30AF\u30BF\u30FC\u3092\u3000\u4F7F\u3063\u305F\u3068\u304D\n\u3044\u3064\u3082\u3088\u308A\u3082\u3000\u9577\u304F\u3000\u6B8B\u308B\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3082\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3072\u304B\u308A\u306E\u304B\u3079\u3084\n\u30EA\u30D5\u30EC\u30AF\u30BF\u30FC\u3092\u3000\u3064\u304B\u3063\u305F\u3068\u304D\n\u3044\u3064\u3082\u3088\u308A\u3082\u3000\u306A\u304C\u304F\u3000\u306E\u3053\u308B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC774 \uBE5B\uC758\uC7A5\uB9C9\uC774\uB098\n\uB9AC\uD50C\uB809\uD130\uB97C
+        \uC0AC\uC6A9\uD588\uC744 \uB54C\n\uC5EC\uB290 \uB54C\uBCF4\uB2E4 \uAE34 \uC2DC\uAC04
+        \uB3D9\uC548 \uC9C0\uC18D\uB41C\uB2E4."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u7576\u651C\u5E36\u5B83\u7684\u5BF6\u53EF\u5922\n\u4F7F\u51FA\u5149\u7246\u6216\u53CD\u5C04\u58C1\u6642\uFF0C\n\u6548\u679C\u6703\u6BD4\u5E73\u6642\u6301\u7E8C\u5F97\u66F4\u4E45\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir. Augmente la dur\xE9e des capacit\xE9s\nbarri\xE8res
+        telles que Mur Lumi\xE8re et Protection."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum Tragen. Verl\xE4ngert die Dauer von\nLichtschild, Reflektor
+        etc."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Prolonga la duraci\xF3n de barreras como Reflejo y\nPantalla de Luz.
+        Debe llevarla un Pok\xE9mon."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento da dare a un Pok\xE9mon.\nAllunga la durata delle mosse barriera
+        come\nSchermoluce e Riflesso."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. Protective moves\nlike Light Screen
+        and Reflect will be\neffective longer."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u6301\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3072\u304B\u308A\u306E\u304B\u3079\u3084\n\u30EA\u30D5\u30EC\u30AF\u30BF\u30FC\u3092\u3000\u4F7F\u3063\u305F\u3068\u304D\n\u3044\u3064\u3082\u3088\u308A\u3082\u3000\u9577\u304F\u3000\u6B8B\u308B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u5F53\u643A\u5E26\u5B83\u7684\u5B9D\u53EF\u68A6\n\u4F7F\u51FA\u5149\u5899\u6216\u53CD\u5C04\u58C1\u65F6\uFF0C\n\u6548\u679C\u4F1A\u6BD4\u5E73\u65F6\u6301\u7EED\u5F97\u66F4\u957F\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3082\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3072\u304B\u308A\u306E\u304B\u3079\u3084\n\u30EA\u30D5\u30EC\u30AF\u30BF\u30FC\u3092\u3000\u3064\u304B\u3063\u305F\u3068\u304D\n\u3044\u3064\u3082\u3088\u308A\u3082\u3000\u306A\u304C\u304F\u3000\u306E\u3053\u308B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC774 \uBE5B\uC758\uC7A5\uB9C9\uC774\uB098\n\uB9AC\uD50C\uB809\uD130\uB97C
+        \uC0AC\uC6A9\uD588\uC744 \uB54C\n\uC5EC\uB290 \uB54C\uBCF4\uB2E4 \uAE34 \uC2DC\uAC04
+        \uB3D9\uC548 \uC9C0\uC18D\uB41C\uB2E4."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u7576\u651C\u5E36\u5B83\u7684\u5BF6\u53EF\u5922\n\u4F7F\u51FA\u5149\u7246\u6216\u53CD\u5C04\u58C1\u6642\uFF0C\n\u6548\u679C\u6703\u6BD4\u5E73\u6642\u6301\u7E8C\u5F97\u66F4\u4E45\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir. Augmente la dur\xE9e des capacit\xE9s\nbarri\xE8res
+        telles que Mur Lumi\xE8re et Protection."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum Tragen. Verl\xE4ngert die Dauer von\nLichtschild, Reflektor
+        etc."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Prolonga la duraci\xF3n de barreras como Reflejo y\nPantalla de Luz.
+        Debe llevarla un Pok\xE9mon."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento da dare a un Pok\xE9mon.\nAllunga la durata delle mosse barriera
+        come\nSchermoluce e Riflesso."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. Protective moves\nlike Light Screen
+        and Reflect will be\neffective longer."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u6301\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3072\u304B\u308A\u306E\u304B\u3079\u3084\n\u30EA\u30D5\u30EC\u30AF\u30BF\u30FC\u3092\u3000\u4F7F\u3063\u305F\u3068\u304D\n\u3044\u3064\u3082\u3088\u308A\u3082\u3000\u9577\u304F\u3000\u6B8B\u308B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u5F53\u643A\u5E26\u5B83\u7684\u5B9D\u53EF\u68A6\n\u4F7F\u51FA\u5149\u5899\u6216\u53CD\u5C04\u58C1\u65F6\uFF0C\n\u6548\u679C\u4F1A\u6BD4\u5E73\u65F6\u6301\u7EED\u5F97\u66F4\u957F\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3082\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3072\u304B\u308A\u306E\u304B\u3079\u3084\n\u30EA\u30D5\u30EC\u30AF\u30BF\u30FC\u3092\u3000\u3064\u304B\u3063\u305F\u3068\u304D\n\u3044\u3064\u3082\u3088\u308A\u3082\u3000\u306A\u304C\u304F\u3000\u306E\u3053\u308B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC774 \uBE5B\uC758\uC7A5\uB9C9\uC774\uB098\n\uB9AC\uD50C\uB809\uD130\uB97C
+        \uC0AC\uC6A9\uD588\uC744 \uB54C\n\uC5EC\uB290 \uB54C\uBCF4\uB2E4 \uAE34 \uC2DC\uAC04
+        \uB3D9\uC548 \uC9C0\uC18D\uB41C\uB2E4."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u7576\u651C\u5E36\u5B83\u7684\u5BF6\u53EF\u5922\n\u4F7F\u51FA\u5149\u7246\u6216\u53CD\u5C04\u58C1\u6642\uFF0C\n\u6548\u679C\u6703\u6BD4\u5E73\u6642\u6301\u7E8C\u5F97\u66F4\u4E45\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir. Augmente la dur\xE9e des capacit\xE9s\nbarri\xE8res
+        telles que Mur Lumi\xE8re et Protection."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum Tragen. Verl\xE4ngert die Dauer von\nLichtschild, Reflektor
+        etc."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Prolonga la duraci\xF3n de barreras como las creadas por\nReflejo y
+        Pantalla de Luz. Debe llevarlo un Pok\xE9mon."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento da dare a un Pok\xE9mon.\nAllunga la durata delle mosse barriera
+        come\nSchermoluce e Riflesso."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. Protective moves\nlike Light Screen
+        and Reflect will be\neffective longer."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u6301\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3072\u304B\u308A\u306E\u304B\u3079\u3084\n\u30EA\u30D5\u30EC\u30AF\u30BF\u30FC\u3092\u3000\u4F7F\u3063\u305F\u3068\u304D\n\u3044\u3064\u3082\u3088\u308A\u3082\u3000\u9577\u304F\u3000\u6B8B\u308B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u5F53\u643A\u5E26\u5B83\u7684\u5B9D\u53EF\u68A6\n\u4F7F\u51FA\u5149\u5899\u6216\u53CD\u5C04\u58C1\u65F6\uFF0C\n\u6548\u679C\u4F1A\u6BD4\u5E73\u65F6\u6301\u7EED\u5F97\u66F4\u957F\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3082\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3072\u304B\u308A\u306E\u304B\u3079\u3084\n\u30EA\u30D5\u30EC\u30AF\u30BF\u30FC\u3092\u3000\u3064\u304B\u3063\u305F\u3068\u304D\n\u3044\u3064\u3082\u3088\u308A\u3082\u3000\u306A\u304C\u304F\u3000\u306E\u3053\u308B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC774 \uBE5B\uC758\uC7A5\uB9C9\uC774\uB098\n\uB9AC\uD50C\uB809\uD130\uB97C
+        \uC0AC\uC6A9\uD588\uC744 \uB54C\n\uC5EC\uB290 \uB54C\uBCF4\uB2E4 \uAE34 \uC2DC\uAC04
+        \uB3D9\uC548 \uC9C0\uC18D\uB41C\uB2E4."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u7576\u651C\u5E36\u5B83\u7684\u5BF6\u53EF\u5922\n\u4F7F\u51FA\u5149\u7246\u6216\u53CD\u5C04\u58C1\u6642\uFF0C\n\u6548\u679C\u6703\u6BD4\u5E73\u6642\u6301\u7E8C\u5F97\u66F4\u4E45\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir. Prolonge la dur\xE9e des capacit\xE9s\nbarri\xE8res
+        telles que Mur Lumi\xE8re et Protection."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum Tragen. Verl\xE4ngert die Dauer von\nLichtschild, Reflektor
+        etc."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Prolonga la duraci\xF3n de barreras como las creadas por\nReflejo y
+        Pantalla de Luz. Debe llevarla un Pok\xE9mon."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento da dare a un Pok\xE9mon.\nAllunga la durata delle mosse barriera
+        come\nSchermoluce e Riflesso."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. Protective moves\nlike Light Screen
+        and Reflect will be\neffective longer."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u6301\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3072\u304B\u308A\u306E\u304B\u3079\u3084\n\u30EA\u30D5\u30EC\u30AF\u30BF\u30FC\u3092\u3000\u4F7F\u3063\u305F\u3068\u304D\n\u3044\u3064\u3082\u3088\u308A\u3082\u3000\u9577\u304F\u3000\u6B8B\u308B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u5F53\u643A\u5E26\u5B83\u7684\u5B9D\u53EF\u68A6\n\u4F7F\u51FA\u5149\u5899\u6216\u53CD\u5C04\u58C1\u65F6\uFF0C\n\u6548\u679C\u4F1A\u6BD4\u5E73\u65F6\u6301\u7EED\u5F97\u66F4\u957F\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    fling_effect:
+      name: 
+      url: 
+    fling_power: 30
+    game_indices:
+    - game_index: 269
+      generation:
+        name: generation-iv
+        url: https://pokeapi.co/api/v2/generation/4/
+    - game_index: 269
+      generation:
+        name: generation-v
+        url: https://pokeapi.co/api/v2/generation/5/
+    - game_index: 269
+      generation:
+        name: generation-vi
+        url: https://pokeapi.co/api/v2/generation/6/
+    - game_index: 269
+      generation:
+        name: generation-vii
+        url: https://pokeapi.co/api/v2/generation/7/
+    - game_index: 269
+      generation:
+        name: generation-viii
+        url: https://pokeapi.co/api/v2/generation/8/
+    held_by_pokemon: 
+    id: 246
+    machines: []
+    name: light-clay
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3072\u304B\u308A\u306E\u306D\u3093\u3069"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uBE5B\uC758\uC810\uD1A0"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u5149\u4E4B\u9ECF\u571F"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Lumargile
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Lichtlehm
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Refleluz
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Creta Luce
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Light Clay
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3072\u304B\u308A\u306E\u306D\u3093\u3069"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u5149\u4E4B\u9ECF\u571F"
+    sprites:
+      defaul: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/light-clay.png
+  canUseInBattle: 0
+  canUseOutsideBattle: 0

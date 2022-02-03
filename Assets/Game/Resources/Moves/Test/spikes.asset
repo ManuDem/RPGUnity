@@ -1,0 +1,759 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: spikes
+  m_EditorClassIdentifier: 
+  name: Spikes
+  description: 'Hurts foes when
+
+    they switch out.'
+  type: 9
+  power: 0
+  accuracy: 0
+  alwaysHits: 0
+  pp: 20
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 191
+  pokeApiMove:
+    accuracy: 0
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/18/
+    contest_type:
+      name: smart
+      url: https://pokeapi.co/api/v2/contest-type/4/
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: "Scatters spikes around the opposing field, which damage opposing Pok\xE9mon
+        that enter the field for 1/8 of their max HP.  Pok\xE9mon immune to ground
+        moves are immune to this damage, except during gravity.  Up to three layers
+        of spikes may be laid down, adding 1/16 to the damage done: two layers of
+        spikes damage for 3/16 max HP, and three layers damage for 1/4 max HP.\n\nwonder
+        guard does not block damage from this effect.\n\nrapid spin removes this
+        effect from its user's side of the field.  defog removes this effect from
+        its target's side of the field."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: "Scatters Spikes, hurting opposing Pok\xE9mon that switch in."
+    flavor_text_entries:
+    - flavor_text: 'Hurts foes when
+
+        they switch out.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    - flavor_text: 'Hurts foes when
+
+        they switch out.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: crystal
+        url: https://pokeapi.co/api/v2/version-group/4/
+    - flavor_text: "Sets spikes that hurt a \nfoe switching out."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: "Sets spikes that hurt a \nfoe switching in."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: "A trap of spikes is\nlaid around the\nfoe\u2019s party to hurt\nfoes
+        switching in."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: "The user lays a trap\nof spikes at the\nfoe\u2019s feet. The
+        trap\nhurts foes that\nswitch into battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "The user lays a trap\nof spikes at the\nfoe\u2019s feet. The
+        trap\nhurts foes that\nswitch into battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "The user lays a trap\nof spikes at the\nfoe\u2019s feet. The
+        trap\nhurts foes that\nswitch into battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: 'Le lanceur disperse des piquants sur le
+
+        sol pour blesser
+        tout ennemi qui entre
+
+        au combat.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user lays a trap of spikes at the\nopposing team\u2019s feet.
+        The trap hurts\nPok\xE9mon that switch into battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user lays a trap of spikes at the\nopposing team\u2019s feet.
+        The trap hurts\nPok\xE9mon that switch into battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3042\u3057\u3082\u3068\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u3053\u3046\u305F\u3044\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u3042\u3044\u3066\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC0C1\uB300\uC758 \uBC1C\uBC11\uC5D0 \uC555\uC815\uC744\n\uBFCC\uB9B0\uB2E4.
+        \uAD50\uCCB4\uB41C \uC0C1\uB300\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Le lanceur disperse des piquants sur le sol pour
+
+        blesser
+        tout ennemi qui entre au combat.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Der Anwender verteilt Stacheln,\ndie gegnerische Pok\xE9mon verletzen,\ndie
+        in den Kampf gerufen werden."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Esparce p\xFAas en el equipo rival. Las p\xFAas hieren\na los
+        Pok\xE9mon rivales que entran en combate."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Chi la usa piazza sul terreno una trappola
+
+        di punte
+        che danneggia i nemici quando
+
+        scendono in campo.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user lays a trap of spikes at the\nopposing team\u2019s feet.
+        The trap hurts\nPok\xE9mon that switch into battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u8DB3\u4E0B\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u4EA4\u4EE3\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u76F8\u624B\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3042\u3057\u3082\u3068\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u3053\u3046\u305F\u3044\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u3042\u3044\u3066\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC0C1\uB300\uC758 \uBC1C\uBC11\uC5D0 \uC555\uC815\uC744\n\uBFCC\uB9B0\uB2E4.
+        \uAD50\uCCB4\uB41C \uC0C1\uB300\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Le lanceur disperse des piquants sur le sol pour
+
+        blesser
+        tout ennemi qui entre au combat.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Der Anwender verteilt Stacheln,\ndie gegnerische Pok\xE9mon verletzen,\ndie
+        in den Kampf gerufen werden."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Esparce p\xFAas alrededor del equipo rival que hieren \na los
+        Pok\xE9mon rivales que entran en combate. "
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Chi la usa piazza sul terreno una trappola
+
+        di punte
+        che danneggia i nemici quando
+
+        scendono in campo.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user lays a trap of spikes at the\nopposing team\u2019s feet.
+        The trap hurts\nPok\xE9mon that switch into battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u8DB3\u4E0B\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u4EA4\u4EE3\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u76F8\u624B\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3042\u3057\u3082\u3068\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u3053\u3046\u305F\u3044\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u3042\u3044\u3066\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC0C1\uB300\uC758 \uBC1C\uBC11\uC5D0 \uC555\uC815\uC744\n\uBFCC\uB9B0\uB2E4.
+        \uAD50\uCCB4\uB41C \uC0C1\uB300\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5C07\u6492\u83F1\u6563\u5E03\u5728\u5C0D\u624B\u7684\u8173\u4E0B\u3002\n\u8B93\u5C0D\u624B\u66FF\u63DB\u51FA\u5834\u7684\u5BF6\u53EF\u5922\n\u53D7\u5230\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Le lanceur disperse des piquants sur le sol pour
+
+        blesser
+        tout ennemi qui entre au combat.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Der Anwender legt Stacheln aus, die gegnerische\nPok\xE9mon verletzen,
+        die in den Kampf gerufen\nwerden."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Esparce p\xFAas alrededor del equipo rival que hieren \na los
+        Pok\xE9mon rivales que entran en combate. "
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Chi la usa piazza sul terreno una trappola
+
+        di punte
+        che danneggia i nemici quando
+
+        scendono in campo.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user lays a trap of spikes at the opposing\nteam\u2019s feet.
+        The trap hurts Pok\xE9mon that switch\ninto battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u8DB3\u4E0B\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u4EA4\u4EE3\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u76F8\u624B\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5728\u5BF9\u624B\u7684\u811A\u4E0B\u6254\u6492\u83F1\u3002\n\u5BF9\u66FF\u6362\u51FA\u573A\u7684\u5BF9\u624B\u7684\u5B9D\u53EF\u68A6\n\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3042\u3057\u3082\u3068\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u3053\u3046\u305F\u3044\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u3042\u3044\u3066\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC0C1\uB300\uC758 \uBC1C\uBC11\uC5D0 \uC555\uC815\uC744\n\uBFCC\uB9B0\uB2E4.
+        \uAD50\uCCB4\uB41C \uC0C1\uB300\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5C07\u6492\u83F1\u6563\u5E03\u5728\u5C0D\u624B\u7684\u8173\u4E0B\u3002\n\u8B93\u5C0D\u624B\u66FF\u63DB\u51FA\u5834\u7684\u5BF6\u53EF\u5922\n\u53D7\u5230\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Le lanceur disperse des piquants sur le sol pour
+
+        blesser
+        tout ennemi qui entre au combat.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Der Anwender legt Stacheln aus, die gegnerische\nPok\xE9mon verletzen,
+        die in den Kampf gerufen\nwerden."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Esparce p\xFAas alrededor del equipo rival que hieren \na los
+        Pok\xE9mon rivales que entran en combate. "
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Chi la usa piazza sul terreno una trappola
+
+        di punte
+        che danneggia i nemici quando
+
+        scendono in campo.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user lays a trap of spikes at the opposing\nteam\u2019s feet.
+        The trap hurts Pok\xE9mon that switch\ninto battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u8DB3\u4E0B\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u4EA4\u4EE3\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u76F8\u624B\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5728\u5BF9\u624B\u7684\u811A\u4E0B\u6254\u6492\u83F1\u3002\n\u5BF9\u66FF\u6362\u51FA\u573A\u7684\u5BF9\u624B\u7684\u5B9D\u53EF\u68A6\n\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3042\u3057\u3082\u3068\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u3053\u3046\u305F\u3044\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u3042\u3044\u3066\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC0C1\uB300\uC758 \uBC1C\uBC11\uC5D0 \uC555\uC815\uC744\n\uBFCC\uB9B0\uB2E4.
+        \uAD50\uCCB4\uB41C \uC0C1\uB300\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5C07\u6492\u83F1\u6563\u5E03\u5728\u5C0D\u624B\u7684\u8173\u4E0B\u3002\n\u8B93\u5C0D\u624B\u66FF\u63DB\u51FA\u5834\u7684\u5BF6\u53EF\u5922\n\u53D7\u5230\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Le lanceur disperse des piquants sur le sol pour blesser
+
+        tout
+        ennemi qui entre au combat.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Der Anwender legt Stacheln aus, die gegnerische\nPok\xE9mon verletzen,
+        die in den Kampf gerufen\nwerden."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Esparce p\xFAas alrededor del equipo rival que hieren \na los
+        Pok\xE9mon rivales que entran en combate. "
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Chi la usa piazza sul terreno una trappola
+
+        di punte
+        che danneggia i nemici quando
+
+        scendono in campo.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user lays a trap of spikes at the opposing\nteam\u2019s feet.
+        The trap hurts Pok\xE9mon that switch\ninto battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u8DB3\u4E0B\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u4EA4\u4EE3\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u76F8\u624B\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5728\u5BF9\u624B\u7684\u811A\u4E0B\u6254\u6492\u83F1\u3002\n\u5BF9\u66FF\u6362\u51FA\u573A\u7684\u5BF9\u624B\u7684\u5B9D\u53EF\u68A6\n\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3042\u3057\u3082\u3068\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u3053\u3046\u305F\u3044\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u3042\u3044\u3066\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC0C1\uB300\uC758 \uBC1C\uBC11\uC5D0 \uC555\uC815\uC744\n\uBFCC\uB9B0\uB2E4.
+        \uAD50\uCCB4\uB41C \uC0C1\uB300\n\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5C07\u6492\u83F1\u6563\u5E03\u5728\u5C0D\u624B\u7684\u8173\u4E0B\u3002\n\u8B93\u5C0D\u624B\u66FF\u63DB\u51FA\u5834\u7684\u5BF6\u53EF\u5922\n\u53D7\u5230\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Le lanceur disperse des piquants sur le sol pour blesser
+
+        tout
+        ennemi qui entre au combat.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender legt Stacheln aus, die gegnerische\nPok\xE9mon verletzen,
+        die in den Kampf gerufen\nwerden."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Esparce p\xFAas alrededor del equipo rival que hieren \na los
+        Pok\xE9mon rivales que entran en combate. "
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Chi la usa piazza sul terreno una trappola di punte
+
+        che
+        danneggia i nemici quando scendono in campo.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user lays a trap of spikes at the opposing\nteam\u2019s feet.
+        The trap hurts Pok\xE9mon that switch\ninto battle."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u8DB3\u4E0B\u306B\u3000\u307E\u304D\u3073\u3057\u3092\n\u3057\u304B\u3051\u308B\u3002\u4EA4\u4EE3\u3067\u3000\u3067\u3066\u304D\u305F\u3000\u76F8\u624B\u306E\n\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5728\u5BF9\u624B\u7684\u811A\u4E0B\u6254\u6492\u83F1\u3002\n\u5BF9\u66FF\u6362\u51FA\u573A\u7684\u5BF9\u624B\u7684\u5B9D\u53EF\u68A6\n\u7ED9\u4E88\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-ii
+      url: https://pokeapi.co/api/v2/generation/2/
+    id: 191
+    learned_by_pokemon:
+    - name: cloyster
+      url: https://pokeapi.co/api/v2/pokemon/91/
+    - name: omanyte
+      url: https://pokeapi.co/api/v2/pokemon/138/
+    - name: pineco
+      url: https://pokeapi.co/api/v2/pokemon/204/
+    - name: forretress
+      url: https://pokeapi.co/api/v2/pokemon/205/
+    - name: qwilfish
+      url: https://pokeapi.co/api/v2/pokemon/211/
+    - name: delibird
+      url: https://pokeapi.co/api/v2/pokemon/225/
+    - name: skarmory
+      url: https://pokeapi.co/api/v2/pokemon/227/
+    - name: roselia
+      url: https://pokeapi.co/api/v2/pokemon/315/
+    - name: cacnea
+      url: https://pokeapi.co/api/v2/pokemon/331/
+    - name: cacturne
+      url: https://pokeapi.co/api/v2/pokemon/332/
+    - name: snorunt
+      url: https://pokeapi.co/api/v2/pokemon/361/
+    - name: budew
+      url: https://pokeapi.co/api/v2/pokemon/406/
+    - name: venipede
+      url: https://pokeapi.co/api/v2/pokemon/543/
+    - name: maractus
+      url: https://pokeapi.co/api/v2/pokemon/556/
+    - name: dwebble
+      url: https://pokeapi.co/api/v2/pokemon/557/
+    - name: trubbish
+      url: https://pokeapi.co/api/v2/pokemon/568/
+    - name: ferroseed
+      url: https://pokeapi.co/api/v2/pokemon/597/
+    - name: shelmet
+      url: https://pokeapi.co/api/v2/pokemon/616/
+    - name: chespin
+      url: https://pokeapi.co/api/v2/pokemon/650/
+    - name: greninja
+      url: https://pokeapi.co/api/v2/pokemon/658/
+    - name: bunnelby
+      url: https://pokeapi.co/api/v2/pokemon/659/
+    - name: klefki
+      url: https://pokeapi.co/api/v2/pokemon/707/
+    - name: wimpod
+      url: https://pokeapi.co/api/v2/pokemon/767/
+    - name: deoxys-defense
+      url: https://pokeapi.co/api/v2/pokemon/10002/
+    - name: greninja-battle-bond
+      url: https://pokeapi.co/api/v2/pokemon/10116/
+    - name: greninja-ash
+      url: https://pokeapi.co/api/v2/pokemon/10117/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1612/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: field-effect
+        url: https://pokeapi.co/api/v2/move-category/11/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: spikes
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u307E\u304D\u3073\u3057"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC555\uC815\uBFCC\uB9AC\uAE30"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u6492\u83F1"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Picots
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Stachler
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "P\xFAas"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Punte
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Spikes
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u307E\u304D\u3073\u3057"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u6492\u83F1"
+    past_values: []
+    power: 0
+    pp: 20
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/13/
+    target:
+      name: opponents-field
+      url: https://pokeapi.co/api/v2/move-target/6/
+    type:
+      name: ground
+      url: https://pokeapi.co/api/v2/type/5/

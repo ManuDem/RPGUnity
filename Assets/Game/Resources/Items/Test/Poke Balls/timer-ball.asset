@@ -1,0 +1,604 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168d5703cabcc124e919a335fd1c3318, type: 3}
+  m_Name: timer-ball
+  m_EditorClassIdentifier: 
+  name: Timer Ball
+  description: 'More effective as
+
+    more turns are
+
+    taken in battle.'
+  icon: {fileID: 21300000, guid: ca317300329338a4b9287a402f37f7e0, type: 3}
+  price: 0
+  isSellable: 0
+  id: 10
+  pokeApiItem:
+    attributes:
+    - name: countable
+      url: https://pokeapi.co/api/v2/item-attribute/1/
+    - name: consumable
+      url: https://pokeapi.co/api/v2/item-attribute/2/
+    - name: usable-in-battle
+      url: https://pokeapi.co/api/v2/item-attribute/4/
+    - name: holdable
+      url: https://pokeapi.co/api/v2/item-attribute/5/
+    baby_trigger_for:
+      name: 
+      url: 
+    category:
+      name: special-balls
+      url: https://pokeapi.co/api/v2/item-category/33/
+    cost: 1000
+    effect_entries:
+    - effect: "Used in battle\n:   Attempts to catch a wild Pok\xE9mon.  Has a catch
+        rate of 1.1\xD7 on the first turn of the battle and increases by 0.1\xD7
+        every turn, to a maximum of 4\xD7 on turn 30.\n\n    If used in a trainer
+        battle, nothing happens and the ball is lost."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: "Tries to catch a wild Pok\xE9mon. Success rate increases by
+        0.1\xD7 (Gen V: 0.3\xD7) every turn, to a max of 4\xD7."
+    flavor_text_entries:
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uD134 \uC218\uAC00 \uAE38\uC5B4\uC9C0\uBA74 \uAE38\uC5B4\uC9C8\uC218\uB85D\n\uD3EC\uCF13\uBAAC\uC744
+        \uC7A1\uAE30 \uC26C\uC6B4\n\uC870\uAE08 \uD2B9\uC774\uD55C \uBCFC."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: 'More effective as
+
+        more turns are
+
+        taken in battle.'
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: 'A BALL that gains
+
+        power in battles
+
+        taking many turns.'
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: 'A somewhat different BALL that
+
+        becomes progressively better
+        the
+
+        more turns there are in a battle.'
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: 'A somewhat different Ball that
+
+        becomes progressively better
+        the
+
+        more turns there are in a battle.'
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: 'A somewhat different Ball that
+
+        becomes progressively better
+        the
+
+        more turns there are in a battle.'
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: 'A somewhat different Ball that
+
+        becomes progressively better
+        the
+
+        more turns there are in a battle.'
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui\nfonctionne de mieux en mieux
+        \xE0\nmesure que le combat s\u2019\xE9ternise."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: 'A somewhat different Ball that
+
+        becomes progressively better
+        the
+
+        more turns there are in a battle.'
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: 'A somewhat different Ball that
+
+        becomes progressively better
+        the
+
+        more turns there are in a battle.'
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u30BF\u30FC\u30F3\u3059\u3046\u304C\u3000\u304B\u304B\u308C\u3070\u3000\u304B\u304B\u308B\u307B\u3069\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3064\u304B\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u304B\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uD134 \uC218\uAC00 \uAE38\uC5B4\uC9C0\uBA74 \uAE38\uC5B4\uC9C8\uC218\uB85D\n\uD3EC\uCF13\uBAAC\uC744
+        \uC7A1\uAE30 \uC26C\uC6B4\n\uC870\uAE08 \uD2B9\uC774\uD55C \uBCFC."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui fonctionne\nde mieux en mieux
+        \xE0 mesure que le combat\ns\u2019\xE9ternise."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: 'Ein Ball, der mit zunehmender Kampfdauer
+
+        effektiver wird.'
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Una Pok\xE9 Ball algo distinta que va mejorando\nsu rendimiento con
+        cada turno de combate."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pok\xE9 Ball un po\u2019 diversa che diventa\nprogressivamente pi\xF9
+        efficace con l\u2019aumentare\ndei turni in lotta."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A somewhat different Pok\xE9 Ball that\nbecomes progressively more effective\nthe
+        more turns that are taken in battle."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u30BF\u30FC\u30F3\u6570\u304C\u3000\u304B\u304B\u308C\u3070\u3000\u304B\u304B\u308B\u307B\u3069\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u6355\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u5909\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u30BF\u30FC\u30F3\u3059\u3046\u304C\u3000\u304B\u304B\u308C\u3070\u3000\u304B\u304B\u308B\u307B\u3069\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3064\u304B\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u304B\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uD134 \uC218\uAC00 \uAE38\uC5B4\uC9C0\uBA74 \uAE38\uC5B4\uC9C8\uC218\uB85D\n\uD3EC\uCF13\uBAAC\uC744
+        \uC7A1\uAE30 \uC26C\uC6B4\n\uC870\uAE08 \uD2B9\uC774\uD55C \uBCFC."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8207\u773E\u4E0D\u540C\u7684\u7403\u3002\n\u56DE\u5408\u6578\u82B1\u8CBB\u5F97\u8D8A\u591A\uFF0C\n\u5C31\u8D8A\u5BB9\u6613\u6349\u5230\u5BF6\u53EF\u5922\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui fonctionne\nde mieux en mieux
+        \xE0 mesure que le combat\ns\u2019\xE9ternise."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: 'Ein Ball, der mit zunehmender Kampfdauer
+
+        effektiver wird.'
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Una Pok\xE9 Ball algo distinta que va mejorando su\nrendimiento con
+        cada turno de combate."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pok\xE9 Ball un po\u2019 diversa che diventa\nprogressivamente pi\xF9
+        efficace con il passare\ndei turni nella lotta."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A somewhat different Pok\xE9 Ball that becomes\nprogressively more effective
+        the more turns that\nare taken in battle."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u30BF\u30FC\u30F3\u6570\u304C\u3000\u304B\u304B\u308C\u3070\u3000\u304B\u304B\u308B\u307B\u3069\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u6355\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u5909\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u4E0E\u4F17\u4E0D\u540C\u7684\u7403\u3002\n\u56DE\u5408\u6570\u82B1\u8D39\u5F97\u8D8A\u591A\uFF0C\n\u5B9D\u53EF\u68A6\u5C31\u4F1A\u8D8A\u5BB9\u6613\u6355\u6349\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u30BF\u30FC\u30F3\u3059\u3046\u304C\u3000\u304B\u304B\u308C\u3070\u3000\u304B\u304B\u308B\u307B\u3069\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3064\u304B\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u304B\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uD134 \uC218\uAC00 \uAE38\uC5B4\uC9C0\uBA74 \uAE38\uC5B4\uC9C8\uC218\uB85D\n\uD3EC\uCF13\uBAAC\uC744
+        \uC7A1\uAE30 \uC26C\uC6B4\n\uC870\uAE08 \uD2B9\uC774\uD55C \uBCFC."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8207\u773E\u4E0D\u540C\u7684\u7403\u3002\n\u56DE\u5408\u6578\u82B1\u8CBB\u5F97\u8D8A\u591A\uFF0C\n\u5C31\u8D8A\u5BB9\u6613\u6349\u5230\u5BF6\u53EF\u5922\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui fonctionne\nde mieux en mieux
+        \xE0 mesure que le combat\ns\u2019\xE9ternise."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: 'Ein Ball, der mit zunehmender Kampfdauer
+
+        effektiver wird.'
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Una Pok\xE9 Ball algo distinta que va mejorando su\nrendimiento con
+        cada turno de combate."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pok\xE9 Ball un po\u2019 diversa che diventa\nprogressivamente pi\xF9
+        efficace con il passare\ndei turni nella lotta."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A somewhat different Pok\xE9 Ball that becomes\nprogressively more effective
+        the more turns that\nare taken in battle."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u30BF\u30FC\u30F3\u6570\u304C\u3000\u304B\u304B\u308C\u3070\u3000\u304B\u304B\u308B\u307B\u3069\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u6355\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u5909\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u4E0E\u4F17\u4E0D\u540C\u7684\u7403\u3002\n\u56DE\u5408\u6570\u82B1\u8D39\u5F97\u8D8A\u591A\uFF0C\n\u5B9D\u53EF\u68A6\u5C31\u4F1A\u8D8A\u5BB9\u6613\u6355\u6349\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u30BF\u30FC\u30F3\u3059\u3046\u304C\u3000\u304B\u304B\u308C\u3070\u3000\u304B\u304B\u308B\u307B\u3069\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3064\u304B\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u304B\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uD134 \uC218\uAC00 \uAE38\uC5B4\uC9C0\uBA74 \uAE38\uC5B4\uC9C8\uC218\uB85D\n\uD3EC\uCF13\uBAAC\uC744
+        \uC7A1\uAE30 \uC26C\uC6B4\n\uC870\uAE08 \uD2B9\uC774\uD55C \uBCFC."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8207\u773E\u4E0D\u540C\u7684\u7403\u3002\n\u56DE\u5408\u6578\u82B1\u8CBB\u5F97\u8D8A\u591A\uFF0C\n\u5C31\u8D8A\u5BB9\u6613\u6349\u5230\u5BF6\u53EF\u5922\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui fonctionne de mieux\nen mieux
+        \xE0 mesure que le combat s\u2019\xE9ternise."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: 'Ein Ball, der mit zunehmender Kampfdauer
+
+        effektiver wird.'
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Una Pok\xE9 Ball algo distinta que va mejorando su\nrendimiento con
+        cada turno de combate."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pok\xE9 Ball un po\u2019 diversa che diventa\nprogressivamente pi\xF9
+        efficace con il passare\ndei turni nella lotta."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A somewhat different Pok\xE9 Ball that becomes\nprogressively more effective
+        the more turns that\nare taken in battle."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u30BF\u30FC\u30F3\u6570\u304C\u3000\u304B\u304B\u308C\u3070\u3000\u304B\u304B\u308B\u307B\u3069\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u6355\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u5909\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u4E0E\u4F17\u4E0D\u540C\u7684\u7403\u3002\n\u56DE\u5408\u6570\u82B1\u8D39\u5F97\u8D8A\u591A\uFF0C\n\u5B9D\u53EF\u68A6\u5C31\u4F1A\u8D8A\u5BB9\u6613\u6355\u6349\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u30BF\u30FC\u30F3\u3059\u3046\u304C\u3000\u304B\u304B\u308C\u3070\u3000\u304B\u304B\u308B\u307B\u3069\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u3064\u304B\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u304B\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8207\u773E\u4E0D\u540C\u7684\u7403\u3002\n\u56DE\u5408\u6578\u82B1\u8CBB\u5F97\u8D8A\u591A\uFF0C\n\u5C31\u8D8A\u5BB9\u6613\u6349\u5230\u5BF6\u53EF\u5922\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui fonctionne\nde mieux en mieux
+        \xE0 mesure que le combat s\u2019\xE9ternise."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: 'Ein Ball, der mit zunehmender Kampfdauer
+
+        effektiver wird.'
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Una Pok\xE9 Ball algo distinta que va mejorando su\nrendimiento con
+        cada turno de combate."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pok\xE9 Ball un po\u2019 diversa che diventa\nprogressivamente pi\xF9
+        efficace con il passare\ndei turni nella lotta."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A somewhat different Pok\xE9 Ball that becomes\nprogressively more effective
+        at catching Pok\xE9mon\nthe more turns that are taken in battle."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u30BF\u30FC\u30F3\u6570\u304C\u3000\u304B\u304B\u308C\u3070\u3000\u304B\u304B\u308B\u307B\u3069\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u6355\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u5909\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u4E0E\u4F17\u4E0D\u540C\u7684\u7403\u3002\n\u56DE\u5408\u6570\u82B1\u8D39\u5F97\u8D8A\u591A\uFF0C\n\u5B9D\u53EF\u68A6\u5C31\u4F1A\u8D8A\u5BB9\u6613\u6355\u6349\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    fling_effect:
+      name: 
+      url: 
+    fling_power: 0
+    game_indices:
+    - game_index: 10
+      generation:
+        name: generation-iii
+        url: https://pokeapi.co/api/v2/generation/3/
+    - game_index: 10
+      generation:
+        name: generation-iv
+        url: https://pokeapi.co/api/v2/generation/4/
+    - game_index: 10
+      generation:
+        name: generation-v
+        url: https://pokeapi.co/api/v2/generation/5/
+    - game_index: 10
+      generation:
+        name: generation-vi
+        url: https://pokeapi.co/api/v2/generation/6/
+    - game_index: 10
+      generation:
+        name: generation-vii
+        url: https://pokeapi.co/api/v2/generation/7/
+    - game_index: 10
+      generation:
+        name: generation-viii
+        url: https://pokeapi.co/api/v2/generation/8/
+    held_by_pokemon: 
+    id: 10
+    machines: []
+    name: timer-ball
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30BF\u30A4\u30DE\u30FC\u30DC\u30FC\u30EB"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uD0C0\uC774\uB9C8\uBCFC"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u8A08\u6642\u7403"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Chrono Ball
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Timerball
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Turno Ball
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Timer Ball
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Timer Ball
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30BF\u30A4\u30DE\u30FC\u30DC\u30FC\u30EB"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u8BA1\u65F6\u7403"
+    sprites:
+      defaul: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/timer-ball.png
+  canUseInBattle: 1
+  canUseOutsideBattle: 0
+  catchRateModfier: 1

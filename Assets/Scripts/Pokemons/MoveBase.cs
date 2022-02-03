@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using MrAmorphic;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,54 +22,24 @@ public class MoveBase : ScriptableObject
     [SerializeField] MoveEffects effects;
     [SerializeField] List<SecondaryEffects> secondaries;
     [SerializeField] MoveTarget target;
+    
+        [SerializeField] private int id;
+    [SerializeField] private MrAmorphic.PokeApiMove pokeApiMove;
 
-    public string Name {
-        get { return name; }
-    }
-
-    public string Description {
-        get { return description; }
-    }
-
-    public PokemonType Type {
-        get { return type; }
-    }
-
-    public int Power {
-        get { return power; }
-    }
-
-    public int Accuracy {
-        get { return accuracy; }
-    }
-
-    public bool AlwaysHits {
-        get { return alwaysHits; }
-    }
-
-    public int PP {
-        get { return pp; }
-    }
-
-    public int Priority {
-        get { return priority; }
-    }
-
-    public MoveCategory Category {
-        get { return category; }
-    }
-
-    public MoveEffects Effects {
-        get { return effects; }
-    }
-
-    public List<SecondaryEffects> Secondaries {
-        get { return secondaries; }
-    }
-
-    public MoveTarget Target {
-        get { return target; }
-    }
+    public string Name { get => name; set => name = value; }
+    public string Description { get => description; set => description = value; }
+    public PokemonType Type { get => type; set => type = value; }
+    public int Power { get => power; set => power = value; }
+    public int Accuracy { get => accuracy; set => accuracy = value; }
+    public bool AlwaysHits { get => alwaysHits; set => alwaysHits = value; }
+    public int PP { get => pp; set => pp = value; }
+    public int Priority { get => priority; set => priority = value; }
+    public MoveCategory Category { get => category; set => category = value; }
+    public MoveEffects Effects { get => effects; set => effects = value; }
+    public List<SecondaryEffects> Secondaries { get => secondaries; set => secondaries = value; }
+    public MoveTarget Target { get => target; set => target = value; }
+    public int Id { get => id; set => id = value; }
+    public PokeApiMove PokeApiMove { get => pokeApiMove; set => pokeApiMove = value; }
 }
 
 [System.Serializable]
@@ -78,17 +49,9 @@ public class MoveEffects
     [SerializeField] ConditionID status;
     [SerializeField] ConditionID volatileStatus;
 
-    public List<StatBoost> Boosts {
-        get { return boosts; }
-    }
-
-    public ConditionID Status {
-        get { return status; }
-    }
-
-    public ConditionID VolatileStatus {
-        get { return volatileStatus; }
-    }
+    public List<StatBoost> Boosts { get => boosts; set => boosts = value; }
+    public ConditionID Status { get => status; set => status = value; }
+    public ConditionID VolatileStatus { get => volatileStatus; set => volatileStatus = value; }
 }
 
 [System.Serializable]
@@ -97,13 +60,8 @@ public class SecondaryEffects : MoveEffects
     [SerializeField] int chance;
     [SerializeField] MoveTarget target;
 
-    public int Chance {
-        get { return chance;  }
-    }
-
-    public MoveTarget Target {
-        get { return target; }
-    }
+    public int Chance { get => chance; set => chance = value; }
+    public MoveTarget Target { get => target; set => target = value; }
 }
 
 [System.Serializable]

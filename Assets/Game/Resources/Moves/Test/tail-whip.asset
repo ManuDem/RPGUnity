@@ -1,0 +1,881 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: tail-whip
+  m_EditorClassIdentifier: 
+  name: Tail Whip
+  description: 'Lowers the foe''s
+
+    DEFENSE.'
+  type: 1
+  power: 0
+  accuracy: 100
+  alwaysHits: 0
+  pp: 30
+  priority: 0
+  category: 2
+  effects:
+    boosts:
+    - stat: 1
+      boost: -1
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 39
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after:
+        - name: charm
+          url: https://pokeapi.co/api/v2/move/204/
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/28/
+    contest_type:
+      name: cute
+      url: https://pokeapi.co/api/v2/contest-type/3/
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Lowers the target's Defense by one stage.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Lowers the target's Defense by one stage.
+    flavor_text_entries:
+    - flavor_text: 'Agita la cola para bajar la Defensa del equipo rival. '
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Lowers the foe''s
+
+        DEFENSE.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    - flavor_text: 'Lowers the foe''s
+
+        DEFENSE.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: crystal
+        url: https://pokeapi.co/api/v2/version-group/4/
+    - flavor_text: "Wags the tail to lower the\nfoe\u2019s DEFENSE."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: "Wags the tail to lower the\nfoe\u2019s DEFENSE."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: 'The user wags its
+
+        tail cutely, making
+
+        the foe
+        lower its
+
+        DEFENSE stat.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: "The user wags its tail\ncutely, making the\nfoe less wary.\nThe
+        target\u2019s Defense\nstat is lowered."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "The user wags its tail\ncutely, making the\nfoe less wary.\nThe
+        target\u2019s Defense\nstat is lowered."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "The user wags its tail\ncutely, making the\nfoe less wary.\nThe
+        target\u2019s Defense\nstat is lowered."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Le lanceur remue son adorable queue\npour tromper la vigilance
+        de l\u2019ennemi\net baisser sa D\xE9fense."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user wags its tail cutely, making\nopposing Pok\xE9mon less
+        wary and\nlowering their Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user wags its tail cutely, making\nopposing Pok\xE9mon less
+        wary and\nlowering their Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u3055\u3086\u3046\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u3086\u3060\u3093\u3092\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u307C\u3046\u304E\u3087\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uAF2C\uB9AC\uB97C \uC88C\uC6B0\uB85C \uADC0\uC5FD\uAC8C \uD754\uB4E4\uC5B4\n\uBC29\uC2EC\uC744
+        \uC720\uB3C4\uD55C\uB2E4.\n\uC0C1\uB300\uC758 \uBC29\uC5B4\uB97C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Le lanceur remue son adorable queue pour\ntromper la vigilance
+        de l\u2019ennemi et baisser\nsa D\xE9fense."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Hieb mit dem Schweif. Senkt die Verteidigung
+
+        des Zieles.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: Agita la cola para bajar la Defensa del equipo rival.
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Chi la usa agita la coda per distrarre i nemici
+
+        che
+        ha intorno, riducendone la Difesa.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user wags its tail cutely, making\nopposing Pok\xE9mon less
+        wary and\nlowering their Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u5DE6\u53F3\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u6CB9\u65AD\u3092\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u9632\u5FA1\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u3055\u3086\u3046\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u3086\u3060\u3093\u3092\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u307C\u3046\u304E\u3087\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uAF2C\uB9AC\uB97C \uC88C\uC6B0\uB85C \uADC0\uC5FD\uAC8C \uD754\uB4E4\uC5B4\n\uBC29\uC2EC\uC744
+        \uC720\uB3C4\uD55C\uB2E4.\n\uC0C1\uB300\uC758 \uBC29\uC5B4\uB97C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Le lanceur remue son adorable queue pour\ntromper la vigilance
+        de l\u2019ennemi et baisser\nsa D\xE9fense."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Hieb mit dem Schweif. Senkt die Verteidigung
+
+        des Zieles.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Agita la cola para bajar la Defensa del equipo rival. '
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Chi la usa agita la coda per distrarre i nemici
+
+        che
+        ha intorno, riducendone la Difesa.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user wags its tail cutely, making\nopposing Pok\xE9mon less
+        wary and\nlowering their Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u5DE6\u53F3\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u6CB9\u65AD\u3092\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u9632\u5FA1\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u3055\u3086\u3046\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u3086\u3060\u3093\u3092\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u307C\u3046\u304E\u3087\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uAF2C\uB9AC\uB97C \uC88C\uC6B0\uB85C \uADC0\uC5FD\uAC8C \uD754\uB4E4\uC5B4\n\uBC29\uC2EC\uC744
+        \uC720\uB3C4\uD55C\uB2E4.\n\uC0C1\uB300\uC758 \uBC29\uC5B4\uB97C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u53EF\u611B\u5730\u5DE6\u53F3\u6416\u6643\u5C3E\u5DF4\uFF0C\n\u8A98\u4F7F\u5C0D\u624B\u758F\u5FFD\u5927\u610F\u3002\n\u53EF\u964D\u4F4E\u5C0D\u624B\u7684\u9632\u79A6\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le lanceur remue son adorable queue pour\ntromper la vigilance
+        de l\u2019ennemi et baisser\nsa D\xE9fense."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Hieb mit dem Schweif. Senkt die Verteidigung des
+
+        Zieles.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Agita la cola para bajar la Defensa del equipo rival. '
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Chi la usa agita la coda per distrarre i nemici
+
+        che
+        ha intorno, riducendone la Difesa.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user wags its tail cutely, making opposing\nPok\xE9mon less
+        wary and lowering their Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u5DE6\u53F3\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u6CB9\u65AD\u3092\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u9632\u5FA1\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u53EF\u7231\u5730\u5DE6\u53F3\u6447\u6643\u5C3E\u5DF4\uFF0C\n\u8BF1\u4F7F\u5BF9\u624B\u758F\u5FFD\u5927\u610F\u3002\n\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u9632\u5FA1\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u3055\u3086\u3046\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u3086\u3060\u3093\u3092\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u307C\u3046\u304E\u3087\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uAF2C\uB9AC\uB97C \uC88C\uC6B0\uB85C \uADC0\uC5FD\uAC8C \uD754\uB4E4\uC5B4\n\uBC29\uC2EC\uC744
+        \uC720\uB3C4\uD55C\uB2E4.\n\uC0C1\uB300\uC758 \uBC29\uC5B4\uB97C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u53EF\u611B\u5730\u5DE6\u53F3\u6416\u6643\u5C3E\u5DF4\uFF0C\n\u8A98\u4F7F\u5C0D\u624B\u758F\u5FFD\u5927\u610F\u3002\n\u53EF\u964D\u4F4E\u5C0D\u624B\u7684\u9632\u79A6\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le lanceur remue son adorable queue pour\ntromper la vigilance
+        de l\u2019ennemi et baisser\nsa D\xE9fense."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Hieb mit dem Schweif. Senkt die Verteidigung des
+
+        Zieles.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Agita la cola para bajar la Defensa del equipo rival. '
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Chi la usa agita la coda per distrarre i nemici
+
+        che
+        ha intorno, riducendone la Difesa.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user wags its tail cutely, making opposing\nPok\xE9mon less
+        wary and lowering their Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u5DE6\u53F3\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u6CB9\u65AD\u3092\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u9632\u5FA1\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u53EF\u7231\u5730\u5DE6\u53F3\u6447\u6643\u5C3E\u5DF4\uFF0C\n\u8BF1\u4F7F\u5BF9\u624B\u758F\u5FFD\u5927\u610F\u3002\n\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u9632\u5FA1\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u3055\u3086\u3046\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u3086\u3060\u3093\u3092\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u307C\u3046\u304E\u3087\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uAF2C\uB9AC\uB97C \uC88C\uC6B0\uB85C \uADC0\uC5FD\uAC8C \uD754\uB4E4\uC5B4\n\uBC29\uC2EC\uC744
+        \uC720\uB3C4\uD55C\uB2E4.\n\uC0C1\uB300\uC758 \uBC29\uC5B4\uB97C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u53EF\u611B\u5730\u5DE6\u53F3\u6416\u6643\u5C3E\u5DF4\uFF0C\n\u8A98\u4F7F\u5C0D\u624B\u758F\u5FFD\u5927\u610F\u3002\n\u53EF\u964D\u4F4E\u5C0D\u624B\u7684\u9632\u79A6\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le lanceur remue son adorable queue pour tromper\nla vigilance
+        de l\u2019ennemi et baisser sa D\xE9fense."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Hieb mit dem Schweif. Senkt die Verteidigung des
+
+        Zieles.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Chi la usa agita la coda per distrarre i nemici
+
+        che
+        ha intorno, riducendone la Difesa.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user wags its tail cutely, making opposing\nPok\xE9mon less
+        wary and lowering their Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u5DE6\u53F3\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u6CB9\u65AD\u3092\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u9632\u5FA1\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u53EF\u7231\u5730\u5DE6\u53F3\u6447\u6643\u5C3E\u5DF4\uFF0C\n\u8BF1\u4F7F\u5BF9\u624B\u758F\u5FFD\u5927\u610F\u3002\n\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u9632\u5FA1\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u3055\u3086\u3046\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u3086\u3060\u3093\u3092\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u307C\u3046\u304E\u3087\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uAF2C\uB9AC\uB97C \uC88C\uC6B0\uB85C \uADC0\uC5FD\uAC8C \uD754\uB4E4\uC5B4\n\uBC29\uC2EC\uC744
+        \uC720\uB3C4\uD55C\uB2E4.\n\uC0C1\uB300\uC758 \uBC29\uC5B4\uB97C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u53EF\u611B\u5730\u5DE6\u53F3\u6416\u6643\u5C3E\u5DF4\uFF0C\n\u8A98\u4F7F\u5C0D\u624B\u758F\u5FFD\u5927\u610F\u3002\n\u53EF\u964D\u4F4E\u5C0D\u624B\u7684\u9632\u79A6\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le lanceur remue son adorable queue pour tromper\nla vigilance
+        de l\u2019ennemi et baisser sa D\xE9fense."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender wedelt niedlich mit dem Schweif und\nveranlasst
+        Gegner dadurch, nachl\xE4ssig zu werden.\nSenkt die Verteidigung der gegnerischen
+        Pok\xE9mon."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Agita la cola para bajar la Defensa del equipo rival. '
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Chi la usa agita la coda per distrarre i nemici
+
+        che
+        ha intorno, riducendone la Difesa.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user wags its tail cutely, making opposing\nPok\xE9mon less
+        wary and lowering their Defense stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u3057\u3063\u307D\u3092\u3000\u5DE6\u53F3\u306B\u3000\u304B\u308F\u3044\u304F\u3000\u3075\u3063\u3066\n\u6CB9\u65AD\u3092\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u9632\u5FA1\u3092\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u53EF\u7231\u5730\u5DE6\u53F3\u6447\u6643\u5C3E\u5DF4\uFF0C\n\u8BF1\u4F7F\u5BF9\u624B\u758F\u5FFD\u5927\u610F\u3002\n\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u9632\u5FA1\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-i
+      url: https://pokeapi.co/api/v2/generation/1/
+    id: 39
+    learned_by_pokemon:
+    - name: squirtle
+      url: https://pokeapi.co/api/v2/pokemon/7/
+    - name: wartortle
+      url: https://pokeapi.co/api/v2/pokemon/8/
+    - name: blastoise
+      url: https://pokeapi.co/api/v2/pokemon/9/
+    - name: rattata
+      url: https://pokeapi.co/api/v2/pokemon/19/
+    - name: raticate
+      url: https://pokeapi.co/api/v2/pokemon/20/
+    - name: pikachu
+      url: https://pokeapi.co/api/v2/pokemon/25/
+    - name: raichu
+      url: https://pokeapi.co/api/v2/pokemon/26/
+    - name: nidoran-f
+      url: https://pokeapi.co/api/v2/pokemon/29/
+    - name: nidorina
+      url: https://pokeapi.co/api/v2/pokemon/30/
+    - name: nidoqueen
+      url: https://pokeapi.co/api/v2/pokemon/31/
+    - name: vulpix
+      url: https://pokeapi.co/api/v2/pokemon/37/
+    - name: ninetales
+      url: https://pokeapi.co/api/v2/pokemon/38/
+    - name: meowth
+      url: https://pokeapi.co/api/v2/pokemon/52/
+    - name: psyduck
+      url: https://pokeapi.co/api/v2/pokemon/54/
+    - name: golduck
+      url: https://pokeapi.co/api/v2/pokemon/55/
+    - name: ponyta
+      url: https://pokeapi.co/api/v2/pokemon/77/
+    - name: rapidash
+      url: https://pokeapi.co/api/v2/pokemon/78/
+    - name: cubone
+      url: https://pokeapi.co/api/v2/pokemon/104/
+    - name: marowak
+      url: https://pokeapi.co/api/v2/pokemon/105/
+    - name: rhyhorn
+      url: https://pokeapi.co/api/v2/pokemon/111/
+    - name: rhydon
+      url: https://pokeapi.co/api/v2/pokemon/112/
+    - name: chansey
+      url: https://pokeapi.co/api/v2/pokemon/113/
+    - name: kangaskhan
+      url: https://pokeapi.co/api/v2/pokemon/115/
+    - name: goldeen
+      url: https://pokeapi.co/api/v2/pokemon/118/
+    - name: seaking
+      url: https://pokeapi.co/api/v2/pokemon/119/
+    - name: tauros
+      url: https://pokeapi.co/api/v2/pokemon/128/
+    - name: eevee
+      url: https://pokeapi.co/api/v2/pokemon/133/
+    - name: vaporeon
+      url: https://pokeapi.co/api/v2/pokemon/134/
+    - name: jolteon
+      url: https://pokeapi.co/api/v2/pokemon/135/
+    - name: flareon
+      url: https://pokeapi.co/api/v2/pokemon/136/
+    - name: pichu
+      url: https://pokeapi.co/api/v2/pokemon/172/
+    - name: marill
+      url: https://pokeapi.co/api/v2/pokemon/183/
+    - name: azumarill
+      url: https://pokeapi.co/api/v2/pokemon/184/
+    - name: hoppip
+      url: https://pokeapi.co/api/v2/pokemon/187/
+    - name: skiploom
+      url: https://pokeapi.co/api/v2/pokemon/188/
+    - name: jumpluff
+      url: https://pokeapi.co/api/v2/pokemon/189/
+    - name: aipom
+      url: https://pokeapi.co/api/v2/pokemon/190/
+    - name: wooper
+      url: https://pokeapi.co/api/v2/pokemon/194/
+    - name: quagsire
+      url: https://pokeapi.co/api/v2/pokemon/195/
+    - name: espeon
+      url: https://pokeapi.co/api/v2/pokemon/196/
+    - name: umbreon
+      url: https://pokeapi.co/api/v2/pokemon/197/
+    - name: snubbull
+      url: https://pokeapi.co/api/v2/pokemon/209/
+    - name: granbull
+      url: https://pokeapi.co/api/v2/pokemon/210/
+    - name: blissey
+      url: https://pokeapi.co/api/v2/pokemon/242/
+    - name: zigzagoon
+      url: https://pokeapi.co/api/v2/pokemon/263/
+    - name: linoone
+      url: https://pokeapi.co/api/v2/pokemon/264/
+    - name: azurill
+      url: https://pokeapi.co/api/v2/pokemon/298/
+    - name: skitty
+      url: https://pokeapi.co/api/v2/pokemon/300/
+    - name: kecleon
+      url: https://pokeapi.co/api/v2/pokemon/352/
+    - name: pachirisu
+      url: https://pokeapi.co/api/v2/pokemon/417/
+    - name: ambipom
+      url: https://pokeapi.co/api/v2/pokemon/424/
+    - name: glameow
+      url: https://pokeapi.co/api/v2/pokemon/431/
+    - name: rhyperior
+      url: https://pokeapi.co/api/v2/pokemon/464/
+    - name: leafeon
+      url: https://pokeapi.co/api/v2/pokemon/470/
+    - name: glaceon
+      url: https://pokeapi.co/api/v2/pokemon/471/
+    - name: tepig
+      url: https://pokeapi.co/api/v2/pokemon/498/
+    - name: pignite
+      url: https://pokeapi.co/api/v2/pokemon/499/
+    - name: emboar
+      url: https://pokeapi.co/api/v2/pokemon/500/
+    - name: oshawott
+      url: https://pokeapi.co/api/v2/pokemon/501/
+    - name: dewott
+      url: https://pokeapi.co/api/v2/pokemon/502/
+    - name: samurott
+      url: https://pokeapi.co/api/v2/pokemon/503/
+    - name: blitzle
+      url: https://pokeapi.co/api/v2/pokemon/522/
+    - name: zebstrika
+      url: https://pokeapi.co/api/v2/pokemon/523/
+    - name: basculin-red-striped
+      url: https://pokeapi.co/api/v2/pokemon/550/
+    - name: minccino
+      url: https://pokeapi.co/api/v2/pokemon/572/
+    - name: emolga
+      url: https://pokeapi.co/api/v2/pokemon/587/
+    - name: fennekin
+      url: https://pokeapi.co/api/v2/pokemon/653/
+    - name: braixen
+      url: https://pokeapi.co/api/v2/pokemon/654/
+    - name: delphox
+      url: https://pokeapi.co/api/v2/pokemon/655/
+    - name: skiddo
+      url: https://pokeapi.co/api/v2/pokemon/672/
+    - name: gogoat
+      url: https://pokeapi.co/api/v2/pokemon/673/
+    - name: furfrou
+      url: https://pokeapi.co/api/v2/pokemon/676/
+    - name: skrelp
+      url: https://pokeapi.co/api/v2/pokemon/690/
+    - name: dragalge
+      url: https://pokeapi.co/api/v2/pokemon/691/
+    - name: helioptile
+      url: https://pokeapi.co/api/v2/pokemon/694/
+    - name: tyrunt
+      url: https://pokeapi.co/api/v2/pokemon/696/
+    - name: tyrantrum
+      url: https://pokeapi.co/api/v2/pokemon/697/
+    - name: sylveon
+      url: https://pokeapi.co/api/v2/pokemon/700/
+    - name: dedenne
+      url: https://pokeapi.co/api/v2/pokemon/702/
+    - name: basculin-blue-striped
+      url: https://pokeapi.co/api/v2/pokemon/10016/
+    - name: blastoise-mega
+      url: https://pokeapi.co/api/v2/pokemon/10036/
+    - name: kangaskhan-mega
+      url: https://pokeapi.co/api/v2/pokemon/10039/
+    - name: pikachu-rock-star
+      url: https://pokeapi.co/api/v2/pokemon/10080/
+    - name: pikachu-belle
+      url: https://pokeapi.co/api/v2/pokemon/10081/
+    - name: pikachu-pop-star
+      url: https://pokeapi.co/api/v2/pokemon/10082/
+    - name: pikachu-phd
+      url: https://pokeapi.co/api/v2/pokemon/10083/
+    - name: pikachu-libre
+      url: https://pokeapi.co/api/v2/pokemon/10084/
+    - name: pikachu-cosplay
+      url: https://pokeapi.co/api/v2/pokemon/10085/
+    - name: rattata-alola
+      url: https://pokeapi.co/api/v2/pokemon/10091/
+    - name: raticate-alola
+      url: https://pokeapi.co/api/v2/pokemon/10092/
+    - name: raticate-totem-alola
+      url: https://pokeapi.co/api/v2/pokemon/10093/
+    - name: pikachu-original-cap
+      url: https://pokeapi.co/api/v2/pokemon/10094/
+    - name: pikachu-hoenn-cap
+      url: https://pokeapi.co/api/v2/pokemon/10095/
+    - name: pikachu-sinnoh-cap
+      url: https://pokeapi.co/api/v2/pokemon/10096/
+    - name: pikachu-unova-cap
+      url: https://pokeapi.co/api/v2/pokemon/10097/
+    - name: pikachu-kalos-cap
+      url: https://pokeapi.co/api/v2/pokemon/10098/
+    - name: pikachu-alola-cap
+      url: https://pokeapi.co/api/v2/pokemon/10099/
+    - name: raichu-alola
+      url: https://pokeapi.co/api/v2/pokemon/10100/
+    - name: vulpix-alola
+      url: https://pokeapi.co/api/v2/pokemon/10103/
+    - name: marowak-alola
+      url: https://pokeapi.co/api/v2/pokemon/10115/
+    - name: pikachu-partner-cap
+      url: https://pokeapi.co/api/v2/pokemon/10148/
+    - name: marowak-totem
+      url: https://pokeapi.co/api/v2/pokemon/10149/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: net-good-stats
+        url: https://pokeapi.co/api/v2/move-category/2/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: tail-whip
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3057\u3063\u307D\u3092\u3075\u308B"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uAF2C\uB9AC\uD754\uB4E4\uAE30"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u6416\u5C3E\u5DF4"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Mimi-Queue
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Rutenschlag
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "L\xE1tigo"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Colpocoda
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Tail Whip
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3057\u3063\u307D\u3092\u3075\u308B"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u6447\u5C3E\u5DF4"
+    past_values: []
+    power: 0
+    pp: 30
+    priority: 0
+    stat_changes:
+    - change: -1
+      stat:
+        name: defense
+        url: https://pokeapi.co/api/v2/stat/3/
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/19/
+    target:
+      name: all-opponents
+      url: https://pokeapi.co/api/v2/move-target/11/
+    type:
+      name: normal
+      url: https://pokeapi.co/api/v2/type/1/

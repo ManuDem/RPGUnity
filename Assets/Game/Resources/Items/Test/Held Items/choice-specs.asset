@@ -1,0 +1,542 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5810bf315e146de4e9f1544787543258, type: 3}
+  m_Name: choice-specs
+  m_EditorClassIdentifier: 
+  name: Choice Specs
+  description: "An item to be held by a Pok\xE9mon. These\ndistinctive glasses boost
+    Sp. Atk, but\nallow only one kind of move to be used."
+  icon: {fileID: 21300000, guid: 8b0aa163cf54a1a48ace622e5c48e329, type: 3}
+  price: 0
+  isSellable: 0
+  id: 274
+  pokeApiItem:
+    attributes:
+    - name: holdable
+      url: https://pokeapi.co/api/v2/item-attribute/5/
+    - name: holdable-active
+      url: https://pokeapi.co/api/v2/item-attribute/7/
+    baby_trigger_for:
+      name: 
+      url: 
+    category:
+      name: choice
+      url: https://pokeapi.co/api/v2/item-category/13/
+    cost: 4000
+    effect_entries:
+    - effect: 'Held: Increases the holder''s Special Attack by 50%, but restricts
+        it to the first move it uses until it leaves battle or loses this item. 
+        If this item is swapped for another Choice item via Trick or Switcheroo,
+        the holder''s restriction is still lifted, but it will again be restricted
+        to the next move it uses.
+
+        (Quirk: If the holder is switched in by
+        U-Turn and it also knows U-Turn, U-Turn becomes its restricted move.)'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: 'Held: Increases Special Attack by 50%, but restricts the holder
+        to only one move.'
+    flavor_text_entries:
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. These\ndistinctive glasses boost
+        Sp. Atk, but\nallow only one kind of move to be used."
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. These\ndistinctive glasses boost
+        Sp. Atk, but\nallow only one kind of move to be used."
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. These\ndistinctive glasses boost
+        Sp. Atk, but\nallow only one kind of move to be used."
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir augmentant l\u2019Attaque\nSp\xE9ciale, mais ne permettant
+        d\u2019utiliser\nqu\u2019une seule capacit\xE9 par combat."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. These\ndistinctive glasses boost
+        Sp. Atk but\nallow the use of only one of its moves."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. These\ndistinctive glasses boost
+        Sp. Atk but\nallow the use of only one of its moves."
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3061\u3087\u3063\u3068\u3000\u3053\u3060\u308F\u3063\u305F\u3000\u30E1\u30AC\u30CD\u3002\n\u3082\u305F\u305B\u308B\u3068\u3000\u3068\u304F\u3053\u3046\u306F\u3000\u3042\u304C\u308B\u304C\n\u304A\u306A\u3058\u3000\u308F\u3056\u3057\u304B\u3000\u3060\u305B\u306A\u304F\u306A\u308B\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uAE30\uC220\uC744 \uAD6C\uC560\uBC1B\uB294 \uC548\uACBD.\n\uC9C0\uB2C8\uAC8C
+        \uD558\uBA74 \uD2B9\uC218\uACF5\uACA9\uC774 \uC62C\uB77C\uAC00\uC9C0\uB9CC\n\uAC19\uC740
+        \uAE30\uC220\uBC16\uC5D0 \uC4F8 \uC218 \uC5C6\uB2E4."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir. Augmente l\u2019Attaque Sp\xE9ciale,\nmais ne permet
+        d\u2019utiliser qu\u2019une seule capacit\xE9\npar combat."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum Tragen. Die Brille erh\xF6ht den\nSpezial-Angriff, aber
+        nur eine Attacke\nist einsetzbar."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Incienso de ex\xF3tico aroma que fortalece los\nmovimientos de tipo
+        Ps\xEDquico. Debe llevarlo un\nPok\xE9mon."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento da dare a un Pok\xE9mon.\nQuesti occhiali aumentano l\u2019Attacco
+        Speciale,\nma permettono l\u2019uso di una sola mossa."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon.\nThese curious glasses boost Sp.
+        Atk\nbut only allow the use of one move."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u3061\u3087\u3063\u3068\u3000\u3053\u3060\u308F\u3063\u305F\u3000\u30E1\u30AC\u30CD\u3002\n\u6301\u305F\u305B\u308B\u3068\u3000\u7279\u653B\u306F\u3000\u3042\u304C\u308B\u304C\n\u540C\u3058\u3000\u6280\u3057\u304B\u3000\u3060\u305B\u306A\u304F\u306A\u308B\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3061\u3087\u3063\u3068\u3000\u3053\u3060\u308F\u3063\u305F\u3000\u30E1\u30AC\u30CD\u3002\n\u3082\u305F\u305B\u308B\u3068\u3000\u3068\u304F\u3053\u3046\u306F\u3000\u3042\u304C\u308B\u304C\n\u304A\u306A\u3058\u3000\u308F\u3056\u3057\u304B\u3000\u3060\u305B\u306A\u304F\u306A\u308B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uAE30\uC220\uC744 \uAD6C\uC560\uBC1B\uB294 \uC548\uACBD.\n\uC9C0\uB2C8\uAC8C
+        \uD558\uBA74 \uD2B9\uC218\uACF5\uACA9\uC774 \uC62C\uB77C\uAC00\uC9C0\uB9CC\n\uAC19\uC740
+        \uAE30\uC220\uBC16\uC5D0 \uC4F8 \uC218 \uC5C6\uB2E4."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8B1B\u7A76\u7684\u773C\u93E1\u3002\n\u96D6\u7136\u651C\u5E36\u5F8C\u7279\u653B\u6703\u63D0\u9AD8\uFF0C\n\u4F46\u53EA\u80FD\u4F7F\u51FA\u76F8\u540C\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir. Augmente l\u2019Attaque Sp\xE9ciale,\nmais ne permet
+        d\u2019utiliser qu\u2019une seule capacit\xE9\npar combat."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum Tragen. Die Brille erh\xF6ht den\nSpezial-Angriff, aber
+        nur eine Attacke ist\neinsetzbar."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Aumentan la potencia de los ataques especiales\ndel Pok\xE9mon que las
+        lleva, pero solo le permiten\nusar un movimiento."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento da dare a un Pok\xE9mon.\nQuesti occhiali aumentano la potenza
+        delle mosse\nspeciali, ma permettono l\u2019uso di una sola mossa."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. These curious\nglasses boost Sp.
+        Atk but only allow the use of\none move."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u3061\u3087\u3063\u3068\u3000\u3053\u3060\u308F\u3063\u305F\u3000\u30E1\u30AC\u30CD\u3002\n\u6301\u305F\u305B\u308B\u3068\u3000\u7279\u653B\u306F\u3000\u3042\u304C\u308B\u304C\n\u540C\u3058\u3000\u6280\u3057\u304B\u3000\u3060\u305B\u306A\u304F\u306A\u308B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u8BB2\u7A76\u7684\u773C\u955C\u3002\n\u867D\u7136\u643A\u5E26\u540E\u7279\u653B\u4F1A\u63D0\u9AD8\uFF0C\n\u4F46\u53EA\u80FD\u4F7F\u51FA\u76F8\u540C\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3061\u3087\u3063\u3068\u3000\u3053\u3060\u308F\u3063\u305F\u3000\u30E1\u30AC\u30CD\u3002\n\u3082\u305F\u305B\u308B\u3068\u3000\u3068\u304F\u3053\u3046\u306F\u3000\u3042\u304C\u308B\u304C\n\u304A\u306A\u3058\u3000\u308F\u3056\u3057\u304B\u3000\u3060\u305B\u306A\u304F\u306A\u308B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uAE30\uC220\uC744 \uAD6C\uC560\uBC1B\uB294 \uC548\uACBD.\n\uC9C0\uB2C8\uAC8C
+        \uD558\uBA74 \uD2B9\uC218\uACF5\uACA9\uC774 \uC62C\uB77C\uAC00\uC9C0\uB9CC\n\uAC19\uC740
+        \uAE30\uC220\uBC16\uC5D0 \uC4F8 \uC218 \uC5C6\uB2E4."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8B1B\u7A76\u7684\u773C\u93E1\u3002\n\u96D6\u7136\u651C\u5E36\u5F8C\u7279\u653B\u6703\u63D0\u9AD8\uFF0C\n\u4F46\u53EA\u80FD\u4F7F\u51FA\u76F8\u540C\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir. Augmente l\u2019Attaque Sp\xE9ciale,\nmais ne permet
+        d\u2019utiliser qu\u2019une seule capacit\xE9\npar combat."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum Tragen. Die Brille erh\xF6ht den\nSpezial-Angriff, aber
+        nur eine Attacke ist\neinsetzbar."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Aumentan la potencia de los ataques especiales\ndel Pok\xE9mon que las
+        lleva, pero solo le permiten\nusar un movimiento."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento da dare a un Pok\xE9mon.\nQuesti occhiali aumentano la potenza
+        delle mosse\nspeciali, ma permettono l\u2019uso di una sola mossa."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. These curious\nglasses boost Sp.
+        Atk but only allow the use of\none move."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u3061\u3087\u3063\u3068\u3000\u3053\u3060\u308F\u3063\u305F\u3000\u30E1\u30AC\u30CD\u3002\n\u6301\u305F\u305B\u308B\u3068\u3000\u7279\u653B\u306F\u3000\u3042\u304C\u308B\u304C\n\u540C\u3058\u3000\u6280\u3057\u304B\u3000\u3060\u305B\u306A\u304F\u306A\u308B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u8BB2\u7A76\u7684\u773C\u955C\u3002\n\u867D\u7136\u643A\u5E26\u540E\u7279\u653B\u4F1A\u63D0\u9AD8\uFF0C\n\u4F46\u53EA\u80FD\u4F7F\u51FA\u76F8\u540C\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3061\u3087\u3063\u3068\u3000\u3053\u3060\u308F\u3063\u305F\u3000\u30E1\u30AC\u30CD\u3002\n\u3082\u305F\u305B\u308B\u3068\u3000\u3068\u304F\u3053\u3046\u306F\u3000\u3042\u304C\u308B\u304C\n\u304A\u306A\u3058\u3000\u308F\u3056\u3057\u304B\u3000\u3060\u305B\u306A\u304F\u306A\u308B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uAE30\uC220\uC744 \uAD6C\uC560\uBC1B\uB294 \uC548\uACBD.\n\uC9C0\uB2C8\uAC8C
+        \uD558\uBA74 \uD2B9\uC218\uACF5\uACA9\uC774 \uC62C\uB77C\uAC00\uC9C0\uB9CC\n\uAC19\uC740
+        \uAE30\uC220\uBC16\uC5D0 \uC4F8 \uC218 \uC5C6\uB2E4."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8B1B\u7A76\u7684\u773C\u93E1\u3002\n\u96D6\u7136\u651C\u5E36\u5F8C\u7279\u653B\u6703\u63D0\u9AD8\uFF0C\n\u4F46\u53EA\u80FD\u4F7F\u51FA\u76F8\u540C\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir. Augmente l\u2019Attaque Sp\xE9ciale, mais ne\npermet
+        d\u2019utiliser qu\u2019une seule capacit\xE9 par combat."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum Tragen. Die Brille erh\xF6ht den\nSpezial-Angriff, aber
+        nur eine Attacke ist\neinsetzbar."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Aumentan la potencia de los ataques especiales\ndel Pok\xE9mon que las
+        lleva, pero solo le permiten\nusar un movimiento."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento da dare a un Pok\xE9mon.\nQuesti occhiali aumentano la potenza
+        delle mosse\nspeciali, ma permettono l\u2019uso di una sola mossa."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. These curious\nglasses boost Sp.
+        Atk but only allow the use of\none move."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u3061\u3087\u3063\u3068\u3000\u3053\u3060\u308F\u3063\u305F\u3000\u30E1\u30AC\u30CD\u3002\n\u6301\u305F\u305B\u308B\u3068\u3000\u7279\u653B\u306F\u3000\u3042\u304C\u308B\u304C\n\u540C\u3058\u3000\u6280\u3057\u304B\u3000\u3060\u305B\u306A\u304F\u306A\u308B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u8BB2\u7A76\u7684\u773C\u955C\u3002\n\u867D\u7136\u643A\u5E26\u540E\u7279\u653B\u4F1A\u63D0\u9AD8\uFF0C\n\u4F46\u53EA\u80FD\u4F7F\u51FA\u76F8\u540C\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3061\u3087\u3063\u3068\u3000\u3053\u3060\u308F\u3063\u305F\u3000\u30E1\u30AC\u30CD\u3002\n\u3082\u305F\u305B\u308B\u3068\u3000\u3068\u304F\u3053\u3046\u306F\u3000\u3042\u304C\u308B\u304C\n\u304A\u306A\u3058\u3000\u308F\u3056\u3057\u304B\u3000\u3060\u305B\u306A\u304F\u306A\u308B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uAE30\uC220\uC744 \uAD6C\uC560\uBC1B\uB294 \uC548\uACBD.\n\uC9C0\uB2C8\uAC8C
+        \uD558\uBA74 \uD2B9\uC218\uACF5\uACA9\uC774 \uC62C\uB77C\uAC00\uC9C0\uB9CC\n\uAC19\uC740
+        \uAE30\uC220\uBC16\uC5D0 \uC4F8 \uC218 \uC5C6\uB2E4."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8B1B\u7A76\u7684\u773C\u93E1\u3002\n\u96D6\u7136\u651C\u5E36\u5F8C\u7279\u653B\u6703\u63D0\u9AD8\uFF0C\n\u4F46\u53EA\u80FD\u4F7F\u51FA\u76F8\u540C\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir. Augmente l\u2019Attaque Sp\xE9ciale,\nmais ne permet
+        d\u2019utiliser qu\u2019une seule capacit\xE9."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum Tragen. Die Brille erh\xF6ht den\nSpezial-Angriff, aber
+        nur eine Attacke ist einsetzbar."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Aumentan la potencia de los ataques especiales del\nPok\xE9mon que las
+        lleva, pero solo le permiten usar un\nmovimiento."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento da dare a un Pok\xE9mon.\nQuesti occhiali aumentano la potenza
+        delle mosse\nspeciali, ma permettono l\u2019uso di una sola mossa."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "An item to be held by a Pok\xE9mon. These curious\nglasses boost Sp.
+        Atk but only allow the use of\none move."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u3061\u3087\u3063\u3068\u3000\u3053\u3060\u308F\u3063\u305F\u3000\u30E1\u30AC\u30CD\u3002\n\u6301\u305F\u305B\u308B\u3068\u3000\u7279\u653B\u306F\u3000\u3042\u304C\u308B\u304C\n\u540C\u3058\u3000\u6280\u3057\u304B\u3000\u3060\u305B\u306A\u304F\u306A\u308B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u8BB2\u7A76\u7684\u773C\u955C\u3002\n\u867D\u7136\u643A\u5E26\u540E\u7279\u653B\u4F1A\u63D0\u9AD8\uFF0C\n\u4F46\u53EA\u80FD\u4F7F\u51FA\u76F8\u540C\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    fling_effect:
+      name: 
+      url: 
+    fling_power: 10
+    game_indices:
+    - game_index: 297
+      generation:
+        name: generation-iv
+        url: https://pokeapi.co/api/v2/generation/4/
+    - game_index: 297
+      generation:
+        name: generation-v
+        url: https://pokeapi.co/api/v2/generation/5/
+    - game_index: 297
+      generation:
+        name: generation-vi
+        url: https://pokeapi.co/api/v2/generation/6/
+    - game_index: 297
+      generation:
+        name: generation-vii
+        url: https://pokeapi.co/api/v2/generation/7/
+    - game_index: 297
+      generation:
+        name: generation-viii
+        url: https://pokeapi.co/api/v2/generation/8/
+    held_by_pokemon: 
+    id: 274
+    machines: []
+    name: choice-specs
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3053\u3060\u308F\u308A\u30E1\u30AC\u30CD"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uAD6C\uC560\uC548\uACBD"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u8B1B\u7A76\u773C\u93E1"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Lunettes Choix
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Wahlbrille
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Gafas Elecci\xF3n"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Lentiscelta
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Choice Specs
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3053\u3060\u308F\u308A\u30E1\u30AC\u30CD"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u8BB2\u7A76\u773C\u955C"
+    sprites:
+      defaul: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/choice-specs.png
+  canUseInBattle: 0
+  canUseOutsideBattle: 0

@@ -1,0 +1,945 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: focus-energy
+  m_EditorClassIdentifier: 
+  name: Focus Energy
+  description: "Raises the criti\xAD\ncal hit ratio."
+  type: 1
+  power: 0
+  accuracy: 0
+  alwaysHits: 0
+  pp: 30
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 116
+  pokeApiMove:
+    accuracy: 0
+    contest_combos:
+      normal:
+        use_after: []
+        use_before:
+        - name: karate-chop
+          url: https://pokeapi.co/api/v2/move/2/
+        - name: mega-punch
+          url: https://pokeapi.co/api/v2/move/5/
+        - name: mega-kick
+          url: https://pokeapi.co/api/v2/move/25/
+        - name: headbutt
+          url: https://pokeapi.co/api/v2/move/29/
+        - name: take-down
+          url: https://pokeapi.co/api/v2/move/36/
+        - name: double-edge
+          url: https://pokeapi.co/api/v2/move/38/
+        - name: triple-kick
+          url: https://pokeapi.co/api/v2/move/167/
+        - name: bone-rush
+          url: https://pokeapi.co/api/v2/move/198/
+        - name: dynamic-punch
+          url: https://pokeapi.co/api/v2/move/223/
+        - name: cross-chop
+          url: https://pokeapi.co/api/v2/move/238/
+        - name: focus-punch
+          url: https://pokeapi.co/api/v2/move/264/
+        - name: brick-break
+          url: https://pokeapi.co/api/v2/move/280/
+        - name: arm-thrust
+          url: https://pokeapi.co/api/v2/move/292/
+        - name: sky-uppercut
+          url: https://pokeapi.co/api/v2/move/327/
+      super:
+        use_after: []
+        use_before:
+        - name: night-slash
+          url: https://pokeapi.co/api/v2/move/400/
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/5/
+    contest_type:
+      name: cool
+      url: https://pokeapi.co/api/v2/contest-type/1/
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: 'User''s critical hit rate is two levels higher until it leaves the
+        field.  If the user has already used focus energy since entering the field,
+        this move will fail.
+
+
+        This effect is passed on by baton pass.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Increases the user's chance to score a critical hit.
+    flavor_text_entries:
+    - flavor_text: "Raises the criti\xAD\ncal hit ratio."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    - flavor_text: "Raises the criti\xAD\ncal hit ratio."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: crystal
+        url: https://pokeapi.co/api/v2/version-group/4/
+    - flavor_text: 'Focuses power to raise the
+
+        critical-hit ratio.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: 'Focuses power to raise the
+
+        critical-hit ratio.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: 'The user takes a
+
+        deep breath and
+
+        focuses to
+        raise its
+
+        critical-hit ratio.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: 'The user takes a
+
+        deep breath and
+
+        focuses to
+        raise the
+
+        critical-hit ratio of
+
+        its attacks.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: 'The user takes a
+
+        deep breath and
+
+        focuses to
+        raise the
+
+        critical-hit ratio of
+
+        its attacks.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: 'The user takes a
+
+        deep breath and
+
+        focuses to
+        raise the
+
+        critical-hit ratio of
+
+        its attacks.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: 'Le lanceur prend une profonde inspiration
+
+        et se concentre
+        pour augmenter son taux
+
+        de critiques.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The user takes a deep breath and
+
+        focuses so that critical
+        hits land
+
+        more easily.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The user takes a deep breath and
+
+        focuses so that critical
+        hits land
+
+        more easily.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3075\u304B\u304F\u3000\u3044\u304D\u3092\u3000\u3059\u3044\u3000\u304D\u3042\u3044\u3092\u3000\u3053\u3081\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\u3053\u3046\u3052\u304D\u304C\n\u304D\u3085\u3046\u3057\u3087\u306B\u3000\u3042\u305F\u308A\u3084\u3059\u304F\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uAE4A\uAC8C \uC228\uC744 \uB4E4\uC774\uB9C8\uC154 \uAE30\uD569\uC744
+        \uB123\uB294\uB2E4.\n\uC790\uC2E0\uC758 \uACF5\uACA9\uC774\n\uAE09\uC18C\uC5D0
+        \uB9DE\uAE30 \uC26C\uC6CC\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Le lanceur prend une profonde inspiration et se
+
+        concentre
+        pour augmenter son taux de critiques.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Anwender atmet ein und b\xFCndelt Kraft.\nDie Volltrefferquote
+        steigt dadurch."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Concentra energ\xEDa para aumentar las posibilidades\nde un golpe
+        cr\xEDtico."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa fa un profondo respiro e si concentra\nper rendere
+        pi\xF9 probabili i brutti colpi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'The user takes a deep breath and
+
+        focuses so that critical
+        hits land
+
+        more easily.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u6DF1\u304F\u3000\u606F\u3092\u3000\u5438\u3044\u3000\u6C17\u5408\u3092\u3000\u3053\u3081\u308B\u3002\n\u81EA\u5206\u306E\u3000\u653B\u6483\u304C\n\u6025\u6240\u306B\u3000\u5F53\u305F\u308A\u3084\u3059\u304F\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3075\u304B\u304F\u3000\u3044\u304D\u3092\u3000\u3059\u3044\u3000\u304D\u3042\u3044\u3092\u3000\u3053\u3081\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\u3053\u3046\u3052\u304D\u304C\n\u304D\u3085\u3046\u3057\u3087\u306B\u3000\u3042\u305F\u308A\u3084\u3059\u304F\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uAE4A\uAC8C \uC228\uC744 \uB4E4\uC774\uB9C8\uC154 \uAE30\uD569\uC744
+        \uB123\uB294\uB2E4.\n\uC790\uC2E0\uC758 \uACF5\uACA9\uC774\n\uAE09\uC18C\uC5D0
+        \uB9DE\uAE30 \uC26C\uC6CC\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Le lanceur prend une profonde inspiration et se
+
+        concentre
+        pour augmenter son taux de critiques.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Anwender atmet ein und b\xFCndelt Kraft.\nDie Volltrefferquote
+        steigt dadurch."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Concentra energ\xEDa para aumentar las posibilidades \nde un
+        golpe cr\xEDtico."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa fa un profondo respiro e si concentra\nper rendere
+        pi\xF9 probabili i brutti colpi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'The user takes a deep breath and
+
+        focuses so that critical
+        hits land
+
+        more easily.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u6DF1\u304F\u3000\u606F\u3092\u3000\u5438\u3044\u3000\u6C17\u5408\u3092\u3000\u3053\u3081\u308B\u3002\n\u81EA\u5206\u306E\u3000\u653B\u6483\u304C\n\u6025\u6240\u306B\u3000\u5F53\u305F\u308A\u3084\u3059\u304F\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3075\u304B\u304F\u3000\u3044\u304D\u3092\u3000\u3059\u3044\u3000\u304D\u3042\u3044\u3092\u3000\u3053\u3081\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\u3053\u3046\u3052\u304D\u304C\n\u304D\u3085\u3046\u3057\u3087\u306B\u3000\u3042\u305F\u308A\u3084\u3059\u304F\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uAE4A\uAC8C \uC228\uC744 \uB4E4\uC774\uB9C8\uC154 \uAE30\uD569\uC744
+        \uB123\uB294\uB2E4.\n\uC790\uC2E0\uC758 \uACF5\uACA9\uC774\n\uAE09\uC18C\uC5D0
+        \uB9DE\uAE30 \uC26C\uC6CC\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u6DF1\u547C\u5438\u5F8C\u96C6\u4E2D\u7CBE\u795E\u3002\n\u8B93\u81EA\u5DF1\u7684\u653B\u64CA\n\u8B8A\u5F97\u5BB9\u6613\u64CA\u4E2D\u8981\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Le lanceur prend une profonde inspiration et se
+
+        concentre
+        pour augmenter son taux de critique.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Anwender atmet ein und b\xFCndelt Kraft.\nDie Volltrefferquote
+        steigt dadurch."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Concentra energ\xEDa para aumentar las posibilidades \nde un
+        golpe cr\xEDtico."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa fa un profondo respiro e si concentra\nper rendere
+        pi\xF9 probabili i brutti colpi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'The user takes a deep breath and focuses so that
+
+        critical
+        hits land more easily.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u6DF1\u304F\u3000\u606F\u3092\u3000\u5438\u3044\u3000\u6C17\u5408\u3092\u3000\u3053\u3081\u308B\u3002\n\u81EA\u5206\u306E\u3000\u653B\u6483\u304C\n\u6025\u6240\u306B\u3000\u5F53\u305F\u308A\u3084\u3059\u304F\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u6DF1\u6DF1\u5730\u5438\u53E3\u6C14\uFF0C\u96C6\u4E2D\u7CBE\u795E\u3002\n\u81EA\u5DF1\u7684\u653B\u51FB\n\u4F1A\u53D8\u5F97\u5BB9\u6613\u51FB\u4E2D\u8981\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3075\u304B\u304F\u3000\u3044\u304D\u3092\u3000\u3059\u3044\u3000\u304D\u3042\u3044\u3092\u3000\u3053\u3081\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\u3053\u3046\u3052\u304D\u304C\n\u304D\u3085\u3046\u3057\u3087\u306B\u3000\u3042\u305F\u308A\u3084\u3059\u304F\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uAE4A\uAC8C \uC228\uC744 \uB4E4\uC774\uB9C8\uC154 \uAE30\uD569\uC744
+        \uB123\uB294\uB2E4.\n\uC790\uC2E0\uC758 \uACF5\uACA9\uC774\n\uAE09\uC18C\uC5D0
+        \uB9DE\uAE30 \uC26C\uC6CC\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u6DF1\u547C\u5438\u5F8C\u96C6\u4E2D\u7CBE\u795E\u3002\n\u8B93\u81EA\u5DF1\u7684\u653B\u64CA\n\u8B8A\u5F97\u5BB9\u6613\u64CA\u4E2D\u8981\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Le lanceur prend une profonde inspiration et se
+
+        concentre
+        pour augmenter son taux de critique.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Anwender atmet ein und b\xFCndelt Kraft.\nDie Volltrefferquote
+        steigt dadurch."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Concentra energ\xEDa para aumentar las posibilidades \nde un
+        golpe cr\xEDtico."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa fa un profondo respiro e si concentra\nper rendere
+        pi\xF9 probabili i brutti colpi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'The user takes a deep breath and focuses so that
+
+        critical
+        hits land more easily.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u6DF1\u304F\u3000\u606F\u3092\u3000\u5438\u3044\u3000\u6C17\u5408\u3092\u3000\u3053\u3081\u308B\u3002\n\u81EA\u5206\u306E\u3000\u653B\u6483\u304C\n\u6025\u6240\u306B\u3000\u5F53\u305F\u308A\u3084\u3059\u304F\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u6DF1\u6DF1\u5730\u5438\u53E3\u6C14\uFF0C\u96C6\u4E2D\u7CBE\u795E\u3002\n\u81EA\u5DF1\u7684\u653B\u51FB\n\u4F1A\u53D8\u5F97\u5BB9\u6613\u51FB\u4E2D\u8981\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3075\u304B\u304F\u3000\u3044\u304D\u3092\u3000\u3059\u3044\u3000\u304D\u3042\u3044\u3092\u3000\u3053\u3081\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\u3053\u3046\u3052\u304D\u304C\n\u304D\u3085\u3046\u3057\u3087\u306B\u3000\u3042\u305F\u308A\u3084\u3059\u304F\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uAE4A\uAC8C \uC228\uC744 \uB4E4\uC774\uB9C8\uC154 \uAE30\uD569\uC744
+        \uB123\uB294\uB2E4.\n\uC790\uC2E0\uC758 \uACF5\uACA9\uC774\n\uAE09\uC18C\uC5D0
+        \uB9DE\uAE30 \uC26C\uC6CC\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u6DF1\u547C\u5438\u5F8C\u96C6\u4E2D\u7CBE\u795E\u3002\n\u8B93\u81EA\u5DF1\u7684\u653B\u64CA\n\u8B8A\u5F97\u5BB9\u6613\u64CA\u4E2D\u8981\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Le lanceur prend une profonde inspiration et se
+
+        concentre
+        pour augmenter son taux de critique.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Anwender atmet ein und b\xFCndelt Kraft.\nDie Volltrefferquote
+        steigt dadurch."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Concentra energ\xEDa para aumentar las posibilidades \nde un
+        golpe cr\xEDtico."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa fa un profondo respiro e si concentra\nper rendere
+        pi\xF9 probabili i brutti colpi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'The user takes a deep breath and focuses so that
+
+        critical
+        hits land more easily.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u6DF1\u304F\u3000\u606F\u3092\u3000\u5438\u3044\u3000\u6C17\u5408\u3092\u3000\u3053\u3081\u308B\u3002\n\u81EA\u5206\u306E\u3000\u653B\u6483\u304C\n\u6025\u6240\u306B\u3000\u5F53\u305F\u308A\u3084\u3059\u304F\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u6DF1\u6DF1\u5730\u5438\u53E3\u6C14\uFF0C\u96C6\u4E2D\u7CBE\u795E\u3002\n\u81EA\u5DF1\u7684\u653B\u51FB\n\u4F1A\u53D8\u5F97\u5BB9\u6613\u51FB\u4E2D\u8981\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3075\u304B\u304F\u3000\u3044\u304D\u3092\u3000\u3059\u3044\u3000\u304D\u3042\u3044\u3092\u3000\u3053\u3081\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\u3053\u3046\u3052\u304D\u304C\n\u304D\u3085\u3046\u3057\u3087\u306B\u3000\u3042\u305F\u308A\u3084\u3059\u304F\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uAE4A\uAC8C \uC228\uC744 \uB4E4\uC774\uB9C8\uC154 \uAE30\uD569\uC744
+        \uB123\uB294\uB2E4.\n\uC790\uC2E0\uC758 \uACF5\uACA9\uC774\n\uAE09\uC18C\uC5D0
+        \uB9DE\uAE30 \uC26C\uC6CC\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u6DF1\u547C\u5438\u5F8C\u96C6\u4E2D\u7CBE\u795E\u3002\n\u8B93\u81EA\u5DF1\u7684\u653B\u64CA\n\u8B8A\u5F97\u5BB9\u6613\u64CA\u4E2D\u8981\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Le lanceur prend une profonde inspiration et se
+
+        concentre
+        pour augmenter son taux de critiques.'
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Anwender atmet ein und b\xFCndelt Kraft.\nDie Volltrefferquote
+        steigt dadurch."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Concentra energ\xEDa para aumentar las posibilidades de\nasestar
+        un golpe cr\xEDtico."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa fa un profondo respiro e si concentra\nper rendere
+        pi\xF9 probabili i brutti colpi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'The user takes a deep breath and focuses so that
+
+        critical
+        hits land more easily.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u6DF1\u304F\u3000\u606F\u3092\u3000\u5438\u3044\u3000\u6C17\u5408\u3092\u3000\u3053\u3081\u308B\u3002\n\u81EA\u5206\u306E\u3000\u653B\u6483\u304C\n\u6025\u6240\u306B\u3000\u5F53\u305F\u308A\u3084\u3059\u304F\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u6DF1\u6DF1\u5730\u5438\u53E3\u6C14\uFF0C\u96C6\u4E2D\u7CBE\u795E\u3002\n\u81EA\u5DF1\u7684\u653B\u51FB\n\u4F1A\u53D8\u5F97\u5BB9\u6613\u51FB\u4E2D\u8981\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-i
+      url: https://pokeapi.co/api/v2/generation/1/
+    id: 116
+    learned_by_pokemon:
+    - name: beedrill
+      url: https://pokeapi.co/api/v2/pokemon/15/
+    - name: rattata
+      url: https://pokeapi.co/api/v2/pokemon/19/
+    - name: raticate
+      url: https://pokeapi.co/api/v2/pokemon/20/
+    - name: spearow
+      url: https://pokeapi.co/api/v2/pokemon/21/
+    - name: fearow
+      url: https://pokeapi.co/api/v2/pokemon/22/
+    - name: nidoran-f
+      url: https://pokeapi.co/api/v2/pokemon/29/
+    - name: nidoran-m
+      url: https://pokeapi.co/api/v2/pokemon/32/
+    - name: nidorino
+      url: https://pokeapi.co/api/v2/pokemon/33/
+    - name: nidoking
+      url: https://pokeapi.co/api/v2/pokemon/34/
+    - name: mankey
+      url: https://pokeapi.co/api/v2/pokemon/56/
+    - name: primeape
+      url: https://pokeapi.co/api/v2/pokemon/57/
+    - name: machop
+      url: https://pokeapi.co/api/v2/pokemon/66/
+    - name: machoke
+      url: https://pokeapi.co/api/v2/pokemon/67/
+    - name: machamp
+      url: https://pokeapi.co/api/v2/pokemon/68/
+    - name: cubone
+      url: https://pokeapi.co/api/v2/pokemon/104/
+    - name: marowak
+      url: https://pokeapi.co/api/v2/pokemon/105/
+    - name: hitmonlee
+      url: https://pokeapi.co/api/v2/pokemon/106/
+    - name: kangaskhan
+      url: https://pokeapi.co/api/v2/pokemon/115/
+    - name: horsea
+      url: https://pokeapi.co/api/v2/pokemon/116/
+    - name: seadra
+      url: https://pokeapi.co/api/v2/pokemon/117/
+    - name: scyther
+      url: https://pokeapi.co/api/v2/pokemon/123/
+    - name: pinsir
+      url: https://pokeapi.co/api/v2/pokemon/127/
+    - name: eevee
+      url: https://pokeapi.co/api/v2/pokemon/133/
+    - name: sentret
+      url: https://pokeapi.co/api/v2/pokemon/161/
+    - name: ariados
+      url: https://pokeapi.co/api/v2/pokemon/168/
+    - name: scizor
+      url: https://pokeapi.co/api/v2/pokemon/212/
+    - name: teddiursa
+      url: https://pokeapi.co/api/v2/pokemon/216/
+    - name: remoraid
+      url: https://pokeapi.co/api/v2/pokemon/223/
+    - name: octillery
+      url: https://pokeapi.co/api/v2/pokemon/224/
+    - name: kingdra
+      url: https://pokeapi.co/api/v2/pokemon/230/
+    - name: phanpy
+      url: https://pokeapi.co/api/v2/pokemon/231/
+    - name: hitmontop
+      url: https://pokeapi.co/api/v2/pokemon/237/
+    - name: magby
+      url: https://pokeapi.co/api/v2/pokemon/240/
+    - name: larvitar
+      url: https://pokeapi.co/api/v2/pokemon/246/
+    - name: torchic
+      url: https://pokeapi.co/api/v2/pokemon/255/
+    - name: combusken
+      url: https://pokeapi.co/api/v2/pokemon/256/
+    - name: blaziken
+      url: https://pokeapi.co/api/v2/pokemon/257/
+    - name: taillow
+      url: https://pokeapi.co/api/v2/pokemon/276/
+    - name: swellow
+      url: https://pokeapi.co/api/v2/pokemon/277/
+    - name: vigoroth
+      url: https://pokeapi.co/api/v2/pokemon/288/
+    - name: makuhita
+      url: https://pokeapi.co/api/v2/pokemon/296/
+    - name: hariyama
+      url: https://pokeapi.co/api/v2/pokemon/297/
+    - name: carvanha
+      url: https://pokeapi.co/api/v2/pokemon/318/
+    - name: sharpedo
+      url: https://pokeapi.co/api/v2/pokemon/319/
+    - name: numel
+      url: https://pokeapi.co/api/v2/pokemon/322/
+    - name: camerupt
+      url: https://pokeapi.co/api/v2/pokemon/323/
+    - name: trapinch
+      url: https://pokeapi.co/api/v2/pokemon/328/
+    - name: bagon
+      url: https://pokeapi.co/api/v2/pokemon/371/
+    - name: shelgon
+      url: https://pokeapi.co/api/v2/pokemon/372/
+    - name: salamence
+      url: https://pokeapi.co/api/v2/pokemon/373/
+    - name: chimchar
+      url: https://pokeapi.co/api/v2/pokemon/390/
+    - name: kricketune
+      url: https://pokeapi.co/api/v2/pokemon/402/
+    - name: cranidos
+      url: https://pokeapi.co/api/v2/pokemon/408/
+    - name: rampardos
+      url: https://pokeapi.co/api/v2/pokemon/409/
+    - name: shieldon
+      url: https://pokeapi.co/api/v2/pokemon/410/
+    - name: drifloon
+      url: https://pokeapi.co/api/v2/pokemon/425/
+    - name: drifblim
+      url: https://pokeapi.co/api/v2/pokemon/426/
+    - name: stunky
+      url: https://pokeapi.co/api/v2/pokemon/434/
+    - name: skuntank
+      url: https://pokeapi.co/api/v2/pokemon/435/
+    - name: victini
+      url: https://pokeapi.co/api/v2/pokemon/494/
+    - name: oshawott
+      url: https://pokeapi.co/api/v2/pokemon/501/
+    - name: dewott
+      url: https://pokeapi.co/api/v2/pokemon/502/
+    - name: samurott
+      url: https://pokeapi.co/api/v2/pokemon/503/
+    - name: patrat
+      url: https://pokeapi.co/api/v2/pokemon/504/
+    - name: watchog
+      url: https://pokeapi.co/api/v2/pokemon/505/
+    - name: timburr
+      url: https://pokeapi.co/api/v2/pokemon/532/
+    - name: gurdurr
+      url: https://pokeapi.co/api/v2/pokemon/533/
+    - name: conkeldurr
+      url: https://pokeapi.co/api/v2/pokemon/534/
+    - name: throh
+      url: https://pokeapi.co/api/v2/pokemon/538/
+    - name: sawk
+      url: https://pokeapi.co/api/v2/pokemon/539/
+    - name: sandile
+      url: https://pokeapi.co/api/v2/pokemon/551/
+    - name: darumaka
+      url: https://pokeapi.co/api/v2/pokemon/554/
+    - name: axew
+      url: https://pokeapi.co/api/v2/pokemon/610/
+    - name: bouffalant
+      url: https://pokeapi.co/api/v2/pokemon/626/
+    - name: deino
+      url: https://pokeapi.co/api/v2/pokemon/633/
+    - name: zweilous
+      url: https://pokeapi.co/api/v2/pokemon/634/
+    - name: hydreigon
+      url: https://pokeapi.co/api/v2/pokemon/635/
+    - name: passimian
+      url: https://pokeapi.co/api/v2/pokemon/766/
+    - name: buzzwole
+      url: https://pokeapi.co/api/v2/pokemon/794/
+    - name: kangaskhan-mega
+      url: https://pokeapi.co/api/v2/pokemon/10039/
+    - name: pinsir-mega
+      url: https://pokeapi.co/api/v2/pokemon/10040/
+    - name: scizor-mega
+      url: https://pokeapi.co/api/v2/pokemon/10046/
+    - name: blaziken-mega
+      url: https://pokeapi.co/api/v2/pokemon/10050/
+    - name: sharpedo-mega
+      url: https://pokeapi.co/api/v2/pokemon/10070/
+    - name: camerupt-mega
+      url: https://pokeapi.co/api/v2/pokemon/10087/
+    - name: salamence-mega
+      url: https://pokeapi.co/api/v2/pokemon/10089/
+    - name: beedrill-mega
+      url: https://pokeapi.co/api/v2/pokemon/10090/
+    - name: rattata-alola
+      url: https://pokeapi.co/api/v2/pokemon/10091/
+    - name: raticate-alola
+      url: https://pokeapi.co/api/v2/pokemon/10092/
+    - name: raticate-totem-alola
+      url: https://pokeapi.co/api/v2/pokemon/10093/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1602/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: unique
+        url: https://pokeapi.co/api/v2/move-category/13/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: focus-energy
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u304D\u3042\u3044\u3060\u3081"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uAE30\uCDA9\uC804"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u805A\u6C23"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Puissance
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Energiefokus
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Foco Energ\xEDa"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Focalenergia
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Focus Energy
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u304D\u3042\u3044\u3060\u3081"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u805A\u6C14"
+    past_values: []
+    power: 0
+    pp: 30
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/11/
+    target:
+      name: user
+      url: https://pokeapi.co/api/v2/move-target/7/
+    type:
+      name: normal
+      url: https://pokeapi.co/api/v2/type/1/

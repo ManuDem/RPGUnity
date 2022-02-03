@@ -1,0 +1,1375 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5aa4a7f37a22714c9924381e9ade610, type: 3}
+  m_Name: weedle
+  m_EditorClassIdentifier: 
+  name: Weedle
+  description: 'Beware of the sharp stinger on its head. It hides
+
+    in grass and
+    bushes where it eats leaves.'
+  frontSprite: {fileID: 21300000, guid: 204b6311820c8f542816e28d04c330ed, type: 3}
+  backSprite: {fileID: 21300000, guid: 3a43b5b3337a19d4db2bf3556c0d0e54, type: 3}
+  type1: 12
+  type2: 8
+  maxHp: 40
+  attack: 35
+  defense: 30
+  spAttack: 20
+  spDefense: 20
+  speed: 50
+  expYield: 39
+  growthRate: 0
+  catchRate: 255
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 7519dfd5ede728540a52c822928b502b, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0aa4be3c1b7c74249a28878a0874a622, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 864c983f31569034bb4677e1ee91fdab, type: 2}
+    level: 15
+  learnableByItems: []
+  evolutions:
+  - evolvesInto: {fileID: 11400000, guid: 4372739b10699af40829bdcb842c592a, type: 2}
+    requiredLevel: 7
+    requiredItem: {fileID: 0}
+  id: 13
+  pokeApiPokemon:
+    abilities:
+    - ability:
+        name: shield-dust
+        url: https://pokeapi.co/api/v2/ability/19/
+      is_hidden: 0
+      slot: 1
+    - ability:
+        name: run-away
+        url: https://pokeapi.co/api/v2/ability/50/
+      is_hidden: 1
+      slot: 3
+    base_experience: 39
+    forms:
+    - name: weedle
+      url: https://pokeapi.co/api/v2/pokemon-form/13/
+    game_indices:
+    - game_index: 112
+      generation:
+        name: 
+        url: 
+    - game_index: 112
+      generation:
+        name: 
+        url: 
+    - game_index: 112
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    - game_index: 13
+      generation:
+        name: 
+        url: 
+    height: 3
+    held_items: []
+    id: 13
+    is_default: 1
+    location_area_encounters: https://pokeapi.co/api/v2/pokemon/13/encounters
+    moves:
+    - move:
+        name: poison-sting
+        url: https://pokeapi.co/api/v2/move/40/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: red-blue
+          url: https://pokeapi.co/api/v2/version-group/1/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: yellow
+          url: https://pokeapi.co/api/v2/version-group/2/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: gold-silver
+          url: https://pokeapi.co/api/v2/version-group/3/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: crystal
+          url: https://pokeapi.co/api/v2/version-group/4/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ruby-sapphire
+          url: https://pokeapi.co/api/v2/version-group/5/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: emerald
+          url: https://pokeapi.co/api/v2/version-group/6/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: firered-leafgreen
+          url: https://pokeapi.co/api/v2/version-group/7/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: colosseum
+          url: https://pokeapi.co/api/v2/version-group/12/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: xd
+          url: https://pokeapi.co/api/v2/version-group/13/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: string-shot
+        url: https://pokeapi.co/api/v2/move/81/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: red-blue
+          url: https://pokeapi.co/api/v2/version-group/1/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: yellow
+          url: https://pokeapi.co/api/v2/version-group/2/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: gold-silver
+          url: https://pokeapi.co/api/v2/version-group/3/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: crystal
+          url: https://pokeapi.co/api/v2/version-group/4/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ruby-sapphire
+          url: https://pokeapi.co/api/v2/version-group/5/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: emerald
+          url: https://pokeapi.co/api/v2/version-group/6/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: firered-leafgreen
+          url: https://pokeapi.co/api/v2/version-group/7/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: diamond-pearl
+          url: https://pokeapi.co/api/v2/version-group/8/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: colosseum
+          url: https://pokeapi.co/api/v2/version-group/12/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: xd
+          url: https://pokeapi.co/api/v2/version-group/13/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: bug-bite
+        url: https://pokeapi.co/api/v2/move/450/
+      version_group_details:
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version-group/9/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: heartgold-soulsilver
+          url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-white
+          url: https://pokeapi.co/api/v2/version-group/11/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: x-y
+          url: https://pokeapi.co/api/v2/version-group/15/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 9
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sun-moon
+          url: https://pokeapi.co/api/v2/version-group/17/
+      - level_learned_at: 9
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: electroweb
+        url: https://pokeapi.co/api/v2/move/527/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: black-2-white-2
+          url: https://pokeapi.co/api/v2/version-group/14/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: omega-ruby-alpha-sapphire
+          url: https://pokeapi.co/api/v2/version-group/16/
+    name: weedle
+    order: 17
+    past_types: []
+    species:
+      name: weedle
+      url: https://pokeapi.co/api/v2/pokemon-species/13/
+    species_data:
+      base_happiness: 70
+      capture_rate: 255
+      flavor_text_entries:
+      - flavor_text: "Often found in\nforests, eating\nleaves.\fIt has a sharp\nvenomous
+          stinger\non its head."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: red
+          url: https://pokeapi.co/api/v2/version/1/
+      - flavor_text: "Often found in\nforests, eating\nleaves.\fIt has a sharp\nvenomous
+          stinger\non its head."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: blue
+          url: https://pokeapi.co/api/v2/version/2/
+      - flavor_text: "Beware of the\nsharp stinger on\nits head. It\fhides in grass\nand
+          bushes where\nit eats leaves."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: yellow
+          url: https://pokeapi.co/api/v2/version/3/
+      - flavor_text: "Its poison stinger\nis very powerful.\nIts bright-colored\fbody
+          is intended\nto warn off its\nenemies."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: gold
+          url: https://pokeapi.co/api/v2/version/4/
+      - flavor_text: "It attacks using a\ntwo-inch poison\nbarb on its head.\fIt
+          can usually be\nfound under the\nleaves it eats."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: silver
+          url: https://pokeapi.co/api/v2/version/5/
+      - flavor_text: "The barb on top of\nits head secretes\na strong poison.\fIt
+          uses this toxic\nbarb to protect\nitself."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: crystal
+          url: https://pokeapi.co/api/v2/version/6/
+      - flavor_text: "WEEDLE has an extremely acute sense\nof smell.\nIt is capable
+          of distinguishing its\ffavorite kinds of leaves from those it\ndislikes
+          just by sniffing with its big\nred proboscis (nose)."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: ruby
+          url: https://pokeapi.co/api/v2/version/7/
+      - flavor_text: "WEEDLE has an extremely acute sense\nof smell.\nIt is capable
+          of distinguishing its\ffavorite kinds of leaves from those it\ndislikes
+          just by sniffing with its big\nred proboscis (nose)."
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: sapphire
+          url: https://pokeapi.co/api/v2/version/8/
+      - flavor_text: 'A WEEDLE has an extremely acute sense
+
+          of smell.
+          It distinguishes its favorite
+
+          kinds of leaves from those it
+          dislikes by
+
+          sniffing with its big red proboscis (nose).'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: emerald
+          url: https://pokeapi.co/api/v2/version/9/
+      - flavor_text: 'Often found in forests and grasslands.
+
+          It has a
+          sharp, toxic barb of around two
+
+          inches on top of its head.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: firered
+          url: https://pokeapi.co/api/v2/version/10/
+      - flavor_text: 'Often found in forests, eating leaves.
+
+          It has a
+          sharp stinger on its head that
+
+          injects poison.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: leafgreen
+          url: https://pokeapi.co/api/v2/version/11/
+      - flavor_text: 'It eats its weight in leaves every
+
+          day. It fends
+          off attackers with
+
+          the needle on its head.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: diamond
+          url: https://pokeapi.co/api/v2/version/12/
+      - flavor_text: 'It eats its weight in leaves every
+
+          day. It fends
+          off attackers with
+
+          the needle on its head.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: pearl
+          url: https://pokeapi.co/api/v2/version/13/
+      - flavor_text: 'It eats its weight in leaves every
+
+          day. It fends
+          off attackers with
+
+          the needle on its head.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: platinum
+          url: https://pokeapi.co/api/v2/version/14/
+      - flavor_text: 'Its poison stinger is very powerful.
+
+          Its bright-colored
+          body is intended
+
+          to warn off its enemies.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: heartgold
+          url: https://pokeapi.co/api/v2/version/15/
+      - flavor_text: 'It attacks using a two-inch poison
+
+          barb on its head.
+          It can usually be
+
+          found under the leaves it eats.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: soulsilver
+          url: https://pokeapi.co/api/v2/version/16/
+      - flavor_text: "Il mange chaque jour son poids en\nfeuilles. Il utilise l\u2019aiguillon
+          sur sa\nt\xEAte pour repousser l\u2019ennemi."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: black
+          url: https://pokeapi.co/api/v2/version/17/
+      - flavor_text: 'It eats its weight in leaves every
+
+          day. It fends
+          off attackers with
+
+          the needle on its head.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: black
+          url: https://pokeapi.co/api/v2/version/17/
+      - flavor_text: "Il mange chaque jour son poids en\nfeuilles. Il utilise l\u2019aiguillon
+          sur sa\nt\xEAte pour repousser l\u2019ennemi."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: white
+          url: https://pokeapi.co/api/v2/version/18/
+      - flavor_text: 'It eats its weight in leaves every
+
+          day. It fends
+          off attackers with
+
+          the needle on its head.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: white
+          url: https://pokeapi.co/api/v2/version/18/
+      - flavor_text: 'It eats its weight in leaves every
+
+          day. It fends
+          off attackers with
+
+          the needle on its head.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: black-2
+          url: https://pokeapi.co/api/v2/version/21/
+      - flavor_text: 'It eats its weight in leaves every
+
+          day. It fends
+          off attackers with
+
+          the needle on its head.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: white-2
+          url: https://pokeapi.co/api/v2/version/22/
+      - flavor_text: "\u3082\u308A\u3084\u3000\u304F\u3055\u3061\u306B\u3000\u304A\u304A\u304F\u3000\u305B\u3044\u305D\u304F\u3002\n\u3042\u305F\u307E\u306E\u3000\u3055\u304D\u306B\u3000\uFF15\u30BB\u30F3\u30C1\u3050\u3089\u3044\u306E\n\u3061\u3044\u3055\u304F\u3000\u3059\u308B\u3069\u3044\u3000\u3069\u304F\u3070\u308A\u3092\u3082\u3064\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "\uC232\uC774\uB098 \uD480\uBC2D\uC5D0 \uB9CE\uC774 \uC11C\uC2DD\uD55C\uB2E4.\n\uBA38\uB9AC\uB05D\uC5D0
+          5cm \uC815\uB3C4\uC758\n\uC791\uACE0 \uB0A0\uCE74\uB85C\uC6B4 \uB3C5\uCE68\uC744
+          \uC9C0\uB2C8\uACE0 \uC788\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "On trouve souvent ce Pok\xE9mon dans les for\xEAts et\nles
+          hautes herbes. L\u2019aiguillon de 5 cm sur sa t\xEAte\ncontient un venin
+          tr\xE8s toxique."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "Es lebt bevorzugt in W\xE4ldern und in hohem Gras.\nAuf dem
+          Kopf tr\xE4gt es einen circa 5 cm langen,\nspitzen, giftigen Stachel."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "Suele habitar bosques y praderas. Tiene un afilado y\nvenenoso
+          aguij\xF3n de unos 5 cm encima de la cabeza."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: 'Vive soprattutto nei boschi e nei prati. Sul capo ha
+
+          un
+          affilato e velenoso pungiglione lungo 5 cm.'
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: 'Often found in forests and grasslands.
+
+          It has a
+          sharp, toxic barb of around two inches
+
+          on top of its head.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "\u68EE\u3084\u3000\u8349\u5730\u306B\u3000\u591A\u304F\u3000\u751F\u606F\u3002\n\u982D\u306E\u3000\u5148\u306B\u3000\uFF15\u30BB\u30F3\u30C1\u3050\u3089\u3044\u306E\n\u5C0F\u3055\u304F\u3000\u92ED\u3044\u3000\u6BD2\u91DD\u3092\u6301\u3064\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: x
+          url: https://pokeapi.co/api/v2/version/23/
+      - flavor_text: "\u3069\u304F\u3070\u308A\u306F\u3000\u3068\u3066\u3082\u3000\u304D\u3087\u3046\u308A\u3087\u304F\u3002\n\u3081\u3060\u3064\u3000\u304B\u3089\u3060\u306E\u3000\u3044\u308D\u306F\n\u3042\u3044\u3066\u306B\u3000\u3051\u3044\u304B\u3044\u3092\u3000\u3055\u305B\u308B\u305F\u3081\u3060\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "\uB3C5\uCE68\uC774 \uB9E4\uC6B0 \uAC15\uB825\uD558\uB2E4.\n\uB208\uC5D0
+          \uB744\uB294 \uBAB8\uC758 \uC0C9\uAE54\uC740\n\uC0C1\uB300\uBC29\uC744
+          \uACBD\uACC4\uC2DC\uD0A4\uAE30 \uC704\uD574\uC11C\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "Son aiguillon empoisonn\xE9 est tr\xE8s dangereux.\nSon corps
+          est color\xE9 afin de repousser ses ennemis."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "Sein Giftstachel ist gef\xE4hrlich. Sein hellleuchtender\nK\xF6rper
+          soll Feinde abschrecken."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "Su venenoso aguij\xF3n es muy potente y su colorido\ncuerpo
+          hace que los enemigos huyan."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "Ha un pungiglione molto velenoso. La vivace\ncolorazione del
+          suo corpo \xE8 un avvertimento per i\nnemici."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: 'Its poison stinger is very powerful.
+
+          Its bright-colored
+          body is intended to
+
+          warn off its enemies.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "\u6BD2\u91DD\u306F\u3000\u3068\u3066\u3082\u3000\u5F37\u529B\u3002\n\u76EE\u7ACB\u3064\u3000\u4F53\u306E\u3000\u8272\u306F\n\u76F8\u624B\u306B\u3000\u8B66\u6212\u3092\u3000\u3055\u305B\u308B\u305F\u3081\u3060\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: y
+          url: https://pokeapi.co/api/v2/version/24/
+      - flavor_text: "\u3068\u3066\u3082\u3000\u3059\u308B\u3069\u3044\u3000\u304D\u3085\u3046\u304B\u304F\u3092\u3000\u3082\u3063\u3066\u3044\u308B\u3002\n\u3053\u3046\u3076\u3064\u306E\u3000\u306F\u3063\u3071\u304B\u3000\u304D\u3089\u3044\u306A\u3000\u306F\u3063\u3071\u304B\n\u304A\u304A\u304D\u306A\u3000\u3042\u304B\u3044\u3000\u306F\u306A\u3067\u3000\u304B\u304E\u308F\u3051\u308B\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "\uAD49\uC7A5\uD788 \uC608\uBBFC\uD55C \uD6C4\uAC01\uC744 \uC9C0\uB2C8\uACE0
+          \uC788\uB2E4.\n\uC88B\uC544\uD558\uB294 \uC78E\uC0AC\uADC0\uC778\uC9C0
+          \uC2EB\uC5B4\uD558\uB294 \uC78E\uC0AC\uADC0\uC778\uC9C0\n\uD06C\uACE0 \uBE68\uAC04
+          \uCF54\uB85C \uB0C4\uC0C8 \uB9E1\uC544 \uAD6C\uBCC4\uD55C\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "L\u2019odorat d\u2019Aspicot est extr\xEAmement d\xE9velopp\xE9.
+          Il lui suffit de\nrenifler ses feuilles pr\xE9f\xE9r\xE9es avec son gros
+          appendice nasal\npour les reconna\xEEtre entre mille."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "Hornliu verf\xFCgt \xFCber einen ausgezeichneten Geruchssinn.\nSo
+          kann es seine Lieblingsbl\xE4tter von denen unterscheiden,\ndie es nicht
+          mag, indem es mit seiner gro\xDFen roten Nase\ndaran schnuppert."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "Weedle tiene un fin\xEDsimo sentido del olfato. Es capaz de\ndistinguir
+          las hojas que le gustan de las que no le gustan\nolisqueando un poco con
+          la gran nariz que tiene."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "Weedle ha un senso dell\u2019olfatto estremamente sviluppato.\nRiesce
+          a distinguere le sue foglie preferite da quelle che\nlo disgustano semplicemente
+          annusandole con il grande\nnaso rosso."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: 'Weedle has an extremely acute sense of smell. It is capable
+          of
+
+          distinguishing its favorite kinds of leaves from those it
+          dislikes
+
+          just by sniffing with its big red proboscis (nose).'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "\u3068\u3066\u3082\u3000\u92ED\u3044\u3000\u55C5\u899A\u3092\u3000\u6301\u3063\u3066\u3044\u308B\u3002\n\u597D\u7269\u306E\u3000\u8449\u3063\u3071\u304B\u3000\u5ACC\u3044\u306A\u3000\u8449\u3063\u3071\u304B\n\u5927\u304D\u306A\u3000\u8D64\u3044\u3000\u9F3B\u3067\u3000\u55C5\u304E\u5206\u3051\u308B\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: omega-ruby
+          url: https://pokeapi.co/api/v2/version/25/
+      - flavor_text: "\u3068\u3066\u3082\u3000\u3059\u308B\u3069\u3044\u3000\u304D\u3085\u3046\u304B\u304F\u3092\u3000\u3082\u3063\u3066\u3044\u308B\u3002\n\u3053\u3046\u3076\u3064\u306E\u3000\u306F\u3063\u3071\u304B\u3000\u304D\u3089\u3044\u306A\u3000\u306F\u3063\u3071\u304B\n\u304A\u304A\u304D\u306A\u3000\u3042\u304B\u3044\u3000\u306F\u306A\u3067\u3000\u304B\u304E\u308F\u3051\u308B\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "\uAD49\uC7A5\uD788 \uC608\uBBFC\uD55C \uD6C4\uAC01\uC744 \uC9C0\uB2C8\uACE0
+          \uC788\uB2E4.\n\uC88B\uC544\uD558\uB294 \uC78E\uC0AC\uADC0\uC778\uC9C0
+          \uC2EB\uC5B4\uD558\uB294 \uC78E\uC0AC\uADC0\uC778\uC9C0\n\uD06C\uACE0 \uBE68\uAC04
+          \uCF54\uB85C \uB0C4\uC0C8 \uB9E1\uC544 \uAD6C\uBCC4\uD55C\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "L\u2019odorat d\u2019Aspicot est extr\xEAmement d\xE9velopp\xE9.
+          Il lui suffit de\nrenifler ses feuilles pr\xE9f\xE9r\xE9es avec son gros
+          appendice nasal\npour les reconna\xEEtre entre mille."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "Hornliu verf\xFCgt \xFCber einen ausgezeichneten Geruchssinn.\nEs
+          ist in der Lage, seine Lieblingsbl\xE4tter von denen zu\nunterscheiden,
+          die es nicht mag, indem es mit seinem gro\xDFen\nroten R\xFCssel daran
+          schnuppert."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "Weedle tiene un fin\xEDsimo sentido del olfato. Es capaz de\ndistinguir
+          las hojas que le gustan de las que no le gustan\nolisqueando un poco con
+          la gran nariz que tiene."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "Weedle ha un senso dell\u2019olfatto estremamente sviluppato.\nRiesce
+          a distinguere le sue foglie preferite da quelle che\nlo disgustano semplicemente
+          annusandole con il grande\nnaso rosso."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: 'Weedle has an extremely acute sense of smell. It is capable
+
+          of
+          distinguishing its favorite kinds of leaves from those it
+
+          dislikes
+          just by sniffing with its big red proboscis (nose).'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "\u3068\u3066\u3082\u3000\u92ED\u3044\u3000\u55C5\u899A\u3092\u3000\u6301\u3063\u3066\u3044\u308B\u3002\n\u597D\u7269\u306E\u3000\u8449\u3063\u3071\u304B\u3000\u5ACC\u3044\u306A\u3000\u8449\u3063\u3071\u304B\n\u5927\u304D\u306A\u3000\u8D64\u3044\u3000\u9F3B\u3067\u3000\u55C5\u304E\u5206\u3051\u308B\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: alpha-sapphire
+          url: https://pokeapi.co/api/v2/version/26/
+      - flavor_text: "\u3042\u305F\u307E\u306B\u3000\u3059\u308B\u3069\u3044\u3000\u30CF\u30EA\u3092\u3000\u3082\u3064\u3002\n\u3082\u308A\u3084\u3000\u304F\u3055\u3061\u306E\u3000\u3057\u3052\u307F\u306B\u3000\u304B\u304F\u308C\n\u3072\u305F\u3059\u3089\u3000\u30CF\u30C3\u30D1\u3092\u3000\u305F\u3079\u3066\u3044\u308B\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: lets-go-pikachu
+          url: https://pokeapi.co/api/v2/version/31/
+      - flavor_text: "\uBA38\uB9AC\uC5D0 \uB0A0\uCE74\uB85C\uC6B4 \uCE68\uC744 \uC9C0\uB2C8\uACE0
+          \uC788\uB2E4.\n\uC6B0\uAC70\uC9C4 \uC232\uC774\uB098 \uD480\uBC2D\uC5D0
+          \uC228\uC5B4\n\uB04A\uC784\uC5C6\uC774 \uD480\uC78E\uC744 \uBA39\uACE0
+          \uC788\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: lets-go-pikachu
+          url: https://pokeapi.co/api/v2/version/31/
+      - flavor_text: "\u982D\u4E0A\u9577\u8457\u5C16\u92B3\u7684\u91DD\u3002\n\u7E3D\u662F\u8EB2\u5728\u68EE\u6797\u6216\u662F\u8349\u53E2\u88E1\uFF0C\n\u4E0D\u505C\u5730\u5403\u8457\u8449\u5B50\u3002"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        version:
+          name: lets-go-pikachu
+          url: https://pokeapi.co/api/v2/version/31/
+      - flavor_text: "L\u2019aiguillon sur son front est tr\xE8s pointu.\nIl se cache
+          dans les bois et les hautes herbes,\no\xF9 il se gave de feuilles."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: lets-go-pikachu
+          url: https://pokeapi.co/api/v2/version/31/
+      - flavor_text: "Auf seinem Kopf befindet sich ein spitzer\nStachel. Es versteckt
+          sich im hohen Gras\nsowie in W\xE4ldern und frisst eifrig Bl\xE4tter."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: lets-go-pikachu
+          url: https://pokeapi.co/api/v2/version/31/
+      - flavor_text: "El aguij\xF3n de la cabeza es muy puntiagudo.\nSe alimenta
+          de hojas oculto en la espesura\nde bosques y praderas."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: lets-go-pikachu
+          url: https://pokeapi.co/api/v2/version/31/
+      - flavor_text: "Ha un pungiglione acuminato sul capo. Vive tra\nl\u2019erba
+          alta e nei boschi, dove si nutre di foglie."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: lets-go-pikachu
+          url: https://pokeapi.co/api/v2/version/31/
+      - flavor_text: 'Beware of the sharp stinger on its head. It hides
+
+          in
+          grass and bushes where it eats leaves.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: lets-go-pikachu
+          url: https://pokeapi.co/api/v2/version/31/
+      - flavor_text: "\u982D\u306B\u3000\u92ED\u3044\u3000\u30CF\u30EA\u3092\u3000\u3082\u3064\u3002\n\u68EE\u3084\u3000\u8349\u5730\u306E\u3000\u8302\u307F\u306B\u3000\u96A0\u308C\n\u3072\u305F\u3059\u3089\u3000\u30CF\u30C3\u30D1\u3092\u3000\u98DF\u3079\u3066\u3044\u308B\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: lets-go-pikachu
+          url: https://pokeapi.co/api/v2/version/31/
+      - flavor_text: "\u5934\u4E0A\u957F\u6709\u5C16\u9510\u7684\u9488\u3002\n\u5B83\u559C\u6B22\u85CF\u5728\u68EE\u6797\u6216\n\u8349\u4E1B\u91CC\u5927\u91CF\u541E\u98DF\u6811\u53F6\u3002"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        version:
+          name: lets-go-pikachu
+          url: https://pokeapi.co/api/v2/version/31/
+      - flavor_text: "\u3042\u305F\u307E\u306B\u3000\u3059\u308B\u3069\u3044\u3000\u30CF\u30EA\u3092\u3000\u3082\u3064\u3002\n\u3082\u308A\u3084\u3000\u304F\u3055\u3061\u306E\u3000\u3057\u3052\u307F\u306B\u3000\u304B\u304F\u308C\n\u3072\u305F\u3059\u3089\u3000\u30CF\u30C3\u30D1\u3092\u3000\u305F\u3079\u3066\u3044\u308B\u3002"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        version:
+          name: lets-go-eevee
+          url: https://pokeapi.co/api/v2/version/32/
+      - flavor_text: "\uBA38\uB9AC\uC5D0 \uB0A0\uCE74\uB85C\uC6B4 \uCE68\uC744 \uC9C0\uB2C8\uACE0
+          \uC788\uB2E4.\n\uC6B0\uAC70\uC9C4 \uC232\uC774\uB098 \uD480\uBC2D\uC5D0
+          \uC228\uC5B4\n\uB04A\uC784\uC5C6\uC774 \uD480\uC78E\uC744 \uBA39\uACE0
+          \uC788\uB2E4."
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        version:
+          name: lets-go-eevee
+          url: https://pokeapi.co/api/v2/version/32/
+      - flavor_text: "\u982D\u4E0A\u9577\u8457\u5C16\u92B3\u7684\u91DD\u3002\n\u7E3D\u662F\u8EB2\u5728\u68EE\u6797\u6216\u662F\u8349\u53E2\u88E1\uFF0C\n\u4E0D\u505C\u5730\u5403\u8457\u8449\u5B50\u3002"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        version:
+          name: lets-go-eevee
+          url: https://pokeapi.co/api/v2/version/32/
+      - flavor_text: "L\u2019aiguillon sur son front est tr\xE8s pointu.\nIl se cache
+          dans les bois et les hautes herbes,\no\xF9 il se gave de feuilles."
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        version:
+          name: lets-go-eevee
+          url: https://pokeapi.co/api/v2/version/32/
+      - flavor_text: "Auf seinem Kopf befindet sich ein spitzer\nStachel. Es versteckt
+          sich im hohen Gras\nsowie in W\xE4ldern und frisst eifrig Bl\xE4tter."
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        version:
+          name: lets-go-eevee
+          url: https://pokeapi.co/api/v2/version/32/
+      - flavor_text: "El aguij\xF3n de la cabeza es muy puntiagudo.\nSe alimenta
+          de hojas oculto en la espesura\nde bosques y praderas."
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        version:
+          name: lets-go-eevee
+          url: https://pokeapi.co/api/v2/version/32/
+      - flavor_text: "Ha un pungiglione acuminato sul capo. Vive tra\nl\u2019erba
+          alta e nei boschi, dove si nutre di foglie."
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        version:
+          name: lets-go-eevee
+          url: https://pokeapi.co/api/v2/version/32/
+      - flavor_text: 'Beware of the sharp stinger on its head. It hides
+
+          in
+          grass and bushes where it eats leaves.'
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        version:
+          name: lets-go-eevee
+          url: https://pokeapi.co/api/v2/version/32/
+      - flavor_text: "\u982D\u306B\u3000\u92ED\u3044\u3000\u30CF\u30EA\u3092\u3000\u3082\u3064\u3002\n\u68EE\u3084\u3000\u8349\u5730\u306E\u3000\u8302\u307F\u306B\u3000\u96A0\u308C\n\u3072\u305F\u3059\u3089\u3000\u30CF\u30C3\u30D1\u3092\u3000\u98DF\u3079\u3066\u3044\u308B\u3002"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        version:
+          name: lets-go-eevee
+          url: https://pokeapi.co/api/v2/version/32/
+      - flavor_text: "\u5934\u4E0A\u957F\u6709\u5C16\u9510\u7684\u9488\u3002\n\u5B83\u559C\u6B22\u85CF\u5728\u68EE\u6797\u6216\n\u8349\u4E1B\u91CC\u5927\u91CF\u541E\u98DF\u6811\u53F6\u3002"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        version:
+          name: lets-go-eevee
+          url: https://pokeapi.co/api/v2/version/32/
+      gender_rate: 4
+      growth_rate:
+        name: medium
+        url: https://pokeapi.co/api/v2/growth-rate/2/
+      genera:
+      - genus: "\u3051\u3080\u3057\u30DD\u30B1\u30E2\u30F3"
+        language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+      - genus: "\uC1A1\uCDA9\uC774\uD3EC\uCF13\uBAAC"
+        language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+      - genus: "\u6BDB\u6BDB\u87F2\u5BF6\u53EF\u5922"
+        language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+      - genus: "Pok\xE9mon Insectopic"
+        language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+      - genus: Raupe
+        language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+      - genus: "Pok\xE9mon Oruga"
+        language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+      - genus: "Pok\xE9mon Millepiedi"
+        language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+      - genus: "Hairy Bug Pok\xE9mon"
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+      - genus: "\u3051\u3080\u3057\u30DD\u30B1\u30E2\u30F3"
+        language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+      - genus: "\u6BDB\u6BDB\u866B\u5B9D\u53EF\u68A6"
+        language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/5/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 7
+            evolves_to:
+            - evolution_details:
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 10
+              is_baby: false
+              species:
+                name: beedrill
+                url: https://pokeapi.co/api/v2/pokemon-species/15/
+            is_baby: false
+            species:
+              name: kakuna
+              url: https://pokeapi.co/api/v2/pokemon-species/14/
+          is_baby: false
+          species:
+            name: weedle
+            url: https://pokeapi.co/api/v2/pokemon-species/13/
+        id: 5
+      name: weedle
+      names:
+      - language:
+          name: ja-Hrkt
+          url: https://pokeapi.co/api/v2/language/1/
+        name: "\u30D3\u30FC\u30C9\u30EB"
+      - language:
+          name: roomaji
+          url: https://pokeapi.co/api/v2/language/2/
+        name: Beedle
+      - language:
+          name: ko
+          url: https://pokeapi.co/api/v2/language/3/
+        name: "\uBFD4\uCDA9\uC774"
+      - language:
+          name: zh-Hant
+          url: https://pokeapi.co/api/v2/language/4/
+        name: "\u7368\u89D2\u87F2"
+      - language:
+          name: fr
+          url: https://pokeapi.co/api/v2/language/5/
+        name: Aspicot
+      - language:
+          name: de
+          url: https://pokeapi.co/api/v2/language/6/
+        name: Hornliu
+      - language:
+          name: es
+          url: https://pokeapi.co/api/v2/language/7/
+        name: Weedle
+      - language:
+          name: it
+          url: https://pokeapi.co/api/v2/language/8/
+        name: Weedle
+      - language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        name: Weedle
+      - language:
+          name: ja
+          url: https://pokeapi.co/api/v2/language/11/
+        name: "\u30D3\u30FC\u30C9\u30EB"
+      - language:
+          name: zh-Hans
+          url: https://pokeapi.co/api/v2/language/12/
+        name: "\u72EC\u89D2\u866B"
+    sprites:
+      back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/13.png
+      back_female: 
+      back_shiny: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/13.png
+      back_shiny_female: 
+      front_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png
+      front_female: 
+      front_shiny: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/13.png
+      front_shiny_female: 
+    stats:
+    - base_stat: 40
+      effort: 0
+      stat:
+        name: hp
+        url: https://pokeapi.co/api/v2/stat/1/
+    - base_stat: 35
+      effort: 0
+      stat:
+        name: attack
+        url: https://pokeapi.co/api/v2/stat/2/
+    - base_stat: 30
+      effort: 0
+      stat:
+        name: defense
+        url: https://pokeapi.co/api/v2/stat/3/
+    - base_stat: 20
+      effort: 0
+      stat:
+        name: special-attack
+        url: https://pokeapi.co/api/v2/stat/4/
+    - base_stat: 20
+      effort: 0
+      stat:
+        name: special-defense
+        url: https://pokeapi.co/api/v2/stat/5/
+    - base_stat: 50
+      effort: 1
+      stat:
+        name: speed
+        url: https://pokeapi.co/api/v2/stat/6/
+    types:
+    - slot: 1
+      type:
+        name: bug
+        url: https://pokeapi.co/api/v2/type/7/
+    - slot: 2
+      type:
+        name: poison
+        url: https://pokeapi.co/api/v2/type/4/
+    weight: 32

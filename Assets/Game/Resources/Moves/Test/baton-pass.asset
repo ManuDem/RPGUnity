@@ -1,0 +1,798 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: baton-pass
+  m_EditorClassIdentifier: 
+  name: Baton Pass
+  description: 'Switches while
+
+    keeping effects.'
+  type: 1
+  power: 0
+  accuracy: 0
+  alwaysHits: 0
+  pp: 40
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 226
+  pokeApiMove:
+    accuracy: 0
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/18/
+    contest_type:
+      name: cute
+      url: https://pokeapi.co/api/v2/contest-type/3/
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: "User switches out, and the trainer selects a replacement Pok\xE9mon
+        from the party.  Stat changes, confusion, and persistent move effects are
+        passed along to the replacement Pok\xE9mon.\n\nThe following move effects
+        are passed:\n\n* aqua ring\n* both the user's and target's effect of block,
+        mean look, and spider web\n* the curse effect of curse\n* embargo\n* focus
+        energy or an activated lansat berry\n* gastro acid\n* ingrain\n* being sapped
+        by leech seed\n* being targeted by lock on or mind reader\n* magnet rise\n*
+        perish song's counter\n* power trick\n* substitute; the doll's HP is unchanged\n\nThe
+        replacement Pok\xE9mon does not trigger effects that respond to Pok\xE9mon
+        switching in."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Allows the trainer to switch out the user and pass effects along
+        to its replacement.
+    flavor_text_entries:
+    - flavor_text: 'Switches while
+
+        keeping effects.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    - flavor_text: 'Switches while
+
+        keeping effects.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: crystal
+        url: https://pokeapi.co/api/v2/version-group/4/
+    - flavor_text: 'Switches out the user while
+
+        keeping effects in play.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: 'Switches out the user while
+
+        keeping effects in play.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: 'The user switches
+
+        out, passing along
+
+        any stat
+        changes
+
+        to the new battler.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: "The user switches\nplaces with a party\nPok\xE9mon in waiting,\npassing
+        along any\nstat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "The user switches\nplaces with a party\nPok\xE9mon in waiting,\npassing
+        along any\nstat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "The user switches\nplaces with a party\nPok\xE9mon in waiting,\npassing
+        along any\nstat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Le lanceur \xE9change sa place et tout\nchangement de stat avec
+        un Pok\xE9mon\nde l\u2019\xE9quipe."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user switches places with a party\nPok\xE9mon in waiting,
+        passing along any\nstat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user switches places with a party\nPok\xE9mon in waiting,
+        passing along any\nstat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u3044\u308C\u304B\u308F\u308B\u3002\n\u306E\u3046\u308A\u3087\u304F\u3000\u3078\u3093\u304B\u306F\u3000\u304B\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u3046\u3051\u3064\u3050\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uAD50\uB300 \uD3EC\uCF13\uBAAC\uACFC \uBC14\uB010\uB2E4.\n\uB2A5\uB825
+        \uBCC0\uD654\uB294 \uBC14\uB010 \uD3EC\uCF13\uBAAC\uC774\n\uADF8\uB300\uB85C
+        \uC774\uC5B4\uBC1B\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Le lanceur \xE9change sa place et tout changement\nde stat avec
+        un Pok\xE9mon de l\u2019\xE9quipe."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Tauscht das eigene Pok\xE9mon aus.\nAlle Statusver\xE4nderungen
+        bleiben bestehen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Cambia el puesto con un compa\xF1ero y le pasa los\ncambios de
+        caracter\xEDsticas."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa \xE8 sostituito da un Pok\xE9mon della\nsquadra, che
+        eredita anche ogni modifica\nalle statistiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user switches places with a party\nPok\xE9mon in waiting
+        and passes along\nany stat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u5165\u308C\u66FF\u308F\u308B\u3002\n\u80FD\u529B\u5909\u5316\u306F\u3000\u66FF\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u53D7\u3051\u3064\u3050\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u3044\u308C\u304B\u308F\u308B\u3002\n\u306E\u3046\u308A\u3087\u304F\u3000\u3078\u3093\u304B\u306F\u3000\u304B\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u3046\u3051\u3064\u3050\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uAD50\uB300 \uD3EC\uCF13\uBAAC\uACFC \uBC14\uB010\uB2E4.\n\uB2A5\uB825
+        \uBCC0\uD654\uB294 \uBC14\uB010 \uD3EC\uCF13\uBAAC\uC774\n\uADF8\uB300\uB85C
+        \uC774\uC5B4\uBC1B\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Le lanceur \xE9change sa place et tout changement\nde stat avec
+        un Pok\xE9mon de l\u2019\xE9quipe."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Tauscht das eigene Pok\xE9mon aus.\nAlle Statusver\xE4nderungen
+        bleiben bestehen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Cambia el puesto con un compa\xF1ero y le pasa los \ncambios
+        de caracter\xEDsticas."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa \xE8 sostituito da un Pok\xE9mon della\nsquadra, che
+        eredita anche ogni modifica\nalle statistiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user switches places with a party\nPok\xE9mon in waiting
+        and passes along\nany stat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u5165\u308C\u66FF\u308F\u308B\u3002\n\u80FD\u529B\u5909\u5316\u306F\u3000\u66FF\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u53D7\u3051\u3064\u3050\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u3044\u308C\u304B\u308F\u308B\u3002\n\u306E\u3046\u308A\u3087\u304F\u3000\u3078\u3093\u304B\u306F\u3000\u304B\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u3046\u3051\u3064\u3050\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uAD50\uB300 \uD3EC\uCF13\uBAAC\uACFC \uBC14\uB010\uB2E4.\n\uB2A5\uB825
+        \uBCC0\uD654\uB294 \uBC14\uB010 \uD3EC\uCF13\uBAAC\uC774\n\uADF8\uB300\uB85C
+        \uC774\uC5B4\uBC1B\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u8207\u5F8C\u5099\u5BF6\u53EF\u5922\u9032\u884C\u66FF\u63DB\u3002\n\u66FF\u63DB\u4E0A\u5834\u7684\u5BF6\u53EF\u5922\uFF0C\n\u5C07\u627F\u63A5\u76EE\u524D\u5BF6\u53EF\u5922\u7684\u80FD\u529B\u8B8A\u5316\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le lanceur \xE9change sa place et tout changement\nde stat avec
+        un Pok\xE9mon de l\u2019\xE9quipe."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Tauscht den Anwender aus und \xFCbertr\xE4gt alle\nStatusver\xE4nderungen
+        auf das eingewechselte\nPok\xE9mon."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Cambia el puesto con un compa\xF1ero y le pasa los \ncambios
+        de caracter\xEDsticas."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa \xE8 sostituito da un Pok\xE9mon della\nsquadra, che
+        eredita anche ogni modifica\nalle statistiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user switches places with a party Pok\xE9mon in\nwaiting
+        and passes along any stat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u5165\u308C\u66FF\u308F\u308B\u3002\n\u80FD\u529B\u5909\u5316\u306F\u3000\u66FF\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u53D7\u3051\u3064\u3050\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u548C\u540E\u5907\u5B9D\u53EF\u68A6\u8FDB\u884C\u66FF\u6362\u3002\n\u6362\u4E0A\u7684\u5B9D\u53EF\u68A6\u80FD\u76F4\u63A5\u7EE7\u627F\n\u5176\u80FD\u529B\u7684\u53D8\u5316\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u3044\u308C\u304B\u308F\u308B\u3002\n\u306E\u3046\u308A\u3087\u304F\u3000\u3078\u3093\u304B\u306F\u3000\u304B\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u3046\u3051\u3064\u3050\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uAD50\uB300 \uD3EC\uCF13\uBAAC\uACFC \uBC14\uB010\uB2E4.\n\uB2A5\uB825
+        \uBCC0\uD654\uB294 \uBC14\uB010 \uD3EC\uCF13\uBAAC\uC774\n\uADF8\uB300\uB85C
+        \uC774\uC5B4\uBC1B\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u8207\u5F8C\u5099\u5BF6\u53EF\u5922\u9032\u884C\u66FF\u63DB\u3002\n\u66FF\u63DB\u4E0A\u5834\u7684\u5BF6\u53EF\u5922\uFF0C\n\u5C07\u627F\u63A5\u76EE\u524D\u5BF6\u53EF\u5922\u7684\u80FD\u529B\u8B8A\u5316\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le lanceur \xE9change sa place et tout changement\nde stat avec
+        un Pok\xE9mon de l\u2019\xE9quipe."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Tauscht den Anwender aus und \xFCbertr\xE4gt alle\nStatusver\xE4nderungen
+        auf das eingewechselte\nPok\xE9mon."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Cambia el puesto con un compa\xF1ero y le pasa los \ncambios
+        de caracter\xEDsticas."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa \xE8 sostituito da un Pok\xE9mon della\nsquadra, che
+        eredita anche ogni modifica\nalle statistiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user switches places with a party Pok\xE9mon in\nwaiting
+        and passes along any stat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u5165\u308C\u66FF\u308F\u308B\u3002\n\u80FD\u529B\u5909\u5316\u306F\u3000\u66FF\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u53D7\u3051\u3064\u3050\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u548C\u540E\u5907\u5B9D\u53EF\u68A6\u8FDB\u884C\u66FF\u6362\u3002\n\u6362\u4E0A\u7684\u5B9D\u53EF\u68A6\u80FD\u76F4\u63A5\u7EE7\u627F\n\u5176\u80FD\u529B\u7684\u53D8\u5316\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u3044\u308C\u304B\u308F\u308B\u3002\n\u306E\u3046\u308A\u3087\u304F\u3000\u3078\u3093\u304B\u306F\u3000\u304B\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u3046\u3051\u3064\u3050\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uAD50\uB300 \uD3EC\uCF13\uBAAC\uACFC \uBC14\uB010\uB2E4.\n\uB2A5\uB825
+        \uBCC0\uD654\uB294 \uBC14\uB010 \uD3EC\uCF13\uBAAC\uC774\n\uADF8\uB300\uB85C
+        \uC774\uC5B4\uBC1B\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u8207\u5F8C\u5099\u5BF6\u53EF\u5922\u9032\u884C\u66FF\u63DB\u3002\n\u66FF\u63DB\u4E0A\u5834\u7684\u5BF6\u53EF\u5922\uFF0C\n\u5C07\u627F\u63A5\u76EE\u524D\u5BF6\u53EF\u5922\u7684\u80FD\u529B\u8B8A\u5316\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le lanceur \xE9change sa place et tout changement de stat\navec
+        un Pok\xE9mon de l\u2019\xE9quipe."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Tauscht den Anwender aus und \xFCbertr\xE4gt alle\nStatusver\xE4nderungen
+        auf das eingewechselte\nPok\xE9mon."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Cambia el puesto con otro miembro del equipo y le\npasa los cambios
+        de caracter\xEDsticas."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa \xE8 sostituito da un Pok\xE9mon della\nsquadra, che
+        eredita anche ogni modifica\nalle statistiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user switches places with a party Pok\xE9mon in\nwaiting
+        and passes along any stat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u5165\u308C\u66FF\u308F\u308B\u3002\n\u80FD\u529B\u5909\u5316\u306F\u3000\u66FF\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u53D7\u3051\u3064\u3050\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u548C\u540E\u5907\u5B9D\u53EF\u68A6\u8FDB\u884C\u66FF\u6362\u3002\n\u6362\u4E0A\u7684\u5B9D\u53EF\u68A6\u80FD\u76F4\u63A5\u7EE7\u627F\n\u5176\u80FD\u529B\u7684\u53D8\u5316\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3072\u304B\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u3044\u308C\u304B\u308F\u308B\u3002\n\u306E\u3046\u308A\u3087\u304F\u3000\u3078\u3093\u304B\u306F\u3000\u304B\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u3046\u3051\u3064\u3050\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uAD50\uB300 \uD3EC\uCF13\uBAAC\uACFC \uBC14\uB010\uB2E4.\n\uB2A5\uB825
+        \uBCC0\uD654\uB294 \uBC14\uB010 \uD3EC\uCF13\uBAAC\uC774\n\uADF8\uB300\uB85C
+        \uC774\uC5B4\uBC1B\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u8207\u5F8C\u5099\u5BF6\u53EF\u5922\u9032\u884C\u66FF\u63DB\u3002\n\u66FF\u63DB\u4E0A\u5834\u7684\u5BF6\u53EF\u5922\uFF0C\n\u5C07\u627F\u63A5\u76EE\u524D\u5BF6\u53EF\u5922\u7684\u80FD\u529B\u8B8A\u5316\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le lanceur \xE9change sa place et tout changement\nde stat avec
+        un Pok\xE9mon de l\u2019\xE9quipe."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Tauscht den Anwender aus und \xFCbertr\xE4gt alle\nStatusver\xE4nderungen
+        auf das eingewechselte\nPok\xE9mon."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Cambia el puesto con otro miembro del equipo y le\npasa los cambios
+        de caracter\xEDsticas."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa \xE8 sostituito da un Pok\xE9mon della squadra,\nche
+        eredita anche ogni modifica alle statistiche."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user switches places with a party Pok\xE9mon in\nwaiting
+        and passes along any stat changes."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u63A7\u3048\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3068\u3000\u5165\u308C\u66FF\u308F\u308B\u3002\n\u80FD\u529B\u5909\u5316\u306F\u3000\u66FF\u308F\u3063\u305F\n\u30DD\u30B1\u30E2\u30F3\u304C\u3000\u305D\u306E\u307E\u307E\u3000\u53D7\u3051\u3064\u3050\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u548C\u540E\u5907\u5B9D\u53EF\u68A6\u8FDB\u884C\u66FF\u6362\u3002\n\u6362\u4E0A\u7684\u5B9D\u53EF\u68A6\u80FD\u76F4\u63A5\u7EE7\u627F\n\u5176\u80FD\u529B\u7684\u53D8\u5316\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-ii
+      url: https://pokeapi.co/api/v2/generation/2/
+    id: 226
+    learned_by_pokemon:
+    - name: venonat
+      url: https://pokeapi.co/api/v2/pokemon/48/
+    - name: mr-mime
+      url: https://pokeapi.co/api/v2/pokemon/122/
+    - name: scyther
+      url: https://pokeapi.co/api/v2/pokemon/123/
+    - name: eevee
+      url: https://pokeapi.co/api/v2/pokemon/133/
+    - name: mew
+      url: https://pokeapi.co/api/v2/pokemon/151/
+    - name: sentret
+      url: https://pokeapi.co/api/v2/pokemon/161/
+    - name: furret
+      url: https://pokeapi.co/api/v2/pokemon/162/
+    - name: ledyba
+      url: https://pokeapi.co/api/v2/pokemon/165/
+    - name: ledian
+      url: https://pokeapi.co/api/v2/pokemon/166/
+    - name: spinarak
+      url: https://pokeapi.co/api/v2/pokemon/167/
+    - name: togepi
+      url: https://pokeapi.co/api/v2/pokemon/175/
+    - name: togetic
+      url: https://pokeapi.co/api/v2/pokemon/176/
+    - name: aipom
+      url: https://pokeapi.co/api/v2/pokemon/190/
+    - name: girafarig
+      url: https://pokeapi.co/api/v2/pokemon/203/
+    - name: gligar
+      url: https://pokeapi.co/api/v2/pokemon/207/
+    - name: celebi
+      url: https://pokeapi.co/api/v2/pokemon/251/
+    - name: torchic
+      url: https://pokeapi.co/api/v2/pokemon/255/
+    - name: surskit
+      url: https://pokeapi.co/api/v2/pokemon/283/
+    - name: ninjask
+      url: https://pokeapi.co/api/v2/pokemon/291/
+    - name: skitty
+      url: https://pokeapi.co/api/v2/pokemon/300/
+    - name: mawile
+      url: https://pokeapi.co/api/v2/pokemon/303/
+    - name: meditite
+      url: https://pokeapi.co/api/v2/pokemon/307/
+    - name: plusle
+      url: https://pokeapi.co/api/v2/pokemon/311/
+    - name: minun
+      url: https://pokeapi.co/api/v2/pokemon/312/
+    - name: volbeat
+      url: https://pokeapi.co/api/v2/pokemon/313/
+    - name: illumise
+      url: https://pokeapi.co/api/v2/pokemon/314/
+    - name: spinda
+      url: https://pokeapi.co/api/v2/pokemon/327/
+    - name: absol
+      url: https://pokeapi.co/api/v2/pokemon/359/
+    - name: huntail
+      url: https://pokeapi.co/api/v2/pokemon/367/
+    - name: gorebyss
+      url: https://pokeapi.co/api/v2/pokemon/368/
+    - name: buizel
+      url: https://pokeapi.co/api/v2/pokemon/418/
+    - name: ambipom
+      url: https://pokeapi.co/api/v2/pokemon/424/
+    - name: drifloon
+      url: https://pokeapi.co/api/v2/pokemon/425/
+    - name: drifblim
+      url: https://pokeapi.co/api/v2/pokemon/426/
+    - name: buneary
+      url: https://pokeapi.co/api/v2/pokemon/427/
+    - name: lopunny
+      url: https://pokeapi.co/api/v2/pokemon/428/
+    - name: mime-jr
+      url: https://pokeapi.co/api/v2/pokemon/439/
+    - name: patrat
+      url: https://pokeapi.co/api/v2/pokemon/504/
+    - name: watchog
+      url: https://pokeapi.co/api/v2/pokemon/505/
+    - name: munna
+      url: https://pokeapi.co/api/v2/pokemon/517/
+    - name: sewaddle
+      url: https://pokeapi.co/api/v2/pokemon/540/
+    - name: scolipede
+      url: https://pokeapi.co/api/v2/pokemon/545/
+    - name: deerling
+      url: https://pokeapi.co/api/v2/pokemon/585/
+    - name: emolga
+      url: https://pokeapi.co/api/v2/pokemon/587/
+    - name: shelmet
+      url: https://pokeapi.co/api/v2/pokemon/616/
+    - name: mienfoo
+      url: https://pokeapi.co/api/v2/pokemon/619/
+    - name: durant
+      url: https://pokeapi.co/api/v2/pokemon/632/
+    - name: hawlucha
+      url: https://pokeapi.co/api/v2/pokemon/701/
+    - name: rowlet
+      url: https://pokeapi.co/api/v2/pokemon/722/
+    - name: oricorio-baile
+      url: https://pokeapi.co/api/v2/pokemon/741/
+    - name: cutiefly
+      url: https://pokeapi.co/api/v2/pokemon/742/
+    - name: pyukumuku
+      url: https://pokeapi.co/api/v2/pokemon/771/
+    - name: mawile-mega
+      url: https://pokeapi.co/api/v2/pokemon/10052/
+    - name: absol-mega
+      url: https://pokeapi.co/api/v2/pokemon/10057/
+    - name: lopunny-mega
+      url: https://pokeapi.co/api/v2/pokemon/10088/
+    - name: oricorio-pom-pom
+      url: https://pokeapi.co/api/v2/pokemon/10123/
+    - name: oricorio-pau
+      url: https://pokeapi.co/api/v2/pokemon/10124/
+    - name: oricorio-sensu
+      url: https://pokeapi.co/api/v2/pokemon/10125/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1618/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: unique
+        url: https://pokeapi.co/api/v2/move-category/13/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: baton-pass
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30D0\u30C8\u30F3\u30BF\u30C3\u30C1"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uBC14\uD1A4\uD130\uCE58"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u63A5\u68D2"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Relais
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Stafette
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Relevo
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Staffetta
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Baton Pass
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30D0\u30C8\u30F3\u30BF\u30C3\u30C1"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u63A5\u68D2"
+    past_values: []
+    power: 0
+    pp: 40
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/16/
+    target:
+      name: user
+      url: https://pokeapi.co/api/v2/move-target/7/
+    type:
+      name: normal
+      url: https://pokeapi.co/api/v2/type/1/

@@ -1,0 +1,443 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: instruct
+  m_EditorClassIdentifier: 
+  name: Instruct
+  description: "The user instructs the target to use the target\u2019s last\nmove
+    again."
+  type: 11
+  power: 0
+  accuracy: 0
+  alwaysHits: 0
+  pp: 15
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 689
+  pokeApiMove:
+    accuracy: 0
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: The target immediately uses its most recently-used move.  This is independent
+        of the target's normal action for the turn (i.e., it may end up moving twice),
+        but otherwise functions as usual, including deduction of PP.  This effect
+        works for disabled moves and ignores torment.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Forces the target to repeat its last used move.
+    flavor_text_entries:
+    - flavor_text: "\u3042\u3044\u3066\u304C\u3000\u3060\u3057\u305F\u3000\u308F\u3056\u3092\n\u3057\u3058\u3057\u3066\u3000\u3082\u3046\u3044\u3061\u3069\n\u3060\u3055\u305B\u308B\u3000\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC0C1\uB300\uC5D0\uAC8C \uC9C0\uC2DC\uD558\uC5EC\n\uC0C1\uB300\uAC00
+        \uC4F4 \uAE30\uC220\uC744\n\uB2E4\uC2DC \uD55C \uBC88 \uC4F0\uAC8C \uD560
+        \uC218 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5C0D\u624B\u4F7F\u51FA\u62DB\u5F0F\u4E4B\u5F8C\uFF0C\n\u80FD\u5920\u900F\u904E\u6307\u4EE4\u8B93\u5C0D\u624B\n\u518D\u6B21\u4F7F\u51FA\u76F8\u540C\u62DB\u5F0F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Force la cible \xE0 lancer imm\xE9diatement la derni\xE8re\ncapacit\xE9
+        qu\u2019elle a utilis\xE9e."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Der Anwender befiehlt dem Ziel, dessen zuletzt\nausgef\xFChrte
+        Attacke sofort wieder einzusetzen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Fuerza al objetivo a repetir inmediatamente su \xFAltimo\nmovimiento."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Costringe il bersaglio a ripetere immediatamente\nl\u2019ultima
+        mossa che ha sferrato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user instructs the target to use the target\u2019s last\nmove
+        again."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u76F8\u624B\u304C\u3000\u51FA\u3057\u305F\u3000\u6280\u3092\n\u6307\u793A\u3057\u3066\u3000\u3082\u3046\u4E00\u5EA6\n\u51FA\u3055\u305B\u308B\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5411\u5BF9\u624B\u4E0B\u8FBE\u6307\u793A\uFF0C\n\u8BA9\u5176\u518D\u6B21\u4F7F\u51FA\u521A\u624D\u7684\u62DB\u5F0F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3042\u3044\u3066\u304C\u3000\u3060\u3057\u305F\u3000\u308F\u3056\u3092\n\u3057\u3058\u3057\u3066\u3000\u3082\u3046\u3044\u3061\u3069\n\u3060\u3055\u305B\u308B\u3000\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC0C1\uB300\uC5D0\uAC8C \uC9C0\uC2DC\uD558\uC5EC\n\uC0C1\uB300\uAC00
+        \uC4F4 \uAE30\uC220\uC744\n\uB2E4\uC2DC \uD55C \uBC88 \uC4F0\uAC8C \uD560
+        \uC218 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5C0D\u624B\u4F7F\u51FA\u62DB\u5F0F\u4E4B\u5F8C\uFF0C\n\u80FD\u5920\u900F\u904E\u6307\u4EE4\u8B93\u5C0D\u624B\n\u518D\u6B21\u4F7F\u51FA\u76F8\u540C\u62DB\u5F0F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Force la cible \xE0 lancer imm\xE9diatement la derni\xE8re\ncapacit\xE9
+        qu\u2019elle a utilis\xE9e."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Der Anwender befiehlt dem Ziel, dessen zuletzt\nausgef\xFChrte
+        Attacke sofort wieder einzusetzen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Fuerza al objetivo a repetir inmediatamente su \xFAltimo\nmovimiento."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Costringe il bersaglio a ripetere immediatamente\nl\u2019ultima
+        mossa che ha sferrato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user instructs the target to use the target\u2019s last\nmove
+        again."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u76F8\u624B\u304C\u3000\u51FA\u3057\u305F\u3000\u6280\u3092\n\u6307\u793A\u3057\u3066\u3000\u3082\u3046\u4E00\u5EA6\n\u51FA\u3055\u305B\u308B\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5411\u5BF9\u624B\u4E0B\u8FBE\u6307\u793A\uFF0C\n\u8BA9\u5176\u518D\u6B21\u4F7F\u51FA\u521A\u624D\u7684\u62DB\u5F0F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3042\u3044\u3066\u304C\u3000\u3060\u3057\u305F\u3000\u308F\u3056\u3092\n\u3057\u3058\u3057\u3066\u3000\u3082\u3046\u3044\u3061\u3069\n\u3060\u3055\u305B\u308B\u3000\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC0C1\uB300\uC5D0\uAC8C \uC9C0\uC2DC\uD558\uC5EC\n\uC0C1\uB300\uAC00
+        \uC4F4 \uAE30\uC220\uC744\n\uB2E4\uC2DC \uD55C \uBC88 \uC4F0\uAC8C \uD560
+        \uC218 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5C0D\u624B\u4F7F\u51FA\u62DB\u5F0F\u4E4B\u5F8C\uFF0C\n\u80FD\u5920\u900F\u904E\u6307\u4EE4\u8B93\u5C0D\u624B\n\u518D\u6B21\u4F7F\u51FA\u76F8\u540C\u62DB\u5F0F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Force la cible \xE0 lancer imm\xE9diatement la derni\xE8re\ncapacit\xE9
+        qu\u2019elle a utilis\xE9e."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Der Anwender befiehlt dem Ziel, dessen zuletzt\nausgef\xFChrte
+        Attacke sofort wieder einzusetzen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Fuerza al objetivo a repetir inmediatamente su \xFAltimo\nmovimiento."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Costringe il bersaglio a ripetere immediatamente\nl\u2019ultima
+        mossa che ha sferrato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user instructs the target to use the target\u2019s last\nmove
+        again."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u76F8\u624B\u304C\u3000\u51FA\u3057\u305F\u3000\u6280\u3092\n\u6307\u793A\u3057\u3066\u3000\u3082\u3046\u4E00\u5EA6\n\u51FA\u3055\u305B\u308B\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5411\u5BF9\u624B\u4E0B\u8FBE\u6307\u793A\uFF0C\n\u8BA9\u5176\u518D\u6B21\u4F7F\u51FA\u521A\u624D\u7684\u62DB\u5F0F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3042\u3044\u3066\u304C\u3000\u3060\u3057\u305F\u3000\u308F\u3056\u3092\n\u3057\u3058\u3057\u3066\u3000\u3082\u3046\u3044\u3061\u3069\n\u3060\u3055\u305B\u308B\u3000\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC0C1\uB300\uC5D0\uAC8C \uC9C0\uC2DC\uD558\uC5EC\n\uC0C1\uB300\uAC00
+        \uC4F4 \uAE30\uC220\uC744\n\uB2E4\uC2DC \uD55C\uBC88 \uC4F0\uAC8C \uD560
+        \uC218 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5C0D\u624B\u4F7F\u51FA\u62DB\u5F0F\u4E4B\u5F8C\uFF0C\n\u80FD\u5920\u900F\u904E\u6307\u4EE4\u8B93\u5C0D\u624B\n\u518D\u6B21\u4F7F\u51FA\u76F8\u540C\u62DB\u5F0F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Force la cible \xE0 lancer imm\xE9diatement la derni\xE8re\ncapacit\xE9
+        qu\u2019elle a utilis\xE9e."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender befiehlt dem Ziel, dessen zuletzt\nausgef\xFChrte
+        Attacke sofort wieder einzusetzen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Fuerza al objetivo a repetir inmediatamente su \xFAltimo\nmovimiento."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Costringe il bersaglio a ripetere immediatamente\nl\u2019ultima
+        mossa che ha sferrato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user instructs the target to use the target\u2019s last\nmove
+        again."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u76F8\u624B\u304C\u3000\u51FA\u3057\u305F\u3000\u6280\u3092\n\u6307\u793A\u3057\u3066\u3000\u3082\u3046\u4E00\u5EA6\n\u51FA\u3055\u305B\u308B\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5411\u5BF9\u624B\u4E0B\u8FBE\u6307\u793A\uFF0C\n\u8BA9\u5176\u518D\u6B21\u4F7F\u51FA\u521A\u624D\u7684\u62DB\u5F0F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vii
+      url: https://pokeapi.co/api/v2/generation/7/
+    id: 689
+    learned_by_pokemon:
+    - name: oranguru
+      url: https://pokeapi.co/api/v2/pokemon/765/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: unique
+        url: https://pokeapi.co/api/v2/move-category/13/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: instruct
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3055\u3044\u306F\u3044"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC9C0\uD718"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u865F\u4EE4"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Sommation
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Kommando
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Mandato
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Imposizione
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Instruct
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3055\u3044\u306F\u3044"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u53F7\u4EE4"
+    past_values: []
+    power: 0
+    pp: 15
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: psychic
+      url: https://pokeapi.co/api/v2/type/14/

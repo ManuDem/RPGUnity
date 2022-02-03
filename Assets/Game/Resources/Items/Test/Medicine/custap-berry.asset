@@ -1,0 +1,536 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b45244fea143c488759de6367d9e38, type: 3}
+  m_Name: custap-berry
+  m_EditorClassIdentifier: 
+  name: Custap Berry
+  description: "A Poffin ingredient. If held by a\nPok\xE9mon, it gets to move first
+    just\nonce in a pinch."
+  icon: {fileID: 21300000, guid: 5ac6edd6d5c46784f897fc1aeb39359e, type: 3}
+  price: 0
+  isSellable: 0
+  id: 187
+  pokeApiItem:
+    attributes:
+    - name: holdable-active
+      url: https://pokeapi.co/api/v2/item-attribute/7/
+    baby_trigger_for:
+      name: 
+      url: 
+    category:
+      name: in-a-pinch
+      url: https://pokeapi.co/api/v2/item-category/5/
+    cost: 80
+    effect_entries:
+    - effect: 'Held in battle
+
+        :   When the holder has 1/4 its max HP remaining
+        or less, it consumes this item.  On the following turn, the holder will act
+        first among moves with the same priority, regardless of Speed.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: 'Held: Consumed at 1/4 max HP when using a move to go first.'
+    flavor_text_entries:
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Poffin ingredient. If held by a\nPok\xE9mon, it gets to move first
+        just\nonce in a pinch."
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Poffin ingredient. If held by a\nPok\xE9mon, it gets to move first
+        just\nonce in a pinch."
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "If held by a Pok\xE9mon, it gets to move\nfirst just once in a pinch."
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Tenue, cette Baie permet d\u2019attaquer\nen premier une fois en cas
+        de besoin."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "If held by a Pok\xE9mon, it gets to move\nfirst just once in a pinch."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "If held by a Pok\xE9mon, it gets to move\nfirst just once in a pinch."
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3082\u305F\u305B\u308B\u3068\n\u30D4\u30F3\u30C1\u306E\u3068\u304D\u3000\u3044\u3061\u3069\u3060\u3051\n\u3053\u3046\u3069\u3046\u304C\u3000\u306F\u3084\u304F\u306A\u308B\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uC9C0\uB2C8\uAC8C \uD558\uBA74\n\uC704\uAE09\uD560
+        \uB54C \uD55C \uBC88\uB9CC\n\uD589\uB3D9\uC774 \uBE68\uB77C\uC9C4\uB2E4."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Tenue, cette Baie permet d\u2019attaquer en premier\nune fois en cas
+        de besoin."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Als getragenes Item erm\xF6glicht diese Beere dem\nTr\xE4ger in einer
+        Notlage den Erstschlag."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Tiene un d\xE9bil brillo rosado y debe llevarla\nClamperl. Sube la Defensa
+        Especial."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Se il Pok\xE9mon che ha questa bacca si trova\nin difficolt\xE0, sferra
+        la sua mossa per primo.\nFunziona una sola volta."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Berry to be consumed by Pok\xE9mon.\nIf a Pok\xE9mon holds one, it
+        will be able to\nmove first just once when it\u2019s in a pinch."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u6301\u305F\u305B\u308B\u3068\n\u30D4\u30F3\u30C1\u306E\u3068\u304D\u3000\uFF11\u5EA6\u3060\u3051\n\u884C\u52D5\u304C\u3000\u65E9\u304F\u306A\u308B\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3082\u305F\u305B\u308B\u3068\n\u30D4\u30F3\u30C1\u306E\u3068\u304D\u3000\u3044\u3061\u3069\u3060\u3051\n\u3053\u3046\u3069\u3046\u304C\u3000\u306F\u3084\u304F\u306A\u308B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uC9C0\uB2C8\uAC8C \uD558\uBA74\n\uC704\uAE09\uD560
+        \uB54C \uD55C \uBC88\uB9CC\n\uD589\uB3D9\uC774 \uBE68\uB77C\uC9C4\uB2E4."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u8B93\u5BF6\u53EF\u5922\u651C\u5E36\u5F8C\uFF0C\n\u5371\u6A5F\u6642\uFF0C\u884C\u52D5\u6703\u50C5\n\u8B8A\u5FEB\uFF11\u6B21\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Tenue, cette Baie permet d\u2019utiliser une capacit\xE9\nen priorit\xE9
+        une fois en cas de besoin."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Als getragenes Item erm\xF6glicht diese Beere dem\nTr\xE4ger in einer
+        Notlage den Erstschlag."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "El Pok\xE9mon que la lleva puede actuar en primer\nlugar una vez cuando
+        se encuentra en un momento\nde apuro."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Se il Pok\xE9mon che ha questa bacca si trova\nin difficolt\xE0, sferra
+        la sua mossa per primo.\nFunziona una sola volta."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Berry to be consumed by Pok\xE9mon. If a Pok\xE9mon\nholds one, it
+        will be able to move first just once\nwhen it\u2019s in a pinch."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u6301\u305F\u305B\u308B\u3068\n\u30D4\u30F3\u30C1\u306E\u3068\u304D\u3000\uFF11\u5EA6\u3060\u3051\n\u884C\u52D5\u304C\u3000\u65E9\u304F\u306A\u308B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u8BA9\u5B9D\u53EF\u68A6\u643A\u5E26\u540E\uFF0C\u5371\u673A\u65F6\uFF0C\n\u884C\u52A8\u4EC5\u4F1A\u53D8\u5FEB\uFF11\u6B21\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3082\u305F\u305B\u308B\u3068\n\u30D4\u30F3\u30C1\u306E\u3068\u304D\u3000\u3044\u3061\u3069\u3060\u3051\n\u3053\u3046\u3069\u3046\u304C\u3000\u306F\u3084\u304F\u306A\u308B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uC9C0\uB2C8\uAC8C \uD558\uBA74\n\uC704\uAE09\uD560
+        \uB54C \uD55C \uBC88\uB9CC\n\uD589\uB3D9\uC774 \uBE68\uB77C\uC9C4\uB2E4."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u8B93\u5BF6\u53EF\u5922\u651C\u5E36\u5F8C\uFF0C\n\u5371\u6A5F\u6642\uFF0C\u884C\u52D5\u6703\u50C5\n\u8B8A\u5FEB\uFF11\u6B21\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Tenue, cette Baie permet d\u2019utiliser une capacit\xE9\nen priorit\xE9
+        une fois en cas de besoin."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Als getragenes Item erm\xF6glicht diese Beere dem\nTr\xE4ger in einer
+        Notlage den Erstschlag."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "El Pok\xE9mon que la lleva puede actuar en primer\nlugar una vez cuando
+        se encuentra en un momento\nde apuro."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Se il Pok\xE9mon che ha questa bacca si trova\nin difficolt\xE0, sferra
+        la sua mossa per primo.\nFunziona una sola volta."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Berry to be consumed by Pok\xE9mon. If a Pok\xE9mon\nholds one, it
+        will be able to move first just once\nwhen it\u2019s in a pinch."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u6301\u305F\u305B\u308B\u3068\n\u30D4\u30F3\u30C1\u306E\u3068\u304D\u3000\uFF11\u5EA6\u3060\u3051\n\u884C\u52D5\u304C\u3000\u65E9\u304F\u306A\u308B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u8BA9\u5B9D\u53EF\u68A6\u643A\u5E26\u540E\uFF0C\u5371\u673A\u65F6\uFF0C\n\u884C\u52A8\u4EC5\u4F1A\u53D8\u5FEB\uFF11\u6B21\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3082\u305F\u305B\u308B\u3068\n\u30D4\u30F3\u30C1\u306E\u3068\u304D\u3000\u3044\u3061\u3069\u3060\u3051\n\u3053\u3046\u3069\u3046\u304C\u3000\u306F\u3084\u304F\u306A\u308B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uC9C0\uB2C8\uAC8C \uD558\uBA74\n\uC704\uAE09\uD560
+        \uB54C \uD55C \uBC88\uB9CC\n\uD589\uB3D9\uC774 \uBE68\uB77C\uC9C4\uB2E4."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u8B93\u5BF6\u53EF\u5922\u651C\u5E36\u5F8C\uFF0C\n\u5371\u6A5F\u6642\uFF0C\u884C\u52D5\u6703\u50C5\n\u8B8A\u5FEB\uFF11\u6B21\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Tenue, cette Baie permet d\u2019utiliser une capacit\xE9\nen priorit\xE9
+        une fois en cas de besoin."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Als getragenes Item erm\xF6glicht diese Beere dem\nTr\xE4ger in einer
+        Notlage den Erstschlag."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "El Pok\xE9mon que la lleva puede actuar en primer lugar\nuna vez cuando
+        se encuentra en un momento de apuro."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Se il Pok\xE9mon che ha questa bacca si trova\nin difficolt\xE0, sferra
+        la sua mossa per primo.\nFunziona una sola volta."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Berry to be consumed by Pok\xE9mon. If a Pok\xE9mon\nholds one, it
+        will be able to move first just once\nwhen it\u2019s in a pinch."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u6301\u305F\u305B\u308B\u3068\n\u30D4\u30F3\u30C1\u306E\u3068\u304D\u3000\uFF11\u5EA6\u3060\u3051\n\u884C\u52D5\u304C\u3000\u65E9\u304F\u306A\u308B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u8BA9\u5B9D\u53EF\u68A6\u643A\u5E26\u540E\uFF0C\u5371\u673A\u65F6\uFF0C\n\u884C\u52A8\u4EC5\u4F1A\u53D8\u5FEB\uFF11\u6B21\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3082\u305F\u305B\u308B\u3068\n\u30D4\u30F3\u30C1\u306E\u3068\u304D\u3000\u3044\u3061\u3069\u3060\u3051\n\u3053\u3046\u3069\u3046\u304C\u3000\u306F\u3084\u304F\u306A\u308B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uD3EC\uCF13\uBAAC\uC5D0\uAC8C \uC9C0\uB2C8\uAC8C \uD558\uBA74\n\uC704\uAE09\uD560
+        \uB54C \uD55C \uBC88\uB9CC\n\uD589\uB3D9\uC774 \uBE68\uB77C\uC9C4\uB2E4."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u8B93\u5BF6\u53EF\u5922\u651C\u5E36\u5F8C\uFF0C\n\u5371\u6A5F\u6642\uFF0C\u884C\u52D5\u6703\u50C5\n\u8B8A\u5FEB\uFF11\u6B21\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Tenue, cette Baie permet d\u2019utiliser une capacit\xE9\nen priorit\xE9
+        une fois en cas de besoin."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Als getragenes Item erm\xF6glicht diese Beere dem Tr\xE4ger\nin einer
+        Notlage den Erstschlag."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "El Pok\xE9mon que la lleva puede actuar en primer lugar\nuna vez cuando
+        se encuentra en un momento de apuro."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Se il Pok\xE9mon che ha questa bacca si trova\nin difficolt\xE0, sferra
+        la sua mossa per primo.\nFunziona una sola volta."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Berry to be consumed by Pok\xE9mon. If a Pok\xE9mon\nholds one, it
+        will be able to move first just once\nwhen it\u2019s in a pinch."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u6301\u305F\u305B\u308B\u3068\n\u30D4\u30F3\u30C1\u306E\u3068\u304D\u3000\uFF11\u5EA6\u3060\u3051\n\u884C\u52D5\u304C\u3000\u65E9\u304F\u306A\u308B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u8BA9\u5B9D\u53EF\u68A6\u643A\u5E26\u540E\uFF0C\u5371\u673A\u65F6\uFF0C\n\u884C\u52A8\u4EC5\u4F1A\u53D8\u5FEB\uFF11\u6B21\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    fling_effect:
+      name: 
+      url: 
+    fling_power: 10
+    game_indices:
+    - game_index: 210
+      generation:
+        name: generation-iv
+        url: https://pokeapi.co/api/v2/generation/4/
+    - game_index: 210
+      generation:
+        name: generation-v
+        url: https://pokeapi.co/api/v2/generation/5/
+    - game_index: 210
+      generation:
+        name: generation-vi
+        url: https://pokeapi.co/api/v2/generation/6/
+    - game_index: 210
+      generation:
+        name: generation-vii
+        url: https://pokeapi.co/api/v2/generation/7/
+    - game_index: 210
+      generation:
+        name: generation-viii
+        url: https://pokeapi.co/api/v2/generation/8/
+    held_by_pokemon: 
+    id: 187
+    machines: []
+    name: custap-berry
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30A4\u30D0\u30F3\u306E\u307F"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC560\uC288\uC5F4\uB9E4"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u91CB\u9640\u679C"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "Baie Ch\xE9rim"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Eipfelbeere
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Baya Chiri
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Baccacrela
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Custap Berry
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30A4\u30D0\u30F3\u306E\u307F"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u91CA\u9640\u679C"
+    sprites:
+      defaul: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/custap-berry.png
+  canUseInBattle: 0
+  canUseOutsideBattle: 0
+  hpAmount: 0
+  restoreMaxHP: 0
+  ppAmount: 0
+  restoreMaxPP: 0
+  status: 0
+  recoverAllStatus: 0
+  revive: 0
+  maxRevive: 0

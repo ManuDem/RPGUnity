@@ -1,0 +1,661 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: healing-wish
+  m_EditorClassIdentifier: 
+  name: Healing Wish
+  description: "The user faints. In\nreturn, the Pok\xE9mon\ntaking its place will\nhave
+    its HP restored\nand status cured."
+  type: 11
+  power: 0
+  accuracy: 0
+  alwaysHits: 0
+  pp: 10
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 361
+  pokeApiMove:
+    accuracy: 0
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: cute
+      url: https://pokeapi.co/api/v2/contest-type/3/
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: "User faints.  Its replacement's HP is fully restored, and any major
+        status effect is removed.  If the replacement Pok\xE9mon is immediately fainted
+        by a switch-in effect, the next replacement is healed by this move instead."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: User faints.  Its replacement has its HP fully restored and any
+        major status effect removed.
+    flavor_text_entries:
+    - flavor_text: "The user faints. In\nreturn, the Pok\xE9mon\ntaking its place
+        will\nhave its HP restored\nand status cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "The user faints. In\nreturn, the Pok\xE9mon\ntaking its place
+        will\nhave its HP restored\nand status cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "The user faints. In\nreturn, the Pok\xE9mon\ntaking its place
+        will\nhave its HP restored\nand status cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Le lanceur tombe K.O. pour soigner les\nPV et le statut du Pok\xE9mon
+        qui passe\napr\xE8s lui."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user faints. In return, the Pok\xE9mon\ntaking its place
+        will have its HP restored\nand status cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user faints. In return, the Pok\xE9mon\ntaking its place
+        will have its HP restored\nand status cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3072\u304B\u3048\u304B\u3089\n\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\u3000\u3058\u3087\u3046\u305F\u3044\n\u3044\u3058\u3087\u3046\u3068\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uC9C0\uB9CC\n\uAD50\uB300\uD558\uC5EC
+        \uB098\uC624\uB294 \uD3EC\uCF13\uBAAC\uC758\n\uC0C1\uD0DC \uC774\uC0C1\uACFC
+        HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Le lanceur tombe K.O. pour soigner les PV et le\nstatut du Pok\xE9mon
+        qui passe apr\xE8s lui."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Anwender geht K.O. Das an seine Stelle tretende\nPok\xE9mon hat
+        volle KP. Statusprobleme werden\ngeheilt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "El Pok\xE9mon cae debilitado, pero su sustituto\nrecupera su
+        estado y los PS."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa va KO, ma il Pok\xE9mon che lo sostituisce\nrecupera
+        tutti i PS e guarisce dai problemi di stato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user faints. In return, the Pok\xE9mon\ntaking its place
+        will have its HP restored\nand status conditions cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\n\u63A7\u3048\u304B\u3089\u3000\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\n\u72B6\u614B\u7570\u5E38\u3068\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3072\u304B\u3048\u304B\u3089\n\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\u3000\u3058\u3087\u3046\u305F\u3044\n\u3044\u3058\u3087\u3046\u3068\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uC9C0\uB9CC\n\uAD50\uB300\uD558\uC5EC
+        \uB098\uC624\uB294 \uD3EC\uCF13\uBAAC\uC758\n\uC0C1\uD0DC \uC774\uC0C1\uACFC
+        HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Le lanceur tombe K.O. pour soigner les PV et le\nstatut du Pok\xE9mon
+        qui passe apr\xE8s lui."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Anwender geht K.O. Das an seine Stelle tretende\nPok\xE9mon hat
+        volle KP. Statusprobleme werden\ngeheilt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "El Pok\xE9mon cae debilitado, pero su sustituto\nrecupera su
+        estado y los PS."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa va KO, ma il Pok\xE9mon che lo sostituisce\nrecupera
+        tutti i PS e guarisce dai problemi di stato. "
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user faints. In return, the Pok\xE9mon\ntaking its place
+        will have its HP restored\nand status conditions cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\n\u63A7\u3048\u304B\u3089\u3000\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\n\u72B6\u614B\u7570\u5E38\u3068\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3072\u304B\u3048\u304B\u3089\n\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\u3000\u3058\u3087\u3046\u305F\u3044\n\u3044\u3058\u3087\u3046\u3068\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uC9C0\uB9CC\n\uAD50\uB300\uD558\uC5EC
+        \uB098\uC624\uB294 \uD3EC\uCF13\uBAAC\uC758\n\uC0C1\uD0DC \uC774\uC0C1\uACFC
+        HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u6CBB\u7652\u63A5\u66FF\u4E0A\u5834\u7684\n\u5BF6\u53EF\u5922\u7684\u7570\u5E38\u72C0\u614B\u4E26\u56DE\u5FA9\uFF28\uFF30\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le lanceur tombe K.O. pour soigner les PV et\nle statut du Pok\xE9mon
+        qui passe apr\xE8s lui."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Anwender geht K.O. Das an seine Stelle tretende\nPok\xE9mon hat
+        volle KP. Statusprobleme werden\ngeheilt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "El Pok\xE9mon cae debilitado, pero su sustituto\nrecupera su
+        estado y los PS."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa va KO, ma il Pok\xE9mon che lo sostituisce\nrecupera
+        tutti i PS e guarisce dai problemi di stato. "
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user faints. In return, the Pok\xE9mon taking its\nplace
+        will have its HP restored and status\nconditions cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\n\u63A7\u3048\u304B\u3089\u3000\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\n\u72B6\u614B\u7570\u5E38\u3068\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u867D\u7136\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u6CBB\u6108\u540E\u5907\u4E0A\u573A\u7684\n\u5B9D\u53EF\u68A6\u7684\u5F02\u5E38\u72B6\u6001\u4EE5\u53CA\u56DE\u590D\uFF28\uFF30\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3072\u304B\u3048\u304B\u3089\n\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\u3000\u3058\u3087\u3046\u305F\u3044\n\u3044\u3058\u3087\u3046\u3068\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uC9C0\uB9CC\n\uAD50\uB300\uD558\uC5EC
+        \uB098\uC624\uB294 \uD3EC\uCF13\uBAAC\uC758\n\uC0C1\uD0DC \uC774\uC0C1\uACFC
+        HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u6CBB\u7652\u63A5\u66FF\u4E0A\u5834\u7684\n\u5BF6\u53EF\u5922\u7684\u7570\u5E38\u72C0\u614B\u4E26\u56DE\u5FA9\uFF28\uFF30\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le lanceur tombe K.O. pour soigner les PV et\nle statut du Pok\xE9mon
+        qui passe apr\xE8s lui."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Anwender geht K.O. Das an seine Stelle tretende\nPok\xE9mon hat
+        volle KP. Statusprobleme werden\ngeheilt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "El Pok\xE9mon cae debilitado, pero su sustituto\nrecupera su
+        estado y los PS."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa va KO, ma il Pok\xE9mon che lo sostituisce\nrecupera
+        tutti i PS e guarisce dai problemi di stato. "
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user faints. In return, the Pok\xE9mon taking its\nplace
+        will have its HP restored and status\nconditions cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\n\u63A7\u3048\u304B\u3089\u3000\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\n\u72B6\u614B\u7570\u5E38\u3068\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u867D\u7136\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u6CBB\u6108\u540E\u5907\u4E0A\u573A\u7684\n\u5B9D\u53EF\u68A6\u7684\u5F02\u5E38\u72B6\u6001\u4EE5\u53CA\u56DE\u590D\uFF28\uFF30\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3072\u304B\u3048\u304B\u3089\n\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\u3000\u3058\u3087\u3046\u305F\u3044\n\u3044\u3058\u3087\u3046\u3068\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uC9C0\uB9CC\n\uAD50\uB300\uD558\uC5EC
+        \uB098\uC624\uB294 \uD3EC\uCF13\uBAAC\uC758\n\uC0C1\uD0DC \uC774\uC0C1\uACFC
+        HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u6CBB\u7652\u63A5\u66FF\u4E0A\u5834\u7684\n\u5BF6\u53EF\u5922\u7684\u7570\u5E38\u72C0\u614B\u4E26\u56DE\u5FA9HP\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le lanceur tombe K.O. pour soigner les PV et le statut\ndu Pok\xE9mon
+        qui passe apr\xE8s lui."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Anwender geht K.O. Das an seine Stelle tretende\nPok\xE9mon hat
+        volle KP. Statusprobleme werden\ngeheilt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "El Pok\xE9mon cae debilitado, pero su sustituto\nrecupera su
+        estado y los PS."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa va KO, ma il Pok\xE9mon che lo sostituisce\nrecupera
+        tutti i PS e guarisce dai problemi di stato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user faints. In return, the Pok\xE9mon taking its\nplace
+        will have its HP restored and status\nconditions cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\n\u63A7\u3048\u304B\u3089\u3000\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\n\u72B6\u614B\u7570\u5E38\u3068\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u867D\u7136\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u6CBB\u6108\u540E\u5907\u4E0A\u573A\u7684\n\u5B9D\u53EF\u68A6\u7684\u5F02\u5E38\u72B6\u6001\u4EE5\u53CA\u56DE\u590DHP\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u3072\u304B\u3048\u304B\u3089\n\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\u3000\u3058\u3087\u3046\u305F\u3044\n\u3044\u3058\u3087\u3046\u3068\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uC9C0\uB9CC\n\uAD50\uB300\uD558\uC5EC
+        \uB098\uC624\uB294 \uD3EC\uCF13\uBAAC\uC758\n\uC0C1\uD0DC \uC774\uC0C1\uACFC
+        HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u6CBB\u7652\u63A5\u66FF\u4E0A\u5834\u7684\n\u5BF6\u53EF\u5922\u7684\u7570\u5E38\u72C0\u614B\u4E26\u56DE\u5FA9\uFF28\uFF30\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le lanceur tombe K.O. pour soigner les PV et le statut\ndu Pok\xE9mon
+        qui passe apr\xE8s lui."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Anwender geht K.O. Das an seine Stelle tretende\nPok\xE9mon hat
+        volle KP. Statusprobleme werden\ngeheilt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "El Pok\xE9mon cae debilitado, pero su sustituto recupera\nsu
+        estado y los PS."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa va KO, ma il Pok\xE9mon che lo sostituisce\nrecupera
+        tutti i PS e guarisce dai problemi di stato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user faints. In return, the Pok\xE9mon taking its\nplace
+        will have its HP restored and status\nconditions cured."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\n\u63A7\u3048\u304B\u3089\u3000\u3067\u3066\u304F\u308B\u3000\u30DD\u30B1\u30E2\u30F3\u306E\n\u72B6\u614B\u7570\u5E38\u3068\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u867D\u7136\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u6CBB\u6108\u540E\u5907\u4E0A\u573A\u7684\n\u5B9D\u53EF\u68A6\u7684\u5F02\u5E38\u72B6\u6001\u4EE5\u53CA\u56DE\u590D\uFF28\uFF30\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-iv
+      url: https://pokeapi.co/api/v2/generation/4/
+    id: 361
+    learned_by_pokemon:
+    - name: clefairy
+      url: https://pokeapi.co/api/v2/pokemon/35/
+    - name: chansey
+      url: https://pokeapi.co/api/v2/pokemon/113/
+    - name: blissey
+      url: https://pokeapi.co/api/v2/pokemon/242/
+    - name: celebi
+      url: https://pokeapi.co/api/v2/pokemon/251/
+    - name: gardevoir
+      url: https://pokeapi.co/api/v2/pokemon/282/
+    - name: chimecho
+      url: https://pokeapi.co/api/v2/pokemon/358/
+    - name: latias
+      url: https://pokeapi.co/api/v2/pokemon/380/
+    - name: jirachi
+      url: https://pokeapi.co/api/v2/pokemon/385/
+    - name: cherubi
+      url: https://pokeapi.co/api/v2/pokemon/420/
+    - name: buneary
+      url: https://pokeapi.co/api/v2/pokemon/427/
+    - name: lopunny
+      url: https://pokeapi.co/api/v2/pokemon/428/
+    - name: mime-jr
+      url: https://pokeapi.co/api/v2/pokemon/439/
+    - name: mesprit
+      url: https://pokeapi.co/api/v2/pokemon/481/
+    - name: shaymin-land
+      url: https://pokeapi.co/api/v2/pokemon/492/
+    - name: munna
+      url: https://pokeapi.co/api/v2/pokemon/517/
+    - name: audino
+      url: https://pokeapi.co/api/v2/pokemon/531/
+    - name: petilil
+      url: https://pokeapi.co/api/v2/pokemon/548/
+    - name: alomomola
+      url: https://pokeapi.co/api/v2/pokemon/594/
+    - name: gardevoir-mega
+      url: https://pokeapi.co/api/v2/pokemon/10051/
+    - name: latias-mega
+      url: https://pokeapi.co/api/v2/pokemon/10062/
+    - name: lopunny-mega
+      url: https://pokeapi.co/api/v2/pokemon/10088/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: unique
+        url: https://pokeapi.co/api/v2/move-category/13/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: healing-wish
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3044\u3084\u3057\u306E\u306D\u304C\u3044"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uCE58\uC720\uC18C\uC6D0"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u6CBB\u7652\u4E4B\u9858"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "V\u0153u Soin"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Heilopfer
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Deseo Cura
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Curardore
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Healing Wish
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3044\u3084\u3057\u306E\u306D\u304C\u3044"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u6CBB\u6108\u4E4B\u613F"
+    past_values: []
+    power: 0
+    pp: 10
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/8/
+    target:
+      name: user
+      url: https://pokeapi.co/api/v2/move-target/7/
+    type:
+      name: psychic
+      url: https://pokeapi.co/api/v2/type/14/

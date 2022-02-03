@@ -1,0 +1,538 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5810bf315e146de4e9f1544787543258, type: 3}
+  m_Name: power-herb
+  m_EditorClassIdentifier: 
+  name: Power Herb
+  description: "A single-use item to be held by a\nPok\xE9mon. It allows the immediate
+    use of\na move that charges on the first turn."
+  icon: {fileID: 21300000, guid: 098706a48c6c01742aef8e546abbeed2, type: 3}
+  price: 0
+  isSellable: 0
+  id: 248
+  pokeApiItem:
+    attributes:
+    - name: holdable
+      url: https://pokeapi.co/api/v2/item-attribute/5/
+    - name: holdable-active
+      url: https://pokeapi.co/api/v2/item-attribute/7/
+    baby_trigger_for:
+      name: 
+      url: 
+    category:
+      name: held-items
+      url: https://pokeapi.co/api/v2/item-category/12/
+    cost: 4000
+    effect_entries:
+    - effect: 'Held: Whenever the holder uses a move that requires a turn to charge
+        first (Bounce, Dig, Dive, Fly, Razor Wind, Skull Bash, Sky Attack, or Solarbeam),
+        this item is consumed and the charge is skipped.  Skull Bash still provides
+        a Defense boost.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: 'Held: Both turns of a two-turn charge move happen at once. Consumed
+        upon use.'
+    flavor_text_entries:
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A single-use item to be held by a\nPok\xE9mon. It allows the immediate
+        use of\na move that charges on the first turn."
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A single-use item to be held by a\nPok\xE9mon. It allows the immediate
+        use of\na move that charges on the first turn."
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A single-use item to be held by a\nPok\xE9mon. It allows the immediate
+        use of\na move that charges on the first turn."
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir et \xE0 usage unique. Permet\nd\u2019utiliser imm\xE9diatement
+        une capacit\xE9\nqui devrait se charger au premier tour."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A single-use item to be held by a\nPok\xE9mon. It allows the immediate
+        use of\na move that charges on the first turn."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A single-use item to be held by a\nPok\xE9mon. It allows the immediate
+        use of\na move that charges on the first turn."
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3082\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\u3044\u3061\u3069\u3060\u3051\n\uFF11\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3061\u304B\u3089\u3092\u3000\u305F\u3081\u308B\u308F\u3056\u3092\n\u3059\u3050\u306B\u3000\u3064\u304B\u3046\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC740 \uD55C \uBC88\uB9CC\n1\uD134\uC9F8\uC5D0
+        \uD798\uC744 \uBAA8\uC73C\uB294 \uAE30\uC220\uC744\n\uBC14\uB85C \uC0AC\uC6A9\uD560
+        \uC218\uAC00 \uC788\uB2E4."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir et \xE0 usage unique. Permet d\u2019utiliser\nimm\xE9diatement
+        une capacit\xE9 qui devrait se\ncharger au premier tour."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum einmaligen Tragen. Der Tr\xE4ger kann\ndadurch eine Attacke
+        sofort einsetzen, die sonst\naufgeladen werden muss."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Da\xF1a en cada turno al Pok\xE9mon que la lleva.\nPuede adherirse al
+        Pok\xE9mon que alcance con su\nataque al portador."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento monouso da dare a un Pok\xE9mon.\nPermette l\u2019uso immediato
+        di una mossa che in\ngenere richiede un turno prima di essere eseguita."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A single-use item to be held by a Pok\xE9mon.\nIt allows the holder
+        to immediately use a\nmove that normally requires a turn to charge."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u6301\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\uFF11\u5EA6\u3060\u3051\n\uFF11\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u3061\u304B\u3089\u3092\u3000\u305F\u3081\u308B\u6280\u3092\n\u3059\u3050\u306B\u3000\u4F7F\u3046\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3082\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\u3044\u3061\u3069\u3060\u3051\n\uFF11\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3061\u304B\u3089\u3092\u3000\u305F\u3081\u308B\u308F\u3056\u3092\n\u3059\u3050\u306B\u3000\u3064\u304B\u3046\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC740 \uD55C \uBC88\uB9CC\n1\uD134\uC9F8\uC5D0
+        \uD798\uC744 \uBAA8\uC73C\uB294 \uAE30\uC220\uC744\n\uBC14\uB85C \uC0AC\uC6A9\uD560
+        \uC218\uAC00 \uC788\uB2E4."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u651C\u5E36\u5B83\u7684\u5BF6\u53EF\u5922\u5C07\u6709\uFF11\u6B21\u6A5F\u6703\uFF0C\n\u53EF\u4EE5\u5728\uFF11\u56DE\u5408\u5167\u5C31\u767C\u52D5\n\u9700\u8981\u84C4\u529B\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir et \xE0 usage unique. Permet d\u2019utiliser\nimm\xE9diatement
+        une capacit\xE9 qui devrait se charger\nau premier tour."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum einmaligen Tragen. Der Tr\xE4ger kann\ndadurch eine Attacke
+        sofort einsetzen, die sonst\naufgeladen werden muss."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Permite el uso inmediato de cualquier movimiento\nen el primer turno.
+        Es de un solo uso y debe\nllevarla un Pok\xE9mon."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento monouso da dare a un Pok\xE9mon.\nPermette l\u2019uso immediato
+        di una mossa che in\ngenere richiede un turno prima di essere eseguita."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A single-use item to be held by a Pok\xE9mon. It\nallows the holder
+        to immediately use a move that\nnormally requires a turn to charge."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u6301\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\uFF11\u5EA6\u3060\u3051\n\uFF11\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u3061\u304B\u3089\u3092\u3000\u305F\u3081\u308B\u6280\u3092\n\u3059\u3050\u306B\u3000\u4F7F\u3046\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u643A\u5E26\u5B83\u7684\u5B9D\u53EF\u68A6\u4EC5\u6709\uFF11\u6B21\u673A\u4F1A\n\u53EF\u4EE5\u5728\u7B2C\uFF11\u56DE\u5408\u4F7F\u51FA\n\u9700\u8981\u84C4\u529B\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3082\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\u3044\u3061\u3069\u3060\u3051\n\uFF11\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3061\u304B\u3089\u3092\u3000\u305F\u3081\u308B\u308F\u3056\u3092\n\u3059\u3050\u306B\u3000\u3064\u304B\u3046\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC740 \uD55C \uBC88\uB9CC\n1\uD134\uC9F8\uC5D0
+        \uD798\uC744 \uBAA8\uC73C\uB294 \uAE30\uC220\uC744\n\uBC14\uB85C \uC0AC\uC6A9\uD560
+        \uC218\uAC00 \uC788\uB2E4."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u651C\u5E36\u5B83\u7684\u5BF6\u53EF\u5922\u5C07\u6709\uFF11\u6B21\u6A5F\u6703\uFF0C\n\u53EF\u4EE5\u5728\uFF11\u56DE\u5408\u5167\u5C31\u767C\u52D5\n\u9700\u8981\u84C4\u529B\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir et \xE0 usage unique. Permet d\u2019utiliser\nimm\xE9diatement
+        une capacit\xE9 qui devrait se charger\nau premier tour."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum einmaligen Tragen. Der Tr\xE4ger kann\ndadurch eine Attacke
+        sofort einsetzen, die sonst\naufgeladen werden muss."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Permite el uso inmediato de cualquier movimiento\nen el primer turno.
+        Es de un solo uso y debe\nllevarla un Pok\xE9mon."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento monouso da dare a un Pok\xE9mon.\nPermette l\u2019uso immediato
+        di una mossa che in\ngenere richiede un turno prima di essere eseguita."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A single-use item to be held by a Pok\xE9mon. It\nallows the holder
+        to immediately use a move that\nnormally requires a turn to charge."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u6301\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\uFF11\u5EA6\u3060\u3051\n\uFF11\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u3061\u304B\u3089\u3092\u3000\u305F\u3081\u308B\u6280\u3092\n\u3059\u3050\u306B\u3000\u4F7F\u3046\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u643A\u5E26\u5B83\u7684\u5B9D\u53EF\u68A6\u4EC5\u6709\uFF11\u6B21\u673A\u4F1A\n\u53EF\u4EE5\u5728\u7B2C\uFF11\u56DE\u5408\u4F7F\u51FA\n\u9700\u8981\u84C4\u529B\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3082\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\u3044\u3061\u3069\u3060\u3051\n\uFF11\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3061\u304B\u3089\u3092\u3000\u305F\u3081\u308B\u308F\u3056\u3092\n\u3059\u3050\u306B\u3000\u3064\u304B\u3046\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC740 \uD55C \uBC88\uB9CC\n1\uD134\uC9F8\uC5D0
+        \uD798\uC744 \uBAA8\uC73C\uB294 \uAE30\uC220\uC744\n\uBC14\uB85C \uC0AC\uC6A9\uD560
+        \uC218\uAC00 \uC788\uB2E4."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u651C\u5E36\u5B83\u7684\u5BF6\u53EF\u5922\u5C07\u6709\uFF11\u6B21\u6A5F\u6703\uFF0C\n\u53EF\u4EE5\u5728\uFF11\u56DE\u5408\u5167\u5C31\u767C\u52D5\n\u9700\u8981\u84C4\u529B\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir et \xE0 usage unique. Permet d\u2019utiliser\nimm\xE9diatement
+        une capacit\xE9 qui devrait se charger\nau premier tour."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum einmaligen Tragen. Der Tr\xE4ger kann\ndadurch eine Attacke
+        sofort einsetzen, die sonst\naufgeladen werden muss."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Permite el uso inmediato de cualquier movimiento\nen el primer turno.
+        Es de un solo uso y debe\nllevarla un Pok\xE9mon."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento monouso da dare a un Pok\xE9mon.\nPermette l\u2019uso immediato
+        di una mossa che in\ngenere richiede un turno prima di essere eseguita."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A single-use item to be held by a Pok\xE9mon. It\nallows the holder
+        to immediately use a move that\nnormally requires a turn to charge."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u6301\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\uFF11\u5EA6\u3060\u3051\n\uFF11\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u3061\u304B\u3089\u3092\u3000\u305F\u3081\u308B\u6280\u3092\n\u3059\u3050\u306B\u3000\u4F7F\u3046\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u643A\u5E26\u5B83\u7684\u5B9D\u53EF\u68A6\u4EC5\u6709\uFF11\u6B21\u673A\u4F1A\n\u53EF\u4EE5\u5728\u7B2C\uFF11\u56DE\u5408\u4F7F\u51FA\n\u9700\u8981\u84C4\u529B\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3082\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\u3044\u3061\u3069\u3060\u3051\n\uFF11\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3061\u304B\u3089\u3092\u3000\u305F\u3081\u308B\u308F\u3056\u3092\n\u3059\u3050\u306B\u3000\u3064\u304B\u3046\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC9C0\uB2C8\uAC8C \uD55C \uD3EC\uCF13\uBAAC\uC740 \uD55C \uBC88\uB9CC\n1\uD134\uC9F8\uC5D0
+        \uD798\uC744 \uBAA8\uC73C\uB294 \uAE30\uC220\uC744\n\uBC14\uB85C \uC0AC\uC6A9\uD560
+        \uC218\uAC00 \uC788\uB2E4."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u651C\u5E36\u5B83\u7684\u5BF6\u53EF\u5922\u5C07\u6709\uFF11\u6B21\u6A5F\u6703\uFF0C\n\u53EF\u4EE5\u5728\uFF11\u56DE\u5408\u5167\u5C31\u767C\u52D5\n\u9700\u8981\u84C4\u529B\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Objet \xE0 tenir et \xE0 usage unique. Permet d\u2019utiliser\nimm\xE9diatement
+        une capacit\xE9 qui devrait se charger\nau premier tour."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Item zum einmaligen Tragen. Der Tr\xE4ger kann\ndadurch eine Attacke
+        sofort einsetzen, die sonst\naufgeladen werden muss."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Permite el uso inmediato de cualquier movimiento en el\nprimer turno.
+        Es de un solo uso y debe llevarla un\nPok\xE9mon."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Strumento monouso da dare a un Pok\xE9mon.\nPermette l\u2019uso immediato
+        di una mossa che in\ngenere richiede un turno prima di essere eseguita."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A single-use item to be held by a Pok\xE9mon. It\nallows the holder
+        to immediately use a move that\nnormally requires a turn to charge."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u6301\u305F\u305B\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\u3000\uFF11\u5EA6\u3060\u3051\n\uFF11\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u3061\u304B\u3089\u3092\u3000\u305F\u3081\u308B\u6280\u3092\n\u3059\u3050\u306B\u3000\u4F7F\u3046\u3053\u3068\u304C\u3000\u3067\u304D\u308B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u643A\u5E26\u5B83\u7684\u5B9D\u53EF\u68A6\u4EC5\u6709\uFF11\u6B21\u673A\u4F1A\n\u53EF\u4EE5\u5728\u7B2C\uFF11\u56DE\u5408\u4F7F\u51FA\n\u9700\u8981\u84C4\u529B\u7684\u62DB\u5F0F\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    fling_effect:
+      name: 
+      url: 
+    fling_power: 10
+    game_indices:
+    - game_index: 271
+      generation:
+        name: generation-iv
+        url: https://pokeapi.co/api/v2/generation/4/
+    - game_index: 271
+      generation:
+        name: generation-v
+        url: https://pokeapi.co/api/v2/generation/5/
+    - game_index: 271
+      generation:
+        name: generation-vi
+        url: https://pokeapi.co/api/v2/generation/6/
+    - game_index: 271
+      generation:
+        name: generation-vii
+        url: https://pokeapi.co/api/v2/generation/7/
+    - game_index: 271
+      generation:
+        name: generation-viii
+        url: https://pokeapi.co/api/v2/generation/8/
+    held_by_pokemon: 
+    id: 248
+    machines: []
+    name: power-herb
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30D1\u30EF\u30D5\u30EB\u30CF\u30FC\u30D6"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uD30C\uC6CC\uD480\uD5C8\uBE0C"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u5F37\u529B\u9999\u8349"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Herbe Pouvoir
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Energiekraut
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Hierba \xDAnica"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Vigorerba
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Power Herb
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30D1\u30EF\u30D5\u30EB\u30CF\u30FC\u30D6"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u5F3A\u529B\u9999\u8349"
+    sprites:
+      defaul: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/power-herb.png
+  canUseInBattle: 0
+  canUseOutsideBattle: 0

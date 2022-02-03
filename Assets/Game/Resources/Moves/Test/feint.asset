@@ -1,0 +1,884 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: feint
+  m_EditorClassIdentifier: 
+  name: Feint
+  description: 'An attack that hits a
+
+    foe using Protect or
+
+    Detect. It also
+    lifts
+
+    the effects of those
+
+    moves.'
+  type: 1
+  power: 30
+  accuracy: 100
+  alwaysHits: 0
+  pp: 10
+  priority: 2
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 364
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: beauty
+      url: https://pokeapi.co/api/v2/contest-type/2/
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 0
+    effect_changes:
+    - effect_entries:
+      - effect: If the target is not under the effect of detect or protect, this
+          move will fail.
+        language:
+          name: en
+          url: https://pokeapi.co/api/v2/language/9/
+        short_effect: 
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    effect_entries:
+    - effect: 'Inflicts regular damage.  Removes the effects of detect or protect
+        from the target before hitting.
+
+
+        This move cannot be copied by mirror
+        move, nor selected by assist or metronome.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Hits through Protect and Detect.
+    flavor_text_entries:
+    - flavor_text: 'An attack that hits a
+
+        foe using Protect or
+
+        Detect.
+        It also lifts
+
+        the effects of those
+
+        moves.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: 'An attack that hits a
+
+        foe using Protect or
+
+        Detect.
+        It also lifts
+
+        the effects of those
+
+        moves.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: 'An attack that hits a
+
+        foe using Protect or
+
+        Detect.
+        It also lifts
+
+        the effects of those
+
+        moves.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Une attaque capable de toucher un ennemi\nqui utilise D\xE9tection
+        ou Abri. Annule aussi\nleur effet."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'An attack that hits a target using
+
+        Protect or Detect.
+        It also lifts
+
+        the effects of those moves.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'An attack that hits a target using
+
+        Protect or Detect.
+        It also lifts
+
+        the effects of those moves.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u307E\u3082\u308B\u3084\u3000\u307F\u304D\u308A\u3092\u3000\u3057\u3066\u3044\u308B\n\u3042\u3044\u3066\u306B\u3000\u3053\u3046\u3052\u304D\u304C\u3000\u3067\u304D\u308B\u3002\n\u307E\u3082\u308A\u306E\u3000\u3053\u3046\u304B\u3092\u3000\u304B\u3044\u3058\u3087\u3000\u3055\u305B\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uBC29\uC5B4\uB098 \uD310\uBCC4\uC744 \uD558\uACE0 \uC788\uB294\n\uC0C1\uB300\uC5D0\uAC8C
+        \uACF5\uACA9\uD560 \uC218 \uC788\uB2E4.\n\uBC29\uC5B4 \uD6A8\uACFC\uB97C
+        \uD574\uC81C\uC2DC\uD0A8\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Une attaque capable de toucher un ennemi qui\nutilise D\xE9tection
+        ou Abri. Annule aussi leur effet."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Ziele, die Schutzschild oder Scanner verwenden,
+
+        werden
+        getroffen. Entfernt Effekte dieser Attacken.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Permite golpear a objetivos que usan Protecci\xF3n o\nDetecci\xF3n
+        y anula dichos movimientos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Mossa che colpisce anche un bersaglio che ha
+
+        usato Protezione
+        o Individua, annullandone
+
+        gli effetti.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'An attack that hits a target using
+
+        Protect or Detect.
+        This also lifts
+
+        the effects of those moves.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u307E\u3082\u308B\u3084\u3000\u307F\u304D\u308A\u3092\u3000\u3057\u3066\u3044\u308B\n\u76F8\u624B\u306B\u3000\u653B\u6483\u304C\u3000\u3067\u304D\u308B\u3002\n\u5B88\u308A\u306E\u3000\u52B9\u679C\u3092\u3000\u89E3\u9664\u3055\u305B\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u307E\u3082\u308B\u3084\u3000\u202F\u304D\u308A\u3092\u3000\u3057\u3066\u3044\u308B\n\u3042\u3044\u3066\u306B\u3000\u3053\u3046\u3052\u304D\u304C\u3000\u3067\u304D\u308B\u3002\n\u307E\u3082\u308A\u306E\u3000\u3053\u3046\u304B\u3092\u3000\u304B\u3044\u3058\u3087\u3000\u3055\u305B\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uBC29\uC5B4\uB098 \uD310\uBCC4\uC744 \uD558\uACE0 \uC788\uB294\n\uC0C1\uB300\uC5D0\uAC8C
+        \uACF5\uACA9\uD560 \uC218 \uC788\uB2E4.\n\uBC29\uC5B4 \uD6A8\uACFC\uB97C
+        \uD574\uC81C\uC2DC\uD0A8\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Une attaque capable de toucher un ennemi qui\nutilise D\xE9tection
+        ou Abri. Annule aussi leur effet."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Ziele, die Schutzschild oder Scanner verwenden,
+
+        werden
+        getroffen. Entfernt Effekte dieser Attacken.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Permite golpear a objetivos que usan Protecci\xF3n o \nDetecci\xF3n
+        y anula dichos movimientos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Mossa che colpisce anche un bersaglio che ha
+
+        usato Protezione
+        o Individua, annullandone
+
+        gli effetti.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'An attack that hits a target using
+
+        Protect or Detect.
+        This also lifts
+
+        the effects of those moves.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u307E\u3082\u308B\u3084\u3000\u202F\u304D\u308A\u3092\u3000\u3057\u3066\u3044\u308B\n\u76F8\u624B\u306B\u3000\u653B\u6483\u304C\u3000\u3067\u304D\u308B\u3002\n\u5B88\u308A\u306E\u3000\u52B9\u679C\u3092\u3000\u89E3\u9664\u3055\u305B\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u307E\u3082\u308B\u3084\u3000\u307F\u304D\u308A\u3000\u306A\u3069\u3092\u3000\u3057\u3066\u3044\u308B\n\u3042\u3044\u3066\u306B\u3000\u3053\u3046\u3052\u304D\u304C\u3000\u3067\u304D\u308B\u3002\n\u307E\u3082\u308A\u306E\u3000\u3053\u3046\u304B\u3092\u3000\u304B\u3044\u3058\u3087\u3000\u3055\u305B\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uBC29\uC5B4\uB098 \uD310\uBCC4 \uB4F1\uC744 \uD558\uACE0 \uC788\uB294\n\uC0C1\uB300\uC5D0\uAC8C
+        \uACF5\uACA9\uD560 \uC218 \uC788\uB2E4.\n\uBC29\uC5B4 \uD6A8\uACFC\uB97C
+        \uD574\uC81C\uC2DC\uD0A8\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u80FD\u5920\u653B\u64CA\u4F7F\u7528\u4E86\n\u5B88\u4F4F\u6216\u770B\u7A7F\u7684\u5C0D\u624B\u3002\n\u4E26\u89E3\u9664\u5C0D\u624B\u7684\u9632\u5B88\u6548\u679C\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Une attaque capable de toucher un ennemi qui\nutilise une capacit\xE9
+        comme D\xE9tection ou Abri.\nAnnule l\u2019effet de ces capacit\xE9s."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Ziele, die Attacken wie Schutzschild oder Scanner
+
+        eingesetzt
+        haben, werden getroffen. Entfernt Effekte
+
+        dieser Attacken.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Permite golpear a objetivos que han utilizado\nmovimientos como
+        Protecci\xF3n o Detecci\xF3n y anula\nsus efectos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Colpisce anche un bersaglio che ha usato mosse
+
+        come
+        Protezione e Individua, annullandone gli effetti.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'This attack hits a target using a move such as
+
+        Protect
+        or Detect.
+
+        This also lifts the effects of those moves.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u307E\u3082\u308B\u3084\u3000\u307F\u304D\u308A\u3000\u306A\u3069\u3092\u3000\u3057\u3066\u3044\u308B\n\u76F8\u624B\u306B\u3000\u653B\u6483\u304C\u3000\u3067\u304D\u308B\u3002\n\u5B88\u308A\u306E\u3000\u52B9\u679C\u3092\u3000\u89E3\u9664\u3055\u305B\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u80FD\u591F\u653B\u51FB\u6B63\u5728\u4F7F\u7528\n\u5B88\u4F4F\u6216\u770B\u7A7F\u7B49\u62DB\u5F0F\u7684\u5BF9\u624B\u3002\n\u89E3\u9664\u5176\u5B88\u62A4\u6548\u679C\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u307E\u3082\u308B\u3084\u3000\u307F\u304D\u308A\u3000\u306A\u3069\u3092\u3000\u3057\u3066\u3044\u308B\n\u3042\u3044\u3066\u306B\u3000\u3053\u3046\u3052\u304D\u304C\u3000\u3067\u304D\u308B\u3002\n\u307E\u3082\u308A\u306E\u3000\u3053\u3046\u304B\u3092\u3000\u304B\u3044\u3058\u3087\u3000\u3055\u305B\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uBC29\uC5B4\uB098 \uD310\uBCC4 \uB4F1\uC744 \uD558\uACE0 \uC788\uB294\n\uC0C1\uB300\uC5D0\uAC8C
+        \uACF5\uACA9\uD560 \uC218 \uC788\uB2E4.\n\uBC29\uC5B4 \uD6A8\uACFC\uB97C
+        \uD574\uC81C\uC2DC\uD0A8\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u80FD\u5920\u653B\u64CA\u4F7F\u7528\u4E86\n\u5B88\u4F4F\u6216\u770B\u7A7F\u7684\u5C0D\u624B\u3002\n\u4E26\u89E3\u9664\u5C0D\u624B\u7684\u9632\u5B88\u6548\u679C\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Une attaque capable de toucher un ennemi qui\nutilise une capacit\xE9
+        comme D\xE9tection ou Abri.\nAnnule l\u2019effet de ces capacit\xE9s."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Ziele, die Attacken wie Schutzschild oder Scanner
+
+        eingesetzt
+        haben, werden getroffen. Entfernt Effekte
+
+        dieser Attacken.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Permite golpear a objetivos que han utilizado\nmovimientos como
+        Protecci\xF3n o Detecci\xF3n y anula\nsus efectos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Colpisce anche un bersaglio che ha usato mosse
+
+        come
+        Protezione e Individua, annullandone gli effetti.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'This attack hits a target using a move such as
+
+        Protect
+        or Detect.
+
+        This also lifts the effects of those moves.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u307E\u3082\u308B\u3084\u3000\u307F\u304D\u308A\u3000\u306A\u3069\u3092\u3000\u3057\u3066\u3044\u308B\n\u76F8\u624B\u306B\u3000\u653B\u6483\u304C\u3000\u3067\u304D\u308B\u3002\n\u5B88\u308A\u306E\u3000\u52B9\u679C\u3092\u3000\u89E3\u9664\u3055\u305B\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u80FD\u591F\u653B\u51FB\u6B63\u5728\u4F7F\u7528\n\u5B88\u4F4F\u6216\u770B\u7A7F\u7B49\u62DB\u5F0F\u7684\u5BF9\u624B\u3002\n\u89E3\u9664\u5176\u5B88\u62A4\u6548\u679C\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u307E\u3082\u308B\u3092\u3000\u3064\u304B\u3063\u3066\u3044\u308B\n\u3042\u3044\u3066\u306B\u3000\u3053\u3046\u3052\u304D\u304C\u3000\u3067\u304D\u308B\u3002\n\u307E\u3082\u308A\u306E\u3000\u3053\u3046\u304B\u3092\u3000\u304B\u3044\u3058\u3087\u3000\u3055\u305B\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uBC29\uC5B4\uB97C \uC0AC\uC6A9\uD558\uACE0 \uC788\uB294\n\uC0C1\uB300\uC5D0\uAC8C
+        \uACF5\uACA9\uD560 \uC218 \uC788\uB2E4.\n\uBC29\uC5B4 \uD6A8\uACFC\uB97C
+        \uD574\uC81C\uC2DC\uD0A8\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u80FD\u5920\u653B\u64CA\u4F7F\u7528\u4E86\u5B88\u4F4F\u7684\u5C0D\u624B\u3002\n\u4E26\u89E3\u9664\u5C0D\u624B\u7684\u9632\u5B88\u6548\u679C\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Une attaque capable de toucher un ennemi qui utilise\nAbri. Annule
+        l\u2019effet de cette capacit\xE9."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Ziele, die Schutzschild eingesetzt haben, werden
+
+        getroffen.
+        Entfernt den Effekt von Schutzschild.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Permite golpear a objetivos que han utilizado \nel movimiento
+        Protecci\xF3n y anula sus efectos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Colpisce anche un bersaglio che ha usato Protezione,
+
+        annullandone
+        gli effetti.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'This attack hits a target using Protect.
+
+        This also lifts
+        the effects of the move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u307E\u3082\u308B\u3092\u3000\u3064\u304B\u3063\u3066\u3044\u308B\n\u76F8\u624B\u306B\u3000\u653B\u6483\u304C\u3000\u3067\u304D\u308B\u3002\n\u5B88\u308A\u306E\u3000\u52B9\u679C\u3092\u3000\u89E3\u9664\u3055\u305B\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u80FD\u591F\u653B\u51FB\u6B63\u5728\u4F7F\u7528\n\u5B88\u4F4F\u62DB\u5F0F\u7684\u5BF9\u624B\uFF0C\n\u5E76\u89E3\u9664\u5176\u5B88\u62A4\u6548\u679C\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u307E\u3082\u308B\u3084\u3000\u307F\u304D\u308A\u3000\u306A\u3069\u3092\u3000\u3057\u3066\u3044\u308B\n\u3042\u3044\u3066\u306B\u3000\u3053\u3046\u3052\u304D\u304C\u3000\u3067\u304D\u308B\u3002\n\u307E\u3082\u308A\u306E\u3000\u3053\u3046\u304B\u3092\u3000\u304B\u3044\u3058\u3087\u3000\u3055\u305B\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uBC29\uC5B4\uB098 \uD310\uBCC4 \uB4F1\uC744 \uD558\uACE0 \uC788\uB294\n\uC0C1\uB300\uC5D0\uAC8C
+        \uACF5\uACA9\uD560 \uC218 \uC788\uB2E4.\n\uBC29\uC5B4 \uD6A8\uACFC\uB97C
+        \uD574\uC81C\uC2DC\uD0A8\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u80FD\u5920\u653B\u64CA\u4F7F\u7528\u4E86\n\u5B88\u4F4F\u6216\u770B\u7A7F\u7684\u5C0D\u624B\u3002\n\u4E26\u89E3\u9664\u5C0D\u624B\u7684\u9632\u5B88\u6548\u679C\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Une attaque capable de toucher un ennemi qui utilise\nune capacit\xE9
+        comme D\xE9tection ou Abri.\nAnnule l\u2019effet de ces capacit\xE9s."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Ziele, die Attacken wie Schutzschild oder Scanner
+
+        eingesetzt
+        haben, werden getroffen. Entfernt Effekte
+
+        dieser Attacken.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Permite golpear a objetivos que han utilizado\nmovimientos como
+        Protecci\xF3n o Detecci\xF3n y anula\nsus efectos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Colpisce anche un bersaglio che ha usato mosse
+
+        come
+        Protezione e Individua, annullandone gli effetti.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'This attack hits a target using a move such as
+
+        Protect
+        or Detect.
+
+        This also lifts the effects of those moves.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u307E\u3082\u308B\u3084\u3000\u307F\u304D\u308A\u3000\u306A\u3069\u3092\u3000\u3057\u3066\u3044\u308B\n\u76F8\u624B\u306B\u3000\u653B\u6483\u304C\u3000\u3067\u304D\u308B\u3002\n\u5B88\u308A\u306E\u3000\u52B9\u679C\u3092\u3000\u89E3\u9664\u3055\u305B\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u80FD\u591F\u653B\u51FB\u6B63\u5728\u4F7F\u7528\n\u5B88\u4F4F\u6216\u770B\u7A7F\u7B49\u62DB\u5F0F\u7684\u5BF9\u624B\u3002\n\u89E3\u9664\u5176\u5B88\u62A4\u6548\u679C\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-iv
+      url: https://pokeapi.co/api/v2/generation/4/
+    id: 364
+    learned_by_pokemon:
+    - name: pikachu
+      url: https://pokeapi.co/api/v2/pokemon/25/
+    - name: meowth
+      url: https://pokeapi.co/api/v2/pokemon/52/
+    - name: persian
+      url: https://pokeapi.co/api/v2/pokemon/53/
+    - name: farfetchd
+      url: https://pokeapi.co/api/v2/pokemon/83/
+    - name: hitmonlee
+      url: https://pokeapi.co/api/v2/pokemon/106/
+    - name: hitmonchan
+      url: https://pokeapi.co/api/v2/pokemon/107/
+    - name: scyther
+      url: https://pokeapi.co/api/v2/pokemon/123/
+    - name: pinsir
+      url: https://pokeapi.co/api/v2/pokemon/127/
+    - name: kabutops
+      url: https://pokeapi.co/api/v2/pokemon/141/
+    - name: yanma
+      url: https://pokeapi.co/api/v2/pokemon/193/
+    - name: gligar
+      url: https://pokeapi.co/api/v2/pokemon/207/
+    - name: scizor
+      url: https://pokeapi.co/api/v2/pokemon/212/
+    - name: heracross
+      url: https://pokeapi.co/api/v2/pokemon/214/
+    - name: sneasel
+      url: https://pokeapi.co/api/v2/pokemon/215/
+    - name: skarmory
+      url: https://pokeapi.co/api/v2/pokemon/227/
+    - name: houndour
+      url: https://pokeapi.co/api/v2/pokemon/228/
+    - name: tyrogue
+      url: https://pokeapi.co/api/v2/pokemon/236/
+    - name: hitmontop
+      url: https://pokeapi.co/api/v2/pokemon/237/
+    - name: elekid
+      url: https://pokeapi.co/api/v2/pokemon/239/
+    - name: torchic
+      url: https://pokeapi.co/api/v2/pokemon/255/
+    - name: breloom
+      url: https://pokeapi.co/api/v2/pokemon/286/
+    - name: makuhita
+      url: https://pokeapi.co/api/v2/pokemon/296/
+    - name: sableye
+      url: https://pokeapi.co/api/v2/pokemon/302/
+    - name: meditite
+      url: https://pokeapi.co/api/v2/pokemon/307/
+    - name: medicham
+      url: https://pokeapi.co/api/v2/pokemon/308/
+    - name: sharpedo
+      url: https://pokeapi.co/api/v2/pokemon/319/
+    - name: trapinch
+      url: https://pokeapi.co/api/v2/pokemon/328/
+    - name: zangoose
+      url: https://pokeapi.co/api/v2/pokemon/335/
+    - name: seviper
+      url: https://pokeapi.co/api/v2/pokemon/336/
+    - name: kecleon
+      url: https://pokeapi.co/api/v2/pokemon/352/
+    - name: absol
+      url: https://pokeapi.co/api/v2/pokemon/359/
+    - name: monferno
+      url: https://pokeapi.co/api/v2/pokemon/391/
+    - name: infernape
+      url: https://pokeapi.co/api/v2/pokemon/392/
+    - name: stunky
+      url: https://pokeapi.co/api/v2/pokemon/434/
+    - name: skuntank
+      url: https://pokeapi.co/api/v2/pokemon/435/
+    - name: riolu
+      url: https://pokeapi.co/api/v2/pokemon/447/
+    - name: lucario
+      url: https://pokeapi.co/api/v2/pokemon/448/
+    - name: croagunk
+      url: https://pokeapi.co/api/v2/pokemon/453/
+    - name: yanmega
+      url: https://pokeapi.co/api/v2/pokemon/469/
+    - name: gallade
+      url: https://pokeapi.co/api/v2/pokemon/475/
+    - name: blitzle
+      url: https://pokeapi.co/api/v2/pokemon/522/
+    - name: shelmet
+      url: https://pokeapi.co/api/v2/pokemon/616/
+    - name: mienfoo
+      url: https://pokeapi.co/api/v2/pokemon/619/
+    - name: chesnaught
+      url: https://pokeapi.co/api/v2/pokemon/652/
+    - name: hawlucha
+      url: https://pokeapi.co/api/v2/pokemon/701/
+    - name: goodra
+      url: https://pokeapi.co/api/v2/pokemon/706/
+    - name: bounsweet
+      url: https://pokeapi.co/api/v2/pokemon/761/
+    - name: passimian
+      url: https://pokeapi.co/api/v2/pokemon/766/
+    - name: pheromosa
+      url: https://pokeapi.co/api/v2/pokemon/795/
+    - name: marshadow
+      url: https://pokeapi.co/api/v2/pokemon/802/
+    - name: pinsir-mega
+      url: https://pokeapi.co/api/v2/pokemon/10040/
+    - name: scizor-mega
+      url: https://pokeapi.co/api/v2/pokemon/10046/
+    - name: heracross-mega
+      url: https://pokeapi.co/api/v2/pokemon/10047/
+    - name: medicham-mega
+      url: https://pokeapi.co/api/v2/pokemon/10054/
+    - name: absol-mega
+      url: https://pokeapi.co/api/v2/pokemon/10057/
+    - name: lucario-mega
+      url: https://pokeapi.co/api/v2/pokemon/10059/
+    - name: gallade-mega
+      url: https://pokeapi.co/api/v2/pokemon/10068/
+    - name: sharpedo-mega
+      url: https://pokeapi.co/api/v2/pokemon/10070/
+    - name: pikachu-rock-star
+      url: https://pokeapi.co/api/v2/pokemon/10080/
+    - name: pikachu-belle
+      url: https://pokeapi.co/api/v2/pokemon/10081/
+    - name: pikachu-pop-star
+      url: https://pokeapi.co/api/v2/pokemon/10082/
+    - name: pikachu-phd
+      url: https://pokeapi.co/api/v2/pokemon/10083/
+    - name: pikachu-libre
+      url: https://pokeapi.co/api/v2/pokemon/10084/
+    - name: pikachu-cosplay
+      url: https://pokeapi.co/api/v2/pokemon/10085/
+    - name: pikachu-original-cap
+      url: https://pokeapi.co/api/v2/pokemon/10094/
+    - name: pikachu-hoenn-cap
+      url: https://pokeapi.co/api/v2/pokemon/10095/
+    - name: pikachu-sinnoh-cap
+      url: https://pokeapi.co/api/v2/pokemon/10096/
+    - name: pikachu-unova-cap
+      url: https://pokeapi.co/api/v2/pokemon/10097/
+    - name: pikachu-kalos-cap
+      url: https://pokeapi.co/api/v2/pokemon/10098/
+    - name: pikachu-alola-cap
+      url: https://pokeapi.co/api/v2/pokemon/10099/
+    - name: meowth-alola
+      url: https://pokeapi.co/api/v2/pokemon/10107/
+    - name: persian-alola
+      url: https://pokeapi.co/api/v2/pokemon/10108/
+    - name: pikachu-partner-cap
+      url: https://pokeapi.co/api/v2/pokemon/10148/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: feint
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30D5\u30A7\u30A4\u30F3\u30C8"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uD398\uC778\uD2B8"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u4F6F\u653B"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Ruse
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Offenlegung
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Amago
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Fintoattacco
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Feint
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30D5\u30A7\u30A4\u30F3\u30C8"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u4F6F\u653B"
+    past_values:
+    - accuracy: 0
+      effect_chance: 0
+      effect_entries: []
+      power: 50
+      pp: 0
+      type:
+        name: 
+        url: 
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    power: 30
+    pp: 10
+    priority: 2
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/16/
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: normal
+      url: https://pokeapi.co/api/v2/type/1/

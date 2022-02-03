@@ -1,0 +1,643 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: misty-terrain
+  m_EditorClassIdentifier: 
+  name: Misty Terrain
+  description: "The user covers the ground under everyone\u2019s feet\nwith mist
+    for five turns. This protects Pok\xE9mon\non the ground from status conditions."
+  type: 18
+  power: 0
+  accuracy: 0
+  alwaysHits: 0
+  pp: 10
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 581
+  pokeApiMove:
+    accuracy: 0
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: "For five turns, protects all Pok\xE9mon on the ground from major status
+        ailments and confusion and weakens dragon moves used against them to 0.5\xD7
+        their power.\n\nChanges nature power to moonblast."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: "For five turns, protects all Pok\xE9mon on the ground from major
+        status ailments and confusion, and halves the power of incoming dragon moves."
+    flavor_text_entries:
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u3042\u3057\u3082\u3068\u3092\n\u30DF\u30B9\u30C8\u30D5\u30A3\u30FC\u30EB\u30C9\u306B\u3059\u308B\u3002\u3000\u3058\u3081\u3093\u306B\u3044\u308B\u3068\n\u3058\u3087\u3046\u305F\u3044\u3044\u3058\u3087\u3046\u306B\u3000\u306A\u3089\u306A\u3044\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "5\uD134 \uB3D9\uC548 \uBC1C\uBC11\uC744\n\uBBF8\uC2A4\uD2B8\uD544\uB4DC\uB85C
+        \uB9CC\uB4E0\uB2E4. \uB545\uC5D0 \uC788\uC73C\uBA74\n\uC0C1\uD0DC \uC774\uC0C1\uC774
+        \uB418\uC9C0 \uC54A\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Pendant cinq tours, le terrain aux pieds du lanceur\nse couvre
+        de brume. Les Pok\xE9mon au sol ne\npeuvent pas subir d\u2019alt\xE9ration
+        de statut."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Verwandelt den Untergrund f\xFCnf Runden lang\nin ein Nebelfeld
+        und sch\xFCtzt alle Pok\xE9mon,\ndie den Boden ber\xFChren, vor Statusproblemen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Cubre de niebla el terreno de combate durante\ncinco turnos.
+        Los Pok\xE9mon que est\xE9n en el suelo\nno se ven afectados por cambios
+        de estado."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Per cinque turni trasforma il terreno di lotta\nin un campo nebbioso,
+        impedendo ai Pok\xE9mon\na terra di essere colpiti da problemi di stato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user covers the ground under everyone\u2019s feet\nwith mist
+        for five turns. This protects Pok\xE9mon\non the ground from status conditions."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u8DB3\u5143\u3092\n\u30DF\u30B9\u30C8\u30D5\u30A3\u30FC\u30EB\u30C9\u306B\u3059\u308B\u3002\u5730\u9762\u306B\u3044\u308B\u3068\n\u72B6\u614B\u7570\u5E38\u306B\u3000\u306A\u3089\u306A\u3044\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u3042\u3057\u3082\u3068\u3092\n\u30DF\u30B9\u30C8\u30D5\u30A3\u30FC\u30EB\u30C9\u306B\u3059\u308B\u3002\u3000\u3058\u3081\u3093\u306B\u3044\u308B\u3068\n\u3058\u3087\u3046\u305F\u3044\u3044\u3058\u3087\u3046\u306B\u3000\u306A\u3089\u306A\u3044\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "5\uD134 \uB3D9\uC548 \uBC1C\uBC11\uC744\n\uBBF8\uC2A4\uD2B8\uD544\uB4DC\uB85C
+        \uB9CC\uB4E0\uB2E4. \uB545\uC5D0 \uC788\uC73C\uBA74\n\uC0C1\uD0DC \uC774\uC0C1\uC774
+        \uB418\uC9C0 \uC54A\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Pendant cinq tours, le terrain aux pieds du lanceur\nse couvre
+        de brume. Les Pok\xE9mon au sol ne\npeuvent pas subir d\u2019alt\xE9ration
+        de statut."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Verwandelt den Untergrund f\xFCnf Runden lang\nin ein Nebelfeld
+        und sch\xFCtzt alle Pok\xE9mon,\ndie den Boden ber\xFChren, vor Statusproblemen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Cubre de niebla el terreno de combate durante\ncinco turnos.
+        Los Pok\xE9mon que est\xE9n en el suelo \nno se ven afectados por cambios
+        de estado."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Per cinque turni trasforma il terreno di lotta\nin un campo nebbioso,
+        impedendo ai Pok\xE9mon\na terra di essere colpiti da problemi di stato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user covers the ground under everyone\u2019s feet\nwith mist
+        for five turns. This protects Pok\xE9mon\non the ground from status conditions."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u8DB3\u5143\u3092\n\u30DF\u30B9\u30C8\u30D5\u30A3\u30FC\u30EB\u30C9\u306B\u3059\u308B\u3002\u5730\u9762\u306B\u3044\u308B\u3068\n\u72B6\u614B\u7570\u5E38\u306B\u3000\u306A\u3089\u306A\u3044\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3042\u3044\u3060\u3000\u3058\u3081\u3093\u306B\u3044\u308B\u3068\n\u3058\u3087\u3046\u305F\u3044\u3044\u3058\u3087\u3046\u306B\u3000\u306A\u3089\u305A\u3000\u30C9\u30E9\u30B4\u30F3\n\u308F\u3056\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3082\u3000\u306F\u3093\u3076\u3093\u306B\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "5\uD134 \uB3D9\uC548 \uB545\uC5D0 \uC788\uC73C\uBA74\n\uC0C1\uD0DC
+        \uC774\uC0C1\uC774 \uB418\uC9C0 \uC54A\uACE0\n\uB4DC\uB798\uACE4\uD0C0\uC785
+        \uAE30\uC220\uC758 \uB370\uBBF8\uC9C0\uB3C4 \uC808\uBC18\uC774 \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5728\uFF15\u56DE\u5408\u5167\uFF0C\n\u5730\u9762\u4E0A\u7684\u5BF6\u53EF\u5922\u4E0D\u6703\u9677\u5165\u7570\u5E38\u72C0\u614B\u3002\n\u9F8D\u5C6C\u6027\u62DB\u5F0F\u7684\u50B7\u5BB3\u4E5F\u6703\u6E1B\u534A\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Pendant cinq tours, les Pok\xE9mon au sol ne peuvent\npas subir
+        d\u2019alt\xE9ration de statut et la puissance\ndes capacit\xE9s de type
+        Dragon est divis\xE9e par deux."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Sch\xFCtzt f\xFCnf Runden lang alle Pok\xE9mon, die den\nBoden
+        ber\xFChren, vor Statusproblemen. Der erlittene\nSchaden durch Drachen-Attacken
+        wird halbiert."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Durante cinco turnos, los Pok\xE9mon que est\xE1n en el\nsuelo
+        no sufren cambios de estado y se reduce a la\nmitad el da\xF1o de los movimientos
+        de tipo Drag\xF3n."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Per cinque turni il terreno entra nello stato di Campo\nNebbioso:
+        i Pok\xE9mon a terra sono immuni ai problemi\ndi stato e la potenza delle
+        mosse Drago \xE8 dimezzata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "This protects Pok\xE9mon on the ground from status\nconditions
+        and halves damage from Dragon-type\nmoves for five turns."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3000\u9593\u3000\u5730\u9762\u306B\u3044\u308B\u3068\n\u72B6\u614B\u7570\u5E38\u306B\u3000\u306A\u3089\u305A\u3000\u30C9\u30E9\u30B4\u30F3\u6280\u306E\n\u30C0\u30E1\u30FC\u30B8\u3082\u3000\u534A\u5206\u306B\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5728\uFF15\u56DE\u5408\u5185\uFF0C\n\u5730\u9762\u4E0A\u7684\u5B9D\u53EF\u68A6\u4E0D\u4F1A\u9677\u5165\u5F02\u5E38\u72B6\u6001\u3002\n\u9F99\u5C5E\u6027\u62DB\u5F0F\u7684\u4F24\u5BB3\u4E5F\u4F1A\u51CF\u534A\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3042\u3044\u3060\u3000\u3058\u3081\u3093\u306B\u3044\u308B\u3068\n\u3058\u3087\u3046\u305F\u3044\u3044\u3058\u3087\u3046\u306B\u3000\u306A\u3089\u305A\u3000\u30C9\u30E9\u30B4\u30F3\n\u308F\u3056\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3082\u3000\u306F\u3093\u3076\u3093\u306B\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "5\uD134 \uB3D9\uC548 \uB545\uC5D0 \uC788\uC73C\uBA74\n\uC0C1\uD0DC
+        \uC774\uC0C1\uC774 \uB418\uC9C0 \uC54A\uACE0\n\uB4DC\uB798\uACE4\uD0C0\uC785
+        \uAE30\uC220\uC758 \uB370\uBBF8\uC9C0\uB3C4 \uC808\uBC18\uC774 \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5728\uFF15\u56DE\u5408\u5167\uFF0C\n\u5730\u9762\u4E0A\u7684\u5BF6\u53EF\u5922\u4E0D\u6703\u9677\u5165\u7570\u5E38\u72C0\u614B\u3002\n\u9F8D\u5C6C\u6027\u62DB\u5F0F\u7684\u50B7\u5BB3\u4E5F\u6703\u6E1B\u534A\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Pendant cinq tours, les Pok\xE9mon au sol ne peuvent\npas subir
+        d\u2019alt\xE9ration de statut et la puissance\ndes capacit\xE9s de type
+        Dragon est divis\xE9e par deux."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Sch\xFCtzt f\xFCnf Runden lang alle Pok\xE9mon, die den\nBoden
+        ber\xFChren, vor Statusproblemen. Der erlittene\nSchaden durch Drachen-Attacken
+        wird halbiert."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Durante cinco turnos, los Pok\xE9mon que est\xE1n en el\nsuelo
+        no sufren cambios de estado y se reduce a la\nmitad el da\xF1o de los movimientos
+        de tipo Drag\xF3n."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Per cinque turni il terreno entra nello stato di Campo\nNebbioso:
+        i Pok\xE9mon a terra sono immuni ai problemi\ndi stato e la potenza delle
+        mosse Drago \xE8 dimezzata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "This protects Pok\xE9mon on the ground from status\nconditions
+        and halves damage from Dragon-type\nmoves for five turns."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3000\u9593\u3000\u5730\u9762\u306B\u3044\u308B\u3068\n\u72B6\u614B\u7570\u5E38\u306B\u3000\u306A\u3089\u305A\u3000\u30C9\u30E9\u30B4\u30F3\u6280\u306E\n\u30C0\u30E1\u30FC\u30B8\u3082\u3000\u534A\u5206\u306B\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5728\uFF15\u56DE\u5408\u5185\uFF0C\n\u5730\u9762\u4E0A\u7684\u5B9D\u53EF\u68A6\u4E0D\u4F1A\u9677\u5165\u5F02\u5E38\u72B6\u6001\u3002\n\u9F99\u5C5E\u6027\u62DB\u5F0F\u7684\u4F24\u5BB3\u4E5F\u4F1A\u51CF\u534A\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3042\u3044\u3060\u3000\u3058\u3081\u3093\u306B\u3044\u308B\u3068\n\u3058\u3087\u3046\u305F\u3044\u3044\u3058\u3087\u3046\u306B\u3000\u306A\u3089\u305A\u3000\u30C9\u30E9\u30B4\u30F3\n\u308F\u3056\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3082\u3000\u306F\u3093\u3076\u3093\u306B\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "5\uD134 \uB3D9\uC548 \uB545\uC5D0 \uC788\uC73C\uBA74\n\uC0C1\uD0DC
+        \uC774\uC0C1\uC774 \uB418\uC9C0 \uC54A\uACE0\n\uB4DC\uB798\uACE4\uD0C0\uC785
+        \uAE30\uC220\uC758 \uB370\uBBF8\uC9C0\uB3C4 \uC808\uBC18\uC774 \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5728\uFF15\u56DE\u5408\u5167\uFF0C\n\u5730\u9762\u4E0A\u7684\u5BF6\u53EF\u5922\u4E0D\u6703\u9677\u5165\u7570\u5E38\u72C0\u614B\u3002\n\u9F8D\u5C6C\u6027\u62DB\u5F0F\u7684\u50B7\u5BB3\u4E5F\u6703\u6E1B\u534A\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Pendant cinq tours, les Pok\xE9mon au sol ne peuvent\npas subir
+        d\u2019alt\xE9ration de statut et la puissance\ndes capacit\xE9s de type
+        Dragon est divis\xE9e par deux."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Sch\xFCtzt f\xFCnf Runden lang alle Pok\xE9mon, die den\nBoden
+        ber\xFChren, vor Statusproblemen. Der erlittene\nSchaden durch Drachen-Attacken
+        wird halbiert."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Durante cinco turnos, los Pok\xE9mon que est\xE1n en el\nsuelo
+        no sufren cambios de estado y se reduce a la\nmitad el da\xF1o de los movimientos
+        de tipo Drag\xF3n."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Per cinque turni il terreno entra nello stato di Campo\nNebbioso:
+        i Pok\xE9mon a terra sono immuni ai problemi\ndi stato e la potenza delle
+        mosse Drago \xE8 dimezzata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "This protects Pok\xE9mon on the ground from status\nconditions
+        and halves damage from Dragon-type\nmoves for five turns."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3000\u9593\u3000\u5730\u9762\u306B\u3044\u308B\u3068\n\u72B6\u614B\u7570\u5E38\u306B\u3000\u306A\u3089\u305A\u3000\u30C9\u30E9\u30B4\u30F3\u6280\u306E\n\u30C0\u30E1\u30FC\u30B8\u3082\u3000\u534A\u5206\u306B\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5728\uFF15\u56DE\u5408\u5185\uFF0C\n\u5730\u9762\u4E0A\u7684\u5B9D\u53EF\u68A6\u4E0D\u4F1A\u9677\u5165\u5F02\u5E38\u72B6\u6001\u3002\n\u9F99\u5C5E\u6027\u62DB\u5F0F\u7684\u4F24\u5BB3\u4E5F\u4F1A\u51CF\u534A\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3042\u3044\u3060\u3000\u3058\u3081\u3093\u306B\u3044\u308B\u3068\n\u3058\u3087\u3046\u305F\u3044\u3044\u3058\u3087\u3046\u306B\u3000\u306A\u3089\u305A\u3000\u30C9\u30E9\u30B4\u30F3\n\u308F\u3056\u306E\u3000\u30C0\u30E1\u30FC\u30B8\u3082\u3000\u306F\u3093\u3076\u3093\u306B\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "5\uD134 \uB3D9\uC548 \uB545\uC5D0 \uC788\uC73C\uBA74\n\uC0C1\uD0DC
+        \uC774\uC0C1\uC774 \uB418\uC9C0 \uC54A\uACE0\n\uB4DC\uB798\uACE4\uD0C0\uC785
+        \uAE30\uC220\uC758 \uB370\uBBF8\uC9C0\uB3C4 \uC808\uBC18\uC774 \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5728\uFF15\u56DE\u5408\u5167\uFF0C\n\u5730\u9762\u4E0A\u7684\u5BF6\u53EF\u5922\u4E0D\u6703\u9677\u5165\u7570\u5E38\u72C0\u614B\u3002\n\u9F8D\u5C6C\u6027\u62DB\u5F0F\u7684\u50B7\u5BB3\u4E5F\u6703\u6E1B\u534A\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Pendant cinq tours, les Pok\xE9mon au sol ne peuvent\npas subir
+        d\u2019alt\xE9ration de statut et la puissance\ndes capacit\xE9s de type
+        Dragon est divis\xE9e par deux."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Sch\xFCtzt f\xFCnf Runden lang alle Pok\xE9mon, die den Boden\nber\xFChren,
+        vor Statusproblemen. Der erlittene Schaden\ndurch Drachen-Attacken wird halbiert."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Durante cinco turnos, los Pok\xE9mon que est\xE1n en el\nsuelo
+        no sufren problemas de estado y se reduce a la\nmitad el da\xF1o de los movimientos
+        de tipo Drag\xF3n."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Per cinque turni il terreno entra nello stato di Campo\nNebbioso:
+        i Pok\xE9mon a terra sono immuni ai problemi\ndi stato e la potenza delle
+        mosse Drago \xE8 dimezzata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "This protects Pok\xE9mon on the ground from status\nconditions
+        and halves damage from Dragon-type\nmoves for five turns."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uFF15\u30BF\u30FC\u30F3\u306E\u3000\u9593\u3000\u5730\u9762\u306B\u3044\u308B\u3068\n\u72B6\u614B\u7570\u5E38\u306B\u3000\u306A\u3089\u305A\u3000\u30C9\u30E9\u30B4\u30F3\u6280\u306E\n\u30C0\u30E1\u30FC\u30B8\u3082\u3000\u534A\u5206\u306B\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5728\uFF15\u56DE\u5408\u5185\uFF0C\n\u5730\u9762\u4E0A\u7684\u5B9D\u53EF\u68A6\u4E0D\u4F1A\u9677\u5165\u5F02\u5E38\u72B6\u6001\u3002\n\u9F99\u5C5E\u6027\u62DB\u5F0F\u7684\u4F24\u5BB3\u4E5F\u4F1A\u51CF\u534A\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vi
+      url: https://pokeapi.co/api/v2/generation/6/
+    id: 581
+    learned_by_pokemon:
+    - name: mr-mime
+      url: https://pokeapi.co/api/v2/pokemon/122/
+    - name: cleffa
+      url: https://pokeapi.co/api/v2/pokemon/173/
+    - name: igglybuff
+      url: https://pokeapi.co/api/v2/pokemon/174/
+    - name: ralts
+      url: https://pokeapi.co/api/v2/pokemon/280/
+    - name: gardevoir
+      url: https://pokeapi.co/api/v2/pokemon/282/
+    - name: mawile
+      url: https://pokeapi.co/api/v2/pokemon/303/
+    - name: audino
+      url: https://pokeapi.co/api/v2/pokemon/531/
+    - name: cottonee
+      url: https://pokeapi.co/api/v2/pokemon/546/
+    - name: flabebe
+      url: https://pokeapi.co/api/v2/pokemon/669/
+    - name: floette
+      url: https://pokeapi.co/api/v2/pokemon/670/
+    - name: florges
+      url: https://pokeapi.co/api/v2/pokemon/671/
+    - name: meowstic-male
+      url: https://pokeapi.co/api/v2/pokemon/678/
+    - name: spritzee
+      url: https://pokeapi.co/api/v2/pokemon/682/
+    - name: aromatisse
+      url: https://pokeapi.co/api/v2/pokemon/683/
+    - name: sylveon
+      url: https://pokeapi.co/api/v2/pokemon/700/
+    - name: xerneas
+      url: https://pokeapi.co/api/v2/pokemon/716/
+    - name: popplio
+      url: https://pokeapi.co/api/v2/pokemon/728/
+    - name: brionne
+      url: https://pokeapi.co/api/v2/pokemon/729/
+    - name: primarina
+      url: https://pokeapi.co/api/v2/pokemon/730/
+    - name: tapu-fini
+      url: https://pokeapi.co/api/v2/pokemon/788/
+    - name: gardevoir-mega
+      url: https://pokeapi.co/api/v2/pokemon/10051/
+    - name: mawile-mega
+      url: https://pokeapi.co/api/v2/pokemon/10052/
+    - name: floette-eternal
+      url: https://pokeapi.co/api/v2/pokemon/10061/
+    - name: audino-mega
+      url: https://pokeapi.co/api/v2/pokemon/10069/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1401/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: whole-field-effect
+        url: https://pokeapi.co/api/v2/move-category/10/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: misty-terrain
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30DF\u30B9\u30C8\u30D5\u30A3\u30FC\u30EB\u30C9"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uBBF8\uC2A4\uD2B8\uD544\uB4DC"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u8584\u9727\u5834\u5730"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Champ Brumeux
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Nebelfeld
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Campo de Niebla
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Campo Nebbioso
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Misty Terrain
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30DF\u30B9\u30C8\u30D5\u30A3\u30FC\u30EB\u30C9"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u8584\u96FE\u573A\u5730"
+    past_values: []
+    power: 0
+    pp: 10
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: entire-field
+      url: https://pokeapi.co/api/v2/move-target/12/
+    type:
+      name: fairy
+      url: https://pokeapi.co/api/v2/type/18/

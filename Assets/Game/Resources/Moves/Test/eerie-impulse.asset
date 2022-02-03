@@ -1,0 +1,603 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: eerie-impulse
+  m_EditorClassIdentifier: 
+  name: Eerie Impulse
+  description: "The user\u2019s body generates an eerie impulse.\nExposing the target
+    to it harshly lowers\nthe target\u2019s Sp. Atk stat."
+  type: 4
+  power: 0
+  accuracy: 100
+  alwaysHits: 0
+  pp: 15
+  priority: 0
+  category: 2
+  effects:
+    boosts:
+    - stat: 2
+      boost: -2
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 598
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Lowers the target's Special Attack by two stages.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Lowers the target's Special Attack by two stages.
+    flavor_text_entries:
+    - flavor_text: "\u304B\u3089\u3060\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u306F\u306A\u3061\n\u3042\u3044\u3066\u306B\u3000\u3042\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u3068\u304F\u3053\u3046\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uBAB8\uC5D0\uC11C \uAD34\uC804\uD30C\uB97C \uB0B4\uC5B4\n\uC0C1\uB300\uC5D0\uAC8C
+        \uC3E8\uC73C\uB85C\uC368\n\uD2B9\uC218\uACF5\uACA9\uC744 \uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Le corps du lanceur produit des ondes anormales\nqui enveloppent
+        l\u2019ennemi et diminuent fortement\nson Attaque Sp\xE9ciale."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Der K\xF6rper des Anwenders erzeugt mysteri\xF6se\nWellen und
+        senkt den Spezial-Angriff des Zieles\ndadurch stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Su cuerpo irradia unas raras ondas que, al alcanzar
+
+        a
+        un oponente, hacen que disminuya mucho su
+
+        Ataque Especial.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Il corpo di chi la usa emette onde anomale che\ninvestono il
+        bersaglio, riducendone di molto\nl\u2019Attacco Speciale."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user\u2019s body generates an eerie impulse.\nExposing the
+        target to it harshly lowers\nthe target\u2019s Sp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u4F53\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u653E\u3061\n\u76F8\u624B\u306B\u3000\u6D74\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u7279\u653B\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u304B\u3089\u3060\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u306F\u306A\u3061\n\u3042\u3044\u3066\u306B\u3000\u3042\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u3068\u304F\u3053\u3046\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uBAB8\uC5D0\uC11C \uAD34\uC804\uD30C\uB97C \uB0B4\uC5B4\n\uC0C1\uB300\uC5D0\uAC8C
+        \uC3E8\uC73C\uB85C\uC368\n\uD2B9\uC218\uACF5\uACA9\uC744 \uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Le corps du lanceur produit des ondes anormales\nqui enveloppent
+        l\u2019ennemi et diminuent fortement\nson Attaque Sp\xE9ciale."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Der K\xF6rper des Anwenders erzeugt mysteri\xF6se\nWellen und
+        senkt den Spezial-Angriff des Zieles\ndadurch stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Su cuerpo irradia unas raras ondas que, al alcanzar \na un oponente,
+        hacen que disminuya mucho su\nAtaque Especial."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Il corpo di chi la usa emette onde anomale che\ninvestono il
+        bersaglio, riducendone di molto\nl\u2019Attacco Speciale."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user\u2019s body generates an eerie impulse.\nExposing the
+        target to it harshly lowers\nthe target\u2019s Sp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u4F53\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u653E\u3061\n\u76F8\u624B\u306B\u3000\u6D74\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u7279\u653B\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u304B\u3089\u3060\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u306F\u306A\u3061\n\u3042\u3044\u3066\u306B\u3000\u3042\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u3068\u304F\u3053\u3046\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uBAB8\uC5D0\uC11C \uAD34\uC804\uD30C\uB97C \uB0B4\uC5B4\n\uC0C1\uB300\uC5D0\uAC8C
+        \uC3E8\uC73C\uB85C\uC368\n\uD2B9\uC218\uACF5\uACA9\uC744 \uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5F9E\u8EAB\u9AD4\u767C\u51FA\u602A\u7570\u96FB\u6CE2\n\u5F71\u97FF\u5C0D\u624B\uFF0C\n\u5927\u5E45\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le corps du lanceur produit des ondes anormales\nqui enveloppent
+        l\u2019ennemi et diminuent beaucoup\nson Attaque Sp\xE9ciale."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Der K\xF6rper des Anwenders erzeugt mysteri\xF6se\nWellen und
+        senkt den Spezial-Angriff des Zieles\ndadurch stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Su cuerpo irradia unas raras ondas que, al alcanzar \na un oponente,
+        hacen que disminuya mucho su\nAtaque Especial."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Il corpo di chi la usa emette onde anomale che\ninvestono il
+        bersaglio, riducendone di molto\nl\u2019Attacco Speciale."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user\u2019s body generates an eerie impulse.\nExposing the
+        target to it harshly lowers the target\u2019s\nSp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u4F53\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u653E\u3061\n\u76F8\u624B\u306B\u3000\u6D74\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u7279\u653B\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u4ECE\u8EAB\u4F53\u653E\u5C04\u51FA\u602A\u5F02\u7535\u6CE2\uFF0C\n\u8BA9\u5BF9\u624B\u6C90\u6D74\u5176\u4E2D\uFF0C\n\u4ECE\u800C\u5927\u5E45\u964D\u4F4E\u5176\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u304B\u3089\u3060\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u306F\u306A\u3061\n\u3042\u3044\u3066\u306B\u3000\u3042\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u3068\u304F\u3053\u3046\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uBAB8\uC5D0\uC11C \uAD34\uC804\uD30C\uB97C \uB0B4\uC5B4\n\uC0C1\uB300\uC5D0\uAC8C
+        \uC3E8\uC73C\uB85C\uC368\n\uD2B9\uC218\uACF5\uACA9\uC744 \uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5F9E\u8EAB\u9AD4\u767C\u51FA\u602A\u7570\u96FB\u6CE2\n\u5F71\u97FF\u5C0D\u624B\uFF0C\n\u5927\u5E45\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le corps du lanceur produit des ondes anormales\nqui enveloppent
+        l\u2019ennemi et diminuent beaucoup\nson Attaque Sp\xE9ciale."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Der K\xF6rper des Anwenders erzeugt mysteri\xF6se\nWellen und
+        senkt den Spezial-Angriff des Zieles\ndadurch stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Su cuerpo irradia unas raras ondas que, al alcanzar \na un oponente,
+        hacen que disminuya mucho su\nAtaque Especial."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Il corpo di chi la usa emette onde anomale che\ninvestono il
+        bersaglio, riducendone di molto\nl\u2019Attacco Speciale."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user\u2019s body generates an eerie impulse.\nExposing the
+        target to it harshly lowers the target\u2019s\nSp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u4F53\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u653E\u3061\n\u76F8\u624B\u306B\u3000\u6D74\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u7279\u653B\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u4ECE\u8EAB\u4F53\u653E\u5C04\u51FA\u602A\u5F02\u7535\u6CE2\uFF0C\n\u8BA9\u5BF9\u624B\u6C90\u6D74\u5176\u4E2D\uFF0C\n\u4ECE\u800C\u5927\u5E45\u964D\u4F4E\u5176\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u304B\u3089\u3060\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u306F\u306A\u3061\n\u3042\u3044\u3066\u306B\u3000\u3042\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u3068\u304F\u3053\u3046\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uBAB8\uC5D0\uC11C \uAD34\uC804\uD30C\uB97C \uB0B4\uC5B4\n\uC0C1\uB300\uC5D0\uAC8C
+        \uC3E8\uC73C\uB85C\uC368\n\uD2B9\uC218\uACF5\uACA9\uC744 \uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5F9E\u8EAB\u9AD4\u767C\u51FA\u602A\u7570\u96FB\u6CE2\n\u5F71\u97FF\u5C0D\u624B\uFF0C\n\u5927\u5E45\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le corps du lanceur produit des ondes anormales\nqui enveloppent
+        l\u2019ennemi et diminuent beaucoup\nson Attaque Sp\xE9ciale."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Der K\xF6rper des Anwenders erzeugt mysteri\xF6se\nWellen und
+        senkt den Spezial-Angriff des Zieles\ndadurch stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Su cuerpo irradia unas raras ondas que, al alcanzar \na un oponente,
+        hacen que disminuya mucho su\nAtaque Especial."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Il corpo di chi la usa emette onde anomale che\ninvestono il
+        bersaglio, riducendone di molto\nl\u2019Attacco Speciale."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user\u2019s body generates an eerie impulse.\nExposing the
+        target to it harshly lowers the target\u2019s\nSp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u4F53\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u653E\u3061\n\u76F8\u624B\u306B\u3000\u6D74\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u7279\u653B\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u4ECE\u8EAB\u4F53\u653E\u5C04\u51FA\u602A\u5F02\u7535\u6CE2\uFF0C\n\u8BA9\u5BF9\u624B\u6C90\u6D74\u5176\u4E2D\uFF0C\n\u4ECE\u800C\u5927\u5E45\u964D\u4F4E\u5176\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u304B\u3089\u3060\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u306F\u306A\u3061\n\u3042\u3044\u3066\u306B\u3000\u3042\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u3068\u304F\u3053\u3046\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uBAB8\uC5D0\uC11C \uBC1C\uC0DD\uC2DC\uD0A8 \uAD34\uC804\uD30C\uB97C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uC3D8\uC544\n\uD2B9\uC218\uACF5\uACA9\uC744 \uD06C\uAC8C \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5F9E\u8EAB\u9AD4\u767C\u51FA\u602A\u7570\u96FB\u6CE2\n\u5F71\u97FF\u5C0D\u624B\uFF0C\n\u5927\u5E45\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le corps du lanceur produit des ondes anormales\nqui enveloppent
+        l\u2019ennemi et diminuent beaucoup\nson Attaque Sp\xE9ciale."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der K\xF6rper des Anwenders erzeugt mysteri\xF6se Wellen\nund
+        senkt den Spezial-Angriff des Zieles dadurch stark."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'El usuario irradia unas raras ondas que, al alcanzar a un
+
+        oponente,
+        hacen que disminuya mucho su Ataque
+
+        Especial.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Il corpo di chi la usa emette onde anomale che\ninvestono il
+        bersaglio, riducendone di molto\nl\u2019Attacco Speciale."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user\u2019s body generates an eerie impulse.\nExposing the
+        target to it harshly lowers the target\u2019s\nSp. Atk stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u4F53\u304B\u3089\u3000\u304B\u3044\u3067\u3093\u3071\u3092\u3000\u653E\u3061\n\u76F8\u624B\u306B\u3000\u6D74\u3073\u305B\u308B\u3000\u3053\u3068\u306B\u3088\u3063\u3066\n\u7279\u653B\u3092\u3000\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u4ECE\u8EAB\u4F53\u653E\u5C04\u51FA\u602A\u5F02\u7535\u6CE2\uFF0C\n\u8BA9\u5BF9\u624B\u6C90\u6D74\u5176\u4E2D\uFF0C\n\u4ECE\u800C\u5927\u5E45\u964D\u4F4E\u5176\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vi
+      url: https://pokeapi.co/api/v2/generation/6/
+    id: 598
+    learned_by_pokemon:
+    - name: voltorb
+      url: https://pokeapi.co/api/v2/pokemon/100/
+    - name: electrode
+      url: https://pokeapi.co/api/v2/pokemon/101/
+    - name: lanturn
+      url: https://pokeapi.co/api/v2/pokemon/171/
+    - name: mareep
+      url: https://pokeapi.co/api/v2/pokemon/179/
+    - name: wooper
+      url: https://pokeapi.co/api/v2/pokemon/194/
+    - name: electrike
+      url: https://pokeapi.co/api/v2/pokemon/309/
+    - name: shinx
+      url: https://pokeapi.co/api/v2/pokemon/403/
+    - name: stunfisk
+      url: https://pokeapi.co/api/v2/pokemon/618/
+    - name: heliolisk
+      url: https://pokeapi.co/api/v2/pokemon/695/
+    - name: dedenne
+      url: https://pokeapi.co/api/v2/pokemon/702/
+    - name: xurkitree
+      url: https://pokeapi.co/api/v2/pokemon/796/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1438/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: net-good-stats
+        url: https://pokeapi.co/api/v2/move-category/2/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: eerie-impulse
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u304B\u3044\u3067\u3093\u3071"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uAD34\uC804\uD30C"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u602A\u7570\u96FB\u6CE2"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "Ondes \xC9tranges"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Mystowellen
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Onda An\xF3mala"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Elettromistero
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Eerie Impulse
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u304B\u3044\u3067\u3093\u3071"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u602A\u5F02\u7535\u6CE2"
+    past_values: []
+    power: 0
+    pp: 15
+    priority: 0
+    stat_changes:
+    - change: -2
+      stat:
+        name: special-attack
+        url: https://pokeapi.co/api/v2/stat/4/
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: electric
+      url: https://pokeapi.co/api/v2/type/13/

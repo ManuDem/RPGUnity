@@ -1,0 +1,480 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: tearful-look
+  m_EditorClassIdentifier: 
+  name: Tearful Look
+  description: "The user gets teary eyed to make the target lose\nits combative spirit.
+    This lowers the target\u2019s\nAttack and Sp. Atk stats."
+  type: 1
+  power: 0
+  accuracy: 0
+  alwaysHits: 0
+  pp: 20
+  priority: 0
+  category: 2
+  effects:
+    boosts:
+    - stat: 0
+      boost: -1
+    - stat: 2
+      boost: -1
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 715
+  pokeApiMove:
+    accuracy: 0
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 100
+    effect_changes: []
+    effect_entries:
+    - effect: Lowers the target's Attack and Special Attack by one stage each.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Lowers the target's Attack and Special Attack by one stage.
+    flavor_text_entries:
+    - flavor_text: "\u53D8\u5F97\u6CEA\u773C\u6C6A\u6C6A\uFF0C\n\u8BA9\u5BF9\u624B\u4E27\u5931\u6597\u5FD7\u3002\n\u4ECE\u800C\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u306A\u307F\u3060\u3081\u306B\u3000\u306A\u3063\u3066\n\u3042\u3044\u3066\u306E\u3000\u305B\u3093\u308A\u3087\u304F\u3092\u3000\u305D\u3046\u3057\u3064\u3055\u305B\u308B\u3002\n\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3068\u3000\u3068\u304F\u3053\u3046\u304C\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uB208\uBB3C\uC744 \uADF8\uB801\uADF8\uB801\uAC70\uB824\n\uC0C1\uB300\uC758
+        \uC804\uC758\uB97C \uC0C1\uC2E4\uD558\uAC8C \uD55C\uB2E4.\n\uC0C1\uB300\uC758
+        \uACF5\uACA9\uACFC \uD2B9\uC218\uACF5\uACA9\uC774 \uB5A8\uC5B4\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u8B8A\u5F97\u6DDA\u773C\u6C6A\u6C6A\uFF0C\n\u4EE4\u5C0D\u624B\u55AA\u5931\u9B25\u5FD7\u3002\n\u9032\u800C\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le lanceur jette un regard plein de larmes \xE0 la cible.\nCelle-ci
+        perd toute vell\xE9it\xE9 de combat et voit\nson Attaque et son Attaque Sp\xE9ciale
+        baisser."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Dem Anwender stehen Tr\xE4nen in den Augen,\nwodurch das Ziel
+        seinen Kampfeswillen verliert.\nAngriff und Spezial-Angriff des Zieles sinken."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Mira al objetivo con ojos llorosos para hacerle\nperder su esp\xEDritu
+        combativo y reduce su Ataque y\nAtaque Especial."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa guarda il bersaglio con gli occhi pieni\ndi lacrime
+        e gli fa perdere lo spirito combattivo,\nriducendone l\u2019Attacco e l\u2019Attacco
+        Speciale."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user gets teary eyed to make the target lose\nits combative
+        spirit. This lowers the target\u2019s\nAttack and Sp. Atk stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u306A\u307F\u3060\u3081\u306B\u3000\u306A\u3063\u3066\n\u76F8\u624B\u306E\u3000\u6226\u529B\u3092\u3000\u55AA\u5931\u3055\u305B\u308B\u3002\n\u76F8\u624B\u306E\u3000\u653B\u6483\u3068\u3000\u7279\u653B\u304C\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u306A\u307F\u3060\u3081\u306B\u3000\u306A\u3063\u3066\n\u3042\u3044\u3066\u306E\u3000\u305B\u3093\u308A\u3087\u304F\u3092\u3000\u305D\u3046\u3057\u3064\u3055\u305B\u308B\u3002\n\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3068\u3000\u3068\u304F\u3053\u3046\u304C\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uB208\uBB3C\uC744 \uADF8\uB801\uADF8\uB801\uAC70\uB824\n\uC0C1\uB300\uC758
+        \uC804\uC758\uB97C \uC0C1\uC2E4\uD558\uAC8C \uD55C\uB2E4.\n\uC0C1\uB300\uC758
+        \uACF5\uACA9\uACFC \uD2B9\uC218\uACF5\uACA9\uC774 \uB5A8\uC5B4\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u8B8A\u5F97\u6DDA\u773C\u6C6A\u6C6A\uFF0C\n\u4EE4\u5C0D\u624B\u55AA\u5931\u9B25\u5FD7\u3002\n\u9032\u800C\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le lanceur jette un regard plein de larmes \xE0 la cible.\nCelle-ci
+        perd toute vell\xE9it\xE9 de combat et voit\nson Attaque et son Attaque Sp\xE9ciale
+        baisser."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Dem Anwender stehen Tr\xE4nen in den Augen,\nwodurch das Ziel
+        seinen Kampfeswillen verliert.\nAngriff und Spezial-Angriff des Zieles sinken."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Mira al objetivo con ojos llorosos para hacerle\nperder su esp\xEDritu
+        combativo y reduce su Ataque y\nAtaque Especial."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa guarda il bersaglio con gli occhi pieni\ndi lacrime
+        e gli fa perdere lo spirito combattivo,\nriducendone l\u2019Attacco e l\u2019Attacco
+        Speciale."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user gets teary eyed to make the target lose\nits combative
+        spirit. This lowers the target\u2019s\nAttack and Sp. Atk stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u306A\u307F\u3060\u3081\u306B\u3000\u306A\u3063\u3066\n\u76F8\u624B\u306E\u3000\u6226\u529B\u3092\u3000\u55AA\u5931\u3055\u305B\u308B\u3002\n\u76F8\u624B\u306E\u3000\u653B\u6483\u3068\u3000\u7279\u653B\u304C\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u53D8\u5F97\u6CEA\u773C\u6C6A\u6C6A\uFF0C\n\u8BA9\u5BF9\u624B\u4E27\u5931\u6597\u5FD7\u3002\n\u4ECE\u800C\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u306A\u307F\u3060\u3081\u306B\u3000\u306A\u3063\u3066\n\u3042\u3044\u3066\u306E\u3000\u305B\u3093\u308A\u3087\u304F\u3092\u3000\u305D\u3046\u3057\u3064\u3055\u305B\u308B\u3002\n\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3068\u3000\u3068\u304F\u3053\u3046\u304C\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uB208\uBB3C\uC744 \uADF8\uB801\uADF8\uB801\uAC70\uB824\n\uC0C1\uB300\uC758
+        \uC804\uC758\uB97C \uC0C1\uC2E4\uD558\uAC8C \uD55C\uB2E4.\n\uC0C1\uB300\uC758
+        \uACF5\uACA9\uACFC \uD2B9\uC218\uACF5\uACA9\uC774 \uB5A8\uC5B4\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u8B8A\u5F97\u6DDA\u773C\u6C6A\u6C6A\uFF0C\n\u4EE4\u5C0D\u624B\u55AA\u5931\u9B25\u5FD7\u3002\n\u9032\u800C\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le lanceur jette un regard plein de larmes \xE0 la cible.\nCelle-ci
+        perd toute vell\xE9it\xE9 de combat et voit\nson Attaque et son Attaque Sp\xE9ciale
+        baisser."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Dem Anwender stehen Tr\xE4nen in den Augen,\nwodurch das Ziel
+        seinen Kampfeswillen verliert.\nAngriff und Spezial-Angriff des Zieles sinken."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Mira al objetivo con ojos llorosos para hacerle\nperder su esp\xEDritu
+        combativo y reduce su Ataque y\nAtaque Especial."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa guarda il bersaglio con gli occhi pieni\ndi lacrime
+        e gli fa perdere lo spirito combattivo,\nriducendone l\u2019Attacco e l\u2019Attacco
+        Speciale."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user gets teary eyed to make the target lose\nits combative
+        spirit. This lowers the target\u2019s\nAttack and Sp. Atk stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u306A\u307F\u3060\u3081\u306B\u3000\u306A\u3063\u3066\n\u76F8\u624B\u306E\u3000\u6226\u529B\u3092\u3000\u55AA\u5931\u3055\u305B\u308B\u3002\n\u76F8\u624B\u306E\u3000\u653B\u6483\u3068\u3000\u7279\u653B\u304C\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u53D8\u5F97\u6CEA\u773C\u6C6A\u6C6A\uFF0C\n\u8BA9\u5BF9\u624B\u4E27\u5931\u6597\u5FD7\u3002\n\u4ECE\u800C\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u306A\u307F\u3060\u3081\u306B\u3000\u306A\u3063\u3066\n\u3042\u3044\u3066\u306E\u3000\u305B\u3093\u308A\u3087\u304F\u3092\u3000\u305D\u3046\u3057\u3064\u3055\u305B\u308B\u3002\n\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3068\u3000\u3068\u304F\u3053\u3046\u304C\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uB208\uBB3C\uC744 \uADF8\uB801\uADF8\uB801\uAC70\uB824\n\uC0C1\uB300\uC758
+        \uC804\uC758\uB97C \uC0C1\uC2E4\uD558\uAC8C \uD55C\uB2E4.\n\uC0C1\uB300\uC758
+        \uACF5\uACA9\uACFC \uD2B9\uC218\uACF5\uACA9\uC774 \uB5A8\uC5B4\uC9C4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u8B8A\u5F97\u6DDA\u773C\u6C6A\u6C6A\uFF0C\n\u4EE4\u5C0D\u624B\u55AA\u5931\u9B25\u5FD7\u3002\n\u9032\u800C\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le lanceur jette un regard plein de larmes \xE0 la cible.\nCelle-ci
+        perd toute vell\xE9it\xE9 de combat et voit\nson Attaque et son Attaque Sp\xE9ciale
+        baisser."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Dem Anwender stehen Tr\xE4nen in den Augen, wodurch\ndas Ziel
+        seinen Kampfeswillen verliert. Angriff und\nSpezial-Angriff des Zieles sinken."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Mira al objetivo con ojos llorosos para hacerle perder\nsu esp\xEDritu
+        combativo y reduce su Ataque y Ataque\nEspecial."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa guarda il bersaglio con gli occhi pieni\ndi lacrime
+        e gli fa perdere lo spirito combattivo,\nriducendone l\u2019Attacco e l\u2019Attacco
+        Speciale."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user gets teary eyed to make the target lose\nits combative
+        spirit. This lowers the target\u2019s\nAttack and Sp. Atk stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u306A\u307F\u3060\u3081\u306B\u3000\u306A\u3063\u3066\n\u76F8\u624B\u306E\u3000\u6226\u529B\u3092\u3000\u55AA\u5931\u3055\u305B\u308B\u3002\n\u76F8\u624B\u306E\u3000\u653B\u6483\u3068\u3000\u7279\u653B\u304C\u3000\u3055\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u53D8\u5F97\u6CEA\u773C\u6C6A\u6C6A\uFF0C\n\u8BA9\u5BF9\u624B\u4E27\u5931\u6597\u5FD7\u3002\n\u4ECE\u800C\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vii
+      url: https://pokeapi.co/api/v2/generation/7/
+    id: 715
+    learned_by_pokemon:
+    - name: sudowoodo
+      url: https://pokeapi.co/api/v2/pokemon/185/
+    - name: plusle
+      url: https://pokeapi.co/api/v2/pokemon/311/
+    - name: minun
+      url: https://pokeapi.co/api/v2/pokemon/312/
+    - name: bonsly
+      url: https://pokeapi.co/api/v2/pokemon/438/
+    - name: patrat
+      url: https://pokeapi.co/api/v2/pokemon/504/
+    - name: flabebe
+      url: https://pokeapi.co/api/v2/pokemon/669/
+    - name: dedenne
+      url: https://pokeapi.co/api/v2/pokemon/702/
+    - name: wishiwashi-solo
+      url: https://pokeapi.co/api/v2/pokemon/746/
+    - name: wishiwashi-school
+      url: https://pokeapi.co/api/v2/pokemon/10127/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: net-good-stats
+        url: https://pokeapi.co/api/v2/move-category/2/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 100
+    name: tearful-look
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u306A\u307F\u3060\u3081"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uB208\uBB3C\uADF8\uB801\uADF8\uB801"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u6DDA\u773C\u6C6A\u6C6A"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "Larme \xE0 l\u2019\u0152il"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: "Tr\xE4nendr\xFCse"
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Ojos Llorosos
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Occhionilucidi
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Tearful Look
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u306A\u307F\u3060\u3081"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u6CEA\u773C\u6C6A\u6C6A"
+    past_values: []
+    power: 0
+    pp: 20
+    priority: 0
+    stat_changes:
+    - change: -1
+      stat:
+        name: attack
+        url: https://pokeapi.co/api/v2/stat/2/
+    - change: -1
+      stat:
+        name: special-attack
+        url: https://pokeapi.co/api/v2/stat/4/
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: normal
+      url: https://pokeapi.co/api/v2/type/1/

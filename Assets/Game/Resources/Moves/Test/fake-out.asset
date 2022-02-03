@@ -1,0 +1,808 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: fake-out
+  m_EditorClassIdentifier: 
+  name: Fake Out
+  description: 'A 1st-turn, 1st-strike move
+
+    that causes flinching.'
+  type: 1
+  power: 40
+  accuracy: 100
+  alwaysHits: 0
+  pp: 10
+  priority: 3
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 252
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before:
+        - name: seismic-toss
+          url: https://pokeapi.co/api/v2/move/69/
+        - name: feint-attack
+          url: https://pokeapi.co/api/v2/move/185/
+        - name: vital-throw
+          url: https://pokeapi.co/api/v2/move/233/
+        - name: knock-off
+          url: https://pokeapi.co/api/v2/move/282/
+        - name: arm-thrust
+          url: https://pokeapi.co/api/v2/move/292/
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/23/
+    contest_type:
+      name: cute
+      url: https://pokeapi.co/api/v2/contest-type/3/
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 100
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage.  Causes the target to flinch.  Can only be
+        used on the user's first turn after entering the field.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Can only be used as the first move after the user enters battle. 
+        Causes the target to flinch.
+    flavor_text_entries:
+    - flavor_text: 'A 1st-turn, 1st-strike move
+
+        that causes flinching.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: 'A 1st-turn, 1st-strike move
+
+        that causes flinching.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: 'An attack that hits
+
+        first and causes
+
+        flinching.
+        Usable
+
+        only on 1st turn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: 'An attack that hits
+
+        first and makes the
+
+        target
+        flinch.
+
+        This move works only
+
+        on the first turn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: 'An attack that hits
+
+        first and makes the
+
+        target
+        flinch.
+
+        This move works only
+
+        on the first turn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: 'An attack that hits
+
+        first and makes the
+
+        target
+        flinch. It only
+
+        works the first turn
+
+        the user is in battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Permet de frapper en premier et\napeure l\u2019ennemi. Ne fonctionne\nqu\u2019au
+        premier tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'An attack that hits first and makes the
+
+        target flinch.
+        It only works the first turn
+
+        the user is in battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'An attack that hits first and makes the
+
+        target flinch.
+        It only works the first turn
+
+        the user is in battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u305B\u3093\u305B\u3044\u3000\u3053\u3046\u3052\u304D\u3067\u3000\u3042\u3044\u3066\u3092\n\u3072\u308B\u307E\u305B\u308B\u3002\u305B\u3093\u3068\u3046\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u305B\u3044\u3053\u3046\u3000\u3057\u306A\u3044\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC120\uC81C\uACF5\uACA9\uC73C\uB85C \uC0C1\uB300\uB97C \uD480\uC8FD\uAC8C
+        \uD55C\uB2E4.\n\uBC30\uD2C0\uC5D0 \uB098\uAC00\uC11C\n\uBC14\uB85C \uC4F0\uC9C0
+        \uC54A\uC73C\uBA74 \uC131\uACF5\uD560 \uC218 \uC5C6\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Permet de frapper en premier et apeure l\u2019ennemi.\nNe fonctionne
+        qu\u2019au premier tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Diese Attacke trifft zuerst. Das Ziel schreckt\nzur\xFCck. Gelingt
+        nur in der ersten Runde eines\nKampfes."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Ataca primero y, adem\xE1s, hace retroceder al\nobjetivo. Solo
+        sirve en el primer turno."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Mossa che fa agire per primi e fa tentennare
+
+        il bersaglio.
+        Funziona solo appena scesi in campo.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'An attack that hits first and makes the
+
+        target flinch.
+        It only works the first turn
+
+        the user is in battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u5148\u5236\u653B\u6483\u3067\u3000\u76F8\u624B\u3092\u3000\u3072\u308B\u307E\u305B\u308B\u3002\n\u6226\u95D8\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u6210\u529F\u3057\u306A\u3044\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u305B\u3093\u305B\u3044\u3000\u3053\u3046\u3052\u304D\u3067\u3000\u3042\u3044\u3066\u3092\n\u3072\u308B\u307E\u305B\u308B\u3002\u305B\u3093\u3068\u3046\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u305B\u3044\u3053\u3046\u3000\u3057\u306A\u3044\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC120\uC81C\uACF5\uACA9\uC73C\uB85C \uC0C1\uB300\uB97C \uD480\uC8FD\uAC8C
+        \uD55C\uB2E4.\n\uBC30\uD2C0\uC5D0 \uB098\uAC00\uC11C\n\uBC14\uB85C \uC4F0\uC9C0
+        \uC54A\uC73C\uBA74 \uC131\uACF5\uD560 \uC218 \uC5C6\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Permet de frapper en premier et apeure l\u2019ennemi.\nNe fonctionne
+        qu\u2019au premier tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Diese Attacke trifft zuerst. Das Ziel schreckt\nzur\xFCck. Gelingt
+        nur in der ersten Runde eines\nKampfes."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Ataca primero y, adem\xE1s, hace retroceder al \nobjetivo. Solo
+        sirve en el primer turno."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Mossa che fa agire per primi e fa tentennare
+
+        il bersaglio.
+        Funziona solo appena scesi in campo.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'An attack that hits first and makes the
+
+        target flinch.
+        It only works the first turn
+
+        the user is in battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u5148\u5236\u653B\u6483\u3067\u3000\u76F8\u624B\u3092\u3000\u3072\u308B\u307E\u305B\u308B\u3002\n\u6226\u95D8\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u6210\u529F\u3057\u306A\u3044\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u305B\u3093\u305B\u3044\u3000\u3053\u3046\u3052\u304D\u3067\u3000\u3042\u3044\u3066\u3092\n\u3072\u308B\u307E\u305B\u308B\u3002\u305B\u3093\u3068\u3046\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u305B\u3044\u3053\u3046\u3000\u3057\u306A\u3044\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC120\uC81C\uACF5\uACA9\uC73C\uB85C \uC0C1\uB300\uB97C \uD480\uC8FD\uAC8C
+        \uD55C\uB2E4.\n\uBC30\uD2C0\uC5D0 \uB098\uAC00\uC11C\n\uBC14\uB85C \uC4F0\uC9C0
+        \uC54A\uC73C\uBA74 \uC131\uACF5\uD560 \uC218 \uC5C6\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5229\u7528\u5148\u5236\u653B\u64CA\u4F7F\u5C0D\u624B\u754F\u7E2E\u3002\n\u8981\u5728\u4E0A\u5834\u5F8C\u7ACB\u5373\u4F7F\u7528\u624D\u6703\u6210\u529F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Permet de frapper en priorit\xE9 et apeure l\u2019ennemi.\nNe
+        fonctionne qu\u2019au premier tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Attacke mit hoher Erstschlagquote. Das Ziel\nschreckt zur\xFCck.
+        Gelingt nur in der ersten Runde\neines Kampfes."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Movimiento de prioridad alta que, adem\xE1s, hace\nretroceder
+        al objetivo. Solo sirve en el primer turno."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Mossa ad alta priorit\xE0 che fa tentennare\nil bersaglio. Funziona
+        solo appena scesi in campo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'This attack hits first and makes the target flinch.
+
+        It
+        only works the first turn the user is in battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5148\u5236\u653B\u6483\u3067\u3000\u76F8\u624B\u3092\u3000\u3072\u308B\u307E\u305B\u308B\u3002\n\u6226\u95D8\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u6210\u529F\u3057\u306A\u3044\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u8FDB\u884C\u5148\u5236\u653B\u51FB\uFF0C\u4F7F\u5BF9\u624B\u754F\u7F29\u3002\n\u8981\u5728\u51FA\u573A\u540E\u7ACB\u523B\u4F7F\u51FA\u624D\u80FD\u6210\u529F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u305B\u3093\u305B\u3044\u3000\u3053\u3046\u3052\u304D\u3067\u3000\u3042\u3044\u3066\u3092\n\u3072\u308B\u307E\u305B\u308B\u3002\u305B\u3093\u3068\u3046\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u305B\u3044\u3053\u3046\u3000\u3057\u306A\u3044\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC120\uC81C\uACF5\uACA9\uC73C\uB85C \uC0C1\uB300\uB97C \uD480\uC8FD\uAC8C
+        \uD55C\uB2E4.\n\uBC30\uD2C0\uC5D0 \uB098\uAC00\uC11C\n\uBC14\uB85C \uC4F0\uC9C0
+        \uC54A\uC73C\uBA74 \uC131\uACF5\uD560 \uC218 \uC5C6\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5229\u7528\u5148\u5236\u653B\u64CA\u4F7F\u5C0D\u624B\u754F\u7E2E\u3002\n\u8981\u5728\u4E0A\u5834\u5F8C\u7ACB\u5373\u4F7F\u7528\u624D\u6703\u6210\u529F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Permet de frapper en priorit\xE9 et apeure l\u2019ennemi.\nNe
+        fonctionne qu\u2019au premier tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Attacke mit hoher Erstschlagquote. Das Ziel\nschreckt zur\xFCck.
+        Gelingt nur in der ersten Runde\neines Kampfes."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Movimiento de prioridad alta que, adem\xE1s, hace\nretroceder
+        al objetivo. Solo sirve en el primer turno."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Mossa ad alta priorit\xE0 che fa tentennare\nil bersaglio. Funziona
+        solo appena scesi in campo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'This attack hits first and makes the target flinch.
+
+        It
+        only works the first turn the user is in battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5148\u5236\u653B\u6483\u3067\u3000\u76F8\u624B\u3092\u3000\u3072\u308B\u307E\u305B\u308B\u3002\n\u6226\u95D8\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u6210\u529F\u3057\u306A\u3044\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u8FDB\u884C\u5148\u5236\u653B\u51FB\uFF0C\u4F7F\u5BF9\u624B\u754F\u7F29\u3002\n\u8981\u5728\u51FA\u573A\u540E\u7ACB\u523B\u4F7F\u51FA\u624D\u80FD\u6210\u529F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u305B\u3093\u305B\u3044\u3000\u3053\u3046\u3052\u304D\u3067\u3000\u3042\u3044\u3066\u3092\n\u3072\u308B\u307E\u305B\u308B\u3002\u305B\u3093\u3068\u3046\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u305B\u3044\u3053\u3046\u3000\u3057\u306A\u3044\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC120\uC81C\uACF5\uACA9\uC73C\uB85C \uC0C1\uB300\uB97C \uD480\uC8FD\uAC8C
+        \uD55C\uB2E4.\n\uBC30\uD2C0\uC5D0 \uB098\uAC00\uC11C\n\uBC14\uB85C \uC4F0\uC9C0
+        \uC54A\uC73C\uBA74 \uC131\uACF5\uD560 \uC218 \uC5C6\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5229\u7528\u5148\u5236\u653B\u64CA\u4F7F\u5C0D\u624B\u754F\u7E2E\u3002\n\u8981\u5728\u4E0A\u5834\u5F8C\u7ACB\u5373\u4F7F\u7528\u624D\u6703\u6210\u529F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Permet de frapper en priorit\xE9 et apeure l\u2019ennemi.\nNe
+        fonctionne qu\u2019au premier tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Attacke mit hoher Erstschlagquote. Das Ziel\nschreckt zur\xFCck.
+        Gelingt nur in der ersten Runde\neines Kampfes."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Movimiento de prioridad alta que, adem\xE1s, hace\nretroceder
+        al objetivo. Solo sirve en el primer turno."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Mossa ad alta priorit\xE0 che fa tentennare\nil bersaglio. Funziona
+        solo appena scesi in campo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'This attack hits first and makes the target flinch.
+
+        It
+        only works the first turn the user is in battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5148\u5236\u653B\u6483\u3067\u3000\u76F8\u624B\u3092\u3000\u3072\u308B\u307E\u305B\u308B\u3002\n\u6226\u95D8\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u6210\u529F\u3057\u306A\u3044\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u8FDB\u884C\u5148\u5236\u653B\u51FB\uFF0C\u4F7F\u5BF9\u624B\u754F\u7F29\u3002\n\u8981\u5728\u51FA\u573A\u540E\u7ACB\u523B\u4F7F\u51FA\u624D\u80FD\u6210\u529F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u305B\u3093\u305B\u3044\u3000\u3053\u3046\u3052\u304D\u3067\u3000\u3042\u3044\u3066\u3092\n\u3072\u308B\u307E\u305B\u308B\u3002\u305B\u3093\u3068\u3046\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u305B\u3044\u3053\u3046\u3000\u3057\u306A\u3044\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC120\uC81C\uACF5\uACA9\uC73C\uB85C \uC0C1\uB300\uB97C \uD480\uC8FD\uAC8C
+        \uD55C\uB2E4.\n\uBC30\uD2C0\uC5D0 \uB098\uAC00\uC11C\n\uBC14\uB85C \uC4F0\uC9C0
+        \uC54A\uC73C\uBA74 \uC131\uACF5\uD560 \uC218 \uC5C6\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5229\u7528\u5148\u5236\u653B\u64CA\u4F7F\u5C0D\u624B\u754F\u7E2E\u3002\n\u8981\u5728\u4E0A\u5834\u5F8C\u7ACB\u5373\u4F7F\u7528\u624D\u6703\u6210\u529F\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Permet de frapper en priorit\xE9 et apeure l\u2019ennemi.\nNe
+        fonctionne qu\u2019au premier tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Erstschlag-Attacke, die das Ziel zur\xFCckschrecken l\xE4sst.\nGelingt
+        nur, wenn sie sofort eingesetzt wird, nachdem\nder Anwender das Kampffeld
+        betreten hat."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Amedrenta al objetivo con este movimiento de
+
+        prioridad
+        alta. Solo sirve en el primer turno.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Mossa ad alta priorit\xE0 che fa tentennare\nil bersaglio. Funziona
+        solo appena scesi in campo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'This attack hits first and makes the target flinch.
+
+        It
+        only works the first turn each time the user
+
+        enters battle.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5148\u5236\u653B\u6483\u3067\u3000\u76F8\u624B\u3092\u3000\u3072\u308B\u307E\u305B\u308B\u3002\n\u6226\u95D8\u306B\u3000\u3067\u305F\u3089\n\u3059\u3050\u306B\u3000\u3060\u3055\u306A\u3044\u3068\u3000\u6210\u529F\u3057\u306A\u3044\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u8FDB\u884C\u5148\u5236\u653B\u51FB\uFF0C\u4F7F\u5BF9\u624B\u754F\u7F29\u3002\n\u8981\u5728\u51FA\u573A\u540E\u7ACB\u523B\u4F7F\u51FA\u624D\u80FD\u6210\u529F\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-iii
+      url: https://pokeapi.co/api/v2/generation/3/
+    id: 252
+    learned_by_pokemon:
+    - name: squirtle
+      url: https://pokeapi.co/api/v2/pokemon/7/
+    - name: meowth
+      url: https://pokeapi.co/api/v2/pokemon/52/
+    - name: persian
+      url: https://pokeapi.co/api/v2/pokemon/53/
+    - name: seel
+      url: https://pokeapi.co/api/v2/pokemon/86/
+    - name: kangaskhan
+      url: https://pokeapi.co/api/v2/pokemon/115/
+    - name: mr-mime
+      url: https://pokeapi.co/api/v2/pokemon/122/
+    - name: mew
+      url: https://pokeapi.co/api/v2/pokemon/151/
+    - name: pichu
+      url: https://pokeapi.co/api/v2/pokemon/172/
+    - name: aipom
+      url: https://pokeapi.co/api/v2/pokemon/190/
+    - name: sneasel
+      url: https://pokeapi.co/api/v2/pokemon/215/
+    - name: delibird
+      url: https://pokeapi.co/api/v2/pokemon/225/
+    - name: tyrogue
+      url: https://pokeapi.co/api/v2/pokemon/236/
+    - name: smoochum
+      url: https://pokeapi.co/api/v2/pokemon/238/
+    - name: lombre
+      url: https://pokeapi.co/api/v2/pokemon/271/
+    - name: nuzleaf
+      url: https://pokeapi.co/api/v2/pokemon/274/
+    - name: makuhita
+      url: https://pokeapi.co/api/v2/pokemon/296/
+    - name: hariyama
+      url: https://pokeapi.co/api/v2/pokemon/297/
+    - name: skitty
+      url: https://pokeapi.co/api/v2/pokemon/300/
+    - name: delcatty
+      url: https://pokeapi.co/api/v2/pokemon/301/
+    - name: sableye
+      url: https://pokeapi.co/api/v2/pokemon/302/
+    - name: meditite
+      url: https://pokeapi.co/api/v2/pokemon/307/
+    - name: spinda
+      url: https://pokeapi.co/api/v2/pokemon/327/
+    - name: kecleon
+      url: https://pokeapi.co/api/v2/pokemon/352/
+    - name: chimchar
+      url: https://pokeapi.co/api/v2/pokemon/390/
+    - name: buneary
+      url: https://pokeapi.co/api/v2/pokemon/427/
+    - name: glameow
+      url: https://pokeapi.co/api/v2/pokemon/431/
+    - name: purugly
+      url: https://pokeapi.co/api/v2/pokemon/432/
+    - name: mime-jr
+      url: https://pokeapi.co/api/v2/pokemon/439/
+    - name: croagunk
+      url: https://pokeapi.co/api/v2/pokemon/453/
+    - name: purrloin
+      url: https://pokeapi.co/api/v2/pokemon/509/
+    - name: liepard
+      url: https://pokeapi.co/api/v2/pokemon/510/
+    - name: scraggy
+      url: https://pokeapi.co/api/v2/pokemon/559/
+    - name: mienfoo
+      url: https://pokeapi.co/api/v2/pokemon/619/
+    - name: mienshao
+      url: https://pokeapi.co/api/v2/pokemon/620/
+    - name: espurr
+      url: https://pokeapi.co/api/v2/pokemon/677/
+    - name: meowstic-male
+      url: https://pokeapi.co/api/v2/pokemon/678/
+    - name: litten
+      url: https://pokeapi.co/api/v2/pokemon/725/
+    - name: salandit
+      url: https://pokeapi.co/api/v2/pokemon/757/
+    - name: togedemaru
+      url: https://pokeapi.co/api/v2/pokemon/777/
+    - name: zeraora
+      url: https://pokeapi.co/api/v2/pokemon/807/
+    - name: meowstic-female
+      url: https://pokeapi.co/api/v2/pokemon/10025/
+    - name: kangaskhan-mega
+      url: https://pokeapi.co/api/v2/pokemon/10039/
+    - name: sableye-mega
+      url: https://pokeapi.co/api/v2/pokemon/10066/
+    - name: meowth-alola
+      url: https://pokeapi.co/api/v2/pokemon/10107/
+    - name: persian-alola
+      url: https://pokeapi.co/api/v2/pokemon/10108/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 100
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: fake-out
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u306D\u3053\u3060\u307E\u3057"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC18D\uC774\uB2E4"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u64CA\u638C\u5947\u8972"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Bluff
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Mogelhieb
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Sorpresa
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Bruciapelo
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Fake Out
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u306D\u3053\u3060\u307E\u3057"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u51FB\u638C\u5947\u88AD"
+    past_values: []
+    power: 40
+    pp: 10
+    priority: 3
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/17/
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: normal
+      url: https://pokeapi.co/api/v2/type/1/

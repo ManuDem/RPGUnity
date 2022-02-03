@@ -1,0 +1,465 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: beak-blast
+  m_EditorClassIdentifier: 
+  name: Beak Blast
+  description: "The user first heats up its beak, and then it attacks\nthe target.
+    Making direct contact with the Pok\xE9mon\nwhile it\u2019s heating up its beak
+    results in a burn."
+  type: 10
+  power: 100
+  accuracy: 100
+  alwaysHits: 0
+  pp: 15
+  priority: -3
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 690
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: "Begins charging at the start of the turn, then attacks as normal. 
+        Any Pok\xE9mon that makes contact with the user while charging is burned. 
+        The charging is not affected by accuracy, sleep, paralysis, or any other
+        effect that would interfere with a move."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: "Inflicts a burn on any Pok\xE9mon that makes contact before
+        the attack."
+    flavor_text_entries:
+    - flavor_text: "\u3055\u3044\u3057\u3087\u306B\u3000\u30AF\u30C1\u30D0\u30B7\u3092\u3000\u304B\u306D\u3064\u3057\u3066\u304B\u3089\n\u3053\u3046\u3052\u304D\u3092\u3000\u304F\u308A\u3060\u3059\u3002\n\u304B\u306D\u3064\u3061\u3085\u3046\u306B\u3000\u3055\u308F\u308B\u3068\u3000\u3084\u3051\u3069\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uBA3C\uC800 \uBD80\uB9AC\uB97C \uAC00\uC5F4\uC2DC\uD0A8 \uB2E4\uC74C\n\uACF5\uACA9\uC744
+        \uB0A0\uB9B0\uB2E4.\n\uAC00\uC5F4 \uC911\uC5D0 \uB9CC\uC9C0\uBA74 \uD654\uC0C1\uC744
+        \uC785\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5148\u52A0\u71B1\u9CE5\u5634\u5F8C\u518D\u9032\u884C\u653B\u64CA\u3002\n\u82E5\u5C0D\u624B\u5728\u52A0\u71B1\u6642\u89F8\u78B0\u7684\u8A71\uFF0C\n\u5C31\u6703\u707C\u50B7\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le lanceur fait chauffer son bec avant d\u2019attaquer.\nS\u2019il
+        subit une attaque directe pendant la mont\xE9e\nen temp\xE9rature, l\u2019attaquant
+        sera br\xFBl\xE9."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Der Anwender erhitzt zuerst seinen Schnabel und\ngreift dann
+        an. Pok\xE9mon, die ihn w\xE4hrend des\nErhitzens ber\xFChren, erleiden Verbrennungen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Primero aumenta la temperatura de su pico y luego\nejecuta un
+        ataque. Quema al rival si este le propina\nun ataque f\xEDsico mientras est\xE1
+        calentando el pico."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa arroventa il proprio becco e poi attacca.\nSe un Pok\xE9mon
+        lo colpisce con un attacco diretto\nmentre sta accumulando calore, resta
+        scottato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user first heats up its beak, and then it attacks\nthe target.
+        Making direct contact with the Pok\xE9mon\nwhile it\u2019s heating up its
+        beak results in a burn."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u6700\u521D\u306B\u3000\u30AF\u30C1\u30D0\u30B7\u3092\u3000\u52A0\u71B1\u3057\u3066\u304B\u3089\n\u653B\u6483\u3092\u3000\u304F\u308A\u3060\u3059\u3002\n\u52A0\u71B1\u4E2D\u306B\u3000\u3055\u308F\u308B\u3068\u3000\u3084\u3051\u3069\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5148\u52A0\u70ED\u9E1F\u5634\u540E\u518D\u8FDB\u884C\u653B\u51FB\u3002\n\u9E1F\u5634\u5728\u52A0\u70ED\u65F6\u5BF9\u624B\u89E6\u78B0\u7684\u8BDD\uFF0C\n\u5C31\u4F1A\u4F7F\u5176\u707C\u4F24\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3055\u3044\u3057\u3087\u306B\u3000\u30AF\u30C1\u30D0\u30B7\u3092\u3000\u304B\u306D\u3064\u3057\u3066\u304B\u3089\n\u3053\u3046\u3052\u304D\u3092\u3000\u304F\u308A\u3060\u3059\u3002\n\u304B\u306D\u3064\u3061\u3085\u3046\u306B\u3000\u3055\u308F\u308B\u3068\u3000\u3084\u3051\u3069\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uBA3C\uC800 \uBD80\uB9AC\uB97C \uAC00\uC5F4\uC2DC\uD0A8 \uB2E4\uC74C\n\uACF5\uACA9\uC744
+        \uB0A0\uB9B0\uB2E4.\n\uAC00\uC5F4 \uC911\uC5D0 \uB9CC\uC9C0\uBA74 \uD654\uC0C1\uC744
+        \uC785\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5148\u52A0\u71B1\u9CE5\u5634\u5F8C\u518D\u9032\u884C\u653B\u64CA\u3002\n\u82E5\u5C0D\u624B\u5728\u52A0\u71B1\u6642\u89F8\u78B0\u7684\u8A71\uFF0C\n\u5C31\u6703\u707C\u50B7\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le lanceur fait chauffer son bec avant d\u2019attaquer.\nS\u2019il
+        subit une attaque directe pendant la mont\xE9e\nen temp\xE9rature, l\u2019attaquant
+        sera br\xFBl\xE9."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Der Anwender erhitzt zuerst seinen Schnabel und\ngreift dann
+        an. Pok\xE9mon, die ihn w\xE4hrend des\nErhitzens ber\xFChren, erleiden Verbrennungen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Primero aumenta la temperatura de su pico y luego\nejecuta un
+        ataque. Quema al rival si este le propina\nun ataque f\xEDsico mientras est\xE1
+        calentando el pico."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa arroventa il proprio becco e poi attacca.\nSe un Pok\xE9mon
+        lo colpisce con un attacco diretto\nmentre sta accumulando calore, resta
+        scottato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user first heats up its beak, and then it attacks\nthe target.
+        Making direct contact with the Pok\xE9mon\nwhile it\u2019s heating up its
+        beak results in a burn."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u6700\u521D\u306B\u3000\u30AF\u30C1\u30D0\u30B7\u3092\u3000\u52A0\u71B1\u3057\u3066\u304B\u3089\n\u653B\u6483\u3092\u3000\u304F\u308A\u3060\u3059\u3002\n\u52A0\u71B1\u4E2D\u306B\u3000\u3055\u308F\u308B\u3068\u3000\u3084\u3051\u3069\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5148\u52A0\u70ED\u9E1F\u5634\u540E\u518D\u8FDB\u884C\u653B\u51FB\u3002\n\u9E1F\u5634\u5728\u52A0\u70ED\u65F6\u5BF9\u624B\u89E6\u78B0\u7684\u8BDD\uFF0C\n\u5C31\u4F1A\u4F7F\u5176\u707C\u4F24\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3055\u3044\u3057\u3087\u306B\u3000\u30AF\u30C1\u30D0\u30B7\u3092\u3000\u304B\u306D\u3064\u3057\u3066\u304B\u3089\n\u3053\u3046\u3052\u304D\u3092\u3000\u304F\u308A\u3060\u3059\u3002\n\u304B\u306D\u3064\u3061\u3085\u3046\u306B\u3000\u3055\u308F\u308B\u3068\u3000\u3084\u3051\u3069\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uBA3C\uC800 \uBD80\uB9AC\uB97C \uAC00\uC5F4\uC2DC\uD0A8 \uB2E4\uC74C\n\uACF5\uACA9\uC744
+        \uB0A0\uB9B0\uB2E4.\n\uAC00\uC5F4 \uC911\uC5D0 \uB9CC\uC9C0\uBA74 \uD654\uC0C1\uC744
+        \uC785\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5148\u52A0\u71B1\u9CE5\u5634\u5F8C\u518D\u9032\u884C\u653B\u64CA\u3002\n\u82E5\u5C0D\u624B\u5728\u52A0\u71B1\u6642\u89F8\u78B0\u7684\u8A71\uFF0C\n\u5C31\u6703\u707C\u50B7\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le lanceur fait chauffer son bec avant d\u2019attaquer.\nS\u2019il
+        subit une attaque directe pendant la mont\xE9e\nen temp\xE9rature, l\u2019attaquant
+        sera br\xFBl\xE9."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Der Anwender erhitzt zuerst seinen Schnabel und\ngreift dann
+        an. Pok\xE9mon, die ihn w\xE4hrend des\nErhitzens ber\xFChren, erleiden Verbrennungen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Primero aumenta la temperatura de su pico y luego\nejecuta un
+        ataque. Quema al rival si este le propina\nun ataque f\xEDsico mientras est\xE1
+        calentando el pico."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa arroventa il proprio becco e poi attacca.\nSe un Pok\xE9mon
+        lo colpisce con un attacco diretto\nmentre sta accumulando calore, resta
+        scottato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user first heats up its beak, and then it attacks\nthe target.
+        Making direct contact with the Pok\xE9mon\nwhile it\u2019s heating up its
+        beak results in a burn."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u6700\u521D\u306B\u3000\u30AF\u30C1\u30D0\u30B7\u3092\u3000\u52A0\u71B1\u3057\u3066\u304B\u3089\n\u653B\u6483\u3092\u3000\u304F\u308A\u3060\u3059\u3002\n\u52A0\u71B1\u4E2D\u306B\u3000\u3055\u308F\u308B\u3068\u3000\u3084\u3051\u3069\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5148\u52A0\u70ED\u9E1F\u5634\u540E\u518D\u8FDB\u884C\u653B\u51FB\u3002\n\u9E1F\u5634\u5728\u52A0\u70ED\u65F6\u5BF9\u624B\u89E6\u78B0\u7684\u8BDD\uFF0C\n\u5C31\u4F1A\u4F7F\u5176\u707C\u4F24\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3055\u3044\u3057\u3087\u306B\u3000\u30AF\u30C1\u30D0\u30B7\u3092\u3000\u304B\u306D\u3064\u3057\u3066\u304B\u3089\n\u3053\u3046\u3052\u304D\u3092\u3000\u304F\u308A\u3060\u3059\u3002\n\u304B\u306D\u3064\u3061\u3085\u3046\u306B\u3000\u3055\u308F\u308B\u3068\u3000\u3084\u3051\u3069\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uBA3C\uC800 \uBD80\uB9AC\uB97C \uAC00\uC5F4\uC2DC\uD0A8 \uB2E4\uC74C\n\uACF5\uACA9\uC744
+        \uB0A0\uB9B0\uB2E4.\n\uAC00\uC5F4 \uC911\uC5D0 \uB9CC\uC9C0\uBA74 \uD654\uC0C1\uC744
+        \uC785\uB294\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5148\u52A0\u71B1\u9CE5\u5634\u5F8C\u518D\u9032\u884C\u653B\u64CA\u3002\n\u82E5\u5C0D\u624B\u5728\u52A0\u71B1\u6642\u89F8\u78B0\u7684\u8A71\uFF0C\n\u5C31\u6703\u707C\u50B7\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le lanceur fait chauffer son bec avant d\u2019attaquer.\nS\u2019il
+        subit une attaque directe pendant la mont\xE9e\nen temp\xE9rature, l\u2019attaquant
+        sera br\xFBl\xE9."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender erhitzt zuerst seinen Schnabel und greift\ndann
+        an. Pok\xE9mon, die ihn w\xE4hrend des Erhitzens\nber\xFChren, erleiden Verbrennungen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Primero aumenta la temperatura de su pico y luego\nejecuta un
+        ataque. Quema al rival si este le propina\nun ataque f\xEDsico mientras est\xE1
+        calentando el pico."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa arroventa il proprio becco e poi attacca.\nSe un Pok\xE9mon
+        lo colpisce con un attacco diretto\nmentre sta accumulando calore, resta
+        scottato."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user first heats up its beak, and then it attacks\nthe target.
+        Making direct contact with the Pok\xE9mon\nwhile it\u2019s heating up its
+        beak results in a burn."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u6700\u521D\u306B\u3000\u30AF\u30C1\u30D0\u30B7\u3092\u3000\u52A0\u71B1\u3057\u3066\u304B\u3089\n\u653B\u6483\u3092\u3000\u304F\u308A\u3060\u3059\u3002\n\u52A0\u71B1\u4E2D\u306B\u3000\u3055\u308F\u308B\u3068\u3000\u3084\u3051\u3069\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5148\u52A0\u70ED\u9E1F\u5634\u540E\u518D\u8FDB\u884C\u653B\u51FB\u3002\n\u9E1F\u5634\u5728\u52A0\u70ED\u65F6\u5BF9\u624B\u89E6\u78B0\u7684\u8BDD\uFF0C\n\u5C31\u4F1A\u4F7F\u5176\u707C\u4F24\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vii
+      url: https://pokeapi.co/api/v2/generation/7/
+    id: 690
+    learned_by_pokemon:
+    - name: toucannon
+      url: https://pokeapi.co/api/v2/pokemon/733/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: beak-blast
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u304F\u3061\u3070\u3057\u30AD\u30E3\u30CE\u30F3"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uBD80\uB9AC\uCE90\uB17C"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u9CE5\u5634\u52A0\u8FB2\u70AE"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Bec-Canon
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Schnabelkanone
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Pico Ca\xF1\xF3n"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Cannonbecco
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Beak Blast
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u304F\u3061\u3070\u3057\u30AD\u30E3\u30CE\u30F3"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u9E1F\u5634\u52A0\u519C\u70AE"
+    past_values: []
+    power: 100
+    pp: 15
+    priority: -3
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: flying
+      url: https://pokeapi.co/api/v2/type/3/

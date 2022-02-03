@@ -1,0 +1,920 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: acrobatics
+  m_EditorClassIdentifier: 
+  name: Acrobatics
+  description: 'The user nimbly strikes the target.
+
+    If the user is not holding
+    an item,
+
+    this attack inflicts massive damage.'
+  type: 10
+  power: 55
+  accuracy: 100
+  alwaysHits: 0
+  pp: 15
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 512
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage.  If the user has no held item, this move has
+        double power.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Has double power if the user has no held item.
+    flavor_text_entries:
+    - flavor_text: "Attaque agile. Si le lanceur ne tient\npas d\u2019objet, l\u2019attaque
+        inflige\ndavantage de d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The user nimbly strikes the target.
+
+        If the user is not
+        holding an item,
+
+        this attack inflicts massive damage.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The user nimbly strikes the target.
+
+        If the user is not
+        holding an item,
+
+        this attack inflicts massive damage.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u304B\u308D\u3084\u304B\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u304C\u3000\u3069\u3046\u3050\u3092\u3000\u3082\u3063\u3066\u3044\u306A\u3044\u3000\u3068\u304D\n\u304A\u304A\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uACBD\uCF8C\uD558\uAC8C \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC774
+        \uB3C4\uAD6C\uB97C \uC9C0\uB2C8\uACE0 \uC788\uC9C0 \uC54A\uC744 \uB54C\n\uD070
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Attaque agile. Si le lanceur ne tient pas d\u2019objet,\nl\u2019attaque
+        inflige davantage de d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Ein graziler Angriff auf das Ziel.\nTr\xE4gt der Anwender kein
+        Item bei sich,\nrichtet die Attacke gro\xDFen Schaden an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Golpea \xE1gilmente. Si el usuario no porta ning\xFAn\nobjeto,
+        el objetivo resulta seriamente da\xF1ado."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Attacca rapidamente il bersaglio. Se chi la usa non
+
+        ha
+        uno strumento, infligge al nemico grossi danni.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'The user nimbly strikes the target.
+
+        If the user is not
+        holding an item,
+
+        this attack inflicts massive damage.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u8EFD\u3084\u304B\u306B\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u304C\u3000\u9053\u5177\u3092\u3000\u6301\u3063\u3066\u3044\u306A\u3044\u3068\u304D\n\u5927\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u304B\u308D\u3084\u304B\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u304C\u3000\u3069\u3046\u3050\u3092\u3000\u3082\u3063\u3066\u3044\u306A\u3044\u3000\u3068\u304D\n\u304A\u304A\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uACBD\uCF8C\uD558\uAC8C \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC774
+        \uB3C4\uAD6C\uB97C \uC9C0\uB2C8\uACE0 \uC788\uC9C0 \uC54A\uC744 \uB54C\n\uD070
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Attaque agile. Si le lanceur ne tient pas d\u2019objet,\nl\u2019attaque
+        inflige davantage de d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Ein graziler Angriff auf das Ziel.\nTr\xE4gt der Anwender kein
+        Item bei sich,\nrichtet die Attacke gro\xDFen Schaden an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Golpea \xE1gilmente. Si el usuario no porta ning\xFAn \nobjeto,
+        el objetivo resulta seriamente da\xF1ado."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Attacca rapidamente il bersaglio. Se chi la usa non
+
+        ha
+        uno strumento, infligge al nemico grossi danni.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'The user nimbly strikes the target.
+
+        If the user is not
+        holding an item,
+
+        this attack inflicts massive damage.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u8EFD\u3084\u304B\u306B\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u304C\u3000\u9053\u5177\u3092\u3000\u6301\u3063\u3066\u3044\u306A\u3044\u3068\u304D\n\u5927\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u304B\u308D\u3084\u304B\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u304C\u3000\u3069\u3046\u3050\u3092\u3000\u3082\u3063\u3066\u3044\u306A\u3044\u3000\u3068\u304D\n\u304A\u304A\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uACBD\uCF8C\uD558\uAC8C \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC774
+        \uB3C4\uAD6C\uB97C \uC9C0\uB2C8\uACE0 \uC788\uC9C0 \uC54A\uC744 \uB54C\n\uD070
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u8F15\u5DE7\u5730\u653B\u64CA\u5C0D\u624B\u3002\n\u81EA\u5DF1\u6C92\u6709\u651C\u5E36\u9053\u5177\u6642\uFF0C\n\u80FD\u7D66\u4E88\u5C0D\u624B\u8F03\u5927\u7684\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Attaque agile. Si le lanceur ne tient pas d\u2019objet,\nl\u2019attaque
+        inflige davantage de d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Ein graziler Angriff auf das Ziel. Tr\xE4gt der Anwender\nkein
+        Item bei sich, richtet die Attacke gro\xDFen\nSchaden an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Golpea \xE1gilmente. Si el usuario no porta ning\xFAn \nobjeto,
+        el objetivo resulta seriamente da\xF1ado."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Attacca rapidamente il bersaglio. Se chi la usa non
+
+        ha
+        uno strumento, infligge al nemico grossi danni.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'The user nimbly strikes the target. If the user is not
+
+        holding
+        an item, this attack inflicts massive damage.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u8EFD\u3084\u304B\u306B\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u304C\u3000\u9053\u5177\u3092\u3000\u6301\u3063\u3066\u3044\u306A\u3044\u3068\u304D\n\u5927\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u8F7B\u5DE7\u5730\u653B\u51FB\u5BF9\u624B\u3002\n\u81EA\u5DF1\u6CA1\u6709\u643A\u5E26\u9053\u5177\u65F6\uFF0C\n\u4F1A\u7ED9\u4E88\u8F83\u5927\u7684\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u304B\u308D\u3084\u304B\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u304C\u3000\u3069\u3046\u3050\u3092\u3000\u3082\u3063\u3066\u3044\u306A\u3044\u3000\u3068\u304D\n\u304A\u304A\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uACBD\uCF8C\uD558\uAC8C \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC774
+        \uB3C4\uAD6C\uB97C \uC9C0\uB2C8\uACE0 \uC788\uC9C0 \uC54A\uC744 \uB54C\n\uD070
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u8F15\u5DE7\u5730\u653B\u64CA\u5C0D\u624B\u3002\n\u81EA\u5DF1\u6C92\u6709\u651C\u5E36\u9053\u5177\u6642\uFF0C\n\u80FD\u7D66\u4E88\u5C0D\u624B\u8F03\u5927\u7684\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Attaque agile. Si le lanceur ne tient pas d\u2019objet,\nl\u2019attaque
+        inflige davantage de d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Ein graziler Angriff auf das Ziel. Tr\xE4gt der Anwender\nkein
+        Item bei sich, richtet die Attacke gro\xDFen\nSchaden an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Golpea \xE1gilmente. Si el usuario no porta ning\xFAn \nobjeto,
+        el objetivo resulta seriamente da\xF1ado."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Attacca rapidamente il bersaglio. Se chi la usa non
+
+        ha
+        uno strumento, infligge al nemico grossi danni.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'The user nimbly strikes the target. If the user is not
+
+        holding
+        an item, this attack inflicts massive damage.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u8EFD\u3084\u304B\u306B\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u304C\u3000\u9053\u5177\u3092\u3000\u6301\u3063\u3066\u3044\u306A\u3044\u3068\u304D\n\u5927\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u8F7B\u5DE7\u5730\u653B\u51FB\u5BF9\u624B\u3002\n\u81EA\u5DF1\u6CA1\u6709\u643A\u5E26\u9053\u5177\u65F6\uFF0C\n\u4F1A\u7ED9\u4E88\u8F83\u5927\u7684\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u304B\u308D\u3084\u304B\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u304C\u3000\u3069\u3046\u3050\u3092\u3000\u3082\u3063\u3066\u3044\u306A\u3044\u3000\u3068\u304D\n\u304A\u304A\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uACBD\uCF8C\uD558\uAC8C \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC774
+        \uB3C4\uAD6C\uB97C \uC9C0\uB2C8\uACE0 \uC788\uC9C0 \uC54A\uC744 \uB54C\n\uD070
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u8F15\u5DE7\u5730\u653B\u64CA\u5C0D\u624B\u3002\n\u81EA\u5DF1\u6C92\u6709\u651C\u5E36\u9053\u5177\u6642\uFF0C\n\u80FD\u7D66\u4E88\u5C0D\u624B\u8F03\u5927\u7684\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Attaque agile. Si le lanceur ne tient pas d\u2019objet,\nl\u2019attaque
+        inflige davantage de d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Ein graziler Angriff auf das Ziel. Tr\xE4gt der Anwender\nkein
+        Item bei sich, richtet die Attacke gro\xDFen\nSchaden an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Golpea \xE1gilmente. Si el usuario no porta ning\xFAn \nobjeto,
+        el objetivo resulta seriamente da\xF1ado."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Attacca rapidamente il bersaglio. Se chi la usa non
+
+        ha
+        uno strumento, infligge al nemico grossi danni.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'The user nimbly strikes the target. If the user is not
+
+        holding
+        an item, this attack inflicts massive damage.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u8EFD\u3084\u304B\u306B\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u304C\u3000\u9053\u5177\u3092\u3000\u6301\u3063\u3066\u3044\u306A\u3044\u3068\u304D\n\u5927\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u8F7B\u5DE7\u5730\u653B\u51FB\u5BF9\u624B\u3002\n\u81EA\u5DF1\u6CA1\u6709\u643A\u5E26\u9053\u5177\u65F6\uFF0C\n\u4F1A\u7ED9\u4E88\u8F83\u5927\u7684\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u304B\u308D\u3084\u304B\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u304C\u3000\u3069\u3046\u3050\u3092\u3000\u3082\u3063\u3066\u3044\u306A\u3044\u3000\u3068\u304D\n\u304A\u304A\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uACBD\uCF8C\uD558\uAC8C \uC0C1\uB300\uB97C \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC774
+        \uB3C4\uAD6C\uB97C \uC9C0\uB2C8\uACE0 \uC788\uC9C0 \uC54A\uC744 \uB54C\n\uD070
+        \uB370\uBBF8\uC9C0\uB97C \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u8F15\u5DE7\u5730\u653B\u64CA\u5C0D\u624B\u3002\n\u81EA\u5DF1\u6C92\u6709\u651C\u5E36\u9053\u5177\u6642\uFF0C\n\u80FD\u7D66\u4E88\u5C0D\u624B\u8F03\u5927\u7684\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Attaque agile. Si le lanceur ne tient pas d\u2019objet,\nl\u2019attaque
+        inflige davantage de d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Ein graziler Angriff auf das Ziel. Tr\xE4gt der Anwender\nkein
+        Item bei sich, richtet die Attacke gro\xDFen\nSchaden an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Golpea \xE1gilmente. Si el usuario no porta ning\xFAn objeto,\nel
+        objetivo resulta seriamente da\xF1ado."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Attacca rapidamente il bersaglio. Se chi la usa non
+
+        ha
+        uno strumento, infligge al nemico grossi danni.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'The user nimbly strikes the target. If the user is not
+
+        holding
+        an item, this attack inflicts massive damage.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u8EFD\u3084\u304B\u306B\u3000\u76F8\u624B\u3092\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u304C\u3000\u9053\u5177\u3092\u3000\u6301\u3063\u3066\u3044\u306A\u3044\u3068\u304D\n\u5927\u304D\u306A\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u8F7B\u5DE7\u5730\u653B\u51FB\u5BF9\u624B\u3002\n\u81EA\u5DF1\u6CA1\u6709\u643A\u5E26\u9053\u5177\u65F6\uFF0C\n\u4F1A\u7ED9\u4E88\u8F83\u5927\u7684\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-v
+      url: https://pokeapi.co/api/v2/generation/5/
+    id: 512
+    learned_by_pokemon:
+    - name: butterfree
+      url: https://pokeapi.co/api/v2/pokemon/12/
+    - name: beedrill
+      url: https://pokeapi.co/api/v2/pokemon/15/
+    - name: zubat
+      url: https://pokeapi.co/api/v2/pokemon/41/
+    - name: golbat
+      url: https://pokeapi.co/api/v2/pokemon/42/
+    - name: venomoth
+      url: https://pokeapi.co/api/v2/pokemon/49/
+    - name: mankey
+      url: https://pokeapi.co/api/v2/pokemon/56/
+    - name: primeape
+      url: https://pokeapi.co/api/v2/pokemon/57/
+    - name: farfetchd
+      url: https://pokeapi.co/api/v2/pokemon/83/
+    - name: mew
+      url: https://pokeapi.co/api/v2/pokemon/151/
+    - name: ledyba
+      url: https://pokeapi.co/api/v2/pokemon/165/
+    - name: ledian
+      url: https://pokeapi.co/api/v2/pokemon/166/
+    - name: crobat
+      url: https://pokeapi.co/api/v2/pokemon/169/
+    - name: hoppip
+      url: https://pokeapi.co/api/v2/pokemon/187/
+    - name: skiploom
+      url: https://pokeapi.co/api/v2/pokemon/188/
+    - name: jumpluff
+      url: https://pokeapi.co/api/v2/pokemon/189/
+    - name: aipom
+      url: https://pokeapi.co/api/v2/pokemon/190/
+    - name: gligar
+      url: https://pokeapi.co/api/v2/pokemon/207/
+    - name: scizor
+      url: https://pokeapi.co/api/v2/pokemon/212/
+    - name: mantine
+      url: https://pokeapi.co/api/v2/pokemon/226/
+    - name: treecko
+      url: https://pokeapi.co/api/v2/pokemon/252/
+    - name: grovyle
+      url: https://pokeapi.co/api/v2/pokemon/253/
+    - name: sceptile
+      url: https://pokeapi.co/api/v2/pokemon/254/
+    - name: blaziken
+      url: https://pokeapi.co/api/v2/pokemon/257/
+    - name: beautifly
+      url: https://pokeapi.co/api/v2/pokemon/267/
+    - name: dustox
+      url: https://pokeapi.co/api/v2/pokemon/269/
+    - name: volbeat
+      url: https://pokeapi.co/api/v2/pokemon/313/
+    - name: illumise
+      url: https://pokeapi.co/api/v2/pokemon/314/
+    - name: lunatone
+      url: https://pokeapi.co/api/v2/pokemon/337/
+    - name: solrock
+      url: https://pokeapi.co/api/v2/pokemon/338/
+    - name: chimchar
+      url: https://pokeapi.co/api/v2/pokemon/390/
+    - name: monferno
+      url: https://pokeapi.co/api/v2/pokemon/391/
+    - name: infernape
+      url: https://pokeapi.co/api/v2/pokemon/392/
+    - name: mothim
+      url: https://pokeapi.co/api/v2/pokemon/414/
+    - name: vespiquen
+      url: https://pokeapi.co/api/v2/pokemon/416/
+    - name: ambipom
+      url: https://pokeapi.co/api/v2/pokemon/424/
+    - name: drifloon
+      url: https://pokeapi.co/api/v2/pokemon/425/
+    - name: drifblim
+      url: https://pokeapi.co/api/v2/pokemon/426/
+    - name: mantyke
+      url: https://pokeapi.co/api/v2/pokemon/458/
+    - name: gliscor
+      url: https://pokeapi.co/api/v2/pokemon/472/
+    - name: uxie
+      url: https://pokeapi.co/api/v2/pokemon/480/
+    - name: mesprit
+      url: https://pokeapi.co/api/v2/pokemon/481/
+    - name: azelf
+      url: https://pokeapi.co/api/v2/pokemon/482/
+    - name: pansage
+      url: https://pokeapi.co/api/v2/pokemon/511/
+    - name: simisage
+      url: https://pokeapi.co/api/v2/pokemon/512/
+    - name: pansear
+      url: https://pokeapi.co/api/v2/pokemon/513/
+    - name: simisear
+      url: https://pokeapi.co/api/v2/pokemon/514/
+    - name: panpour
+      url: https://pokeapi.co/api/v2/pokemon/515/
+    - name: simipour
+      url: https://pokeapi.co/api/v2/pokemon/516/
+    - name: woobat
+      url: https://pokeapi.co/api/v2/pokemon/527/
+    - name: swoobat
+      url: https://pokeapi.co/api/v2/pokemon/528/
+    - name: archen
+      url: https://pokeapi.co/api/v2/pokemon/566/
+    - name: archeops
+      url: https://pokeapi.co/api/v2/pokemon/567/
+    - name: emolga
+      url: https://pokeapi.co/api/v2/pokemon/587/
+    - name: eelektrik
+      url: https://pokeapi.co/api/v2/pokemon/603/
+    - name: eelektross
+      url: https://pokeapi.co/api/v2/pokemon/604/
+    - name: cryogonal
+      url: https://pokeapi.co/api/v2/pokemon/615/
+    - name: mienfoo
+      url: https://pokeapi.co/api/v2/pokemon/619/
+    - name: mienshao
+      url: https://pokeapi.co/api/v2/pokemon/620/
+    - name: hydreigon
+      url: https://pokeapi.co/api/v2/pokemon/635/
+    - name: larvesta
+      url: https://pokeapi.co/api/v2/pokemon/636/
+    - name: volcarona
+      url: https://pokeapi.co/api/v2/pokemon/637/
+    - name: tornadus-incarnate
+      url: https://pokeapi.co/api/v2/pokemon/641/
+    - name: meloetta-aria
+      url: https://pokeapi.co/api/v2/pokemon/648/
+    - name: froakie
+      url: https://pokeapi.co/api/v2/pokemon/656/
+    - name: frogadier
+      url: https://pokeapi.co/api/v2/pokemon/657/
+    - name: greninja
+      url: https://pokeapi.co/api/v2/pokemon/658/
+    - name: fletchling
+      url: https://pokeapi.co/api/v2/pokemon/661/
+    - name: fletchinder
+      url: https://pokeapi.co/api/v2/pokemon/662/
+    - name: talonflame
+      url: https://pokeapi.co/api/v2/pokemon/663/
+    - name: vivillon
+      url: https://pokeapi.co/api/v2/pokemon/666/
+    - name: hawlucha
+      url: https://pokeapi.co/api/v2/pokemon/701/
+    - name: noibat
+      url: https://pokeapi.co/api/v2/pokemon/714/
+    - name: noivern
+      url: https://pokeapi.co/api/v2/pokemon/715/
+    - name: yveltal
+      url: https://pokeapi.co/api/v2/pokemon/717/
+    - name: decidueye
+      url: https://pokeapi.co/api/v2/pokemon/724/
+    - name: litten
+      url: https://pokeapi.co/api/v2/pokemon/725/
+    - name: torracat
+      url: https://pokeapi.co/api/v2/pokemon/726/
+    - name: incineroar
+      url: https://pokeapi.co/api/v2/pokemon/727/
+    - name: popplio
+      url: https://pokeapi.co/api/v2/pokemon/728/
+    - name: brionne
+      url: https://pokeapi.co/api/v2/pokemon/729/
+    - name: primarina
+      url: https://pokeapi.co/api/v2/pokemon/730/
+    - name: grubbin
+      url: https://pokeapi.co/api/v2/pokemon/736/
+    - name: charjabug
+      url: https://pokeapi.co/api/v2/pokemon/737/
+    - name: vikavolt
+      url: https://pokeapi.co/api/v2/pokemon/738/
+    - name: oricorio-baile
+      url: https://pokeapi.co/api/v2/pokemon/741/
+    - name: cutiefly
+      url: https://pokeapi.co/api/v2/pokemon/742/
+    - name: ribombee
+      url: https://pokeapi.co/api/v2/pokemon/743/
+    - name: salazzle
+      url: https://pokeapi.co/api/v2/pokemon/758/
+    - name: tsareena
+      url: https://pokeapi.co/api/v2/pokemon/763/
+    - name: comfey
+      url: https://pokeapi.co/api/v2/pokemon/764/
+    - name: passimian
+      url: https://pokeapi.co/api/v2/pokemon/766/
+    - name: minior-red-meteor
+      url: https://pokeapi.co/api/v2/pokemon/774/
+    - name: komala
+      url: https://pokeapi.co/api/v2/pokemon/775/
+    - name: tapu-koko
+      url: https://pokeapi.co/api/v2/pokemon/785/
+    - name: lunala
+      url: https://pokeapi.co/api/v2/pokemon/792/
+    - name: celesteela
+      url: https://pokeapi.co/api/v2/pokemon/797/
+    - name: marshadow
+      url: https://pokeapi.co/api/v2/pokemon/802/
+    - name: naganadel
+      url: https://pokeapi.co/api/v2/pokemon/804/
+    - name: zeraora
+      url: https://pokeapi.co/api/v2/pokemon/807/
+    - name: meloetta-pirouette
+      url: https://pokeapi.co/api/v2/pokemon/10018/
+    - name: tornadus-therian
+      url: https://pokeapi.co/api/v2/pokemon/10019/
+    - name: scizor-mega
+      url: https://pokeapi.co/api/v2/pokemon/10046/
+    - name: blaziken-mega
+      url: https://pokeapi.co/api/v2/pokemon/10050/
+    - name: sceptile-mega
+      url: https://pokeapi.co/api/v2/pokemon/10065/
+    - name: beedrill-mega
+      url: https://pokeapi.co/api/v2/pokemon/10090/
+    - name: greninja-battle-bond
+      url: https://pokeapi.co/api/v2/pokemon/10116/
+    - name: greninja-ash
+      url: https://pokeapi.co/api/v2/pokemon/10117/
+    - name: vikavolt-totem
+      url: https://pokeapi.co/api/v2/pokemon/10122/
+    - name: oricorio-pom-pom
+      url: https://pokeapi.co/api/v2/pokemon/10123/
+    - name: oricorio-pau
+      url: https://pokeapi.co/api/v2/pokemon/10124/
+    - name: oricorio-sensu
+      url: https://pokeapi.co/api/v2/pokemon/10125/
+    - name: salazzle-totem
+      url: https://pokeapi.co/api/v2/pokemon/10129/
+    - name: minior-orange-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10130/
+    - name: minior-yellow-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10131/
+    - name: minior-green-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10132/
+    - name: minior-blue-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10133/
+    - name: minior-indigo-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10134/
+    - name: minior-violet-meteor
+      url: https://pokeapi.co/api/v2/pokemon/10135/
+    - name: minior-red
+      url: https://pokeapi.co/api/v2/pokemon/10136/
+    - name: minior-orange
+      url: https://pokeapi.co/api/v2/pokemon/10137/
+    - name: minior-yellow
+      url: https://pokeapi.co/api/v2/pokemon/10138/
+    - name: minior-green
+      url: https://pokeapi.co/api/v2/pokemon/10139/
+    - name: minior-blue
+      url: https://pokeapi.co/api/v2/pokemon/10140/
+    - name: minior-indigo
+      url: https://pokeapi.co/api/v2/pokemon/10141/
+    - name: minior-violet
+      url: https://pokeapi.co/api/v2/pokemon/10142/
+    - name: ribombee-totem
+      url: https://pokeapi.co/api/v2/pokemon/10150/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1125/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1126/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1127/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1128/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1129/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1130/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1291/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: acrobatics
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30A2\u30AF\u30ED\u30D0\u30C3\u30C8"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC560\uD06C\uB7EC\uBC43"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u96DC\u6280"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Acrobatie
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Akrobatik
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Acr\xF3bata"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Acrobazia
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Acrobatics
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30A2\u30AF\u30ED\u30D0\u30C3\u30C8"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u6742\u6280"
+    past_values: []
+    power: 55
+    pp: 15
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: flying
+      url: https://pokeapi.co/api/v2/type/3/

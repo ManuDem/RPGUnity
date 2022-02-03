@@ -1,0 +1,637 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: ice-burn
+  m_EditorClassIdentifier: 
+  name: Ice Burn
+  description: 'On the second turn, an ultracold,
+
+    freezing wind surrounds the
+    target.
+
+    This may leave the target with a burn.'
+  type: 6
+  power: 140
+  accuracy: 90
+  alwaysHits: 0
+  pp: 5
+  priority: 0
+  category: 1
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries:
+  - boosts: []
+    status: 2
+    volatileStatus: 0
+    chance: 30
+    target: 0
+  target: 0
+  id: 554
+  pokeApiMove:
+    accuracy: 90
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: special
+      url: https://pokeapi.co/api/v2/move-damage-class/3/
+    effect_chance: 30
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage.  Has a $effect_chance% chance to burn the
+        target.  User charges for one turn before attacking.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Requires a turn to charge before attacking.  Has a $effect_chance%
+        chance to burn the target.
+    flavor_text_entries:
+    - flavor_text: "Au second tour, le lanceur projette un\nsouffle de vent glacial
+        d\xE9vastateur\nsur l\u2019ennemi. Peut le br\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'On the second turn, an ultracold,
+
+        freezing wind surrounds
+        the target.
+
+        This may leave the target with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'On the second turn, an ultracold,
+
+        freezing wind surrounds
+        the target.
+
+        This may leave the target with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u3053\u304A\u3089\u305B\u308B\u3000\u306F\u3052\u3057\u3044\u3000\u308C\u3044\u304D\u3067\n\uFF12\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3064\u3064\u307F\u3053\u3080\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uBAA8\uB4E0 \uAC83\uC744 \uC5BC\uB824\uBC84\uB9AC\uB294 \uACA9\uB82C\uD55C
+        \uB0C9\uAE30\uB85C\n2\uD134\uC9F8\uC5D0 \uC0C1\uB300\uB97C \uB458\uB7EC\uC2FC\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Au second tour, le lanceur projette un souffle de\nvent glacial
+        d\xE9vastateur sur l\u2019ennemi. Peut aussi le\nbr\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Umgibt das Ziel in der n\xE4chsten Runde mit\nheftigen, alles
+        gefrierenden Eisb\xF6en. F\xFCgt\ndem Ziel eventuell Verbrennungen zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Ataca al objetivo en el segundo turno rode\xE1ndolo\nde un aire
+        g\xE9lido. Puede causar quemaduras."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa attacca il bersaglio al turno successivo\ne lo avvolge
+        in un soffio d\u2019aria gelida.\nPu\xF2 anche scottarlo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'On the second turn, an ultracold,
+
+        freezing wind surrounds
+        the target.
+
+        This may leave the target with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u51CD\u3089\u305B\u308B\u3000\u6FC0\u3057\u3044\u3000\u51B7\u6C17\u3067\n\uFF12\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u76F8\u624B\u3092\u3000\u5305\u307F\u3053\u3080\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u3053\u304A\u3089\u305B\u308B\u3000\u306F\u3052\u3057\u3044\u3000\u308C\u3044\u304D\u3067\n\uFF12\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3064\u3064\u202F\u3053\u3080\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uBAA8\uB4E0 \uAC83\uC744 \uC5BC\uB824\uBC84\uB9AC\uB294 \uACA9\uB82C\uD55C
+        \uB0C9\uAE30\uB85C\n2\uD134\uC9F8\uC5D0 \uC0C1\uB300\uB97C \uB458\uB7EC\uC2FC\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Au second tour, le lanceur projette un souffle de\nvent glacial
+        d\xE9vastateur sur l\u2019ennemi. Peut aussi le\nbr\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Umgibt das Ziel in der n\xE4chsten Runde mit\nheftigen, alles
+        gefrierenden Eisb\xF6en. F\xFCgt\ndem Ziel eventuell Verbrennungen zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Ataca al objetivo en el segundo turno rode\xE1ndolo \nde un aire
+        g\xE9lido. Puede causar quemaduras."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa attacca il bersaglio al turno successivo\ne lo avvolge
+        in un soffio d\u2019aria gelida.\nPu\xF2 anche scottarlo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'On the second turn, an ultracold,
+
+        freezing wind surrounds
+        the target.
+
+        This may leave the target with a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u51CD\u3089\u305B\u308B\u3000\u6FC0\u3057\u3044\u3000\u51B7\u6C17\u3067\n\uFF12\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u76F8\u624B\u3092\u3000\u5305\u202F\u3053\u3080\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u3053\u304A\u3089\u305B\u308B\u3000\u306F\u3052\u3057\u3044\u3000\u308C\u3044\u304D\u3067\n\uFF12\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3064\u3064\u307F\u3053\u3080\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uBAA8\uB4E0 \uAC83\uC744 \uC5BC\uB824\uBC84\uB9AC\uB294 \uACA9\uB82C\uD55C
+        \uB0C9\uAE30\uB85C\n2\uD134\uC9F8\uC5D0 \uC0C1\uB300\uB97C \uB458\uB7EC\uC2FC\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5728\u4F7F\u7528\u5F8C\u7684\u4E0B\u4E00\u56DE\u5408\uFF0C\n\u7528\u80FD\u5920\u51CD\u7D50\u4E00\u5207\u7684\u5F37\u70C8\u5BD2\u6C23\u5305\u570D\u5C0D\u624B\u3002\n\u6709\u6642\u6703\u8B93\u5C0D\u624B\u9677\u5165\u707C\u50B7\u72C0\u614B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Au second tour, le lanceur projette un souffle de\nvent glacial
+        d\xE9vastateur sur l\u2019ennemi. Peut aussi le\nbr\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Umgibt das Ziel in der n\xE4chsten Runde mit heftigen,\nalles
+        gefrierenden Eisb\xF6en. F\xFCgt dem Ziel eventuell\nVerbrennungen zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Ataca al objetivo en el segundo turno rode\xE1ndolo \nde un aire
+        g\xE9lido. Puede causar quemaduras."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa attacca il bersaglio al turno successivo\ne lo avvolge
+        in un soffio d\u2019aria gelida.\nPu\xF2 anche scottarlo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'On the second turn, an ultracold, freezing wind
+
+        surrounds
+        the target. This may leave the target with
+
+        a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u51CD\u3089\u305B\u308B\u3000\u6FC0\u3057\u3044\u3000\u51B7\u6C17\u3067\n\uFF12\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u76F8\u624B\u3092\u3000\u5305\u307F\u3053\u3080\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u7528\u80FD\u591F\u51BB\u7ED3\u4E00\u5207\u7684\u5F3A\u70C8\u51B7\u6C14\uFF0C\n\u5728\u7B2C\uFF12\u56DE\u5408\u5305\u88F9\u4F4F\u5BF9\u624B\u3002\n\u6709\u65F6\u4F1A\u8BA9\u5BF9\u624B\u9677\u5165\u707C\u4F24\u72B6\u6001\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u3053\u304A\u3089\u305B\u308B\u3000\u306F\u3052\u3057\u3044\u3000\u308C\u3044\u304D\u3067\n\uFF12\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3064\u3064\u307F\u3053\u3080\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uBAA8\uB4E0 \uAC83\uC744 \uC5BC\uB824\uBC84\uB9AC\uB294 \uACA9\uB82C\uD55C
+        \uB0C9\uAE30\uB85C\n2\uD134\uC9F8\uC5D0 \uC0C1\uB300\uB97C \uB458\uB7EC\uC2FC\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5728\u4F7F\u7528\u5F8C\u7684\u4E0B\u4E00\u56DE\u5408\uFF0C\n\u7528\u80FD\u5920\u51CD\u7D50\u4E00\u5207\u7684\u5F37\u70C8\u5BD2\u6C23\u5305\u570D\u5C0D\u624B\u3002\n\u6709\u6642\u6703\u8B93\u5C0D\u624B\u9677\u5165\u707C\u50B7\u72C0\u614B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Au second tour, le lanceur projette un souffle de\nvent glacial
+        d\xE9vastateur sur l\u2019ennemi. Peut aussi le\nbr\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Umgibt das Ziel in der n\xE4chsten Runde mit heftigen,\nalles
+        gefrierenden Eisb\xF6en. F\xFCgt dem Ziel eventuell\nVerbrennungen zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Ataca al objetivo en el segundo turno rode\xE1ndolo \nde un aire
+        g\xE9lido. Puede causar quemaduras."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa attacca il bersaglio al turno successivo\ne lo avvolge
+        in un soffio d\u2019aria gelida.\nPu\xF2 anche scottarlo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'On the second turn, an ultracold, freezing wind
+
+        surrounds
+        the target. This may leave the target with
+
+        a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u51CD\u3089\u305B\u308B\u3000\u6FC0\u3057\u3044\u3000\u51B7\u6C17\u3067\n\uFF12\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u76F8\u624B\u3092\u3000\u5305\u307F\u3053\u3080\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u7528\u80FD\u591F\u51BB\u7ED3\u4E00\u5207\u7684\u5F3A\u70C8\u51B7\u6C14\uFF0C\n\u5728\u7B2C\uFF12\u56DE\u5408\u5305\u88F9\u4F4F\u5BF9\u624B\u3002\n\u6709\u65F6\u4F1A\u8BA9\u5BF9\u624B\u9677\u5165\u707C\u4F24\u72B6\u6001\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u3053\u304A\u3089\u305B\u308B\u3000\u306F\u3052\u3057\u3044\u3000\u308C\u3044\u304D\u3067\n\uFF12\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3064\u3064\u307F\u3053\u3080\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uBAA8\uB4E0 \uAC83\uC744 \uC5BC\uB824\uBC84\uB9AC\uB294 \uACA9\uB82C\uD55C
+        \uB0C9\uAE30\uB85C\n2\uD134\uC9F8\uC5D0 \uC0C1\uB300\uB97C \uB458\uB7EC\uC2FC\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5728\u4F7F\u7528\u5F8C\u7684\u4E0B\u4E00\u56DE\u5408\uFF0C\n\u7528\u80FD\u5920\u51CD\u7D50\u4E00\u5207\u7684\u5F37\u70C8\u5BD2\u6C23\u5305\u570D\u5C0D\u624B\u3002\n\u6709\u6642\u6703\u8B93\u5C0D\u624B\u9677\u5165\u707C\u50B7\u72C0\u614B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Au second tour, le lanceur projette un souffle de\nvent glacial
+        d\xE9vastateur sur l\u2019ennemi. Peut aussi\nle br\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Umgibt das Ziel in der n\xE4chsten Runde mit heftigen,\nalles
+        gefrierenden Eisb\xF6en. F\xFCgt dem Ziel eventuell\nVerbrennungen zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Ataca al objetivo en el segundo turno rode\xE1ndolo \nde un aire
+        g\xE9lido. Puede causar quemaduras."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa attacca il bersaglio al turno successivo\ne lo avvolge
+        in un soffio d\u2019aria gelida.\nPu\xF2 anche scottarlo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'On the second turn, an ultracold, freezing wind
+
+        surrounds
+        the target. This may leave the target with
+
+        a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u51CD\u3089\u305B\u308B\u3000\u6FC0\u3057\u3044\u3000\u51B7\u6C17\u3067\n\uFF12\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u76F8\u624B\u3092\u3000\u5305\u307F\u3053\u3080\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u7528\u80FD\u591F\u51BB\u7ED3\u4E00\u5207\u7684\u5F3A\u70C8\u51B7\u6C14\uFF0C\n\u5728\u7B2C\uFF12\u56DE\u5408\u5305\u88F9\u4F4F\u5BF9\u624B\u3002\n\u6709\u65F6\u4F1A\u8BA9\u5BF9\u624B\u9677\u5165\u707C\u4F24\u72B6\u6001\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u3053\u304A\u3089\u305B\u308B\u3000\u306F\u3052\u3057\u3044\u3000\u308C\u3044\u304D\u3067\n\uFF12\u30BF\u30FC\u30F3\u3081\u306B\u3000\u3042\u3044\u3066\u3092\u3000\u3064\u3064\u307F\u3053\u3080\u3002\n\u3084\u3051\u3069\u3000\u3058\u3087\u3046\u305F\u3044\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uBAA8\uB4E0 \uAC83\uC744 \uC5BC\uB824\uBC84\uB9AC\uB294 \uACA9\uB82C\uD55C
+        \uB0C9\uAE30\uB85C\n2\uD134\uC9F8\uC5D0 \uC0C1\uB300\uB97C \uB458\uB7EC\uC2FC\uB2E4.\n\uD654\uC0C1
+        \uC0C1\uD0DC\uB85C \uB9CC\uB4E4 \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5728\u4F7F\u7528\u5F8C\u7684\u4E0B\u4E00\u56DE\u5408\uFF0C\n\u7528\u80FD\u5920\u51CD\u7D50\u4E00\u5207\u7684\u5F37\u70C8\u5BD2\u6C23\u5305\u570D\u5C0D\u624B\u3002\n\u6709\u6642\u6703\u8B93\u5C0D\u624B\u9677\u5165\u707C\u50B7\u72C0\u614B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Au second tour, le lanceur projette un souffle de vent\nglacial
+        d\xE9vastateur sur l\u2019ennemi. Peut aussi le br\xFBler."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Umgibt das Ziel in der n\xE4chsten Runde mit heftigen,\nalles
+        gefrierenden Eisb\xF6en. F\xFCgt dem Ziel eventuell\nVerbrennungen zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Ataca al objetivo en el segundo turno rode\xE1ndolo de\nun aire
+        g\xE9lido. Puede causar quemaduras."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa attacca il bersaglio al turno successivo\ne lo avvolge
+        in un soffio d\u2019aria gelida.\nPu\xF2 anche scottarlo."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'On the second turn, an ultracold, freezing wind
+
+        surrounds
+        the target. This may leave the target with
+
+        a burn.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u3059\u3079\u3066\u3092\u3000\u51CD\u3089\u305B\u308B\u3000\u6FC0\u3057\u3044\u3000\u51B7\u6C17\u3067\n\uFF12\u30BF\u30FC\u30F3\u76EE\u306B\u3000\u76F8\u624B\u3092\u3000\u5305\u307F\u3053\u3080\u3002\n\u3084\u3051\u3069\u72B6\u614B\u306B\u3000\u3059\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u7528\u80FD\u591F\u51BB\u7ED3\u4E00\u5207\u7684\u5F3A\u70C8\u51B7\u6C14\uFF0C\n\u5728\u7B2C\uFF12\u56DE\u5408\u5305\u88F9\u4F4F\u5BF9\u624B\u3002\n\u6709\u65F6\u4F1A\u8BA9\u5BF9\u624B\u9677\u5165\u707C\u4F24\u72B6\u6001\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-v
+      url: https://pokeapi.co/api/v2/generation/5/
+    id: 554
+    learned_by_pokemon:
+    - name: kyurem-white
+      url: https://pokeapi.co/api/v2/pokemon/10023/
+    machines: []
+    meta:
+      ailment:
+        name: burn
+        url: https://pokeapi.co/api/v2/move-ailment/4/
+      ailment_chance: 30
+      category:
+        name: damage+ailment
+        url: https://pokeapi.co/api/v2/move-category/4/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: ice-burn
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30B3\u30FC\u30EB\u30C9\u30D5\u30EC\u30A2"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uCF5C\uB4DC\uD50C\uB808\uC5B4"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u6975\u5BD2\u51B7\u7130"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "Feu Glac\xE9"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Frosthauch
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Llama G\xE9lida"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Vampagelida
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Ice Burn
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30B3\u30FC\u30EB\u30C9\u30D5\u30EC\u30A2"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u6781\u5BD2\u51B7\u7130"
+    past_values: []
+    power: 140
+    pp: 5
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: ice
+      url: https://pokeapi.co/api/v2/type/15/

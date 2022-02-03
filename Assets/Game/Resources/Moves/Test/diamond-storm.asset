@@ -1,0 +1,580 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: diamond-storm
+  m_EditorClassIdentifier: 
+  name: Diamond Storm
+  description: "The user whips up a storm of diamonds\nto damage opposing Pok\xE9mon.
+    This may\nalso raise the user\u2019s Defense stat."
+  type: 13
+  power: 100
+  accuracy: 95
+  alwaysHits: 0
+  pp: 5
+  priority: 0
+  category: 0
+  effects:
+    boosts:
+    - stat: 1
+      boost: 2
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 591
+  pokeApiMove:
+    accuracy: 95
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 50
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage.  Has a $effect_chance% chance to raise the
+        user's Defense by two stages for each target hit.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Has a $effect_chance% chance to raise the user's Defense by two
+        stages for each target hit.
+    flavor_text_entries:
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u3042\u3089\u3057\u3092\u3000\u307E\u304D\u304A\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002\u3000\u3058\u3076\u3093\u306E\n\u307C\u3046\u304E\u3087\u3092\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uB2E4\uC774\uC544 \uD3ED\uD48D\uC744 \uC77C\uC73C\uCF1C\n\uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4. \uC790\uC2E0\uC758\n\uBC29\uC5B4\uB97C \uC62C\uB9B4 \uB54C\uAC00
+        \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Provoque une temp\xEAte de diamants qui\ninflige des d\xE9g\xE2ts.
+        Peut augmenter la D\xE9fense\ndu lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Der Anwender beschw\xF6rt einen zerst\xF6rerischen\nDiamantsturm
+        herauf. Kann die Verteidigung des\nAnwenders erh\xF6hen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Desata un devastador vendaval de diamantes\npara da\xF1ar a los
+        oponentes. Puede aumentar\nla Defensa del usuario."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Colpisce i nemici che ha intorno con una tempesta\ndi diamanti.
+        Pu\xF2 anche aumentare la Difesa di chi\nla usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user whips up a storm of diamonds\nto damage opposing Pok\xE9mon.
+        This may\nalso raise the user\u2019s Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u5D50\u3092\u3000\u5DFB\u304D\u8D77\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002\u3000\u81EA\u5206\u306E\n\u9632\u5FA1\u3092\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u3042\u3089\u3057\u3092\u3000\u307E\u304D\u304A\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002\u3000\u3058\u3076\u3093\u306E\n\u307C\u3046\u304E\u3087\u3092\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uB2E4\uC774\uC544 \uD3ED\uD48D\uC744 \uC77C\uC73C\uCF1C\n\uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4. \uC790\uC2E0\uC758\n\uBC29\uC5B4\uB97C \uC62C\uB9B4 \uB54C\uAC00
+        \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Provoque une temp\xEAte de diamants qui\ninflige des d\xE9g\xE2ts.
+        Peut augmenter la D\xE9fense\ndu lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Der Anwender beschw\xF6rt einen zerst\xF6rerischen\nDiamantsturm
+        herauf. Kann die Verteidigung des\nAnwenders erh\xF6hen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Desata un devastador vendaval de diamantes para \nda\xF1ar a
+        los oponentes. Puede aumentar la Defensa \ndel usuario."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Colpisce i nemici che ha intorno con una tempesta\ndi diamanti.
+        Pu\xF2 anche aumentare la Difesa di chi\nla usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user whips up a storm of diamonds\nto damage opposing Pok\xE9mon.
+        This may\nalso raise the user\u2019s Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u5D50\u3092\u3000\u5DFB\u304D\u8D77\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002\u3000\u81EA\u5206\u306E\n\u9632\u5FA1\u3092\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u3042\u3089\u3057\u3092\u3000\u307E\u304D\u304A\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002\u3000\u3058\u3076\u3093\u306E\n\u307C\u3046\u304E\u3087\u3092\u3000\u3050\u30FC\u3093\u3068\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uB2E4\uC774\uC544 \uD3ED\uD48D\uC744 \uC77C\uC73C\uCF1C\n\uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4. \uC790\uC2E0\uC758\n\uBC29\uC5B4\uB97C \uD06C\uAC8C \uC62C\uB9B4
+        \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5439\u8D77\u947D\u77F3\u98A8\u66B4\u7D66\u4E88\u5C0D\u624B\u50B7\u5BB3\u3002\n\u6709\u6642\u6703\u5927\u5E45\u63D0\u9AD8\u81EA\u5DF1\u7684\u9632\u79A6\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Provoque une temp\xEAte de diamants qui\ninflige des d\xE9g\xE2ts.
+        Peut beaucoup augmenter\nla D\xE9fense du lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Der Anwender beschw\xF6rt einen zerst\xF6rerischen\nDiamantsturm
+        herauf. Kann die Verteidigung des\nAnwenders stark erh\xF6hen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Desata un devastador vendaval de diamantes para \nda\xF1ar a
+        los oponentes. Puede aumentar mucho la\nDefensa del usuario."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Colpisce i nemici che ha intorno con una tempesta\ndi diamanti.
+        Pu\xF2 anche aumentare di molto la Difesa\ndi chi la usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user whips up a storm of diamonds to damage\nopposing Pok\xE9mon.
+        This may also sharply raise the\nuser\u2019s Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u5D50\u3092\u3000\u5DFB\u304D\u8D77\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002\u3000\u81EA\u5206\u306E\n\u9632\u5FA1\u3092\u3000\u3050\u30FC\u3093\u3068\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u6380\u8D77\u94BB\u77F3\u98CE\u66B4\u7ED9\u4E88\u4F24\u5BB3\u3002\n\u6709\u65F6\u4F1A\u5927\u5E45\u63D0\u9AD8\u81EA\u5DF1\u7684\u9632\u5FA1\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u3042\u3089\u3057\u3092\u3000\u307E\u304D\u304A\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002\u3000\u3058\u3076\u3093\u306E\n\u307C\u3046\u304E\u3087\u3092\u3000\u3050\u30FC\u3093\u3068\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uB2E4\uC774\uC544 \uD3ED\uD48D\uC744 \uC77C\uC73C\uCF1C\n\uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4. \uC790\uC2E0\uC758\n\uBC29\uC5B4\uB97C \uD06C\uAC8C \uC62C\uB9B4
+        \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5439\u8D77\u947D\u77F3\u98A8\u66B4\u7D66\u4E88\u5C0D\u624B\u50B7\u5BB3\u3002\n\u6709\u6642\u6703\u5927\u5E45\u63D0\u9AD8\u81EA\u5DF1\u7684\u9632\u79A6\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Provoque une temp\xEAte de diamants qui\ninflige des d\xE9g\xE2ts.
+        Peut beaucoup augmenter\nla D\xE9fense du lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Der Anwender beschw\xF6rt einen zerst\xF6rerischen\nDiamantsturm
+        herauf. Kann die Verteidigung des\nAnwenders stark erh\xF6hen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Desata un devastador vendaval de diamantes para \nda\xF1ar a
+        los oponentes. Puede aumentar mucho la\nDefensa del usuario."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Colpisce i nemici che ha intorno con una tempesta\ndi diamanti.
+        Pu\xF2 anche aumentare di molto la Difesa\ndi chi la usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user whips up a storm of diamonds to damage\nopposing Pok\xE9mon.
+        This may also sharply raise the\nuser\u2019s Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u5D50\u3092\u3000\u5DFB\u304D\u8D77\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002\u3000\u81EA\u5206\u306E\n\u9632\u5FA1\u3092\u3000\u3050\u30FC\u3093\u3068\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u6380\u8D77\u94BB\u77F3\u98CE\u66B4\u7ED9\u4E88\u4F24\u5BB3\u3002\n\u6709\u65F6\u4F1A\u5927\u5E45\u63D0\u9AD8\u81EA\u5DF1\u7684\u9632\u5FA1\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u3042\u3089\u3057\u3092\u3000\u307E\u304D\u304A\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002\u3000\u3058\u3076\u3093\u306E\n\u307C\u3046\u304E\u3087\u3092\u3000\u3050\u30FC\u3093\u3068\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uB2E4\uC774\uC544 \uD3ED\uD48D\uC744 \uC77C\uC73C\uCF1C\n\uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4. \uC790\uC2E0\uC758\n\uBC29\uC5B4\uB97C \uD06C\uAC8C \uC62C\uB9B4
+        \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5439\u8D77\u947D\u77F3\u98A8\u66B4\u7D66\u4E88\u5C0D\u624B\u50B7\u5BB3\u3002\n\u6709\u6642\u6703\u5927\u5E45\u63D0\u9AD8\u81EA\u5DF1\u7684\u9632\u79A6\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Provoque une temp\xEAte de diamants qui inflige des d\xE9g\xE2ts.\nPeut
+        beaucoup augmenter la D\xE9fense du lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Der Anwender beschw\xF6rt einen zerst\xF6rerischen\nDiamantsturm
+        herauf. Kann die Verteidigung des\nAnwenders stark erh\xF6hen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Desata un devastador vendaval de diamantes para \nda\xF1ar a
+        los oponentes. Puede aumentar mucho la\nDefensa del usuario."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Colpisce i nemici che ha intorno con una tempesta\ndi diamanti.
+        Pu\xF2 anche aumentare di molto la Difesa\ndi chi la usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user whips up a storm of diamonds to damage\nopposing Pok\xE9mon.
+        This may also sharply raise the\nuser\u2019s Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u5D50\u3092\u3000\u5DFB\u304D\u8D77\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002\u3000\u81EA\u5206\u306E\n\u9632\u5FA1\u3092\u3000\u3050\u30FC\u3093\u3068\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u6380\u8D77\u94BB\u77F3\u98CE\u66B4\u7ED9\u4E88\u4F24\u5BB3\u3002\n\u6709\u65F6\u4F1A\u5927\u5E45\u63D0\u9AD8\u81EA\u5DF1\u7684\u9632\u5FA1\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u3042\u3089\u3057\u3092\u3000\u307E\u304D\u304A\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002\u3000\u3058\u3076\u3093\u306E\n\u307C\u3046\u304E\u3087\u3092\u3000\u3050\u30FC\u3093\u3068\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uB2E4\uC774\uC544 \uD3ED\uD48D\uC744 \uC77C\uC73C\uCF1C\n\uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4. \uC790\uC2E0\uC758\n\uBC29\uC5B4\uB97C \uD06C\uAC8C \uC62C\uB9B4
+        \uB54C\uAC00 \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5439\u8D77\u947D\u77F3\u98A8\u66B4\u7D66\u4E88\u5C0D\u624B\u50B7\u5BB3\u3002\n\u6709\u6642\u6703\u5927\u5E45\u63D0\u9AD8\u81EA\u5DF1\u7684\u9632\u79A6\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Provoque une temp\xEAte de diamants qui inflige\ndes d\xE9g\xE2ts.
+        Peut beaucoup augmenter la D\xE9fense\ndu lanceur."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender beschw\xF6rt einen zerst\xF6rerischen\nDiamantsturm
+        herauf. Kann die Verteidigung des\nAnwenders stark erh\xF6hen."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Desata un devastador vendaval de diamantes para \nda\xF1ar a
+        los oponentes. Puede aumentar mucho la\nDefensa del usuario."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Colpisce i nemici che ha intorno con una tempesta\ndi diamanti.
+        Pu\xF2 anche aumentare di molto la Difesa\ndi chi la usa."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user whips up a storm of diamonds to damage\nopposing Pok\xE9mon.
+        This may also sharply raise the\nuser\u2019s Defense stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u30C0\u30A4\u30E4\u306E\u3000\u5D50\u3092\u3000\u5DFB\u304D\u8D77\u3053\u3057\n\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002\u3000\u81EA\u5206\u306E\n\u9632\u5FA1\u3092\u3000\u3050\u30FC\u3093\u3068\u3000\u3042\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u6380\u8D77\u94BB\u77F3\u98CE\u66B4\u7ED9\u4E88\u4F24\u5BB3\u3002\n\u6709\u65F6\u4F1A\u5927\u5E45\u63D0\u9AD8\u81EA\u5DF1\u7684\u9632\u5FA1\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vi
+      url: https://pokeapi.co/api/v2/generation/6/
+    id: 591
+    learned_by_pokemon:
+    - name: diancie
+      url: https://pokeapi.co/api/v2/pokemon/719/
+    - name: diancie-mega
+      url: https://pokeapi.co/api/v2/pokemon/10075/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage+raise
+        url: https://pokeapi.co/api/v2/move-category/7/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 50
+    name: diamond-storm
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30C0\u30A4\u30E4\u30B9\u30C8\u30FC\u30E0"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uB2E4\uC774\uC544\uC2A4\uD1B0"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u947D\u77F3\u98A8\u66B4"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Orage Adamantin
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Diamantsturm
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Torm. Diamantes
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Diamantempesta
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Diamond Storm
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30C0\u30A4\u30E4\u30B9\u30C8\u30FC\u30E0"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u94BB\u77F3\u98CE\u66B4"
+    past_values: []
+    power: 100
+    pp: 5
+    priority: 0
+    stat_changes:
+    - change: 2
+      stat:
+        name: defense
+        url: https://pokeapi.co/api/v2/stat/3/
+    super_contest_effect:
+      url: 
+    target:
+      name: all-opponents
+      url: https://pokeapi.co/api/v2/move-target/11/
+    type:
+      name: rock
+      url: https://pokeapi.co/api/v2/type/6/

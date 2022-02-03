@@ -21,7 +21,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] MoveSelectionUI moveSelectionUI;
     [SerializeField] InventoryUI inventoryUI;
 
-    [Header("Dialog")]
+    [Header("Strings")]
     [TextArea] [SerializeField] string aWildAppared;
     [TextArea] [SerializeField] string wantsToBattle;
     [TextArea] [SerializeField] string sendOut;
@@ -634,12 +634,12 @@ public class BattleSystem : MonoBehaviour
             var selectedMember = partyScreen.SelectedMember;
             if (selectedMember.HP <= 0)
             {
-                partyScreen.SetMessageText($"{cantSendOutAFaintedPokemon}");
+                partyScreen.SetMessageText($"{cantSendOutAFaintedPokemon}.");
                 return;
             }
             if (selectedMember == playerUnit.Pokemon)
             {
-                partyScreen.SetMessageText($"{cantSwitchSamePokemon}");
+                partyScreen.SetMessageText($"{cantSwitchSamePokemon}.");
                 return;
             }
 
@@ -805,9 +805,9 @@ public class BattleSystem : MonoBehaviour
             yield return enemyUnit.PlayBreakOutAnimation();
 
             if (shakeCount < 2)
-                yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} {brokeFree}");
+                yield return dialogBox.TypeDialog($"{enemyUnit.Pokemon.Base.Name} {brokeFree}!");
             else
-                yield return dialogBox.TypeDialog($"{almostCaughtIt}");
+                yield return dialogBox.TypeDialog($"{almostCaughtIt}!");
 
             Destroy(pokeball);
             state = BattleState.RunningTurn;
@@ -853,7 +853,7 @@ public class BattleSystem : MonoBehaviour
 
         if (enemySpeed < playerSpeed)
         {
-            yield return dialogBox.TypeDialog($"{ranAwaySafely}");
+            yield return dialogBox.TypeDialog($"{ranAwaySafely}.");
             BattleOver(true);
         }
         else

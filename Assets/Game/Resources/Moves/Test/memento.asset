@@ -1,0 +1,713 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: memento
+  m_EditorClassIdentifier: 
+  name: Memento
+  description: "The user faints and lowers\nthe foe\u2019s abilities."
+  type: 17
+  power: 0
+  accuracy: 100
+  alwaysHits: 0
+  pp: 10
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 262
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/7/
+    contest_type:
+      name: tough
+      url: https://pokeapi.co/api/v2/contest-type/5/
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Lowers the target's Attack and Special Attack by two stages.  User
+        faints.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Lowers the target's Attack and Special Attack by two stages. 
+        User faints.
+    flavor_text_entries:
+    - flavor_text: "The user faints and lowers\nthe foe\u2019s abilities."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: "The user faints and lowers\nthe foe\u2019s abilities."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: "The user faints,\nbut sharply lowers\nthe foe\u2019s ATTACK\nand
+        SP. ATK."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: "The user faints upon\nusing this move.\nIn return, it sharply\nlowers
+        the target\u2019s\nAttack and Sp. Atk."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u5927\u5E45\u964D\u4F4E\n\u5C0D\u624B\u7684\u653B\u64CA\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user faints upon\nusing this move.\nIn return, it sharply\nlowers
+        the target\u2019s\nAttack and Sp. Atk."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "The user faints upon\nusing this move.\nIn return, it sharply\nlowers
+        the target\u2019s\nAttack and Sp. Atk."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Le lanceur est mis K.O., mais l\u2019Attaque\net l\u2019Attaque
+        Sp\xE9ciale de l\u2019ennemi baissent\nbeaucoup."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user faints when using this move.\nIn return, it harshly
+        lowers the target\u2019s\nAttack and Sp. Atk."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user faints when using this move.\nIn return, it harshly
+        lowers the target\u2019s\nAttack and Sp. Atk."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3068\u3000\u3068\u304F\u3053\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC
+        \uADF8 \uB300\uC2E0\n\uC0C1\uB300\uC758 \uACF5\uACA9\uACFC \uD2B9\uC218\uACF5\uACA9\uC744\n\uD06C\uAC8C
+        \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Le lanceur est mis K.O., mais l\u2019Attaque et\nl\u2019Attaque
+        Sp\xE9ciale de l\u2019ennemi baissent beaucoup."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Der Anwender wird besiegt und senkt den
+
+        Angriffs-Wert
+        und den Spezial-Angriff
+
+        des Zieles stark.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'El usuario se debilita, pero baja mucho tanto el
+
+        Ataque
+        como el Ataque Especial del objetivo.'
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa va KO. Tuttavia, riduce di molto\nl\u2019Attacco e
+        l\u2019Attacco Speciale del bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user faints when using this move.\nIn return, this harshly
+        lowers the target\u2019s\nAttack and Sp. Atk stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u76F8\u624B\u306E\u3000\u653B\u6483\u3068\u3000\u7279\u653B\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3068\u3000\u3068\u304F\u3053\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC
+        \uADF8 \uB300\uC2E0\n\uC0C1\uB300\uC758 \uACF5\uACA9\uACFC \uD2B9\uC218\uACF5\uACA9\uC744\n\uD06C\uAC8C
+        \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Le lanceur est mis K.O., mais l\u2019Attaque et\nl\u2019Attaque
+        Sp\xE9ciale de l\u2019ennemi baissent beaucoup."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Der Anwender wird besiegt. Gleichzeitig werden
+
+        der Angriff
+        und Spezial-Angriff des Zieles stark
+
+        gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "El usuario se debilita, pero baja mucho tanto el \nAtaque como
+        el Ataque Especial del objetivo. "
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa va KO. Tuttavia, riduce di molto\nl\u2019Attacco e
+        l\u2019Attacco Speciale del bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user faints when using this move.\nIn return, this harshly
+        lowers the target\u2019s\nAttack and Sp. Atk stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u76F8\u624B\u306E\u3000\u653B\u6483\u3068\u3000\u7279\u653B\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3068\u3000\u3068\u304F\u3053\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC
+        \uADF8 \uB300\uC2E0\n\uC0C1\uB300\uC758 \uACF5\uACA9\uACFC \uD2B9\uC218\uACF5\uACA9\uC744\n\uD06C\uAC8C
+        \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u5927\u5E45\u964D\u4F4E\n\u5C0D\u624B\u7684\u653B\u64CA\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le lanceur est mis K.O., mais l\u2019Attaque et\nl\u2019Attaque
+        Sp\xE9ciale de l\u2019ennemi baissent beaucoup."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Der Anwender wird besiegt. Gleichzeitig werden der
+
+        Angriff
+        und Spezial-Angriff des Zieles stark gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "El usuario se debilita, pero baja mucho tanto el \nAtaque como
+        el Ataque Especial del objetivo. "
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa va KO. Tuttavia, riduce di molto\nl\u2019Attacco e
+        l\u2019Attacco Speciale del bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user faints when using this move. In return, this\nharshly
+        lowers the target\u2019s Attack and Sp. Atk stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u76F8\u624B\u306E\u3000\u653B\u6483\u3068\u3000\u7279\u653B\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u867D\u7136\u4F1A\u4F7F\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\n\u4F46\u662F\u80FD\u591F\u5927\u5E45\u964D\u4F4E\n\u5BF9\u624B\u7684\u653B\u51FB\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3068\u3000\u3068\u304F\u3053\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC
+        \uADF8 \uB300\uC2E0\n\uC0C1\uB300\uC758 \uACF5\uACA9\uACFC \uD2B9\uC218\uACF5\uACA9\uC744\n\uD06C\uAC8C
+        \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u5927\u5E45\u964D\u4F4E\n\u5C0D\u624B\u7684\u653B\u64CA\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le lanceur est mis K.O., mais l\u2019Attaque et\nl\u2019Attaque
+        Sp\xE9ciale de l\u2019ennemi baissent beaucoup."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Der Anwender wird besiegt. Gleichzeitig werden der
+
+        Angriff
+        und Spezial-Angriff des Zieles stark gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "El usuario se debilita, pero baja mucho tanto el \nAtaque como
+        el Ataque Especial del objetivo. "
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa va KO. Tuttavia, riduce di molto\nl\u2019Attacco e
+        l\u2019Attacco Speciale del bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user faints when using this move. In return, this\nharshly
+        lowers the target\u2019s Attack and Sp. Atk stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u76F8\u624B\u306E\u3000\u653B\u6483\u3068\u3000\u7279\u653B\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u867D\u7136\u4F1A\u4F7F\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\n\u4F46\u662F\u80FD\u591F\u5927\u5E45\u964D\u4F4E\n\u5BF9\u624B\u7684\u653B\u51FB\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3068\u3000\u3068\u304F\u3053\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC
+        \uADF8 \uB300\uC2E0\n\uC0C1\uB300\uC758 \uACF5\uACA9\uACFC \uD2B9\uC218\uACF5\uACA9\uC744\n\uD06C\uAC8C
+        \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u96D6\u7136\u81EA\u5DF1\u6703\u9677\u5165\u7015\u6B7B\uFF0C\n\u4F46\u53EF\u4EE5\u5927\u5E45\u964D\u4F4E\n\u5C0D\u624B\u7684\u653B\u64CA\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le lanceur est mis K.O., mais l\u2019Attaque et l\u2019Attaque\nSp\xE9ciale
+        de l\u2019ennemi baissent beaucoup."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Der Anwender wird besiegt. Gleichzeitig werden der
+
+        Angriff
+        und Spezial-Angriff des Zieles stark gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "El usuario se debilita, pero baja mucho tanto el \nAtaque como
+        el Ataque Especial del objetivo. "
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa va KO. Tuttavia, riduce di molto\nl\u2019Attacco e
+        l\u2019Attacco Speciale del bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user faints when using this move. In return, this\nharshly
+        lowers the target\u2019s Attack and Sp. Atk stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u76F8\u624B\u306E\u3000\u653B\u6483\u3068\u3000\u7279\u653B\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u867D\u7136\u4F1A\u4F7F\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\n\u4F46\u662F\u80FD\u591F\u5927\u5E45\u964D\u4F4E\n\u5BF9\u624B\u7684\u653B\u51FB\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3058\u3076\u3093\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3068\u3000\u3068\u304F\u3053\u3046\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC790\uC2E0\uC740 \uAE30\uC808\uD558\uAC8C \uB418\uC9C0\uB9CC
+        \uADF8 \uB300\uC2E0\n\uC0C1\uB300\uC758 \uACF5\uACA9\uACFC \uD2B9\uC218\uACF5\uACA9\uC744\n\uD06C\uAC8C
+        \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le lanceur est mis K.O., mais l\u2019Attaque et\nl\u2019Attaque
+        Sp\xE9ciale de l\u2019ennemi baissent beaucoup."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Der Anwender wird besiegt. Gleichzeitig werden der
+
+        Angriff
+        und Spezial-Angriff des Zieles stark gesenkt.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "El usuario se debilita, pero baja mucho tanto el \nAtaque como
+        el Ataque Especial del objetivo. "
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa va KO. Tuttavia, riduce di molto\nl\u2019Attacco e
+        l\u2019Attacco Speciale del bersaglio."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user faints when using this move. In return, this\nharshly
+        lowers the target\u2019s Attack and Sp. Atk stats."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u81EA\u5206\u306F\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u304C\u3000\u305D\u306E\u304B\u308F\u308A\u306B\n\u76F8\u624B\u306E\u3000\u653B\u6483\u3068\u3000\u7279\u653B\u3092\n\u304C\u304F\u3063\u3068\u3000\u3055\u3052\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u867D\u7136\u4F1A\u4F7F\u81EA\u5DF1\u9677\u5165\u6FD2\u6B7B\uFF0C\n\u4F46\u662F\u80FD\u591F\u5927\u5E45\u964D\u4F4E\n\u5BF9\u624B\u7684\u653B\u51FB\u548C\u7279\u653B\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-iii
+      url: https://pokeapi.co/api/v2/generation/3/
+    id: 262
+    learned_by_pokemon:
+    - name: diglett
+      url: https://pokeapi.co/api/v2/pokemon/50/
+    - name: grimer
+      url: https://pokeapi.co/api/v2/pokemon/88/
+    - name: muk
+      url: https://pokeapi.co/api/v2/pokemon/89/
+    - name: koffing
+      url: https://pokeapi.co/api/v2/pokemon/109/
+    - name: weezing
+      url: https://pokeapi.co/api/v2/pokemon/110/
+    - name: hoppip
+      url: https://pokeapi.co/api/v2/pokemon/187/
+    - name: skiploom
+      url: https://pokeapi.co/api/v2/pokemon/188/
+    - name: jumpluff
+      url: https://pokeapi.co/api/v2/pokemon/189/
+    - name: misdreavus
+      url: https://pokeapi.co/api/v2/pokemon/200/
+    - name: slugma
+      url: https://pokeapi.co/api/v2/pokemon/218/
+    - name: ralts
+      url: https://pokeapi.co/api/v2/pokemon/280/
+    - name: duskull
+      url: https://pokeapi.co/api/v2/pokemon/355/
+    - name: latios
+      url: https://pokeapi.co/api/v2/pokemon/381/
+    - name: shellos
+      url: https://pokeapi.co/api/v2/pokemon/422/
+    - name: drifloon
+      url: https://pokeapi.co/api/v2/pokemon/425/
+    - name: stunky
+      url: https://pokeapi.co/api/v2/pokemon/434/
+    - name: skuntank
+      url: https://pokeapi.co/api/v2/pokemon/435/
+    - name: spiritomb
+      url: https://pokeapi.co/api/v2/pokemon/442/
+    - name: uxie
+      url: https://pokeapi.co/api/v2/pokemon/480/
+    - name: cottonee
+      url: https://pokeapi.co/api/v2/pokemon/546/
+    - name: yamask
+      url: https://pokeapi.co/api/v2/pokemon/562/
+    - name: zorua
+      url: https://pokeapi.co/api/v2/pokemon/570/
+    - name: litwick
+      url: https://pokeapi.co/api/v2/pokemon/607/
+    - name: lampent
+      url: https://pokeapi.co/api/v2/pokemon/608/
+    - name: pyukumuku
+      url: https://pokeapi.co/api/v2/pokemon/771/
+    - name: latios-mega
+      url: https://pokeapi.co/api/v2/pokemon/10063/
+    - name: grimer-alola
+      url: https://pokeapi.co/api/v2/pokemon/10112/
+    - name: muk-alola
+      url: https://pokeapi.co/api/v2/pokemon/10113/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: unique
+        url: https://pokeapi.co/api/v2/move-category/13/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: memento
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u304A\u304D\u307F\u3084\u3052"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uCD94\uC5B5\uC758\uC120\uBB3C"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u81E8\u5225\u79AE\u7269"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Souvenir
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Memento-Mori
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Legado
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Memento
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Memento
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u304A\u304D\u307F\u3084\u3052"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u4E34\u522B\u793C\u7269"
+    past_values: []
+    power: 0
+    pp: 10
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/9/
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: dark
+      url: https://pokeapi.co/api/v2/type/17/

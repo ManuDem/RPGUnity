@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using MrAmorphic;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -34,7 +35,30 @@ public class PokemonBase : ScriptableObject
 
     [SerializeField] List<Evolution> evolutions;
 
+    [SerializeField] private int id;
+    [SerializeField] private PokeApiPokemon pokeApiPokemon;
+
     public static int MaxNumOfMoves { get; set; } = 4;
+    public string Name { get => name; set => name = value; }
+    public string Description { get => description; set => description = value; }
+    public Sprite FrontSprite { get => frontSprite; set => frontSprite = value; }
+    public Sprite BackSprite { get => backSprite; set => backSprite = value; }
+    public PokemonType Type1 { get => type1; set => type1 = value; }
+    public PokemonType Type2 { get => type2; set => type2 = value; }
+    public int MaxHp { get => maxHp; set => maxHp = value; }
+    public int Attack { get => attack; set => attack = value; }
+    public int Defense { get => defense; set => defense = value; }
+    public int SpAttack { get => spAttack; set => spAttack = value; }
+    public int SpDefense { get => spDefense; set => spDefense = value; }
+    public int Speed { get => speed; set => speed = value; }
+    public int ExpYield { get => expYield; set => expYield = value; }
+    public GrowthRate GrowthRate { get => growthRate; set => growthRate = value; }
+    public int CatchRate { get => catchRate; set => catchRate = value; }
+    public List<LearnableMove> LearnableMoves { get => learnableMoves; set => learnableMoves = value; }
+    public List<MoveBase> LearnableByItems { get => learnableByItems; set => learnableByItems = value; }
+    public List<Evolution> Evolutions { get => evolutions; set => evolutions = value; }
+    public int Id { get => id; set => id = value; }
+    public PokeApiPokemon PokeApiPokemon { get => pokeApiPokemon; set => pokeApiPokemon = value; }
 
     public int GetExpForLevel(int level)
     {
@@ -50,66 +74,7 @@ public class PokemonBase : ScriptableObject
         return -1;
     }
 
-    public string Name {
-        get { return name; }
-    }
-
-    public string Description {
-        get { return description; }
-    }
-
-    public Sprite FrontSprite {
-        get { return frontSprite; }
-    }
-
-    public Sprite BackSprite {
-        get { return backSprite; }
-    }
-
-    public PokemonType Type1 {
-        get { return type1; }
-    }
-
-    public PokemonType Type2 {
-        get { return type2; }
-    }
-
-    public int MaxHp {
-        get { return maxHp; }
-    }
-
-    public int Attack {
-        get { return attack; }
-    }
-
-    public int SpAttack {
-        get { return spAttack; }
-    }
-
-    public int Defense {
-        get { return defense; }
-    }
-
-    public int SpDefense {
-        get { return spDefense; }
-    }
-
-    public int Speed {
-        get { return speed; }
-    }
-
-    public List<LearnableMove> LearnableMoves {
-        get { return learnableMoves; }
-    }
-
-    public List<MoveBase> LearnableByItems => learnableByItems;
-
-    public List<Evolution> Evolutions => evolutions;
-
-    public int CatchRate => catchRate;
-
-    public int ExpYield => expYield;
-    public GrowthRate GrowthRate => growthRate;
+   
 }
 
 [System.Serializable]
@@ -118,13 +83,8 @@ public class LearnableMove
     [SerializeField] MoveBase moveBase;
     [SerializeField] int level;
 
-    public MoveBase Base {
-        get { return moveBase; }
-    }
-
-    public int Level {
-        get { return level; }
-    }
+    public MoveBase Base { get => moveBase; set => moveBase = value; }
+    public int Level { get => level; set => level = value; }
 }
 
 [System.Serializable]
@@ -134,9 +94,9 @@ public class Evolution
     [SerializeField] int requiredLevel;
     [SerializeField] EvolutionItem requiredItem;
 
-    public PokemonBase EvolvesInto => evolvesInto;
-    public int RequiredLevel => requiredLevel;
-    public EvolutionItem RequiredItem => requiredItem;
+    public PokemonBase EvolvesInto { get => evolvesInto; set => evolvesInto = value; }
+    public int RequiredLevel { get => requiredLevel; set => requiredLevel = value; }
+    public EvolutionItem RequiredItem { get => requiredItem; set => requiredItem = value; }
 }
 
 public enum PokemonType
@@ -156,7 +116,10 @@ public enum PokemonType
     Bug,
     Rock,
     Ghost,
-    Dragon
+    Dragon,
+    Steel,
+    Dark,
+    Fairy
 }
 
 public enum GrowthRate
@@ -168,8 +131,8 @@ public enum Stat
 {
     Attack,
     Defense,
-    SpAttack,
-    SpDefense,
+    Special_attack,
+    Special_defense,
     Speed,
 
     // These 2 are not actual stats, they're used to boost the moveAccuracy

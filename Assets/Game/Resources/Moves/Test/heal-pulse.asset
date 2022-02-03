@@ -1,0 +1,650 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: heal-pulse
+  m_EditorClassIdentifier: 
+  name: Heal Pulse
+  description: "The user emits a healing pulse which\nrestores the target\u2019s
+    HP by up to\nhalf of its max HP."
+  type: 11
+  power: 0
+  accuracy: 0
+  alwaysHits: 0
+  pp: 10
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 505
+  pokeApiMove:
+    accuracy: 0
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Heals the target for half its max HP.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Heals the target for half its max HP.
+    flavor_text_entries:
+    - flavor_text: "Una onda curativa restaura los PS del objetivo a la\nmitad de
+        su m\xE1ximo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Une aura de bien-\xEAtre fait r\xE9cup\xE9rer\nla moiti\xE9 de
+        ses PV max \xE0 la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user emits a healing pulse which\nrestores the target\u2019s
+        HP by up to\nhalf of its max HP."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "The user emits a healing pulse which\nrestores the target\u2019s
+        HP by up to\nhalf of its max HP."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u3055\u3044\u3060\u3044\u3000\uFF28\uFF30\u306E\u3000\u306F\u3093\u3076\u3093\n\u3042\u3044\u3066\u306E\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uCE58\uC720\uD30C\uB3D9\uC744 \uB0A0\uB824\uC11C\n\uCD5C\uB300
+        HP\uC758 \uC808\uBC18\uB9CC\uD07C\n\uC0C1\uB300\uC758 HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Une aura de bien-\xEAtre fait r\xE9cup\xE9rer la moiti\xE9 de\nses
+        PV max \xE0 la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Anwender l\xF6st eine Schmerzen lindernde Welle aus\nund heilt
+        dabei das Ziel mit der H\xE4lfte seiner\nmaximalen KP."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa lancia un\u2019onda rilassante che fa\nrecuperare
+        al bersaglio met\xE0 dei suoi PS massimi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user emits a healing pulse which\nrestores the target\u2019s
+        HP by up to\nhalf of its max HP."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u6700\u5927\uFF28\uFF30\u306E\u3000\u534A\u5206\n\u76F8\u624B\u306E\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u3055\u3044\u3060\u3044\u3000\uFF28\uFF30\u306E\u3000\u306F\u3093\u3076\u3093\n\u3042\u3044\u3066\u306E\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uCE58\uC720\uD30C\uB3D9\uC744 \uB0A0\uB824\uC11C\n\uCD5C\uB300
+        HP\uC758 \uC808\uBC18\uB9CC\uD07C\n\uC0C1\uB300\uC758 HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Une aura de bien-\xEAtre fait r\xE9cup\xE9rer la moiti\xE9 de\nses
+        PV max \xE0 la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Anwender l\xF6st eine Schmerzen lindernde Welle aus\nund heilt
+        dabei das Ziel mit der H\xE4lfte seiner\nmaximalen KP."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Una onda curativa restaura los PS del objetivo a la \nmitad de
+        su m\xE1ximo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa lancia un\u2019onda rilassante che fa\nrecuperare
+        al bersaglio met\xE0 dei suoi PS massimi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user emits a healing pulse which\nrestores the target\u2019s
+        HP by up to\nhalf of its max HP."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u6700\u5927\uFF28\uFF30\u306E\u3000\u534A\u5206\n\u76F8\u624B\u306E\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u3055\u3044\u3060\u3044\u3000\uFF28\uFF30\u306E\u3000\u306F\u3093\u3076\u3093\n\u3042\u3044\u3066\u306E\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uCE58\uC720\uD30C\uB3D9\uC744 \uB0A0\uB824\uC11C\n\uCD5C\uB300
+        HP\uC758 \uC808\uBC18\uB9CC\uD07C\n\uC0C1\uB300\uC758 HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u91CB\u653E\u51FA\u6CBB\u7652\u6CE2\u52D5\uFF0C\n\u8B93\u5C0D\u624B\u56DE\u5FA9\n\u6700\u5927\uFF28\uFF30\u7684\u4E00\u534A\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Une aura de bien-\xEAtre fait r\xE9cup\xE9rer la moiti\xE9 de\nses
+        PV max \xE0 la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Anwender l\xF6st eine Schmerzen lindernde Welle aus\nund heilt
+        dabei das Ziel mit der H\xE4lfte von dessen\nmaximalen KP."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Una onda curativa restaura la mitad de los PS\nm\xE1ximos del
+        objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa lancia un\u2019onda rilassante che fa\nrecuperare
+        al bersaglio met\xE0 dei suoi PS massimi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user emits a healing pulse that restores the\ntarget\u2019s
+        HP by up to half of its max HP."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u6700\u5927\uFF28\uFF30\u306E\u3000\u534A\u5206\n\u76F8\u624B\u306E\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u653E\u51FA\u6CBB\u6108\u6CE2\u52A8\uFF0C\n\u4ECE\u800C\u56DE\u590D\u5BF9\u624B\n\u6700\u5927\uFF28\uFF30\u7684\u4E00\u534A\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u3055\u3044\u3060\u3044\u3000\uFF28\uFF30\u306E\u3000\u306F\u3093\u3076\u3093\n\u3042\u3044\u3066\u306E\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uCE58\uC720\uD30C\uB3D9\uC744 \uB0A0\uB824\uC11C\n\uCD5C\uB300
+        HP\uC758 \uC808\uBC18\uB9CC\uD07C\n\uC0C1\uB300\uC758 HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u91CB\u653E\u51FA\u6CBB\u7652\u6CE2\u52D5\uFF0C\n\u8B93\u5C0D\u624B\u56DE\u5FA9\n\u6700\u5927\uFF28\uFF30\u7684\u4E00\u534A\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Une aura de bien-\xEAtre fait r\xE9cup\xE9rer la moiti\xE9 de\nses
+        PV max \xE0 la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Anwender l\xF6st eine Schmerzen lindernde Welle aus\nund heilt
+        dabei das Ziel mit der H\xE4lfte von dessen\nmaximalen KP."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Una onda curativa restaura la mitad de los PS\nm\xE1ximos del
+        objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa lancia un\u2019onda rilassante che fa\nrecuperare
+        al bersaglio met\xE0 dei suoi PS massimi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user emits a healing pulse that restores the\ntarget\u2019s
+        HP by up to half of its max HP."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u6700\u5927\uFF28\uFF30\u306E\u3000\u534A\u5206\n\u76F8\u624B\u306E\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u653E\u51FA\u6CBB\u6108\u6CE2\u52A8\uFF0C\n\u4ECE\u800C\u56DE\u590D\u5BF9\u624B\n\u6700\u5927\uFF28\uFF30\u7684\u4E00\u534A\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u3055\u3044\u3060\u3044\u3000\uFF28\uFF30\u306E\u3000\u306F\u3093\u3076\u3093\n\u3042\u3044\u3066\u306E\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uCE58\uC720\uD30C\uB3D9\uC744 \uB0A0\uB824\uC11C\n\uCD5C\uB300
+        HP\uC758 \uC808\uBC18\uB9CC\uD07C\n\uC0C1\uB300\uC758 HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u91CB\u653E\u51FA\u6CBB\u7652\u6CE2\u52D5\uFF0C\n\u8B93\u5C0D\u624B\u56DE\u5FA9\n\u6700\u5927HP\u7684\u4E00\u534A\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Une aura de bien-\xEAtre fait r\xE9cup\xE9rer la moiti\xE9 de\nses
+        PV max \xE0 la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Anwender l\xF6st eine Schmerzen lindernde Welle aus\nund heilt
+        dabei das Ziel mit der H\xE4lfte von dessen\nmaximalen KP."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Una onda curativa restaura la mitad de los PS\nm\xE1ximos del
+        objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa lancia un\u2019onda rilassante che fa\nrecuperare
+        al bersaglio met\xE0 dei suoi PS massimi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user emits a healing pulse that restores the\ntarget\u2019s
+        HP by up to half of its max HP."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u6700\u5927\uFF28\uFF30\u306E\u3000\u534A\u5206\n\u76F8\u624B\u306E\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u653E\u51FA\u6CBB\u6108\u6CE2\u52A8\uFF0C\n\u4ECE\u800C\u56DE\u590D\u5BF9\u624B\n\u6700\u5927HP\u7684\u4E00\u534A\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u3055\u3044\u3060\u3044\u3000\uFF28\uFF30\u306E\u3000\u306F\u3093\u3076\u3093\n\u3042\u3044\u3066\u306E\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uCE58\uC720\uD30C\uB3D9\uC744 \uB0A0\uB824\uC11C\n\uCD5C\uB300
+        HP\uC758 \uC808\uBC18\uB9CC\uD07C\n\uC0C1\uB300\uC758 HP\uB97C \uD68C\uBCF5\uD55C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u91CB\u653E\u51FA\u6CBB\u7652\u6CE2\u52D5\uFF0C\n\u8B93\u5C0D\u624B\u56DE\u5FA9\n\u6700\u5927\uFF28\uFF30\u7684\u4E00\u534A\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Une aura de bien-\xEAtre fait r\xE9cup\xE9rer la moiti\xE9\nde
+        ses PV max \xE0 la cible."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Anwender l\xF6st eine Schmerzen lindernde Welle aus\nund heilt
+        dabei das Ziel mit der H\xE4lfte von dessen\nmaximalen KP."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Una onda curativa restaura la mitad de los PS m\xE1ximos\ndel
+        objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa lancia un\u2019onda rilassante che fa\nrecuperare
+        al bersaglio met\xE0 dei suoi PS massimi."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user emits a healing pulse that restores the\ntarget\u2019s
+        HP by up to half of its max HP."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046\u3092\u3000\u3068\u3070\u3057\u3066\n\u6700\u5927\uFF28\uFF30\u306E\u3000\u534A\u5206\n\u76F8\u624B\u306E\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u653E\u51FA\u6CBB\u6108\u6CE2\u52A8\uFF0C\n\u4ECE\u800C\u56DE\u590D\u5BF9\u624B\n\u6700\u5927\uFF28\uFF30\u7684\u4E00\u534A\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-v
+      url: https://pokeapi.co/api/v2/generation/5/
+    id: 505
+    learned_by_pokemon:
+    - name: slowpoke
+      url: https://pokeapi.co/api/v2/pokemon/79/
+    - name: slowbro
+      url: https://pokeapi.co/api/v2/pokemon/80/
+    - name: chansey
+      url: https://pokeapi.co/api/v2/pokemon/113/
+    - name: chikorita
+      url: https://pokeapi.co/api/v2/pokemon/152/
+    - name: cleffa
+      url: https://pokeapi.co/api/v2/pokemon/173/
+    - name: igglybuff
+      url: https://pokeapi.co/api/v2/pokemon/174/
+    - name: slowking
+      url: https://pokeapi.co/api/v2/pokemon/199/
+    - name: blissey
+      url: https://pokeapi.co/api/v2/pokemon/242/
+    - name: ralts
+      url: https://pokeapi.co/api/v2/pokemon/280/
+    - name: kirlia
+      url: https://pokeapi.co/api/v2/pokemon/281/
+    - name: gardevoir
+      url: https://pokeapi.co/api/v2/pokemon/282/
+    - name: chimecho
+      url: https://pokeapi.co/api/v2/pokemon/358/
+    - name: luvdisc
+      url: https://pokeapi.co/api/v2/pokemon/370/
+    - name: latias
+      url: https://pokeapi.co/api/v2/pokemon/380/
+    - name: latios
+      url: https://pokeapi.co/api/v2/pokemon/381/
+    - name: cherubi
+      url: https://pokeapi.co/api/v2/pokemon/420/
+    - name: lucario
+      url: https://pokeapi.co/api/v2/pokemon/448/
+    - name: gallade
+      url: https://pokeapi.co/api/v2/pokemon/475/
+    - name: audino
+      url: https://pokeapi.co/api/v2/pokemon/531/
+    - name: gothita
+      url: https://pokeapi.co/api/v2/pokemon/574/
+    - name: alomomola
+      url: https://pokeapi.co/api/v2/pokemon/594/
+    - name: aromatisse
+      url: https://pokeapi.co/api/v2/pokemon/683/
+    - name: clawitzer
+      url: https://pokeapi.co/api/v2/pokemon/693/
+    - name: xerneas
+      url: https://pokeapi.co/api/v2/pokemon/716/
+    - name: tapu-fini
+      url: https://pokeapi.co/api/v2/pokemon/788/
+    - name: gardevoir-mega
+      url: https://pokeapi.co/api/v2/pokemon/10051/
+    - name: lucario-mega
+      url: https://pokeapi.co/api/v2/pokemon/10059/
+    - name: latias-mega
+      url: https://pokeapi.co/api/v2/pokemon/10062/
+    - name: latios-mega
+      url: https://pokeapi.co/api/v2/pokemon/10063/
+    - name: gallade-mega
+      url: https://pokeapi.co/api/v2/pokemon/10068/
+    - name: audino-mega
+      url: https://pokeapi.co/api/v2/pokemon/10069/
+    - name: slowbro-mega
+      url: https://pokeapi.co/api/v2/pokemon/10071/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: heal
+        url: https://pokeapi.co/api/v2/move-category/3/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: heal-pulse
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uCE58\uC720\uD30C\uB3D9"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u6CBB\u7652\u6CE2\u52D5"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Vibra Soin
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Heilwoge
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Pulso Cura
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Ondasana
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Heal Pulse
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3044\u3084\u3057\u306E\u306F\u3069\u3046"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u6CBB\u6108\u6CE2\u52A8"
+    past_values: []
+    power: 0
+    pp: 10
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: psychic
+      url: https://pokeapi.co/api/v2/type/14/

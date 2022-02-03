@@ -1,0 +1,925 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: bullet-seed
+  m_EditorClassIdentifier: 
+  name: Bullet Seed
+  description: 'Shoots 2 to 5 seeds in a row
+
+    to strike the foe.'
+  type: 5
+  power: 25
+  accuracy: 100
+  alwaysHits: 0
+  pp: 30
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 331
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after:
+        - name: growth
+          url: https://pokeapi.co/api/v2/move/74/
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/14/
+    contest_type:
+      name: cool
+      url: https://pokeapi.co/api/v2/contest-type/1/
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: "Inflicts regular damage.  Hits 2\u20135 times in one turn.\n\nHas
+        a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or
+        5 times.  Averages to 3 hits per use."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Hits 2-5 times in one turn.
+    flavor_text_entries:
+    - flavor_text: 'Shoots 2 to 5 seeds in a row
+
+        to strike the foe.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: 'Shoots 2 to 5 seeds in a row
+
+        to strike the foe.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: 'The user shoots
+
+        seeds at the foe.
+
+        Two to five
+        seeds
+
+        are shot at once.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: 'The user forcefully
+
+        shoots seeds at the
+
+        foe.
+        Two to five
+
+        seeds are shot in
+
+        rapid succession.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: 'The user forcefully
+
+        shoots seeds at the
+
+        foe.
+        Two to five
+
+        seeds are shot in
+
+        rapid succession.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: 'The user forcefully
+
+        shoots seeds at the
+
+        foe.
+        Two to five
+
+        seeds are shot in
+
+        rapid succession.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Le lanceur mitraille l\u2019ennemi avec une\nrafale de graines.
+        De 2 \xE0 5 rafales sont\nlanc\xE9es \xE0 la suite."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The user forcefully shoots seeds at the
+
+        target. Two
+        to five seeds are shot in
+
+        rapid succession.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'The user forcefully shoots seeds at the
+
+        target. Two
+        to five seeds are shot in
+
+        rapid succession.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u304B\u3044\u306E\u3000\u3042\u3044\u3060\u3000\u308C\u3093\u305E\u304F\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC528\uC557\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4.\n2-5\uD68C \uB3D9\uC548
+        \uC5F0\uC18D\uC73C\uB85C \uC4F4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Le lanceur mitraille l\u2019ennemi avec une rafale de\ngraines.
+        De deux \xE0 cinq rafales sont lanc\xE9es \xE0\nla suite."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Der Anwender wirft zwei- bis f\xFCnfmal\nin rascher Folge Samen
+        auf das Ziel."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Dispara r\xE1pido de dos a cinco r\xE1fagas de semillas\nde manera
+        consecutiva."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Chi la usa spara da due a cinque raffiche di semi
+
+        contro
+        il bersaglio in successione.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'The user forcefully shoots seeds at the
+
+        target two to
+        five times in a row.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u56DE\u306E\u3000\u3042\u3044\u3060\u3000\u9023\u7D9A\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u304B\u3044\u306E\u3000\u3042\u3044\u3060\u3000\u308C\u3093\u305E\u304F\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC528\uC557\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4.\n2-5\uD68C \uB3D9\uC548
+        \uC5F0\uC18D\uC73C\uB85C \uC4F4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Le lanceur mitraille l\u2019ennemi avec une rafale de\ngraines.
+        De deux \xE0 cinq rafales sont lanc\xE9es \xE0\nla suite."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Der Anwender wirft zwei- bis f\xFCnfmal\nin rascher Folge Samen
+        auf das Ziel."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Dispara r\xE1pido de dos a cinco r\xE1fagas de semillas \nde
+        manera consecutiva."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Chi la usa spara da due a cinque raffiche di semi
+
+        contro
+        il bersaglio in successione.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'The user forcefully shoots seeds at the
+
+        target two to
+        five times in a row.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u56DE\u306E\u3000\u3042\u3044\u3060\u3000\u9023\u7D9A\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u304B\u3044\u306E\u3000\u3042\u3044\u3060\u3000\u308C\u3093\u305E\u304F\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC528\uC557\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4.\n2-5\uD68C \uB3D9\uC548
+        \uC5F0\uC18D\uC73C\uB85C \uC4F4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5411\u5C0D\u624B\u731B\u70C8\u5730\n\u767C\u5C04\u7A2E\u5B50\u9032\u884C\u653B\u64CA\u3002\n\u9023\u7E8C\u653B\u64CA\uFF12\uFF5E\uFF15\u6B21\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Le lanceur mitraille l\u2019ennemi avec une rafale de\ngraines.
+        De deux \xE0 cinq rafales sont lanc\xE9es \xE0\nla suite."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Der Anwender wirft zwei- bis f\xFCnfmal in rascher\nFolge Samen
+        auf das Ziel."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Dispara r\xE1pido de dos a cinco r\xE1fagas de semillas \nde
+        manera consecutiva."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Chi la usa spara da due a cinque raffiche di semi
+
+        contro
+        il bersaglio in successione.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'The user forcefully shoots seeds at the target two
+
+        to
+        five times in a row.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u56DE\u306E\u3000\u9593\u3000\u9023\u7D9A\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5411\u5BF9\u624B\u731B\u70C8\u5730\n\u53D1\u5C04\u79CD\u5B50\u8FDB\u884C\u653B\u51FB\u3002\n\u8FDE\u7EED\u653B\u51FB\uFF12\uFF5E\uFF15\u6B21\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u304B\u3044\u306E\u3000\u3042\u3044\u3060\u3000\u308C\u3093\u305E\u304F\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC528\uC557\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4.\n2-5\uD68C \uB3D9\uC548
+        \uC5F0\uC18D\uC73C\uB85C \uC4F4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5411\u5C0D\u624B\u731B\u70C8\u5730\n\u767C\u5C04\u7A2E\u5B50\u9032\u884C\u653B\u64CA\u3002\n\u9023\u7E8C\u653B\u64CA\uFF12\uFF5E\uFF15\u6B21\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Le lanceur mitraille l\u2019ennemi avec une rafale de\ngraines.
+        De deux \xE0 cinq rafales sont lanc\xE9es \xE0\nla suite."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Der Anwender wirft zwei- bis f\xFCnfmal in rascher\nFolge Samen
+        auf das Ziel."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Dispara r\xE1pido de dos a cinco r\xE1fagas de semillas \nde
+        manera consecutiva."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Chi la usa spara da due a cinque raffiche di semi
+
+        contro
+        il bersaglio in successione.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'The user forcefully shoots seeds at the target two
+
+        to
+        five times in a row.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u56DE\u306E\u3000\u9593\u3000\u9023\u7D9A\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5411\u5BF9\u624B\u731B\u70C8\u5730\n\u53D1\u5C04\u79CD\u5B50\u8FDB\u884C\u653B\u51FB\u3002\n\u8FDE\u7EED\u653B\u51FB\uFF12\uFF5E\uFF15\u6B21\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u304B\u3044\u306E\u3000\u3042\u3044\u3060\u3000\u308C\u3093\u305E\u304F\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC528\uC557\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4.\n2-5\uD68C \uB3D9\uC548
+        \uC5F0\uC18D\uC73C\uB85C \uC4F4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5411\u5C0D\u624B\u731B\u70C8\u5730\n\u767C\u5C04\u7A2E\u5B50\u9032\u884C\u653B\u64CA\u3002\n\u9023\u7E8C\u653B\u64CA\uFF12\uFF5E\uFF15\u6B21\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Le lanceur mitraille l\u2019ennemi avec une rafale de graines.\nDe
+        deux \xE0 cinq rafales sont lanc\xE9es \xE0 la suite."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Der Anwender wirft zwei- bis f\xFCnfmal in rascher\nFolge Samen
+        auf das Ziel."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Dispara r\xE1pido de dos a cinco r\xE1fagas de semillas \nde
+        manera consecutiva."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Chi la usa spara da due a cinque raffiche di semi
+
+        contro
+        il bersaglio in successione.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'The user forcefully shoots seeds at the target two
+
+        to
+        five times in a row.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u56DE\u306E\u3000\u9593\u3000\u9023\u7D9A\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5411\u5BF9\u624B\u731B\u70C8\u5730\n\u53D1\u5C04\u79CD\u5B50\u8FDB\u884C\u653B\u51FB\u3002\n\u8FDE\u7EED\u653B\u51FB\uFF12\uFF5E\uFF15\u6B21\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u3044\u304D\u304A\u3044\u3088\u304F\n\u3042\u3044\u3066\u306B\u3000\u306F\u3063\u3057\u3083\u3057\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u304B\u3044\u306E\u3000\u3042\u3044\u3060\u3000\u308C\u3093\u305E\u304F\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC528\uC557\uC744 \uAE30\uC138 \uC88B\uAC8C\n\uC0C1\uB300\uC5D0\uAC8C
+        \uBC1C\uC0AC\uD558\uC5EC \uACF5\uACA9\uD55C\uB2E4.\n2-5\uD68C \uB3D9\uC548
+        \uC5F0\uC18D\uC73C\uB85C \uC4F4\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5411\u5C0D\u624B\u731B\u70C8\u5730\n\u767C\u5C04\u7A2E\u5B50\u9032\u884C\u653B\u64CA\u3002\n\u9023\u7E8C\u653B\u64CA\uFF12\uFF5E\uFF15\u6B21\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Le lanceur mitraille l\u2019ennemi avec une rafale de graines.\nDe
+        deux \xE0 cinq rafales sont lanc\xE9es \xE0 la suite."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender wirft zwei- bis f\xFCnfmal in rascher Folge\nSamen
+        auf das Ziel."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Dispara r\xE1pido de dos a cinco r\xE1fagas de semillas de\nmanera
+        consecutiva."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Chi la usa spara da due a cinque raffiche di semi
+
+        contro
+        il bersaglio in successione.'
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'The user forcefully shoots seeds at the target two
+
+        to
+        five times in a row.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u30BF\u30CD\u3092\u3000\u52E2\u3044\u3088\u304F\n\u76F8\u624B\u306B\u3000\u767A\u5C04\u3057\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\uFF12\u30FC\uFF15\u56DE\u306E\u3000\u9593\u3000\u9023\u7D9A\u3067\u3000\u3060\u3059\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5411\u5BF9\u624B\u731B\u70C8\u5730\n\u53D1\u5C04\u79CD\u5B50\u8FDB\u884C\u653B\u51FB\u3002\n\u8FDE\u7EED\u653B\u51FB\uFF12\uFF5E\uFF15\u6B21\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-iii
+      url: https://pokeapi.co/api/v2/generation/3/
+    id: 331
+    learned_by_pokemon:
+    - name: bulbasaur
+      url: https://pokeapi.co/api/v2/pokemon/1/
+    - name: ivysaur
+      url: https://pokeapi.co/api/v2/pokemon/2/
+    - name: venusaur
+      url: https://pokeapi.co/api/v2/pokemon/3/
+    - name: oddish
+      url: https://pokeapi.co/api/v2/pokemon/43/
+    - name: gloom
+      url: https://pokeapi.co/api/v2/pokemon/44/
+    - name: vileplume
+      url: https://pokeapi.co/api/v2/pokemon/45/
+    - name: paras
+      url: https://pokeapi.co/api/v2/pokemon/46/
+    - name: parasect
+      url: https://pokeapi.co/api/v2/pokemon/47/
+    - name: bellsprout
+      url: https://pokeapi.co/api/v2/pokemon/69/
+    - name: weepinbell
+      url: https://pokeapi.co/api/v2/pokemon/70/
+    - name: victreebel
+      url: https://pokeapi.co/api/v2/pokemon/71/
+    - name: exeggcute
+      url: https://pokeapi.co/api/v2/pokemon/102/
+    - name: exeggutor
+      url: https://pokeapi.co/api/v2/pokemon/103/
+    - name: tangela
+      url: https://pokeapi.co/api/v2/pokemon/114/
+    - name: mew
+      url: https://pokeapi.co/api/v2/pokemon/151/
+    - name: chikorita
+      url: https://pokeapi.co/api/v2/pokemon/152/
+    - name: bayleef
+      url: https://pokeapi.co/api/v2/pokemon/153/
+    - name: meganium
+      url: https://pokeapi.co/api/v2/pokemon/154/
+    - name: bellossom
+      url: https://pokeapi.co/api/v2/pokemon/182/
+    - name: hoppip
+      url: https://pokeapi.co/api/v2/pokemon/187/
+    - name: skiploom
+      url: https://pokeapi.co/api/v2/pokemon/188/
+    - name: jumpluff
+      url: https://pokeapi.co/api/v2/pokemon/189/
+    - name: sunkern
+      url: https://pokeapi.co/api/v2/pokemon/191/
+    - name: sunflora
+      url: https://pokeapi.co/api/v2/pokemon/192/
+    - name: heracross
+      url: https://pokeapi.co/api/v2/pokemon/214/
+    - name: remoraid
+      url: https://pokeapi.co/api/v2/pokemon/223/
+    - name: octillery
+      url: https://pokeapi.co/api/v2/pokemon/224/
+    - name: mantine
+      url: https://pokeapi.co/api/v2/pokemon/226/
+    - name: treecko
+      url: https://pokeapi.co/api/v2/pokemon/252/
+    - name: grovyle
+      url: https://pokeapi.co/api/v2/pokemon/253/
+    - name: sceptile
+      url: https://pokeapi.co/api/v2/pokemon/254/
+    - name: lotad
+      url: https://pokeapi.co/api/v2/pokemon/270/
+    - name: lombre
+      url: https://pokeapi.co/api/v2/pokemon/271/
+    - name: ludicolo
+      url: https://pokeapi.co/api/v2/pokemon/272/
+    - name: seedot
+      url: https://pokeapi.co/api/v2/pokemon/273/
+    - name: nuzleaf
+      url: https://pokeapi.co/api/v2/pokemon/274/
+    - name: shiftry
+      url: https://pokeapi.co/api/v2/pokemon/275/
+    - name: shroomish
+      url: https://pokeapi.co/api/v2/pokemon/285/
+    - name: breloom
+      url: https://pokeapi.co/api/v2/pokemon/286/
+    - name: roselia
+      url: https://pokeapi.co/api/v2/pokemon/315/
+    - name: gulpin
+      url: https://pokeapi.co/api/v2/pokemon/316/
+    - name: swalot
+      url: https://pokeapi.co/api/v2/pokemon/317/
+    - name: cacnea
+      url: https://pokeapi.co/api/v2/pokemon/331/
+    - name: cacturne
+      url: https://pokeapi.co/api/v2/pokemon/332/
+    - name: lileep
+      url: https://pokeapi.co/api/v2/pokemon/345/
+    - name: cradily
+      url: https://pokeapi.co/api/v2/pokemon/346/
+    - name: tropius
+      url: https://pokeapi.co/api/v2/pokemon/357/
+    - name: turtwig
+      url: https://pokeapi.co/api/v2/pokemon/387/
+    - name: grotle
+      url: https://pokeapi.co/api/v2/pokemon/388/
+    - name: torterra
+      url: https://pokeapi.co/api/v2/pokemon/389/
+    - name: budew
+      url: https://pokeapi.co/api/v2/pokemon/406/
+    - name: roserade
+      url: https://pokeapi.co/api/v2/pokemon/407/
+    - name: wormadam-plant
+      url: https://pokeapi.co/api/v2/pokemon/413/
+    - name: cherubi
+      url: https://pokeapi.co/api/v2/pokemon/420/
+    - name: cherrim
+      url: https://pokeapi.co/api/v2/pokemon/421/
+    - name: carnivine
+      url: https://pokeapi.co/api/v2/pokemon/455/
+    - name: snover
+      url: https://pokeapi.co/api/v2/pokemon/459/
+    - name: abomasnow
+      url: https://pokeapi.co/api/v2/pokemon/460/
+    - name: tangrowth
+      url: https://pokeapi.co/api/v2/pokemon/465/
+    - name: leafeon
+      url: https://pokeapi.co/api/v2/pokemon/470/
+    - name: shaymin-land
+      url: https://pokeapi.co/api/v2/pokemon/492/
+    - name: arceus
+      url: https://pokeapi.co/api/v2/pokemon/493/
+    - name: patrat
+      url: https://pokeapi.co/api/v2/pokemon/504/
+    - name: pansage
+      url: https://pokeapi.co/api/v2/pokemon/511/
+    - name: maractus
+      url: https://pokeapi.co/api/v2/pokemon/556/
+    - name: cinccino
+      url: https://pokeapi.co/api/v2/pokemon/573/
+    - name: ferroseed
+      url: https://pokeapi.co/api/v2/pokemon/597/
+    - name: pumpkaboo-average
+      url: https://pokeapi.co/api/v2/pokemon/710/
+    - name: gourgeist-average
+      url: https://pokeapi.co/api/v2/pokemon/711/
+    - name: pikipek
+      url: https://pokeapi.co/api/v2/pokemon/731/
+    - name: trumbeak
+      url: https://pokeapi.co/api/v2/pokemon/732/
+    - name: toucannon
+      url: https://pokeapi.co/api/v2/pokemon/733/
+    - name: shaymin-sky
+      url: https://pokeapi.co/api/v2/pokemon/10006/
+    - name: pumpkaboo-small
+      url: https://pokeapi.co/api/v2/pokemon/10027/
+    - name: pumpkaboo-large
+      url: https://pokeapi.co/api/v2/pokemon/10028/
+    - name: pumpkaboo-super
+      url: https://pokeapi.co/api/v2/pokemon/10029/
+    - name: gourgeist-small
+      url: https://pokeapi.co/api/v2/pokemon/10030/
+    - name: gourgeist-large
+      url: https://pokeapi.co/api/v2/pokemon/10031/
+    - name: gourgeist-super
+      url: https://pokeapi.co/api/v2/pokemon/10032/
+    - name: heracross-mega
+      url: https://pokeapi.co/api/v2/pokemon/10047/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/166/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/167/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/168/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/169/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/170/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/171/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/173/
+      version_group:
+        name: colosseum
+        url: https://pokeapi.co/api/v2/version-group/12/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/174/
+      version_group:
+        name: xd
+        url: https://pokeapi.co/api/v2/version-group/13/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1001/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 5
+      max_turns: 0
+      min_hits: 2
+      min_turns: 0
+      stat_chance: 0
+    name: bullet-seed
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30BF\u30CD\u30DE\u30B7\u30F3\u30AC\u30F3"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uAE30\uAD00\uCD1D"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u7A2E\u5B50\u6A5F\u95DC\u69CD"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Balle Graine
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Kugelsaat
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Semilladora
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Semitraglia
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Bullet Seed
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30BF\u30CD\u30DE\u30B7\u30F3\u30AC\u30F3"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u79CD\u5B50\u673A\u5173\u67AA"
+    past_values:
+    - accuracy: 0
+      effect_chance: 0
+      effect_entries: []
+      power: 10
+      pp: 0
+      type:
+        name: 
+        url: 
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    power: 25
+    pp: 30
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/7/
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: grass
+      url: https://pokeapi.co/api/v2/type/12/

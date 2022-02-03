@@ -1,0 +1,455 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: shell-trap
+  m_EditorClassIdentifier: 
+  name: Shell Trap
+  description: "The user sets a shell trap. If the user is hit by a\nphysical move,
+    the trap will explode and inflict\ndamage on the opposing Pok\xE9mon."
+  type: 2
+  power: 150
+  accuracy: 100
+  alwaysHits: 0
+  pp: 5
+  priority: -3
+  category: 1
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 704
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: special
+      url: https://pokeapi.co/api/v2/move-damage-class/3/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage.  If the user was not yet hit by an opponent's
+        physical move this turn, this move will fail.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Only inflicts damage if the user was hit by a physical move this
+        turn.
+    flavor_text_entries:
+    - flavor_text: "\u3053\u3046\u3089\u306E\u3000\u30C8\u30E9\u30C3\u30D7\u3092\u3000\u3057\u304B\u3051\u308B\u3002\n\u3042\u3044\u3066\u304C\u3000\u3076\u3064\u308A\u3000\u308F\u3056\u3092\u3000\u3060\u3059\u3068\n\u3070\u304F\u306F\u3064\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uAECD\uC9C8\uC758 \uD2B8\uB7A9\uC744 \uC124\uCE58\uD55C\uB2E4.\n\uC0C1\uB300\uAC00
+        \uBB3C\uB9AC \uAE30\uC220\uC744 \uC4F0\uBA74\n\uD3ED\uBC1C\uD574\uC11C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u8A2D\u4E0B\u7532\u6BBC\u9677\u9631\u3002\n\u82E5\u5C0D\u624B\u4F7F\u51FA\u7269\u7406\u62DB\u5F0F\uFF0C\n\u5C31\u6703\u7206\u70B8\u4E26\u7D66\u4E88\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Pose une carapace pi\xE9g\xE9e. Si l\u2019adversaire utilise\nune
+        capacit\xE9 physique, la carapace explose et\nlui inflige des d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Der Anwender legt eine Panzerfalle. Wird er von einer\nphysischen
+        Attacke getroffen, explodiert die Falle\nund f\xFCgt dem Angreifer Schaden
+        zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "El caparaz\xF3n del Pok\xE9mon se convierte en una\ntrampa. Si
+        le alcanza un ataque f\xEDsico, la trampa\nestalla y el atacante sufre da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Il guscio del Pok\xE9mon diventa una trappola.\nSe un nemico
+        lo colpisce con una mossa fisica,\ninnesca un\u2019esplosione e subisce dei
+        danni."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user sets a shell trap. If the user is hit by a\nphysical
+        move, the trap will explode and inflict\ndamage on the opposing Pok\xE9mon."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3053\u3046\u3089\u306E\u3000\u30C8\u30E9\u30C3\u30D7\u3092\u3000\u3057\u304B\u3051\u308B\u3002\n\u76F8\u624B\u304C\u3000\u7269\u7406\u6280\u3092\u3000\u51FA\u3059\u3068\n\u7206\u767A\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u8BBE\u4E0B\u7532\u58F3\u9677\u9631\u3002\n\u5982\u679C\u5BF9\u624B\u4F7F\u51FA\u7269\u7406\u62DB\u5F0F\uFF0C\n\u9677\u9631\u5C31\u4F1A\u7206\u70B8\u5E76\u7ED9\u4E88\u5BF9\u624B\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3053\u3046\u3089\u306E\u3000\u30C8\u30E9\u30C3\u30D7\u3092\u3000\u3057\u304B\u3051\u308B\u3002\n\u3042\u3044\u3066\u304C\u3000\u3076\u3064\u308A\u3000\u308F\u3056\u3092\u3000\u3060\u3059\u3068\n\u3070\u304F\u306F\u3064\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uAECD\uC9C8\uC758 \uD2B8\uB7A9\uC744 \uC124\uCE58\uD55C\uB2E4.\n\uC0C1\uB300\uAC00
+        \uBB3C\uB9AC \uAE30\uC220\uC744 \uC4F0\uBA74\n\uD3ED\uBC1C\uD574\uC11C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u8A2D\u4E0B\u7532\u6BBC\u9677\u9631\u3002\n\u82E5\u5C0D\u624B\u4F7F\u51FA\u7269\u7406\u62DB\u5F0F\uFF0C\n\u5C31\u6703\u7206\u70B8\u4E26\u7D66\u4E88\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Pose une carapace pi\xE9g\xE9e. Si l\u2019adversaire utilise\nune
+        capacit\xE9 physique, la carapace explose et\nlui inflige des d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Der Anwender legt eine Panzerfalle. Wird er von einer\nphysischen
+        Attacke getroffen, explodiert die Falle\nund f\xFCgt dem Angreifer Schaden
+        zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "El caparaz\xF3n del Pok\xE9mon se convierte en una\ntrampa. Si
+        le alcanza un ataque f\xEDsico, la trampa\nestalla y el atacante sufre da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Il guscio del Pok\xE9mon diventa una trappola.\nSe un nemico
+        lo colpisce con una mossa fisica,\ninnesca un\u2019esplosione e subisce dei
+        danni."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user sets a shell trap. If the user is hit by a\nphysical
+        move, the trap will explode and inflict\ndamage on the opposing Pok\xE9mon."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3053\u3046\u3089\u306E\u3000\u30C8\u30E9\u30C3\u30D7\u3092\u3000\u3057\u304B\u3051\u308B\u3002\n\u76F8\u624B\u304C\u3000\u7269\u7406\u6280\u3092\u3000\u51FA\u3059\u3068\n\u7206\u767A\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u8BBE\u4E0B\u7532\u58F3\u9677\u9631\u3002\n\u5982\u679C\u5BF9\u624B\u4F7F\u51FA\u7269\u7406\u62DB\u5F0F\uFF0C\n\u9677\u9631\u5C31\u4F1A\u7206\u70B8\u5E76\u7ED9\u4E88\u5BF9\u624B\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3053\u3046\u3089\u306E\u3000\u30C8\u30E9\u30C3\u30D7\u3092\u3000\u3057\u304B\u3051\u308B\u3002\n\u3042\u3044\u3066\u304C\u3000\u3076\u3064\u308A\u3000\u308F\u3056\u3092\u3000\u3060\u3059\u3068\n\u3070\u304F\u306F\u3064\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uAECD\uC9C8\uC758 \uD2B8\uB7A9\uC744 \uC124\uCE58\uD55C\uB2E4.\n\uC0C1\uB300\uAC00
+        \uBB3C\uB9AC \uAE30\uC220\uC744 \uC4F0\uBA74\n\uD3ED\uBC1C\uD574\uC11C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u8A2D\u4E0B\u7532\u6BBC\u9677\u9631\u3002\n\u82E5\u5C0D\u624B\u4F7F\u51FA\u7269\u7406\u62DB\u5F0F\uFF0C\n\u5C31\u6703\u7206\u70B8\u4E26\u7D66\u4E88\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Pose une carapace pi\xE9g\xE9e. Si l\u2019adversaire utilise\nune
+        capacit\xE9 physique, la carapace explose et\nlui inflige des d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Der Anwender legt eine Panzerfalle. Wird er von einer\nphysischen
+        Attacke getroffen, explodiert die Falle\nund f\xFCgt dem Angreifer Schaden
+        zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "El caparaz\xF3n del Pok\xE9mon se convierte en una\ntrampa. Si
+        le alcanza un ataque f\xEDsico, la trampa\nestalla y el atacante sufre da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Il guscio del Pok\xE9mon diventa una trappola.\nSe un nemico
+        lo colpisce con una mossa fisica,\ninnesca un\u2019esplosione e subisce dei
+        danni."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user sets a shell trap. If the user is hit by a\nphysical
+        move, the trap will explode and inflict\ndamage on the opposing Pok\xE9mon."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3053\u3046\u3089\u306E\u3000\u30C8\u30E9\u30C3\u30D7\u3092\u3000\u3057\u304B\u3051\u308B\u3002\n\u76F8\u624B\u304C\u3000\u7269\u7406\u6280\u3092\u3000\u51FA\u3059\u3068\n\u7206\u767A\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u8BBE\u4E0B\u7532\u58F3\u9677\u9631\u3002\n\u5982\u679C\u5BF9\u624B\u4F7F\u51FA\u7269\u7406\u62DB\u5F0F\uFF0C\n\u9677\u9631\u5C31\u4F1A\u7206\u70B8\u5E76\u7ED9\u4E88\u5BF9\u624B\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3053\u3046\u3089\u306E\u3000\u30C8\u30E9\u30C3\u30D7\u3092\u3000\u3057\u304B\u3051\u308B\u3002\n\u3042\u3044\u3066\u304C\u3000\u3076\u3064\u308A\u3000\u308F\u3056\u3092\u3000\u3060\u3059\u3068\n\u3070\u304F\u306F\u3064\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3042\u305F\u3048\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uAECD\uC9C8\uC758 \uD2B8\uB7A9\uC744 \uC124\uCE58\uD55C\uB2E4.\n\uC0C1\uB300\uAC00
+        \uBB3C\uB9AC \uAE30\uC220\uC744 \uC4F0\uBA74\n\uD3ED\uBC1C\uD574\uC11C \uB370\uBBF8\uC9C0\uB97C
+        \uC900\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u8A2D\u4E0B\u7532\u6BBC\u9677\u9631\u3002\n\u82E5\u5C0D\u624B\u4F7F\u51FA\u7269\u7406\u62DB\u5F0F\uFF0C\n\u5C31\u6703\u7206\u70B8\u4E26\u7D66\u4E88\u50B7\u5BB3\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Pose une carapace pi\xE9g\xE9e. Si l\u2019adversaire utilise\nune
+        capacit\xE9 physique, la carapace explose et lui inflige\ndes d\xE9g\xE2ts."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender legt eine Panzerfalle. Wird er von einer\nphysischen
+        Attacke getroffen, explodiert die Falle und\nf\xFCgt gegnerischen Pok\xE9mon
+        Schaden zu."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "El caparaz\xF3n del Pok\xE9mon se convierte en una trampa.\nSi
+        le alcanza un ataque f\xEDsico, la trampa estalla y los\noponentes sufren
+        da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Il guscio del Pok\xE9mon diventa una trappola.\nSe un nemico
+        lo colpisce con una mossa fisica,\ninnesca un\u2019esplosione e subisce dei
+        danni."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user sets a shell trap. If the user is hit by a\nphysical
+        move, the trap will explode and inflict\ndamage on opposing Pok\xE9mon."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u3053\u3046\u3089\u306E\u3000\u30C8\u30E9\u30C3\u30D7\u3092\u3000\u3057\u304B\u3051\u308B\u3002\n\u76F8\u624B\u304C\u3000\u7269\u7406\u6280\u3092\u3000\u51FA\u3059\u3068\n\u7206\u767A\u3057\u3066\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u4E0E\u3048\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u8BBE\u4E0B\u7532\u58F3\u9677\u9631\u3002\n\u5982\u679C\u5BF9\u624B\u4F7F\u51FA\u7269\u7406\u62DB\u5F0F\uFF0C\n\u9677\u9631\u5C31\u4F1A\u7206\u70B8\u5E76\u7ED9\u4E88\u5BF9\u624B\u4F24\u5BB3\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vii
+      url: https://pokeapi.co/api/v2/generation/7/
+    id: 704
+    learned_by_pokemon:
+    - name: turtonator
+      url: https://pokeapi.co/api/v2/pokemon/776/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: shell-trap
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30C8\u30E9\u30C3\u30D7\u30B7\u30A7\u30EB"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uD2B8\uB7A9\uC178"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u9677\u9631\u7532\u6BBC"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "Carapi\xE8ge"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Panzerfalle
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Coraza Trampa
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Gusciotrappola
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Shell Trap
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30C8\u30E9\u30C3\u30D7\u30B7\u30A7\u30EB"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u9677\u9631\u7532\u58F3"
+    past_values: []
+    power: 150
+    pp: 5
+    priority: -3
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: all-opponents
+      url: https://pokeapi.co/api/v2/move-target/11/
+    type:
+      name: fire
+      url: https://pokeapi.co/api/v2/type/10/

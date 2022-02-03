@@ -1206,7 +1206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7075410999471036207
 Transform:
   m_ObjectHideFlags: 0
@@ -1246,43 +1246,43 @@ MonoBehaviour:
     type: 3}
   moveSelectionUI: {fileID: 7075410999979646797}
   inventoryUI: {fileID: 6584159537931309597}
-  wildPokemonAppared: Appare un
-  trainerIntroduction: ha voglia di perdere.
-  trainerSendPokemon: manda in campo
-  playerSendPokemon: Vai
-  whatDoYouDo: Che cosa vuoi fare?
-  trainerWillUse: "mander\xE0 in campo"
-  doYouWantToChange: Vuoi cambiare Pokemon?
-  forgetAMove: Vuoi fare dimenticare una mossa?
+  aWildAppared: 'Uddio! Appare un '
+  wantsToBattle: ha voglia di perdere
+  sendOut: manda in campo
+  go: Vai
+  chooseAnAction: Cosa vuoi fare?
+  isAboutToUse: vuole usare
+  doYouWantToChangePokemon: Vuoi cambiare Pokemon
+  chooseAMoveYouWantToForget: Scegli una mossa che vuoi dimenticare
   used: usa
-  moveFail: fallisce.
+  attackMissed: fallisce
   fainted: "\xE8 stato sconfitto."
   gained: guadagna
   exp: punti esperienza.
   grewToLevel: aumenta al livello
   learned: ha imparato
   tryingToLearn: vorrebbe imparare
-  cannotLearnMore: "Non pu\xF2 imparare la mossa perch\xE8 conosce gi\xE0"
-  moves: mosse.
+  butItCannotLearnMoreThan: "ma non pu\xF2 imparare pi\xF9 di"
+  moves: mosse
+  criticalHit: Brutto colpo
+  superEffective: Superefficace
+  notVeryEffective: "Non \xE8 molto efficace"
   didNotLearn: non ha imparato
-  criticalHit: Brutto colpo!
-  superEffective: Superefficace!
-  notVeryEffective: "Non \xE8 molto efficace."
   forgot: dimentica
   andLearned: e impara
-  choosePokemonToContinue: Scegli un Pokemon per continuare.
-  comeBack: 'Ritorna '
-  wasCaught: "\xE8 stato catturato!"
-  cantSendOutAFaintedPokemon: Non puoi mandare in campo un Pokemon esausto.
-  cantSwitchSamePokemon: Non puoi cambiare lo stesso Pokemon.
+  cantSendOutAFaintedPokemon: Non puoi mandare in campo un Pokemon esausto
+  cantSwitchSamePokemon: Non puoi cambiare lo stesso Pokemon
+  choosePokemonToContinue: Scegli un Pokemon per continuare
   cantStealTrainerPokemon: "Eh, volevi! Non si pu\xF2 rubare il Pokemon di un altro
-    allenatore."
-  hasBeenAddedToYourParty: "\xE8 stato aggiunto alla squadra."
-  brokeFree: "Oh no, \xE8 uscito!"
-  almostCaughtIt: Era quasi preso!
-  cantRunFromTrainerBattles: Non puoi scappare dalla lotta con un allenatore.
-  ranAwaySafely: Sei scappato.
-  cantEscape: Non puoi scappare.
+    allenatore"
+  comeBack: 'Ritorna '
+  wasCaught: "\xE8 stato catturato"
+  hasBeenAddedToYourParty: "\xE8 stato aggiunto alla squadra"
+  brokeFree: "Oh no, \xE8 uscito"
+  almostCaughtIt: Era quasi preso
+  cantRunFromTrainerBattles: Non puoi scappare dalla lotta con un allenatore
+  ranAwaySafely: Scampato pericolo
+  cantEscape: Non puoi scappare
 --- !u!1 &7075410999499144781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1558,8 +1558,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207.07, y: 171.50008}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 210, y: 144}
+  m_SizeDelta: {x: 85, y: 85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7075410999689189196
 CanvasRenderer:
@@ -1589,8 +1589,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -855298285791758126, guid: d8f8c5b43b314404f8bd23bd9e12372f,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: e3d69be3fcf238d43801cc4c4f81da73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1729,7 +1728,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 207.07, y: 108.3}
+  m_AnchoredPosition: {x: 220, y: 126}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7075410999836368788
@@ -1760,7 +1759,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1a9df0d1df5aba349ad9da0c5ad8be19, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bc8eabaa3727f0c44844d875c7e6058d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3624,8 +3623,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -199, y: 32}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -191.1, y: -102}
+  m_SizeDelta: {x: 90, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7075411000562492514
 CanvasRenderer:
@@ -3655,8 +3654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -855298285791758126, guid: 73349fcd20e34804b96940a843d9b34f,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9cb3564244fb1ae449a42ba1c14ed5d2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

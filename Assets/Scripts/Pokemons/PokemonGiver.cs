@@ -8,6 +8,9 @@ public class PokemonGiver : MonoBehaviour, ISavable
     [SerializeField] Pokemon pokemonToGive;
     [SerializeField] Dialog dialog;
 
+    [Header("Strings")]
+    [TextArea] [SerializeField] string received;
+
     bool used = false;
 
     public IEnumerator GivePokemon(PlayerController player, Sprite sprite, string nameText)
@@ -19,7 +22,7 @@ public class PokemonGiver : MonoBehaviour, ISavable
 
         used = true;
 
-        string dialogText = $"{player.Name} received {pokemonToGive.Base.Name}";
+        string dialogText = $"{player.Name} {received} {pokemonToGive.Base.Name}.";
 
         yield return DialogManager.Instance.ShowDialogText(dialogText);
     }

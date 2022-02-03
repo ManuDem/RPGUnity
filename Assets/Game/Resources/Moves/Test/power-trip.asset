@@ -1,0 +1,466 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: power-trip
+  m_EditorClassIdentifier: 
+  name: Power Trip
+  description: "The user boasts its strength and attacks the target.\nThe more the
+    user\u2019s stats are raised, the greater the\nmove\u2019s power."
+  type: 17
+  power: 20
+  accuracy: 100
+  alwaysHits: 0
+  pp: 10
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 681
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: "Inflicts regular damage.  Power is increased by 100% its original
+        value for every stage any of the user's stats have been raised.  Accuracy,
+        evasion, and lowered stats do not affect this move's power.  For a Pok\xE9mon
+        with all five stats modified to +6, this move's power is 31\xD7."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: "Power is higher the more the user's stats have been raised,
+        to a maximum of 31\xD7."
+    flavor_text_entries:
+    - flavor_text: "\u3058\u3076\u3093\u306E\u3000\u3064\u3088\u3055\u3092\u3000\u306F\u306A\u305F\u304B\u3060\u304B\u306B\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3058\u3076\u3093\u306E\u3000\u306E\u3046\u308A\u3087\u304F\u304C\n\u3042\u304C\u3063\u3066\u3000\u3044\u308B\u307B\u3069\u3000\u3044\u308A\u3087\u304F\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC790\uC2E0\uC758 \uAC15\uD568\uC744 \uBED0\uAE30\uACE0\n\uACF5\uACA9\uD55C\uB2E4.
+        \uC790\uC2E0\uC758 \uB2A5\uB825\uC774\n\uC62C\uB77C\uAC00 \uC788\uB294 \uB9CC\uD07C
+        \uC704\uB825\uC774 \uC624\uB978\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u8000\u6B66\u63DA\u5A01\u5730\u653B\u64CA\u5C0D\u624B\uFF0C\n\u81EA\u5DF1\u7684\u80FD\u529B\u63D0\u9AD8\u5F97\u8D8A\u591A\uFF0C\n\u5A01\u529B\u5C31\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Ivre de puissance, le lanceur attaque de toutes\nses forces.
+        Plus ses stats ont \xE9t\xE9 augment\xE9es,\nplus la puissance de l\u2019attaque
+        est \xE9lev\xE9e."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Der Anwender prahlt mit seiner St\xE4rke und greift\ndas Ziel
+        an. Dieser Angriff ist umso st\xE4rker, je weiter\ndie Statuswerte des Anwenders
+        erh\xF6ht sind."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Ataca al oponente presumiendo de su fuerza. Cuanto\nm\xE1s hayan
+        subido las caracter\xEDsticas del usuario,\nmayor ser\xE1 el da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa attacca il bersaglio sfoggiando\nla propria forza.
+        Pi\xF9 le sue statistiche sono\nstate aumentate, pi\xF9 la mossa \xE8 potente."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user boasts its strength and attacks the target.\nThe more
+        the user\u2019s stats are raised, the greater the\nmove\u2019s power."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u81EA\u5206\u306E\u3000\u5F37\u3055\u3092\u3000\u9F3B\u9AD8\u3005\u306B\n\u653B\u6483\u3059\u308B\u3002\u81EA\u5206\u306E\u3000\u80FD\u529B\u304C\n\u3042\u304C\u3063\u3066\u3000\u3044\u308B\u307B\u3069\u3000\u5A01\u529B\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u8000\u6B66\u626C\u5A01\u5730\u653B\u51FB\u5BF9\u624B\uFF0C\n\u81EA\u5DF1\u7684\u80FD\u529B\u63D0\u9AD8\u5F97\u8D8A\u591A\uFF0C\n\u5A01\u529B\u5C31\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3058\u3076\u3093\u306E\u3000\u3064\u3088\u3055\u3092\u3000\u306F\u306A\u305F\u304B\u3060\u304B\u306B\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3058\u3076\u3093\u306E\u3000\u306E\u3046\u308A\u3087\u304F\u304C\n\u3042\u304C\u3063\u3066\u3000\u3044\u308B\u307B\u3069\u3000\u3044\u308A\u3087\u304F\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC790\uC2E0\uC758 \uAC15\uD568\uC744 \uBED0\uAE30\uACE0\n\uACF5\uACA9\uD55C\uB2E4.
+        \uC790\uC2E0\uC758 \uB2A5\uB825\uC774\n\uC62C\uB77C\uAC00 \uC788\uB294 \uB9CC\uD07C
+        \uC704\uB825\uC774 \uC624\uB978\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u8000\u6B66\u63DA\u5A01\u5730\u653B\u64CA\u5C0D\u624B\uFF0C\n\u81EA\u5DF1\u7684\u80FD\u529B\u63D0\u9AD8\u5F97\u8D8A\u591A\uFF0C\n\u5A01\u529B\u5C31\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Ivre de puissance, le lanceur attaque de toutes\nses forces.
+        Plus ses stats ont \xE9t\xE9 augment\xE9es,\nplus la puissance de l\u2019attaque
+        est \xE9lev\xE9e."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Der Anwender prahlt mit seiner St\xE4rke und greift\ndas Ziel
+        an. Dieser Angriff ist umso st\xE4rker, je weiter\ndie Statuswerte des Anwenders
+        erh\xF6ht sind."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Ataca al oponente presumiendo de su fuerza. Cuanto\nm\xE1s hayan
+        subido las caracter\xEDsticas del usuario,\nmayor ser\xE1 el da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa attacca il bersaglio sfoggiando\nla propria forza.
+        Pi\xF9 le sue statistiche sono\nstate aumentate, pi\xF9 la mossa \xE8 potente."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user boasts its strength and attacks the target.\nThe more
+        the user\u2019s stats are raised, the greater the\nmove\u2019s power."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u81EA\u5206\u306E\u3000\u5F37\u3055\u3092\u3000\u9F3B\u9AD8\u3005\u306B\n\u653B\u6483\u3059\u308B\u3002\u81EA\u5206\u306E\u3000\u80FD\u529B\u304C\n\u3042\u304C\u3063\u3066\u3000\u3044\u308B\u307B\u3069\u3000\u5A01\u529B\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u8000\u6B66\u626C\u5A01\u5730\u653B\u51FB\u5BF9\u624B\uFF0C\n\u81EA\u5DF1\u7684\u80FD\u529B\u63D0\u9AD8\u5F97\u8D8A\u591A\uFF0C\n\u5A01\u529B\u5C31\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3058\u3076\u3093\u306E\u3000\u3064\u3088\u3055\u3092\u3000\u306F\u306A\u305F\u304B\u3060\u304B\u306B\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3058\u3076\u3093\u306E\u3000\u306E\u3046\u308A\u3087\u304F\u304C\n\u3042\u304C\u3063\u3066\u3000\u3044\u308B\u307B\u3069\u3000\u3044\u308A\u3087\u304F\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC790\uC2E0\uC758 \uAC15\uD568\uC744 \uBED0\uAE30\uACE0\n\uACF5\uACA9\uD55C\uB2E4.
+        \uC790\uC2E0\uC758 \uB2A5\uB825\uC774\n\uC62C\uB77C\uAC00 \uC788\uB294 \uB9CC\uD07C
+        \uC704\uB825\uC774 \uC624\uB978\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u8000\u6B66\u63DA\u5A01\u5730\u653B\u64CA\u5C0D\u624B\uFF0C\n\u81EA\u5DF1\u7684\u80FD\u529B\u63D0\u9AD8\u5F97\u8D8A\u591A\uFF0C\n\u5A01\u529B\u5C31\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Ivre de puissance, le lanceur attaque de toutes ses forces.\nPlus
+        ses stats ont \xE9t\xE9 augment\xE9es, plus la puissance\nde l\u2019attaque
+        est \xE9lev\xE9e."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Der Anwender prahlt mit seiner St\xE4rke und greift\ndas Ziel
+        an. Dieser Angriff ist umso st\xE4rker, je weiter\ndie Statuswerte des Anwenders
+        erh\xF6ht sind."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Ataca al oponente presumiendo de su fuerza. Cuanto\nm\xE1s hayan
+        subido las caracter\xEDsticas del usuario,\nmayor ser\xE1 el da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa attacca il bersaglio sfoggiando\nla propria forza.
+        Pi\xF9 le sue statistiche sono\nstate aumentate, pi\xF9 la mossa \xE8 potente."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user boasts its strength and attacks the target.\nThe more
+        the user\u2019s stats are raised, the greater the\nmove\u2019s power."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u81EA\u5206\u306E\u3000\u5F37\u3055\u3092\u3000\u9F3B\u9AD8\u3005\u306B\n\u653B\u6483\u3059\u308B\u3002\u81EA\u5206\u306E\u3000\u80FD\u529B\u304C\n\u3042\u304C\u3063\u3066\u3000\u3044\u308B\u307B\u3069\u3000\u5A01\u529B\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u8000\u6B66\u626C\u5A01\u5730\u653B\u51FB\u5BF9\u624B\uFF0C\n\u81EA\u5DF1\u7684\u80FD\u529B\u63D0\u9AD8\u5F97\u8D8A\u591A\uFF0C\n\u5A01\u529B\u5C31\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3058\u3076\u3093\u306E\u3000\u3064\u3088\u3055\u3092\u3000\u306F\u306A\u305F\u304B\u3060\u304B\u306B\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3058\u3076\u3093\u306E\u3000\u306E\u3046\u308A\u3087\u304F\u304C\n\u3042\u304C\u3063\u3066\u3000\u3044\u308B\u307B\u3069\u3000\u3044\u308A\u3087\u304F\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC790\uC2E0\uC758 \uAC15\uD568\uC744 \uBED0\uAE30\uACE0\n\uACF5\uACA9\uD55C\uB2E4.
+        \uC790\uC2E0\uC758 \uB2A5\uB825\uC774\n\uC62C\uB77C\uAC00 \uC788\uB294 \uB9CC\uD07C
+        \uC704\uB825\uC774 \uC624\uB978\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u8000\u6B66\u63DA\u5A01\u5730\u653B\u64CA\u5C0D\u624B\uFF0C\n\u81EA\u5DF1\u7684\u80FD\u529B\u63D0\u9AD8\u5F97\u8D8A\u591A\uFF0C\n\u5A01\u529B\u5C31\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Ivre de puissance, le lanceur attaque de toutes\nses forces.
+        Plus ses stats ont \xE9t\xE9 augment\xE9es,\nplus la puissance de l\u2019attaque
+        est \xE9lev\xE9e."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender prahlt mit seiner St\xE4rke und greift das\nZiel
+        an. Dieser Angriff ist umso st\xE4rker, je weiter die\nStatuswerte des Anwenders
+        erh\xF6ht sind."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Ataca al oponente presumiendo de su fuerza. Cuanto\nm\xE1s hayan
+        subido las caracter\xEDsticas del usuario,\nmayor ser\xE1 el da\xF1o."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa attacca il bersaglio sfoggiando\nla propria forza.
+        Pi\xF9 le sue statistiche sono\nstate aumentate, pi\xF9 la mossa \xE8 potente."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user boasts its strength and attacks the target.\nThe more
+        the user\u2019s stats are raised, the greater the\nmove\u2019s power."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u81EA\u5206\u306E\u3000\u5F37\u3055\u3092\u3000\u9F3B\u9AD8\u3005\u306B\n\u653B\u6483\u3059\u308B\u3002\u81EA\u5206\u306E\u3000\u80FD\u529B\u304C\n\u3042\u304C\u3063\u3066\u3000\u3044\u308B\u307B\u3069\u3000\u5A01\u529B\u304C\u3000\u3042\u304C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u8000\u6B66\u626C\u5A01\u5730\u653B\u51FB\u5BF9\u624B\uFF0C\n\u81EA\u5DF1\u7684\u80FD\u529B\u63D0\u9AD8\u5F97\u8D8A\u591A\uFF0C\n\u5A01\u529B\u5C31\u8D8A\u5927\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vii
+      url: https://pokeapi.co/api/v2/generation/7/
+    id: 681
+    learned_by_pokemon:
+    - name: mankey
+      url: https://pokeapi.co/api/v2/pokemon/56/
+    - name: piplup
+      url: https://pokeapi.co/api/v2/pokemon/393/
+    - name: sandile
+      url: https://pokeapi.co/api/v2/pokemon/551/
+    - name: krookodile
+      url: https://pokeapi.co/api/v2/pokemon/553/
+    - name: pancham
+      url: https://pokeapi.co/api/v2/pokemon/674/
+    - name: litten
+      url: https://pokeapi.co/api/v2/pokemon/725/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: power-trip
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3064\u3051\u3042\u304C\u308B"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uAE30\uC5B4\uC624\uB974\uAE30"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u56C2\u5F35"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Arrogance
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: "\xDCberheblichkeit"
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Chuler\xEDa"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Tracotanza
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Power Trip
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3064\u3051\u3042\u304C\u308B"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u56A3\u5F20"
+    past_values: []
+    power: 20
+    pp: 10
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: dark
+      url: https://pokeapi.co/api/v2/type/17/

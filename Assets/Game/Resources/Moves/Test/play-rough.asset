@@ -1,0 +1,680 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: play-rough
+  m_EditorClassIdentifier: 
+  name: Play Rough
+  description: "The user plays rough with the target\nand attacks it. This may also
+    lower\nthe target\u2019s Attack stat."
+  type: 18
+  power: 90
+  accuracy: 90
+  alwaysHits: 0
+  pp: 10
+  priority: 0
+  category: 0
+  effects:
+    boosts:
+    - stat: 0
+      boost: -1
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 583
+  pokeApiMove:
+    accuracy: 90
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 10
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage.  Has a $effect_chance% chance to lower the
+        target's Attack by one stage.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Has a $effect_chance% chance to lower the target's Attack by
+        one stage.
+    flavor_text_entries:
+    - flavor_text: "\u3042\u3044\u3066\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3042\u3044\u3066\u306E\n\u3053\u3046\u3052\u304D\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC0C1\uB300\uC5D0\uAC8C \uCE58\uADFC\uAC70\uB9AC\uBA70\n\uACF5\uACA9\uD55C\uB2E4.
+        \uC0C1\uB300\uC758\n\uACF5\uACA9\uC744 \uB5A8\uC5B4\uB728\uB9B4 \uB54C\uAC00
+        \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Attaque l\u2019ennemi avec un c\xE2lin.\nPeut diminuer son Attaque."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'Der Anwender knuddelt das Ziel und greift es an.
+
+        Gelegentlich
+        sinkt dabei auch dessen
+
+        Angriffs-Wert.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "El Pok\xE9mon que lo usa le hace cucamonas al\nobjetivo y lo
+        ataca. Puede disminuir el Ataque\ndel objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Chi la usa attacca il bersaglio con delle carinerie.\nPu\xF2
+        anche ridurne l\u2019Attacco."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user plays rough with the target\nand attacks it. This may
+        also lower\nthe target\u2019s Attack stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u76F8\u624B\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u76F8\u624B\u306E\n\u653B\u6483\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3042\u3044\u3066\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3042\u3044\u3066\u306E\n\u3053\u3046\u3052\u304D\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC0C1\uB300\uC5D0\uAC8C \uCE58\uADFC\uAC70\uB9AC\uBA70\n\uACF5\uACA9\uD55C\uB2E4.
+        \uC0C1\uB300\uC758\n\uACF5\uACA9\uC744 \uB5A8\uC5B4\uB728\uB9B4 \uB54C\uAC00
+        \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Attaque l\u2019ennemi avec un c\xE2lin.\nPeut diminuer son Attaque."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'Der Anwender knuddelt das Ziel und greift es an.
+
+        Gelegentlich
+        sinkt dabei auch dessen
+
+        Angriffs-Wert.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "El Pok\xE9mon que lo usa le hace cucamonas al \nobjetivo y lo
+        ataca. Puede disminuir el Ataque\ndel objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Chi la usa attacca il bersaglio con delle carinerie.\nPu\xF2
+        anche ridurne l\u2019Attacco."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user plays rough with the target\nand attacks it. This may
+        also lower\nthe target\u2019s Attack stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u76F8\u624B\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u76F8\u624B\u306E\n\u653B\u6483\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3042\u3044\u3066\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3042\u3044\u3066\u306E\n\u3053\u3046\u3052\u304D\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC0C1\uB300\uC5D0\uAC8C \uCE58\uADFC\uAC70\uB9AC\uBA70\n\uACF5\uACA9\uD55C\uB2E4.
+        \uC0C1\uB300\uC758\n\uACF5\uACA9\uC744 \uB5A8\uC5B4\uB728\uB9B4 \uB54C\uAC00
+        \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5728\u548C\u5C0D\u624B\u5B09\u9B27\u7684\u540C\u6642\u9032\u884C\u653B\u64CA\u3002\n\u6709\u6642\u6703\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Attaque l\u2019ennemi avec un c\xE2lin.\nPeut diminuer son Attaque."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'Der Anwender knuddelt das Ziel und greift es an.
+
+        Gelegentlich
+        sinkt dabei auch dessen Angriffs-Wert.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "El Pok\xE9mon que lo usa le hace cucamonas al \nobjetivo y lo
+        ataca. Puede disminuir el Ataque\ndel objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Chi la usa attacca il bersaglio con delle carinerie.\nPu\xF2
+        anche ridurne l\u2019Attacco."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user plays rough with the target and attacks it.\nThis may
+        also lower the target\u2019s Attack stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u76F8\u624B\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u76F8\u624B\u306E\n\u653B\u6483\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u4E0E\u5BF9\u624B\u5B09\u95F9\u5E76\u653B\u51FB\u3002\n\u6709\u65F6\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3042\u3044\u3066\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3042\u3044\u3066\u306E\n\u3053\u3046\u3052\u304D\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC0C1\uB300\uC5D0\uAC8C \uCE58\uADFC\uAC70\uB9AC\uBA70\n\uACF5\uACA9\uD55C\uB2E4.
+        \uC0C1\uB300\uC758\n\uACF5\uACA9\uC744 \uB5A8\uC5B4\uB728\uB9B4 \uB54C\uAC00
+        \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5728\u548C\u5C0D\u624B\u5B09\u9B27\u7684\u540C\u6642\u9032\u884C\u653B\u64CA\u3002\n\u6709\u6642\u6703\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Attaque l\u2019ennemi avec un c\xE2lin.\nPeut diminuer son Attaque."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Der Anwender knuddelt das Ziel und greift es an.
+
+        Gelegentlich
+        sinkt dabei auch dessen Angriffs-Wert.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "El Pok\xE9mon que lo usa le hace cucamonas al \nobjetivo y lo
+        ataca. Puede disminuir el Ataque\ndel objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Chi la usa attacca il bersaglio con delle carinerie.\nPu\xF2
+        anche ridurne l\u2019Attacco."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user plays rough with the target and attacks it.\nThis may
+        also lower the target\u2019s Attack stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u76F8\u624B\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u76F8\u624B\u306E\n\u653B\u6483\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u4E0E\u5BF9\u624B\u5B09\u95F9\u5E76\u653B\u51FB\u3002\n\u6709\u65F6\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3042\u3044\u3066\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3042\u3044\u3066\u306E\n\u3053\u3046\u3052\u304D\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC0C1\uB300\uC5D0\uAC8C \uCE58\uADFC\uAC70\uB9AC\uBA70\n\uACF5\uACA9\uD55C\uB2E4.
+        \uC0C1\uB300\uC758\n\uACF5\uACA9\uC744 \uB5A8\uC5B4\uB728\uB9B4 \uB54C\uAC00
+        \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5728\u548C\u5C0D\u624B\u5B09\u9B27\u7684\u540C\u6642\u9032\u884C\u653B\u64CA\u3002\n\u6709\u6642\u6703\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Attaque l\u2019ennemi avec un c\xE2lin.\nPeut diminuer son Attaque."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'Der Anwender knuddelt das Ziel und greift es an.
+
+        Gelegentlich
+        sinkt dabei auch dessen Angriffs-Wert.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "El Pok\xE9mon que lo usa le hace cucamonas al \nobjetivo y lo
+        ataca. Puede disminuir el Ataque\ndel objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Chi la usa attacca il bersaglio con delle carinerie.\nPu\xF2
+        anche ridurne l\u2019Attacco."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user plays rough with the target and attacks it.\nThis may
+        also lower the target\u2019s Attack stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u76F8\u624B\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u76F8\u624B\u306E\n\u653B\u6483\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u4E0E\u5BF9\u624B\u5B09\u95F9\u5E76\u653B\u51FB\u3002\n\u6709\u65F6\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3042\u3044\u3066\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3042\u3044\u3066\u306E\n\u3053\u3046\u3052\u304D\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC0C1\uB300\uC5D0\uAC8C \uCE58\uADFC\uAC70\uB9AC\uBA70\n\uACF5\uACA9\uD55C\uB2E4.
+        \uC0C1\uB300\uC758\n\uACF5\uACA9\uC744 \uB5A8\uC5B4\uB728\uB9B4 \uB54C\uAC00
+        \uC788\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5728\u548C\u5C0D\u624B\u5B09\u9B27\u7684\u540C\u6642\u9032\u884C\u653B\u64CA\u3002\n\u6709\u6642\u6703\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Attaque l\u2019ennemi avec un c\xE2lin.\nPeut diminuer son Attaque."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'Der Anwender knuddelt das Ziel und greift es an.
+
+        Senkt
+        eventuell den Angriffs-Wert des Zieles.'
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "El Pok\xE9mon que lo usa le hace cucamonas al objetivo y\nlo
+        ataca. Puede disminuir el Ataque del objetivo."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Chi la usa attacca il bersaglio con delle carinerie.\nPu\xF2
+        anche ridurne l\u2019Attacco."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user plays rough with the target and attacks it.\nThis may
+        also lower the target\u2019s Attack stat."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u76F8\u624B\u306B\u3000\u3058\u3083\u308C\u3064\u3044\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u76F8\u624B\u306E\n\u653B\u6483\u3092\u3000\u3055\u3052\u308B\u3000\u3053\u3068\u304C\u3042\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u4E0E\u5BF9\u624B\u5B09\u95F9\u5E76\u653B\u51FB\u3002\n\u6709\u65F6\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vi
+      url: https://pokeapi.co/api/v2/generation/6/
+    id: 583
+    learned_by_pokemon:
+    - name: wigglytuff
+      url: https://pokeapi.co/api/v2/pokemon/40/
+    - name: persian
+      url: https://pokeapi.co/api/v2/pokemon/53/
+    - name: marill
+      url: https://pokeapi.co/api/v2/pokemon/183/
+    - name: azumarill
+      url: https://pokeapi.co/api/v2/pokemon/184/
+    - name: snubbull
+      url: https://pokeapi.co/api/v2/pokemon/209/
+    - name: granbull
+      url: https://pokeapi.co/api/v2/pokemon/210/
+    - name: teddiursa
+      url: https://pokeapi.co/api/v2/pokemon/216/
+    - name: phanpy
+      url: https://pokeapi.co/api/v2/pokemon/231/
+    - name: poochyena
+      url: https://pokeapi.co/api/v2/pokemon/261/
+    - name: mightyena
+      url: https://pokeapi.co/api/v2/pokemon/262/
+    - name: linoone
+      url: https://pokeapi.co/api/v2/pokemon/264/
+    - name: slakoth
+      url: https://pokeapi.co/api/v2/pokemon/287/
+    - name: skitty
+      url: https://pokeapi.co/api/v2/pokemon/300/
+    - name: mawile
+      url: https://pokeapi.co/api/v2/pokemon/303/
+    - name: volbeat
+      url: https://pokeapi.co/api/v2/pokemon/313/
+    - name: illumise
+      url: https://pokeapi.co/api/v2/pokemon/314/
+    - name: swablu
+      url: https://pokeapi.co/api/v2/pokemon/333/
+    - name: absol
+      url: https://pokeapi.co/api/v2/pokemon/359/
+    - name: glameow
+      url: https://pokeapi.co/api/v2/pokemon/431/
+    - name: stunky
+      url: https://pokeapi.co/api/v2/pokemon/434/
+    - name: lillipup
+      url: https://pokeapi.co/api/v2/pokemon/506/
+    - name: herdier
+      url: https://pokeapi.co/api/v2/pokemon/507/
+    - name: stoutland
+      url: https://pokeapi.co/api/v2/pokemon/508/
+    - name: purrloin
+      url: https://pokeapi.co/api/v2/pokemon/509/
+    - name: liepard
+      url: https://pokeapi.co/api/v2/pokemon/510/
+    - name: cubchoo
+      url: https://pokeapi.co/api/v2/pokemon/613/
+    - name: swirlix
+      url: https://pokeapi.co/api/v2/pokemon/684/
+    - name: slurpuff
+      url: https://pokeapi.co/api/v2/pokemon/685/
+    - name: skrelp
+      url: https://pokeapi.co/api/v2/pokemon/690/
+    - name: dedenne
+      url: https://pokeapi.co/api/v2/pokemon/702/
+    - name: klefki
+      url: https://pokeapi.co/api/v2/pokemon/707/
+    - name: bounsweet
+      url: https://pokeapi.co/api/v2/pokemon/761/
+    - name: comfey
+      url: https://pokeapi.co/api/v2/pokemon/764/
+    - name: komala
+      url: https://pokeapi.co/api/v2/pokemon/775/
+    - name: mimikyu-disguised
+      url: https://pokeapi.co/api/v2/pokemon/778/
+    - name: drampa
+      url: https://pokeapi.co/api/v2/pokemon/780/
+    - name: mawile-mega
+      url: https://pokeapi.co/api/v2/pokemon/10052/
+    - name: absol-mega
+      url: https://pokeapi.co/api/v2/pokemon/10057/
+    - name: persian-alola
+      url: https://pokeapi.co/api/v2/pokemon/10108/
+    - name: mimikyu-busted
+      url: https://pokeapi.co/api/v2/pokemon/10143/
+    - name: mimikyu-totem-disguised
+      url: https://pokeapi.co/api/v2/pokemon/10144/
+    - name: mimikyu-totem-busted
+      url: https://pokeapi.co/api/v2/pokemon/10145/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/880/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1679/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage+lower
+        url: https://pokeapi.co/api/v2/move-category/6/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 10
+    name: play-rough
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3058\u3083\u308C\u3064\u304F"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uCE58\uADFC\uAC70\uB9AC\uAE30"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u5B09\u9B27"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: "C\xE2linerie"
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Knuddler
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Caranto\xF1a"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Carineria
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Play Rough
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3058\u3083\u308C\u3064\u304F"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u5B09\u95F9"
+    past_values: []
+    power: 90
+    pp: 10
+    priority: 0
+    stat_changes:
+    - change: -1
+      stat:
+        name: attack
+        url: https://pokeapi.co/api/v2/stat/2/
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: fairy
+      url: https://pokeapi.co/api/v2/type/18/

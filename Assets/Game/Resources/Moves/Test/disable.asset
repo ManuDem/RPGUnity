@@ -1,0 +1,871 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: disable
+  m_EditorClassIdentifier: 
+  name: Disable
+  description: 'For four turns, this move prevents the target from
+
+    using the
+    move it last used.'
+  type: 1
+  power: 0
+  accuracy: 100
+  alwaysHits: 0
+  pp: 20
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries:
+  - boosts: []
+    status: 9
+    volatileStatus: 0
+    chance: 0
+    target: 0
+  target: 0
+  id: 50
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: https://pokeapi.co/api/v2/contest-effect/18/
+    contest_type:
+      name: smart
+      url: https://pokeapi.co/api/v2/contest-type/4/
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: "Disables the target's last used move, preventing its use for 4\u20137
+        turns, selected at random, or until the target leaves the field.  If the
+        target hasn't used a move since entering the field, if it tried to use a
+        move this turn and failed,  if its last used move has 0 PP remaining, or
+        if it already has a move disabled, this move will fail."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Disables the target's last used move for 1-8 turns.
+    flavor_text_entries:
+    - flavor_text: "Per quattro turni impedisce al bersaglio\ndi riutilizzare l\u2019ultima
+        mossa usata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'For four turns, this move prevents the target from
+
+        using
+        the move it last used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: 'Disables the foe''s
+
+        most recent move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: gold-silver
+        url: https://pokeapi.co/api/v2/version-group/3/
+    - flavor_text: 'Disables the foe''s
+
+        most recent move.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: crystal
+        url: https://pokeapi.co/api/v2/version-group/4/
+    - flavor_text: "Psychically disables one of\nthe foe\u2019s moves."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ruby-sapphire
+        url: https://pokeapi.co/api/v2/version-group/5/
+    - flavor_text: "Psychically disables one of\nthe foe\u2019s moves."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: emerald
+        url: https://pokeapi.co/api/v2/version-group/6/
+    - flavor_text: 'For a few turns,
+
+        it prevents the foe
+
+        from using
+        the move
+
+        it last used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: firered-leafgreen
+        url: https://pokeapi.co/api/v2/version-group/7/
+    - flavor_text: 'For several turns,
+
+        this move prevents
+
+        the foe
+        from using
+
+        the move it last
+
+        used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: 'For several turns,
+
+        this move prevents
+
+        the foe
+        from using
+
+        the move it last
+
+        used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: 'For several turns,
+
+        this move prevents
+
+        the foe
+        from using
+
+        the move it last
+
+        used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Emp\xEAche l\u2019ennemi d\u2019employer \xE0 nouveau\nsa derni\xE8re
+        attaque. Dure quatre tours."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'For four turns, this move prevents the
+
+        target from using
+        the move it last used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: 'For four turns, this move prevents the
+
+        target from using
+        the move it last used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3046\u3054\u304D\u3092\u3000\u3068\u3081\u3066\n\u3061\u3087\u304F\u305C\u3093\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u308F\u3056\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u3064\u304B\u3048\u306A\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC0C1\uB300\uC758 \uC6C0\uC9C1\uC784\uC744 \uB9C9\uC544\n\uBC14\uB85C
+        \uC804\uC5D0 \uC4F4 \uAE30\uC220\uC744\n4\uD134 \uB3D9\uC548 \uC0AC\uC6A9\uD560
+        \uC218 \uC5C6\uAC8C \uB9CC\uB4E0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Emp\xEAche l\u2019ennemi d\u2019employer \xE0 nouveau\nsa derni\xE8re
+        attaque. Dure quatre tours."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Die zuletzt eingesetzte Attacke des Zieles\nwird f\xFCr mehrere
+        Runden blockiert."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Desactiva el \xFAltimo movimiento del objetivo\ndurante cuatro
+        turnos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Per quattro turni impedisce al bersaglio\ndi riutilizzare l\u2019ultima
+        mossa usata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: 'For four turns, this move prevents the
+
+        target from using
+        the move it last used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u52D5\u304D\u3092\u3000\u3068\u3081\u3066\n\u76F4\u524D\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u6280\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u4F7F\u3048\u306A\u304F\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3046\u3054\u304D\u3092\u3000\u3068\u3081\u3066\n\u3061\u3087\u304F\u305C\u3093\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u308F\u3056\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u3064\u304B\u3048\u306A\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC0C1\uB300\uC758 \uC6C0\uC9C1\uC784\uC744 \uB9C9\uC544\n\uBC14\uB85C
+        \uC804\uC5D0 \uC4F4 \uAE30\uC220\uC744\n4\uD134 \uB3D9\uC548 \uC0AC\uC6A9\uD560
+        \uC218 \uC5C6\uAC8C \uB9CC\uB4E0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Emp\xEAche l\u2019ennemi d\u2019employer \xE0 nouveau\nsa derni\xE8re
+        attaque. Dure quatre tours."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Die zuletzt eingesetzte Attacke des Zieles\nwird f\xFCr mehrere
+        Runden blockiert."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Desactiva el \xFAltimo movimiento del objetivo durante \ncuatro
+        turnos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Per quattro turni impedisce al bersaglio\ndi riutilizzare l\u2019ultima
+        mossa usata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: 'For four turns, this move prevents the
+
+        target from using
+        the move it last used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u52D5\u304D\u3092\u3000\u3068\u3081\u3066\n\u76F4\u524D\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u6280\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u4F7F\u3048\u306A\u304F\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3046\u3054\u304D\u3092\u3000\u3068\u3081\u3066\n\u3061\u3087\u304F\u305C\u3093\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u308F\u3056\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u3064\u304B\u3048\u306A\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC0C1\uB300\uC758 \uC6C0\uC9C1\uC784\uC744 \uB9C9\uC544\n\uBC14\uB85C
+        \uC804\uC5D0 \uC4F4 \uAE30\uC220\uC744\n4\uD134 \uB3D9\uC548 \uC0AC\uC6A9\uD560
+        \uC218 \uC5C6\uAC8C \uB9CC\uB4E0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u963B\u6B62\u5C0D\u624B\u51FA\u62DB\uFF0C\n\u6700\u8FD1\u4E00\u6B21\u4F7F\u7528\u7684\u62DB\u5F0F\n\u5728\uFF14\u56DE\u5408\u5167\u7121\u6CD5\u4F7F\u7528\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Emp\xEAche l\u2019ennemi d\u2019employer \xE0 nouveau\nsa derni\xE8re
+        attaque. Dure quatre tours."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Die zuletzt eingesetzte Attacke des Zieles wird f\xFCr\nvier
+        Runden blockiert."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Desactiva el \xFAltimo movimiento del objetivo durante \ncuatro
+        turnos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Per quattro turni impedisce al bersaglio\ndi riutilizzare l\u2019ultima
+        mossa usata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: 'For four turns, this move prevents the target from
+
+        using
+        the move it last used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u52D5\u304D\u3092\u3000\u3068\u3081\u3066\n\u76F4\u524D\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u6280\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u9593\u3000\u4F7F\u3048\u306A\u304F\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u963B\u788D\u5BF9\u624B\u884C\u52A8\uFF0C\n\u4E4B\u524D\u4F7F\u51FA\u7684\u62DB\u5F0F\n\u5C06\u5728\uFF14\u56DE\u5408\u5185\u65E0\u6CD5\u4F7F\u7528\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3046\u3054\u304D\u3092\u3000\u3068\u3081\u3066\n\u3061\u3087\u304F\u305C\u3093\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u308F\u3056\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u3064\u304B\u3048\u306A\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC0C1\uB300\uC758 \uC6C0\uC9C1\uC784\uC744 \uB9C9\uC544\n\uBC14\uB85C
+        \uC804\uC5D0 \uC4F4 \uAE30\uC220\uC744\n4\uD134 \uB3D9\uC548 \uC0AC\uC6A9\uD560
+        \uC218 \uC5C6\uAC8C \uB9CC\uB4E0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u963B\u6B62\u5C0D\u624B\u51FA\u62DB\uFF0C\n\u6700\u8FD1\u4E00\u6B21\u4F7F\u7528\u7684\u62DB\u5F0F\n\u5728\uFF14\u56DE\u5408\u5167\u7121\u6CD5\u4F7F\u7528\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Emp\xEAche l\u2019ennemi d\u2019employer \xE0 nouveau\nsa derni\xE8re
+        attaque. Dure quatre tours."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Die zuletzt eingesetzte Attacke des Zieles wird f\xFCr\nvier
+        Runden blockiert."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Desactiva el \xFAltimo movimiento del objetivo durante \ncuatro
+        turnos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u52D5\u304D\u3092\u3000\u3068\u3081\u3066\n\u76F4\u524D\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u6280\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u9593\u3000\u4F7F\u3048\u306A\u304F\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u963B\u788D\u5BF9\u624B\u884C\u52A8\uFF0C\n\u4E4B\u524D\u4F7F\u51FA\u7684\u62DB\u5F0F\n\u5C06\u5728\uFF14\u56DE\u5408\u5185\u65E0\u6CD5\u4F7F\u7528\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3046\u3054\u304D\u3092\u3000\u3068\u3081\u3066\n\u3061\u3087\u304F\u305C\u3093\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u308F\u3056\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u3064\u304B\u3048\u306A\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC0C1\uB300\uC758 \uC6C0\uC9C1\uC784\uC744 \uB9C9\uC544\n\uBC14\uB85C
+        \uC804\uC5D0 \uC4F4 \uAE30\uC220\uC744\n4\uD134 \uB3D9\uC548 \uC0AC\uC6A9\uD560
+        \uC218 \uC5C6\uAC8C \uB9CC\uB4E0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u963B\u6B62\u5C0D\u624B\u51FA\u62DB\uFF0C\n\u6700\u8FD1\u4E00\u6B21\u4F7F\u7528\u7684\u62DB\u5F0F\n\u5728\uFF14\u56DE\u5408\u5167\u7121\u6CD5\u4F7F\u7528\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Emp\xEAche l\u2019ennemi d\u2019employer \xE0 nouveau sa derni\xE8re\nattaque.
+        Dure quatre tours."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Die zuletzt eingesetzte Attacke des Zieles wird f\xFCr\nvier
+        Runden blockiert."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Desactiva el \xFAltimo movimiento del objetivo durante \ncuatro
+        turnos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Per quattro turni impedisce al bersaglio\ndi riutilizzare l\u2019ultima
+        mossa usata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: 'For four turns, this move prevents the target from
+
+        using
+        the move it last used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u52D5\u304D\u3092\u3000\u3068\u3081\u3066\n\u76F4\u524D\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u6280\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u9593\u3000\u4F7F\u3048\u306A\u304F\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u963B\u788D\u5BF9\u624B\u884C\u52A8\uFF0C\n\u4E4B\u524D\u4F7F\u51FA\u7684\u62DB\u5F0F\n\u5C06\u5728\uFF14\u56DE\u5408\u5185\u65E0\u6CD5\u4F7F\u7528\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3046\u3054\u304D\u3092\u3000\u3068\u3081\u3066\n\u3061\u3087\u304F\u305C\u3093\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u308F\u3056\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u3042\u3044\u3060\u3000\u3064\u304B\u3048\u306A\u304F\u3000\u3059\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC0C1\uB300\uC758 \uC6C0\uC9C1\uC784\uC744 \uB9C9\uC544\n\uBC14\uB85C
+        \uC804\uC5D0 \uC4F4 \uAE30\uC220\uC744\n4\uD134 \uB3D9\uC548 \uC0AC\uC6A9\uD560
+        \uC218 \uC5C6\uAC8C \uB9CC\uB4E0\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u963B\u6B62\u5C0D\u624B\u51FA\u62DB\uFF0C\n\u6700\u8FD1\u4E00\u6B21\u4F7F\u7528\u7684\u62DB\u5F0F\n\u5728\uFF14\u56DE\u5408\u5167\u7121\u6CD5\u4F7F\u7528\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Emp\xEAche l\u2019ennemi d\u2019employer \xE0 nouveau\nsa derni\xE8re
+        attaque. Dure quatre tours."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Die zuletzt eingesetzte Attacke des Zieles wird f\xFCr\nvier
+        Runden blockiert."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Desactiva el \xFAltimo movimiento del objetivo durante \ncuatro
+        turnos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Per quattro turni impedisce al bersaglio\ndi riutilizzare l\u2019ultima
+        mossa usata."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: 'For four turns, this move prevents the target from
+
+        using
+        the move it last used.'
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u76F8\u624B\u306E\u3000\u52D5\u304D\u3092\u3000\u3068\u3081\u3066\n\u76F4\u524D\u306B\u3000\u3060\u3057\u3066\u3044\u305F\u3000\u6280\u3092\n\uFF14\u30BF\u30FC\u30F3\u306E\u3000\u9593\u3000\u4F7F\u3048\u306A\u304F\u3059\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u963B\u788D\u5BF9\u624B\u884C\u52A8\uFF0C\n\u4E4B\u524D\u4F7F\u51FA\u7684\u62DB\u5F0F\n\u5C06\u5728\uFF14\u56DE\u5408\u5185\u65E0\u6CD5\u4F7F\u7528\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-i
+      url: https://pokeapi.co/api/v2/generation/1/
+    id: 50
+    learned_by_pokemon:
+    - name: ekans
+      url: https://pokeapi.co/api/v2/pokemon/23/
+    - name: nidoran-f
+      url: https://pokeapi.co/api/v2/pokemon/29/
+    - name: nidoran-m
+      url: https://pokeapi.co/api/v2/pokemon/32/
+    - name: vulpix
+      url: https://pokeapi.co/api/v2/pokemon/37/
+    - name: jigglypuff
+      url: https://pokeapi.co/api/v2/pokemon/39/
+    - name: wigglytuff
+      url: https://pokeapi.co/api/v2/pokemon/40/
+    - name: venonat
+      url: https://pokeapi.co/api/v2/pokemon/48/
+    - name: venomoth
+      url: https://pokeapi.co/api/v2/pokemon/49/
+    - name: psyduck
+      url: https://pokeapi.co/api/v2/pokemon/54/
+    - name: golduck
+      url: https://pokeapi.co/api/v2/pokemon/55/
+    - name: kadabra
+      url: https://pokeapi.co/api/v2/pokemon/64/
+    - name: alakazam
+      url: https://pokeapi.co/api/v2/pokemon/65/
+    - name: slowpoke
+      url: https://pokeapi.co/api/v2/pokemon/79/
+    - name: slowbro
+      url: https://pokeapi.co/api/v2/pokemon/80/
+    - name: seel
+      url: https://pokeapi.co/api/v2/pokemon/86/
+    - name: grimer
+      url: https://pokeapi.co/api/v2/pokemon/88/
+    - name: muk
+      url: https://pokeapi.co/api/v2/pokemon/89/
+    - name: gastly
+      url: https://pokeapi.co/api/v2/pokemon/92/
+    - name: drowzee
+      url: https://pokeapi.co/api/v2/pokemon/96/
+    - name: hypno
+      url: https://pokeapi.co/api/v2/pokemon/97/
+    - name: lickitung
+      url: https://pokeapi.co/api/v2/pokemon/108/
+    - name: kangaskhan
+      url: https://pokeapi.co/api/v2/pokemon/115/
+    - name: horsea
+      url: https://pokeapi.co/api/v2/pokemon/116/
+    - name: mewtwo
+      url: https://pokeapi.co/api/v2/pokemon/150/
+    - name: spinarak
+      url: https://pokeapi.co/api/v2/pokemon/167/
+    - name: slowking
+      url: https://pokeapi.co/api/v2/pokemon/199/
+    - name: stantler
+      url: https://pokeapi.co/api/v2/pokemon/234/
+    - name: ralts
+      url: https://pokeapi.co/api/v2/pokemon/280/
+    - name: spinda
+      url: https://pokeapi.co/api/v2/pokemon/327/
+    - name: cacnea
+      url: https://pokeapi.co/api/v2/pokemon/331/
+    - name: zangoose
+      url: https://pokeapi.co/api/v2/pokemon/335/
+    - name: castform
+      url: https://pokeapi.co/api/v2/pokemon/351/
+    - name: kecleon
+      url: https://pokeapi.co/api/v2/pokemon/352/
+    - name: shuppet
+      url: https://pokeapi.co/api/v2/pokemon/353/
+    - name: duskull
+      url: https://pokeapi.co/api/v2/pokemon/355/
+    - name: dusclops
+      url: https://pokeapi.co/api/v2/pokemon/356/
+    - name: chimecho
+      url: https://pokeapi.co/api/v2/pokemon/358/
+    - name: snorunt
+      url: https://pokeapi.co/api/v2/pokemon/361/
+    - name: drifloon
+      url: https://pokeapi.co/api/v2/pokemon/425/
+    - name: chingling
+      url: https://pokeapi.co/api/v2/pokemon/433/
+    - name: spiritomb
+      url: https://pokeapi.co/api/v2/pokemon/442/
+    - name: lickilicky
+      url: https://pokeapi.co/api/v2/pokemon/463/
+    - name: dusknoir
+      url: https://pokeapi.co/api/v2/pokemon/477/
+    - name: darkrai
+      url: https://pokeapi.co/api/v2/pokemon/491/
+    - name: yamask
+      url: https://pokeapi.co/api/v2/pokemon/562/
+    - name: cofagrigus
+      url: https://pokeapi.co/api/v2/pokemon/563/
+    - name: joltik
+      url: https://pokeapi.co/api/v2/pokemon/595/
+    - name: elgyem
+      url: https://pokeapi.co/api/v2/pokemon/605/
+    - name: spritzee
+      url: https://pokeapi.co/api/v2/pokemon/682/
+    - name: pumpkaboo-average
+      url: https://pokeapi.co/api/v2/pokemon/710/
+    - name: yveltal
+      url: https://pokeapi.co/api/v2/pokemon/717/
+    - name: salazzle
+      url: https://pokeapi.co/api/v2/pokemon/758/
+    - name: bruxish
+      url: https://pokeapi.co/api/v2/pokemon/779/
+    - name: tapu-bulu
+      url: https://pokeapi.co/api/v2/pokemon/787/
+    - name: castform-sunny
+      url: https://pokeapi.co/api/v2/pokemon/10013/
+    - name: castform-rainy
+      url: https://pokeapi.co/api/v2/pokemon/10014/
+    - name: castform-snowy
+      url: https://pokeapi.co/api/v2/pokemon/10015/
+    - name: pumpkaboo-small
+      url: https://pokeapi.co/api/v2/pokemon/10027/
+    - name: pumpkaboo-large
+      url: https://pokeapi.co/api/v2/pokemon/10028/
+    - name: pumpkaboo-super
+      url: https://pokeapi.co/api/v2/pokemon/10029/
+    - name: alakazam-mega
+      url: https://pokeapi.co/api/v2/pokemon/10037/
+    - name: kangaskhan-mega
+      url: https://pokeapi.co/api/v2/pokemon/10039/
+    - name: mewtwo-mega-x
+      url: https://pokeapi.co/api/v2/pokemon/10043/
+    - name: mewtwo-mega-y
+      url: https://pokeapi.co/api/v2/pokemon/10044/
+    - name: slowbro-mega
+      url: https://pokeapi.co/api/v2/pokemon/10071/
+    - name: grimer-alola
+      url: https://pokeapi.co/api/v2/pokemon/10112/
+    - name: muk-alola
+      url: https://pokeapi.co/api/v2/pokemon/10113/
+    - name: salazzle-totem
+      url: https://pokeapi.co/api/v2/pokemon/10129/
+    machines: []
+    meta:
+      ailment:
+        name: disable
+        url: https://pokeapi.co/api/v2/move-ailment/13/
+      ailment_chance: 0
+      category:
+        name: unique
+        url: https://pokeapi.co/api/v2/move-category/13/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 4
+      min_hits: 0
+      min_turns: 4
+      stat_chance: 0
+    name: disable
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u304B\u306A\u3057\u3070\u308A"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC0AC\uC2AC\uBB36\uAE30"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u5B9A\u8EAB\u6CD5"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Entrave
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Aussetzer
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: "Anulaci\xF3n"
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Inibitore
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Disable
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u304B\u306A\u3057\u3070\u308A"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u5B9A\u8EAB\u6CD5"
+    past_values:
+    - accuracy: 55
+      effect_chance: 0
+      effect_entries: []
+      power: 0
+      pp: 0
+      type:
+        name: 
+        url: 
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - accuracy: 80
+      effect_chance: 0
+      effect_entries: []
+      power: 0
+      pp: 0
+      type:
+        name: 
+        url: 
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    power: 0
+    pp: 20
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/19/
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: normal
+      url: https://pokeapi.co/api/v2/type/1/

@@ -1,0 +1,578 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: trick-or-treat
+  m_EditorClassIdentifier: 
+  name: Trick-or-Treat
+  description: "The user takes the target trick-or-treating.\nThis adds Ghost type
+    to the target\u2019s type."
+  type: 14
+  power: 0
+  accuracy: 100
+  alwaysHits: 0
+  pp: 20
+  priority: 0
+  category: 2
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 567
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: 
+      url: 
+    damage_class:
+      name: status
+      url: https://pokeapi.co/api/v2/move-damage-class/1/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Adds ghost to the target's types.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Adds ghost to the target's types.
+    flavor_text_entries:
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u3064\u3044\u304B\u3055\u308C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uC0C1\uB300\uB97C \uD57C\uB7EC\uC708\uC73C\uB85C \uCD08\uB300\uD55C\uB2E4.\n\uC0C1\uB300
+        \uD0C0\uC785\uC5D0\n\uACE0\uC2A4\uD2B8\uD0C0\uC785\uC774 \uCD94\uAC00\uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Insuffle \xE0 la cible l\u2019esprit d\u2019Halloween, et\najoute
+        le type Spectre \xE0 ses types actuels."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Der Anwender lehrt das Ziel das F\xFCrchten.\nDieses nimmt dadurch
+        zus\xE4tzlich den Typ Geist an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Invita al objetivo a celebrar Halloween, haciendo\nque pase a
+        ser tambi\xE9n de tipo Fantasma adem\xE1s\nde conservar sus propios tipos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Il bersaglio viene invitato a festeggiare Halloween\ne aggiunge
+        cos\xEC al proprio tipo anche il tipo\nSpettro."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "The user takes the target trick-or-treating.\nThis adds Ghost
+        type to the target\u2019s type."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u8FFD\u52A0\u3055\u308C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u3064\u3044\u304B\u3055\u308C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uC0C1\uB300\uB97C \uD57C\uB7EC\uC708\uC73C\uB85C \uCD08\uB300\uD55C\uB2E4.\n\uC0C1\uB300
+        \uD0C0\uC785\uC5D0\n\uACE0\uC2A4\uD2B8\uD0C0\uC785\uC774 \uCD94\uAC00\uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Insuffle \xE0 la cible l\u2019esprit d\u2019Halloween, et\najoute
+        le type Spectre \xE0 ses types actuels."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Der Anwender lehrt das Ziel das F\xFCrchten.\nDieses nimmt dadurch
+        zus\xE4tzlich den Typ Geist an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Invita al objetivo a celebrar Halloween, haciendo \nque pase
+        a ser tambi\xE9n de tipo Fantasma adem\xE1s \nde conservar sus propios tipos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Il bersaglio viene invitato a festeggiare Halloween\ne aggiunge
+        cos\xEC al proprio tipo anche il tipo\nSpettro."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "The user takes the target trick-or-treating.\nThis adds Ghost
+        type to the target\u2019s type."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u8FFD\u52A0\u3055\u308C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u3064\u3044\u304B\u3055\u308C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uC0C1\uB300\uB97C \uD57C\uB7EC\uC708\uC73C\uB85C \uCD08\uB300\uD55C\uB2E4.\n\uC0C1\uB300
+        \uD0C0\uC785\uC5D0\n\uACE0\uC2A4\uD2B8\uD0C0\uC785\uC774 \uCD94\uAC00\uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u9080\u8ACB\u5C0D\u624B\u53C3\u52A0\u842C\u8056\u591C\u3002\n\u8B93\u5C0D\u624B\u8FFD\u52A0\u5E7D\u9748\u5C6C\u6027\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Insuffle \xE0 la cible l\u2019esprit d\u2019Halloween, et\najoute
+        le type Spectre \xE0 ses types actuels."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Der Anwender lehrt das Ziel das F\xFCrchten.\nDieses nimmt dadurch
+        zus\xE4tzlich den Typ Geist an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Invita al objetivo a celebrar Halloween, haciendo \nque pase
+        a ser tambi\xE9n de tipo Fantasma adem\xE1s \nde conservar sus propios tipos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Il bersaglio viene invitato a festeggiare Halloween\ne aggiunge
+        cos\xEC al proprio tipo anche il tipo\nSpettro."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "The user takes the target trick-or-treating.\nThis adds Ghost
+        type to the target\u2019s type."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u8FFD\u52A0\u3055\u308C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u9080\u8BF7\u5BF9\u624B\u53C2\u52A0\u4E07\u5723\u591C\u3002\n\u4F7F\u5BF9\u624B\u88AB\u8FFD\u52A0\u5E7D\u7075\u5C5E\u6027\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u3064\u3044\u304B\u3055\u308C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uC0C1\uB300\uB97C \uD57C\uB7EC\uC708\uC73C\uB85C \uCD08\uB300\uD55C\uB2E4.\n\uC0C1\uB300
+        \uD0C0\uC785\uC5D0\n\uACE0\uC2A4\uD2B8\uD0C0\uC785\uC774 \uCD94\uAC00\uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u9080\u8ACB\u5C0D\u624B\u53C3\u52A0\u842C\u8056\u591C\u3002\n\u8B93\u5C0D\u624B\u8FFD\u52A0\u5E7D\u9748\u5C6C\u6027\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Insuffle \xE0 la cible l\u2019esprit d\u2019Halloween, et\najoute
+        le type Spectre \xE0 ses types actuels."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Der Anwender lehrt das Ziel das F\xFCrchten.\nDieses nimmt dadurch
+        zus\xE4tzlich den Typ Geist an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Invita al objetivo a celebrar Halloween, haciendo \nque pase
+        a ser tambi\xE9n de tipo Fantasma adem\xE1s \nde conservar sus propios tipos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Il bersaglio viene invitato a festeggiare Halloween\ne aggiunge
+        cos\xEC al proprio tipo anche il tipo\nSpettro."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "The user takes the target trick-or-treating.\nThis adds Ghost
+        type to the target\u2019s type."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u8FFD\u52A0\u3055\u308C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u9080\u8BF7\u5BF9\u624B\u53C2\u52A0\u4E07\u5723\u591C\u3002\n\u4F7F\u5BF9\u624B\u88AB\u8FFD\u52A0\u5E7D\u7075\u5C5E\u6027\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u3064\u3044\u304B\u3055\u308C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uC0C1\uB300\uB97C \uD57C\uB7EC\uC708\uC73C\uB85C \uCD08\uB300\uD55C\uB2E4.\n\uC0C1\uB300
+        \uD0C0\uC785\uC5D0\n\uACE0\uC2A4\uD2B8\uD0C0\uC785\uC774 \uCD94\uAC00\uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u9080\u8ACB\u5C0D\u624B\u53C3\u52A0\u842C\u8056\u591C\u3002\n\u8B93\u5C0D\u624B\u8FFD\u52A0\u5E7D\u9748\u5C6C\u6027\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Insuffle \xE0 la cible l\u2019esprit d\u2019Halloween, et ajoute\nle
+        type Spectre \xE0 ses types actuels."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Der Anwender lehrt das Ziel das F\xFCrchten.\nDieses nimmt dadurch
+        zus\xE4tzlich den Typ Geist an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Invita al objetivo a celebrar Halloween, lo que a\xF1ade \nel
+        tipo Fantasma a sus propios tipos."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Il bersaglio viene invitato a festeggiare Halloween\ne aggiunge
+        cos\xEC al proprio tipo anche il tipo\nSpettro."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "The user takes the target trick-or-treating.\nThis adds Ghost
+        type to the target\u2019s type."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u8FFD\u52A0\u3055\u308C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u9080\u8BF7\u5BF9\u624B\u53C2\u52A0\u4E07\u5723\u591C\u3002\n\u4F7F\u5BF9\u624B\u88AB\u8FFD\u52A0\u5E7D\u7075\u5C5E\u6027\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u3042\u3044\u3066\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u3055\u305D\u3046\u3002\n\u3042\u3044\u3066\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u3064\u3044\u304B\u3055\u308C\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uC0C1\uB300\uB97C \uD57C\uB7EC\uC708\uC73C\uB85C \uCD08\uB300\uD55C\uB2E4.\n\uC0C1\uB300
+        \uD0C0\uC785\uC5D0\n\uACE0\uC2A4\uD2B8\uD0C0\uC785\uC774 \uCD94\uAC00\uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u9080\u8ACB\u5C0D\u624B\u53C3\u52A0\u842C\u8056\u591C\u3002\n\u8B93\u5C0D\u624B\u8FFD\u52A0\u5E7D\u9748\u5C6C\u6027\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Insuffle \xE0 la cible l\u2019esprit d\u2019Halloween, et ajoute
+        le type\nSpectre \xE0 ses types actuels."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Der Anwender lehrt das Ziel das F\xFCrchten. Dieses\nnimmt dadurch
+        zus\xE4tzlich den Typ Geist an."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Invita al objetivo a celebrar Halloween, lo que a\xF1ade \nel
+        tipo Fantasma a los tipos de este."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Il bersaglio viene invitato a festeggiare Halloween\ne aggiunge
+        cos\xEC al proprio tipo anche il tipo\nSpettro."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "The user takes the target trick-or-treating.\nThis adds Ghost
+        type to the target\u2019s type."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u76F8\u624B\u3092\u3000\u30CF\u30ED\u30A6\u30A3\u30F3\u306B\u3000\u8A98\u3046\u3002\n\u76F8\u624B\u306E\u3000\u30BF\u30A4\u30D7\u306B\n\u30B4\u30FC\u30B9\u30C8\u30BF\u30A4\u30D7\u304C\u3000\u8FFD\u52A0\u3055\u308C\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u9080\u8BF7\u5BF9\u624B\u53C2\u52A0\u4E07\u5723\u591C\u3002\n\u4F7F\u5BF9\u624B\u88AB\u8FFD\u52A0\u5E7D\u7075\u5C5E\u6027\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-vi
+      url: https://pokeapi.co/api/v2/generation/6/
+    id: 567
+    learned_by_pokemon:
+    - name: pumpkaboo-average
+      url: https://pokeapi.co/api/v2/pokemon/710/
+    - name: gourgeist-average
+      url: https://pokeapi.co/api/v2/pokemon/711/
+    - name: pumpkaboo-small
+      url: https://pokeapi.co/api/v2/pokemon/10027/
+    - name: pumpkaboo-large
+      url: https://pokeapi.co/api/v2/pokemon/10028/
+    - name: pumpkaboo-super
+      url: https://pokeapi.co/api/v2/pokemon/10029/
+    - name: gourgeist-small
+      url: https://pokeapi.co/api/v2/pokemon/10030/
+    - name: gourgeist-large
+      url: https://pokeapi.co/api/v2/pokemon/10031/
+    - name: gourgeist-super
+      url: https://pokeapi.co/api/v2/pokemon/10032/
+    machines: []
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: unique
+        url: https://pokeapi.co/api/v2/move-category/13/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: trick-or-treat
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30CF\u30ED\u30A6\u30A3\u30F3"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uD57C\uB7EC\uC708"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u842C\u8056\u591C"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Halloween
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Halloween
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Halloween
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Halloween
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Trick-or-Treat
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30CF\u30ED\u30A6\u30A3\u30F3"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u4E07\u5723\u591C"
+    past_values: []
+    power: 0
+    pp: 20
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: 
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: ghost
+      url: https://pokeapi.co/api/v2/type/8/

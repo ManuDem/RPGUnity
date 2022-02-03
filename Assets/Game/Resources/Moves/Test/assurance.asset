@@ -1,0 +1,750 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
+  m_Name: assurance
+  m_EditorClassIdentifier: 
+  name: Assurance
+  description: "If the foe has\nalready taken some\ndamage in the same\nturn, this
+    attack\u2019s\npower is doubled."
+  type: 17
+  power: 60
+  accuracy: 100
+  alwaysHits: 0
+  pp: 10
+  priority: 0
+  category: 0
+  effects:
+    boosts: []
+    status: 0
+    volatileStatus: 0
+  secondaries: []
+  target: 0
+  id: 372
+  pokeApiMove:
+    accuracy: 100
+    contest_combos:
+      normal:
+        use_after: []
+        use_before: []
+      super:
+        use_after: []
+        use_before: []
+    contest_effect:
+      url: 
+    contest_type:
+      name: beauty
+      url: https://pokeapi.co/api/v2/contest-type/2/
+    damage_class:
+      name: physical
+      url: https://pokeapi.co/api/v2/move-damage-class/2/
+    effect_chance: 0
+    effect_changes: []
+    effect_entries:
+    - effect: Inflicts regular damage.  If the target takes damage this turn for
+        any reason before this move is used, this move has double power.
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Power is doubled if the target has already received damage this
+        turn.
+    flavor_text_entries:
+    - flavor_text: "\u5982\u679C\u6B64\u56DE\u5408\u5167\u5C0D\u624B\n\u5DF2\u53D7\u5230\u50B7\u5BB3\uFF0C\n\u62DB\u5F0F\u5A01\u529B\u6703\u8B8A\u6210\uFF12\u500D\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "If the foe has\nalready taken some\ndamage in the same\nturn,
+        this attack\u2019s\npower is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: diamond-pearl
+        url: https://pokeapi.co/api/v2/version-group/8/
+    - flavor_text: "If the foe has\nalready taken some\ndamage in the same\nturn,
+        this attack\u2019s\npower is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: platinum
+        url: https://pokeapi.co/api/v2/version-group/9/
+    - flavor_text: "If the foe has\nalready taken some\ndamage in the same\nturn,
+        this attack\u2019s\npower is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - flavor_text: "Cette attaque est deux fois plus\nefficace si l\u2019ennemi a
+        d\xE9j\xE0 \xE9t\xE9 bless\xE9\ndurant ce tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "If the target has already taken some\ndamage in the same turn,
+        this attack\u2019s\npower is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - flavor_text: "If the target has already taken some\ndamage in the same turn,
+        this attack\u2019s\npower is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u3042\u3044\u3066\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3046\u3051\u3066\u3000\u3044\u305F\u3089\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\uFF12\u3070\u3044\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\uADF8 \uD134\uC5D0 \uC0C1\uB300\uAC00\n\uC774\uBBF8 \uB370\uBBF8\uC9C0\uB97C
+        \uC785\uC5C8\uB2E4\uBA74\n\uAE30\uC220\uC758 \uC704\uB825\uC740 2\uBC30\uAC00
+        \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Cette attaque est deux fois plus efficace si\nl\u2019ennemi a
+        d\xE9j\xE0 \xE9t\xE9 bless\xE9 durant ce tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Hat das Ziel w\xE4hrend der Runde schon Schaden\ngenommen, wird
+        die Kraft der Attacke verdoppelt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Si el objetivo ya ha sufrido da\xF1o en ese turno, la\nfuerza
+        del ataque se duplica."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "Se il bersaglio ha gi\xE0 subito dei danni nello stesso\nturno,
+        la potenza di questa mossa raddoppia."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "If the target has already taken some\ndamage in the same turn,
+        this attack\u2019s\npower is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u76F8\u624B\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u53D7\u3051\u3066\u3044\u305F\u3089\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\uFF12\u500D\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u3042\u3044\u3066\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3046\u3051\u3066\u3000\u3044\u305F\u3089\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\uFF12\u3070\u3044\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\uADF8 \uD134\uC5D0 \uC0C1\uB300\uAC00\n\uC774\uBBF8 \uB370\uBBF8\uC9C0\uB97C
+        \uC785\uC5C8\uB2E4\uBA74\n\uAE30\uC220\uC758 \uC704\uB825\uC740 2\uBC30\uAC00
+        \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Cette attaque est deux fois plus efficace si\nl\u2019ennemi a
+        d\xE9j\xE0 \xE9t\xE9 bless\xE9 durant ce tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Hat das Ziel w\xE4hrend der Runde schon Schaden\ngenommen, wird
+        die Kraft der Attacke verdoppelt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Si el objetivo ya ha sufrido da\xF1o en ese turno, la \nfuerza
+        del ataque se duplica."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "Se il bersaglio ha gi\xE0 subito dei danni nello stesso\nturno,
+        la potenza di questa mossa raddoppia."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "If the target has already taken some\ndamage in the same turn,
+        this attack\u2019s\npower is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u76F8\u624B\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u53D7\u3051\u3066\u3044\u305F\u3089\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\uFF12\u500D\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: omega-ruby-alpha-sapphire
+        url: https://pokeapi.co/api/v2/version-group/16/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u3042\u3044\u3066\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3046\u3051\u3066\u3000\u3044\u305F\u3089\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\uFF12\u3070\u3044\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\uADF8 \uD134\uC5D0 \uC0C1\uB300\uAC00\n\uC774\uBBF8 \uB370\uBBF8\uC9C0\uB97C
+        \uC785\uC5C8\uB2E4\uBA74\n\uAE30\uC220\uC758 \uC704\uB825\uC740 2\uBC30\uAC00
+        \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5982\u679C\u6B64\u56DE\u5408\u5167\u5C0D\u624B\n\u5DF2\u53D7\u5230\u50B7\u5BB3\uFF0C\n\u62DB\u5F0F\u5A01\u529B\u6703\u8B8A\u6210\uFF12\u500D\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Cette attaque est deux fois plus efficace si\nl\u2019ennemi a
+        d\xE9j\xE0 \xE9t\xE9 bless\xE9 durant ce tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Hat das Ziel w\xE4hrend der Runde schon Schaden\ngenommen, wird
+        die St\xE4rke der Attacke verdoppelt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Si el objetivo ya ha sufrido da\xF1o en ese turno, la \nfuerza
+        del ataque se duplica."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "Se il bersaglio ha gi\xE0 subito dei danni nello stesso\nturno,
+        la potenza di questa mossa raddoppia."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "If the target has already taken some damage in the\nsame turn,
+        this attack\u2019s power is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u76F8\u624B\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u53D7\u3051\u3066\u3044\u305F\u3089\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\uFF12\u500D\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u5982\u679C\u6B64\u56DE\u5408\u5185\u5BF9\u624B\n\u5DF2\u7ECF\u53D7\u5230\u4F24\u5BB3\u7684\u8BDD\uFF0C\n\u62DB\u5F0F\u5A01\u529B\u4F1A\u53D8\u6210\uFF12\u500D\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u3042\u3044\u3066\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3046\u3051\u3066\u3000\u3044\u305F\u3089\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\uFF12\u3070\u3044\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\uADF8 \uD134\uC5D0 \uC0C1\uB300\uAC00\n\uC774\uBBF8 \uB370\uBBF8\uC9C0\uB97C
+        \uC785\uC5C8\uB2E4\uBA74\n\uAE30\uC220\uC758 \uC704\uB825\uC740 2\uBC30\uAC00
+        \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5982\u679C\u6B64\u56DE\u5408\u5167\u5C0D\u624B\n\u5DF2\u53D7\u5230\u50B7\u5BB3\uFF0C\n\u62DB\u5F0F\u5A01\u529B\u6703\u8B8A\u6210\uFF12\u500D\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Cette attaque est deux fois plus efficace si\nl\u2019ennemi a
+        d\xE9j\xE0 \xE9t\xE9 bless\xE9 durant ce tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Hat das Ziel w\xE4hrend der Runde schon Schaden\ngenommen, wird
+        die St\xE4rke der Attacke verdoppelt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Si el objetivo ya ha sufrido da\xF1o en ese turno, la \nfuerza
+        del ataque se duplica."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "Se il bersaglio ha gi\xE0 subito dei danni nello stesso\nturno,
+        la potenza di questa mossa raddoppia."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "If the target has already taken some damage in the\nsame turn,
+        this attack\u2019s power is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u76F8\u624B\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u53D7\u3051\u3066\u3044\u305F\u3089\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\uFF12\u500D\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u5982\u679C\u6B64\u56DE\u5408\u5185\u5BF9\u624B\n\u5DF2\u7ECF\u53D7\u5230\u4F24\u5BB3\u7684\u8BDD\uFF0C\n\u62DB\u5F0F\u5A01\u529B\u4F1A\u53D8\u6210\uFF12\u500D\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u3042\u3044\u3066\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3046\u3051\u3066\u3000\u3044\u305F\u3089\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\uFF12\u3070\u3044\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\uADF8 \uD134\uC5D0 \uC0C1\uB300\uAC00\n\uC774\uBBF8 \uB370\uBBF8\uC9C0\uB97C
+        \uC785\uC5C8\uB2E4\uBA74\n\uAE30\uC220\uC758 \uC704\uB825\uC740 2\uBC30\uAC00
+        \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Cette attaque est deux fois plus efficace si l\u2019ennemi\na
+        d\xE9j\xE0 \xE9t\xE9 bless\xE9 durant ce tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Hat das Ziel w\xE4hrend der Runde schon Schaden\ngenommen, wird
+        die St\xE4rke der Attacke verdoppelt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Si el objetivo ya ha sufrido da\xF1o en ese turno, la \nfuerza
+        del ataque se duplica."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "Se il bersaglio ha gi\xE0 subito dei danni nello stesso\nturno,
+        la potenza di questa mossa raddoppia."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "If the target has already taken some damage in the\nsame turn,
+        this attack\u2019s power is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u76F8\u624B\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u53D7\u3051\u3066\u3044\u305F\u3089\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\uFF12\u500D\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u5982\u679C\u6B64\u56DE\u5408\u5185\u5BF9\u624B\n\u5DF2\u7ECF\u53D7\u5230\u4F24\u5BB3\u7684\u8BDD\uFF0C\n\u62DB\u5F0F\u5A01\u529B\u4F1A\u53D8\u6210\uFF12\u500D\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u3042\u3044\u3066\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u3046\u3051\u3066\u3000\u3044\u305F\u3089\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\uFF12\u3070\u3044\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\uADF8 \uD134\uC5D0 \uC0C1\uB300\uAC00\n\uC774\uBBF8 \uB370\uBBF8\uC9C0\uB97C
+        \uC785\uC5C8\uB2E4\uBA74\n\uAE30\uC220\uC758 \uC704\uB825\uC740 2\uBC30\uAC00
+        \uB41C\uB2E4."
+      language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5982\u679C\u6B64\u56DE\u5408\u5167\u5C0D\u624B\n\u5DF2\u53D7\u5230\u50B7\u5BB3\uFF0C\n\u62DB\u5F0F\u5A01\u529B\u6703\u8B8A\u6210\uFF12\u500D\u3002"
+      language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Cette attaque est deux fois plus efficace si l\u2019ennemi\na
+        d\xE9j\xE0 \xE9t\xE9 bless\xE9 durant ce tour."
+      language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Hat das Ziel w\xE4hrend der Runde schon Schaden\ngenommen, wird
+        die St\xE4rke der Attacke verdoppelt."
+      language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Si el objetivo ya ha sufrido da\xF1o en ese turno, la fuerza\ndel
+        ataque se duplica."
+      language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "Se il bersaglio ha gi\xE0 subito dei danni nello stesso\nturno,
+        la potenza di questa mossa raddoppia."
+      language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "If the target has already taken some damage in the\nsame turn,
+        this attack\u2019s power is doubled."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u305D\u306E\u30BF\u30FC\u30F3\u306B\u3000\u76F8\u624B\u304C\n\u3059\u3067\u306B\u3000\u30C0\u30E1\u30FC\u30B8\u3092\u3000\u53D7\u3051\u3066\u3044\u305F\u3089\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\uFF12\u500D\u306B\u3000\u306A\u308B\u3002"
+      language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - flavor_text: "\u5982\u679C\u6B64\u56DE\u5408\u5185\u5BF9\u624B\n\u5DF2\u7ECF\u53D7\u5230\u4F24\u5BB3\u7684\u8BDD\uFF0C\n\u62DB\u5F0F\u5A01\u529B\u4F1A\u53D8\u6210\uFF12\u500D\u3002"
+      language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    generation:
+      name: generation-iv
+      url: https://pokeapi.co/api/v2/generation/4/
+    id: 372
+    learned_by_pokemon:
+    - name: beedrill
+      url: https://pokeapi.co/api/v2/pokemon/15/
+    - name: rattata
+      url: https://pokeapi.co/api/v2/pokemon/19/
+    - name: raticate
+      url: https://pokeapi.co/api/v2/pokemon/20/
+    - name: spearow
+      url: https://pokeapi.co/api/v2/pokemon/21/
+    - name: fearow
+      url: https://pokeapi.co/api/v2/pokemon/22/
+    - name: meowth
+      url: https://pokeapi.co/api/v2/pokemon/52/
+    - name: persian
+      url: https://pokeapi.co/api/v2/pokemon/53/
+    - name: mankey
+      url: https://pokeapi.co/api/v2/pokemon/56/
+    - name: primeape
+      url: https://pokeapi.co/api/v2/pokemon/57/
+    - name: doduo
+      url: https://pokeapi.co/api/v2/pokemon/84/
+    - name: koffing
+      url: https://pokeapi.co/api/v2/pokemon/109/
+    - name: weezing
+      url: https://pokeapi.co/api/v2/pokemon/110/
+    - name: aerodactyl
+      url: https://pokeapi.co/api/v2/pokemon/142/
+    - name: umbreon
+      url: https://pokeapi.co/api/v2/pokemon/197/
+    - name: murkrow
+      url: https://pokeapi.co/api/v2/pokemon/198/
+    - name: girafarig
+      url: https://pokeapi.co/api/v2/pokemon/203/
+    - name: skarmory
+      url: https://pokeapi.co/api/v2/pokemon/227/
+    - name: donphan
+      url: https://pokeapi.co/api/v2/pokemon/232/
+    - name: larvitar
+      url: https://pokeapi.co/api/v2/pokemon/246/
+    - name: poochyena
+      url: https://pokeapi.co/api/v2/pokemon/261/
+    - name: mightyena
+      url: https://pokeapi.co/api/v2/pokemon/262/
+    - name: carvanha
+      url: https://pokeapi.co/api/v2/pokemon/318/
+    - name: sharpedo
+      url: https://pokeapi.co/api/v2/pokemon/319/
+    - name: seviper
+      url: https://pokeapi.co/api/v2/pokemon/336/
+    - name: absol
+      url: https://pokeapi.co/api/v2/pokemon/359/
+    - name: cranidos
+      url: https://pokeapi.co/api/v2/pokemon/408/
+    - name: rampardos
+      url: https://pokeapi.co/api/v2/pokemon/409/
+    - name: glameow
+      url: https://pokeapi.co/api/v2/pokemon/431/
+    - name: weavile
+      url: https://pokeapi.co/api/v2/pokemon/461/
+    - name: tepig
+      url: https://pokeapi.co/api/v2/pokemon/498/
+    - name: pignite
+      url: https://pokeapi.co/api/v2/pokemon/499/
+    - name: emboar
+      url: https://pokeapi.co/api/v2/pokemon/500/
+    - name: oshawott
+      url: https://pokeapi.co/api/v2/pokemon/501/
+    - name: patrat
+      url: https://pokeapi.co/api/v2/pokemon/504/
+    - name: purrloin
+      url: https://pokeapi.co/api/v2/pokemon/509/
+    - name: liepard
+      url: https://pokeapi.co/api/v2/pokemon/510/
+    - name: woobat
+      url: https://pokeapi.co/api/v2/pokemon/527/
+    - name: swoobat
+      url: https://pokeapi.co/api/v2/pokemon/528/
+    - name: sandile
+      url: https://pokeapi.co/api/v2/pokemon/551/
+    - name: krokorok
+      url: https://pokeapi.co/api/v2/pokemon/552/
+    - name: krookodile
+      url: https://pokeapi.co/api/v2/pokemon/553/
+    - name: axew
+      url: https://pokeapi.co/api/v2/pokemon/610/
+    - name: fraxure
+      url: https://pokeapi.co/api/v2/pokemon/611/
+    - name: haxorus
+      url: https://pokeapi.co/api/v2/pokemon/612/
+    - name: cubchoo
+      url: https://pokeapi.co/api/v2/pokemon/613/
+    - name: pawniard
+      url: https://pokeapi.co/api/v2/pokemon/624/
+    - name: bisharp
+      url: https://pokeapi.co/api/v2/pokemon/625/
+    - name: deino
+      url: https://pokeapi.co/api/v2/pokemon/633/
+    - name: marshadow
+      url: https://pokeapi.co/api/v2/pokemon/802/
+    - name: aerodactyl-mega
+      url: https://pokeapi.co/api/v2/pokemon/10042/
+    - name: absol-mega
+      url: https://pokeapi.co/api/v2/pokemon/10057/
+    - name: sharpedo-mega
+      url: https://pokeapi.co/api/v2/pokemon/10070/
+    - name: beedrill-mega
+      url: https://pokeapi.co/api/v2/pokemon/10090/
+    - name: rattata-alola
+      url: https://pokeapi.co/api/v2/pokemon/10091/
+    - name: raticate-alola
+      url: https://pokeapi.co/api/v2/pokemon/10092/
+    - name: raticate-totem-alola
+      url: https://pokeapi.co/api/v2/pokemon/10093/
+    - name: meowth-alola
+      url: https://pokeapi.co/api/v2/pokemon/10107/
+    - name: persian-alola
+      url: https://pokeapi.co/api/v2/pokemon/10108/
+    machines:
+    - machine:
+        url: https://pokeapi.co/api/v2/machine/1089/
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    meta:
+      ailment:
+        name: none
+        url: https://pokeapi.co/api/v2/move-ailment/0/
+      ailment_chance: 0
+      category:
+        name: damage
+        url: https://pokeapi.co/api/v2/move-category/0/
+      crit_rate: 0
+      drain: 0
+      flinch_chance: 0
+      max_hits: 0
+      max_turns: 0
+      min_hits: 0
+      min_turns: 0
+      stat_chance: 0
+    name: assurance
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30C0\u30E1\u304A\u3057"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC2B9\uBD80\uAD73\uD788\uAE30"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u60E1\u610F\u8FFD\u64CA"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Assurance
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Gewissheit
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Buena Baza
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Garanzia
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Assurance
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30C0\u30E1\u304A\u3057"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u6076\u610F\u8FFD\u51FB"
+    past_values:
+    - accuracy: 0
+      effect_chance: 0
+      effect_entries: []
+      power: 50
+      pp: 0
+      type:
+        name: 
+        url: 
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    power: 60
+    pp: 10
+    priority: 0
+    stat_changes: []
+    super_contest_effect:
+      url: https://pokeapi.co/api/v2/super-contest-effect/15/
+    target:
+      name: selected-pokemon
+      url: https://pokeapi.co/api/v2/move-target/10/
+    type:
+      name: dark
+      url: https://pokeapi.co/api/v2/type/17/

@@ -1,0 +1,517 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 168d5703cabcc124e919a335fd1c3318, type: 3}
+  m_Name: level-ball
+  m_EditorClassIdentifier: 
+  name: Level Ball
+  description: "A Pok\xE9 Ball for catching Pok\xE9mon that\nare a lower level than
+    your own."
+  icon: {fileID: 21300000, guid: 2236f57a94d460649a46a73383375feb, type: 3}
+  price: 0
+  isSellable: 0
+  id: 450
+  pokeApiItem:
+    attributes: []
+    baby_trigger_for:
+      name: 
+      url: 
+    category:
+      name: apricorn-balls
+      url: https://pokeapi.co/api/v2/item-category/39/
+    cost: 0
+    effect_entries:
+    - effect: "Used by trainer in battle\n:   Attempts to catch a wild Pok\xE9mon. 
+        If used in a trainer battle, nothing happens and the ball is lost.\n\n   
+        If the trainer's Pok\xE9mon's level is higher than:\n\n    * four times the
+        wild Pok\xE9mon's, the wild Pok\xE9mon's catch rate is 8\xD7 normal.\n   
+        * than twice the wild Pok\xE9mon's, the wild Pok\xE9mon's catch rate is 4\xD7
+        normal.\n    * the wild Pok\xE9mon's, the wild Pok\xE9mon's catch rate is
+        2\xD7 normal."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: "Success rate based off of fraction target Pok\xE9mon is of user's
+        Pok\xE9mon. Made from Red Apricorn."
+    flavor_text_entries:
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9 Ball for catching Pok\xE9mon that\nare a lower level than
+        your own."
+      version_group:
+        name: heartgold-soulsilver
+        url: https://pokeapi.co/api/v2/version-group/10/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui\nfonctionne particuli\xE8rement
+        bien sur\nles Pok\xE9mon de niveau inf\xE9rieur au sien."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9 Ball for catching Pok\xE9mon that\nare a lower level than
+        your own."
+      version_group:
+        name: black-white
+        url: https://pokeapi.co/api/v2/version-group/11/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9 Ball for catching Pok\xE9mon that\nare a lower level than
+        your own."
+      version_group:
+        name: black-2-white-2
+        url: https://pokeapi.co/api/v2/version-group/14/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3058\u3076\u3093\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3088\u308A\u3000\u30EC\u30D9\u30EB\u304C\n\u3072\u304F\u3044\u307B\u3069\u3000\u3064\u304B\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u304B\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC790\uC2E0\uC758 \uD3EC\uCF13\uBAAC\uBCF4\uB2E4 \uB808\uBCA8\uC774\n\uB0AE\uC744\uC218\uB85D
+        \uC7A1\uAE30 \uC26C\uC6CC\uC9C0\uB294\n\uC870\uAE08 \uD2B9\uC774\uD55C \uBCFC."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui fonctionne\nparticuli\xE8rement
+        bien sur les Pok\xE9mon de niveau\ninf\xE9rieur au sien."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Ball, mit dem sich Pok\xE9mon umso leichter\nfangen lassen, je niedriger
+        ihr Level im Vergleich\nzu deinem Team ist."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Contiene los datos del Pok\xE9athlon con el n\xFAmero\nde victorias
+        en Rompelosas."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pok\xE9 Ball un po\u2019 diversa che funziona\nparticolarmente bene
+        con i Pok\xE9mon di livello\ninferiore a quello del proprio."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9 Ball that makes it easier to\ncatch Pok\xE9mon that are at
+        a lower\nlevel than your own Pok\xE9mon."
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u81EA\u5206\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3088\u308A\u3000\u30EC\u30D9\u30EB\u304C\n\u4F4E\u3044\u307B\u3069\u3000\u6355\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u5909\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: x-y
+        url: https://pokeapi.co/api/v2/version-group/15/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3058\u3076\u3093\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3088\u308A\u3000\u30EC\u30D9\u30EB\u304C\n\u3072\u304F\u3044\u307B\u3069\u3000\u3064\u304B\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u304B\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC790\uC2E0\uC758 \uD3EC\uCF13\uBAAC\uBCF4\uB2E4 \uB808\uBCA8\uC774\n\uB0AE\uC744\uC218\uB85D
+        \uC7A1\uAE30 \uC26C\uC6CC\uC9C0\uB294\n\uC870\uAE08 \uD2B9\uC774\uD55C \uBCFC."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8207\u773E\u4E0D\u540C\u7684\u7403\u3002\n\u5C0D\u624B\u7684\u7B49\u7D1A\u6BD4\u81EA\u5DF1\u7684\u5BF6\u53EF\u5922\u4F4E\u8D8A\u591A\uFF0C\n\u5C31\u8D8A\u5BB9\u6613\u6349\u5230\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui fonctionne\nparticuli\xE8rement
+        bien sur les Pok\xE9mon de niveau\ninf\xE9rieur au sien."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Ball, mit dem sich Pok\xE9mon umso leichter fangen\nlassen, je niedriger
+        ihr Level im Vergleich zu deinem\nTeam ist."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Pok\xE9 Ball algo distinta que funciona especialmente\nbien con Pok\xE9mon
+        de nivel inferior a los que se\nposee."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pok\xE9 Ball un po\u2019 diversa che funziona\nparticolarmente bene
+        con i Pok\xE9mon di livello\ninferiore a quello del proprio."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9 Ball that makes it easier to catch Pok\xE9mon\nthat are at
+        a lower level than your own Pok\xE9mon."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u81EA\u5206\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3088\u308A\u3000\u30EC\u30D9\u30EB\u304C\n\u4F4E\u3044\u307B\u3069\u3000\u6355\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u5909\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u4E0E\u4F17\u4E0D\u540C\u7684\u7403\u3002\n\u8981\u6355\u6349\u7684\u5B9D\u53EF\u68A6\u6BD4\u81EA\u5DF1\u5B9D\u53EF\u68A6\u7684\n\u7B49\u7EA7\u8D8A\u4F4E\uFF0C\u5C31\u4F1A\u8D8A\u5BB9\u6613\u6355\u6349\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3058\u3076\u3093\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3088\u308A\u3000\u30EC\u30D9\u30EB\u304C\n\u3072\u304F\u3044\u307B\u3069\u3000\u3064\u304B\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u304B\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC790\uC2E0\uC758 \uD3EC\uCF13\uBAAC\uBCF4\uB2E4 \uB808\uBCA8\uC774\n\uB0AE\uC744\uC218\uB85D
+        \uC7A1\uAE30 \uC26C\uC6CC\uC9C0\uB294\n\uC870\uAE08 \uD2B9\uC774\uD55C \uBCFC."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8207\u773E\u4E0D\u540C\u7684\u7403\u3002\n\u5C0D\u624B\u7684\u7B49\u7D1A\u6BD4\u81EA\u5DF1\u7684\u5BF6\u53EF\u5922\u4F4E\u8D8A\u591A\uFF0C\n\u5C31\u8D8A\u5BB9\u6613\u6349\u5230\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui fonctionne\nparticuli\xE8rement
+        bien sur les Pok\xE9mon de niveau\ninf\xE9rieur au sien."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Ball, mit dem sich Pok\xE9mon umso leichter fangen\nlassen, je niedriger
+        ihr Level im Vergleich zu deinem\nTeam ist."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Pok\xE9 Ball algo distinta que funciona especialmente\nbien con Pok\xE9mon
+        de nivel inferior a los que se\nposee."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pok\xE9 Ball un po\u2019 diversa che funziona\nparticolarmente bene
+        con i Pok\xE9mon di livello\ninferiore a quello del proprio."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9 Ball that makes it easier to catch Pok\xE9mon\nthat are at
+        a lower level than your own Pok\xE9mon."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u81EA\u5206\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3088\u308A\u3000\u30EC\u30D9\u30EB\u304C\n\u4F4E\u3044\u307B\u3069\u3000\u6355\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u5909\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u4E0E\u4F17\u4E0D\u540C\u7684\u7403\u3002\n\u8981\u6355\u6349\u7684\u5B9D\u53EF\u68A6\u6BD4\u81EA\u5DF1\u5B9D\u53EF\u68A6\u7684\n\u7B49\u7EA7\u8D8A\u4F4E\uFF0C\u5C31\u4F1A\u8D8A\u5BB9\u6613\u6355\u6349\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3058\u3076\u3093\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3088\u308A\u3000\u30EC\u30D9\u30EB\u304C\n\u3072\u304F\u3044\u307B\u3069\u3000\u3064\u304B\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u304B\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC790\uC2E0\uC758 \uD3EC\uCF13\uBAAC\uBCF4\uB2E4 \uB808\uBCA8\uC774\n\uB0AE\uC744\uC218\uB85D
+        \uC7A1\uAE30 \uC26C\uC6CC\uC9C0\uB294\n\uC870\uAE08 \uD2B9\uC774\uD55C \uBCFC."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8207\u773E\u4E0D\u540C\u7684\u7403\u3002\n\u5C0D\u624B\u7684\u7B49\u7D1A\u6BD4\u81EA\u5DF1\u7684\u5BF6\u53EF\u5922\u4F4E\u8D8A\u591A\uFF0C\n\u5C31\u8D8A\u5BB9\u6613\u6349\u5230\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui fonctionne\nparticuli\xE8rement
+        bien sur les Pok\xE9mon de niveau\ninf\xE9rieur au sien."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Ball, mit dem sich Pok\xE9mon umso leichter fangen\nlassen, je niedriger
+        ihr Level im Vergleich zu deinem\nTeam ist."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Pok\xE9 Ball algo distinta que funciona especialmente bien\ncon Pok\xE9mon
+        de nivel inferior a los que se posee."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pok\xE9 Ball un po\u2019 diversa che funziona\nparticolarmente bene
+        con i Pok\xE9mon di livello\ninferiore a quello del proprio."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9 Ball that makes it easier to catch Pok\xE9mon\nthat are at
+        a lower level than your own Pok\xE9mon."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u81EA\u5206\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3088\u308A\u3000\u30EC\u30D9\u30EB\u304C\n\u4F4E\u3044\u307B\u3069\u3000\u6355\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u5909\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u4E0E\u4F17\u4E0D\u540C\u7684\u7403\u3002\n\u8981\u6355\u6349\u7684\u5B9D\u53EF\u68A6\u6BD4\u81EA\u5DF1\u5B9D\u53EF\u68A6\u7684\n\u7B49\u7EA7\u8D8A\u4F4E\uFF0C\u5C31\u4F1A\u8D8A\u5BB9\u6613\u6355\u6349\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3058\u3076\u3093\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3088\u308A\u3000\u30EC\u30D9\u30EB\u304C\n\u3072\u304F\u3044\u307B\u3069\u3000\u3064\u304B\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u304B\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC790\uC2E0\uC758 \uD3EC\uCF13\uBAAC\uBCF4\uB2E4 \uB808\uBCA8\uC774\n\uB0AE\uC744\uC218\uB85D
+        \uC7A1\uAE30 \uC26C\uC6CC\uC9C0\uB294\n\uC870\uAE08 \uD2B9\uC774\uD55C \uBCFC."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u6709\u9EDE\u8207\u773E\u4E0D\u540C\u7684\u7403\u3002\n\u5C0D\u624B\u7684\u7B49\u7D1A\u6BD4\u81EA\u5DF1\u7684\u5BF6\u53EF\u5922\u4F4E\u8D8A\u591A\uFF0C\n\u5C31\u8D8A\u5BB9\u6613\u6349\u5230\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une Pok\xE9 Ball un peu sp\xE9ciale qui fonctionne\nparticuli\xE8rement
+        bien sur les Pok\xE9mon de niveau\ninf\xE9rieur au sien."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Ein Ball, mit dem sich Pok\xE9mon umso leichter fangen\nlassen, je niedriger
+        ihr Level im Vergleich zu deinem\nTeam ist."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Pok\xE9 Ball algo distinta que funciona especialmente bien\ncon Pok\xE9mon
+        de nivel inferior a los que se posee."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pok\xE9 Ball un po\u2019 diversa che funziona\nparticolarmente bene
+        con i Pok\xE9mon di livello\ninferiore a quello del proprio."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A Pok\xE9 Ball that makes it easier to catch Pok\xE9mon\nthat are at
+        a lower level than your own Pok\xE9mon."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u81EA\u5206\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3088\u308A\u3000\u30EC\u30D9\u30EB\u304C\n\u4F4E\u3044\u307B\u3069\u3000\u6355\u307E\u3048\u3084\u3059\u304F\u306A\u308B\n\u3061\u3087\u3063\u3068\u3000\u5909\u308F\u3063\u305F\u3000\u30DC\u30FC\u30EB\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u6709\u70B9\u4E0E\u4F17\u4E0D\u540C\u7684\u7403\u3002\n\u8981\u6355\u6349\u7684\u5B9D\u53EF\u68A6\u6BD4\u81EA\u5DF1\u5B9D\u53EF\u68A6\u7684\n\u7B49\u7EA7\u8D8A\u4F4E\uFF0C\u5C31\u4F1A\u8D8A\u5BB9\u6613\u6355\u6349\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    fling_effect:
+      name: 
+      url: 
+    fling_power: 0
+    game_indices:
+    - game_index: 493
+      generation:
+        name: generation-iv
+        url: https://pokeapi.co/api/v2/generation/4/
+    - game_index: 493
+      generation:
+        name: generation-v
+        url: https://pokeapi.co/api/v2/generation/5/
+    - game_index: 493
+      generation:
+        name: generation-vi
+        url: https://pokeapi.co/api/v2/generation/6/
+    - game_index: 493
+      generation:
+        name: generation-vii
+        url: https://pokeapi.co/api/v2/generation/7/
+    - game_index: 493
+      generation:
+        name: generation-viii
+        url: https://pokeapi.co/api/v2/generation/8/
+    held_by_pokemon: 
+    id: 450
+    machines: []
+    name: level-ball
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u30EC\u30D9\u30EB\u30DC\u30FC\u30EB"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uB808\uBCA8\uBCFC"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u7B49\u7D1A\u7403"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Niveau Ball
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Levelball
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Nivel Ball
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Level Ball
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Level Ball
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u30EC\u30D9\u30EB\u30DC\u30FC\u30EB"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u7B49\u7EA7\u7403"
+    sprites:
+      defaul: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/level-ball.png
+  canUseInBattle: 0
+  canUseOutsideBattle: 0
+  catchRateModfier: 1
