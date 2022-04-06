@@ -58,7 +58,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
 
             if (itemGiver != null && itemGiver.CanBeGiven())
             {
-                yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>());
+                yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>(), sprite, nameText);
             }
             else if (pokemonGiver != null && pokemonGiver.CanBeGiven())
             {

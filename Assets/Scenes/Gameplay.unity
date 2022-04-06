@@ -123,6 +123,60 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &53233641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6231308140295033359, guid: 4e85398726b989947ad9643d72fac6ac,
+    type: 3}
+  m_PrefabInstance: {fileID: 1628020086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &53233642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53233641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d54cf1c2c3f765468d245ff1002fbb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wildPokemons:
+  - _base: {fileID: 11400000, guid: de3d310b5aad9ba47b06555fd3d5a200, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: b699a7b0a5f885342a2a916ca559e59d, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: 0b7e630fdae7f1e42947955845d437b9, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: e58a19f3acf1db343a5c9ec5f56a6e6d, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: 2f70df0a21016ce48a79321ff61196b0, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: 4659c483c81bfa846a27f4236dd37a12, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: e846805b48683364a8ec6717c9652b94, type: 2}
+    level: 1
+    difficultyVariable: -2
+--- !u!114 &53233643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53233641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03a5e6bc6154f6c4ea92bfefda029259, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectedScenes:
+  - {fileID: 1906979971}
 --- !u!1001 &118232618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -323,6 +377,7 @@ MonoBehaviour:
   wildPokemons:
   - _base: {fileID: 11400000, guid: fdf7377da95ef864c91ef8528144df2d, type: 2}
     level: 3
+    difficultyVariable: 0
 --- !u!114 &582101540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +397,7 @@ MonoBehaviour:
   - {fileID: 1319084550}
   - {fileID: 846789100}
   - {fileID: 1999115556}
+  - {fileID: 1409172788}
 --- !u!1 &641285175 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6231308140295033359, guid: 4e85398726b989947ad9643d72fac6ac,
@@ -719,6 +775,7 @@ MonoBehaviour:
   wildPokemons:
   - _base: {fileID: 11400000, guid: fdf7377da95ef864c91ef8528144df2d, type: 2}
     level: 3
+    difficultyVariable: 0
 --- !u!114 &1014025588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,8 +809,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fdf7377da95ef864c91ef8528144df2d, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: de3d310b5aad9ba47b06555fd3d5a200, type: 2}
+    level: 1
+    difficultyVariable: -4
+  - _base: {fileID: 11400000, guid: b699a7b0a5f885342a2a916ca559e59d, type: 2}
+    level: 1
+    difficultyVariable: -4
+  - _base: {fileID: 11400000, guid: 0b7e630fdae7f1e42947955845d437b9, type: 2}
+    level: 1
+    difficultyVariable: -4
+  - _base: {fileID: 11400000, guid: e58a19f3acf1db343a5c9ec5f56a6e6d, type: 2}
+    level: 1
+    difficultyVariable: -4
+  - _base: {fileID: 11400000, guid: 2f70df0a21016ce48a79321ff61196b0, type: 2}
+    level: 1
+    difficultyVariable: -4
+  - _base: {fileID: 11400000, guid: 4659c483c81bfa846a27f4236dd37a12, type: 2}
+    level: 1
+    difficultyVariable: -4
+  - _base: {fileID: 11400000, guid: e846805b48683364a8ec6717c9652b94, type: 2}
+    level: 1
+    difficultyVariable: -4
 --- !u!114 &1020105943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,8 +1262,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fdf7377da95ef864c91ef8528144df2d, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: de3d310b5aad9ba47b06555fd3d5a200, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: b699a7b0a5f885342a2a916ca559e59d, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: 0b7e630fdae7f1e42947955845d437b9, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: e58a19f3acf1db343a5c9ec5f56a6e6d, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: 2f70df0a21016ce48a79321ff61196b0, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: 4659c483c81bfa846a27f4236dd37a12, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: e846805b48683364a8ec6717c9652b94, type: 2}
+    level: 1
+    difficultyVariable: -2
 --- !u!114 &1409172788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,8 +1296,88 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   connectedScenes:
+  - {fileID: 582101540}
   - {fileID: 1999115556}
   - {fileID: 1906979971}
+--- !u!1001 &1628020086
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6231308140295033356, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033356, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 162
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -492
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 116
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033357, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6231308140295033359, guid: 4e85398726b989947ad9643d72fac6ac,
+        type: 3}
+      propertyPath: m_Name
+      value: Map008-CimaPatagonia
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4e85398726b989947ad9643d72fac6ac, type: 3}
 --- !u!1001 &1867078452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4133,11 +4308,6 @@ PrefabInstance:
       propertyPath: traineIcon
       value: 
       objectReference: {fileID: 2048177889}
-    - target: {fileID: 7075411000255119279, guid: ff8687c2eeb6b9b43b8df139bc4e9547,
-        type: 3}
-      propertyPath: lettersPerSecond
-      value: 60
-      objectReference: {fileID: 0}
     - target: {fileID: 7075411000562492512, guid: ff8687c2eeb6b9b43b8df139bc4e9547,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -4172,7 +4342,7 @@ PrefabInstance:
     - target: {fileID: 7075411000696114705, guid: ff8687c2eeb6b9b43b8df139bc4e9547,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 7075411000696114705, guid: ff8687c2eeb6b9b43b8df139bc4e9547,
         type: 3}
@@ -4996,6 +5166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   connectedScenes:
   - {fileID: 1409172788}
+  - {fileID: 53233643}
 --- !u!114 &1906979972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5009,8 +5180,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fdf7377da95ef864c91ef8528144df2d, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: de3d310b5aad9ba47b06555fd3d5a200, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: b699a7b0a5f885342a2a916ca559e59d, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: 0b7e630fdae7f1e42947955845d437b9, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: e58a19f3acf1db343a5c9ec5f56a6e6d, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: 2f70df0a21016ce48a79321ff61196b0, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: 4659c483c81bfa846a27f4236dd37a12, type: 2}
+    level: 1
+    difficultyVariable: -2
+  - _base: {fileID: 11400000, guid: e846805b48683364a8ec6717c9652b94, type: 2}
+    level: 1
+    difficultyVariable: -2
 --- !u!1001 &1999115554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5124,8 +5314,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wildPokemons:
-  - _base: {fileID: 11400000, guid: fdf7377da95ef864c91ef8528144df2d, type: 2}
-    level: 3
+  - _base: {fileID: 11400000, guid: 0f542d758bb4b004aa791c3cd0afa200, type: 2}
+    level: 1
+    difficultyVariable: -1
+  - _base: {fileID: 11400000, guid: 2eb420e11a2565349a734ca2f03d20f8, type: 2}
+    level: 1
+    difficultyVariable: -1
+  - _base: {fileID: 11400000, guid: 26255a93f1988d549aad8c62c6db4ce2, type: 2}
+    level: 1
+    difficultyVariable: -1
+  - _base: {fileID: 11400000, guid: de3d310b5aad9ba47b06555fd3d5a200, type: 2}
+    level: 1
+    difficultyVariable: -1
+  - _base: {fileID: 11400000, guid: de3d310b5aad9ba47b06555fd3d5a200, type: 2}
+    level: 1
+    difficultyVariable: -1
+  - _base: {fileID: 11400000, guid: 79d236418b7b8d7439f6b391f70b8ac6, type: 2}
+    level: 1
+    difficultyVariable: -1
+  - _base: {fileID: 11400000, guid: 623a2eedd3f4cf84587dc98bffd579e0, type: 2}
+    level: 1
+    difficultyVariable: -1
 --- !u!1 &2048177889 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4438043223622787640, guid: ff8687c2eeb6b9b43b8df139bc4e9547,

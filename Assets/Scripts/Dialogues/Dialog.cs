@@ -34,7 +34,7 @@ public class Dialog
                             tempString = tempString + " " + splittedStringSpace[count];
                         }
 
-                        if (tempString.Length >= 80)
+                        if (tempString.Length >= 100)
                         {
                             lines.Add(tempString);
                             tempString = "";
@@ -63,7 +63,7 @@ public class Dialog
                         tempString = tempString + " " + splittedStringSpace[count];
                     }
 
-                    if (tempString.Length >= 80)
+                    if (tempString.Length >= 100)
                     {
                         lines.Add(tempString);
                         tempString = "";

@@ -129,7 +129,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1726294082}
     m_Modifications:
     - target: {fileID: -7638095945050874678, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
@@ -149,7 +149,7 @@ PrefabInstance:
     - target: {fileID: 8564437776418553072, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8564437776418553072, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
@@ -174,17 +174,17 @@ PrefabInstance:
     - target: {fileID: 8564437776418553072, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8564437776418553072, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8564437776418553072, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8564437776418553072, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
@@ -846,6 +846,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!4 &517503222 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8564437776418553072, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 82799290}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &578606258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2351,6 +2357,7 @@ MonoBehaviour:
   wildPokemons:
   - _base: {fileID: 11400000, guid: fdf7377da95ef864c91ef8528144df2d, type: 2}
     level: 3
+    difficultyVariable: 0
 --- !u!156049354 &605328284
 Grid:
   m_ObjectHideFlags: 0
@@ -2402,11 +2409,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4691f5d042ccaf64bb94033237523302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healedPokemon: 'Ora i tuoi Pokemon dovrebbero essere in ottima salute!
-
-    Arrivederci!'
-  notHealedPokemon: Okay! Torna pure se ne avrai bisogno.
-  yes: "S\xEC, ma gratis."
+  healed: Ora it uoi Pokemon sono in perfetta salute, ma non posso curarli sempre
+    gratis.
+  notHealed: Va bene! Allora ti aspetto quando ne avrai raccimolati un po'.
+  yes: Per favore curali gratis.
   no: No, non ho i soldi.
 --- !u!114 &852330644 stripped
 MonoBehaviour:
@@ -2550,7 +2556,7 @@ PrefabInstance:
     - target: {fileID: 8564437776418553072, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8564437776418553072, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
@@ -2632,7 +2638,7 @@ PrefabInstance:
     - target: {fileID: 8564437776418553084, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
       propertyPath: dialog.dialog
-      value: "Buongiorno! \nAh vuoi che curi i tuoi Pokemon? Li hai i soldi?"
+      value: "Buongiorno! \nAh vorresti curare i tuoi Pokemon? Ma li hai i soldi?"
       objectReference: {fileID: 0}
     - target: {fileID: 8564437776418553084, guid: 6c8ed79904be6bf4eb46693a8f1833ad,
         type: 3}
@@ -14553,6 +14559,38 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1726294081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1726294082}
+  m_Layer: 0
+  m_Name: NPCs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1726294082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726294081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 517503222}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1892191835
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,6 +23,6 @@ public class TmItem : ItemBase
 
     public override bool IsReusable => isHM;
 
-    public MoveBase Move => move;
-    public bool IsHM => isHM;
+    public MoveBase Move { get => move; set => move = value; }
+    public bool IsHM { get => isHM; set => isHM = value; }
 }

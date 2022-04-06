@@ -13,9 +13,9 @@ public class ItemGiver : MonoBehaviour, ISavable
 
     bool used = false;
 
-    public IEnumerator GiveItem(PlayerController player)
+    public IEnumerator GiveItem(PlayerController player, Sprite sprite, string nameText)
     {
-        yield return DialogManager.Instance.ShowDialog(dialog);
+        yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
 
         player.GetComponent<Inventory>().AddItem(item, count);
 

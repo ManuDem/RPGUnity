@@ -8,14 +8,23 @@ public class Pokemon
 {
     [SerializeField] PokemonBase _base;
     [SerializeField] int level;
+    [SerializeField] int difficultyVariable;
+
+    PokemonParty playerPokemonParty;
+    int totalLevels;
+    int pokemonNumber;
+    int calculatedLevel;
 
     public Pokemon(PokemonBase pBase, int pLevel)
     {
         _base = pBase;
+
         level = pLevel;
 
         Init();
+   
     }
+
 
     public PokemonBase Base { 
         get {
@@ -46,6 +55,24 @@ public class Pokemon
 
     public void Init()
     {
+        // Difficulty increaser
+        if (difficultyVariable is not 0) {
+            playerPokemonParty = PokemonParty.GetPlayerParty();
+
+            foreach (Pokemon pokemon in playerPokemonParty.Pokemons)
+            {
+                pokemonNumber++;
+                totalLevels = totalLevels + pokemon.level;
+            }
+
+            calculatedLevel = Mathf.RoundToInt(totalLevels / pokemonNumber) + difficultyVariable;
+
+            if (calculatedLevel is 0)
+                level = 1;
+            else
+                level = calculatedLevel;
+        }
+
         // Generate Moves
         Moves = new List<Move>();
         foreach (var move in Base.LearnableMoves)
