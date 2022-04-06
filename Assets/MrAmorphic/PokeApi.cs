@@ -1,3 +1,7 @@
+// File Name:   PokeApi.cs
+// Author:      Kristian Junttila
+// Copyright:   © 2020-2022 Kristian Junttila @ Amorphic Games
+
 namespace MrAmorphic
 {
     [System.Serializable]
@@ -39,14 +43,61 @@ namespace MrAmorphic
     {
         public int base_happiness;
         public int capture_rate;
-        public PokeApiFlavorTextEntry[] flavor_text_entries;
-        public int gender_rate;
-        public PokeApiNameUrl growth_rate;
-        public PokeApiGenera[] genera;
+        public PokeApiNameUrl color;
+        public PokeApiNameUrl[] egg_groups;
         public PokeApiEvolutionChainUrl evolution_chain;
         public PokeApiEvolution evolution_data;
+        public string evolves_from_species;
+        public PokeApiFlavorTextEntry[] flavor_text_entries;
+        public PokeApiFormDescription[] form_descriptions;
+        public bool forms_switchable;
+        public int gender_rate;
+        public PokeApiGenera[] genera;
+        public PokeApiNameUrl generation;
+        public PokeApiNameUrl growth_rate;
+        public PokeApiNameUrl habitat;
+        public bool has_gender_differences;
+        public int hatch_counter;
+        public int id;
+        public bool is_baby;
+        public bool is_legendary;
+        public bool is_mythical;
         public string name;
         public PokeApiSpeciesName[] names;
+        public int order;
+        public PokeApiPalParkEncouter[] pal_park_encounters;
+        public PokeApiPokedexNumber[] pokedex_numbers;
+        public PokeApiNameUrl shape;
+        public PokeApiSpeciesVariety[] varietes;
+    }
+
+    [System.Serializable]
+    public class PokeApiFormDescription
+    {
+        public string description;
+        public PokeApiNameUrl language;
+    }
+
+    [System.Serializable]
+    public class PokeApiPalParkEncouter
+    {
+        public PokeApiNameUrl area;
+        public int base_score;
+        public int rate;
+    }
+
+    [System.Serializable]
+    public class PokeApiPokedexNumber
+    {
+        public int entry_number;
+        public PokeApiNameUrl pokedex;
+    }
+
+    [System.Serializable]
+    public class PokeApiSpeciesVariety
+    {
+        public bool is_default;
+        public PokeApiNameUrl pokemon;
     }
 
     [System.Serializable]
@@ -295,6 +346,7 @@ namespace MrAmorphic
         public int crit_rate;
         public int drain;
         public int flinch_chance;
+        public int healing;
         public int max_hits;
         public int max_turns;
         public int min_hits;
