@@ -33,12 +33,13 @@ MonoBehaviour:
     level: 1
   - moveBase: {fileID: 11400000, guid: 3e0a9539a4917324fb4e3fc7782164df, type: 2}
     level: 0
-  learnableByItems: []
+  learnableByItems:
+  - {fileID: 11400000, guid: 3e0a9539a4917324fb4e3fc7782164df, type: 2}
   evolutions:
-  - evolvesInto: {fileID: 11400000, guid: 6fdd9c98abfed9941892057285434365, type: 2}
+  - evolvesInto: {fileID: 11400000, guid: 5f9718ef3ddc91f44a668b76a99c25cb, type: 2}
     requiredLevel: 53
     requiredItem: {fileID: 0}
-  - evolvesInto: {fileID: 11400000, guid: 5d45dff3bd5c5e944b37cd9b8a0746ac, type: 2}
+  - evolvesInto: {fileID: 11400000, guid: 2bfdafa554933a445a95e913c089bb40, type: 2}
     requiredLevel: 53
     requiredItem: {fileID: 0}
   id: 790
@@ -78,6 +79,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: cosmic-power
         url: https://pokeapi.co/api/v2/move/322/
@@ -110,8 +118,29 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     name: cosmoem
-    order: 943
+    order: 967
     past_types: []
     species:
       name: cosmoem
@@ -119,6 +148,62 @@ MonoBehaviour:
     species_data:
       base_happiness: 0
       capture_rate: 45
+      color:
+        name: blue
+        url: https://pokeapi.co/api/v2/pokemon-color/2/
+      egg_groups:
+      - name: no-eggs
+        url: https://pokeapi.co/api/v2/egg-group/15/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/413/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 43
+            evolves_to:
+            - evolution_details:
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 53
+              is_baby: false
+              species:
+                name: solgaleo
+                url: https://pokeapi.co/api/v2/pokemon-species/791/
+            - evolution_details:
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 53
+              is_baby: false
+              species:
+                name: lunala
+                url: https://pokeapi.co/api/v2/pokemon-species/792/
+            is_baby: false
+            species:
+              name: cosmoem
+              url: https://pokeapi.co/api/v2/pokemon-species/790/
+          is_baby: false
+          species:
+            name: cosmog
+            url: https://pokeapi.co/api/v2/pokemon-species/789/
+        id: 413
+      evolves_from_species: 
       flavor_text_entries:
       - flavor_text: "\u3057\u3093\u3060\u3088\u3046\u306B\u3000\u307E\u3063\u305F\u304F\u3000\u3046\u3054\u304B\u306A\u3044\u304C\n\u3075\u308C\u308B\u3068\u3000\u307B\u306E\u304B\u306B\u3000\u3042\u305F\u305F\u304B\u3044\u3002\n\u304A\u304A\u3080\u304B\u3057\u306F\u3000\u307B\u3057\u306E\u30DE\u30E6\u3068\u3000\u3088\u3070\u308C\u305F\u3002"
         language:
@@ -602,10 +687,9 @@ MonoBehaviour:
         version:
           name: shield
           url: https://pokeapi.co/api/v2/version/34/
+      form_descriptions: []
+      forms_switchable: 0
       gender_rate: -1
-      growth_rate:
-        name: slow
-        url: https://pokeapi.co/api/v2/growth-rate/1/
       genera:
       - genus: "\u3052\u3093\u3057\u305B\u3044\u30DD\u30B1\u30E2\u30F3"
         language:
@@ -623,7 +707,7 @@ MonoBehaviour:
         language:
           name: fr
           url: https://pokeapi.co/api/v2/language/5/
-      - genus: Urgestirn
+      - genus: "Urgestirns-Pok\xE9mon"
         language:
           name: de
           url: https://pokeapi.co/api/v2/language/6/
@@ -647,55 +731,21 @@ MonoBehaviour:
         language:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
-      evolution_chain:
-        url: https://pokeapi.co/api/v2/evolution-chain/413/
-      evolution_data:
-        baby_trigger_item: 
-        chain:
-          evolution_details: []
-          evolves_to:
-          - evolution_details:
-            - item:
-                name: 
-                url: 
-              trigger:
-                name: level-up
-                url: https://pokeapi.co/api/v2/evolution-trigger/1/
-              min_level: 43
-            evolves_to:
-            - evolution_details:
-              - item:
-                  name: 
-                  url: 
-                trigger:
-                  name: level-up
-                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
-                min_level: 53
-              is_baby: false
-              species:
-                name: solgaleo
-                url: https://pokeapi.co/api/v2/pokemon-species/791/
-            - evolution_details:
-              - item:
-                  name: 
-                  url: 
-                trigger:
-                  name: level-up
-                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
-                min_level: 53
-              is_baby: false
-              species:
-                name: lunala
-                url: https://pokeapi.co/api/v2/pokemon-species/792/
-            is_baby: false
-            species:
-              name: cosmoem
-              url: https://pokeapi.co/api/v2/pokemon-species/790/
-          is_baby: false
-          species:
-            name: cosmog
-            url: https://pokeapi.co/api/v2/pokemon-species/789/
-        id: 413
+      generation:
+        name: generation-vii
+        url: https://pokeapi.co/api/v2/generation/7/
+      growth_rate:
+        name: slow
+        url: https://pokeapi.co/api/v2/growth-rate/1/
+      habitat:
+        name: 
+        url: 
+      has_gender_differences: 0
+      hatch_counter: 120
+      id: 790
+      is_baby: 0
+      is_legendary: 1
+      is_mythical: 0
       name: cosmoem
       names:
       - language:
@@ -738,6 +788,25 @@ MonoBehaviour:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
         name: "\u79D1\u65AF\u83AB\u59C6"
+      order: 790
+      pal_park_encounters: []
+      pokedex_numbers:
+      - entry_number: 790
+        pokedex:
+          name: national
+          url: https://pokeapi.co/api/v2/pokedex/1/
+      - entry_number: 290
+        pokedex:
+          name: original-alola
+          url: https://pokeapi.co/api/v2/pokedex/16/
+      - entry_number: 388
+        pokedex:
+          name: updated-alola
+          url: https://pokeapi.co/api/v2/pokedex/21/
+      shape:
+        name: ball
+        url: https://pokeapi.co/api/v2/pokemon-shape/1/
+      varietes: []
     sprites:
       back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/790.png
       back_female: 

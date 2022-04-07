@@ -274,6 +274,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
     - move:
         name: string-shot
         url: https://pokeapi.co/api/v2/move/81/
@@ -411,6 +418,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
     - move:
         name: bug-bite
         url: https://pokeapi.co/api/v2/move/450/
@@ -492,6 +506,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     - move:
         name: electroweb
         url: https://pokeapi.co/api/v2/move/527/
@@ -510,6 +531,13 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     name: weedle
     order: 17
     past_types: []
@@ -519,6 +547,50 @@ MonoBehaviour:
     species_data:
       base_happiness: 70
       capture_rate: 255
+      color:
+        name: brown
+        url: https://pokeapi.co/api/v2/pokemon-color/3/
+      egg_groups:
+      - name: bug
+        url: https://pokeapi.co/api/v2/egg-group/3/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/5/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 7
+            evolves_to:
+            - evolution_details:
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 10
+              is_baby: false
+              species:
+                name: beedrill
+                url: https://pokeapi.co/api/v2/pokemon-species/15/
+            is_baby: false
+            species:
+              name: kakuna
+              url: https://pokeapi.co/api/v2/pokemon-species/14/
+          is_baby: false
+          species:
+            name: weedle
+            url: https://pokeapi.co/api/v2/pokemon-species/13/
+        id: 5
+      evolves_from_species: 
       flavor_text_entries:
       - flavor_text: "Often found in\nforests, eating\nleaves.\fIt has a sharp\nvenomous
           stinger\non its head."
@@ -1193,10 +1265,9 @@ MonoBehaviour:
         version:
           name: lets-go-eevee
           url: https://pokeapi.co/api/v2/version/32/
+      form_descriptions: []
+      forms_switchable: 0
       gender_rate: 4
-      growth_rate:
-        name: medium
-        url: https://pokeapi.co/api/v2/growth-rate/2/
       genera:
       - genus: "\u3051\u3080\u3057\u30DD\u30B1\u30E2\u30F3"
         language:
@@ -1238,43 +1309,21 @@ MonoBehaviour:
         language:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
-      evolution_chain:
-        url: https://pokeapi.co/api/v2/evolution-chain/5/
-      evolution_data:
-        baby_trigger_item: 
-        chain:
-          evolution_details: []
-          evolves_to:
-          - evolution_details:
-            - item:
-                name: 
-                url: 
-              trigger:
-                name: level-up
-                url: https://pokeapi.co/api/v2/evolution-trigger/1/
-              min_level: 7
-            evolves_to:
-            - evolution_details:
-              - item:
-                  name: 
-                  url: 
-                trigger:
-                  name: level-up
-                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
-                min_level: 10
-              is_baby: false
-              species:
-                name: beedrill
-                url: https://pokeapi.co/api/v2/pokemon-species/15/
-            is_baby: false
-            species:
-              name: kakuna
-              url: https://pokeapi.co/api/v2/pokemon-species/14/
-          is_baby: false
-          species:
-            name: weedle
-            url: https://pokeapi.co/api/v2/pokemon-species/13/
-        id: 5
+      generation:
+        name: generation-i
+        url: https://pokeapi.co/api/v2/generation/1/
+      growth_rate:
+        name: medium
+        url: https://pokeapi.co/api/v2/growth-rate/2/
+      habitat:
+        name: forest
+        url: https://pokeapi.co/api/v2/pokemon-habitat/2/
+      has_gender_differences: 0
+      hatch_counter: 15
+      id: 13
+      is_baby: 0
+      is_legendary: 0
+      is_mythical: 0
       name: weedle
       names:
       - language:
@@ -1321,6 +1370,42 @@ MonoBehaviour:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
         name: "\u72EC\u89D2\u866B"
+      order: 13
+      pal_park_encounters:
+      - area:
+          name: forest
+          url: https://pokeapi.co/api/v2/pal-park-area/1/
+        base_score: 30
+        rate: 50
+      pokedex_numbers:
+      - entry_number: 13
+        pokedex:
+          name: national
+          url: https://pokeapi.co/api/v2/pokedex/1/
+      - entry_number: 13
+        pokedex:
+          name: kanto
+          url: https://pokeapi.co/api/v2/pokedex/2/
+      - entry_number: 27
+        pokedex:
+          name: original-johto
+          url: https://pokeapi.co/api/v2/pokedex/3/
+      - entry_number: 27
+        pokedex:
+          name: updated-johto
+          url: https://pokeapi.co/api/v2/pokedex/7/
+      - entry_number: 26
+        pokedex:
+          name: kalos-central
+          url: https://pokeapi.co/api/v2/pokedex/12/
+      - entry_number: 13
+        pokedex:
+          name: letsgo-kanto
+          url: https://pokeapi.co/api/v2/pokedex/26/
+      shape:
+        name: armor
+        url: https://pokeapi.co/api/v2/pokemon-shape/14/
+      varietes: []
     sprites:
       back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/13.png
       back_female: 

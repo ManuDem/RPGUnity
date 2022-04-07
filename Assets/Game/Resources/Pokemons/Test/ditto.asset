@@ -431,15 +431,48 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     name: ditto
-    order: 203
+    order: 214
     past_types: []
     species:
       name: ditto
       url: https://pokeapi.co/api/v2/pokemon-species/132/
     species_data:
-      base_happiness: 70
+      base_happiness: 50
       capture_rate: 35
+      color:
+        name: purple
+        url: https://pokeapi.co/api/v2/pokemon-color/7/
+      egg_groups:
+      - name: ditto
+        url: https://pokeapi.co/api/v2/egg-group/13/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/66/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to: []
+          is_baby: false
+          species:
+            name: ditto
+            url: https://pokeapi.co/api/v2/pokemon-species/132/
+        id: 66
+      evolves_from_species: 
       flavor_text_entries:
       - flavor_text: "Capable of copying\nan enemy's genetic\ncode to instantly\ftransform
           itself\ninto a duplicate\nof the enemy."
@@ -1614,10 +1647,9 @@ MonoBehaviour:
         version:
           name: shield
           url: https://pokeapi.co/api/v2/version/34/
+      form_descriptions: []
+      forms_switchable: 0
       gender_rate: -1
-      growth_rate:
-        name: medium
-        url: https://pokeapi.co/api/v2/growth-rate/2/
       genera:
       - genus: "\u3078\u3093\u3057\u3093\u30DD\u30B1\u30E2\u30F3"
         language:
@@ -1635,11 +1667,11 @@ MonoBehaviour:
         language:
           name: fr
           url: https://pokeapi.co/api/v2/language/5/
-      - genus: Transform
+      - genus: "Transform-Pok\xE9mon"
         language:
           name: de
           url: https://pokeapi.co/api/v2/language/6/
-      - genus: "Pok\xE9mon Transform."
+      - genus: "Pok\xE9mon Transformaci\xF3n"
         language:
           name: es
           url: https://pokeapi.co/api/v2/language/7/
@@ -1659,18 +1691,21 @@ MonoBehaviour:
         language:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
-      evolution_chain:
-        url: https://pokeapi.co/api/v2/evolution-chain/66/
-      evolution_data:
-        baby_trigger_item: 
-        chain:
-          evolution_details: []
-          evolves_to: []
-          is_baby: false
-          species:
-            name: ditto
-            url: https://pokeapi.co/api/v2/pokemon-species/132/
-        id: 66
+      generation:
+        name: generation-i
+        url: https://pokeapi.co/api/v2/generation/1/
+      growth_rate:
+        name: medium
+        url: https://pokeapi.co/api/v2/growth-rate/2/
+      habitat:
+        name: urban
+        url: https://pokeapi.co/api/v2/pokemon-habitat/8/
+      has_gender_differences: 0
+      hatch_counter: 20
+      id: 132
+      is_baby: 0
+      is_legendary: 0
+      is_mythical: 0
       name: ditto
       names:
       - language:
@@ -1717,6 +1752,70 @@ MonoBehaviour:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
         name: "\u767E\u53D8\u602A"
+      order: 156
+      pal_park_encounters:
+      - area:
+          name: field
+          url: https://pokeapi.co/api/v2/pal-park-area/2/
+        base_score: 70
+        rate: 20
+      pokedex_numbers:
+      - entry_number: 132
+        pokedex:
+          name: national
+          url: https://pokeapi.co/api/v2/pokedex/1/
+      - entry_number: 132
+        pokedex:
+          name: kanto
+          url: https://pokeapi.co/api/v2/pokedex/2/
+      - entry_number: 92
+        pokedex:
+          name: original-johto
+          url: https://pokeapi.co/api/v2/pokedex/3/
+      - entry_number: 92
+        pokedex:
+          name: updated-johto
+          url: https://pokeapi.co/api/v2/pokedex/7/
+      - entry_number: 261
+        pokedex:
+          name: updated-unova
+          url: https://pokeapi.co/api/v2/pokedex/9/
+      - entry_number: 138
+        pokedex:
+          name: kalos-mountain
+          url: https://pokeapi.co/api/v2/pokedex/14/
+      - entry_number: 209
+        pokedex:
+          name: original-alola
+          url: https://pokeapi.co/api/v2/pokedex/16/
+      - entry_number: 81
+        pokedex:
+          name: original-ulaula
+          url: https://pokeapi.co/api/v2/pokedex/19/
+      - entry_number: 271
+        pokedex:
+          name: updated-alola
+          url: https://pokeapi.co/api/v2/pokedex/21/
+      - entry_number: 92
+        pokedex:
+          name: updated-ulaula
+          url: https://pokeapi.co/api/v2/pokedex/24/
+      - entry_number: 132
+        pokedex:
+          name: letsgo-kanto
+          url: https://pokeapi.co/api/v2/pokedex/26/
+      - entry_number: 373
+        pokedex:
+          name: galar
+          url: https://pokeapi.co/api/v2/pokedex/27/
+      - entry_number: 207
+        pokedex:
+          name: isle-of-armor
+          url: https://pokeapi.co/api/v2/pokedex/28/
+      shape:
+        name: ball
+        url: https://pokeapi.co/api/v2/pokemon-shape/1/
+      varietes: []
     sprites:
       back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png
       back_female: 

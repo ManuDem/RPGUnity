@@ -36,7 +36,7 @@ MonoBehaviour:
   learnableByItems:
   - {fileID: 11400000, guid: 316aa2068f2d1cc41a332dae180ec86c, type: 2}
   evolutions:
-  - evolvesInto: {fileID: 11400000, guid: ee8f23ac9219e6b4eb673b35e8b12cc1, type: 2}
+  - evolvesInto: {fileID: 11400000, guid: e14a4af3d0a208b40adf1846b3b08b76, type: 2}
     requiredLevel: 12
     requiredItem: {fileID: 0}
   id: 665
@@ -218,6 +218,13 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     - move:
         name: bug-bite
         url: https://pokeapi.co/api/v2/move/450/
@@ -229,6 +236,13 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     - move:
         name: electroweb
         url: https://pokeapi.co/api/v2/move/527/
@@ -240,8 +254,15 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     name: spewpa
-    order: 774
+    order: 797
     past_types: []
     species:
       name: spewpa
@@ -249,6 +270,50 @@ MonoBehaviour:
     species_data:
       base_happiness: 70
       capture_rate: 120
+      color:
+        name: black
+        url: https://pokeapi.co/api/v2/pokemon-color/1/
+      egg_groups:
+      - name: bug
+        url: https://pokeapi.co/api/v2/egg-group/3/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/342/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 9
+            evolves_to:
+            - evolution_details:
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 12
+              is_baby: false
+              species:
+                name: vivillon
+                url: https://pokeapi.co/api/v2/pokemon-species/666/
+            is_baby: false
+            species:
+              name: spewpa
+              url: https://pokeapi.co/api/v2/pokemon-species/665/
+          is_baby: false
+          species:
+            name: scatterbug
+            url: https://pokeapi.co/api/v2/pokemon-species/664/
+        id: 342
+      evolves_from_species: 
       flavor_text_entries:
       - flavor_text: "\u3057\u3052\u307F\u306E\u3000\u304B\u3052\u306B\u3000\u304B\u304F\u308C\u3066\u3000\u304F\u3089\u3059\u3002\n\u3066\u304D\u306B\u3000\u304A\u305D\u308F\u308C\u308B\u3068\u3000\u304B\u3089\u3060\u306E\u3000\u3051\u3092\n\u3059\u308B\u3069\u304F\u3000\u3055\u304B\u3060\u3066\u3066\u3000\u3044\u304B\u304F\u3059\u308B\u3002"
         language:
@@ -532,10 +597,9 @@ MonoBehaviour:
         version:
           name: alpha-sapphire
           url: https://pokeapi.co/api/v2/version/26/
+      form_descriptions: []
+      forms_switchable: 0
       gender_rate: 4
-      growth_rate:
-        name: medium
-        url: https://pokeapi.co/api/v2/growth-rate/2/
       genera:
       - genus: "\u3053\u306A\u3075\u304D\u30DD\u30B1\u30E2\u30F3"
         language:
@@ -577,43 +641,21 @@ MonoBehaviour:
         language:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
-      evolution_chain:
-        url: https://pokeapi.co/api/v2/evolution-chain/342/
-      evolution_data:
-        baby_trigger_item: 
-        chain:
-          evolution_details: []
-          evolves_to:
-          - evolution_details:
-            - item:
-                name: 
-                url: 
-              trigger:
-                name: level-up
-                url: https://pokeapi.co/api/v2/evolution-trigger/1/
-              min_level: 9
-            evolves_to:
-            - evolution_details:
-              - item:
-                  name: 
-                  url: 
-                trigger:
-                  name: level-up
-                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
-                min_level: 12
-              is_baby: false
-              species:
-                name: vivillon
-                url: https://pokeapi.co/api/v2/pokemon-species/666/
-            is_baby: false
-            species:
-              name: spewpa
-              url: https://pokeapi.co/api/v2/pokemon-species/665/
-          is_baby: false
-          species:
-            name: scatterbug
-            url: https://pokeapi.co/api/v2/pokemon-species/664/
-        id: 342
+      generation:
+        name: generation-vi
+        url: https://pokeapi.co/api/v2/generation/6/
+      growth_rate:
+        name: medium
+        url: https://pokeapi.co/api/v2/growth-rate/2/
+      habitat:
+        name: 
+        url: 
+      has_gender_differences: 0
+      hatch_counter: 15
+      id: 665
+      is_baby: 0
+      is_legendary: 0
+      is_mythical: 0
       name: spewpa
       names:
       - language:
@@ -656,6 +698,21 @@ MonoBehaviour:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
         name: "\u7C89\u8776\u86F9"
+      order: 666
+      pal_park_encounters: []
+      pokedex_numbers:
+      - entry_number: 665
+        pokedex:
+          name: national
+          url: https://pokeapi.co/api/v2/pokedex/1/
+      - entry_number: 21
+        pokedex:
+          name: kalos-central
+          url: https://pokeapi.co/api/v2/pokedex/12/
+      shape:
+        name: blob
+        url: https://pokeapi.co/api/v2/pokemon-shape/5/
+      varietes: []
     sprites:
       back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/665.png
       back_female: 

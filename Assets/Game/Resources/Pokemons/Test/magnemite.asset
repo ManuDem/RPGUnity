@@ -37,8 +37,12 @@ MonoBehaviour:
     level: 21
   - moveBase: {fileID: 11400000, guid: a73ca91778142ea46a8b551f7a0af87e, type: 2}
     level: 25
+  - moveBase: {fileID: 11400000, guid: fc4fbdf256a6b294e938efcbf70da613, type: 2}
+    level: 26
   - moveBase: {fileID: 11400000, guid: 63e5c0fcad011e04daa23b21bc599a98, type: 2}
     level: 35
+  - moveBase: {fileID: 11400000, guid: e5f0b218c9604f6419aa14a5d0017d73, type: 2}
+    level: 44
   - moveBase: {fileID: 11400000, guid: 79cefbeb79e0472408fbfaaf3b95f9f7, type: 2}
     level: 47
   - moveBase: {fileID: 11400000, guid: 636abd1ca47e4944683353335dd0947f, type: 2}
@@ -68,6 +72,7 @@ MonoBehaviour:
   - moveBase: {fileID: 11400000, guid: 85a952b7732696d4991643080062aff2, type: 2}
     level: 27
   learnableByItems:
+  - {fileID: 11400000, guid: 1aecab9080309564992316fbd9b4633f, type: 2}
   - {fileID: 11400000, guid: 78cb4359720d52b41b4859f5cea0866a, type: 2}
   - {fileID: 11400000, guid: fcde5c8771879d845a804070548df29f, type: 2}
   - {fileID: 11400000, guid: fc4fbdf256a6b294e938efcbf70da613, type: 2}
@@ -77,6 +82,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 64cc5531938fc014797b6c2f1334fbeb, type: 2}
   - {fileID: 11400000, guid: 8d7a261019eae4a41985db4aaeb5a048, type: 2}
   - {fileID: 11400000, guid: 78274ad0dccb41e418eb34a4780caf7a, type: 2}
+  - {fileID: 11400000, guid: 79cefbeb79e0472408fbfaaf3b95f9f7, type: 2}
   - {fileID: 11400000, guid: bd5db01f415db8e4686c8b5115de09c4, type: 2}
   - {fileID: 11400000, guid: 636abd1ca47e4944683353335dd0947f, type: 2}
   - {fileID: 11400000, guid: a4b0e39a2b0cce245b61d6c73395ae58, type: 2}
@@ -103,13 +109,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6f9ad96649861594a8415145e8d5127d, type: 2}
   - {fileID: 11400000, guid: e909571832ca8cf4e88d38921df7b6ff, type: 2}
   - {fileID: 11400000, guid: 8aa6eb181564bc740b06f06aa67ad476, type: 2}
+  - {fileID: 11400000, guid: f85807965d486d948a27e22a14875f7f, type: 2}
   - {fileID: 11400000, guid: 1a4161da3e060944687781187266d7ed, type: 2}
   - {fileID: 11400000, guid: a81e1fd9d0340b2428499eb7beee6458, type: 2}
   - {fileID: 11400000, guid: ebc0fe313f6e9424fb6ee4bb390fdf5f, type: 2}
   - {fileID: 11400000, guid: df9961de9d3e43f4286b6ddbb78c542e, type: 2}
   - {fileID: 11400000, guid: 91ada43438551164fb201d420d80e00b, type: 2}
+  - {fileID: 11400000, guid: 85a952b7732696d4991643080062aff2, type: 2}
   - {fileID: 11400000, guid: 63e901a026bdc294084d3e2722b6b613, type: 2}
   - {fileID: 11400000, guid: 3217e2275d8b33c468fca19d3079b979, type: 2}
+  - {fileID: 11400000, guid: a0b484ec57b42b74aab72f6eb1db0a60, type: 2}
   - {fileID: 11400000, guid: 1b837670530eacd4580900068c6f97ea, type: 2}
   - {fileID: 11400000, guid: 0892d6f00e0127c42886165f25d8bb59, type: 2}
   evolutions:
@@ -310,6 +319,17 @@ MonoBehaviour:
     location_area_encounters: https://pokeapi.co/api/v2/pokemon/81/encounters
     moves:
     - move:
+        name: headbutt
+        url: https://pokeapi.co/api/v2/move/29/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+    - move:
         name: tackle
         url: https://pokeapi.co/api/v2/move/33/
       version_group_details:
@@ -439,6 +459,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: take-down
         url: https://pokeapi.co/api/v2/move/36/
@@ -626,6 +660,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 4
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: sonic-boom
         url: https://pokeapi.co/api/v2/move/49/
@@ -756,6 +804,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
     - move:
         name: thunder-shock
         url: https://pokeapi.co/api/v2/move/84/
@@ -886,6 +941,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 5
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: thunderbolt
         url: https://pokeapi.co/api/v2/move/85/
@@ -1009,6 +1078,27 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 26
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: thunder-wave
         url: https://pokeapi.co/api/v2/move/86/
@@ -1237,6 +1327,34 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 10
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 8
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: thunder
         url: https://pokeapi.co/api/v2/move/87/
@@ -1367,6 +1485,27 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 44
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: toxic
         url: https://pokeapi.co/api/v2/move/92/
@@ -1497,6 +1636,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
     - move:
         name: rage
         url: https://pokeapi.co/api/v2/move/99/
@@ -1533,6 +1679,13 @@ MonoBehaviour:
         version_group:
           name: yellow
           url: https://pokeapi.co/api/v2/version-group/2/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
     - move:
         name: mimic
         url: https://pokeapi.co/api/v2/move/102/
@@ -1702,6 +1855,27 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 32
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 24
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: double-team
         url: https://pokeapi.co/api/v2/move/104/
@@ -1913,6 +2087,34 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 44
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: reflect
         url: https://pokeapi.co/api/v2/move/115/
@@ -2029,6 +2231,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: bide
         url: https://pokeapi.co/api/v2/move/117/
@@ -2163,6 +2379,13 @@ MonoBehaviour:
         version_group:
           name: xd
           url: https://pokeapi.co/api/v2/version-group/13/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: flash
         url: https://pokeapi.co/api/v2/move/148/
@@ -2476,6 +2699,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: substitute
         url: https://pokeapi.co/api/v2/move/164/
@@ -2578,6 +2815,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: snore
         url: https://pokeapi.co/api/v2/move/173/
@@ -2631,6 +2882,20 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: curse
         url: https://pokeapi.co/api/v2/move/174/
@@ -2765,6 +3030,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: zap-cannon
         url: https://pokeapi.co/api/v2/move/192/
@@ -2895,6 +3174,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 52
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: lock-on
         url: https://pokeapi.co/api/v2/move/199/
@@ -3011,6 +3297,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 48
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: endure
         url: https://pokeapi.co/api/v2/move/203/
@@ -3057,6 +3350,13 @@ MonoBehaviour:
         version_group:
           name: heartgold-soulsilver
           url: https://pokeapi.co/api/v2/version-group/10/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: rollout
         url: https://pokeapi.co/api/v2/move/205/
@@ -3293,6 +3593,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 20
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: sleep-talk
         url: https://pokeapi.co/api/v2/move/214/
@@ -3374,6 +3681,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: return
         url: https://pokeapi.co/api/v2/move/216/
@@ -3838,6 +4152,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: sunny-day
         url: https://pokeapi.co/api/v2/move/241/
@@ -3940,6 +4261,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: psych-up
         url: https://pokeapi.co/api/v2/move/244/
@@ -4109,6 +4437,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: magic-coat
         url: https://pokeapi.co/api/v2/move/277/
@@ -4134,6 +4476,13 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     - move:
         name: recycle
         url: https://pokeapi.co/api/v2/move/278/
@@ -4173,6 +4522,13 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     - move:
         name: secret-power
         url: https://pokeapi.co/api/v2/move/290/
@@ -4342,6 +4698,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 40
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: signal-beam
         url: https://pokeapi.co/api/v2/move/324/
@@ -4374,6 +4737,13 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     - move:
         name: iron-defense
         url: https://pokeapi.co/api/v2/move/334/
@@ -4406,6 +4776,20 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: shock-wave
         url: https://pokeapi.co/api/v2/move/351/
@@ -4473,6 +4857,13 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     - move:
         name: gravity
         url: https://pokeapi.co/api/v2/move/356/
@@ -4498,6 +4889,13 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     - move:
         name: gyro-ball
         url: https://pokeapi.co/api/v2/move/360/
@@ -4628,6 +5026,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 16
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: natural-gift
         url: https://pokeapi.co/api/v2/move/363/
@@ -4748,6 +5160,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 28
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: mirror-shot
         url: https://pokeapi.co/api/v2/move/429/
@@ -4917,6 +5343,34 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 38
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 32
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: discharge
         url: https://pokeapi.co/api/v2/move/435/
@@ -4984,6 +5438,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 36
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: magnet-bomb
         url: https://pokeapi.co/api/v2/move/443/
@@ -5164,6 +5625,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 12
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: round
         url: https://pokeapi.co/api/v2/move/496/
@@ -5210,6 +5685,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: volt-switch
         url: https://pokeapi.co/api/v2/move/521/
@@ -5256,6 +5738,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: electroweb
         url: https://pokeapi.co/api/v2/move/527/
@@ -5274,6 +5763,20 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: wild-charge
         url: https://pokeapi.co/api/v2/move/528/
@@ -5320,6 +5823,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: confide
         url: https://pokeapi.co/api/v2/move/590/
@@ -5352,8 +5862,30 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+    - move:
+        name: steel-beam
+        url: https://pokeapi.co/api/v2/move/796/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: rising-voltage
+        url: https://pokeapi.co/api/v2/move/804/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     name: magnemite
-    order: 124
+    order: 132
     past_types:
     - generation:
         name: generation-i
@@ -5367,8 +5899,80 @@ MonoBehaviour:
       name: magnemite
       url: https://pokeapi.co/api/v2/pokemon-species/81/
     species_data:
-      base_happiness: 70
+      base_happiness: 50
       capture_rate: 190
+      color:
+        name: gray
+        url: https://pokeapi.co/api/v2/pokemon-color/4/
+      egg_groups:
+      - name: mineral
+        url: https://pokeapi.co/api/v2/egg-group/10/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/34/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 30
+            evolves_to:
+            - evolution_details:
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 0
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 0
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 0
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 0
+              - item:
+                  name: thunder-stone
+                  url: https://pokeapi.co/api/v2/item/83/
+                trigger:
+                  name: use-item
+                  url: https://pokeapi.co/api/v2/evolution-trigger/3/
+                min_level: 0
+              is_baby: false
+              species:
+                name: magnezone
+                url: https://pokeapi.co/api/v2/pokemon-species/462/
+            is_baby: false
+            species:
+              name: magneton
+              url: https://pokeapi.co/api/v2/pokemon-species/82/
+          is_baby: false
+          species:
+            name: magnemite
+            url: https://pokeapi.co/api/v2/pokemon-species/81/
+        id: 34
+      evolves_from_species: 
       flavor_text_entries:
       - flavor_text: "Uses anti-gravity\nto stay suspended.\nAppears without\fwarning
           and uses\nTHUNDER WAVE and\nsimilar moves."
@@ -6535,10 +7139,9 @@ MonoBehaviour:
         version:
           name: shield
           url: https://pokeapi.co/api/v2/version/34/
+      form_descriptions: []
+      forms_switchable: 0
       gender_rate: -1
-      growth_rate:
-        name: medium
-        url: https://pokeapi.co/api/v2/growth-rate/2/
       genera:
       - genus: "\u3058\u3057\u3083\u304F\u30DD\u30B1\u30E2\u30F3"
         language:
@@ -6556,7 +7159,7 @@ MonoBehaviour:
         language:
           name: fr
           url: https://pokeapi.co/api/v2/language/5/
-      - genus: Magnet
+      - genus: "Magnet-Pok\xE9mon"
         language:
           name: de
           url: https://pokeapi.co/api/v2/language/6/
@@ -6580,64 +7183,21 @@ MonoBehaviour:
         language:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
-      evolution_chain:
-        url: https://pokeapi.co/api/v2/evolution-chain/34/
-      evolution_data:
-        baby_trigger_item: 
-        chain:
-          evolution_details: []
-          evolves_to:
-          - evolution_details:
-            - item:
-                name: 
-                url: 
-              trigger:
-                name: level-up
-                url: https://pokeapi.co/api/v2/evolution-trigger/1/
-              min_level: 30
-            evolves_to:
-            - evolution_details:
-              - item:
-                  name: 
-                  url: 
-                trigger:
-                  name: level-up
-                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
-                min_level: 0
-              - item:
-                  name: 
-                  url: 
-                trigger:
-                  name: level-up
-                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
-                min_level: 0
-              - item:
-                  name: 
-                  url: 
-                trigger:
-                  name: level-up
-                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
-                min_level: 0
-              - item:
-                  name: 
-                  url: 
-                trigger:
-                  name: level-up
-                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
-                min_level: 0
-              is_baby: false
-              species:
-                name: magnezone
-                url: https://pokeapi.co/api/v2/pokemon-species/462/
-            is_baby: false
-            species:
-              name: magneton
-              url: https://pokeapi.co/api/v2/pokemon-species/82/
-          is_baby: false
-          species:
-            name: magnemite
-            url: https://pokeapi.co/api/v2/pokemon-species/81/
-        id: 34
+      generation:
+        name: generation-i
+        url: https://pokeapi.co/api/v2/generation/1/
+      growth_rate:
+        name: medium
+        url: https://pokeapi.co/api/v2/growth-rate/2/
+      habitat:
+        name: rough-terrain
+        url: https://pokeapi.co/api/v2/pokemon-habitat/6/
+      has_gender_differences: 0
+      hatch_counter: 20
+      id: 81
+      is_baby: 0
+      is_legendary: 0
+      is_mythical: 0
       name: magnemite
       names:
       - language:
@@ -6684,6 +7244,86 @@ MonoBehaviour:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
         name: "\u5C0F\u78C1\u602A"
+      order: 88
+      pal_park_encounters:
+      - area:
+          name: mountain
+          url: https://pokeapi.co/api/v2/pal-park-area/3/
+        base_score: 50
+        rate: 30
+      pokedex_numbers:
+      - entry_number: 81
+        pokedex:
+          name: national
+          url: https://pokeapi.co/api/v2/pokedex/1/
+      - entry_number: 81
+        pokedex:
+          name: kanto
+          url: https://pokeapi.co/api/v2/pokedex/2/
+      - entry_number: 118
+        pokedex:
+          name: original-johto
+          url: https://pokeapi.co/api/v2/pokedex/3/
+      - entry_number: 82
+        pokedex:
+          name: hoenn
+          url: https://pokeapi.co/api/v2/pokedex/4/
+      - entry_number: 178
+        pokedex:
+          name: extended-sinnoh
+          url: https://pokeapi.co/api/v2/pokedex/6/
+      - entry_number: 119
+        pokedex:
+          name: updated-johto
+          url: https://pokeapi.co/api/v2/pokedex/7/
+      - entry_number: 48
+        pokedex:
+          name: updated-unova
+          url: https://pokeapi.co/api/v2/pokedex/9/
+      - entry_number: 69
+        pokedex:
+          name: kalos-mountain
+          url: https://pokeapi.co/api/v2/pokedex/14/
+      - entry_number: 84
+        pokedex:
+          name: updated-hoenn
+          url: https://pokeapi.co/api/v2/pokedex/15/
+      - entry_number: 47
+        pokedex:
+          name: original-alola
+          url: https://pokeapi.co/api/v2/pokedex/16/
+      - entry_number: 47
+        pokedex:
+          name: original-melemele
+          url: https://pokeapi.co/api/v2/pokedex/17/
+      - entry_number: 25
+        pokedex:
+          name: original-ulaula
+          url: https://pokeapi.co/api/v2/pokedex/19/
+      - entry_number: 54
+        pokedex:
+          name: updated-alola
+          url: https://pokeapi.co/api/v2/pokedex/21/
+      - entry_number: 54
+        pokedex:
+          name: updated-melemele
+          url: https://pokeapi.co/api/v2/pokedex/22/
+      - entry_number: 25
+        pokedex:
+          name: updated-ulaula
+          url: https://pokeapi.co/api/v2/pokedex/24/
+      - entry_number: 81
+        pokedex:
+          name: letsgo-kanto
+          url: https://pokeapi.co/api/v2/pokedex/26/
+      - entry_number: 105
+        pokedex:
+          name: isle-of-armor
+          url: https://pokeapi.co/api/v2/pokedex/28/
+      shape:
+        name: arms
+        url: https://pokeapi.co/api/v2/pokemon-shape/4/
+      varietes: []
     sprites:
       back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/81.png
       back_female: 

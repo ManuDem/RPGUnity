@@ -32,9 +32,20 @@ MonoBehaviour:
   expYield: 52
   growthRate: 0
   catchRate: 255
-  learnableMoves: []
-  learnableByItems: []
-  evolutions: []
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 717ca4bbf04450845b70d0809a3d0a74, type: 2}
+    level: 1
+  - moveBase: {fileID: 11400000, guid: 0ff3e6b5bacd6544ead13e07eaa661d3, type: 2}
+    level: 1
+  learnableByItems:
+  - {fileID: 11400000, guid: 8f6531fa53531ed40b7b2764d1dc6de8, type: 2}
+  evolutions:
+  - evolvesInto: {fileID: 11400000, guid: 8107f67f719c5fa41ada038b1b10827d, type: 2}
+    requiredLevel: 0
+    requiredItem: {fileID: 11400000, guid: 9a27b6a7fac6c5a4a92d5223829a6631, type: 2}
+  - evolvesInto: {fileID: 11400000, guid: 91021c716de0f3d418d895386d962be9, type: 2}
+    requiredLevel: 0
+    requiredItem: {fileID: 11400000, guid: 94890d07cfdb6bf41a80b66737e32a2c, type: 2}
   id: 840
   pokeApiPokemon:
     abilities:
@@ -63,9 +74,108 @@ MonoBehaviour:
     id: 840
     is_default: 1
     location_area_encounters: https://pokeapi.co/api/v2/pokemon/840/encounters
-    moves: []
+    moves:
+    - move:
+        name: withdraw
+        url: https://pokeapi.co/api/v2/move/110/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: defense-curl
+        url: https://pokeapi.co/api/v2/move/111/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: rollout
+        url: https://pokeapi.co/api/v2/move/205/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: attract
+        url: https://pokeapi.co/api/v2/move/213/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: recycle
+        url: https://pokeapi.co/api/v2/move/278/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: astonish
+        url: https://pokeapi.co/api/v2/move/310/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: sucker-punch
+        url: https://pokeapi.co/api/v2/move/389/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: egg
+          url: https://pokeapi.co/api/v2/move-learn-method/2/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: draco-meteor
+        url: https://pokeapi.co/api/v2/move/434/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: grassy-glide
+        url: https://pokeapi.co/api/v2/move/803/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     name: applin
-    order: -1
+    order: 1021
     past_types: []
     species:
       name: applin
@@ -73,6 +183,53 @@ MonoBehaviour:
     species_data:
       base_happiness: 50
       capture_rate: 255
+      color:
+        name: green
+        url: https://pokeapi.co/api/v2/pokemon-color/5/
+      egg_groups:
+      - name: plant
+        url: https://pokeapi.co/api/v2/egg-group/7/
+      - name: dragon
+        url: https://pokeapi.co/api/v2/egg-group/14/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/442/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: tart-apple
+                url: https://pokeapi.co/api/v2/item/1175/
+              trigger:
+                name: use-item
+                url: https://pokeapi.co/api/v2/evolution-trigger/3/
+              min_level: 0
+            evolves_to: []
+            is_baby: false
+            species:
+              name: flapple
+              url: https://pokeapi.co/api/v2/pokemon-species/841/
+          - evolution_details:
+            - item:
+                name: sweet-apple
+                url: https://pokeapi.co/api/v2/item/1174/
+              trigger:
+                name: use-item
+                url: https://pokeapi.co/api/v2/evolution-trigger/3/
+              min_level: 0
+            evolves_to: []
+            is_baby: false
+            species:
+              name: appletun
+              url: https://pokeapi.co/api/v2/pokemon-species/842/
+          is_baby: false
+          species:
+            name: applin
+            url: https://pokeapi.co/api/v2/pokemon-species/840/
+        id: 442
+      evolves_from_species: 
       flavor_text_entries:
       - flavor_text: "\u3044\u3063\u3057\u3087\u3046\u3000\u308A\u3093\u3054\u306E\u3000\u306A\u304B\u3067\u3000\u304F\u3089\u3057\n\u3066\u3093\u3066\u304D\u306E\u3000\u3068\u308A\u30DD\u30B1\u30E2\u30F3\u306B\u3000\u3067\u3042\u3046\u3068\n\u308A\u3093\u3054\u306E\u3000\u3075\u308A\u3092\u3057\u3066\u3000\u307F\u3092\u307E\u3082\u308B\u3002"
         language:
@@ -241,10 +398,9 @@ MonoBehaviour:
         version:
           name: shield
           url: https://pokeapi.co/api/v2/version/34/
+      form_descriptions: []
+      forms_switchable: 0
       gender_rate: 4
-      growth_rate:
-        name: slow-then-very-fast
-        url: https://pokeapi.co/api/v2/growth-rate/5/
       genera:
       - genus: "\u308A\u3093\u3054\u3050\u3089\u3057\u30DD\u30B1\u30E2\u30F3"
         language:
@@ -262,7 +418,7 @@ MonoBehaviour:
         language:
           name: fr
           url: https://pokeapi.co/api/v2/language/5/
-      - genus: Apfelhaus
+      - genus: "Apfelhaus-Pok\xE9mon"
         language:
           name: de
           url: https://pokeapi.co/api/v2/language/6/
@@ -286,44 +442,21 @@ MonoBehaviour:
         language:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
-      evolution_chain:
-        url: https://pokeapi.co/api/v2/evolution-chain/441/
-      evolution_data:
-        baby_trigger_item: 
-        chain:
-          evolution_details: []
-          evolves_to:
-          - evolution_details:
-            - item:
-                name: 
-                url: 
-              trigger:
-                name: use-item
-                url: https://pokeapi.co/api/v2/evolution-trigger/3/
-              min_level: 0
-            evolves_to: []
-            is_baby: false
-            species:
-              name: flapple
-              url: https://pokeapi.co/api/v2/pokemon-species/841/
-          - evolution_details:
-            - item:
-                name: 
-                url: 
-              trigger:
-                name: use-item
-                url: https://pokeapi.co/api/v2/evolution-trigger/3/
-              min_level: 0
-            evolves_to: []
-            is_baby: false
-            species:
-              name: appletun
-              url: https://pokeapi.co/api/v2/pokemon-species/842/
-          is_baby: false
-          species:
-            name: applin
-            url: https://pokeapi.co/api/v2/pokemon-species/840/
-        id: 441
+      generation:
+        name: generation-viii
+        url: https://pokeapi.co/api/v2/generation/8/
+      growth_rate:
+        name: slow-then-very-fast
+        url: https://pokeapi.co/api/v2/growth-rate/5/
+      habitat:
+        name: 
+        url: 
+      has_gender_differences: 0
+      hatch_counter: 20
+      id: 840
+      is_baby: 0
+      is_legendary: 0
+      is_mythical: 0
       name: applin
       names:
       - language:
@@ -366,6 +499,25 @@ MonoBehaviour:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
         name: "\u5543\u679C\u866B"
+      order: 840
+      pal_park_encounters: []
+      pokedex_numbers:
+      - entry_number: 840
+        pokedex:
+          name: national
+          url: https://pokeapi.co/api/v2/pokedex/1/
+      - entry_number: 205
+        pokedex:
+          name: galar
+          url: https://pokeapi.co/api/v2/pokedex/27/
+      - entry_number: 19
+        pokedex:
+          name: isle-of-armor
+          url: https://pokeapi.co/api/v2/pokedex/28/
+      shape:
+        name: squiggle
+        url: https://pokeapi.co/api/v2/pokemon-shape/2/
+      varietes: []
     sprites:
       back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/840.png
       back_female: 

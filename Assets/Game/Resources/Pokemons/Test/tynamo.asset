@@ -41,7 +41,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 63e5c0fcad011e04daa23b21bc599a98, type: 2}
   - {fileID: 11400000, guid: 91ada43438551164fb201d420d80e00b, type: 2}
   evolutions:
-  - evolvesInto: {fileID: 11400000, guid: fa99e94fd3bc98d4e9a200a8a7e7922e, type: 2}
+  - evolvesInto: {fileID: 11400000, guid: 6d66179fd6384e14aab48a351a6aac45, type: 2}
     requiredLevel: 39
     requiredItem: {fileID: 0}
   id: 602
@@ -263,6 +263,13 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
     - move:
         name: charge-beam
         url: https://pokeapi.co/api/v2/move/451/
@@ -338,7 +345,7 @@ MonoBehaviour:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
     name: tynamo
-    order: 702
+    order: 724
     past_types: []
     species:
       name: tynamo
@@ -346,6 +353,50 @@ MonoBehaviour:
     species_data:
       base_happiness: 70
       capture_rate: 190
+      color:
+        name: white
+        url: https://pokeapi.co/api/v2/pokemon-color/9/
+      egg_groups:
+      - name: indeterminate
+        url: https://pokeapi.co/api/v2/egg-group/11/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/306/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 39
+            evolves_to:
+            - evolution_details:
+              - item:
+                  name: thunder-stone
+                  url: https://pokeapi.co/api/v2/item/83/
+                trigger:
+                  name: use-item
+                  url: https://pokeapi.co/api/v2/evolution-trigger/3/
+                min_level: 0
+              is_baby: false
+              species:
+                name: eelektross
+                url: https://pokeapi.co/api/v2/pokemon-species/604/
+            is_baby: false
+            species:
+              name: eelektrik
+              url: https://pokeapi.co/api/v2/pokemon-species/603/
+          is_baby: false
+          species:
+            name: tynamo
+            url: https://pokeapi.co/api/v2/pokemon-species/602/
+        id: 306
+      evolves_from_species: 
       flavor_text_entries:
       - flavor_text: "Tout seuls, ils ne d\xE9gagent pas beaucoup\nd\u2019\xE9lectricit\xE9,
           mais un banc d\u2019Anchwatt\nproduit la m\xEAme puissance qu\u2019un \xE9clair."
@@ -675,10 +726,9 @@ MonoBehaviour:
         version:
           name: alpha-sapphire
           url: https://pokeapi.co/api/v2/version/26/
+      form_descriptions: []
+      forms_switchable: 0
       gender_rate: 4
-      growth_rate:
-        name: slow
-        url: https://pokeapi.co/api/v2/growth-rate/1/
       genera:
       - genus: "\u3067\u3093\u304D\u3046\u304A\u30DD\u30B1\u30E2\u30F3"
         language:
@@ -720,43 +770,21 @@ MonoBehaviour:
         language:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
-      evolution_chain:
-        url: https://pokeapi.co/api/v2/evolution-chain/306/
-      evolution_data:
-        baby_trigger_item: 
-        chain:
-          evolution_details: []
-          evolves_to:
-          - evolution_details:
-            - item:
-                name: 
-                url: 
-              trigger:
-                name: level-up
-                url: https://pokeapi.co/api/v2/evolution-trigger/1/
-              min_level: 39
-            evolves_to:
-            - evolution_details:
-              - item:
-                  name: thunder-stone
-                  url: https://pokeapi.co/api/v2/item/83/
-                trigger:
-                  name: use-item
-                  url: https://pokeapi.co/api/v2/evolution-trigger/3/
-                min_level: 0
-              is_baby: false
-              species:
-                name: eelektross
-                url: https://pokeapi.co/api/v2/pokemon-species/604/
-            is_baby: false
-            species:
-              name: eelektrik
-              url: https://pokeapi.co/api/v2/pokemon-species/603/
-          is_baby: false
-          species:
-            name: tynamo
-            url: https://pokeapi.co/api/v2/pokemon-species/602/
-        id: 306
+      generation:
+        name: generation-v
+        url: https://pokeapi.co/api/v2/generation/5/
+      growth_rate:
+        name: slow
+        url: https://pokeapi.co/api/v2/growth-rate/1/
+      habitat:
+        name: 
+        url: 
+      has_gender_differences: 0
+      hatch_counter: 20
+      id: 602
+      is_baby: 0
+      is_legendary: 0
+      is_mythical: 0
       name: tynamo
       names:
       - language:
@@ -799,6 +827,25 @@ MonoBehaviour:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
         name: "\u9EBB\u9EBB\u5C0F\u9C7C"
+      order: 603
+      pal_park_encounters: []
+      pokedex_numbers:
+      - entry_number: 602
+        pokedex:
+          name: national
+          url: https://pokeapi.co/api/v2/pokedex/1/
+      - entry_number: 108
+        pokedex:
+          name: original-unova
+          url: https://pokeapi.co/api/v2/pokedex/8/
+      - entry_number: 177
+        pokedex:
+          name: updated-unova
+          url: https://pokeapi.co/api/v2/pokedex/9/
+      shape:
+        name: fish
+        url: https://pokeapi.co/api/v2/pokemon-shape/3/
+      varietes: []
     sprites:
       back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/602.png
       back_female: 

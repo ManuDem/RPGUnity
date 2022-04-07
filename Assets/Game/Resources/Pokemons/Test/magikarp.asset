@@ -35,7 +35,9 @@ MonoBehaviour:
     level: 1
   - moveBase: {fileID: 11400000, guid: e31aa96cdd1255c44be3f6826359e5ce, type: 2}
     level: 30
-  learnableByItems: []
+  learnableByItems:
+  - {fileID: 11400000, guid: dc9ff24610d1b8a41a843975cadd825f, type: 2}
+  - {fileID: 11400000, guid: 90de0431eb03ade4e82207fffc4d0324, type: 2}
   evolutions:
   - evolvesInto: {fileID: 11400000, guid: 1b70d66bce38d644893019efb41b10d6, type: 2}
     requiredLevel: 20
@@ -274,6 +276,31 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 15
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: hydro-pump
+        url: https://pokeapi.co/api/v2/move/56/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: splash
         url: https://pokeapi.co/api/v2/move/150/
@@ -404,6 +431,20 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: lets-go-pikachu-lets-go-eevee
+          url: https://pokeapi.co/api/v2/version-group/19/
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: flail
         url: https://pokeapi.co/api/v2/move/175/
@@ -520,6 +561,13 @@ MonoBehaviour:
         version_group:
           name: ultra-sun-ultra-moon
           url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 25
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: bounce
         url: https://pokeapi.co/api/v2/move/340/
@@ -552,15 +600,63 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     name: magikarp
-    order: 199
+    order: 210
     past_types: []
     species:
       name: magikarp
       url: https://pokeapi.co/api/v2/pokemon-species/129/
     species_data:
-      base_happiness: 70
+      base_happiness: 50
       capture_rate: 255
+      color:
+        name: red
+        url: https://pokeapi.co/api/v2/pokemon-color/8/
+      egg_groups:
+      - name: water2
+        url: https://pokeapi.co/api/v2/egg-group/12/
+      - name: dragon
+        url: https://pokeapi.co/api/v2/egg-group/14/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/64/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 20
+            evolves_to: []
+            is_baby: false
+            species:
+              name: gyarados
+              url: https://pokeapi.co/api/v2/pokemon-species/130/
+          is_baby: false
+          species:
+            name: magikarp
+            url: https://pokeapi.co/api/v2/pokemon-species/129/
+        id: 64
+      evolves_from_species: 
       flavor_text_entries:
       - flavor_text: "In the distant\npast, it was\nsomewhat stronger\fthan the horribly\nweak
           descendants\nthat exist today."
@@ -1684,10 +1780,9 @@ MonoBehaviour:
         version:
           name: shield
           url: https://pokeapi.co/api/v2/version/34/
+      form_descriptions: []
+      forms_switchable: 0
       gender_rate: 4
-      growth_rate:
-        name: slow
-        url: https://pokeapi.co/api/v2/growth-rate/1/
       genera:
       - genus: "\u3055\u304B\u306A\u30DD\u30B1\u30E2\u30F3"
         language:
@@ -1705,7 +1800,7 @@ MonoBehaviour:
         language:
           name: fr
           url: https://pokeapi.co/api/v2/language/5/
-      - genus: Fisch
+      - genus: "Fisch-Pok\xE9mon"
         language:
           name: de
           url: https://pokeapi.co/api/v2/language/6/
@@ -1729,31 +1824,21 @@ MonoBehaviour:
         language:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
-      evolution_chain:
-        url: https://pokeapi.co/api/v2/evolution-chain/64/
-      evolution_data:
-        baby_trigger_item: 
-        chain:
-          evolution_details: []
-          evolves_to:
-          - evolution_details:
-            - item:
-                name: 
-                url: 
-              trigger:
-                name: level-up
-                url: https://pokeapi.co/api/v2/evolution-trigger/1/
-              min_level: 20
-            evolves_to: []
-            is_baby: false
-            species:
-              name: gyarados
-              url: https://pokeapi.co/api/v2/pokemon-species/130/
-          is_baby: false
-          species:
-            name: magikarp
-            url: https://pokeapi.co/api/v2/pokemon-species/129/
-        id: 64
+      generation:
+        name: generation-i
+        url: https://pokeapi.co/api/v2/generation/1/
+      growth_rate:
+        name: slow
+        url: https://pokeapi.co/api/v2/growth-rate/1/
+      habitat:
+        name: waters-edge
+        url: https://pokeapi.co/api/v2/pokemon-habitat/9/
+      has_gender_differences: 1
+      hatch_counter: 5
+      id: 129
+      is_baby: 0
+      is_legendary: 0
+      is_mythical: 0
       name: magikarp
       names:
       - language:
@@ -1800,6 +1885,114 @@ MonoBehaviour:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
         name: "\u9CA4\u9C7C\u738B"
+      order: 153
+      pal_park_encounters:
+      - area:
+          name: pond
+          url: https://pokeapi.co/api/v2/pal-park-area/4/
+        base_score: 30
+        rate: 50
+      pokedex_numbers:
+      - entry_number: 129
+        pokedex:
+          name: national
+          url: https://pokeapi.co/api/v2/pokedex/1/
+      - entry_number: 129
+        pokedex:
+          name: kanto
+          url: https://pokeapi.co/api/v2/pokedex/2/
+      - entry_number: 76
+        pokedex:
+          name: original-johto
+          url: https://pokeapi.co/api/v2/pokedex/3/
+      - entry_number: 52
+        pokedex:
+          name: hoenn
+          url: https://pokeapi.co/api/v2/pokedex/4/
+      - entry_number: 23
+        pokedex:
+          name: original-sinnoh
+          url: https://pokeapi.co/api/v2/pokedex/5/
+      - entry_number: 23
+        pokedex:
+          name: extended-sinnoh
+          url: https://pokeapi.co/api/v2/pokedex/6/
+      - entry_number: 76
+        pokedex:
+          name: updated-johto
+          url: https://pokeapi.co/api/v2/pokedex/7/
+      - entry_number: 13
+        pokedex:
+          name: conquest-gallery
+          url: https://pokeapi.co/api/v2/pokedex/11/
+      - entry_number: 49
+        pokedex:
+          name: kalos-central
+          url: https://pokeapi.co/api/v2/pokedex/12/
+      - entry_number: 53
+        pokedex:
+          name: updated-hoenn
+          url: https://pokeapi.co/api/v2/pokedex/15/
+      - entry_number: 91
+        pokedex:
+          name: original-alola
+          url: https://pokeapi.co/api/v2/pokedex/16/
+      - entry_number: 91
+        pokedex:
+          name: original-melemele
+          url: https://pokeapi.co/api/v2/pokedex/17/
+      - entry_number: 34
+        pokedex:
+          name: original-akala
+          url: https://pokeapi.co/api/v2/pokedex/18/
+      - entry_number: 51
+        pokedex:
+          name: original-ulaula
+          url: https://pokeapi.co/api/v2/pokedex/19/
+      - entry_number: 41
+        pokedex:
+          name: original-poni
+          url: https://pokeapi.co/api/v2/pokedex/20/
+      - entry_number: 111
+        pokedex:
+          name: updated-alola
+          url: https://pokeapi.co/api/v2/pokedex/21/
+      - entry_number: 111
+        pokedex:
+          name: updated-melemele
+          url: https://pokeapi.co/api/v2/pokedex/22/
+      - entry_number: 34
+        pokedex:
+          name: updated-akala
+          url: https://pokeapi.co/api/v2/pokedex/23/
+      - entry_number: 54
+        pokedex:
+          name: updated-ulaula
+          url: https://pokeapi.co/api/v2/pokedex/24/
+      - entry_number: 53
+        pokedex:
+          name: updated-poni
+          url: https://pokeapi.co/api/v2/pokedex/25/
+      - entry_number: 129
+        pokedex:
+          name: letsgo-kanto
+          url: https://pokeapi.co/api/v2/pokedex/26/
+      - entry_number: 144
+        pokedex:
+          name: galar
+          url: https://pokeapi.co/api/v2/pokedex/27/
+      - entry_number: 42
+        pokedex:
+          name: isle-of-armor
+          url: https://pokeapi.co/api/v2/pokedex/28/
+      - entry_number: 62
+        pokedex:
+          name: crown-tundra
+          url: https://pokeapi.co/api/v2/pokedex/29/
+      shape:
+        name: fish
+        url: https://pokeapi.co/api/v2/pokemon-shape/3/
+      varietes: []
     sprites:
       back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/129.png
       back_female: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/female/129.png

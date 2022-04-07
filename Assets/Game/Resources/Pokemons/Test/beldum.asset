@@ -33,9 +33,14 @@ MonoBehaviour:
   growthRate: 0
   catchRate: 3
   learnableMoves:
+  - moveBase: {fileID: 11400000, guid: 601b39f61be219044b4525fc5d78364e, type: 2}
+    level: 1
   - moveBase: {fileID: 11400000, guid: 78cb4359720d52b41b4859f5cea0866a, type: 2}
     level: 1
-  learnableByItems: []
+  learnableByItems:
+  - {fileID: 11400000, guid: f85807965d486d948a27e22a14875f7f, type: 2}
+  - {fileID: 11400000, guid: 6d4cc0a50cf55bb43be586d6fdd6ba7b, type: 2}
+  - {fileID: 11400000, guid: 7f76baab98091d148b04a4e6c9993cd0, type: 2}
   evolutions:
   - evolvesInto: {fileID: 11400000, guid: 923ccd256b82e3f4ca1823589328a2a7, type: 2}
     requiredLevel: 20
@@ -224,6 +229,17 @@ MonoBehaviour:
           name: heartgold-soulsilver
           url: https://pokeapi.co/api/v2/version-group/10/
     - move:
+        name: tackle
+        url: https://pokeapi.co/api/v2/move/33/
+      version_group_details:
+      - level_learned_at: 1
+        move_learn_method:
+          name: level-up
+          url: https://pokeapi.co/api/v2/move-learn-method/1/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
         name: take-down
         url: https://pokeapi.co/api/v2/move/36/
       version_group_details:
@@ -357,6 +373,20 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: zen-headbutt
         url: https://pokeapi.co/api/v2/move/428/
@@ -389,6 +419,20 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     - move:
         name: iron-head
         url: https://pokeapi.co/api/v2/move/442/
@@ -421,8 +465,33 @@ MonoBehaviour:
         version_group:
           name: omega-ruby-alpha-sapphire
           url: https://pokeapi.co/api/v2/version-group/16/
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: ultra-sun-ultra-moon
+          url: https://pokeapi.co/api/v2/version-group/18/
+      - level_learned_at: 0
+        move_learn_method:
+          name: machine
+          url: https://pokeapi.co/api/v2/move-learn-method/4/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
+    - move:
+        name: steel-beam
+        url: https://pokeapi.co/api/v2/move/796/
+      version_group_details:
+      - level_learned_at: 0
+        move_learn_method:
+          name: tutor
+          url: https://pokeapi.co/api/v2/move-learn-method/3/
+        version_group:
+          name: sword-shield
+          url: https://pokeapi.co/api/v2/version-group/20/
     name: beldum
-    order: 478
+    order: 496
     past_types: []
     species:
       name: beldum
@@ -430,6 +499,50 @@ MonoBehaviour:
     species_data:
       base_happiness: 35
       capture_rate: 3
+      color:
+        name: blue
+        url: https://pokeapi.co/api/v2/pokemon-color/2/
+      egg_groups:
+      - name: mineral
+        url: https://pokeapi.co/api/v2/egg-group/10/
+      evolution_chain:
+        url: https://pokeapi.co/api/v2/evolution-chain/192/
+      evolution_data:
+        baby_trigger_item: 
+        chain:
+          evolution_details: []
+          evolves_to:
+          - evolution_details:
+            - item:
+                name: 
+                url: 
+              trigger:
+                name: level-up
+                url: https://pokeapi.co/api/v2/evolution-trigger/1/
+              min_level: 20
+            evolves_to:
+            - evolution_details:
+              - item:
+                  name: 
+                  url: 
+                trigger:
+                  name: level-up
+                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
+                min_level: 45
+              is_baby: false
+              species:
+                name: metagross
+                url: https://pokeapi.co/api/v2/pokemon-species/376/
+            is_baby: false
+            species:
+              name: metang
+              url: https://pokeapi.co/api/v2/pokemon-species/375/
+          is_baby: false
+          species:
+            name: beldum
+            url: https://pokeapi.co/api/v2/pokemon-species/374/
+        id: 192
+      evolves_from_species: 
       flavor_text_entries:
       - flavor_text: "Instead of blood, a powerful magnetic\nforce courses throughout
           BELDUM\u2019s\nbody. This POK\xE9MON communicates with\fothers by sending
@@ -534,7 +647,7 @@ MonoBehaviour:
         version:
           name: soulsilver
           url: https://pokeapi.co/api/v2/version/16/
-      - flavor_text: "Il dialogue avec les siens par\nimpulsions magn\xE9tiques.
+      - flavor_text: "Il dialogue avec les siens par \nimpulsions magn\xE9tiques.
           En bande,\nils se d\xE9placent \xE0 l\u2019unisson."
         language:
           name: fr
@@ -554,7 +667,7 @@ MonoBehaviour:
         version:
           name: black
           url: https://pokeapi.co/api/v2/version/17/
-      - flavor_text: "Il dialogue avec les siens par\nimpulsions magn\xE9tiques.
+      - flavor_text: "Il dialogue avec les siens par \nimpulsions magn\xE9tiques.
           En bande,\nils se d\xE9placent \xE0 l\u2019unisson."
         language:
           name: fr
@@ -1379,10 +1492,9 @@ MonoBehaviour:
         version:
           name: shield
           url: https://pokeapi.co/api/v2/version/34/
+      form_descriptions: []
+      forms_switchable: 0
       gender_rate: -1
-      growth_rate:
-        name: slow
-        url: https://pokeapi.co/api/v2/growth-rate/1/
       genera:
       - genus: "\u3066\u3063\u304D\u3085\u3046\u30DD\u30B1\u30E2\u30F3"
         language:
@@ -1400,7 +1512,7 @@ MonoBehaviour:
         language:
           name: fr
           url: https://pokeapi.co/api/v2/language/5/
-      - genus: Eisenkugel
+      - genus: "Eisenkugel-Pok\xE9mon"
         language:
           name: de
           url: https://pokeapi.co/api/v2/language/6/
@@ -1424,43 +1536,21 @@ MonoBehaviour:
         language:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
-      evolution_chain:
-        url: https://pokeapi.co/api/v2/evolution-chain/192/
-      evolution_data:
-        baby_trigger_item: 
-        chain:
-          evolution_details: []
-          evolves_to:
-          - evolution_details:
-            - item:
-                name: 
-                url: 
-              trigger:
-                name: level-up
-                url: https://pokeapi.co/api/v2/evolution-trigger/1/
-              min_level: 20
-            evolves_to:
-            - evolution_details:
-              - item:
-                  name: 
-                  url: 
-                trigger:
-                  name: level-up
-                  url: https://pokeapi.co/api/v2/evolution-trigger/1/
-                min_level: 45
-              is_baby: false
-              species:
-                name: metagross
-                url: https://pokeapi.co/api/v2/pokemon-species/376/
-            is_baby: false
-            species:
-              name: metang
-              url: https://pokeapi.co/api/v2/pokemon-species/375/
-          is_baby: false
-          species:
-            name: beldum
-            url: https://pokeapi.co/api/v2/pokemon-species/374/
-        id: 192
+      generation:
+        name: generation-iii
+        url: https://pokeapi.co/api/v2/generation/3/
+      growth_rate:
+        name: slow
+        url: https://pokeapi.co/api/v2/growth-rate/1/
+      habitat:
+        name: rough-terrain
+        url: https://pokeapi.co/api/v2/pokemon-habitat/6/
+      has_gender_differences: 0
+      hatch_counter: 40
+      id: 374
+      is_baby: 0
+      is_legendary: 0
+      is_mythical: 0
       name: beldum
       names:
       - language:
@@ -1507,6 +1597,58 @@ MonoBehaviour:
           name: zh-Hans
           url: https://pokeapi.co/api/v2/language/12/
         name: "\u94C1\u54D1\u94C3"
+      order: 404
+      pal_park_encounters:
+      - area:
+          name: mountain
+          url: https://pokeapi.co/api/v2/pal-park-area/3/
+        base_score: 70
+        rate: 20
+      pokedex_numbers:
+      - entry_number: 374
+        pokedex:
+          name: national
+          url: https://pokeapi.co/api/v2/pokedex/1/
+      - entry_number: 190
+        pokedex:
+          name: hoenn
+          url: https://pokeapi.co/api/v2/pokedex/4/
+      - entry_number: 262
+        pokedex:
+          name: updated-unova
+          url: https://pokeapi.co/api/v2/pokedex/9/
+      - entry_number: 82
+        pokedex:
+          name: conquest-gallery
+          url: https://pokeapi.co/api/v2/pokedex/11/
+      - entry_number: 199
+        pokedex:
+          name: updated-hoenn
+          url: https://pokeapi.co/api/v2/pokedex/15/
+      - entry_number: 214
+        pokedex:
+          name: original-alola
+          url: https://pokeapi.co/api/v2/pokedex/16/
+      - entry_number: 86
+        pokedex:
+          name: original-ulaula
+          url: https://pokeapi.co/api/v2/pokedex/19/
+      - entry_number: 278
+        pokedex:
+          name: updated-alola
+          url: https://pokeapi.co/api/v2/pokedex/21/
+      - entry_number: 99
+        pokedex:
+          name: updated-ulaula
+          url: https://pokeapi.co/api/v2/pokedex/24/
+      - entry_number: 129
+        pokedex:
+          name: crown-tundra
+          url: https://pokeapi.co/api/v2/pokedex/29/
+      shape:
+        name: blob
+        url: https://pokeapi.co/api/v2/pokemon-shape/5/
+      varietes: []
     sprites:
       back_default: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/374.png
       back_female: 
