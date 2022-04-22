@@ -34,6 +34,7 @@ public class DialogManager : MonoBehaviour
         IsShowing = true;
         dialogBox.SetActive(true);
 
+        //AudioManager.i.PlaySfx(AudioId.UISelect);
         yield return TypeDialog(text);
         if (waitForInput)
         {
@@ -69,6 +70,7 @@ public class DialogManager : MonoBehaviour
 
         foreach (var line in dialog.Lines)
         {
+            //AudioManager.i.PlaySfx(AudioId.UISelect);
             yield return TypeDialog(line);
             yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
         }
@@ -121,7 +123,7 @@ public class DialogManager : MonoBehaviour
 
     public void HandleUpdate()
     {
-
+        
     }
 
     public IEnumerator TypeDialog(string line)

@@ -65,6 +65,7 @@ public class Pokemon
                 totalLevels = totalLevels + pokemon.level;
             }
 
+            if (pokemonNumber > 0)
             calculatedLevel = Mathf.RoundToInt(totalLevels / pokemonNumber) + difficultyVariable;
 
             if (calculatedLevel is 0)

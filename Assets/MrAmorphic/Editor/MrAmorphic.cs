@@ -1072,8 +1072,12 @@ namespace MrAmorphic
                 _ => string.Empty,
             };
 
-            //itemToAdd.Cost = item.cost;
+            itemToAdd.Price = item.cost;
             itemToAdd.Id = item.id;
+
+            if (item.cost > 0) {
+                itemToAdd.IsSellable = true;
+            }
 
             if (item.attributes.Any(a => a.name == "usable-in-battle"))
             {

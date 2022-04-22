@@ -21,6 +21,11 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] MoveSelectionUI moveSelectionUI;
     [SerializeField] InventoryUI inventoryUI;
 
+    [Header("Audio")]
+    [SerializeField] AudioClip wildBattleMusic;
+    [SerializeField] AudioClip trainerBattleMusic;
+    [SerializeField] AudioClip battleVictoryMusic;
+
     [Header("Strings")]
     [TextArea] [SerializeField] string aWildAppared;
     [TextArea] [SerializeField] string wantsToBattle;
@@ -62,7 +67,7 @@ public class BattleSystem : MonoBehaviour
     public event Action<bool> OnBattleOver;
 
     BattleState state;
-
+    
     int currentAction;
     int currentMove;
     bool aboutToUseChoice = true;
@@ -85,6 +90,8 @@ public class BattleSystem : MonoBehaviour
         player = playerParty.GetComponent<PlayerController>();
         isTrainerBattle = false;
 
+        //AudioManager.i.PlayMusic(wildBattleMusic);
+
         StartCoroutine(SetupBattle());
     }
 
@@ -96,6 +103,8 @@ public class BattleSystem : MonoBehaviour
         isTrainerBattle = true;
         player = playerParty.GetComponent<PlayerController>();
         trainer = trainerParty.GetComponent<TrainerController>();
+
+        //AudioManager.i.PlayMusic(trainerBattleMusic);
 
         StartCoroutine(SetupBattle());
     }
@@ -291,8 +300,12 @@ public class BattleSystem : MonoBehaviour
         {
 
             sourceUnit.PlayAttackAnimation();
+            //AudioManager.i.PlaySfx(move.Base.Sound);
+
             yield return new WaitForSeconds(1f);
+            
             targetUnit.PlayHitAnimation();
+            //AudioManager.i.PlaySfx(AudioId.Hit);
 
             if (move.Base.Category == MoveCategory.Status)
             {
@@ -412,6 +425,13 @@ public class BattleSystem : MonoBehaviour
 
         if (!faintedUnit.IsPlayerUnit)
         {
+            bool battlWon = true;
+            if (isTrainerBattle)
+                battlWon = trainerParty.GetHealthyPokemon() == null;
+
+            //if (battlWon)
+                //AudioManager.i.PlayMusic(battleVictoryMusic);
+
             // Exp Gain
             int expYield = faintedUnit.Pokemon.Base.ExpYield;
             int enemyLevel = faintedUnit.Pokemon.Level;
