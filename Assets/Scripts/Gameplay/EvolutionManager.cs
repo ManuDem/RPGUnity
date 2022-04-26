@@ -27,7 +27,7 @@ public class EvolutionManager : MonoBehaviour
         OnStartEvolution?.Invoke();
         evolutionUI.SetActive(true);
 
-        //AudioManager.i.PlayMusic(evolutionMusic);
+        AudioManager.i.PlayMusic(evolutionMusic);
 
         pokemonImage.sprite = pokemon.Base.FrontSprite;
         yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} {isEvolving}");

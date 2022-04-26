@@ -71,7 +71,7 @@ public class GameController : MonoBehaviour
             partyScreen.SetPartyData();
             state = stateBeforeEvolution;
 
-            //AudioManager.i.PlayMusic(CurrentScene.SceneMusic, fade: true);
+            AudioManager.i.PlayMusic(CurrentScene.SceneMusic, fade: true);
         };
 
         ShopController.i.OnStart += () => state = GameState.Shop;
@@ -143,9 +143,9 @@ public class GameController : MonoBehaviour
         bool hasEvolutions = playerParty.CheckForEvolutions();
 
         if (hasEvolutions)
-            StartCoroutine(playerParty.RunEvolutions());
-        //else
-            //AudioManager.i.PlayMusic(CurrentScene.SceneMusic, fade: true);
+           StartCoroutine(playerParty.RunEvolutions());
+        else
+            AudioManager.i.PlayMusic(CurrentScene.SceneMusic, fade: true);
     }
 
     private void Update()

@@ -90,7 +90,7 @@ public class BattleSystem : MonoBehaviour
         player = playerParty.GetComponent<PlayerController>();
         isTrainerBattle = false;
 
-        //AudioManager.i.PlayMusic(wildBattleMusic);
+        AudioManager.i.PlayMusic(wildBattleMusic);
 
         StartCoroutine(SetupBattle());
     }
@@ -104,7 +104,7 @@ public class BattleSystem : MonoBehaviour
         player = playerParty.GetComponent<PlayerController>();
         trainer = trainerParty.GetComponent<TrainerController>();
 
-        //AudioManager.i.PlayMusic(trainerBattleMusic);
+        AudioManager.i.PlayMusic(trainerBattleMusic);
 
         StartCoroutine(SetupBattle());
     }
@@ -300,12 +300,12 @@ public class BattleSystem : MonoBehaviour
         {
 
             sourceUnit.PlayAttackAnimation();
-            //AudioManager.i.PlaySfx(move.Base.Sound);
+            AudioManager.i.PlaySfx(move.Base.Sound);
 
             yield return new WaitForSeconds(1f);
             
             targetUnit.PlayHitAnimation();
-            //AudioManager.i.PlaySfx(AudioId.Hit);
+            AudioManager.i.PlaySfx(AudioId.Hit);
 
             if (move.Base.Category == MoveCategory.Status)
             {
@@ -429,8 +429,8 @@ public class BattleSystem : MonoBehaviour
             if (isTrainerBattle)
                 battlWon = trainerParty.GetHealthyPokemon() == null;
 
-            //if (battlWon)
-                //AudioManager.i.PlayMusic(battleVictoryMusic);
+            if (battlWon)
+                AudioManager.i.PlayMusic(battleVictoryMusic);
 
             // Exp Gain
             int expYield = faintedUnit.Pokemon.Base.ExpYield;

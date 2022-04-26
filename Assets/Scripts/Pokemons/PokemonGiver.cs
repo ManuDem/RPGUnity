@@ -22,7 +22,7 @@ public class PokemonGiver : MonoBehaviour, ISavable
 
         used = true;
 
-        //AudioManager.i.PlaySfx(AudioId.PokemonObtained, pauseMusic: true);
+        AudioManager.i.PlaySfx(AudioId.PokemonObtained, pauseMusic: true);
 
 
         string dialogText = $"{player.Name} {received} {pokemonToGive.Base.Name}.";

@@ -15,7 +15,7 @@ public class Dialog
         get
         {
             lines.Clear();
-            if (dialog.Contains('\n'))
+            if (dialog != null && dialog.Contains('\n'))
             {
                 string[] splittedStringNewLine = dialog.Split(new char[] { '\n' });
                 for (int countNewLine = 0; countNewLine < splittedStringNewLine.Length; countNewLine++)

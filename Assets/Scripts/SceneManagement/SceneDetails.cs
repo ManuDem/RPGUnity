@@ -22,8 +22,8 @@ public class SceneDetails : MonoBehaviour
             LoadScene();
             GameController.Instance.SetCurrentScene(this);
 
-            //if (sceneMusic != null)
-                //AudioManager.i.PlayMusic(sceneMusic, fade: true);
+            if (sceneMusic != null)
+                AudioManager.i.PlayMusic(sceneMusic, fade: true);
 
             // Load all connected scenes
             foreach (var scene in connectedScenes)

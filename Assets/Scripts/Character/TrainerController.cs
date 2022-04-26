@@ -38,7 +38,7 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
 
         if (!battleLost)
         {
-            //AudioManager.i.PlayMusic(trainerAppearsClip);
+            AudioManager.i.PlayMusic(trainerAppearsClip);
 
             yield return DialogManager.Instance.ShowDialog(dialog, sprite, name);
 
@@ -53,7 +53,7 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
 
     public IEnumerator TriggerTrainerBattle(PlayerController player)
     {
-        //AudioManager.i.PlayMusic(trainerAppearsClip);
+        AudioManager.i.PlayMusic(trainerAppearsClip);
 
         // Show Exclamation
         exclamation.SetActive(true);
