@@ -13,6 +13,8 @@ public class EvolutionManager : MonoBehaviour
     [TextArea] [SerializeField] string isEvolving;
     [TextArea] [SerializeField] string evolvedInto;
 
+    [SerializeField] AudioClip evolutionMusic;
+
     public event Action OnStartEvolution;
     public event Action OnCompleteEvolution;
 

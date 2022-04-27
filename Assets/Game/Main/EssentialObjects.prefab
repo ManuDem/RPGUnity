@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6089310677567130637}
+  - component: {fileID: 6920909202405339704}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -33,6 +34,24 @@ Transform:
   m_Father: {fileID: 7075411000696114705}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6920909202405339704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265085340102139862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 452bf69ca37a96642be035f775e5aa91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxList:
+  - id: 0
+    clip: {fileID: 8300000, guid: cd6b0b57e67ff484fa8febcaed77a285, type: 3}
+  musicPlayer: {fileID: 3101679523239351854}
+  sfxPlayer: {fileID: 4975458900738342389}
+  fadeDuration: 0.75
 --- !u!1 &2641648208535244714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,9 +1554,9 @@ MonoBehaviour:
     type: 3}
   moveSelectionUI: {fileID: 7075410999979646797}
   inventoryUI: {fileID: 6584159537931309597}
-  wildBattleMusic: {fileID: 0}
-  trainerBattleMusic: {fileID: 0}
-  battleVictoryMusic: {fileID: 0}
+  wildBattleMusic: {fileID: 8300000, guid: 3086c1f8541654f4898e2703f0a3df7e, type: 3}
+  trainerBattleMusic: {fileID: 8300000, guid: d4c7f2837278db9479928b45a2a2b435, type: 3}
+  battleVictoryMusic: {fileID: 8300000, guid: f363a92adbd37c444ad9f9e21c4f3ee0, type: 3}
   aWildAppared: 'Uddio! Appare un '
   wantsToBattle: ha voglia di perdere
   sendOut: manda in campo
@@ -3030,8 +3049,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   evolutionUI: {fileID: 4814327092556697250}
   pokemonImage: {fileID: 2953591465624966706}
-  isEvolving: si sta evolvendo.
-  evolvedInto: si evolve in
 --- !u!114 &593799771681887616
 MonoBehaviour:
   m_ObjectHideFlags: 0
