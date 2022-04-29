@@ -9,6 +9,14 @@ public class Pokemon
     [SerializeField] PokemonBase _base;
     [SerializeField] int level;
     [SerializeField] int difficultyVariable;
+    [SerializeField] MoveBase moveOne;
+    [SerializeField] MoveBase moveTwo;
+    [SerializeField] MoveBase moveThree;
+    [SerializeField] MoveBase moveFour;
+
+ string rose = "sale!";
+string fell = "cala!";
+string of = "di";
 
     PokemonParty playerPokemonParty;
     int totalLevels;
@@ -76,14 +84,40 @@ public class Pokemon
 
         // Generate Moves
         Moves = new List<Move>();
-        foreach (var move in Base.LearnableMoves)
+        if (moveOne != null || moveTwo != null || moveThree != null || moveFour != null)
         {
-            if (move.Level <= Level)
-                Moves.Add(new Move(move.Base));
+            if (moveOne != null)
+            Moves.Add(new Move(moveOne));
 
-            if (Moves.Count >= PokemonBase.MaxNumOfMoves)
-                break;
+            if (moveTwo != null)
+                Moves.Add(new Move(moveTwo));
+
+            if (moveThree != null)
+                Moves.Add(new Move(moveThree));
+
+            if (moveFour != null)
+                Moves.Add(new Move(moveFour));
+
+            foreach (var move in Base.LearnableMoves)
+            {
+                if (move.Level <= Level)
+                    Moves.Add(new Move(move.Base));
+
+                if (Moves.Count >= PokemonBase.MaxNumOfMoves)
+                    break;
+            }
         }
+        else {
+            foreach (var move in Base.LearnableMoves)
+            {
+                if (move.Level <= Level)
+                    Moves.Add(new Move(move.Base));
+
+                if (Moves.Count >= PokemonBase.MaxNumOfMoves)
+                    break;
+            }
+        }
+
 
         Exp = Base.GetExpForLevel(Level);
 
@@ -187,9 +221,9 @@ public class Pokemon
             StatBoosts[stat] = Mathf.Clamp(StatBoosts[stat] + boost, -6, 6);
 
             if (boost > 0)
-                StatusChanges.Enqueue($"{Base.Name}'s {stat} rose!");
+                StatusChanges.Enqueue($"{stat} {of} {Base.Name} {rose}");
             else
-                StatusChanges.Enqueue($"{Base.Name}'s {stat} fell!");
+                StatusChanges.Enqueue($"{stat} {of} {Base.Name} {fell}");
 
             Debug.Log($"{stat} has been boosted to {StatBoosts[stat]}");
         }
@@ -319,7 +353,7 @@ public class Pokemon
 
         Status = ConditionsDB.Conditions[conditionId];
         Status?.OnStart?.Invoke(this);
-        StatusChanges.Enqueue($"{Base.Name} {Status.StartMessage}");
+        StatusChanges.Enqueue($"{Base.Name} {Status.StartMessage}.");
         OnStatusChanged?.Invoke();
     }
 
@@ -335,7 +369,7 @@ public class Pokemon
 
         VolatileStatus = ConditionsDB.Conditions[conditionId];
         VolatileStatus?.OnStart?.Invoke(this);
-        StatusChanges.Enqueue($"{Base.Name} {VolatileStatus.StartMessage}");
+        StatusChanges.Enqueue($"{Base.Name} {VolatileStatus.StartMessage}.");
     }
 
     public void CureVolatileStatus()

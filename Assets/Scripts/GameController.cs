@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public enum GameState { FreeRoam, Battle, Dialog, Menu, PartyScreen, Bag, Cutscene, Paused, Evolution, Shop }
+public enum GameState { FreeRoam, Battle, Dialog, Menu, MainMenu, PartyScreen, Bag, Cutscene, Paused, Evolution, Shop }
 
 public class GameController : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class GameController : MonoBehaviour
     [SerializeField] Camera worldCamera;
     [SerializeField] PartyScreen partyScreen;
     [SerializeField] InventoryUI inventoryUI;
+
+    [Header("Dialog")]
+    [SerializeField] Dialog dialog;
 
     GameState state;
     GameState prevState;
@@ -22,12 +26,15 @@ public class GameController : MonoBehaviour
 
     MenuController menuController;
 
+    MainMenuController mainMenuController;
+
     public static GameController Instance { get; private set; }
     private void Awake()
     {
         Instance = this;
 
         menuController = GetComponent<MenuController>();
+        mainMenuController = GetComponent<MainMenuController>();
 
         PokemonDB.Init();
         MoveDB.Init();
@@ -61,6 +68,13 @@ public class GameController : MonoBehaviour
 
         menuController.onMenuSelected += OnMenuSelected;
 
+        mainMenuController.onBack += () =>
+        {
+            state = GameState.FreeRoam;
+        };
+
+        mainMenuController.onMenuSelected += OnMainMenuSelected;
+
         EvolutionManager.i.OnStartEvolution += () =>
         {
             stateBeforeEvolution = state;
@@ -76,6 +90,11 @@ public class GameController : MonoBehaviour
 
         ShopController.i.OnStart += () => state = GameState.Shop;
         ShopController.i.OnFinish += () => state = GameState.FreeRoam;
+
+        if (SceneManager.GetActiveScene().name == "MainMenu") {
+            mainMenuController.OpenMenu();
+            state = GameState.MainMenu;
+        }
     }
 
     public void PauseGame(bool pause)
@@ -93,43 +112,80 @@ public class GameController : MonoBehaviour
 
     public void StartBattle()
     {
-        state = GameState.Battle;
-        battleSystem.gameObject.SetActive(true);
-        worldCamera.gameObject.SetActive(false);
-
         var playerParty = playerController.GetComponent<PokemonParty>();
-        var wildPokemon = CurrentScene.GetComponent<MapArea>().GetRandomWildPokemon();
 
-        var wildPokemonCopy = new Pokemon(wildPokemon.Base, wildPokemon.Level);
+        var nextPokemon = playerParty.GetHealthyPokemon();
+        if (nextPokemon == null)
+        {
+            Debug.Log("Defeated");
+            StartCoroutine(                ShowDialogDefeated());
+        }
+        else
+        {
+            state = GameState.Battle;
+            battleSystem.gameObject.SetActive(true);
+            worldCamera.gameObject.SetActive(false);
 
-        battleSystem.StartBattle(playerParty, wildPokemonCopy);
+            var wildPokemon = CurrentScene.GetComponent<MapArea>().GetRandomWildPokemon();
+
+            var wildPokemonCopy = new Pokemon(wildPokemon.Base, wildPokemon.Level);
+
+            battleSystem.StartBattle(playerParty, wildPokemonCopy);
+        }
     }
 
     TrainerController trainer;
     public void StartTrainerBattle(TrainerController trainer)
     {
-        state = GameState.Battle;
-        battleSystem.gameObject.SetActive(true);
-        worldCamera.gameObject.SetActive(false);
-
-        this.trainer = trainer;
         var playerParty = playerController.GetComponent<PokemonParty>();
-        var trainerParty = trainer.GetComponent<PokemonParty>();
 
-        battleSystem.StartTrainerBattle(playerParty, trainerParty);
+        var nextPokemon = playerParty.GetHealthyPokemon();
+        if (nextPokemon == null)
+        {
+            Debug.Log("Defeated");
+            StartCoroutine(ShowDialogDefeated());
+        }
+        else
+        {
+            state = GameState.Battle;
+            battleSystem.gameObject.SetActive(true);
+            worldCamera.gameObject.SetActive(false);
+
+            this.trainer = trainer;
+            var trainerParty = trainer.GetComponent<PokemonParty>();
+
+            battleSystem.StartTrainerBattle(playerParty, trainerParty);
+        }
+            }
+
+    public IEnumerator ShowDialogDefeated()
+    {
+        yield return DialogManager.Instance.ShowDialogSprite(dialog, null, null);
     }
 
     public void OnEnterTrainersView(TrainerController trainer)
     {
-        state = GameState.Cutscene;
-                StartCoroutine(trainer.TriggerTrainerBattle(playerController));
+        var playerParty = playerController.GetComponent<PokemonParty>();
+
+        var nextPokemon = playerParty.GetHealthyPokemon();
+        if (nextPokemon == null)
+        {
+            Debug.Log("Defeated");
+            StartCoroutine(ShowDialogDefeated());
+        }
+        else
+        {
+            state = GameState.Cutscene;
+            StartCoroutine(trainer.TriggerTrainerBattle(playerController));
+        }
+       
     }
 
     void EndBattle(bool won)
     {
         if (trainer != null && won == true)
         {
-            trainer.BattleLost();
+            StartCoroutine(trainer.BattleLost(transform));
             trainer = null;
         }
 
@@ -143,7 +199,7 @@ public class GameController : MonoBehaviour
         bool hasEvolutions = playerParty.CheckForEvolutions();
 
         if (hasEvolutions)
-           StartCoroutine(playerParty.RunEvolutions());
+            StartCoroutine(playerParty.RunEvolutions());
         else
             AudioManager.i.PlayMusic(CurrentScene.SceneMusic, fade: true);
     }
@@ -159,6 +215,12 @@ public class GameController : MonoBehaviour
                 menuController.OpenMenu();
                 state = GameState.Menu;
             }
+
+            /*if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                mainMenuController.OpenMenu();
+                state = GameState.MainMenu;
+            }*/
         }
         else if (state == GameState.Battle)
         {
@@ -171,6 +233,10 @@ public class GameController : MonoBehaviour
         else if (state == GameState.Menu)
         {
             menuController.HandleUpdate();
+        }
+        else if (state == GameState.MainMenu)
+        {
+            mainMenuController.HandleUpdate();
         }
         else if (state == GameState.PartyScreen)
         {
@@ -209,7 +275,7 @@ public class GameController : MonoBehaviour
         CurrentScene = currScene;
     }
 
-    void OnMenuSelected(int selectedItem)
+    public void OnMenuSelected(int selectedItem)
     {
         if (selectedItem == 0)
         {
@@ -236,6 +302,35 @@ public class GameController : MonoBehaviour
             state = GameState.FreeRoam;
         }
     }
+    public void OnMainMenuSelected(int selectedItem)
+    {
+        if (selectedItem == 0)
+        {
+            // New Game
+            var operation = SceneManager.LoadSceneAsync("Gameplay");
+            operation.completed += (AsyncOperation op) =>
+            {
+                state = GameState.FreeRoam;
+            };
+        }
+        else if (selectedItem == 1)
+        {
+            // Load
+            var operation = SceneManager.LoadSceneAsync("Gameplay");
+
+            operation.completed += (AsyncOperation op) =>
+            {
+                SavingSystem.i.Load("saveSlot1");
+                state = GameState.FreeRoam;
+            };            
+        }
+        else if (selectedItem == 2)
+        {
+            // Exit
+            Application.Quit();
+        }
+    }
+
 
     public IEnumerator MoveCamera(Vector2 moveOffset, bool waitForFadeOut=false)
     {

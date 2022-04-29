@@ -58,12 +58,12 @@ public class ItemDialogQuest : MonoBehaviour, Interactable, ISavable
             }
             else
             {
-                yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue, sprite, nameText);
+                yield return DialogManager.Instance.ShowDialogSprite(activeQuest.Base.InProgressDialogue, sprite, nameText);
             }
         }
         else
         {
-            yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
+            yield return DialogManager.Instance.ShowDialogSprite(dialog, sprite, nameText);
         }
 
         state = IDQState.Idle;

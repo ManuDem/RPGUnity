@@ -22,6 +22,21 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] PartyScreen partyScreen;
     [SerializeField] MoveSelectionUI moveSelectionUI;
 
+    [Header("Dialog")]
+    [TextArea] [SerializeField] string thisItemCannotBeUsedInBattle;
+    [TextArea] [SerializeField] string thisItemCannotBeUsedOutsideBattle;
+    [TextArea] [SerializeField] string itWontHaveAnyEffect;
+    [TextArea] [SerializeField] string thePlayerUsed;
+    [TextArea] [SerializeField] string alreadyKnow;
+    [TextArea] [SerializeField] string cantLearn;
+    [TextArea] [SerializeField] string learned;
+    [TextArea] [SerializeField] string isTryingToLearn;
+    [TextArea] [SerializeField] string butItCannotLearnMoreThan;
+    [TextArea] [SerializeField] string moves;
+    [TextArea] [SerializeField] string ChooseAMoveYouWantToForget;
+    [TextArea] [SerializeField] string didNotLearn;
+    [TextArea] [SerializeField] string forgot;
+    [TextArea] [SerializeField] string andLearned;
     Action<ItemBase> onItemUsed;
 
     int selectedItem = 0;
@@ -152,7 +167,7 @@ public class InventoryUI : MonoBehaviour
             // In Battle
             if (!item.CanUseInBattle)
             {
-                yield return DialogManager.Instance.ShowDialogText($"This item cannot be used in battle");
+                yield return DialogManager.Instance.ShowDialogText($"{thisItemCannotBeUsedInBattle}");
                 state = InventoryUIState.ItemSelection;
                 yield break;
             }
@@ -162,7 +177,7 @@ public class InventoryUI : MonoBehaviour
             // Outside Battle
             if (!item.CanUseOutsideBattle)
             {
-                yield return DialogManager.Instance.ShowDialogText($"This item cannot be used outside battle");
+                yield return DialogManager.Instance.ShowDialogText($"{thisItemCannotBeUsedOutsideBattle}");
                 state = InventoryUIState.ItemSelection;
                 yield break;
             }
@@ -200,7 +215,7 @@ public class InventoryUI : MonoBehaviour
             }
             else
             {
-                yield return DialogManager.Instance.ShowDialogText($"It won't have any affect!");
+                yield return DialogManager.Instance.ShowDialogText($"{itWontHaveAnyEffect}");
                 ClosePartyScreen();
                 yield break;
             }
@@ -210,14 +225,14 @@ public class InventoryUI : MonoBehaviour
         if (usedItem != null)
         {
             if (usedItem is RecoveryItem)
-                yield return DialogManager.Instance.ShowDialogText($"The player used {usedItem.Name}");
+                yield return DialogManager.Instance.ShowDialogText($"{thePlayerUsed} {usedItem.Name}.");
 
             onItemUsed?.Invoke(usedItem);
         }
         else
         {
             if (selectedCategory == (int)ItemCategory.Items)
-                yield return DialogManager.Instance.ShowDialogText($"It won't have any affect!");
+                yield return DialogManager.Instance.ShowDialogText($"{itWontHaveAnyEffect}");
         }
 
         ClosePartyScreen();
@@ -233,25 +248,25 @@ public class InventoryUI : MonoBehaviour
 
         if (pokemon.HasMove(tmItem.Move))
         {
-            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} already know {tmItem.Move.Name}");
+            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} {alreadyKnow} {tmItem.Move.Name}.");
             yield break;
         }
 
         if (!tmItem.CanBeTaught(pokemon))
         {
-            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} can't learn {tmItem.Move.Name}");
+            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} {cantLearn} {tmItem.Move.Name}.");
             yield break;
         }
 
         if (pokemon.Moves.Count < PokemonBase.MaxNumOfMoves)
         {
             pokemon.LearnMove(tmItem.Move);
-            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} learned {tmItem.Move.Name}");
+            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} {learned} {tmItem.Move.Name}.");
         }
         else
         {
-            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} is trying to learn {tmItem.Move.Name}");
-            yield return DialogManager.Instance.ShowDialogText($"But it cannot learn more than {PokemonBase.MaxNumOfMoves} moves");
+            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} {isTryingToLearn} {tmItem.Move.Name}.");
+            yield return DialogManager.Instance.ShowDialogText($"{butItCannotLearnMoreThan} {PokemonBase.MaxNumOfMoves} {moves}");
             yield return ChooseMoveToForget(pokemon, tmItem.Move);
             yield return new WaitUntil(() => state != InventoryUIState.MoveToForget);
         }
@@ -260,7 +275,7 @@ public class InventoryUI : MonoBehaviour
     IEnumerator ChooseMoveToForget(Pokemon pokemon, MoveBase newMove)
     {
         state = InventoryUIState.Busy;
-        yield return DialogManager.Instance.ShowDialogText($"Choose a move you wan't to forget", true, false);
+        yield return DialogManager.Instance.ShowDialogText($"{ChooseAMoveYouWantToForget}", true, false);
         moveSelectionUI.gameObject.SetActive(true);
         moveSelectionUI.SetMoveData(pokemon.Moves.Select(x => x.Base).ToList(), newMove);
         moveToLearn = newMove;
@@ -340,13 +355,13 @@ public class InventoryUI : MonoBehaviour
         if (moveIndex == PokemonBase.MaxNumOfMoves)
         {
             // Don't learn the new move
-            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} did not learn {moveToLearn.Name}");
+            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} {didNotLearn} {moveToLearn.Name}.");
         }
         else
         {
             // Forget the selected move and learn new move
             var selectedMove = pokemon.Moves[moveIndex].Base;
-            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} forgot {selectedMove.Name} and learned {moveToLearn.Name}");
+            yield return DialogManager.Instance.ShowDialogText($"{pokemon.Base.Name} {forgot} {selectedMove.Name} {andLearned} {moveToLearn.Name}.");
 
             pokemon.Moves[moveIndex] = new Move(moveToLearn);
         }

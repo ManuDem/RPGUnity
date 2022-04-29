@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SceneDetails : MonoBehaviour
 {
     [SerializeField] List<SceneDetails> connectedScenes;
     [SerializeField] AudioClip sceneMusic;
+    [SerializeField] Sprite background;
 
     public bool IsLoaded { get; private set; }
 
@@ -82,4 +84,6 @@ public class SceneDetails : MonoBehaviour
     }
 
     public AudioClip SceneMusic => sceneMusic;
+
+    public Sprite Background { get => background; set => background = value; }
 }

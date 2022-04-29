@@ -47,15 +47,6 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             state = NPCState.Dialog;
             character.LookTowards(initiator.position);
 
-            if (questToComplete != null)
-            {
-                var quest = new Quest(questToComplete, sprite, nameText);
-                yield return quest.CompleteQuest(initiator);
-                questToComplete = null;
-
-                Debug.Log($"{quest.Base.Name} completed");
-            }
-
             if (itemGiver != null && itemGiver.CanBeGiven())
             {
                 yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>(), sprite, nameText);
@@ -85,7 +76,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                 }
                 else
                 {
-                    yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue, sprite, nameText);
+                    yield return DialogManager.Instance.ShowDialogSprite(activeQuest.Base.InProgressDialogue, sprite, nameText);
                 }
             }
             else if (healer != null)
@@ -96,9 +87,18 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             {
                 yield return merchant.Trade();
             }
-            else
+            else if (questToComplete == null)
             {
-                yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
+                yield return DialogManager.Instance.ShowDialogSprite(dialog, sprite, nameText);
+            }
+
+            if (questToComplete != null)
+            {
+                var quest = new Quest(questToComplete, sprite, nameText);
+                yield return quest.CompleteQuest(initiator);
+                questToComplete = null;
+
+                Debug.Log($"{quest.Base.Name} completed");
             }
 
             idleTimer = 0f;

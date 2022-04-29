@@ -38,7 +38,7 @@ public class EvolutionManager : MonoBehaviour
         pokemon.Evolve(evolution);
 
         pokemonImage.sprite = pokemon.Base.FrontSprite;
-        yield return DialogManager.Instance.ShowDialogText($"{oldPokemon.Name} {evolvedInto} {pokemon.Base.Name}");
+        yield return DialogManager.Instance.ShowDialogText($"{oldPokemon.Name} {evolvedInto} {pokemon.Base.Name}.");
 
         evolutionUI.SetActive(false);
         OnCompleteEvolution?.Invoke();

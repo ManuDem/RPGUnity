@@ -5,6 +5,12 @@ using UnityEngine;
 [System.Serializable]
 public class Quest
 {
+
+    [Header("Dialog")]
+    [TextArea] [SerializeField] string receive = "riceve";
+    [TextArea] [SerializeField] string received = "Ricevi";
+
+
     public QuestBase Base { get; private set; }
     public QuestStatus Status { get; private set; }
 
@@ -38,7 +44,7 @@ public class Quest
     {
         Status = QuestStatus.Started;
 
-        yield return DialogManager.Instance.ShowDialog(Base.StartDialogue, sprite, nameText);
+        yield return DialogManager.Instance.ShowDialogSprite(Base.StartDialogue, sprite, nameText);
 
         var questList = QuestList.GetQuestList();
         questList.AddQuest(this);
@@ -48,7 +54,7 @@ public class Quest
     {
         Status = QuestStatus.Completed;
 
-        yield return DialogManager.Instance.ShowDialog(Base.CompletedDialogue, sprite, nameText);
+        yield return DialogManager.Instance.ShowDialogSprite(Base.CompletedDialogue, sprite, nameText);
 
         var inventory = Inventory.GetInventory();
         if (Base.RequiredItem != null)
@@ -60,8 +66,7 @@ public class Quest
         {
             inventory.AddItem(Base.RewardItem);
 
-            string playerName = player.GetComponent<PlayerController>().Name;
-            yield return DialogManager.Instance.ShowDialogText($"{playerName} received {Base.RewardItem.Name}");
+            yield return DialogManager.Instance.ShowDialogText($"{received} {Base.RewardItem.Name}");
         }
 
         var questList = QuestList.GetQuestList();

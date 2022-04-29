@@ -8,10 +8,16 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
     [SerializeField] Sprite sprite;
     [SerializeField] Dialog dialog;
     [SerializeField] Dialog dialogAfterBattle;
+    [SerializeField] Dialog dialogYourPokemonAreDefeated;
     [SerializeField] GameObject exclamation;
     [SerializeField] GameObject fov;
 
     [SerializeField] AudioClip trainerAppearsClip;
+    [SerializeField] AudioClip trainerBattleMusic;
+
+    [Header("Quests")]
+    [SerializeField] QuestBase questToStart;
+    [SerializeField] QuestBase questToCompleteWhenDefeat;
 
     // State
     bool battleLost = false;
@@ -29,7 +35,7 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
 
     private void Update()
     {
-        character.HandleUpdate();
+            character.HandleUpdate();
     }
 
     public IEnumerator Interact(Transform initiator)
@@ -38,44 +44,79 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
 
         if (!battleLost)
         {
-            AudioManager.i.PlayMusic(trainerAppearsClip);
 
-            yield return DialogManager.Instance.ShowDialog(dialog, sprite, name);
+            var playerParty = initiator.GetComponent<PokemonParty>();
 
-            GameController.Instance.StartTrainerBattle(this);
+            var nextPokemon = playerParty.GetHealthyPokemon();
+            if (nextPokemon == null)
+            {
+                Debug.Log("Defeated");
+                yield return DialogManager.Instance.ShowDialogSprite(dialogYourPokemonAreDefeated, sprite, name);
+            }
+            else
+            {
+                AudioManager.i.PlayMusic(trainerAppearsClip);
+
+                yield return DialogManager.Instance.ShowDialogSprite(dialog, sprite, name);
+
+                GameController.Instance.StartTrainerBattle(this);
+            }
+
         }
         else
         {
-            yield return DialogManager.Instance.ShowDialog(dialogAfterBattle, sprite, name);
+            yield return DialogManager.Instance.ShowDialogSprite(dialogAfterBattle, sprite, name);
         }
         
     }
 
     public IEnumerator TriggerTrainerBattle(PlayerController player)
     {
-        AudioManager.i.PlayMusic(trainerAppearsClip);
 
-        // Show Exclamation
-        exclamation.SetActive(true);
-        yield return new WaitForSeconds(0.8f);
-        exclamation.SetActive(false);
+        var playerParty = player.GetComponent<PokemonParty>();
 
-        // Walk towards the player
-        var diff = player.transform.position - transform.position;
-        var moveVec = diff - diff.normalized;
-        moveVec = new Vector2(Mathf.Round(moveVec.x), Mathf.Round(moveVec.y));
+        var nextPokemon = playerParty.GetHealthyPokemon();
+        if (nextPokemon == null)
+        {
+            Debug.Log("Defeated");
 
-        yield return character.Move(moveVec);
+        }
+        else
+        {
+            AudioManager.i.PlayMusic(trainerAppearsClip);
 
-        // Show dialog
-        yield return DialogManager.Instance.ShowDialog(dialog, sprite, name);
-        GameController.Instance.StartTrainerBattle(this);
+            // Show Exclamation
+            exclamation.SetActive(true);
+            yield return new WaitForSeconds(0.8f);
+            exclamation.SetActive(false);
+
+            // Walk towards the player
+            var diff = player.transform.position - transform.position;
+            var moveVec = diff - diff.normalized;
+            moveVec = new Vector2(Mathf.Round(moveVec.x), Mathf.Round(moveVec.y));
+
+            yield return character.Move(moveVec);
+
+            // Show dialog
+            yield return DialogManager.Instance.ShowDialogSprite(dialog, sprite, name);
+            GameController.Instance.StartTrainerBattle(this);
+        }
     }
 
-    public void BattleLost()
+    public IEnumerator BattleLost(Transform initiator)
     {
+
         battleLost = true;
         fov.gameObject.SetActive(false);
+
+        if (questToCompleteWhenDefeat != null)
+        {
+            var quest = new Quest(questToCompleteWhenDefeat, sprite, name);
+            yield return quest.CompleteQuest(initiator);
+            questToCompleteWhenDefeat = null;
+
+            Debug.Log($"{quest.Base.Name} completed");
+        }
     }
 
     public void SetFovRotation(FacingDirection dir)
@@ -111,4 +152,5 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
     public Sprite Sprite {
         get => sprite;
     }
+    public AudioClip TrainerBattleMusic { get => trainerBattleMusic; set => trainerBattleMusic = value; }
 }

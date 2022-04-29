@@ -42,8 +42,7 @@ public class MoveBase : ScriptableObject
     public MoveTarget Target { get => target; set => target = value; }
     public int Id { get => id; set => id = value; }
     public PokeApiMove PokeApiMove { get => pokeApiMove; set => pokeApiMove = value; }
-
-    public AudioClip Sound => sound;
+    public AudioClip Sound { get => sound; set => sound = value; }
 }
 
 [System.Serializable]

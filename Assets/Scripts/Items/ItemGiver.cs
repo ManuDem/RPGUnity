@@ -15,11 +15,13 @@ public class ItemGiver : MonoBehaviour, ISavable
 
     public IEnumerator GiveItem(PlayerController player, Sprite sprite, string nameText)
     {
-        yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
+        yield return DialogManager.Instance.ShowDialogSprite(dialog, sprite, nameText);
 
         player.GetComponent<Inventory>().AddItem(item, count);
 
         used = true;
+
+        AudioManager.i.PlaySfx(AudioId.ItemObtained, pauseMusic: true);
 
         string dialogText = $"{player.Name} {received} {item.Name}.";
         if (count > 1)

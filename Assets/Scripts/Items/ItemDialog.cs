@@ -19,7 +19,7 @@ public class ItemDialog : MonoBehaviour, Interactable
 
     public IEnumerator Interact(Transform initiator)
     {
-        yield return DialogManager.Instance.ShowDialog(dialog);
+        yield return DialogManager.Instance.ShowDialogSprite(dialog, sprite, nameText);
     }
 }
 

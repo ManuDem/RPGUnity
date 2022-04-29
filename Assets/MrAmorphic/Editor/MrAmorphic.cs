@@ -1154,6 +1154,21 @@ namespace MrAmorphic
                 moveToAdd.Secondaries.Add(effects);
             }
 
+            foreach (AudioClip audioClip in GameObject.Find("AudioMoves").GetComponent<AudioMoves>().AudioClips)
+            {
+                if (audioClip.name.Replace(" ", "").ToLower().Equals(move.names.First(n => n.language.name == Language.en.ToString().Replace("_", "-")).name.Replace(" ", "").ToLower()))
+                {
+                    Debug.Log("Succes Moves Sound");
+
+                    Debug.Log("Moves" + moveToAdd.name.Replace(" ", ""));
+
+                    Debug.Log("Moves Sound" + audioClip.name.Replace(" ", "").ToLower());
+
+                    moveToAdd.Sound = audioClip;
+                 }
+            }
+
+
             moveToAdd.PokeApiMove = move;
 
             if (isNew)

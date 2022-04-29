@@ -15,7 +15,7 @@ public class PokemonGiver : MonoBehaviour, ISavable
 
     public IEnumerator GivePokemon(PlayerController player, Sprite sprite, string nameText)
     {
-        yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText);
+        yield return DialogManager.Instance.ShowDialogSprite(dialog, sprite, nameText);
 
         pokemonToGive.Init();
         player.GetComponent<PokemonParty>().AddPokemon(pokemonToGive);
