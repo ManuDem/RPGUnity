@@ -8,6 +8,12 @@ public class CharacterAnimator : MonoBehaviour
     [SerializeField] List<Sprite> walkUpSprites;
     [SerializeField] List<Sprite> walkRightSprites;
     [SerializeField] List<Sprite> walkLeftSprites;
+
+    [SerializeField] List<Sprite> runDownSprites;
+    [SerializeField] List<Sprite> runUpSprites;
+    [SerializeField] List<Sprite> runRightSprites;
+    [SerializeField] List<Sprite> runLeftSprites;
+    [SerializeField] bool isPlayer;
     [SerializeField] FacingDirection defaultDirection = FacingDirection.Down;
 
     // Parameters
@@ -20,6 +26,12 @@ public class CharacterAnimator : MonoBehaviour
     SpriteAnimator walkUpAnim;
     SpriteAnimator walkRightAnim;
     SpriteAnimator walkLeftAnim;
+
+    SpriteAnimator runDownAnim;
+    SpriteAnimator runUpAnim;
+    SpriteAnimator runRightAnim;
+    SpriteAnimator runLeftAnim;
+
 
     SpriteAnimator currentAnim;
     bool wasPreviouslyMoving;
@@ -34,6 +46,12 @@ public class CharacterAnimator : MonoBehaviour
         walkUpAnim = new SpriteAnimator(walkUpSprites, spriteRenderer);
         walkRightAnim = new SpriteAnimator(walkRightSprites, spriteRenderer);
         walkLeftAnim = new SpriteAnimator(walkLeftSprites, spriteRenderer);
+
+        runDownAnim = new SpriteAnimator(runDownSprites, spriteRenderer);
+        runUpAnim = new SpriteAnimator(runUpSprites, spriteRenderer);
+        runRightAnim = new SpriteAnimator(runRightSprites, spriteRenderer);
+        runLeftAnim = new SpriteAnimator(runLeftSprites, spriteRenderer);
+
         SetFacingDirection(defaultDirection);
 
         currentAnim = walkDownAnim;
@@ -43,14 +61,34 @@ public class CharacterAnimator : MonoBehaviour
     {
         var prevAnim = currentAnim;
 
-        if (MoveX == 1)
-            currentAnim = walkRightAnim;
-        else if (MoveX == -1)
-            currentAnim = walkLeftAnim;
-        else if (MoveY == 1)
-            currentAnim = walkUpAnim;
-        else if (MoveY == -1)
-            currentAnim = walkDownAnim;
+
+        if ((Input.GetKey(KeyCode.X)) && isPlayer)
+        {
+            if (MoveX == 1)
+                currentAnim = runRightAnim;
+            else if (MoveX == -1)
+                currentAnim = runLeftAnim;
+            else if (MoveY == 1)
+                currentAnim = runUpAnim;
+            else if (MoveY == -1)
+                currentAnim = runDownAnim;
+
+        }
+        else
+        {
+
+            if (MoveX == 1)
+                currentAnim = walkRightAnim;
+            else if (MoveX == -1)
+                currentAnim = walkLeftAnim;
+            else if (MoveY == 1)
+                currentAnim = walkUpAnim;
+            else if (MoveY == -1)
+                currentAnim = walkDownAnim;
+
+        }
+
+
 
         if (currentAnim != prevAnim || IsMoving != wasPreviouslyMoving)
             currentAnim.Start();
@@ -75,7 +113,8 @@ public class CharacterAnimator : MonoBehaviour
             MoveY = 1;
     }
 
-    public FacingDirection DefaultDirection {
+    public FacingDirection DefaultDirection
+    {
         get => defaultDirection;
     }
 }
