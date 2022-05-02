@@ -20,7 +20,7 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] GameObject pokeballSprite;
     [SerializeField] MoveSelectionUI moveSelectionUI;
     [SerializeField] InventoryUI inventoryUI;
-    [SerializeField] GameObject backgroundBattle;
+    [SerializeField] Image backgroundBattle;
 
     [Header("Audio")]
     [SerializeField] AudioClip wildBattleMusic;
@@ -91,7 +91,7 @@ public class BattleSystem : MonoBehaviour
         player = playerParty.GetComponent<PlayerController>();
         isTrainerBattle = false;
 
-        backgroundBattle.GetComponent<Image>().sprite = GameController.Instance.CurrentScene.Background;
+        backgroundBattle.sprite = GameController.Instance.CurrentScene.Background;
 
         AudioManager.i.PlayMusic(wildBattleMusic);
 
@@ -102,6 +102,8 @@ public class BattleSystem : MonoBehaviour
     {
         this.playerParty = playerParty;
         this.trainerParty = trainerParty;
+
+        backgroundBattle.sprite = GameController.Instance.CurrentScene.Background;
 
         isTrainerBattle = true;
         player = playerParty.GetComponent<PlayerController>();

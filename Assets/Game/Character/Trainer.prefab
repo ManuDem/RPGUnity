@@ -132,7 +132,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -240,6 +240,7 @@ MonoBehaviour:
   exclamation: {fileID: 5029692892248401813}
   fov: {fileID: 5029692891089035928}
   trainerAppearsClip: {fileID: 8300000, guid: 3fb5aef98d3d6224e8031a7440ecb818, type: 3}
+  trainerBattleMusic: {fileID: 0}
   questToStart: {fileID: 0}
   questToCompleteWhenDefeat: {fileID: 0}
 --- !u!114 &5029692891164889342
@@ -287,6 +288,11 @@ MonoBehaviour:
   - {fileID: 8543110888831817469, guid: fcd96a804ccf37147865db435d5b5b5b, type: 3}
   - {fileID: 1586632309283866365, guid: fcd96a804ccf37147865db435d5b5b5b, type: 3}
   - {fileID: -4935389179326390663, guid: fcd96a804ccf37147865db435d5b5b5b, type: 3}
+  runDownSprites: []
+  runUpSprites: []
+  runRightSprites: []
+  runLeftSprites: []
+  isPlayer: 0
   defaultDirection: 1
 --- !u!114 &5029692891164889328
 MonoBehaviour:
@@ -304,6 +310,10 @@ MonoBehaviour:
   - _base: {fileID: 11400000, guid: fdf7377da95ef864c91ef8528144df2d, type: 2}
     level: 2
     difficultyVariable: 0
+    moveOne: {fileID: 0}
+    moveTwo: {fileID: 0}
+    moveThree: {fileID: 0}
+    moveFour: {fileID: 0}
 --- !u!114 &-8251957951928725588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,7 +379,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -387,8 +397,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1624203421
-  m_SortingLayer: 2
+  m_SortingLayerID: 223146663
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 693a0b602f398c54ba0cee11e7fa8859, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

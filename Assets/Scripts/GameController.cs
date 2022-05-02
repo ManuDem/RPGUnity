@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,7 @@ public class GameController : MonoBehaviour
     [SerializeField] Camera worldCamera;
     [SerializeField] PartyScreen partyScreen;
     [SerializeField] InventoryUI inventoryUI;
+    [SerializeField] MapNameManager mapNameManager;
 
     [Header("Dialog")]
     [SerializeField] Dialog dialog;
@@ -48,6 +50,8 @@ public class GameController : MonoBehaviour
         battleSystem.OnBattleOver += EndBattle;
 
         partyScreen.Init();
+
+        DayNightManager.i.HandleUpdate();
 
         DialogManager.Instance.OnShowDialog += () =>
         {
@@ -91,9 +95,10 @@ public class GameController : MonoBehaviour
         ShopController.i.OnStart += () => state = GameState.Shop;
         ShopController.i.OnFinish += () => state = GameState.FreeRoam;
 
-        if (SceneManager.GetActiveScene().name == "MainMenu") {
+        state = GameState.MainMenu;
+
+        if (state == GameState.MainMenu) {
             mainMenuController.OpenMenu();
-            state = GameState.MainMenu;
         }
     }
 
@@ -269,10 +274,27 @@ public class GameController : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        DayNightManager.i.HandleUpdate();
+    }
+
     public void SetCurrentScene(SceneDetails currScene)
     {
+
         PrevScene = CurrentScene;
         CurrentScene = currScene;
+
+
+
+        mapNameManager.gameObject.SetActive(true);
+        mapNameManager.setMapName(CurrentScene.GetComponent<MapArea>().MapName);
+        StartCoroutine(mapNameManager.moveWitBothWays());
+      
+    }
+
+    public void SetMapName() {
+
     }
 
     public void OnMenuSelected(int selectedItem)

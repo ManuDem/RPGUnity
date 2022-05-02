@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 // Teleports the player to a different position without swithcing scenes
 public class LocationPortal : MonoBehaviour, IPlayerTriggerable
