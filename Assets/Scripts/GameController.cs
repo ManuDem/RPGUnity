@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum GameState { FreeRoam, Battle, Dialog, Menu, MainMenu, PartyScreen, Bag, Cutscene, Paused, Evolution, Shop }
+public enum GameState { FreeRoam, Battle, Dialog, Menu, MainMenu, NewGameMenu, PartyScreen, Bag, Cutscene, Paused, Evolution, Shop }
 
 public class GameController : MonoBehaviour
 {
@@ -30,6 +30,8 @@ public class GameController : MonoBehaviour
 
     MainMenuController mainMenuController;
 
+    NewGameMenuController newGameMenuController;
+
     public static GameController Instance { get; private set; }
     private void Awake()
     {
@@ -37,6 +39,7 @@ public class GameController : MonoBehaviour
 
         menuController = GetComponent<MenuController>();
         mainMenuController = GetComponent<MainMenuController>();
+        newGameMenuController = GetComponent<NewGameMenuController>();
 
         PokemonDB.Init();
         MoveDB.Init();
@@ -78,6 +81,13 @@ public class GameController : MonoBehaviour
         };
 
         mainMenuController.onMenuSelected += OnMainMenuSelected;
+
+        newGameMenuController.onBack += () =>
+        {
+            state = GameState.FreeRoam;
+        };
+
+        newGameMenuController.onMenuSelected += OnNewGameMenuSelected;
 
         EvolutionManager.i.OnStartEvolution += () =>
         {
@@ -243,6 +253,10 @@ public class GameController : MonoBehaviour
         {
             mainMenuController.HandleUpdate();
         }
+        else if (state == GameState.NewGameMenu)
+        {
+            newGameMenuController.HandleUpdate();
+        }
         else if (state == GameState.PartyScreen)
         {
             Action onSelected = () =>
@@ -285,8 +299,6 @@ public class GameController : MonoBehaviour
         PrevScene = CurrentScene;
         CurrentScene = currScene;
 
-
-
         mapNameManager.gameObject.SetActive(true);
         mapNameManager.setMapName(CurrentScene.GetComponent<MapArea>().MapName);
         StartCoroutine(mapNameManager.moveWitBothWays());
@@ -328,12 +340,17 @@ public class GameController : MonoBehaviour
     {
         if (selectedItem == 0)
         {
+
+            StartCoroutine(startNewGame());
+
             // New Game
-            var operation = SceneManager.LoadSceneAsync("Gameplay");
+
+
+            /*var operation = SceneManager.LoadSceneAsync("Gameplay");
             operation.completed += (AsyncOperation op) =>
             {
-                state = GameState.FreeRoam;
-            };
+                state = GameState.NewGameMenu;
+            };*/
         }
         else if (selectedItem == 1)
         {
@@ -354,6 +371,27 @@ public class GameController : MonoBehaviour
     }
 
 
+    public void OnNewGameMenuSelected(int selectedItem)
+    {
+        if (selectedItem == 0)
+        {
+            // New Game
+            playerController.PlayerName = newGameMenuController.InputField.text;
+            var operation = SceneManager.LoadSceneAsync("Gameplay");
+            operation.completed += (AsyncOperation op) =>
+            {
+                newGameMenuController.CloseMenu();
+                state = GameState.FreeRoam;
+            };
+        }
+        else if (selectedItem == 1)
+        {
+            newGameMenuController.InputField.Select();
+           // newGameMenuController.InputField.onEndEdit.AddListener(delegate { });
+
+        }
+    }
+
     public IEnumerator MoveCamera(Vector2 moveOffset, bool waitForFadeOut=false)
     {
         yield return Fader.i.FadeIn(0.5f);
@@ -364,6 +402,19 @@ public class GameController : MonoBehaviour
             yield return Fader.i.FadeOut(0.5f);
         else
             StartCoroutine(Fader.i.FadeOut(0.5f));
+    }
+
+    public IEnumerator startNewGame() {
+        yield return Fader.i.FadeIn(1f);
+        mainMenuController.CloseMenu();
+
+        state = GameState.NewGameMenu;
+        newGameMenuController.OpenMenu();
+
+        yield return Fader.i.FadeOut(1f);
+
+        yield return newGameMenuController.openDialog();
+
     }
 
     public GameState State => state;

@@ -51,7 +51,7 @@ public class MainMenuController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             onMenuSelected?.Invoke(selectedItem);
-            CloseMenu();
+            //CloseMenu();
         }
         else if (Input.GetKeyDown(KeyCode.X))
         {
@@ -70,4 +70,5 @@ public class MainMenuController : MonoBehaviour
                 menuItems[i].color = Color.black;
         }
     }
+
 }

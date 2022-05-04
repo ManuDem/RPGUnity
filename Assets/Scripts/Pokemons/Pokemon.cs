@@ -74,11 +74,9 @@ string of = "di";
             }
 
             if (pokemonNumber > 0)
-            calculatedLevel = Mathf.RoundToInt(totalLevels / pokemonNumber) + difficultyVariable;
+            calculatedLevel = Mathf.RoundToInt(totalLevels / (pokemonNumber - 1)) + difficultyVariable;
 
-            if (calculatedLevel is 0)
-                level = 1;
-            else
+            if (calculatedLevel > 0 || calculatedLevel <= 100)
                 level = calculatedLevel;
         }
 
@@ -233,6 +231,7 @@ string of = "di";
     {
         if (Exp > Base.GetExpForLevel(level + 1))
         {
+            AudioManager.i.PlaySfx(AudioId.LevelUp);
             ++level;
             CalculateStats();
             return true;
@@ -279,6 +278,10 @@ string of = "di";
     {
         HP = MaxHp;
         OnHPChanged?.Invoke();
+
+        foreach (Move move in Moves) {
+            move.PP = move.Base.PP;
+        }
 
         CureStatus();
     }

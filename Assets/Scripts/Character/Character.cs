@@ -42,16 +42,30 @@ public class Character : MonoBehaviour
 
         while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
         {
-            if ((Input.GetKey(KeyCode.X)))
+            if (animator.IsOnBike && animator.IsPlayer)
             {
-                transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * 2 * Time.deltaTime);
+                transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * 3f * Time.deltaTime);
                 yield return null;
+
             }
-            else
+            else if (!animator.IsOnBike && animator.IsPlayer)
             {
+                if ((Input.GetKey(KeyCode.LeftShift)) && animator.IsPlayer)
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * 1.5f * Time.deltaTime);
+                    yield return null;
+                }
+                else
+                {
+                    transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
+                    yield return null;
+                }
+            }
+            else {
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
                 yield return null;
             }
+          
         }
 
 

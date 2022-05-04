@@ -277,6 +277,10 @@ MonoBehaviour:
   runUpSprites: []
   runRightSprites: []
   runLeftSprites: []
+  bikeDownSprites: []
+  bikeUpSprites: []
+  bikeRightSprites: []
+  bikeLeftSprites: []
   isPlayer: 0
   defaultDirection: 1
 --- !u!114 &2998410126923841693
@@ -291,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2eb66a52665c0b4788bfa7f5c6b60fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 70
+  moveSpeed: 7
 --- !u!50 &2998410126923841691
 Rigidbody2D:
   serializedVersion: 4
@@ -365,7 +369,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slots:
-  - item: {fileID: 11400000, guid: 012049bd9ccd9694cb4e11c6e14d997b, type: 2}
+  - item: {fileID: 11400000, guid: fa4af69ca70b40c47932be9a5e01f980, type: 2}
+    count: 5
+  - item: {fileID: 11400000, guid: c380a19622ff9d746ae306957100b94b, type: 2}
     count: 5
   pokeballSlots: []
   tmSlots: []

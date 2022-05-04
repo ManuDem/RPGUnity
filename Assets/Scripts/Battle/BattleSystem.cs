@@ -308,12 +308,21 @@ public class BattleSystem : MonoBehaviour
         {
 
             sourceUnit.PlayAttackAnimation();
-            AudioManager.i.PlaySfx(move.Base.Sound);
 
-            yield return new WaitForSeconds(1f);
-            
-            targetUnit.PlayHitAnimation();
-            AudioManager.i.PlaySfx(AudioId.Hit);
+            if (move.Base.Sound != null)
+            {
+                AudioManager.i.PlaySfx(move.Base.Sound);
+
+                yield return new WaitForSeconds(move.Base.Sound.length);
+
+                targetUnit.PlayHitAnimation();
+            }
+            else {
+                yield return new WaitForSeconds(1f);
+
+                AudioManager.i.PlaySfx(AudioId.Hit);
+                targetUnit.PlayHitAnimation();
+            }
 
             if (move.Base.Category == MoveCategory.Status)
             {
@@ -429,6 +438,7 @@ public class BattleSystem : MonoBehaviour
     {
         yield return dialogBox.TypeDialog($"{faintedUnit.Pokemon.Base.Name} {fainted}");
         faintedUnit.PlayFaintAnimation();
+        AudioManager.i.PlaySfx(AudioId.Faint);
         yield return new WaitForSeconds(2f);
 
         if (!faintedUnit.IsPlayerUnit)
@@ -445,8 +455,46 @@ public class BattleSystem : MonoBehaviour
             int enemyLevel = faintedUnit.Pokemon.Level;
             float trainerBonus = (isTrainerBattle) ? 1.5f : 1f;
 
-            int expGain = Mathf.FloorToInt((expYield * enemyLevel * trainerBonus) / 7);
+            int expGain = Mathf.FloorToInt((expYield * enemyLevel * trainerBonus) / 5);
             playerUnit.Pokemon.Exp += expGain;
+
+            foreach (Pokemon pokemon in this.playerParty.Pokemons)
+            {
+                if (pokemon != playerUnit.Pokemon)
+                {
+                    pokemon.Exp = Mathf.FloorToInt(expGain / 2);
+
+                    // Check Level Up
+                    while (pokemon.CheckForLevelUp())
+                    {
+                        yield return dialogBox.TypeDialog($"{pokemon.Base.Name} {grewToLevel} {pokemon.Level}.");
+
+                        // Try to learn a new Move
+                        var newMove = pokemon.GetLearnableMoveAtCurrLevel();
+                        if (newMove != null)
+                        {
+                            if (pokemon.Moves.Count < PokemonBase.MaxNumOfMoves)
+                            {
+                                playerUnit.Pokemon.LearnMove(newMove.Base);
+                                yield return dialogBox.TypeDialog($"{pokemon.Base.Name} {learned} {newMove.Base.Name}.");
+                                dialogBox.SetMoveNames(pokemon.Moves);
+                            }
+                            else
+                            {
+                                yield return dialogBox.TypeDialog($"{pokemon.Base.Name} {tryingToLearn} {newMove.Base.Name}.");
+                                yield return dialogBox.TypeDialog($"{butItCannotLearnMoreThan} {PokemonBase.MaxNumOfMoves} {moves}");
+                                yield return ChooseMoveToForget(pokemon, newMove.Base);
+                                yield return new WaitUntil(() => state != BattleState.MoveToForget);
+                                yield return new WaitForSeconds(2f);
+                            }
+                        }
+
+                        yield return playerUnit.Hud.SetExpSmooth(true);
+                    }
+
+                }
+            }
+
             yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {gained} {expGain} {exp}");
             yield return playerUnit.Hud.SetExpSmooth();
 
@@ -479,9 +527,9 @@ public class BattleSystem : MonoBehaviour
                 yield return playerUnit.Hud.SetExpSmooth(true);
             }
 
-
             yield return new WaitForSeconds(1f);
         }
+
 
         CheckForBattleOver(faintedUnit);
     }
@@ -792,7 +840,7 @@ public class BattleSystem : MonoBehaviour
             yield break;
         }
 
-        yield return dialogBox.TypeDialog($"{player.Name} {used} {pokeballItem.Name.ToUpper()}!");
+        yield return dialogBox.TypeDialog($"{player.PlayerName} {used} {pokeballItem.Name.ToUpper()}!");
 
         var pokeballObj = Instantiate(pokeballSprite, playerUnit.transform.position - new Vector3(2, 0), Quaternion.identity);
         var pokeball = pokeballObj.GetComponent<SpriteRenderer>();

@@ -13,6 +13,12 @@ public class CharacterAnimator : MonoBehaviour
     [SerializeField] List<Sprite> runUpSprites;
     [SerializeField] List<Sprite> runRightSprites;
     [SerializeField] List<Sprite> runLeftSprites;
+
+    [SerializeField] List<Sprite> bikeDownSprites;
+    [SerializeField] List<Sprite> bikeUpSprites;
+    [SerializeField] List<Sprite> bikeRightSprites;
+    [SerializeField] List<Sprite> bikeLeftSprites;
+
     [SerializeField] bool isPlayer;
     [SerializeField] FacingDirection defaultDirection = FacingDirection.Down;
 
@@ -32,9 +38,15 @@ public class CharacterAnimator : MonoBehaviour
     SpriteAnimator runRightAnim;
     SpriteAnimator runLeftAnim;
 
+    SpriteAnimator bikeDownAnim;
+    SpriteAnimator bikeUpAnim;
+    SpriteAnimator bikeRightAnim;
+    SpriteAnimator bikeLeftAnim;
 
     SpriteAnimator currentAnim;
     bool wasPreviouslyMoving;
+
+    bool isOnBike =false;
 
     // Refrences
     SpriteRenderer spriteRenderer;
@@ -52,6 +64,11 @@ public class CharacterAnimator : MonoBehaviour
         runRightAnim = new SpriteAnimator(runRightSprites, spriteRenderer);
         runLeftAnim = new SpriteAnimator(runLeftSprites, spriteRenderer);
 
+        bikeDownAnim = new SpriteAnimator(bikeDownSprites, spriteRenderer);
+        bikeUpAnim = new SpriteAnimator(bikeUpSprites, spriteRenderer);
+        bikeRightAnim = new SpriteAnimator(bikeRightSprites, spriteRenderer);
+        bikeLeftAnim = new SpriteAnimator(bikeLeftSprites, spriteRenderer);
+
         SetFacingDirection(defaultDirection);
 
         currentAnim = walkDownAnim;
@@ -61,22 +78,52 @@ public class CharacterAnimator : MonoBehaviour
     {
         var prevAnim = currentAnim;
 
+        if ((Input.GetKeyDown(KeyCode.B)) && IsPlayer)
+        {
+            //if(!isOnBike)
+            //AudioManager.
+            IsOnBike = !IsOnBike;
+        }
 
-        if ((Input.GetKey(KeyCode.X)) && isPlayer)
+        if (IsOnBike && isPlayer)
         {
             if (MoveX == 1)
-                currentAnim = runRightAnim;
+                currentAnim = bikeRightAnim;
             else if (MoveX == -1)
-                currentAnim = runLeftAnim;
+                currentAnim = bikeLeftAnim;
             else if (MoveY == 1)
-                currentAnim = runUpAnim;
+                currentAnim = bikeUpAnim;
             else if (MoveY == -1)
-                currentAnim = runDownAnim;
-
+                currentAnim = bikeDownAnim;
         }
-        else
+        else if (!IsOnBike && isPlayer)
         {
 
+            if ((Input.GetKey(KeyCode.LeftShift)) && IsPlayer)
+            {
+                if (MoveX == 1)
+                    currentAnim = runRightAnim;
+                else if (MoveX == -1)
+                    currentAnim = runLeftAnim;
+                else if (MoveY == 1)
+                    currentAnim = runUpAnim;
+                else if (MoveY == -1)
+                    currentAnim = runDownAnim;
+
+            }
+            else
+            {
+                if (MoveX == 1)
+                    currentAnim = walkRightAnim;
+                else if (MoveX == -1)
+                    currentAnim = walkLeftAnim;
+                else if (MoveY == 1)
+                    currentAnim = walkUpAnim;
+                else if (MoveY == -1)
+                    currentAnim = walkDownAnim;
+            }
+        }
+        else {
             if (MoveX == 1)
                 currentAnim = walkRightAnim;
             else if (MoveX == -1)
@@ -85,10 +132,7 @@ public class CharacterAnimator : MonoBehaviour
                 currentAnim = walkUpAnim;
             else if (MoveY == -1)
                 currentAnim = walkDownAnim;
-
         }
-
-
 
         if (currentAnim != prevAnim || IsMoving != wasPreviouslyMoving)
             currentAnim.Start();
@@ -117,6 +161,8 @@ public class CharacterAnimator : MonoBehaviour
     {
         get => defaultDirection;
     }
+    public bool IsPlayer { get => isPlayer; set => isPlayer = value; }
+    public bool IsOnBike { get => isOnBike; set => isOnBike = value; }
 }
 
 public enum FacingDirection { Up, Down, Left, Right }

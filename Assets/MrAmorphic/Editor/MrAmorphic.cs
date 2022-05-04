@@ -1122,7 +1122,11 @@ namespace MrAmorphic
 
             moveToAdd.Id = move.id;
             moveToAdd.Name = move.names.First(n => n.language.name == language.ToString().Replace("_", "-")).name;
-            moveToAdd.Accuracy = move.accuracy;
+            if (move.accuracy > 0)
+                moveToAdd.Accuracy = move.accuracy;
+            else
+                moveToAdd.Accuracy = 100;
+
             moveToAdd.Description = move.flavor_text_entries switch
             {
                 var x when x.Count(n => n.language.name == language.ToString().Replace("_", "-") && n.version_group.name == version_group.ToString().Replace("_", "-")) > 0 => x.First(n => n.language.name == language.ToString().Replace("_", "-") && n.version_group.name == version_group.ToString().Replace("_", "-")).flavor_text,
@@ -1137,6 +1141,13 @@ namespace MrAmorphic
             moveToAdd.Effects = new MoveEffects();
             moveToAdd.Effects.Boosts = new List<StatBoost>();
             moveToAdd.Secondaries = new List<SecondaryEffects>();
+
+            if (move.target.name.Equals("user")) { 
+              moveToAdd.Target = MoveTarget.Self;
+            }
+            else {
+                moveToAdd.Target = MoveTarget.Foe;
+            }
 
             foreach (var stat_change in move.stat_changes)
             {
@@ -1167,7 +1178,6 @@ namespace MrAmorphic
                     moveToAdd.Sound = audioClip;
                  }
             }
-
 
             moveToAdd.PokeApiMove = move;
 

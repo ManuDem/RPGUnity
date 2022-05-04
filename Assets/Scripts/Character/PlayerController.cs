@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour, ISavable
 {
-    [SerializeField] string name;
+    [SerializeField] string playerName;
     [SerializeField] Sprite sprite;
 
     private Vector2 input;
@@ -82,7 +82,8 @@ public class PlayerController : MonoBehaviour, ISavable
         var saveData = new PlayerSaveData()
         {
             position = new float[] { transform.position.x, transform.position.y },
-            pokemons = GetComponent<PokemonParty>().Pokemons.Select(p => p.GetSaveData()).ToList()
+            pokemons = GetComponent<PokemonParty>().Pokemons.Select(p => p.GetSaveData()).ToList(),
+            playerName = this.playerName
         };
 
         return saveData;
@@ -92,16 +93,14 @@ public class PlayerController : MonoBehaviour, ISavable
     {
         var saveData = (PlayerSaveData)state;
 
-        // Restor Position
+        // Restore Position
         var pos = saveData.position;
         transform.position = new Vector3(pos[0], pos[1]);
 
         // Restore Party
         GetComponent<PokemonParty>().Pokemons =  saveData.pokemons.Select(s => new Pokemon(s)).ToList();
-    }
 
-    public string Name {
-        get => name;
+        this.playerName = saveData.playerName;
     }
 
     public Sprite Sprite {
@@ -109,6 +108,8 @@ public class PlayerController : MonoBehaviour, ISavable
     }
 
     public Character Character => character;
+
+    public string PlayerName { get => playerName; set => playerName = value; }
 }
 
 [Serializable]
@@ -116,4 +117,5 @@ public class PlayerSaveData
 {
     public float[] position;
     public List<PokemonSaveData> pokemons;
+    public string playerName;
 }
