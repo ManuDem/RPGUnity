@@ -100,6 +100,7 @@ public class BattleSystem : MonoBehaviour
 
     public void StartTrainerBattle(PokemonParty playerParty, PokemonParty trainerParty)
     {
+
         this.playerParty = playerParty;
         this.trainerParty = trainerParty;
 
@@ -458,6 +459,38 @@ public class BattleSystem : MonoBehaviour
             int expGain = Mathf.FloorToInt((expYield * enemyLevel * trainerBonus) / 5);
             playerUnit.Pokemon.Exp += expGain;
 
+            yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {gained} {expGain} {exp}");
+            yield return playerUnit.Hud.SetExpSmooth();
+
+            // Check Level Up
+            while (playerUnit.Pokemon.CheckForLevelUp())
+            {
+                playerUnit.Hud.SetLevel();
+                yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {grewToLevel} {playerUnit.Pokemon.Level}.");
+
+                // Try to learn a new Move
+                var newMove = playerUnit.Pokemon.GetLearnableMoveAtCurrLevel();
+                if (newMove != null)
+                {
+                    if (playerUnit.Pokemon.Moves.Count < PokemonBase.MaxNumOfMoves)
+                    {
+                        playerUnit.Pokemon.LearnMove(newMove.Base);
+                        yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {learned} {newMove.Base.Name}.");
+                        dialogBox.SetMoveNames(playerUnit.Pokemon.Moves);
+                    }
+                    else
+                    {
+                        yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {tryingToLearn} {newMove.Base.Name}.");
+                        yield return dialogBox.TypeDialog($"{butItCannotLearnMoreThan} {PokemonBase.MaxNumOfMoves} {moves}");
+                        yield return ChooseMoveToForget(playerUnit.Pokemon, newMove.Base);
+                        yield return new WaitUntil(() => state != BattleState.MoveToForget);
+                        yield return new WaitForSeconds(2f);
+                    }
+                }
+
+                yield return playerUnit.Hud.SetExpSmooth(true);
+            }
+
             foreach (Pokemon pokemon in this.playerParty.Pokemons)
             {
                 if (pokemon != playerUnit.Pokemon)
@@ -493,38 +526,6 @@ public class BattleSystem : MonoBehaviour
                     }
 
                 }
-            }
-
-            yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {gained} {expGain} {exp}");
-            yield return playerUnit.Hud.SetExpSmooth();
-
-            // Check Level Up
-            while (playerUnit.Pokemon.CheckForLevelUp())
-            {
-                playerUnit.Hud.SetLevel();
-                yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {grewToLevel} {playerUnit.Pokemon.Level}.");
-
-                // Try to learn a new Move
-                var newMove = playerUnit.Pokemon.GetLearnableMoveAtCurrLevel();
-                if (newMove != null)
-                {
-                    if (playerUnit.Pokemon.Moves.Count < PokemonBase.MaxNumOfMoves)
-                    {
-                        playerUnit.Pokemon.LearnMove(newMove.Base);
-                        yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {learned} {newMove.Base.Name}.");
-                        dialogBox.SetMoveNames(playerUnit.Pokemon.Moves);
-                    }
-                    else
-                    {
-                        yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {tryingToLearn} {newMove.Base.Name}.");
-                        yield return dialogBox.TypeDialog($"{butItCannotLearnMoreThan} {PokemonBase.MaxNumOfMoves} {moves}");
-                        yield return ChooseMoveToForget(playerUnit.Pokemon, newMove.Base);
-                        yield return new WaitUntil(() => state != BattleState.MoveToForget);
-                        yield return new WaitForSeconds(2f);
-                    }
-                }
-
-                yield return playerUnit.Hud.SetExpSmooth(true);
             }
 
             yield return new WaitForSeconds(1f);

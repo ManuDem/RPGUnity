@@ -137,6 +137,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
+
             state = GameState.Battle;
             battleSystem.gameObject.SetActive(true);
             worldCamera.gameObject.SetActive(false);
@@ -162,6 +163,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
+
             state = GameState.Battle;
             battleSystem.gameObject.SetActive(true);
             worldCamera.gameObject.SetActive(false);
@@ -230,12 +232,6 @@ public class GameController : MonoBehaviour
                 menuController.OpenMenu();
                 state = GameState.Menu;
             }
-
-            /*if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                mainMenuController.OpenMenu();
-                state = GameState.MainMenu;
-            }*/
         }
         else if (state == GameState.Battle)
         {
@@ -340,28 +336,13 @@ public class GameController : MonoBehaviour
     {
         if (selectedItem == 0)
         {
-
+            //New Game
             StartCoroutine(startNewGame());
-
-            // New Game
-
-
-            /*var operation = SceneManager.LoadSceneAsync("Gameplay");
-            operation.completed += (AsyncOperation op) =>
-            {
-                state = GameState.NewGameMenu;
-            };*/
         }
         else if (selectedItem == 1)
         {
             // Load
-            var operation = SceneManager.LoadSceneAsync("Gameplay");
-
-            operation.completed += (AsyncOperation op) =>
-            {
-                SavingSystem.i.Load("saveSlot1");
-                state = GameState.FreeRoam;
-            };            
+            StartCoroutine(startLoadGame());
         }
         else if (selectedItem == 2)
         {
@@ -375,20 +356,13 @@ public class GameController : MonoBehaviour
     {
         if (selectedItem == 0)
         {
-            // New Game
-            playerController.PlayerName = newGameMenuController.InputField.text;
-            var operation = SceneManager.LoadSceneAsync("Gameplay");
-            operation.completed += (AsyncOperation op) =>
-            {
-                newGameMenuController.CloseMenu();
-                state = GameState.FreeRoam;
-            };
+            // New Game Confirm
+            StartCoroutine(startNewGameConfirm());
+
         }
         else if (selectedItem == 1)
         {
             newGameMenuController.InputField.Select();
-           // newGameMenuController.InputField.onEndEdit.AddListener(delegate { });
-
         }
     }
 
@@ -415,6 +389,44 @@ public class GameController : MonoBehaviour
 
         yield return newGameMenuController.openDialog();
 
+    }
+
+    public IEnumerator startNewGameConfirm()
+    {
+        yield return Fader.i.FadeIn(1f);
+        playerController.PlayerName = newGameMenuController.InputField.text;
+        var operation = SceneManager.LoadSceneAsync("Gameplay");
+        operation.completed += (AsyncOperation op) =>
+        {
+            StartCoroutine(sceneNewGame());
+        };
+    }
+
+    public IEnumerator sceneNewGame()
+    {
+        newGameMenuController.CloseMenu();
+        state = GameState.FreeRoam;
+        yield return Fader.i.FadeOut(1f);
+    }
+
+
+    public IEnumerator startLoadGame()
+    {
+
+        yield return Fader.i.FadeIn(1f);
+        var operation = SceneManager.LoadSceneAsync("Gameplay");
+        operation.completed += (AsyncOperation op) =>
+        {
+            StartCoroutine(sceneLoadGame());
+        };
+    }
+
+    public IEnumerator sceneLoadGame()
+    {
+        mainMenuController.CloseMenu();
+        SavingSystem.i.Load("saveSlot1");
+        state = GameState.FreeRoam;
+        yield return Fader.i.FadeOut(1f);
     }
 
     public GameState State => state;

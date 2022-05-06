@@ -12,34 +12,394 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b551ed52198d2b4b8b7b10c377cd878, type: 3}
   m_Name: ice-stone
   m_EditorClassIdentifier: 
-  name: 
-  description: 
-  icon: {fileID: 0}
-  price: 0
-  isSellable: 0
-  id: 0
+  name: Pietragelo
+  description: "Pietra particolare che fa evolvere determinate\nspecie di Pok\xE9mon.
+    Si intravede l\u2019immagine di\nun fiocco di neve."
+  icon: {fileID: 21300000, guid: d07896b8c06b1cc4ea7df295eb889cd0, type: 3}
+  price: 3000
+  isSellable: 1
+  id: 885
   pokeApiItem:
     attributes: []
     baby_trigger_for:
       name: 
       url: 
     category:
-      name: 
-      url: 
-    cost: 0
-    effect_entries: []
-    flavor_text_entries: []
+      name: evolution
+      url: https://pokeapi.co/api/v2/item-category/10/
+    cost: 3000
+    effect_entries:
+    - effect: "Used on a party Pok\xE9mon\n:   Evolves an Alola sandshrew into Alola
+        sandslash or an Alola vulpix into Alola ninetales."
+      language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      short_effect: Evolves an Alola Sandshrew into Alola Sandslash or an Alola Vulpix
+        into Alola Ninetales.
+    flavor_text_entries:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3042\u308B\u3000\u3068\u304F\u3066\u3044\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\n\u3057\u3093\u304B\u3055\u305B\u308B\u3000\u3075\u3057\u304E\u306A\u3000\u3044\u3057\u3002\n\u3086\u304D\u306E\u3000\u3082\u3088\u3046\u304C\u3000\u3042\u308B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC5B4\uB290 \uD2B9\uC815 \uD3EC\uCF13\uBAAC\uC744\n\uC9C4\uD654\uC2DC\uD0A4\uB294
+        \uC774\uC0C1\uD55C \uB3CC.\n\uB208\uC1A1\uC774 \uBB34\uB2AC\uAC00 \uC788\uB2E4."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u80FD\u8B93\u7279\u5B9A\u5BF6\u53EF\u5922\n\u9032\u5316\u7684\u795E\u5947\u77F3\u982D\u3002\n\u6709\u8457\u96EA\u82B1\u822C\u7684\u82B1\u7D0B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une pierre \xE9trange qui fait \xE9voluer certaines\nesp\xE8ces de Pok\xE9mon.
+        Un flocon de neige\nsemble dessin\xE9 dessus."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Dieser spezielle Stein l\xF6st bei bestimmten\nPok\xE9mon die Entwicklung
+        aus. Er hat ein\nSchneeflockenmuster."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Una piedra peculiar que hace evolucionar a algunos\nPok\xE9mon. Presenta
+        motivos que recuerdan a los\ncristales de hielo."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pietra particolare che fa evolvere determinate\nspecie di Pok\xE9mon.
+        Si intravede l\u2019immagine di\nun fiocco di neve."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A peculiar stone that can make certain species of\nPok\xE9mon evolve.
+        It has an unmistakable\nsnowflake pattern."
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u3042\u308B\u3000\u7279\u5B9A\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\n\u9032\u5316\u3055\u305B\u308B\u3000\u4E0D\u601D\u8B70\u306A\u3000\u77F3\u3002\n\u96EA\u306E\u3000\u6A21\u69D8\u304C\u3000\u3042\u308B\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u80FD\u8BA9\u67D0\u4E9B\u7279\u5B9A\u5B9D\u53EF\u68A6\n\u8FDB\u5316\u7684\u795E\u5947\u77F3\u5934\u3002\n\u6709\u7740\u96EA\u82B1\u822C\u7684\u82B1\u7EB9\u3002"
+      version_group:
+        name: sun-moon
+        url: https://pokeapi.co/api/v2/version-group/17/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3042\u308B\u3000\u3068\u304F\u3066\u3044\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\n\u3057\u3093\u304B\u3055\u305B\u308B\u3000\u3075\u3057\u304E\u306A\u3000\u3044\u3057\u3002\n\u3086\u304D\u306E\u3000\u3082\u3088\u3046\u304C\u3000\u3042\u308B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC5B4\uB290 \uD2B9\uC815 \uD3EC\uCF13\uBAAC\uC744\n\uC9C4\uD654\uC2DC\uD0A4\uB294
+        \uC774\uC0C1\uD55C \uB3CC.\n\uB208\uC1A1\uC774 \uBB34\uB2AC\uAC00 \uC788\uB2E4."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u80FD\u8B93\u7279\u5B9A\u5BF6\u53EF\u5922\n\u9032\u5316\u7684\u795E\u5947\u77F3\u982D\u3002\n\u6709\u8457\u96EA\u82B1\u822C\u7684\u82B1\u7D0B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une pierre \xE9trange qui fait \xE9voluer certaines\nesp\xE8ces de Pok\xE9mon.
+        Un flocon de neige\nsemble dessin\xE9 dessus."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Dieser spezielle Stein l\xF6st bei bestimmten\nPok\xE9mon die Entwicklung
+        aus. Er hat ein\nSchneeflockenmuster."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Una piedra peculiar que hace evolucionar a algunos\nPok\xE9mon. Presenta
+        motivos que recuerdan a los\ncristales de hielo."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pietra particolare che fa evolvere determinate\nspecie di Pok\xE9mon.
+        Si intravede l\u2019immagine di\nun fiocco di neve."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A peculiar stone that can make certain species of\nPok\xE9mon evolve.
+        It has an unmistakable\nsnowflake pattern."
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u3042\u308B\u3000\u7279\u5B9A\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\n\u9032\u5316\u3055\u305B\u308B\u3000\u4E0D\u601D\u8B70\u306A\u3000\u77F3\u3002\n\u96EA\u306E\u3000\u6A21\u69D8\u304C\u3000\u3042\u308B\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u80FD\u8BA9\u67D0\u4E9B\u7279\u5B9A\u5B9D\u53EF\u68A6\n\u8FDB\u5316\u7684\u795E\u5947\u77F3\u5934\u3002\n\u6709\u7740\u96EA\u82B1\u822C\u7684\u82B1\u7EB9\u3002"
+      version_group:
+        name: ultra-sun-ultra-moon
+        url: https://pokeapi.co/api/v2/version-group/18/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3042\u308B\u3000\u3068\u304F\u3066\u3044\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\n\u3057\u3093\u304B\u3055\u305B\u308B\u3000\u3075\u3057\u304E\u306A\u3000\u3044\u3057\u3002\n\u3086\u304D\u306E\u3000\u3082\u3088\u3046\u304C\u3000\u3042\u308B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC5B4\uB290 \uD2B9\uC815 \uD3EC\uCF13\uBAAC\uC744\n\uC9C4\uD654\uC2DC\uD0A4\uB294
+        \uC774\uC0C1\uD55C \uB3CC.\n\uB208\uC1A1\uC774 \uBB34\uB2AC\uAC00 \uC788\uB2E4."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u80FD\u8B93\u7279\u5B9A\u5BF6\u53EF\u5922\n\u9032\u5316\u7684\u795E\u5947\u77F3\u982D\u3002\n\u6709\u8457\u96EA\u82B1\u822C\u7684\u82B1\u7D0B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une pierre \xE9trange qui fait \xE9voluer certaines esp\xE8ces\nde Pok\xE9mon.
+        Un flocon de neige semble dessin\xE9 dessus."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Dieser spezielle Stein l\xF6st bei bestimmten\nPok\xE9mon die Entwicklung
+        aus. Er hat ein\nSchneeflockenmuster."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Una piedra peculiar que hace evolucionar a algunos\nPok\xE9mon. Presenta
+        motivos que recuerdan a los\ncristales de hielo."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pietra particolare che fa evolvere determinate\nspecie di Pok\xE9mon.
+        Si intravede l\u2019immagine di\nun fiocco di neve."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A peculiar stone that can make certain species of\nPok\xE9mon evolve.
+        It has an unmistakable\nsnowflake pattern."
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u3042\u308B\u3000\u7279\u5B9A\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\n\u9032\u5316\u3055\u305B\u308B\u3000\u4E0D\u601D\u8B70\u306A\u3000\u77F3\u3002\n\u96EA\u306E\u3000\u6A21\u69D8\u304C\u3000\u3042\u308B\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u80FD\u8BA9\u67D0\u4E9B\u7279\u5B9A\u5B9D\u53EF\u68A6\n\u8FDB\u5316\u7684\u795E\u5947\u77F3\u5934\u3002\n\u6709\u7740\u96EA\u82B1\u822C\u7684\u82B1\u7EB9\u3002"
+      version_group:
+        name: lets-go-pikachu-lets-go-eevee
+        url: https://pokeapi.co/api/v2/version-group/19/
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      text: "\u3042\u308B\u3000\u3068\u304F\u3066\u3044\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\n\u3057\u3093\u304B\u3055\u305B\u308B\u3000\u3075\u3057\u304E\u306A\u3000\u3044\u3057\u3002\n\u3086\u304D\u306E\u3000\u3082\u3088\u3046\u304C\u3000\u3042\u308B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      text: "\uC5B4\uB290 \uD2B9\uC815 \uD3EC\uCF13\uBAAC\uC744\n\uC9C4\uD654\uC2DC\uD0A4\uB294
+        \uC774\uC0C1\uD55C \uB3CC.\n\uB208\uC1A1\uC774 \uBB34\uB2AC\uAC00 \uC788\uB2E4."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      text: "\u80FD\u8B93\u7279\u5B9A\u5BF6\u53EF\u5922\n\u9032\u5316\u7684\u795E\u5947\u77F3\u982D\u3002\n\u6709\u8457\u96EA\u82B1\u822C\u7684\u82B1\u7D0B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      text: "Une pierre \xE9trange qui fait \xE9voluer certaines esp\xE8ces\nde Pok\xE9mon.
+        Un flocon de neige semble dessin\xE9 dessus."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      text: "Dieser spezielle Stein l\xF6st bei bestimmten Pok\xE9mon\ndie Entwicklung
+        aus. Er hat ein Schneeflockenmuster."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      text: "Una piedra peculiar que hace evolucionar a algunos\nPok\xE9mon. Presenta
+        motivos que recuerdan a los\ncristales de hielo."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      text: "Pietra particolare che fa evolvere determinate\nspecie di Pok\xE9mon.
+        Si intravede l\u2019immagine di\nun fiocco di neve."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      text: "A peculiar stone that can make certain species of\nPok\xE9mon evolve.
+        It has an unmistakable\nsnowflake pattern."
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      text: "\u3042\u308B\u3000\u7279\u5B9A\u306E\u3000\u30DD\u30B1\u30E2\u30F3\u3092\n\u9032\u5316\u3055\u305B\u308B\u3000\u4E0D\u601D\u8B70\u306A\u3000\u77F3\u3002\n\u96EA\u306E\u3000\u6A21\u69D8\u304C\u3000\u3042\u308B\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      text: "\u80FD\u8BA9\u67D0\u4E9B\u7279\u5B9A\u5B9D\u53EF\u68A6\n\u8FDB\u5316\u7684\u795E\u5947\u77F3\u5934\u3002\n\u6709\u7740\u96EA\u82B1\u822C\u7684\u82B1\u7EB9\u3002"
+      version_group:
+        name: sword-shield
+        url: https://pokeapi.co/api/v2/version-group/20/
     fling_effect:
       name: 
       url: 
-    fling_power: 0
-    game_indices: []
+    fling_power: 30
+    game_indices:
+    - game_index: 849
+      generation:
+        name: generation-vii
+        url: https://pokeapi.co/api/v2/generation/7/
+    - game_index: 849
+      generation:
+        name: generation-viii
+        url: https://pokeapi.co/api/v2/generation/8/
     held_by_pokemon: 
-    id: 0
+    id: 885
     machines: []
-    name: 
-    names: []
+    name: ice-stone
+    names:
+    - language:
+        name: ja-Hrkt
+        url: https://pokeapi.co/api/v2/language/1/
+      name: "\u3053\u304A\u308A\u306E\u3044\u3057"
+    - language:
+        name: ko
+        url: https://pokeapi.co/api/v2/language/3/
+      name: "\uC5BC\uC74C\uC758\uB3CC"
+    - language:
+        name: zh-Hant
+        url: https://pokeapi.co/api/v2/language/4/
+      name: "\u51B0\u4E4B\u77F3"
+    - language:
+        name: fr
+        url: https://pokeapi.co/api/v2/language/5/
+      name: Pierre Glace
+    - language:
+        name: de
+        url: https://pokeapi.co/api/v2/language/6/
+      name: Eisstein
+    - language:
+        name: es
+        url: https://pokeapi.co/api/v2/language/7/
+      name: Piedra Hielo
+    - language:
+        name: it
+        url: https://pokeapi.co/api/v2/language/8/
+      name: Pietragelo
+    - language:
+        name: en
+        url: https://pokeapi.co/api/v2/language/9/
+      name: Ice Stone
+    - language:
+        name: ja
+        url: https://pokeapi.co/api/v2/language/11/
+      name: "\u3053\u304A\u308A\u306E\u3044\u3057"
+    - language:
+        name: zh-Hans
+        url: https://pokeapi.co/api/v2/language/12/
+      name: "\u51B0\u4E4B\u77F3"
     sprites:
-      defaul: 
+      defaul: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/ice-stone.png
   canUseInBattle: 0
   canUseOutsideBattle: 0

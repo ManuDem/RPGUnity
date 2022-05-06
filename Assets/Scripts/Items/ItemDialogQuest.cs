@@ -13,7 +13,6 @@ public class ItemDialogQuest : MonoBehaviour, Interactable, ISavable
 
     [Header("Dialog")]
     [SerializeField] Dialog dialog;
-
     [SerializeField] ItemBase item;
 
     [Header("Quests")]

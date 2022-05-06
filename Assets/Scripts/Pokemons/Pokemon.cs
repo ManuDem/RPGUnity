@@ -21,7 +21,7 @@ string of = "di";
     PokemonParty playerPokemonParty;
     int totalLevels;
     int pokemonNumber;
-    int calculatedLevel;
+    int calculatedLevel = 0;
 
     public Pokemon(PokemonBase pBase, int pLevel)
     {
@@ -69,15 +69,13 @@ string of = "di";
 
             foreach (Pokemon pokemon in playerPokemonParty.Pokemons)
             {
-                pokemonNumber++;
-                totalLevels = totalLevels + pokemon.level;
+                if (pokemon.level >= calculatedLevel)
+                    calculatedLevel = pokemon.level;
             }
 
-            if (pokemonNumber > 0)
-            calculatedLevel = Mathf.RoundToInt(totalLevels / (pokemonNumber - 1)) + difficultyVariable;
-
-            if (calculatedLevel > 0 || calculatedLevel <= 100)
-                level = calculatedLevel;
+            calculatedLevel = calculatedLevel + difficultyVariable;
+            
+            level = calculatedLevel;
         }
 
         // Generate Moves

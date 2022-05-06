@@ -36,8 +36,6 @@ public class NewGameMenuController : MonoBehaviour
         yield return DialogManager.Instance.ShowDialog(dialog);
         inputField.gameObject.SetActive(true);
         sign.gameObject.SetActive(true);
-
-
     }
 
     public void CloseMenu()
