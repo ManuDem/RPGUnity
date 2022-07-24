@@ -24,7 +24,7 @@ public class MoveBase : ScriptableObject
     [SerializeField] MoveTarget target;
 
     [SerializeField] private int id;
-    [SerializeField] private MrAmorphic.PokeApiMove pokeApiMove;
+    [SerializeField] private PokeApiMove pokeApiMove;
 
     [SerializeField] AudioClip sound;
 
@@ -52,6 +52,7 @@ public class MoveEffects
     [SerializeField] ConditionID status;
     [SerializeField] ConditionID volatileStatus;
 
+
     public List<StatBoost> Boosts { get => boosts; set => boosts = value; }
     public ConditionID Status { get => status; set => status = value; }
     public ConditionID VolatileStatus { get => volatileStatus; set => volatileStatus = value; }
@@ -62,6 +63,7 @@ public class SecondaryEffects : MoveEffects
 {
     [SerializeField] int chance;
     [SerializeField] MoveTarget target;
+
     public int Chance { get => chance; set => chance = value; }
     public MoveTarget Target { get => target; set => target = value; }
 }

@@ -7,7 +7,7 @@ public class Pickup : MonoBehaviour, Interactable, ISavable
     [SerializeField] ItemBase item;
 
     [Header("Strings")]
-    [TextArea] [SerializeField] string found;
+    [TextArea][SerializeField] string found;
     public bool Used { get; set; } = false;
 
     public IEnumerator Interact(Transform initiator)

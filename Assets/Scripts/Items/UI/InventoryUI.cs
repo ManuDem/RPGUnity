@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum InventoryUIState { ItemSelection, PartySelection, MoveToForget, Busy}
+public enum InventoryUIState { ItemSelection, PartySelection, MoveToForget, Busy }
 
 public class InventoryUI : MonoBehaviour
 {
@@ -23,25 +23,25 @@ public class InventoryUI : MonoBehaviour
     [SerializeField] MoveSelectionUI moveSelectionUI;
 
     [Header("Dialog")]
-    [TextArea] [SerializeField] string thisItemCannotBeUsedInBattle;
-    [TextArea] [SerializeField] string thisItemCannotBeUsedOutsideBattle;
-    [TextArea] [SerializeField] string itWontHaveAnyEffect;
-    [TextArea] [SerializeField] string thePlayerUsed;
-    [TextArea] [SerializeField] string alreadyKnow;
-    [TextArea] [SerializeField] string cantLearn;
-    [TextArea] [SerializeField] string learned;
-    [TextArea] [SerializeField] string isTryingToLearn;
-    [TextArea] [SerializeField] string butItCannotLearnMoreThan;
-    [TextArea] [SerializeField] string moves;
-    [TextArea] [SerializeField] string ChooseAMoveYouWantToForget;
-    [TextArea] [SerializeField] string didNotLearn;
-    [TextArea] [SerializeField] string forgot;
-    [TextArea] [SerializeField] string andLearned;
+    [TextArea][SerializeField] string thisItemCannotBeUsedInBattle;
+    [TextArea][SerializeField] string thisItemCannotBeUsedOutsideBattle;
+    [TextArea][SerializeField] string itWontHaveAnyEffect;
+    [TextArea][SerializeField] string thePlayerUsed;
+    [TextArea][SerializeField] string alreadyKnow;
+    [TextArea][SerializeField] string cantLearn;
+    [TextArea][SerializeField] string learned;
+    [TextArea][SerializeField] string isTryingToLearn;
+    [TextArea][SerializeField] string butItCannotLearnMoreThan;
+    [TextArea][SerializeField] string moves;
+    [TextArea][SerializeField] string ChooseAMoveYouWantToForget;
+    [TextArea][SerializeField] string didNotLearn;
+    [TextArea][SerializeField] string forgot;
+    [TextArea][SerializeField] string andLearned;
     Action<ItemBase> onItemUsed;
 
     int selectedItem = 0;
     int selectedCategory = 0;
-    
+
     MoveBase moveToLearn;
 
     InventoryUIState state;
@@ -82,7 +82,7 @@ public class InventoryUI : MonoBehaviour
         UpdateItemSelection();
     }
 
-    public void HandleUpdate(Action onBack, Action<ItemBase> onItemUsed=null)
+    public void HandleUpdate(Action onBack, Action<ItemBase> onItemUsed = null)
     {
         this.onItemUsed = onItemUsed;
 
@@ -141,7 +141,7 @@ public class InventoryUI : MonoBehaviour
         {
             Action<int> onMoveSelected = (int moveIndex) =>
             {
-                StartCoroutine(OnMoveToForgetSelected(moveIndex));   
+                StartCoroutine(OnMoveToForgetSelected(moveIndex));
             };
 
             moveSelectionUI.HandleMoveSelection(onMoveSelected);
@@ -311,7 +311,7 @@ public class InventoryUI : MonoBehaviour
     {
         if (slotUIList.Count <= itemsInViewport) return;
 
-        float scrollPos = Mathf.Clamp(selectedItem - itemsInViewport/2, 0, selectedItem) * slotUIList[0].Height;
+        float scrollPos = Mathf.Clamp(selectedItem - itemsInViewport / 2, 0, selectedItem) * slotUIList[0].Height;
         itemListRect.localPosition = new Vector2(itemListRect.localPosition.x, scrollPos);
 
         bool showUpArrow = selectedItem > itemsInViewport / 2;

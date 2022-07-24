@@ -10,8 +10,8 @@ public class EvolutionManager : MonoBehaviour
     [SerializeField] Image pokemonImage;
 
     [Header("Dialog")]
-    [TextArea] [SerializeField] string isEvolving;
-    [TextArea] [SerializeField] string evolvedInto;
+    [TextArea][SerializeField] string isEvolving;
+    [TextArea][SerializeField] string evolvedInto;
 
     [SerializeField] AudioClip evolutionMusic;
 

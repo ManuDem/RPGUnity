@@ -6,7 +6,7 @@ using UnityEngine;
 public class Dialog
 {
 
-    [TextArea] [SerializeField] string dialog;
+    [TextArea][SerializeField] string dialog;
 
     [SerializeField] List<string> lines;
 
@@ -15,7 +15,8 @@ public class Dialog
         get
         {
             lines.Clear();
-            if (dialog != null) {
+            if (dialog != null)
+            {
                 if (dialog.Contains('\n'))
                 {
                     string[] splittedStringNewLine = dialog.Split(new char[] { '\n' });
@@ -78,7 +79,7 @@ public class Dialog
                 }
 
             }
-            
+
             if (lines != null)
                 return lines;
             else

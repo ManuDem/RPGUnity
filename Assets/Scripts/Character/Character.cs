@@ -26,7 +26,7 @@ public class Character : MonoBehaviour
         transform.position = pos;
     }
 
-    public IEnumerator Move(Vector2 moveVec, Action OnMoveOver=null)
+    public IEnumerator Move(Vector2 moveVec, Action OnMoveOver=null, bool checkCollisions=true)
     {
         animator.MoveX = Mathf.Clamp(moveVec.x, -1f, 1f);
         animator.MoveY = Mathf.Clamp(moveVec.y, -1f, 1f);
@@ -35,20 +35,30 @@ public class Character : MonoBehaviour
         targetPos.x += moveVec.x;
         targetPos.y += moveVec.y;
 
-        if (!IsPathClear(targetPos))
+        var ledge = CheckForLedge(targetPos);
+        if (ledge != null)
+        {
+            if (ledge.TryToJump(this, moveVec))
+                yield break;
+        }
+
+        if (checkCollisions && !IsPathClear(targetPos))
             yield break;
+
+        if (animator.IsSurfing && Physics2D.OverlapCircle(targetPos, 0.3f, GameLayers.i.WaterLayer) == null)
+            animator.IsSurfing = false;
 
         IsMoving = true;
 
         while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
         {
-            if (animator.IsOnBike && animator.IsPlayer)
+            if (animator.IsBiking && animator.IsPlayer)
             {
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * 3f * Time.deltaTime);
                 yield return null;
 
             }
-            else if (!animator.IsOnBike && animator.IsPlayer)
+            else if (!animator.IsBiking && animator.IsPlayer)
             {
                 if ((Input.GetKey(KeyCode.LeftShift)) && animator.IsPlayer)
                 {
@@ -61,11 +71,12 @@ public class Character : MonoBehaviour
                     yield return null;
                 }
             }
-            else {
+            else
+            {
                 transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
                 yield return null;
             }
-          
+
         }
 
 
@@ -86,7 +97,11 @@ public class Character : MonoBehaviour
         var diff = targetPos - transform.position;
         var dir = diff.normalized;
 
-        if (Physics2D.BoxCast(transform.position + dir, new Vector2(0.2f, 0.2f), 0f, dir, diff.magnitude - 1, GameLayers.i.SolidLayer | GameLayers.i.InteractableLayer | GameLayers.i.PlayerLayer) == true)
+        var collisionLayer = GameLayers.i.SolidLayer | GameLayers.i.InteractableLayer | GameLayers.i.PlayerLayer;
+        if (!animator.IsSurfing)
+            collisionLayer = collisionLayer | GameLayers.i.WaterLayer;
+
+        if (Physics2D.BoxCast(transform.position + dir, new Vector2(0.2f, 0.2f), 0f, dir, diff.magnitude - 1, collisionLayer) == true)
             return false;
 
         return true;
@@ -100,6 +115,12 @@ public class Character : MonoBehaviour
         }
 
         return true;
+    }
+
+    Ledge CheckForLedge(Vector3 targetPos)
+    {
+        var collider = Physics2D.OverlapCircle(targetPos, 0.15f, GameLayers.i.LedgeLayer);
+        return collider?.GetComponent<Ledge>();
     }
 
     public void LookTowards(Vector3 targetPos)

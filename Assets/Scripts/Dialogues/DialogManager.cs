@@ -11,10 +11,8 @@ public class DialogManager : MonoBehaviour
     [SerializeField] Text dialogText;
     [SerializeField] int lettersPerSecond;
 
-    #region Manu Code
     [SerializeField] Image sprite;
     [SerializeField] Text nameText;
-    #endregion
 
     public event Action OnShowDialog;
     public event Action OnDialogFinished;
@@ -27,7 +25,7 @@ public class DialogManager : MonoBehaviour
 
     public bool IsShowing { get; private set; }
 
-    public IEnumerator ShowDialogText(string text, bool waitForInput = true, bool autoClose = true,
+    public IEnumerator ShowDialogText(string text, bool waitForInput=true, bool autoClose=true,
         List<string> choices = null, Action<int> onChoiceSelected = null)
     {
         OnShowDialog?.Invoke();
@@ -59,8 +57,8 @@ public class DialogManager : MonoBehaviour
         IsShowing = false;
     }
 
-    public IEnumerator ShowDialog(Dialog dialog, List<string> choices = null,
-        Action<int> onChoiceSelected = null)
+    public IEnumerator ShowDialog(Dialog dialog, List<string> choices=null,
+        Action<int> onChoiceSelected=null)
     {
         yield return new WaitForEndOfFrame();
 
@@ -85,7 +83,6 @@ public class DialogManager : MonoBehaviour
         OnDialogFinished?.Invoke();
     }
 
-    #region Manu Code
     public IEnumerator ShowDialogSprite(Dialog dialog, Sprite sprite, string nameText)
     {
         yield return new WaitForEndOfFrame();
@@ -120,7 +117,6 @@ public class DialogManager : MonoBehaviour
         IsShowing = false;
         OnDialogFinished?.Invoke();
     }
-    #endregion
 
     public void HandleUpdate()
     {

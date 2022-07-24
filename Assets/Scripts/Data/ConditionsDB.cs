@@ -31,7 +31,7 @@ public class ConditionsDB
     static string isConfused = "è confuso.";
     static string itHurtItselfDueToConfusion = "Si colpisce da solo a causa della confusione.";
 
-    
+
 
 
     public static void Init()

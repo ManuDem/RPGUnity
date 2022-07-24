@@ -14,9 +14,9 @@ public class Pokemon
     [SerializeField] MoveBase moveThree;
     [SerializeField] MoveBase moveFour;
 
- string rose = "sale!";
-string fell = "cala!";
-string of = "di";
+    string rose = "sale!";
+    string fell = "cala!";
+    string of = "di";
 
     PokemonParty playerPokemonParty;
     int totalLevels;
@@ -30,17 +30,21 @@ string of = "di";
         level = pLevel;
 
         Init();
-   
+
     }
 
 
-    public PokemonBase Base { 
-        get {
+    public PokemonBase Base
+    {
+        get
+        {
             return _base;
         }
     }
-    public int Level { 
-        get {
+    public int Level
+    {
+        get
+        {
             return level;
         }
     }
@@ -64,17 +68,19 @@ string of = "di";
     public void Init()
     {
         // Difficulty increaser
-        if (difficultyVariable is not 0) {
+        if (difficultyVariable is not 0 )
+        {
             playerPokemonParty = PokemonParty.GetPlayerParty();
 
-            foreach (Pokemon pokemon in playerPokemonParty.Pokemons)
+            foreach (Pokemon playerPokemon in playerPokemonParty.Pokemons)
             {
-                if (pokemon.level >= calculatedLevel)
-                    calculatedLevel = pokemon.level;
+                if ( playerPokemon.level >= calculatedLevel)
+                    calculatedLevel = playerPokemon.level;
             }
 
             calculatedLevel = calculatedLevel + difficultyVariable;
-            
+
+            if (calculatedLevel > level)
             level = calculatedLevel;
         }
 
@@ -83,7 +89,7 @@ string of = "di";
         if (moveOne != null || moveTwo != null || moveThree != null || moveFour != null)
         {
             if (moveOne != null)
-            Moves.Add(new Move(moveOne));
+                Moves.Add(new Move(moveOne));
 
             if (moveTwo != null)
                 Moves.Add(new Move(moveTwo));
@@ -103,7 +109,8 @@ string of = "di";
                     break;
             }
         }
-        else {
+        else
+        {
             foreach (var move in Base.LearnableMoves)
             {
                 if (move.Level <= Level)
@@ -277,31 +284,38 @@ string of = "di";
         HP = MaxHp;
         OnHPChanged?.Invoke();
 
-        foreach (Move move in Moves) {
+        foreach (Move move in Moves)
+        {
             move.PP = move.Base.PP;
         }
 
         CureStatus();
     }
 
-    public int Attack {
+    public int Attack
+    {
         get { return GetStat(Stat.Attack); }
     }
 
-    public int Defense {
+    public int Defense
+    {
         get { return GetStat(Stat.Defense); }
     }
 
-    public int SpAttack {
+    public int SpAttack
+    {
         get { return GetStat(Stat.Special_attack); }
     }
 
-    public int SpDefense {
+    public int SpDefense
+    {
         get { return GetStat(Stat.Special_defense); }
     }
 
-    public int Speed {
-        get {
+    public int Speed
+    {
+        get
+        {
             return GetStat(Stat.Speed);
         }
     }

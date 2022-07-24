@@ -14,23 +14,23 @@ public class ShopController : MonoBehaviour
     [SerializeField] CountSelectorUI countSelectorUI;
 
     [Header("Dialog")]
-    [TextArea] [SerializeField] string howMayIServeYou;
-    [TextArea] [SerializeField] string buy;
-    [TextArea] [SerializeField] string sell;
-    [TextArea] [SerializeField] string quit;
-    [TextArea] [SerializeField] string howManyWouldYouLikeToSell;
-    [TextArea] [SerializeField] string iCanGive;
-    [TextArea] [SerializeField] string youCantSellThat;
-    [TextArea] [SerializeField] string forThat;
-    [TextArea] [SerializeField] string wouldYouLikeToSell;
-    [TextArea] [SerializeField] string turnedOver;
-    [TextArea] [SerializeField] string andReceived;
-    [TextArea] [SerializeField] string howManyWouldYouLikeToBuy;
-    [TextArea] [SerializeField] string thatWillBe;
-    [TextArea] [SerializeField] string thankYouForShoppingUs;
-    [TextArea] [SerializeField] string notEnoghtMoneyForThat;
-    [TextArea] [SerializeField] string yes;
-    [TextArea] [SerializeField] string no;
+    [TextArea][SerializeField] string howMayIServeYou;
+    [TextArea][SerializeField] string buy;
+    [TextArea][SerializeField] string sell;
+    [TextArea][SerializeField] string quit;
+    [TextArea][SerializeField] string howManyWouldYouLikeToSell;
+    [TextArea][SerializeField] string iCanGive;
+    [TextArea][SerializeField] string youCantSellThat;
+    [TextArea][SerializeField] string forThat;
+    [TextArea][SerializeField] string wouldYouLikeToSell;
+    [TextArea][SerializeField] string turnedOver;
+    [TextArea][SerializeField] string andReceived;
+    [TextArea][SerializeField] string howManyWouldYouLikeToBuy;
+    [TextArea][SerializeField] string thatWillBe;
+    [TextArea][SerializeField] string thankYouForShoppingUs;
+    [TextArea][SerializeField] string notEnoghtMoneyForThat;
+    [TextArea][SerializeField] string yes;
+    [TextArea][SerializeField] string no;
 
 
     public event Action OnStart;
@@ -75,7 +75,7 @@ public class ShopController : MonoBehaviour
             // Buy
             yield return GameController.Instance.MoveCamera(shopCameraOffset);
             walletUI.Show();
-            shopUI.Show(merchant.AvailableItems, (item) => StartCoroutine(BuyItem(item)), 
+            shopUI.Show(merchant.AvailableItems, (item) => StartCoroutine(BuyItem(item)),
                 () => StartCoroutine(OnBackFromBuying()));
 
             state = ShopState.Buying;
@@ -143,7 +143,7 @@ public class ShopController : MonoBehaviour
         sellingPrice = sellingPrice * countToSell;
 
         int selectedChoice = 0;
-        yield return DialogManager.Instance.ShowDialogText($"{iCanGive} {Math.Round(sellingPrice/2)}$ {forThat}! {wouldYouLikeToSell}",
+        yield return DialogManager.Instance.ShowDialogText($"{iCanGive} {Math.Round(sellingPrice / 2)}$ {forThat}! {wouldYouLikeToSell}",
             waitForInput: false,
             choices: new List<string>() { $"{yes}", $"{no}" },
             onChoiceSelected: choiceIndex => selectedChoice = choiceIndex);

@@ -9,10 +9,9 @@ public class PartyScreen : MonoBehaviour
     [SerializeField] Text messageText;
 
     [Header("Dialog")]
-    [TextArea] [SerializeField] string chooseAPokemon;
-    [TextArea] [SerializeField] string able;
-    [TextArea] [SerializeField] string notAble;
-
+    [TextArea][SerializeField] string chooseAPokemon;
+    [TextArea][SerializeField] string able;
+    [TextArea][SerializeField] string notAble;
     PartyMemberUI[] memberSlots;
     List<Pokemon> pokemons;
     PokemonParty party;

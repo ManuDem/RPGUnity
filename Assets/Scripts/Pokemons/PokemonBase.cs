@@ -7,7 +7,7 @@ using UnityEngine;
 public class PokemonBase : ScriptableObject
 {
     [SerializeField] string name;
-    
+
     [TextArea]
     [SerializeField] string description;
 
@@ -24,7 +24,7 @@ public class PokemonBase : ScriptableObject
     [SerializeField] int spAttack;
     [SerializeField] int spDefense;
     [SerializeField] int speed;
-    
+
     [SerializeField] int expYield;
     [SerializeField] GrowthRate growthRate;
 
@@ -74,7 +74,7 @@ public class PokemonBase : ScriptableObject
         return -1;
     }
 
-   
+
 }
 
 [System.Serializable]

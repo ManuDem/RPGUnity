@@ -1,5 +1,4 @@
-﻿using DG.Tweening;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,7 +17,6 @@ public class GameController : MonoBehaviour
 
     [Header("Dialog")]
     [SerializeField] Dialog dialog;
-
     GameState state;
     GameState prevState;
     GameState stateBeforeEvolution;
@@ -31,11 +29,11 @@ public class GameController : MonoBehaviour
     MainMenuController mainMenuController;
 
     NewGameMenuController newGameMenuController;
-
     public static GameController Instance { get; private set; }
     private void Awake()
     {
         Instance = this;
+
 
         menuController = GetComponent<MenuController>();
         mainMenuController = GetComponent<MainMenuController>();
@@ -55,7 +53,6 @@ public class GameController : MonoBehaviour
         partyScreen.Init();
 
         DayNightManager.i.HandleUpdate();
-
         DialogManager.Instance.OnShowDialog += () =>
         {
             prevState = state;
@@ -88,7 +85,6 @@ public class GameController : MonoBehaviour
         };
 
         newGameMenuController.onMenuSelected += OnNewGameMenuSelected;
-
         EvolutionManager.i.OnStartEvolution += () =>
         {
             stateBeforeEvolution = state;
@@ -104,10 +100,10 @@ public class GameController : MonoBehaviour
 
         ShopController.i.OnStart += () => state = GameState.Shop;
         ShopController.i.OnFinish += () => state = GameState.FreeRoam;
-
         state = GameState.MainMenu;
 
-        if (state == GameState.MainMenu) {
+        if (state == GameState.MainMenu)
+        {
             mainMenuController.OpenMenu();
         }
     }
@@ -125,7 +121,17 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void StartBattle()
+    public void StartCutsceneState()
+    {
+        state = GameState.Cutscene;
+    }
+
+    public void StartFreeRoamState()
+    {
+        state = GameState.FreeRoam;
+    }
+
+    public void StartBattle(BattleTrigger trigger)
     {
         var playerParty = playerController.GetComponent<PokemonParty>();
 
@@ -133,7 +139,7 @@ public class GameController : MonoBehaviour
         if (nextPokemon == null)
         {
             Debug.Log("Defeated");
-            StartCoroutine(                ShowDialogDefeated());
+            StartCoroutine(ShowDialogDefeated());
         }
         else
         {
@@ -142,13 +148,14 @@ public class GameController : MonoBehaviour
             battleSystem.gameObject.SetActive(true);
             worldCamera.gameObject.SetActive(false);
 
-            var wildPokemon = CurrentScene.GetComponent<MapArea>().GetRandomWildPokemon();
+            var wildPokemon = CurrentScene.GetComponent<MapArea>().GetRandomWildPokemon(trigger);
 
             var wildPokemonCopy = new Pokemon(wildPokemon.Base, wildPokemon.Level);
 
-            battleSystem.StartBattle(playerParty, wildPokemonCopy);
+            battleSystem.StartBattle(playerParty, wildPokemonCopy, trigger);
         }
     }
+
 
     TrainerController trainer;
     public void StartTrainerBattle(TrainerController trainer)
@@ -173,7 +180,7 @@ public class GameController : MonoBehaviour
 
             battleSystem.StartTrainerBattle(playerParty, trainerParty);
         }
-            }
+    }
 
     public IEnumerator ShowDialogDefeated()
     {
@@ -195,7 +202,7 @@ public class GameController : MonoBehaviour
             state = GameState.Cutscene;
             StartCoroutine(trainer.TriggerTrainerBattle(playerController));
         }
-       
+
     }
 
     void EndBattle(bool won)
@@ -232,6 +239,10 @@ public class GameController : MonoBehaviour
                 menuController.OpenMenu();
                 state = GameState.Menu;
             }
+        }
+        else if (state == GameState.Cutscene)
+        {
+            playerController.Character.HandleUpdate();
         }
         else if (state == GameState.Battle)
         {
@@ -298,14 +309,12 @@ public class GameController : MonoBehaviour
         mapNameManager.gameObject.SetActive(true);
         mapNameManager.setMapName(CurrentScene.GetComponent<MapArea>().MapName);
         StartCoroutine(mapNameManager.moveWitBothWays());
-      
-    }
-
-    public void SetMapName() {
 
     }
 
-    public void OnMenuSelected(int selectedItem)
+
+
+    void OnMenuSelected(int selectedItem)
     {
         if (selectedItem == 0)
         {
@@ -332,6 +341,7 @@ public class GameController : MonoBehaviour
             state = GameState.FreeRoam;
         }
     }
+
     public void OnMainMenuSelected(int selectedItem)
     {
         if (selectedItem == 0)
@@ -350,8 +360,7 @@ public class GameController : MonoBehaviour
             Application.Quit();
         }
     }
-
-
+    
     public void OnNewGameMenuSelected(int selectedItem)
     {
         if (selectedItem == 0)
@@ -378,7 +387,8 @@ public class GameController : MonoBehaviour
             StartCoroutine(Fader.i.FadeOut(0.5f));
     }
 
-    public IEnumerator startNewGame() {
+    public IEnumerator startNewGame()
+    {
         yield return Fader.i.FadeIn(1f);
         mainMenuController.CloseMenu();
 

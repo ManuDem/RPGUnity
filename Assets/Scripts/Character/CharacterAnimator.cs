@@ -8,6 +8,7 @@ public class CharacterAnimator : MonoBehaviour
     [SerializeField] List<Sprite> walkUpSprites;
     [SerializeField] List<Sprite> walkRightSprites;
     [SerializeField] List<Sprite> walkLeftSprites;
+    [SerializeField] List<Sprite> surfSprites;
 
     [SerializeField] List<Sprite> runDownSprites;
     [SerializeField] List<Sprite> runUpSprites;
@@ -19,13 +20,23 @@ public class CharacterAnimator : MonoBehaviour
     [SerializeField] List<Sprite> bikeRightSprites;
     [SerializeField] List<Sprite> bikeLeftSprites;
 
-    [SerializeField] bool isPlayer;
+    [SerializeField] List<Sprite> surfDownSprites;
+    [SerializeField] List<Sprite> surfUpSprites;
+    [SerializeField] List<Sprite> surfRightSprites;
+    [SerializeField] List<Sprite> surfLeftSprites;
+
+    [SerializeField] private bool isPlayer;
+
     [SerializeField] FacingDirection defaultDirection = FacingDirection.Down;
 
     // Parameters
     public float MoveX { get; set; }
     public float MoveY { get; set; }
     public bool IsMoving { get; set; }
+    public bool IsJumping { get; set; }
+    public bool IsSurfing { get; set; }
+    public bool IsBiking { get; set; }
+    public bool IsPlayer { get => isPlayer; set => isPlayer = value; }
 
     // States
     SpriteAnimator walkDownAnim;
@@ -43,13 +54,17 @@ public class CharacterAnimator : MonoBehaviour
     SpriteAnimator bikeRightAnim;
     SpriteAnimator bikeLeftAnim;
 
+    SpriteAnimator surfDownAnim;
+    SpriteAnimator surfUpAnim;
+    SpriteAnimator surfRightAnim;
+    SpriteAnimator surfLeftAnim;
+
     SpriteAnimator currentAnim;
     bool wasPreviouslyMoving;
 
-    bool isOnBike =false;
-
     // Refrences
     SpriteRenderer spriteRenderer;
+
 
     private void Start()
     {
@@ -69,6 +84,11 @@ public class CharacterAnimator : MonoBehaviour
         bikeRightAnim = new SpriteAnimator(bikeRightSprites, spriteRenderer);
         bikeLeftAnim = new SpriteAnimator(bikeLeftSprites, spriteRenderer);
 
+        surfDownAnim = new SpriteAnimator(surfDownSprites, spriteRenderer);
+        surfUpAnim = new SpriteAnimator(surfUpSprites, spriteRenderer);
+        surfRightAnim = new SpriteAnimator(surfRightSprites, spriteRenderer);
+        surfLeftAnim = new SpriteAnimator(surfLeftSprites, spriteRenderer);
+
         SetFacingDirection(defaultDirection);
 
         currentAnim = walkDownAnim;
@@ -82,10 +102,10 @@ public class CharacterAnimator : MonoBehaviour
         {
             //if(!isOnBike)
             //AudioManager.
-            IsOnBike = !IsOnBike;
+            IsBiking = !IsBiking;
         }
 
-        if (IsOnBike && isPlayer)
+        if (IsBiking && IsPlayer)
         {
             if (MoveX == 1)
                 currentAnim = bikeRightAnim;
@@ -96,7 +116,19 @@ public class CharacterAnimator : MonoBehaviour
             else if (MoveY == -1)
                 currentAnim = bikeDownAnim;
         }
-        else if (!IsOnBike && isPlayer)
+        else if (IsSurfing && IsPlayer)
+        {
+            if (MoveX == 1)
+                currentAnim = surfRightAnim;
+            else if (MoveX == -1)
+                currentAnim = surfLeftAnim;
+            else if (MoveY == 1)
+                currentAnim = surfUpAnim;
+            else if (MoveY == -1)
+                currentAnim = surfDownAnim;
+
+        }
+        else if (!IsBiking && !IsSurfing && IsPlayer)
         {
 
             if ((Input.GetKey(KeyCode.LeftShift)) && IsPlayer)
@@ -123,7 +155,8 @@ public class CharacterAnimator : MonoBehaviour
                     currentAnim = walkDownAnim;
             }
         }
-        else {
+        else
+        {
             if (MoveX == 1)
                 currentAnim = walkRightAnim;
             else if (MoveX == -1)
@@ -137,7 +170,9 @@ public class CharacterAnimator : MonoBehaviour
         if (currentAnim != prevAnim || IsMoving != wasPreviouslyMoving)
             currentAnim.Start();
 
-        if (IsMoving)
+        if (IsJumping)
+            spriteRenderer.sprite = currentAnim.Frames[currentAnim.Frames.Count - 1];
+        else if (IsMoving)
             currentAnim.HandleUpdate();
         else
             spriteRenderer.sprite = currentAnim.Frames[0];
@@ -161,8 +196,8 @@ public class CharacterAnimator : MonoBehaviour
     {
         get => defaultDirection;
     }
-    public bool IsPlayer { get => isPlayer; set => isPlayer = value; }
-    public bool IsOnBike { get => isOnBike; set => isOnBike = value; }
+
 }
+
 
 public enum FacingDirection { Up, Down, Left, Right }

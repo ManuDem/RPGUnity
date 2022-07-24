@@ -9,6 +9,8 @@ using UnityEngine.UI;
 public enum BattleState { Start, ActionSelection, MoveSelection, RunningTurn, Busy, Bag, PartyScreen, AboutToUse, MoveToForget, BattleOver}
 public enum BattleAction { Move, SwitchPokemon, UseItem, Run }
 
+public enum BattleTrigger { LongGrass, Water }
+
 public class BattleSystem : MonoBehaviour
 {
     [SerializeField] BattleUnit playerUnit;
@@ -20,50 +22,54 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] GameObject pokeballSprite;
     [SerializeField] MoveSelectionUI moveSelectionUI;
     [SerializeField] InventoryUI inventoryUI;
-    [SerializeField] Image backgroundBattle;
 
     [Header("Audio")]
     [SerializeField] AudioClip wildBattleMusic;
     [SerializeField] AudioClip trainerBattleMusic;
     [SerializeField] AudioClip battleVictoryMusic;
 
+    [Header("Background Images")]
+    [SerializeField] Image backgroundImage;
+    [SerializeField] Sprite grassBackground;
+    [SerializeField] Sprite waterBackground;
+
     [Header("Strings")]
-    [TextArea] [SerializeField] string aWildAppared;
-    [TextArea] [SerializeField] string wantsToBattle;
-    [TextArea] [SerializeField] string sendOut;
-    [TextArea] [SerializeField] string go;
-    [TextArea] [SerializeField] string chooseAnAction;
-    [TextArea] [SerializeField] string isAboutToUse;
-    [TextArea] [SerializeField] string doYouWantToChangePokemon;
-    [TextArea] [SerializeField] string chooseAMoveYouWantToForget;
-    [TextArea] [SerializeField] string used;
-    [TextArea] [SerializeField] string attackMissed;
-    [TextArea] [SerializeField] string fainted;
-    [TextArea] [SerializeField] string gained;
-    [TextArea] [SerializeField] string exp;
-    [TextArea] [SerializeField] string grewToLevel;
-    [TextArea] [SerializeField] string learned;
-    [TextArea] [SerializeField] string tryingToLearn;
-    [TextArea] [SerializeField] string butItCannotLearnMoreThan;
-    [TextArea] [SerializeField] string moves;
-    [TextArea] [SerializeField] string criticalHit;
-    [TextArea] [SerializeField] string superEffective;
-    [TextArea] [SerializeField] string notVeryEffective;
-    [TextArea] [SerializeField] string didNotLearn;
-    [TextArea] [SerializeField] string forgot;
-    [TextArea] [SerializeField] string andLearned;
-    [TextArea] [SerializeField] string cantSendOutAFaintedPokemon;
-    [TextArea] [SerializeField] string cantSwitchSamePokemon;
-    [TextArea] [SerializeField] string choosePokemonToContinue;
-    [TextArea] [SerializeField] string cantStealTrainerPokemon;
-    [TextArea] [SerializeField] string comeBack;
-    [TextArea] [SerializeField] string wasCaught;
-    [TextArea] [SerializeField] string hasBeenAddedToYourParty;
-    [TextArea] [SerializeField] string brokeFree;
-    [TextArea] [SerializeField] string almostCaughtIt;
-    [TextArea] [SerializeField] string cantRunFromTrainerBattles;
-    [TextArea] [SerializeField] string ranAwaySafely;
-    [TextArea] [SerializeField] string cantEscape;
+    [TextArea][SerializeField] string aWildAppared;
+    [TextArea][SerializeField] string wantsToBattle;
+    [TextArea][SerializeField] string sendOut;
+    [TextArea][SerializeField] string go;
+    [TextArea][SerializeField] string chooseAnAction;
+    [TextArea][SerializeField] string isAboutToUse;
+    [TextArea][SerializeField] string doYouWantToChangePokemon;
+    [TextArea][SerializeField] string chooseAMoveYouWantToForget;
+    [TextArea][SerializeField] string used;
+    [TextArea][SerializeField] string attackMissed;
+    [TextArea][SerializeField] string fainted;
+    [TextArea][SerializeField] string gained;
+    [TextArea][SerializeField] string exp;
+    [TextArea][SerializeField] string grewToLevel;
+    [TextArea][SerializeField] string learned;
+    [TextArea][SerializeField] string tryingToLearn;
+    [TextArea][SerializeField] string butItCannotLearnMoreThan;
+    [TextArea][SerializeField] string moves;
+    [TextArea][SerializeField] string criticalHit;
+    [TextArea][SerializeField] string superEffective;
+    [TextArea][SerializeField] string notVeryEffective;
+    [TextArea][SerializeField] string didNotLearn;
+    [TextArea][SerializeField] string forgot;
+    [TextArea][SerializeField] string andLearned;
+    [TextArea][SerializeField] string cantSendOutAFaintedPokemon;
+    [TextArea][SerializeField] string cantSwitchSamePokemon;
+    [TextArea][SerializeField] string choosePokemonToContinue;
+    [TextArea][SerializeField] string cantStealTrainerPokemon;
+    [TextArea][SerializeField] string comeBack;
+    [TextArea][SerializeField] string wasCaught;
+    [TextArea][SerializeField] string hasBeenAddedToYourParty;
+    [TextArea][SerializeField] string brokeFree;
+    [TextArea][SerializeField] string almostCaughtIt;
+    [TextArea][SerializeField] string cantRunFromTrainerBattles;
+    [TextArea][SerializeField] string ranAwaySafely;
+    [TextArea][SerializeField] string cantEscape;
 
     public event Action<bool> OnBattleOver;
 
@@ -84,34 +90,37 @@ public class BattleSystem : MonoBehaviour
     int escapeAttempts;
     MoveBase moveToLearn;
 
-    public void StartBattle(PokemonParty playerParty, Pokemon wildPokemon)
+    BattleTrigger battleTrigger;
+
+    public void StartBattle(PokemonParty playerParty, Pokemon wildPokemon, 
+        BattleTrigger trigger = BattleTrigger.LongGrass)
     {
         this.playerParty = playerParty;
         this.wildPokemon = wildPokemon;
         player = playerParty.GetComponent<PlayerController>();
         isTrainerBattle = false;
 
-        backgroundBattle.sprite = GameController.Instance.CurrentScene.Background;
+        battleTrigger = trigger;
 
         AudioManager.i.PlayMusic(wildBattleMusic);
 
         StartCoroutine(SetupBattle());
     }
 
-    public void StartTrainerBattle(PokemonParty playerParty, PokemonParty trainerParty)
+    public void StartTrainerBattle(PokemonParty playerParty, PokemonParty trainerParty,
+        BattleTrigger trigger = BattleTrigger.LongGrass)
     {
-
         this.playerParty = playerParty;
         this.trainerParty = trainerParty;
-
-        backgroundBattle.sprite = GameController.Instance.CurrentScene.Background;
 
         isTrainerBattle = true;
         player = playerParty.GetComponent<PlayerController>();
         trainer = trainerParty.GetComponent<TrainerController>();
 
+        battleTrigger = trigger;
+
         if (trainer.TrainerBattleMusic != null)
-        AudioManager.i.PlayMusic(trainer.TrainerBattleMusic);
+            AudioManager.i.PlayMusic(trainer.TrainerBattleMusic);
         else
             AudioManager.i.PlayMusic(trainerBattleMusic);
 
@@ -122,6 +131,8 @@ public class BattleSystem : MonoBehaviour
     {
         playerUnit.Clear();
         enemyUnit.Clear();
+
+        backgroundImage.sprite = (battleTrigger == BattleTrigger.LongGrass) ? grassBackground : waterBackground;
 
         if (!isTrainerBattle)
         {
@@ -304,7 +315,6 @@ public class BattleSystem : MonoBehaviour
 
         move.PP--;
         yield return dialogBox.TypeDialog($"{sourceUnit.Pokemon.Base.Name} {used} {move.Base.Name}");
-
         if (CheckIfMoveHits(move, sourceUnit.Pokemon, targetUnit.Pokemon))
         {
 
@@ -318,13 +328,13 @@ public class BattleSystem : MonoBehaviour
 
                 targetUnit.PlayHitAnimation();
             }
-            else {
+            else
+            {
                 yield return new WaitForSeconds(1f);
 
                 AudioManager.i.PlaySfx(AudioId.Hit);
                 targetUnit.PlayHitAnimation();
             }
-
             if (move.Base.Category == MoveCategory.Status)
             {
                 yield return RunMoveEffects(move.Base.Effects, sourceUnit.Pokemon, targetUnit.Pokemon, move.Base.Target);
@@ -455,12 +465,12 @@ public class BattleSystem : MonoBehaviour
             int expYield = faintedUnit.Pokemon.Base.ExpYield;
             int enemyLevel = faintedUnit.Pokemon.Level;
             float trainerBonus = (isTrainerBattle) ? 1.5f : 1f;
-
             int expGain = Mathf.FloorToInt((expYield * enemyLevel * trainerBonus) / 5);
             playerUnit.Pokemon.Exp += expGain;
 
             yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {gained} {expGain} {exp}");
             yield return playerUnit.Hud.SetExpSmooth();
+
 
             // Check Level Up
             while (playerUnit.Pokemon.CheckForLevelUp())
@@ -787,7 +797,7 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    IEnumerator SwitchPokemon(Pokemon newPokemon, bool isTrainerAboutToUse=false)
+    IEnumerator SwitchPokemon(Pokemon newPokemon, bool isTrainerAboutToUse = false)
     {
         if (playerUnit.Pokemon.HP > 0)
         {
@@ -805,7 +815,6 @@ public class BattleSystem : MonoBehaviour
         else
             state = BattleState.RunningTurn;
     }
-
     IEnumerator SendNextTrainerPokemon()
     {
         state = BattleState.Busy;
@@ -848,9 +857,7 @@ public class BattleSystem : MonoBehaviour
         pokeball.sprite = pokeballItem.Icon;
 
         // Animations
-        #region Manu Code
         yield return pokeball.transform.DOJump(enemyUnit.transform.position, 2f, 1, 1f).WaitForCompletion();
-        #endregion
         yield return enemyUnit.PlayCaptureAnimation();
         yield return pokeball.transform.DOMoveY(enemyUnit.transform.position.y - 1.3f, 0.5f).WaitForCompletion();
 

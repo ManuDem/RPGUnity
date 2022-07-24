@@ -7,8 +7,8 @@ public class Quest
 {
 
     [Header("Dialog")]
-    [TextArea] [SerializeField] string receive = "riceve";
-    [TextArea] [SerializeField] string received = "Ricevi";
+    [TextArea][SerializeField] string receive = "riceve";
+    [TextArea][SerializeField] string received = "Ricevi";
 
 
     public QuestBase Base { get; private set; }

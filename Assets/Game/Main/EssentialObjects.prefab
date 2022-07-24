@@ -118,6 +118,7 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -1868,10 +1869,13 @@ MonoBehaviour:
     type: 3}
   moveSelectionUI: {fileID: 7075410999979646797}
   inventoryUI: {fileID: 6584159537931309597}
-  backgroundBattle: {fileID: 7075411000081868505}
   wildBattleMusic: {fileID: 8300000, guid: 3086c1f8541654f4898e2703f0a3df7e, type: 3}
   trainerBattleMusic: {fileID: 8300000, guid: d4c7f2837278db9479928b45a2a2b435, type: 3}
   battleVictoryMusic: {fileID: 8300000, guid: f363a92adbd37c444ad9f9e21c4f3ee0, type: 3}
+  backgroundImage: {fileID: 7075411000081868505}
+  grassBackground: {fileID: 821348694604183521, guid: 61f5a52417060a84cb4e671a6600a1d1,
+    type: 3}
+  waterBackground: {fileID: -928161177, guid: 79e861c163549094cb8d8b8493afd6a7, type: 3}
   aWildAppared: 'Uddio! Appare un '
   wantsToBattle: ha voglia di perdere
   sendOut: manda in campo
@@ -2455,6 +2459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -3319,6 +3324,12 @@ MonoBehaviour:
   triggersLayer:
     serializedVersion: 2
     m_Bits: 16384
+  ledgeLayer:
+    serializedVersion: 2
+    m_Bits: 32768
+  waterLayer:
+    serializedVersion: 2
+    m_Bits: 16
 --- !u!114 &1013060881298896220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4931,6 +4942,7 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2

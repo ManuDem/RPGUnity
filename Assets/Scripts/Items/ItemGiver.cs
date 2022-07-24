@@ -9,7 +9,7 @@ public class ItemGiver : MonoBehaviour, ISavable
     [SerializeField] Dialog dialog;
 
     [Header("Strings")]
-    [TextArea] [SerializeField] string received;
+    [TextArea][SerializeField] string received;
 
     bool used = false;
 

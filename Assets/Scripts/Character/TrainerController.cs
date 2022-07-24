@@ -35,7 +35,7 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
 
     private void Update()
     {
-            character.HandleUpdate();
+        character.HandleUpdate();
     }
 
     public IEnumerator Interact(Transform initiator)
@@ -67,7 +67,7 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
         {
             yield return DialogManager.Instance.ShowDialogSprite(dialogAfterBattle, sprite, name);
         }
-        
+
     }
 
     public IEnumerator TriggerTrainerBattle(PlayerController player)
@@ -145,11 +145,13 @@ public class TrainerController : MonoBehaviour, Interactable, ISavable
             fov.gameObject.SetActive(false);
     }
 
-    public string Name {
+    public string Name
+    {
         get => name;
     }
 
-    public Sprite Sprite {
+    public Sprite Sprite
+    {
         get => sprite;
     }
     public AudioClip TrainerBattleMusic { get => trainerBattleMusic; set => trainerBattleMusic = value; }
