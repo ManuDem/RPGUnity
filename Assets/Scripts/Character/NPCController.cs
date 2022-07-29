@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class NPCController : MonoBehaviour, Interactable, ISavable
 {
-    #region Manu Code
     [Header("Image and name")]
     [SerializeField] Sprite sprite;
     [SerializeField] string nameText;
 
     [Header("Dialog")]
     [SerializeField] Dialog dialog;
-    #endregion
 
     [Header("Quests")]
     [SerializeField] QuestBase questToStart;

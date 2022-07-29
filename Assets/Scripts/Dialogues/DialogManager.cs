@@ -25,6 +25,8 @@ public class DialogManager : MonoBehaviour
 
     public bool IsShowing { get; private set; }
 
+
+
     public IEnumerator ShowDialogText(string text, bool waitForInput=true, bool autoClose=true,
         List<string> choices = null, Action<int> onChoiceSelected = null)
     {
@@ -51,13 +53,54 @@ public class DialogManager : MonoBehaviour
         OnDialogFinished?.Invoke();
     }
 
+    public IEnumerator ShowDialogText(string text, Sprite sprite, string nameText, bool waitForInput = true, bool autoClose = true,
+    List<string> choices = null, Action<int> onChoiceSelected = null)
+    {
+        OnShowDialog?.Invoke();
+        IsShowing = true;
+        dialogBox.SetActive(true);
+
+        if (sprite != null)
+        {
+            this.sprite.sprite = sprite;
+            this.sprite.gameObject.SetActive(true);
+        }
+
+        if (nameText != null)
+        {
+            this.nameText.text = nameText;
+            this.nameText.gameObject.SetActive(true);
+        }
+
+
+        AudioManager.i.PlaySfx(AudioId.UISelect);
+        yield return TypeDialog(text);
+        if (waitForInput)
+        {
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+        }
+
+        if (choices != null && choices.Count > 1)
+        {
+            yield return choiceBox.ShowChoices(choices, onChoiceSelected);
+        }
+
+        if (autoClose)
+        {
+            CloseDialog();
+        }
+        OnDialogFinished?.Invoke();
+    }
+
     public void CloseDialog()
     {
         dialogBox.SetActive(false);
+        this.sprite.gameObject.SetActive(false);
+        this.nameText.gameObject.SetActive(false);
         IsShowing = false;
     }
 
-    public IEnumerator ShowDialog(Dialog dialog, List<string> choices=null,
+    public IEnumerator ShowDialog(Dialog dialog,  List<string> choices=null,
         Action<int> onChoiceSelected=null)
     {
         yield return new WaitForEndOfFrame();
@@ -79,6 +122,46 @@ public class DialogManager : MonoBehaviour
         }
 
         dialogBox.SetActive(false);
+        IsShowing = false;
+        OnDialogFinished?.Invoke();
+    }
+
+    public IEnumerator ShowDialog(Dialog dialog, Sprite sprite, string nameText, List<string> choices = null,
+    Action<int> onChoiceSelected = null)
+    {
+        yield return new WaitForEndOfFrame();
+
+        OnShowDialog?.Invoke();
+        IsShowing = true;
+        dialogBox.SetActive(true);
+
+        if (sprite != null)
+        {
+            this.sprite.sprite = sprite;
+            this.sprite.gameObject.SetActive(true);
+        }
+
+        if (nameText != null)
+        {
+            this.nameText.text = nameText;
+            this.nameText.gameObject.SetActive(true);
+        }
+
+        foreach (var line in dialog.Lines)
+        {
+            AudioManager.i.PlaySfx(AudioId.UISelect);
+            yield return TypeDialog(line);
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+        }
+
+        if (choices != null && choices.Count > 1)
+        {
+            yield return choiceBox.ShowChoices(choices, onChoiceSelected);
+        }
+
+        dialogBox.SetActive(false);
+        this.sprite.gameObject.SetActive(false);
+        this.nameText.gameObject.SetActive(false);
         IsShowing = false;
         OnDialogFinished?.Invoke();
     }

@@ -92,7 +92,7 @@ public class BattleSystem : MonoBehaviour
 
     BattleTrigger battleTrigger;
 
-    public void StartBattle(PokemonParty playerParty, Pokemon wildPokemon, 
+    public void StartBattle(PokemonParty playerParty, Pokemon wildPokemon, Sprite background,
         BattleTrigger trigger = BattleTrigger.LongGrass)
     {
         this.playerParty = playerParty;
@@ -104,10 +104,10 @@ public class BattleSystem : MonoBehaviour
 
         AudioManager.i.PlayMusic(wildBattleMusic);
 
-        StartCoroutine(SetupBattle());
+        StartCoroutine(SetupBattle(background));
     }
 
-    public void StartTrainerBattle(PokemonParty playerParty, PokemonParty trainerParty,
+    public void StartTrainerBattle(PokemonParty playerParty, PokemonParty trainerParty, Sprite background,
         BattleTrigger trigger = BattleTrigger.LongGrass)
     {
         this.playerParty = playerParty;
@@ -124,15 +124,18 @@ public class BattleSystem : MonoBehaviour
         else
             AudioManager.i.PlayMusic(trainerBattleMusic);
 
-        StartCoroutine(SetupBattle());
+        StartCoroutine(SetupBattle(background));
     }
 
-    public IEnumerator SetupBattle()
+    public IEnumerator SetupBattle(Sprite background)
     {
         playerUnit.Clear();
         enemyUnit.Clear();
 
-        backgroundImage.sprite = (battleTrigger == BattleTrigger.LongGrass) ? grassBackground : waterBackground;
+        if (background != null && battleTrigger == BattleTrigger.LongGrass)
+            backgroundImage.sprite = background;
+        else
+            backgroundImage.sprite = (battleTrigger == BattleTrigger.LongGrass) ? grassBackground : waterBackground;
 
         if (!isTrainerBattle)
         {
@@ -465,12 +468,11 @@ public class BattleSystem : MonoBehaviour
             int expYield = faintedUnit.Pokemon.Base.ExpYield;
             int enemyLevel = faintedUnit.Pokemon.Level;
             float trainerBonus = (isTrainerBattle) ? 1.5f : 1f;
+
             int expGain = Mathf.FloorToInt((expYield * enemyLevel * trainerBonus) / 5);
             playerUnit.Pokemon.Exp += expGain;
-
             yield return dialogBox.TypeDialog($"{playerUnit.Pokemon.Base.Name} {gained} {expGain} {exp}");
             yield return playerUnit.Hud.SetExpSmooth();
-
 
             // Check Level Up
             while (playerUnit.Pokemon.CheckForLevelUp())
@@ -501,46 +503,9 @@ public class BattleSystem : MonoBehaviour
                 yield return playerUnit.Hud.SetExpSmooth(true);
             }
 
-            foreach (Pokemon pokemon in this.playerParty.Pokemons)
-            {
-                if (pokemon != playerUnit.Pokemon)
-                {
-                    pokemon.Exp = Mathf.FloorToInt(expGain / 2);
-
-                    // Check Level Up
-                    while (pokemon.CheckForLevelUp())
-                    {
-                        yield return dialogBox.TypeDialog($"{pokemon.Base.Name} {grewToLevel} {pokemon.Level}.");
-
-                        // Try to learn a new Move
-                        var newMove = pokemon.GetLearnableMoveAtCurrLevel();
-                        if (newMove != null)
-                        {
-                            if (pokemon.Moves.Count < PokemonBase.MaxNumOfMoves)
-                            {
-                                playerUnit.Pokemon.LearnMove(newMove.Base);
-                                yield return dialogBox.TypeDialog($"{pokemon.Base.Name} {learned} {newMove.Base.Name}.");
-                                dialogBox.SetMoveNames(pokemon.Moves);
-                            }
-                            else
-                            {
-                                yield return dialogBox.TypeDialog($"{pokemon.Base.Name} {tryingToLearn} {newMove.Base.Name}.");
-                                yield return dialogBox.TypeDialog($"{butItCannotLearnMoreThan} {PokemonBase.MaxNumOfMoves} {moves}");
-                                yield return ChooseMoveToForget(pokemon, newMove.Base);
-                                yield return new WaitUntil(() => state != BattleState.MoveToForget);
-                                yield return new WaitForSeconds(2f);
-                            }
-                        }
-
-                        yield return playerUnit.Hud.SetExpSmooth(true);
-                    }
-
-                }
-            }
 
             yield return new WaitForSeconds(1f);
         }
-
 
         CheckForBattleOver(faintedUnit);
     }

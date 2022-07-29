@@ -13,26 +13,6 @@ public class ShopController : MonoBehaviour
     [SerializeField] WalletUI walletUI;
     [SerializeField] CountSelectorUI countSelectorUI;
 
-    [Header("Dialog")]
-    [TextArea][SerializeField] string howMayIServeYou;
-    [TextArea][SerializeField] string buy;
-    [TextArea][SerializeField] string sell;
-    [TextArea][SerializeField] string quit;
-    [TextArea][SerializeField] string howManyWouldYouLikeToSell;
-    [TextArea][SerializeField] string iCanGive;
-    [TextArea][SerializeField] string youCantSellThat;
-    [TextArea][SerializeField] string forThat;
-    [TextArea][SerializeField] string wouldYouLikeToSell;
-    [TextArea][SerializeField] string turnedOver;
-    [TextArea][SerializeField] string andReceived;
-    [TextArea][SerializeField] string howManyWouldYouLikeToBuy;
-    [TextArea][SerializeField] string thatWillBe;
-    [TextArea][SerializeField] string thankYouForShoppingUs;
-    [TextArea][SerializeField] string notEnoghtMoneyForThat;
-    [TextArea][SerializeField] string yes;
-    [TextArea][SerializeField] string no;
-
-
     public event Action OnStart;
     public event Action OnFinish;
 
@@ -65,9 +45,9 @@ public class ShopController : MonoBehaviour
         state = ShopState.Menu;
 
         int selectedChoice = 0;
-        yield return DialogManager.Instance.ShowDialogText($"{howMayIServeYou}",
+        yield return DialogManager.Instance.ShowDialogText($"{merchant.HowMayIServeYou}", merchant.Sprite, merchant.NameText,
             waitForInput: false,
-            choices: new List<string>() { $"{buy}", $"{sell}", $"{quit}" },
+            choices: new List<string>() { $"{merchant.Buy}", $"{merchant.Sell}", $"{merchant.Quit}" },
             onChoiceSelected: choiceIndex => selectedChoice = choiceIndex);
 
         if (selectedChoice == 0)
@@ -118,7 +98,7 @@ public class ShopController : MonoBehaviour
 
         if (!item.IsSellable)
         {
-            yield return DialogManager.Instance.ShowDialogText($"{youCantSellThat}");
+            yield return DialogManager.Instance.ShowDialogText($"{merchant.YouCantSellThat}", merchant.Sprite, merchant.NameText);
             state = ShopState.Selling;
             yield break;
         }
@@ -131,7 +111,7 @@ public class ShopController : MonoBehaviour
         int itemCount = inventory.GetItemCount(item);
         if (itemCount > 1)
         {
-            yield return DialogManager.Instance.ShowDialogText($"{howManyWouldYouLikeToSell}",
+            yield return DialogManager.Instance.ShowDialogText($"{merchant.HowManyWouldYouLikeToSell}", merchant.Sprite, merchant.NameText,
                 waitForInput: false, autoClose: false);
 
             yield return countSelectorUI.ShowSelector(itemCount, sellingPrice,
@@ -143,9 +123,9 @@ public class ShopController : MonoBehaviour
         sellingPrice = sellingPrice * countToSell;
 
         int selectedChoice = 0;
-        yield return DialogManager.Instance.ShowDialogText($"{iCanGive} {Math.Round(sellingPrice / 2)}$ {forThat}! {wouldYouLikeToSell}",
+        yield return DialogManager.Instance.ShowDialogText($"{merchant.ICanGive} {Math.Round(sellingPrice)}$ {merchant.ForThat}! {merchant.WouldYouLikeToSell}", merchant.Sprite, merchant.NameText,
             waitForInput: false,
-            choices: new List<string>() { $"{yes}", $"{no}" },
+            choices: new List<string>() { $"{merchant.Yes}", $"{merchant.No}" },
             onChoiceSelected: choiceIndex => selectedChoice = choiceIndex);
 
         if (selectedChoice == 0)
@@ -153,7 +133,7 @@ public class ShopController : MonoBehaviour
             // Yes
             inventory.RemoveItem(item, countToSell);
             Wallet.i.AddMoney((float)Math.Round(sellingPrice / 2));
-            yield return DialogManager.Instance.ShowDialogText($"{turnedOver} {item.Name} {andReceived} {Math.Round(sellingPrice / 2)}$ !");
+            yield return DialogManager.Instance.ShowDialogText($"{merchant.TurnedOver} {item.Name} {merchant.AndReceived} {Math.Round(sellingPrice)}$ !",merchant.Sprite, merchant.NameText);
         }
 
         walletUI.Close();
@@ -165,7 +145,7 @@ public class ShopController : MonoBehaviour
     {
         state = ShopState.Busy;
 
-        yield return DialogManager.Instance.ShowDialogText($"{howManyWouldYouLikeToBuy}?",
+        yield return DialogManager.Instance.ShowDialogText($"{merchant.HowManyWouldYouLikeToBuy}?", merchant.Sprite, merchant.NameText,
             waitForInput: false, autoClose: false);
 
         int countToBuy = 1;
@@ -179,9 +159,9 @@ public class ShopController : MonoBehaviour
         if (Wallet.i.HasMoney(totalPrice))
         {
             int selectedChoice = 0;
-            yield return DialogManager.Instance.ShowDialogText($"{thatWillBe} {totalPrice}$.",
+            yield return DialogManager.Instance.ShowDialogText($"{merchant.ThatWillBe} {totalPrice}$.", merchant.Sprite, merchant.NameText,
                 waitForInput: false,
-                choices: new List<string>() { $"{yes}", $"{no}" },
+                choices: new List<string>() { $"{merchant.Yes}", $"{merchant.No}" },
                 onChoiceSelected: choiceIndex => selectedChoice = choiceIndex);
 
             if (selectedChoice == 0)
@@ -189,12 +169,12 @@ public class ShopController : MonoBehaviour
                 // Selected Yes
                 inventory.AddItem(item, countToBuy);
                 Wallet.i.TakeMoney(totalPrice);
-                yield return DialogManager.Instance.ShowDialogText($"{thankYouForShoppingUs}");
+                yield return DialogManager.Instance.ShowDialogText($"{merchant.ThankYouForShoppingUs}", merchant.Sprite, merchant.NameText);
             }
         }
         else
         {
-            yield return DialogManager.Instance.ShowDialogText($"{notEnoghtMoneyForThat}");
+            yield return DialogManager.Instance.ShowDialogText($"{merchant.NotEnoghtMoneyForThat}", merchant.Sprite, merchant.NameText);
         }
 
         state = ShopState.Buying;

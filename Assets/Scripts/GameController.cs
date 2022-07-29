@@ -85,6 +85,8 @@ public class GameController : MonoBehaviour
         };
 
         newGameMenuController.onMenuSelected += OnNewGameMenuSelected;
+
+
         EvolutionManager.i.OnStartEvolution += () =>
         {
             stateBeforeEvolution = state;
@@ -152,7 +154,7 @@ public class GameController : MonoBehaviour
 
             var wildPokemonCopy = new Pokemon(wildPokemon.Base, wildPokemon.Level);
 
-            battleSystem.StartBattle(playerParty, wildPokemonCopy, trigger);
+            battleSystem.StartBattle(playerParty, wildPokemonCopy, CurrentScene.Background, trigger);
         }
     }
 
@@ -178,7 +180,7 @@ public class GameController : MonoBehaviour
             this.trainer = trainer;
             var trainerParty = trainer.GetComponent<PokemonParty>();
 
-            battleSystem.StartTrainerBattle(playerParty, trainerParty);
+            battleSystem.StartTrainerBattle(playerParty, trainerParty, CurrentScene.Background);
         }
     }
 

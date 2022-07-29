@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Healer : MonoBehaviour
 {
+    [Header("Image and name")]
+    [SerializeField] Sprite sprite;
+    [SerializeField] string nameText;
+
     [Header("Dialog")]
     [TextArea][SerializeField] string healed;
     [TextArea][SerializeField] string notHealed;
@@ -14,7 +18,7 @@ public class Healer : MonoBehaviour
     {
         int selectedChoice = 0;
 
-        yield return DialogManager.Instance.ShowDialog(dialog,
+        yield return DialogManager.Instance.ShowDialog(dialog, sprite, nameText,
             new List<string>() { $"{yes}", $"{no}" },
             (choiceIndex) => selectedChoice = choiceIndex);
 
@@ -29,12 +33,12 @@ public class Healer : MonoBehaviour
 
             yield return Fader.i.FadeOut(0.5f);
 
-            yield return DialogManager.Instance.ShowDialogText(healed);
+            yield return DialogManager.Instance.ShowDialogText(healed,sprite, nameText);
         }
         else if (selectedChoice == 1)
         {
             // No
-            yield return DialogManager.Instance.ShowDialogText(notHealed);
+            yield return DialogManager.Instance.ShowDialogText(notHealed, sprite, nameText);
         }
 
 
