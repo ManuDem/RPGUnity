@@ -102,11 +102,11 @@ public class Pokemon
 
             foreach (var move in Base.LearnableMoves)
             {
-                if (move.Level <= Level)
-                    Moves.Add(new Move(move.Base));
-
                 if (Moves.Count >= PokemonBase.MaxNumOfMoves)
                     break;
+
+                if (move.Level <= Level)
+                    Moves.Add(new Move(move.Base));
             }
         }
         else
