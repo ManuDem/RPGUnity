@@ -12,730 +12,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
   m_Name: perish-song
   m_EditorClassIdentifier: 
-  name: Ultimocanto
-  description: "Qualunque Pok\xE9mon che senta questo canto va\nKO in tre turni,
-    se non lo si sostituisce."
-  type: 1
+  name: 
+  description: 
+  type: 0
   power: 0
-  accuracy: 100
+  accuracy: 0
   alwaysHits: 0
-  pp: 5
+  pp: 0
   priority: 0
-  category: 2
+  category: 0
   effects:
     boosts: []
     status: 0
     volatileStatus: 0
-  secondaries:
-  - boosts: []
-    status: 14
-    volatileStatus: 0
-    chance: 100
-    target: 0
+  secondaries: []
   target: 0
-  id: 195
+  id: 0
   pokeApiMove:
     accuracy: 0
     contest_combos:
       normal:
-        use_after:
-        - name: sing
-          url: https://pokeapi.co/api/v2/move/47/
-        - name: mean-look
-          url: https://pokeapi.co/api/v2/move/212/
+        use_after: []
         use_before: []
       super:
         use_after: []
         use_before: []
     contest_effect:
-      url: https://pokeapi.co/api/v2/contest-effect/14/
+      url: 
     contest_type:
-      name: beauty
-      url: https://pokeapi.co/api/v2/contest-type/2/
+      name: 
+      url: 
     damage_class:
-      name: status
-      url: https://pokeapi.co/api/v2/move-damage-class/1/
+      name: 
+      url: 
     effect_chance: 0
     effect_changes: []
-    effect_entries:
-    - effect: "Every Pok\xE9mon is given a counter that starts at 3 and decreases
-        by 1 at the end of every turn, including this one.  When a Pok\xE9mon's counter
-        reaches zero, that Pok\xE9mon faints.  A Pok\xE9mon that leaves the field
-        will lose its counter; its replacement does not inherit the effect, and other
-        Pok\xE9mon's counters remain.\n\nThis effect is passed on by baton pass.\n\nThis
-        move cannot be copied by mirror move."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      short_effect: User and target both faint after three turns.
-    flavor_text_entries:
-    - flavor_text: "Wer diese Musik h\xF6rt, wird nach drei Runden\nbesiegt. Rettung
-        ist durch den Eintausch\neines neuen Pok\xE9mon m\xF6glich."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: 'Both user and foe
-
-        faint in 3 turns.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: gold-silver
-        url: https://pokeapi.co/api/v2/version-group/3/
-    - flavor_text: 'Both user and foe
-
-        faint in 3 turns.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: crystal
-        url: https://pokeapi.co/api/v2/version-group/4/
-    - flavor_text: "Any POK\xE9MON hearing this\nsong faints in 3 turns."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: ruby-sapphire
-        url: https://pokeapi.co/api/v2/version-group/5/
-    - flavor_text: "Any POK\xE9MON hearing this\nsong faints in 3 turns."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: emerald
-        url: https://pokeapi.co/api/v2/version-group/6/
-    - flavor_text: 'Any battler that
-
-        hears this faints
-
-        in three
-        turns
-
-        unless it switches.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: firered-leafgreen
-        url: https://pokeapi.co/api/v2/version-group/7/
-    - flavor_text: "Any Pok\xE9mon that\nhears this song\nfaints in three turns\nunless
-        it switches\nout of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: diamond-pearl
-        url: https://pokeapi.co/api/v2/version-group/8/
-    - flavor_text: "Any Pok\xE9mon that\nhears this song\nfaints in three turns\nunless
-        it switches\nout of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: platinum
-        url: https://pokeapi.co/api/v2/version-group/9/
-    - flavor_text: "Any Pok\xE9mon that\nhears this song\nfaints in three turns,\nunless
-        it switches\nout of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: heartgold-soulsilver
-        url: https://pokeapi.co/api/v2/version-group/10/
-    - flavor_text: "Tout Pok\xE9mon qui entend ce requiem\nest K.O. dans 3 tours
-        \xE0 moins qu\u2019il\nne quitte le combat."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: black-white
-        url: https://pokeapi.co/api/v2/version-group/11/
-    - flavor_text: "Any Pok\xE9mon that hears this song\nfaints in three turns, unless
-        it switches\nout of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: black-white
-        url: https://pokeapi.co/api/v2/version-group/11/
-    - flavor_text: "Any Pok\xE9mon that hears this song\nfaints in three turns, unless
-        it switches\nout of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: black-2-white-2
-        url: https://pokeapi.co/api/v2/version-group/14/
-    - flavor_text: "\u3046\u305F\u3092\u3000\u304D\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u3053\u3046\u305F\u3044\u3059\u308B\u3068\u3000\u3053\u3046\u304B\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\uB178\uB798\uB97C \uB4E4\uC740 \uD3EC\uCF13\uBAAC\uC740\n3\uD134\uC774
-        \uC9C0\uB098\uBA74 \uAE30\uC808\uD55C\uB2E4.\n\uAD50\uCCB4\uB418\uBA74 \uD6A8\uACFC\uAC00
-        \uC5C6\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Tout Pok\xE9mon qui entend ce requiem est K.O.\ndans trois tours
-        \xE0 moins qu\u2019il ne quitte le combat."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Si un Pok\xE9mon escucha este canto y no es\ncambiado por otro
-        en tres turnos, acaba\ndebilit\xE1ndose."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Qualunque Pok\xE9mon che senta questo canto va\nKO in tre turni,
-        se non lo si sostituisce."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Any Pok\xE9mon that hears this song\nfaints in three turns, unless
-        it switches\nout of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\u6B4C\u3092\u3000\u8074\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u4EA4\u4EE3\u3059\u308B\u3068\u3000\u52B9\u679C\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\u3046\u305F\u3092\u3000\u304D\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u3053\u3046\u305F\u3044\u3059\u308B\u3068\u3000\u3053\u3046\u304B\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\uB178\uB798\uB97C \uB4E4\uC740 \uD3EC\uCF13\uBAAC\uC740\n3\uD134\uC774
-        \uC9C0\uB098\uBA74 \uAE30\uC808\uD55C\uB2E4.\n\uAD50\uCCB4\uB418\uBA74 \uD6A8\uACFC\uAC00
-        \uC5C6\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Tout Pok\xE9mon qui entend ce requiem est K.O.\ndans trois tours
-        \xE0 moins qu\u2019il ne soit remplac\xE9."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Wer diese Musik h\xF6rt, wird nach drei Runden\nbesiegt. Rettung
-        ist durch den Eintausch\neines neuen Pok\xE9mon m\xF6glich."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Si un Pok\xE9mon escucha este canto y no es cambiado \npor otro
-        en tres turnos, acaba debilit\xE1ndose. "
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Qualunque Pok\xE9mon che senta questo canto va\nKO in tre turni,
-        se non lo si sostituisce."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Any Pok\xE9mon that hears this song\nfaints in three turns, unless
-        it switches\nout of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\u6B4C\u3092\u3000\u8074\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u4EA4\u4EE3\u3059\u308B\u3068\u3000\u52B9\u679C\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\u3046\u305F\u3092\u3000\u304D\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u3053\u3046\u305F\u3044\u3059\u308B\u3068\u3000\u3053\u3046\u304B\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\uB178\uB798\uB97C \uB4E4\uC740 \uD3EC\uCF13\uBAAC\uC740\n3\uD134\uC774
-        \uC9C0\uB098\uBA74 \uAE30\uC808\uD55C\uB2E4.\n\uAD50\uCCB4\uB418\uBA74 \uD6A8\uACFC\uAC00
-        \uC5C6\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u807D\u4E86\u6B4C\u8072\u7684\u5BF6\u53EF\u5922\n\uFF13\u56DE\u5408\u5F8C\u5C07\u9677\u5165\u7015\u6B7B\u3002\n\u66FF\u63DB\u5BF6\u53EF\u5922\u5F8C\u6548\u679C\u5C31\u6703\u6D88\u5931\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Tout Pok\xE9mon qui entend ce requiem est K.O.\ndans trois tours
-        \xE0 moins qu\u2019il ne soit remplac\xE9."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Wer diese Musik h\xF6rt, wird nach drei Runden besiegt.\nRettung
-        ist durch den Eintausch eines neuen\nPok\xE9mon m\xF6glich."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Si un Pok\xE9mon escucha este canto y no es cambiado \npor otro
-        en tres turnos, acaba debilit\xE1ndose. "
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Qualunque Pok\xE9mon che senta questo canto va\nKO in tre turni,
-        se non lo si sostituisce."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Any Pok\xE9mon that hears this song faints in three\nturns, unless
-        it switches out of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u6B4C\u3092\u3000\u8074\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u4EA4\u4EE3\u3059\u308B\u3068\u3000\u52B9\u679C\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u503E\u542C\u6B4C\u58F0\u7684\u5B9D\u53EF\u68A6\n\u7ECF\u8FC7\uFF13\u56DE\u5408\u9677\u5165\u6FD2\u6B7B\u3002\n\u66FF\u6362\u540E\u6548\u679C\u6D88\u5931\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u3046\u305F\u3092\u3000\u304D\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u3053\u3046\u305F\u3044\u3059\u308B\u3068\u3000\u3053\u3046\u304B\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\uB178\uB798\uB97C \uB4E4\uC740 \uD3EC\uCF13\uBAAC\uC740\n3\uD134\uC774
-        \uC9C0\uB098\uBA74 \uAE30\uC808\uD55C\uB2E4.\n\uAD50\uCCB4\uB418\uBA74 \uD6A8\uACFC\uAC00
-        \uC5C6\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u807D\u4E86\u6B4C\u8072\u7684\u5BF6\u53EF\u5922\n\uFF13\u56DE\u5408\u5F8C\u5C07\u9677\u5165\u7015\u6B7B\u3002\n\u66FF\u63DB\u5BF6\u53EF\u5922\u5F8C\u6548\u679C\u5C31\u6703\u6D88\u5931\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Tout Pok\xE9mon qui entend ce requiem est K.O.\ndans trois tours
-        \xE0 moins qu\u2019il ne soit remplac\xE9."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Wer diese Musik h\xF6rt, wird nach drei Runden besiegt.\nRettung
-        ist durch den Eintausch eines neuen\nPok\xE9mon m\xF6glich."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Si un Pok\xE9mon escucha este canto y no es cambiado \npor otro
-        en tres turnos, acaba debilit\xE1ndose. "
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Qualunque Pok\xE9mon che senta questo canto va\nKO in tre turni,
-        se non lo si sostituisce."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Any Pok\xE9mon that hears this song faints in three\nturns, unless
-        it switches out of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u6B4C\u3092\u3000\u8074\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u4EA4\u4EE3\u3059\u308B\u3068\u3000\u52B9\u679C\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u503E\u542C\u6B4C\u58F0\u7684\u5B9D\u53EF\u68A6\n\u7ECF\u8FC7\uFF13\u56DE\u5408\u9677\u5165\u6FD2\u6B7B\u3002\n\u66FF\u6362\u540E\u6548\u679C\u6D88\u5931\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u3046\u305F\u3092\u3000\u304D\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u3053\u3046\u305F\u3044\u3059\u308B\u3068\u3000\u3053\u3046\u304B\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\uB178\uB798\uB97C \uB4E4\uC740 \uD3EC\uCF13\uBAAC\uC740\n3\uD134\uC774
-        \uC9C0\uB098\uBA74 \uAE30\uC808\uD55C\uB2E4.\n\uAD50\uCCB4\uB418\uBA74 \uD6A8\uACFC\uAC00
-        \uC5C6\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u807D\u4E86\u6B4C\u8072\u7684\u5BF6\u53EF\u5922\n\uFF13\u56DE\u5408\u5F8C\u5C07\u9677\u5165\u7015\u6B7B\u3002\n\u66FF\u63DB\u5BF6\u53EF\u5922\u5F8C\u6548\u679C\u5C31\u6703\u6D88\u5931\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Tout Pok\xE9mon qui entend ce requiem est K.O.\ndans trois tours
-        \xE0 moins qu\u2019il ne soit remplac\xE9."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Wer diese Musik h\xF6rt, wird nach drei Runden besiegt.\nRettung
-        ist durch den Eintausch eines neuen\nPok\xE9mon m\xF6glich."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Si un Pok\xE9mon escucha este canto y no es cambiado \npor otro
-        en tres turnos, acaba debilit\xE1ndose. "
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Qualunque Pok\xE9mon che senta questo canto va\nKO in tre turni,
-        se non lo si sostituisce."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Any Pok\xE9mon that hears this song faints in three\nturns, unless
-        it switches out of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u6B4C\u3092\u3000\u8074\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u4EA4\u4EE3\u3059\u308B\u3068\u3000\u52B9\u679C\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u503E\u542C\u6B4C\u58F0\u7684\u5B9D\u53EF\u68A6\n\u7ECF\u8FC7\uFF13\u56DE\u5408\u9677\u5165\u6FD2\u6B7B\u3002\n\u66FF\u6362\u540E\u6548\u679C\u6D88\u5931\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u3046\u305F\u3092\u3000\u304D\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u3053\u3046\u305F\u3044\u3059\u308B\u3068\u3000\u3053\u3046\u304B\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\uB178\uB798\uB97C \uB4E4\uC740 \uD3EC\uCF13\uBAAC\uC740\n3\uD134\uC774
-        \uC9C0\uB098\uBA74 \uAE30\uC808\uD55C\uB2E4.\n\uAD50\uCCB4\uB418\uBA74 \uD6A8\uACFC\uAC00
-        \uC5C6\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u807D\u4E86\u6B4C\u8072\u7684\u5BF6\u53EF\u5922\n\uFF13\u56DE\u5408\u5F8C\u5C07\u9677\u5165\u7015\u6B7B\u3002\n\u66FF\u63DB\u5BF6\u53EF\u5922\u5F8C\u6548\u679C\u5C31\u6703\u6D88\u5931\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Tout Pok\xE9mon qui entend ce requiem est K.O.\ndans trois tours
-        \xE0 moins qu\u2019il ne soit remplac\xE9."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Wer diese Musik h\xF6rt, wird nach drei Runden besiegt.\nRettung
-        ist durch den Eintausch eines neuen Pok\xE9mon\nm\xF6glich."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Si un Pok\xE9mon escucha este canto y no es cambiado\npor otro
-        en tres turnos, acaba debilit\xE1ndose. "
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Qualunque Pok\xE9mon che senta questo canto va\nKO in tre turni,
-        se non lo si sostituisce."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Any Pok\xE9mon that hears this song faints in three\nturns, unless
-        it switches out of battle."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u6B4C\u3092\u3000\u8074\u3044\u305F\u3000\u30DD\u30B1\u30E2\u30F3\u306F\n\uFF13\u30BF\u30FC\u30F3\u3000\u305F\u3064\u3068\u3000\u3072\u3093\u3057\u306B\u3000\u306A\u308B\u3002\n\u4EA4\u4EE3\u3059\u308B\u3068\u3000\u52B9\u679C\u306F\u3000\u306A\u304F\u306A\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u503E\u542C\u6B4C\u58F0\u7684\u5B9D\u53EF\u68A6\n\u7ECF\u8FC7\uFF13\u56DE\u5408\u9677\u5165\u6FD2\u6B7B\u3002\n\u66FF\u6362\u540E\u6548\u679C\u6D88\u5931\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
+    effect_entries: []
+    flavor_text_entries: []
     generation:
-      name: generation-ii
-      url: https://pokeapi.co/api/v2/generation/2/
-    id: 195
-    learned_by_pokemon:
-    - name: seel
-      url: https://pokeapi.co/api/v2/pokemon/86/
-    - name: gastly
-      url: https://pokeapi.co/api/v2/pokemon/92/
-    - name: gengar
-      url: https://pokeapi.co/api/v2/pokemon/94/
-    - name: cubone
-      url: https://pokeapi.co/api/v2/pokemon/104/
-    - name: jynx
-      url: https://pokeapi.co/api/v2/pokemon/124/
-    - name: lapras
-      url: https://pokeapi.co/api/v2/pokemon/131/
-    - name: igglybuff
-      url: https://pokeapi.co/api/v2/pokemon/174/
-    - name: marill
-      url: https://pokeapi.co/api/v2/pokemon/183/
-    - name: politoed
-      url: https://pokeapi.co/api/v2/pokemon/186/
-    - name: murkrow
-      url: https://pokeapi.co/api/v2/pokemon/198/
-    - name: misdreavus
-      url: https://pokeapi.co/api/v2/pokemon/200/
-    - name: smoochum
-      url: https://pokeapi.co/api/v2/pokemon/238/
-    - name: celebi
-      url: https://pokeapi.co/api/v2/pokemon/251/
-    - name: azurill
-      url: https://pokeapi.co/api/v2/pokemon/298/
-    - name: swablu
-      url: https://pokeapi.co/api/v2/pokemon/333/
-    - name: altaria
-      url: https://pokeapi.co/api/v2/pokemon/334/
-    - name: chimecho
-      url: https://pokeapi.co/api/v2/pokemon/358/
-    - name: absol
-      url: https://pokeapi.co/api/v2/pokemon/359/
-    - name: kricketune
-      url: https://pokeapi.co/api/v2/pokemon/402/
-    - name: arceus
-      url: https://pokeapi.co/api/v2/pokemon/493/
-    - name: meloetta-aria
-      url: https://pokeapi.co/api/v2/pokemon/648/
-    - name: popplio
-      url: https://pokeapi.co/api/v2/pokemon/728/
-    - name: cursola
-      url: https://pokeapi.co/api/v2/pokemon/864/
-    - name: meloetta-pirouette
-      url: https://pokeapi.co/api/v2/pokemon/10018/
-    - name: absol-mega
-      url: https://pokeapi.co/api/v2/pokemon/10057/
-    - name: altaria-mega
-      url: https://pokeapi.co/api/v2/pokemon/10067/
+      name: 
+      url: 
+    id: 0
+    learned_by_pokemon: []
     machines: []
     meta:
       ailment:
-        name: perish-song
-        url: https://pokeapi.co/api/v2/move-ailment/20/
+        name: 
+        url: 
       ailment_chance: 0
       category:
-        name: ailment
-        url: https://pokeapi.co/api/v2/move-category/1/
+        name: 
+        url: 
       crit_rate: 0
       drain: 0
       flinch_chance: 0
       healing: 0
       max_hits: 0
-      max_turns: 4
+      max_turns: 0
       min_hits: 0
-      min_turns: 4
+      min_turns: 0
       stat_chance: 0
-    name: perish-song
-    names:
-    - language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      name: "\u307B\u308D\u3073\u306E\u3046\u305F"
-    - language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      name: "\uBA78\uB9DD\uC758\uB178\uB798"
-    - language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      name: "\u6EC5\u4EA1\u4E4B\u6B4C"
-    - language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      name: Requiem
-    - language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      name: Abgesang
-    - language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      name: Canto Mortal
-    - language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      name: Ultimocanto
-    - language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      name: Perish Song
-    - language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      name: "\u307B\u308D\u3073\u306E\u3046\u305F"
-    - language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      name: "\u706D\u4EA1\u4E4B\u6B4C"
-    past_values:
-    - accuracy: 0
-      effect_chance: 12
-      effect_entries: []
-      power: 0
-      pp: 0
-      type:
-        name: 
-        url: 
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
+    name: 
+    names: []
+    past_values: []
     power: 0
-    pp: 5
+    pp: 0
     priority: 0
     stat_changes: []
     super_contest_effect:
-      url: https://pokeapi.co/api/v2/super-contest-effect/10/
+      url: 
     target:
-      name: all-pokemon
-      url: https://pokeapi.co/api/v2/move-target/14/
+      name: 
+      url: 
     type:
-      name: normal
-      url: https://pokeapi.co/api/v2/type/1/
-  sound: {fileID: 8300000, guid: 03a590424a7e66f49bbf4603fe4a5415, type: 3}
+      name: 
+      url: 
+  sound: {fileID: 0}

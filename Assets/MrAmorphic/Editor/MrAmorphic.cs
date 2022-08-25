@@ -1073,10 +1073,10 @@ namespace MrAmorphic
             itemToAdd.Price = item.cost;
             itemToAdd.Id = item.id;
 
-            if (item.cost > 0) {
+            if (item.cost > 0)
+            {
                 itemToAdd.IsSellable = true;
             }
-
             if (item.attributes.Any(a => a.name == "usable-in-battle"))
             {
                 itemToAdd.CanUseInBattle = true;
@@ -1120,6 +1120,7 @@ namespace MrAmorphic
 
             moveToAdd.Id = move.id;
             moveToAdd.Name = move.names.First(n => n.language.name == language.ToString().Replace("_", "-")).name;
+
             if (move.accuracy > 0)
                 moveToAdd.Accuracy = move.accuracy;
             else
@@ -1140,10 +1141,12 @@ namespace MrAmorphic
             moveToAdd.Effects.Boosts = new List<StatBoost>();
             moveToAdd.Secondaries = new List<SecondaryEffects>();
 
-            if (move.target.name.Equals("user")) { 
-              moveToAdd.Target = MoveTarget.Self;
+            if (move.target.name.Equals("user"))
+            {
+                moveToAdd.Target = MoveTarget.Self;
             }
-            else {
+            else
+            {
                 moveToAdd.Target = MoveTarget.Foe;
             }
 
@@ -1179,7 +1182,7 @@ namespace MrAmorphic
                     Debug.Log("Moves Sound" + audioClip.name.Replace(" ", "").ToLower());
 
                     moveToAdd.Sound = audioClip;
-                 }
+                }
             }
 
             moveToAdd.PokeApiMove = move;

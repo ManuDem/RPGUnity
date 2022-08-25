@@ -12,27 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
   m_Name: strength-sap
   m_EditorClassIdentifier: 
-  name: Assorbiforza
-  description: "Fa recuperare una quantit\xE0 di PS pari all\u2019Attacco\ndel bersaglio,
-    che vedr\xE0 diminuire questa statistica."
-  type: 5
+  name: 
+  description: 
+  type: 0
   power: 0
-  accuracy: 100
+  accuracy: 0
   alwaysHits: 0
-  pp: 10
+  pp: 0
   priority: 0
-  category: 2
+  category: 0
   effects:
-    boosts:
-    - stat: 0
-      boost: -1
+    boosts: []
     status: 0
     volatileStatus: 0
   secondaries: []
   target: 0
-  id: 668
+  id: 0
   pokeApiMove:
-    accuracy: 100
+    accuracy: 0
     contest_combos:
       normal:
         use_after: []
@@ -46,367 +43,26 @@ MonoBehaviour:
       name: 
       url: 
     damage_class:
-      name: status
-      url: https://pokeapi.co/api/v2/move-damage-class/1/
-    effect_chance: 100
+      name: 
+      url: 
+    effect_chance: 0
     effect_changes: []
-    effect_entries:
-    - effect: 'Lowers the target''s Attack by one stage.  Heals the user by the target''s
-        current Attack, including modifiers, but not including this move''s Attack-lowering
-        effect.
-
-
-        If the target''s Attack is already at -6, this move will
-        fail.  In any other situation that would prevent a stat modification, the
-        healing will still succeed.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      short_effect: Heals the user by the target's current Attack stat and lowers
-        the target's Attack by one stage.
-    flavor_text_entries:
-    - flavor_text: "\u5C07\u81EA\u5DF1\u7684HP\u56DE\u5FA9\u5230\u548C\n\u5C0D\u624B\u7684\u653B\u64CA\u529B\u76F8\u540C\u3002\n\u7136\u5F8C\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Rend au lanceur une quantit\xE9 de PV \xE9quivalente\n\xE0 la
-        stat d\u2019Attaque de la cible, puis baisse celle-ci."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u308A\u3087\u304F\u3068\u3000\u304A\u306A\u3058\u3060\u3051\n\u3058\u3076\u3093\u306E\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3059\u308B\u3002\n\u305D\u3057\u3066\u3000\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3092\u3000\u3055\u3052\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\uC0C1\uB300 \uACF5\uACA9\uB825\uACFC \uB3D9\uC77C\uD558\uAC8C\n\uC790\uC2E0\uC758
-        HP\uB97C \uD68C\uBCF5\uD55C\uB2E4.\n\uADF8\uB9AC\uACE0 \uC0C1\uB300\uC758
-        \uACF5\uACA9\uC744 \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u5C07\u81EA\u5DF1\u7684\uFF28\uFF30\u56DE\u5FA9\u5230\u548C\n\u5C0D\u624B\u7684\u653B\u64CA\u529B\u76F8\u540C\u3002\n\u7136\u5F8C\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Rend au lanceur une quantit\xE9 de PV \xE9quivalente\n\xE0 la
-        stat d\u2019Attaque de la cible, puis baisse celle-ci."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Ein Angriff, der die KP des Anwenders um die H\xF6he\ndes Angriffs-Werts
-        des Zieles heilt. Anschlie\xDFend\nwird der Angriff des Zieles gesenkt."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Restaura una cantidad de PS equivalente al valor de\nAtaque del
-        rival, que adem\xE1s ver\xE1 reducida esta\ncaracter\xEDstica."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Fa recuperare una quantit\xE0 di PS pari all\u2019Attacco\ndel
-        bersaglio, che vedr\xE0 diminuire questa statistica."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "The user restores its HP by the same amount as the\ntarget\u2019s
-        Attack stat. It also lowers the target\u2019s\nAttack stat."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u76F8\u624B\u306E\u3000\u653B\u6483\u529B\u3068\u3000\u540C\u3058\u3060\u3051\n\u81EA\u5206\u306E\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002\n\u305D\u3057\u3066\u3000\u76F8\u624B\u306E\u3000\u653B\u6483\u3092\u3000\u3055\u3052\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u7ED9\u81EA\u5DF1\u56DE\u590D\u548C\u5BF9\u624B\u653B\u51FB\u529B\n\u76F8\u540C\u6570\u503C\u7684\uFF28\uFF30\uFF0C\n\u7136\u540E\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u308A\u3087\u304F\u3068\u3000\u304A\u306A\u3058\u3060\u3051\n\u3058\u3076\u3093\u306E\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3059\u308B\u3002\n\u305D\u3057\u3066\u3000\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3092\u3000\u3055\u3052\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\uC0C1\uB300 \uACF5\uACA9\uB825\uACFC \uB3D9\uC77C\uD558\uAC8C\n\uC790\uC2E0\uC758
-        HP\uB97C \uD68C\uBCF5\uD55C\uB2E4.\n\uADF8\uB9AC\uACE0 \uC0C1\uB300\uC758
-        \uACF5\uACA9\uC744 \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u5C07\u81EA\u5DF1\u7684\uFF28\uFF30\u56DE\u5FA9\u5230\u548C\n\u5C0D\u624B\u7684\u653B\u64CA\u529B\u76F8\u540C\u3002\n\u7136\u5F8C\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Rend au lanceur une quantit\xE9 de PV \xE9quivalente\n\xE0 la
-        stat d\u2019Attaque de la cible, puis baisse celle-ci."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Ein Angriff, der die KP des Anwenders um die H\xF6he\ndes Angriffs-Werts
-        des Zieles heilt. Anschlie\xDFend\nwird der Angriff des Zieles gesenkt."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Restaura una cantidad de PS equivalente al valor de\nAtaque del
-        rival, que adem\xE1s ver\xE1 reducida esta\ncaracter\xEDstica."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Fa recuperare una quantit\xE0 di PS pari all\u2019Attacco\ndel
-        bersaglio, che vedr\xE0 diminuire questa statistica."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "The user restores its HP by the same amount as the\ntarget\u2019s
-        Attack stat. It also lowers the target\u2019s\nAttack stat."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u76F8\u624B\u306E\u3000\u653B\u6483\u529B\u3068\u3000\u540C\u3058\u3060\u3051\n\u81EA\u5206\u306E\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002\n\u305D\u3057\u3066\u3000\u76F8\u624B\u306E\u3000\u653B\u6483\u3092\u3000\u3055\u3052\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u7ED9\u81EA\u5DF1\u56DE\u590D\u548C\u5BF9\u624B\u653B\u51FB\u529B\n\u76F8\u540C\u6570\u503C\u7684\uFF28\uFF30\uFF0C\n\u7136\u540E\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u308A\u3087\u304F\u3068\u3000\u304A\u306A\u3058\u3060\u3051\n\u3058\u3076\u3093\u306E\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3059\u308B\u3002\n\u305D\u3057\u3066\u3000\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3092\u3000\u3055\u3052\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\uC0C1\uB300 \uACF5\uACA9\uB825\uACFC \uB3D9\uC77C\uD558\uAC8C\n\uC790\uC2E0\uC758
-        HP\uB97C \uD68C\uBCF5\uD55C\uB2E4.\n\uADF8\uB9AC\uACE0 \uC0C1\uB300\uC758
-        \uACF5\uACA9\uC744 \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Ein Angriff, der die KP des Anwenders um die H\xF6he\ndes Angriffs-Werts
-        des Zieles heilt. Anschlie\xDFend\nwird der Angriff des Zieles gesenkt."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Restaura una cantidad de PS equivalente al valor de\nAtaque del
-        rival, que adem\xE1s ver\xE1 reducida esta\ncaracter\xEDstica."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Fa recuperare una quantit\xE0 di PS pari all\u2019Attacco\ndel
-        bersaglio, che vedr\xE0 diminuire questa statistica."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "The user restores its HP by the same amount as the\ntarget\u2019s
-        Attack stat. It also lowers the target\u2019s\nAttack stat."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u76F8\u624B\u306E\u3000\u653B\u6483\u529B\u3068\u3000\u540C\u3058\u3060\u3051\n\u81EA\u5206\u306E\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002\n\u305D\u3057\u3066\u3000\u76F8\u624B\u306E\u3000\u653B\u6483\u3092\u3000\u3055\u3052\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u7ED9\u81EA\u5DF1\u56DE\u590D\u548C\u5BF9\u624B\u653B\u51FB\u529B\n\u76F8\u540C\u6570\u503C\u7684HP\uFF0C\n\u7136\u540E\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u308A\u3087\u304F\u3068\u3000\u304A\u306A\u3058\u3060\u3051\n\u3058\u3076\u3093\u306E\u3000\uFF28\uFF30\u3092\u3000\u304B\u3044\u3075\u304F\u3059\u308B\u3002\n\u305D\u3057\u3066\u3000\u3042\u3044\u3066\u306E\u3000\u3053\u3046\u3052\u304D\u3092\u3000\u3055\u3052\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\uC0C1\uB300 \uACF5\uACA9\uB825\uACFC \uB3D9\uC77C\uD558\uAC8C\n\uC790\uC2E0\uC758
-        HP\uB97C \uD68C\uBCF5\uD55C\uB2E4.\n\uADF8\uB9AC\uACE0 \uC0C1\uB300\uC758
-        \uACF5\uACA9\uC744 \uB5A8\uC5B4\uB728\uB9B0\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u5C07\u81EA\u5DF1\u7684\uFF28\uFF30\u56DE\u5FA9\u5230\u548C\n\u5C0D\u624B\u7684\u653B\u64CA\u529B\u76F8\u540C\u3002\n\u7136\u5F8C\u964D\u4F4E\u5C0D\u624B\u7684\u653B\u64CA\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Rend au lanceur une quantit\xE9 de PV \xE9quivalente\n\xE0 la
-        stat d\u2019Attaque de la cible, puis baisse celle-ci."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Ein Angriff, der die KP des Anwenders um die H\xF6he des\nAngriffs-Werts
-        des Zieles heilt. Anschlie\xDFend wird der\nAngriff des Zieles gesenkt."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Restaura una cantidad de PS equivalente al valor de\nAtaque del
-        rival, que adem\xE1s ver\xE1 reducida esta\ncaracter\xEDstica."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Fa recuperare una quantit\xE0 di PS pari all\u2019Attacco\ndel
-        bersaglio, che vedr\xE0 diminuire questa statistica."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "The user restores its HP by the same amount as the\ntarget\u2019s
-        Attack stat. It also lowers the target\u2019s\nAttack stat."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u76F8\u624B\u306E\u3000\u653B\u6483\u529B\u3068\u3000\u540C\u3058\u3060\u3051\n\u81EA\u5206\u306E\u3000\uFF28\uFF30\u3092\u3000\u56DE\u5FA9\u3059\u308B\u3002\n\u305D\u3057\u3066\u3000\u76F8\u624B\u306E\u3000\u653B\u6483\u3092\u3000\u3055\u3052\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u7ED9\u81EA\u5DF1\u56DE\u590D\u548C\u5BF9\u624B\u653B\u51FB\u529B\n\u76F8\u540C\u6570\u503C\u7684\uFF28\uFF30\uFF0C\n\u7136\u540E\u964D\u4F4E\u5BF9\u624B\u7684\u653B\u51FB\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
+    effect_entries: []
+    flavor_text_entries: []
     generation:
-      name: generation-vii
-      url: https://pokeapi.co/api/v2/generation/7/
-    id: 668
-    learned_by_pokemon:
-    - name: oddish
-      url: https://pokeapi.co/api/v2/pokemon/43/
-    - name: bellsprout
-      url: https://pokeapi.co/api/v2/pokemon/69/
-    - name: hoppip
-      url: https://pokeapi.co/api/v2/pokemon/187/
-    - name: drifblim
-      url: https://pokeapi.co/api/v2/pokemon/426/
-    - name: frillish
-      url: https://pokeapi.co/api/v2/pokemon/592/
-    - name: morelull
-      url: https://pokeapi.co/api/v2/pokemon/755/
-    - name: shiinotic
-      url: https://pokeapi.co/api/v2/pokemon/756/
-    - name: polteageist
-      url: https://pokeapi.co/api/v2/pokemon/855/
-    - name: cursola
-      url: https://pokeapi.co/api/v2/pokemon/864/
-    - name: corsola-galar
-      url: https://pokeapi.co/api/v2/pokemon/10173/
+      name: 
+      url: 
+    id: 0
+    learned_by_pokemon: []
     machines: []
     meta:
       ailment:
-        name: none
-        url: https://pokeapi.co/api/v2/move-ailment/0/
+        name: 
+        url: 
       ailment_chance: 0
       category:
-        name: unique
-        url: https://pokeapi.co/api/v2/move-category/13/
+        name: 
+        url: 
       crit_rate: 0
       drain: 0
       flinch_chance: 0
@@ -415,64 +71,20 @@ MonoBehaviour:
       max_turns: 0
       min_hits: 0
       min_turns: 0
-      stat_chance: 100
-    name: strength-sap
-    names:
-    - language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      name: "\u3061\u304B\u3089\u3092\u3059\u3044\u3068\u308B"
-    - language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      name: "\uD798\uD761\uC218"
-    - language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      name: "\u5438\u53D6\u529B\u91CF"
-    - language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      name: Vole-Force
-    - language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      name: Kraftabsorber
-    - language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      name: Absorbefuerza
-    - language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      name: Assorbiforza
-    - language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      name: Strength Sap
-    - language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      name: "\u3061\u304B\u3089\u3092\u3059\u3044\u3068\u308B"
-    - language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      name: "\u5438\u53D6\u529B\u91CF"
+      stat_chance: 0
+    name: 
+    names: []
     past_values: []
     power: 0
-    pp: 10
+    pp: 0
     priority: 0
-    stat_changes:
-    - change: -1
-      stat:
-        name: attack
-        url: https://pokeapi.co/api/v2/stat/2/
+    stat_changes: []
     super_contest_effect:
       url: 
     target:
-      name: selected-pokemon
-      url: https://pokeapi.co/api/v2/move-target/10/
+      name: 
+      url: 
     type:
-      name: grass
-      url: https://pokeapi.co/api/v2/type/12/
+      name: 
+      url: 
   sound: {fileID: 0}

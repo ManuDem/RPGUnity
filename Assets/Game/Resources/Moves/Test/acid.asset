@@ -12,27 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
   m_Name: acid
   m_EditorClassIdentifier: 
-  name: Acido
-  description: "Colpisce i nemici intorno spruzzando un acido\ncorrosivo. Pu\xF2
-    anche ridurne la Difesa Speciale."
-  type: 8
-  power: 40
-  accuracy: 100
+  name: 
+  description: 
+  type: 0
+  power: 0
+  accuracy: 0
   alwaysHits: 0
-  pp: 30
+  pp: 0
   priority: 0
-  category: 1
+  category: 0
   effects:
-    boosts:
-    - stat: 3
-      boost: -1
+    boosts: []
     status: 0
     volatileStatus: 0
   secondaries: []
   target: 0
-  id: 51
+  id: 0
   pokeApiMove:
-    accuracy: 100
+    accuracy: 0
     contest_combos:
       normal:
         use_after: []
@@ -41,640 +38,31 @@ MonoBehaviour:
         use_after: []
         use_before: []
     contest_effect:
-      url: https://pokeapi.co/api/v2/contest-effect/4/
+      url: 
     contest_type:
-      name: smart
-      url: https://pokeapi.co/api/v2/contest-type/4/
+      name: 
+      url: 
     damage_class:
-      name: special
-      url: https://pokeapi.co/api/v2/move-damage-class/3/
-    effect_chance: 10
+      name: 
+      url: 
+    effect_chance: 0
     effect_changes: []
-    effect_entries:
-    - effect: Inflicts regular damage.  Has a $effect_chance% chance to lower the
-        target's Special Defense by one stage.
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      short_effect: Has a $effect_chance% chance to lower the target's Special Defense
-        by one stage.
-    flavor_text_entries:
-    - flavor_text: 'An attack that may
-
-        lower DEFENSE.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: gold-silver
-        url: https://pokeapi.co/api/v2/version-group/3/
-    - flavor_text: 'An attack that may
-
-        lower DEFENSE.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: crystal
-        url: https://pokeapi.co/api/v2/version-group/4/
-    - flavor_text: 'Sprays a hide-melting acid.
-
-        May lower DEFENSE.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: ruby-sapphire
-        url: https://pokeapi.co/api/v2/version-group/5/
-    - flavor_text: 'Sprays a hide-melting acid.
-
-        May lower DEFENSE.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: emerald
-        url: https://pokeapi.co/api/v2/version-group/6/
-    - flavor_text: 'The foe is sprayed
-
-        with a harsh, hide-
-
-        melting
-        acid that
-
-        may lower DEFENSE.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: firered-leafgreen
-        url: https://pokeapi.co/api/v2/version-group/7/
-    - flavor_text: "The foe is attacked\nwith a spray of harsh\nacid. It may also\nlower
-        the target\u2019s\nSp. Def stat."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: diamond-pearl
-        url: https://pokeapi.co/api/v2/version-group/8/
-    - flavor_text: "The foe is attacked\nwith a spray of harsh\nacid. It may also\nlower
-        the target\u2019s\nSp. Def stat."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: platinum
-        url: https://pokeapi.co/api/v2/version-group/9/
-    - flavor_text: "The foe is attacked\nwith a spray of harsh\nacid. It may also\nlower
-        the target\u2019s\nSp. Def stat."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: heartgold-soulsilver
-        url: https://pokeapi.co/api/v2/version-group/10/
-    - flavor_text: "Le lanceur attaque l\u2019ennemi avec un jet\nd\u2019acide corrosif.
-        Peut aussi baisser\nla D\xE9fense Sp\xE9ciale de l\u2019ennemi."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: black-white
-        url: https://pokeapi.co/api/v2/version-group/11/
-    - flavor_text: "The opposing team is attacked with a spray\nof harsh acid. The
-        acid may also lower\nthe targets\u2019 Sp. Def stats."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: black-white
-        url: https://pokeapi.co/api/v2/version-group/11/
-    - flavor_text: "The opposing team is attacked with a spray\nof harsh acid. The
-        acid may also lower\nthe targets\u2019 Sp. Def stats."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: black-2-white-2
-        url: https://pokeapi.co/api/v2/version-group/14/
-    - flavor_text: "\u3064\u3088\u3044\u3000\u3055\u3093\u3092\u3000\u3042\u3044\u3066\u306B\u3000\u304B\u3051\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\uAC15\uD55C \uC0B0\uC744 \uC0C1\uB300\uC5D0\uAC8C \uB07C\uC5B9\uC5B4\n\uACF5\uACA9\uD55C\uB2E4.
-        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uB5A8\uC5B4\uB728\uB9B4
-        \uB54C\uAC00 \uC788\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Le lanceur attaque l\u2019ennemi avec un jet d\u2019acide\ncorrosif.
-        Peut aussi baisser sa D\xE9fense Sp\xE9ciale."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Verspr\xFCht \xE4tzende Fl\xFCssigkeit, die eventuell\ndie Spezial-Verteidigung
-        der Gegner in der\nN\xE4he des Anwenders senkt."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Roc\xEDa a los enemigos con un \xE1cido corrosivo.\nPuede bajar
-        la Defensa Especial."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Colpisce i nemici intorno spruzzando un acido\ncorrosivo. Pu\xF2
-        anche ridurne la Difesa Speciale."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "The opposing Pok\xE9mon are attacked\nwith a spray of harsh acid.
-        This may\nalso lower their Sp. Def stats."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\u5F37\u3044\u3000\u9178\u3092\u3000\u76F8\u624B\u306B\u3000\u304B\u3051\u3066\n\u653B\u6483\u3059\u308B\u3002\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\u3064\u3088\u3044\u3000\u3055\u3093\u3092\u3000\u3042\u3044\u3066\u306B\u3000\u304B\u3051\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\uAC15\uD55C \uC0B0\uC744 \uC0C1\uB300\uC5D0\uAC8C \uB07C\uC5B9\uC5B4\n\uACF5\uACA9\uD55C\uB2E4.
-        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uB5A8\uC5B4\uB728\uB9B4
-        \uB54C\uAC00 \uC788\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Le lanceur attaque l\u2019ennemi avec un jet d\u2019acide\ncorrosif.
-        Peut aussi baisser sa D\xE9fense Sp\xE9ciale."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Verspr\xFCht \xE4tzende Fl\xFCssigkeit, die eventuell\ndie Spezial-Verteidigung
-        der Gegner in der\nN\xE4he des Anwenders senkt."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Roc\xEDa a los enemigos con un \xE1cido corrosivo. \nPuede bajar
-        la Defensa Especial."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Colpisce i nemici intorno spruzzando un acido\ncorrosivo. Pu\xF2
-        anche ridurne la Difesa Speciale."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "The opposing Pok\xE9mon are attacked\nwith a spray of harsh acid.
-        This may\nalso lower their Sp. Def stats."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\u5F37\u3044\u3000\u9178\u3092\u3000\u76F8\u624B\u306B\u3000\u304B\u3051\u3066\n\u653B\u6483\u3059\u308B\u3002\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\u3064\u3088\u3044\u3000\u3055\u3093\u3092\u3000\u3042\u3044\u3066\u306B\u3000\u304B\u3051\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\uAC15\uD55C \uC0B0\uC744 \uC0C1\uB300\uC5D0\uAC8C \uB07C\uC5B9\uC5B4\n\uACF5\uACA9\uD55C\uB2E4.
-        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uB5A8\uC5B4\uB728\uB9B4
-        \uB54C\uAC00 \uC788\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u5C07\u5F37\u9178\u6F51\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u6709\u6642\u6703\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u9632\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Le lanceur attaque l\u2019ennemi avec un jet d\u2019acide\ncorrosif.
-        Peut aussi baisser sa D\xE9fense Sp\xE9ciale."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Verspr\xFCht \xE4tzende Fl\xFCssigkeit, die eventuell die\nSpezial-Verteidigung
-        der Gegner in der N\xE4he des\nAnwenders senkt."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Roc\xEDa a los enemigos con un \xE1cido corrosivo. \nPuede bajar
-        la Defensa Especial."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Colpisce i nemici intorno spruzzando un acido\ncorrosivo. Pu\xF2
-        anche ridurne la Difesa Speciale."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "The opposing Pok\xE9mon are attacked with a spray of\nharsh acid.
-        This may also lower their Sp. Def stat."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u5F37\u3044\u3000\u9178\u3092\u3000\u76F8\u624B\u306B\u3000\u304B\u3051\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u5C06\u5F3A\u9178\u6CFC\u5411\u5BF9\u624B\u8FDB\u884C\u653B\u51FB\u3002\n\u6709\u65F6\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u7279\u9632\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u3064\u3088\u3044\u3000\u3055\u3093\u3092\u3000\u3042\u3044\u3066\u306B\u3000\u304B\u3051\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\uAC15\uD55C \uC0B0\uC744 \uC0C1\uB300\uC5D0\uAC8C \uB07C\uC5B9\uC5B4\n\uACF5\uACA9\uD55C\uB2E4.
-        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uB5A8\uC5B4\uB728\uB9B4
-        \uB54C\uAC00 \uC788\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u5C07\u5F37\u9178\u6F51\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u6709\u6642\u6703\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u9632\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Le lanceur attaque l\u2019ennemi avec un jet d\u2019acide\ncorrosif.
-        Peut aussi baisser sa D\xE9fense Sp\xE9ciale."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Verspr\xFCht \xE4tzende Fl\xFCssigkeit, die eventuell die\nSpezial-Verteidigung
-        der Gegner in der N\xE4he des\nAnwenders senkt."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Roc\xEDa a los enemigos con un \xE1cido corrosivo. \nPuede bajar
-        la Defensa Especial."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Colpisce i nemici intorno spruzzando un acido\ncorrosivo. Pu\xF2
-        anche ridurne la Difesa Speciale."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "The opposing Pok\xE9mon are attacked with a spray of\nharsh acid.
-        This may also lower their Sp. Def stat."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u5F37\u3044\u3000\u9178\u3092\u3000\u76F8\u624B\u306B\u3000\u304B\u3051\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u5C06\u5F3A\u9178\u6CFC\u5411\u5BF9\u624B\u8FDB\u884C\u653B\u51FB\u3002\n\u6709\u65F6\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u7279\u9632\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u3064\u3088\u3044\u3000\u3055\u3093\u3092\u3000\u3042\u3044\u3066\u306B\u3000\u304B\u3051\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\uAC15\uD55C \uC0B0\uC744 \uC0C1\uB300\uC5D0\uAC8C \uB07C\uC5B9\uC5B4\n\uACF5\uACA9\uD55C\uB2E4.
-        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uB5A8\uC5B4\uB728\uB9B4
-        \uB54C\uAC00 \uC788\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u5C07\u5F37\u9178\u6F51\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u6709\u6642\u6703\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u9632\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Le lanceur attaque l\u2019ennemi avec un jet d\u2019acide corrosif.\nPeut
-        aussi baisser sa D\xE9fense Sp\xE9ciale."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Verspr\xFCht \xE4tzende Fl\xFCssigkeit, die eventuell die\nSpezial-Verteidigung
-        der Gegner in der N\xE4he des\nAnwenders senkt."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Roc\xEDa a los enemigos con un \xE1cido corrosivo. \nPuede bajar
-        la Defensa Especial."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Colpisce i nemici intorno spruzzando un acido\ncorrosivo. Pu\xF2
-        anche ridurne la Difesa Speciale."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "The opposing Pok\xE9mon are attacked with a spray of\nharsh acid.
-        This may also lower their Sp. Def stat."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u5F37\u3044\u3000\u9178\u3092\u3000\u76F8\u624B\u306B\u3000\u304B\u3051\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u5C06\u5F3A\u9178\u6CFC\u5411\u5BF9\u624B\u8FDB\u884C\u653B\u51FB\u3002\n\u6709\u65F6\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u7279\u9632\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u3064\u3088\u3044\u3000\u3055\u3093\u3092\u3000\u3042\u3044\u3066\u306B\u3000\u304B\u3051\u3066\n\u3053\u3046\u3052\u304D\u3059\u308B\u3002\u3000\u3042\u3044\u3066\u306E\u3000\u3068\u304F\u307C\u3046\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\uAC15\uD55C \uC0B0\uC744 \uC0C1\uB300\uC5D0\uAC8C \uB07C\uC5B9\uC5B4\n\uACF5\uACA9\uD55C\uB2E4.
-        \uC0C1\uB300\uC758 \uD2B9\uC218\uBC29\uC5B4\uB97C\n\uB5A8\uC5B4\uB728\uB9B4
-        \uB54C\uAC00 \uC788\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u5C07\u5F37\u9178\u6F51\u5411\u5C0D\u624B\u9032\u884C\u653B\u64CA\u3002\n\u6709\u6642\u6703\u964D\u4F4E\u5C0D\u624B\u7684\u7279\u9632\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Le lanceur attaque l\u2019ennemi avec un jet d\u2019acide\ncorrosif.
-        Peut aussi baisser sa D\xE9fense Sp\xE9ciale."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Verspr\xFCht \xE4tzende Fl\xFCssigkeit, die eventuell die\nSpezial-Verteidigung
-        der gegnerischen Pok\xE9mon senkt."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Roc\xEDa a los enemigos con un \xE1cido corrosivo. \nPuede bajar
-        la Defensa Especial."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Colpisce i nemici intorno spruzzando un acido\ncorrosivo. Pu\xF2
-        anche ridurne la Difesa Speciale."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Opposing Pok\xE9mon are attacked with a spray of harsh\nacid.
-        This may also lower their Sp. Def stats."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u5F37\u3044\u3000\u9178\u3092\u3000\u76F8\u624B\u306B\u3000\u304B\u3051\u3066\n\u653B\u6483\u3059\u308B\u3002\u3000\u76F8\u624B\u306E\u3000\u7279\u9632\u3092\n\u3055\u3052\u308B\u3053\u3068\u304C\u3000\u3042\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u5C06\u5F3A\u9178\u6CFC\u5411\u5BF9\u624B\u8FDB\u884C\u653B\u51FB\u3002\n\u6709\u65F6\u4F1A\u964D\u4F4E\u5BF9\u624B\u7684\u7279\u9632\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
+    effect_entries: []
+    flavor_text_entries: []
     generation:
-      name: generation-i
-      url: https://pokeapi.co/api/v2/generation/1/
-    id: 51
-    learned_by_pokemon:
-    - name: ekans
-      url: https://pokeapi.co/api/v2/pokemon/23/
-    - name: arbok
-      url: https://pokeapi.co/api/v2/pokemon/24/
-    - name: oddish
-      url: https://pokeapi.co/api/v2/pokemon/43/
-    - name: gloom
-      url: https://pokeapi.co/api/v2/pokemon/44/
-    - name: vileplume
-      url: https://pokeapi.co/api/v2/pokemon/45/
-    - name: bellsprout
-      url: https://pokeapi.co/api/v2/pokemon/69/
-    - name: weepinbell
-      url: https://pokeapi.co/api/v2/pokemon/70/
-    - name: victreebel
-      url: https://pokeapi.co/api/v2/pokemon/71/
-    - name: tentacool
-      url: https://pokeapi.co/api/v2/pokemon/72/
-    - name: tentacruel
-      url: https://pokeapi.co/api/v2/pokemon/73/
-    - name: lickitung
-      url: https://pokeapi.co/api/v2/pokemon/108/
-    - name: bellossom
-      url: https://pokeapi.co/api/v2/pokemon/182/
-    - name: shuckle
-      url: https://pokeapi.co/api/v2/pokemon/213/
-    - name: cacnea
-      url: https://pokeapi.co/api/v2/pokemon/331/
-    - name: lileep
-      url: https://pokeapi.co/api/v2/pokemon/345/
-    - name: cradily
-      url: https://pokeapi.co/api/v2/pokemon/346/
-    - name: tympole
-      url: https://pokeapi.co/api/v2/pokemon/535/
-    - name: palpitoad
-      url: https://pokeapi.co/api/v2/pokemon/536/
-    - name: seismitoad
-      url: https://pokeapi.co/api/v2/pokemon/537/
-    - name: eelektrik
-      url: https://pokeapi.co/api/v2/pokemon/603/
-    - name: eelektross
-      url: https://pokeapi.co/api/v2/pokemon/604/
-    - name: litwick
-      url: https://pokeapi.co/api/v2/pokemon/607/
-    - name: shelmet
-      url: https://pokeapi.co/api/v2/pokemon/616/
-    - name: accelgor
-      url: https://pokeapi.co/api/v2/pokemon/617/
-    - name: skrelp
-      url: https://pokeapi.co/api/v2/pokemon/690/
-    - name: dragalge
-      url: https://pokeapi.co/api/v2/pokemon/691/
-    - name: nihilego
-      url: https://pokeapi.co/api/v2/pokemon/793/
-    - name: poipole
-      url: https://pokeapi.co/api/v2/pokemon/803/
-    - name: naganadel
-      url: https://pokeapi.co/api/v2/pokemon/804/
-    - name: toxel
-      url: https://pokeapi.co/api/v2/pokemon/848/
-    - name: toxtricity-amped
-      url: https://pokeapi.co/api/v2/pokemon/849/
-    - name: slowpoke-galar
-      url: https://pokeapi.co/api/v2/pokemon/10164/
-    - name: slowbro-galar
-      url: https://pokeapi.co/api/v2/pokemon/10165/
-    - name: slowking-galar
-      url: https://pokeapi.co/api/v2/pokemon/10172/
-    - name: toxtricity-low-key
-      url: https://pokeapi.co/api/v2/pokemon/10184/
+      name: 
+      url: 
+    id: 0
+    learned_by_pokemon: []
     machines: []
     meta:
       ailment:
-        name: none
-        url: https://pokeapi.co/api/v2/move-ailment/0/
+        name: 
+        url: 
       ailment_chance: 0
       category:
-        name: damage+lower
-        url: https://pokeapi.co/api/v2/move-category/6/
+        name: 
+        url: 
       crit_rate: 0
       drain: 0
       flinch_chance: 0
@@ -683,64 +71,20 @@ MonoBehaviour:
       max_turns: 0
       min_hits: 0
       min_turns: 0
-      stat_chance: 10
-    name: acid
-    names:
-    - language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      name: "\u3088\u3046\u304B\u3044\u3048\u304D"
-    - language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      name: "\uC6A9\uD574\uC561"
-    - language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      name: "\u6EB6\u89E3\u6DB2"
-    - language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      name: Acide
-    - language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      name: "S\xE4ure"
-    - language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      name: "\xC1cido"
-    - language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      name: Acido
-    - language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      name: Acid
-    - language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      name: "\u3088\u3046\u304B\u3044\u3048\u304D"
-    - language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      name: "\u6EB6\u89E3\u6DB2"
+      stat_chance: 0
+    name: 
+    names: []
     past_values: []
-    power: 40
-    pp: 30
+    power: 0
+    pp: 0
     priority: 0
-    stat_changes:
-    - change: -1
-      stat:
-        name: special-defense
-        url: https://pokeapi.co/api/v2/stat/5/
+    stat_changes: []
     super_contest_effect:
-      url: https://pokeapi.co/api/v2/super-contest-effect/5/
+      url: 
     target:
-      name: all-opponents
-      url: https://pokeapi.co/api/v2/move-target/11/
+      name: 
+      url: 
     type:
-      name: poison
-      url: https://pokeapi.co/api/v2/type/4/
-  sound: {fileID: 8300000, guid: 491250ac79b87ac40b10916a5510132f, type: 3}
+      name: 
+      url: 
+  sound: {fileID: 0}

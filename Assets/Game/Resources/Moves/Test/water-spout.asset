@@ -12,604 +12,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
   m_Name: water-spout
   m_EditorClassIdentifier: 
-  name: Zampillo
-  description: "Lancia un getto d\u2019acqua contro il nemico che ha\ndavanti e quelli
-    adiacenti. La potenza \xE8\nproporzionale al numero di PS di chi la usa."
-  type: 3
-  power: 150
-  accuracy: 100
+  name: 
+  description: 
+  type: 0
+  power: 0
+  accuracy: 0
   alwaysHits: 0
-  pp: 5
+  pp: 0
   priority: 0
-  category: 1
+  category: 0
   effects:
     boosts: []
     status: 0
     volatileStatus: 0
   secondaries: []
   target: 0
-  id: 323
+  id: 0
   pokeApiMove:
-    accuracy: 100
+    accuracy: 0
     contest_combos:
       normal:
-        use_after:
-        - name: rain-dance
-          url: https://pokeapi.co/api/v2/move/240/
+        use_after: []
         use_before: []
       super:
         use_after: []
         use_before: []
     contest_effect:
-      url: https://pokeapi.co/api/v2/contest-effect/26/
+      url: 
     contest_type:
-      name: beauty
-      url: https://pokeapi.co/api/v2/contest-type/2/
+      name: 
+      url: 
     damage_class:
-      name: special
-      url: https://pokeapi.co/api/v2/move-damage-class/3/
+      name: 
+      url: 
     effect_chance: 0
     effect_changes: []
-    effect_entries:
-    - effect: Inflicts regular damage.  Power increases with the user's remaining
-        HP and is given by `150 * HP / max HP`, to a maximum of 150 when the user
-        has full HP.
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      short_effect: Inflicts more damage when the user has more HP remaining, with
-        a maximum of 150 power.
-    flavor_text_entries:
-    - flavor_text: "Inflicts more damage if the\nuser\u2019s HP is high."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: ruby-sapphire
-        url: https://pokeapi.co/api/v2/version-group/5/
-    - flavor_text: "Inflicts more damage if the\nuser\u2019s HP is high."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: emerald
-        url: https://pokeapi.co/api/v2/version-group/6/
-    - flavor_text: "The higher the\nuser\u2019s HP, the more\npowerful this\nattack
-        becomes."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: firered-leafgreen
-        url: https://pokeapi.co/api/v2/version-group/7/
-    - flavor_text: "The user spouts\nwater to damage the\nfoe. The lower the\nuser\u2019s
-        HP, the less\npowerful it becomes."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: diamond-pearl
-        url: https://pokeapi.co/api/v2/version-group/8/
-    - flavor_text: "The user spouts\nwater to damage the\nfoe. The lower the\nuser\u2019s
-        HP, the less\npowerful it becomes."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: platinum
-        url: https://pokeapi.co/api/v2/version-group/9/
-    - flavor_text: "The user spouts\nwater to damage the\nfoe. The lower the\nuser\u2019s
-        HP, the less\npowerful it becomes."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: heartgold-soulsilver
-        url: https://pokeapi.co/api/v2/version-group/10/
-    - flavor_text: "Le lanceur attaque avec un jet d\u2019eau.\nMoins il a de PV
-        et moins l\u2019attaque\nest puissante."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: black-white
-        url: https://pokeapi.co/api/v2/version-group/11/
-    - flavor_text: "The user spouts water to damage the\nopposing team. The lower
-        the user\u2019s HP,\nthe less powerful it becomes."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: black-white
-        url: https://pokeapi.co/api/v2/version-group/11/
-    - flavor_text: "The user spouts water to damage the\nopposing team. The lower
-        the user\u2019s HP,\nthe less powerful it becomes."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: black-2-white-2
-        url: https://pokeapi.co/api/v2/version-group/14/
-    - flavor_text: "\u3057\u304A\u3092\u3000\u3075\u304D\u3064\u3051\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\uFF28\uFF30\u304C\u3000\u3059\u304F\u306A\u3044\u307B\u3069\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\uBC14\uB2F7\uBB3C\uC744 \uB0B4\uBFDC\uC5B4 \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC758
-        HP\uAC00 \uC801\uC744\uC218\uB85D\n\uAE30\uC220\uC758 \uC704\uB825\uC774
-        \uB5A8\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Le lanceur attaque avec un jet d\u2019eau.\nMoins il a de PV
-        et moins l\u2019attaque est puissante."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: 'Wasser-Attacke, die wirkungsvoller ist,
-
-        wenn KP des
-        Anwenders hoch sind.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Chorro de agua. Cuantos menos PS tenga el\nusuario, menos da\xF1ino
-        ser\xE1."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Lancia un getto d\u2019acqua contro il nemico che ha\ndavanti
-        e quelli adiacenti. La potenza \xE8\nproporzionale al numero di PS di chi
-        la usa."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "The user spouts water to damage opposing\nPok\xE9mon. The lower
-        the user\u2019s HP,\nthe lower the move\u2019s power."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\u6F6E\u3092\u3000\u5439\u304D\u3064\u3051\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306E\u3000\uFF28\uFF30\u304C\u3000\u5C11\u306A\u3044\u307B\u3069\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\u3057\u304A\u3092\u3000\u3075\u304D\u3064\u3051\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\uFF28\uFF30\u304C\u3000\u3059\u304F\u306A\u3044\u307B\u3069\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\uBC14\uB2F7\uBB3C\uC744 \uB0B4\uBFDC\uC5B4 \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC758
-        HP\uAC00 \uC801\uC744\uC218\uB85D\n\uAE30\uC220\uC758 \uC704\uB825\uC774
-        \uB5A8\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Le lanceur attaque avec un jet d\u2019eau.\nMoins il a de PV
-        et moins l\u2019attaque est puissante."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: 'Wasser-Attacke, die wirkungsvoller ist,
-
-        wenn KP des
-        Anwenders hoch sind.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Chorro de agua. Cuantos menos PS tenga el \nusuario, menos da\xF1ino
-        ser\xE1."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Lancia un getto d\u2019acqua contro il nemico che ha\ndavanti
-        e quelli adiacenti. La potenza \xE8\nproporzionale al numero di PS di chi
-        la usa."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "The user spouts water to damage opposing\nPok\xE9mon. The lower
-        the user\u2019s HP,\nthe lower the move\u2019s power."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\u6F6E\u3092\u3000\u5439\u304D\u3064\u3051\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306E\u3000\uFF28\uFF30\u304C\u3000\u5C11\u306A\u3044\u307B\u3069\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\u3057\u304A\u3092\u3000\u3075\u304D\u3064\u3051\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\uFF28\uFF30\u304C\u3000\u3059\u304F\u306A\u3044\u307B\u3069\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\uBC14\uB2F7\uBB3C\uC744 \uB0B4\uBFDC\uC5B4 \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC758
-        HP\uAC00 \uC801\uC744\uC218\uB85D\n\uAE30\uC220\uC758 \uC704\uB825\uC774
-        \uB5A8\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u5674\u8D77\u6F6E\u6C34\u9032\u884C\u653B\u64CA\u3002\n\u81EA\u5DF1\u7684\uFF28\uFF30\u8D8A\u5C11\uFF0C\n\u62DB\u5F0F\u7684\u5A01\u529B\u8D8A\u5C0F\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Le lanceur attaque avec un jet d\u2019eau.\nMoins il a de PV
-        et moins l\u2019attaque est puissante."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: 'Wasser-Attacke, die wirkungsvoller ist, wenn KP des
-
-        Anwenders
-        hoch sind.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Chorro de agua. Cuantos menos PS tenga el \nusuario, menos da\xF1ino
-        ser\xE1."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Lancia un getto d\u2019acqua contro il nemico che ha\ndavanti
-        e quelli adiacenti. La potenza \xE8\nproporzionale al numero di PS di chi
-        la usa."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "The user spouts water to damage opposing\nPok\xE9mon. The lower
-        the user\u2019s HP, the lower the\nmove\u2019s power."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u6F6E\u3092\u3000\u5439\u304D\u3064\u3051\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306E\u3000\uFF28\uFF30\u304C\u3000\u5C11\u306A\u3044\u307B\u3069\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u6380\u8D77\u6F6E\u6C34\u8FDB\u884C\u653B\u51FB\u3002\n\u81EA\u5DF1\u7684\uFF28\uFF30\u8D8A\u5C11\uFF0C\n\u62DB\u5F0F\u7684\u5A01\u529B\u8D8A\u5C0F\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u3057\u304A\u3092\u3000\u3075\u304D\u3064\u3051\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\uFF28\uFF30\u304C\u3000\u3059\u304F\u306A\u3044\u307B\u3069\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\uBC14\uB2F7\uBB3C\uC744 \uB0B4\uBFDC\uC5B4 \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC758
-        HP\uAC00 \uC801\uC744\uC218\uB85D\n\uAE30\uC220\uC758 \uC704\uB825\uC774
-        \uB5A8\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u5674\u8D77\u6F6E\u6C34\u9032\u884C\u653B\u64CA\u3002\n\u81EA\u5DF1\u7684\uFF28\uFF30\u8D8A\u5C11\uFF0C\n\u62DB\u5F0F\u7684\u5A01\u529B\u8D8A\u5C0F\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Le lanceur attaque avec un jet d\u2019eau.\nMoins il a de PV
-        et moins l\u2019attaque est puissante."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: 'Wasser-Attacke, die wirkungsvoller ist, wenn KP des
-
-        Anwenders
-        hoch sind.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Chorro de agua. Cuantos menos PS tenga el \nusuario, menos da\xF1ino
-        ser\xE1."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Lancia un getto d\u2019acqua contro il nemico che ha\ndavanti
-        e quelli adiacenti. La potenza \xE8\nproporzionale al numero di PS di chi
-        la usa."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "The user spouts water to damage opposing\nPok\xE9mon. The lower
-        the user\u2019s HP, the lower the\nmove\u2019s power."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u6F6E\u3092\u3000\u5439\u304D\u3064\u3051\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306E\u3000\uFF28\uFF30\u304C\u3000\u5C11\u306A\u3044\u307B\u3069\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u6380\u8D77\u6F6E\u6C34\u8FDB\u884C\u653B\u51FB\u3002\n\u81EA\u5DF1\u7684\uFF28\uFF30\u8D8A\u5C11\uFF0C\n\u62DB\u5F0F\u7684\u5A01\u529B\u8D8A\u5C0F\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u3057\u304A\u3092\u3000\u3075\u304D\u3064\u3051\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\uFF28\uFF30\u304C\u3000\u3059\u304F\u306A\u3044\u307B\u3069\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\uBC14\uB2F7\uBB3C\uC744 \uB0B4\uBFDC\uC5B4 \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC758
-        HP\uAC00 \uC801\uC744\uC218\uB85D\n\uAE30\uC220\uC758 \uC704\uB825\uC774
-        \uB5A8\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u5674\u8D77\u6F6E\u6C34\u9032\u884C\u653B\u64CA\u3002\n\u81EA\u5DF1\u7684HP\u8D8A\u5C11\uFF0C\n\u62DB\u5F0F\u7684\u5A01\u529B\u8D8A\u5C0F\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Le lanceur attaque avec un jet d\u2019eau.\nMoins il a de PV
-        et moins l\u2019attaque est puissante."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: 'Wasser-Attacke, die wirkungsvoller ist, wenn KP des
-
-        Anwenders
-        hoch sind.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Chorro de agua. Cuantos menos PS tenga el \nusuario, menos da\xF1ino
-        ser\xE1."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Lancia un getto d\u2019acqua contro il nemico che ha\ndavanti
-        e quelli adiacenti. La potenza \xE8\nproporzionale al numero di PS di chi
-        la usa."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "The user spouts water to damage opposing\nPok\xE9mon. The lower
-        the user\u2019s HP, the lower the\nmove\u2019s power."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u6F6E\u3092\u3000\u5439\u304D\u3064\u3051\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306E\u3000\uFF28\uFF30\u304C\u3000\u5C11\u306A\u3044\u307B\u3069\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u6380\u8D77\u6F6E\u6C34\u8FDB\u884C\u653B\u51FB\u3002\n\u81EA\u5DF1\u7684HP\u8D8A\u5C11\uFF0C\n\u62DB\u5F0F\u7684\u5A01\u529B\u8D8A\u5C0F\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u3057\u304A\u3092\u3000\u3075\u304D\u3064\u3051\u3066\u3000\u3053\u3046\u3052\u304D\u3059\u308B\u3002\n\u3058\u3076\u3093\u306E\u3000\uFF28\uFF30\u304C\u3000\u3059\u304F\u306A\u3044\u307B\u3069\n\u308F\u3056\u306E\u3000\u3044\u308A\u3087\u304F\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\uBC14\uB2F7\uBB3C\uC744 \uB0B4\uBFDC\uC5B4 \uACF5\uACA9\uD55C\uB2E4.\n\uC790\uC2E0\uC758
-        HP\uAC00 \uC801\uC744\uC218\uB85D\n\uAE30\uC220\uC758 \uC704\uB825\uC774
-        \uB5A8\uC5B4\uC9C4\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u5674\u8D77\u6F6E\u6C34\u9032\u884C\u653B\u64CA\u3002\n\u81EA\u5DF1\u7684\uFF28\uFF30\u8D8A\u5C11\uFF0C\n\u62DB\u5F0F\u7684\u5A01\u529B\u8D8A\u5C0F\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Le lanceur attaque avec un jet d\u2019eau.\nMoins il a de PV
-        et moins l\u2019attaque est puissante."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Eine Wasser-Attacke gegen gegnerische Pok\xE9mon.\nJe h\xF6her
-        die KP des Anwenders sind, desto mehr\nSchaden richtet sie an."
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Chorro de agua. Cuantos menos PS tenga el usuario,\nmenos da\xF1ino
-        ser\xE1."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Lancia un getto d\u2019acqua contro il nemico che ha\ndavanti
-        e quelli adiacenti. La potenza \xE8\nproporzionale al numero di PS di chi
-        la usa."
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "The user spouts water to damage opposing\nPok\xE9mon. The lower
-        the user\u2019s HP, the lower the\nmove\u2019s power."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u6F6E\u3092\u3000\u5439\u304D\u3064\u3051\u3066\u3000\u653B\u6483\u3059\u308B\u3002\n\u81EA\u5206\u306E\u3000\uFF28\uFF30\u304C\u3000\u5C11\u306A\u3044\u307B\u3069\n\u6280\u306E\u3000\u5A01\u529B\u306F\u3000\u3055\u304C\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u6380\u8D77\u6F6E\u6C34\u8FDB\u884C\u653B\u51FB\u3002\n\u81EA\u5DF1\u7684\uFF28\uFF30\u8D8A\u5C11\uFF0C\n\u62DB\u5F0F\u7684\u5A01\u529B\u8D8A\u5C0F\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
+    effect_entries: []
+    flavor_text_entries: []
     generation:
-      name: generation-iii
-      url: https://pokeapi.co/api/v2/generation/3/
-    id: 323
-    learned_by_pokemon:
-    - name: squirtle
-      url: https://pokeapi.co/api/v2/pokemon/7/
-    - name: remoraid
-      url: https://pokeapi.co/api/v2/pokemon/223/
-    - name: wailmer
-      url: https://pokeapi.co/api/v2/pokemon/320/
-    - name: wailord
-      url: https://pokeapi.co/api/v2/pokemon/321/
-    - name: kyogre
-      url: https://pokeapi.co/api/v2/pokemon/382/
-    - name: frillish
-      url: https://pokeapi.co/api/v2/pokemon/592/
-    - name: jellicent
-      url: https://pokeapi.co/api/v2/pokemon/593/
-    - name: kyogre-primal
-      url: https://pokeapi.co/api/v2/pokemon/10077/
+      name: 
+      url: 
+    id: 0
+    learned_by_pokemon: []
     machines: []
     meta:
       ailment:
-        name: none
-        url: https://pokeapi.co/api/v2/move-ailment/0/
+        name: 
+        url: 
       ailment_chance: 0
       category:
-        name: damage
-        url: https://pokeapi.co/api/v2/move-category/0/
+        name: 
+        url: 
       crit_rate: 0
       drain: 0
       flinch_chance: 0
@@ -619,59 +72,19 @@ MonoBehaviour:
       min_hits: 0
       min_turns: 0
       stat_chance: 0
-    name: water-spout
-    names:
-    - language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      name: "\u3057\u304A\u3075\u304D"
-    - language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      name: "\uD574\uC218\uC2A4\uD30C\uC6B0\uD305"
-    - language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      name: "\u5674\u6C34"
-    - language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      name: "Gicl\xE9do"
-    - language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      name: "Fontr\xE4nen"
-    - language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      name: Salpicar
-    - language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      name: Zampillo
-    - language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      name: Water Spout
-    - language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      name: "\u3057\u304A\u3075\u304D"
-    - language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      name: "\u55B7\u6C34"
+    name: 
+    names: []
     past_values: []
-    power: 150
-    pp: 5
+    power: 0
+    pp: 0
     priority: 0
     stat_changes: []
     super_contest_effect:
-      url: https://pokeapi.co/api/v2/super-contest-effect/22/
+      url: 
     target:
-      name: all-opponents
-      url: https://pokeapi.co/api/v2/move-target/11/
+      name: 
+      url: 
     type:
-      name: water
-      url: https://pokeapi.co/api/v2/type/11/
-  sound: {fileID: 8300000, guid: 695eb482c0afe934fb0c33db2415fa83, type: 3}
+      name: 
+      url: 
+  sound: {fileID: 0}

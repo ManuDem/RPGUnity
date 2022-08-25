@@ -12,647 +12,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f75524a02c41cff4c8ed3d56e5257cba, type: 3}
   m_Name: grudge
   m_EditorClassIdentifier: 
-  name: Rancore
-  description: 'Se chi la usa va KO, i PP della mossa nemica
-
-    che lo ha messo
-    fuori gioco si azzerano.'
-  type: 14
+  name: 
+  description: 
+  type: 0
   power: 0
-  accuracy: 100
+  accuracy: 0
   alwaysHits: 0
-  pp: 5
+  pp: 0
   priority: 0
-  category: 2
+  category: 0
   effects:
     boosts: []
     status: 0
     volatileStatus: 0
   secondaries: []
-  target: 1
-  id: 288
+  target: 0
+  id: 0
   pokeApiMove:
     accuracy: 0
     contest_combos:
       normal:
-        use_after:
-        - name: curse
-          url: https://pokeapi.co/api/v2/move/174/
+        use_after: []
         use_before: []
       super:
         use_after: []
         use_before: []
     contest_effect:
-      url: https://pokeapi.co/api/v2/contest-effect/26/
+      url: 
     contest_type:
-      name: tough
-      url: https://pokeapi.co/api/v2/contest-type/5/
+      name: 
+      url: 
     damage_class:
-      name: status
-      url: https://pokeapi.co/api/v2/move-damage-class/1/
+      name: 
+      url: 
     effect_chance: 0
     effect_changes: []
-    effect_entries:
-    - effect: If the user faints before it next acts, the move that fainted it will
-        have its PP dropped to 0.  End-of-turn damage does not trigger this effect.
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      short_effect: If the user faints this turn, the PP of the move that fainted
-        it drops to 0.
-    flavor_text_entries:
-    - flavor_text: 'If the user faints, deletes
-
-        the PP of the final move.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: ruby-sapphire
-        url: https://pokeapi.co/api/v2/version-group/5/
-    - flavor_text: "If the user faints, deletes\nall PP of foe\u2019s last move."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: emerald
-        url: https://pokeapi.co/api/v2/version-group/6/
-    - flavor_text: 'If the user faints,
-
-        this move deletes
-
-        the PP
-        of the move
-
-        that finished it.'
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: firered-leafgreen
-        url: https://pokeapi.co/api/v2/version-group/7/
-    - flavor_text: "If the user faints,\nthe user\u2019s grudge\nfully depletes the
-        PP\nof the foe\u2019s move\nthat knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: diamond-pearl
-        url: https://pokeapi.co/api/v2/version-group/8/
-    - flavor_text: "If the user faints,\nthe user\u2019s grudge\nfully depletes the
-        PP\nof the foe\u2019s move\nthat knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: platinum
-        url: https://pokeapi.co/api/v2/version-group/9/
-    - flavor_text: "If the user faints,\nthe user\u2019s grudge\nfully depletes the
-        PP\nof the foe\u2019s move\nthat knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: heartgold-soulsilver
-        url: https://pokeapi.co/api/v2/version-group/10/
-    - flavor_text: "Si le lanceur est mis K.O., sa rancune\n\xE9puise les PP de la
-        capacit\xE9 utilis\xE9e\npour le mettre K.O."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: black-white
-        url: https://pokeapi.co/api/v2/version-group/11/
-    - flavor_text: "If the user faints, the user\u2019s grudge\nfully depletes the
-        PP of the opponent\u2019s\nmove that knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: black-white
-        url: https://pokeapi.co/api/v2/version-group/11/
-    - flavor_text: "If the user faints, the user\u2019s grudge\nfully depletes the
-        PP of the opponent\u2019s\nmove that knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: black-2-white-2
-        url: https://pokeapi.co/api/v2/version-group/14/
-    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u308F\u3056\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u308F\u3056\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\uC0C1\uB300\uC758 \uAE30\uC220\uB85C \uAE30\uC808\uD558\uBA74\n\uC6D0\uB150\uC744
-        \uB2F4\uC544\n\uADF8 \uAE30\uC220\uC758 PP\uB97C 0\uC73C\uB85C \uB9CC\uB4E0\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Si le lanceur est mis K.O., sa rancune \xE9puise les\nPP de la
-        capacit\xE9 utilis\xE9e par l\u2019ennemi pour le\nmettre K.O."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: 'Bei K.O. des Anwenders werden die AP
-
-        der Attacke, durch
-        die er besiegt wurde,
-
-        auf 0 herabgesetzt.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "Si el usuario se debilita al recibir un ataque, todos\nlos PP
-        de este \xFAltimo ataque ser\xE1n eliminados."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: 'Se chi la usa va KO, i PP della mossa nemica
-
-        che lo
-        ha messo fuori gioco si azzerano.'
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "If the user faints, the user\u2019s grudge\nfully depletes the
-        PP of the opponent\u2019s\nmove that knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\u76F8\u624B\u306E\u3000\u6280\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u6280\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: x-y
-        url: https://pokeapi.co/api/v2/version-group/15/
-    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u308F\u3056\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u308F\u3056\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\uC0C1\uB300\uC758 \uAE30\uC220\uB85C \uAE30\uC808\uD558\uBA74\n\uC6D0\uB150\uC744
-        \uB2F4\uC544\n\uADF8 \uAE30\uC220\uC758 PP\uB97C 0\uC73C\uB85C \uB9CC\uB4E0\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Si le lanceur est mis K.O., sa rancune \xE9puise les\nPP de la
-        capacit\xE9 utilis\xE9e par l\u2019ennemi pour le\nmettre K.O."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: 'Bei K.O. des Anwenders werden die AP
-
-        der Attacke, durch
-        die er besiegt wurde,
-
-        auf 0 herabgesetzt.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "Si el usuario se debilita al recibir un ataque, todos \nlos PP
-        de este \xFAltimo ataque ser\xE1n eliminados. "
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: 'Se chi la usa va KO, i PP della mossa nemica
-
-        che lo
-        ha messo fuori gioco si azzerano.'
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "If the user faints, the user\u2019s grudge\nfully depletes the
-        PP of the opponent\u2019s\nmove that knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\u76F8\u624B\u306E\u3000\u6280\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u6280\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: omega-ruby-alpha-sapphire
-        url: https://pokeapi.co/api/v2/version-group/16/
-    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u308F\u3056\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u308F\u3056\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\uC0C1\uB300\uC758 \uAE30\uC220\uB85C \uAE30\uC808\uD558\uBA74\n\uC6D0\uB150\uC744
-        \uB2F4\uC544\n\uADF8 \uAE30\uC220\uC758 PP\uB97C 0\uC73C\uB85C \uB9CC\uB4E0\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u56E0\u70BA\u5C0D\u624B\u7684\u62DB\u5F0F\u800C\u9677\u5165\u7015\u6B7B\u6642\uFF0C\n\u65BD\u52A0\u6028\u5FF5\uFF0C\n\u8B93\u8A72\u62DB\u5F0F\u7684\uFF30\uFF30\u8B8A\u6210\uFF10\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Si le lanceur est mis K.O., sa rancune \xE9puise les\nPP de la
-        capacit\xE9 utilis\xE9e par l\u2019ennemi pour le\nmettre K.O."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: 'Bei K.O. des Anwenders werden die AP der Attacke,
-
-        durch
-        die er besiegt wurde, auf 0 herabgesetzt.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "Si el usuario se debilita al recibir un ataque, todos \nlos PP
-        de este \xFAltimo ataque ser\xE1n eliminados. "
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: 'Se chi la usa va KO, i PP della mossa nemica
-
-        che lo
-        ha messo fuori gioco si azzerano.'
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "If the user faints, the user\u2019s grudge fully depletes\nthe
-        PP of the opponent\u2019s move that knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u76F8\u624B\u306E\u3000\u6280\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u6280\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u56E0\u5BF9\u624B\u7684\u62DB\u5F0F\u800C\u9677\u5165\u6FD2\u6B7B\u65F6\n\u7ED9\u5BF9\u624B\u65BD\u52A0\u6028\u5FF5\uFF0C\n\u8BA9\u8BE5\u62DB\u5F0F\u7684\uFF30\uFF30\u53D8\u6210\uFF10\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: sun-moon
-        url: https://pokeapi.co/api/v2/version-group/17/
-    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u308F\u3056\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u308F\u3056\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\uC0C1\uB300\uC758 \uAE30\uC220\uB85C \uAE30\uC808\uD558\uBA74\n\uC6D0\uB150\uC744
-        \uB2F4\uC544\n\uADF8 \uAE30\uC220\uC758 PP\uB97C 0\uC73C\uB85C \uB9CC\uB4E0\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u56E0\u70BA\u5C0D\u624B\u7684\u62DB\u5F0F\u800C\u9677\u5165\u7015\u6B7B\u6642\uFF0C\n\u65BD\u52A0\u6028\u5FF5\uFF0C\n\u8B93\u8A72\u62DB\u5F0F\u7684\uFF30\uFF30\u8B8A\u6210\uFF10\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Si le lanceur est mis K.O., sa rancune \xE9puise les\nPP de la
-        capacit\xE9 utilis\xE9e par l\u2019ennemi pour le\nmettre K.O."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: 'Bei K.O. des Anwenders werden die AP der Attacke,
-
-        durch
-        die er besiegt wurde, auf 0 herabgesetzt.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "Si el usuario se debilita al recibir un ataque, todos \nlos PP
-        de este \xFAltimo ataque ser\xE1n eliminados. "
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: 'Se chi la usa va KO, i PP della mossa nemica
-
-        che lo
-        ha messo fuori gioco si azzerano.'
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "If the user faints, the user\u2019s grudge fully depletes\nthe
-        PP of the opponent\u2019s move that knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u76F8\u624B\u306E\u3000\u6280\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u6280\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u56E0\u5BF9\u624B\u7684\u62DB\u5F0F\u800C\u9677\u5165\u6FD2\u6B7B\u65F6\n\u7ED9\u5BF9\u624B\u65BD\u52A0\u6028\u5FF5\uFF0C\n\u8BA9\u8BE5\u62DB\u5F0F\u7684\uFF30\uFF30\u53D8\u6210\uFF10\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: ultra-sun-ultra-moon
-        url: https://pokeapi.co/api/v2/version-group/18/
-    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u308F\u3056\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u308F\u3056\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\uC0C1\uB300\uC758 \uAE30\uC220\uB85C \uAE30\uC808\uD558\uBA74\n\uC6D0\uB150\uC744
-        \uB2F4\uC544\n\uADF8 \uAE30\uC220\uC758 PP\uB97C 0\uC73C\uB85C \uB9CC\uB4E0\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u56E0\u70BA\u5C0D\u624B\u7684\u62DB\u5F0F\u800C\u9677\u5165\u7015\u6B7B\u6642\uFF0C\n\u65BD\u52A0\u6028\u5FF5\uFF0C\n\u8B93\u8A72\u62DB\u5F0F\u7684PP\u8B8A\u6210\uFF10\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Si le lanceur est mis K.O., sa rancune \xE9puise les PP\nde la
-        capacit\xE9 utilis\xE9e par l\u2019ennemi pour le mettre K.O."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: 'Bei K.O. des Anwenders werden die AP der Attacke,
-
-        durch
-        die er besiegt wurde, auf 0 herabgesetzt.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "Si el usuario se debilita al recibir un ataque, todos \nlos PP
-        de este \xFAltimo ataque ser\xE1n eliminados. "
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: 'Se chi la usa va KO, i PP della mossa nemica
-
-        che lo
-        ha messo fuori gioco si azzerano.'
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "If the user faints, the user\u2019s grudge fully depletes\nthe
-        PP of the opponent\u2019s move that knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u76F8\u624B\u306E\u3000\u6280\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u6280\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u56E0\u5BF9\u624B\u7684\u62DB\u5F0F\u800C\u9677\u5165\u6FD2\u6B7B\u65F6\n\u7ED9\u5BF9\u624B\u65BD\u52A0\u6028\u5FF5\uFF0C\n\u8BA9\u8BE5\u62DB\u5F0F\u7684PP\u53D8\u6210\uFF10\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: lets-go-pikachu-lets-go-eevee
-        url: https://pokeapi.co/api/v2/version-group/19/
-    - flavor_text: "\u3042\u3044\u3066\u306E\u3000\u308F\u3056\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u308F\u3056\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\uC0C1\uB300\uC758 \uAE30\uC220\uB85C \uAE30\uC808\uD558\uBA74\n\uC6D0\uB150\uC744
-        \uB2F4\uC544\n\uADF8 \uAE30\uC220\uC758 PP\uB97C 0\uC73C\uB85C \uB9CC\uB4E0\uB2E4."
-      language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u56E0\u70BA\u5C0D\u624B\u7684\u62DB\u5F0F\u800C\u9677\u5165\u7015\u6B7B\u6642\uFF0C\n\u65BD\u52A0\u6028\u5FF5\uFF0C\n\u8B93\u8A72\u62DB\u5F0F\u7684\uFF30\uFF30\u8B8A\u6210\uFF10\u3002"
-      language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Si le lanceur est mis K.O., sa rancune \xE9puise les PP\nde la
-        capacit\xE9 utilis\xE9e par l\u2019ennemi pour le mettre K.O."
-      language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: 'Bei K.O. des Anwenders werden die AP der Attacke,
-
-        durch
-        die er besiegt wurde, auf 0 herabgesetzt.'
-      language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "Si el usuario se debilita al recibir un ataque, todos los\nPP
-        de este \xFAltimo ataque ser\xE1n eliminados."
-      language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: 'Se chi la usa va KO, i PP della mossa nemica
-
-        che lo
-        ha messo fuori gioco si azzerano.'
-      language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "If the user faints, the user\u2019s grudge fully depletes\nthe
-        PP of the opponent\u2019s move that knocked it out."
-      language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u76F8\u624B\u306E\u3000\u6280\u3067\u3000\u3072\u3093\u3057\u306B\u3000\u3055\u308C\u305F\u3068\u304D\n\u304A\u3093\u306D\u3093\u3092\u3000\u304B\u3051\u3066\n\u305D\u306E\u6280\u306E\u3000\uFF30\uFF30\u3092\u3000\uFF10\u306B\u3000\u3059\u308B\u3002"
-      language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
-    - flavor_text: "\u56E0\u5BF9\u624B\u7684\u62DB\u5F0F\u800C\u9677\u5165\u6FD2\u6B7B\u65F6\n\u7ED9\u5BF9\u624B\u65BD\u52A0\u6028\u5FF5\uFF0C\n\u8BA9\u8BE5\u62DB\u5F0F\u7684\uFF30\uFF30\u53D8\u6210\uFF10\u3002"
-      language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      version_group:
-        name: sword-shield
-        url: https://pokeapi.co/api/v2/version-group/20/
+    effect_entries: []
+    flavor_text_entries: []
     generation:
-      name: generation-iii
-      url: https://pokeapi.co/api/v2/generation/3/
-    id: 288
-    learned_by_pokemon:
-    - name: vulpix
-      url: https://pokeapi.co/api/v2/pokemon/37/
-    - name: ninetales
-      url: https://pokeapi.co/api/v2/pokemon/38/
-    - name: gastly
-      url: https://pokeapi.co/api/v2/pokemon/92/
-    - name: koffing
-      url: https://pokeapi.co/api/v2/pokemon/109/
-    - name: misdreavus
-      url: https://pokeapi.co/api/v2/pokemon/200/
-    - name: ralts
-      url: https://pokeapi.co/api/v2/pokemon/280/
-    - name: shedinja
-      url: https://pokeapi.co/api/v2/pokemon/292/
-    - name: shuppet
-      url: https://pokeapi.co/api/v2/pokemon/353/
-    - name: banette
-      url: https://pokeapi.co/api/v2/pokemon/354/
-    - name: duskull
-      url: https://pokeapi.co/api/v2/pokemon/355/
-    - name: spiritomb
-      url: https://pokeapi.co/api/v2/pokemon/442/
-    - name: yamask
-      url: https://pokeapi.co/api/v2/pokemon/562/
-    - name: cofagrigus
-      url: https://pokeapi.co/api/v2/pokemon/563/
-    - name: phantump
-      url: https://pokeapi.co/api/v2/pokemon/708/
-    - name: mimikyu-disguised
-      url: https://pokeapi.co/api/v2/pokemon/778/
-    - name: cursola
-      url: https://pokeapi.co/api/v2/pokemon/864/
-    - name: dreepy
-      url: https://pokeapi.co/api/v2/pokemon/885/
-    - name: banette-mega
-      url: https://pokeapi.co/api/v2/pokemon/10056/
-    - name: vulpix-alola
-      url: https://pokeapi.co/api/v2/pokemon/10103/
-    - name: ninetales-alola
-      url: https://pokeapi.co/api/v2/pokemon/10104/
-    - name: mimikyu-busted
-      url: https://pokeapi.co/api/v2/pokemon/10143/
-    - name: corsola-galar
-      url: https://pokeapi.co/api/v2/pokemon/10173/
+      name: 
+      url: 
+    id: 0
+    learned_by_pokemon: []
     machines: []
     meta:
       ailment:
-        name: none
-        url: https://pokeapi.co/api/v2/move-ailment/0/
+        name: 
+        url: 
       ailment_chance: 0
       category:
-        name: unique
-        url: https://pokeapi.co/api/v2/move-category/13/
+        name: 
+        url: 
       crit_rate: 0
       drain: 0
       flinch_chance: 0
@@ -662,59 +72,19 @@ MonoBehaviour:
       min_hits: 0
       min_turns: 0
       stat_chance: 0
-    name: grudge
-    names:
-    - language:
-        name: ja-Hrkt
-        url: https://pokeapi.co/api/v2/language/1/
-      name: "\u304A\u3093\u306D\u3093"
-    - language:
-        name: ko
-        url: https://pokeapi.co/api/v2/language/3/
-      name: "\uC6D0\uB150"
-    - language:
-        name: zh-Hant
-        url: https://pokeapi.co/api/v2/language/4/
-      name: "\u6028\u5FF5"
-    - language:
-        name: fr
-        url: https://pokeapi.co/api/v2/language/5/
-      name: Rancune
-    - language:
-        name: de
-        url: https://pokeapi.co/api/v2/language/6/
-      name: Nachspiel
-    - language:
-        name: es
-        url: https://pokeapi.co/api/v2/language/7/
-      name: Rabia
-    - language:
-        name: it
-        url: https://pokeapi.co/api/v2/language/8/
-      name: Rancore
-    - language:
-        name: en
-        url: https://pokeapi.co/api/v2/language/9/
-      name: Grudge
-    - language:
-        name: ja
-        url: https://pokeapi.co/api/v2/language/11/
-      name: "\u304A\u3093\u306D\u3093"
-    - language:
-        name: zh-Hans
-        url: https://pokeapi.co/api/v2/language/12/
-      name: "\u6028\u5FF5"
+    name: 
+    names: []
     past_values: []
     power: 0
-    pp: 5
+    pp: 0
     priority: 0
     stat_changes: []
     super_contest_effect:
-      url: https://pokeapi.co/api/v2/super-contest-effect/10/
+      url: 
     target:
-      name: user
-      url: https://pokeapi.co/api/v2/move-target/7/
+      name: 
+      url: 
     type:
-      name: ghost
-      url: https://pokeapi.co/api/v2/type/8/
-  sound: {fileID: 8300000, guid: 9a96897ff840c324e9cbe375cc5e691c, type: 3}
+      name: 
+      url: 
+  sound: {fileID: 0}
